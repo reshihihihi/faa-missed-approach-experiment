@@ -1,0 +1,32 @@
+{
+  "raw_instruction": "Climb to 1300 then climbing right turn to 4600 on heading 210° and VTU VOR/DME R-086 to VTU VOR/DME and hold.",
+  "climb_altitude": 4600,
+  "waypoints": [
+    "VTU"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "VTU",
+  "initial_track": "210",
+  "turn_trigger": "1300",
+  "holding_details": {
+    "fix": "VTU",
+    "radial": "R-086"
+  },
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH section upper right of chart",
+    "climb_altitude": "4600 printed in missed approach text",
+    "waypoints": "VTU VOR/DME referenced in missed approach",
+    "turn_direction": "climbing right turn stated explicitly",
+    "holding_required": "and hold stated explicitly",
+    "holding_fix": "VTU VOR/DME labeled as holding fix"
+  },
+  "_questionnaire": {
+    "Q1": "yes",
+    "Q2": "yes",
+    "Q3": "yes",
+    "Q4": "yes",
+    "Q5": "yes",
+    "Q6": "yes"
+  }
+}

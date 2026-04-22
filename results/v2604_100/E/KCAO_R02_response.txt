@@ -1,0 +1,28 @@
+QUESTIONNAIRE_ANSWERS:
+Q1: yes
+Q2: yes
+Q3: yes
+Q4: no
+Q5: yes
+Q6: yes
+
+JSON:
+{
+  "raw_instruction": "Climb to 8000 direct CEBBA and hold, continue climb-in-hold to 8000.",
+  "climb_altitude": 8000,
+  "waypoints": ["CEBBA"],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "CEBBA",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 8000 direct CEBBA and hold, continue climb-in-hold to 8000.",
+    "climb_altitude": "8000",
+    "waypoints": "CEBBA labeled in missed approach fix section",
+    "turn_direction": "No turn direction stated",
+    "holding_required": "Hold depicted at CEBBA with racetrack symbol",
+    "holding_fix": "CEBBA explicitly labeled"
+  }
+}

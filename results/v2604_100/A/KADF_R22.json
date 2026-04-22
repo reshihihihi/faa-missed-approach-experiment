@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 2000 direct CUBUG and hold. Helicopter visibility reduction below 1 SM NA.",
+  "climb_altitude": 2000,
+  "waypoints": [
+    "CUBUG"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "CUBUG",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

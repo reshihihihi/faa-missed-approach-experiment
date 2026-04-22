@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 1900+ft -> DF ACO 3000+ft -> HM ACO 3000+ft",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "ACO"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "ACO",
+  "initial_track": null,
+  "turn_trigger": "ACO",
+  "holding_details": null
+}

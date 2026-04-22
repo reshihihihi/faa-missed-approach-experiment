@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "Climb to 2300 direct KUREC and hold.",
+  "climb_altitude": 2300,
+  "waypoints": ["KUREC"],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "KUREC",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Upper right corner of chart in 'MISSED APPROACH' box",
+    "climb_altitude": "Climb to 2300 direct KUREC and hold.",
+    "waypoints": "KUREC named in missed approach text and depicted as MISSED APCH FIX on plan view",
+    "turn_direction": "No turn direction specified in the instruction",
+    "holding_required": "Text states 'and hold' and holding pattern depicted at KUREC on plan view",
+    "holding_fix": "KUREC named in missed approach instruction and labeled MISSED APCH FIX"
+  }
+}

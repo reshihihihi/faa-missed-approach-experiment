@@ -1,0 +1,22 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 4000 direct CUYAS and on track 024° to FARAD and hold.",
+  "climb_altitude": 4000,
+  "waypoints": [
+    "CUYAS",
+    "FARAD"
+  ],
+  "turn_direction": "unknown",
+  "holding_required": true,
+  "holding_fix": "FARAD",
+  "initial_track": "024°",
+  "turn_trigger": "CUYAS",
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 4000 direct CUYAS and on track 024® to FARAD and hold.",
+    "climb_altitude": "Climb to 4000",
+    "waypoints": "direct CUYAS and on track 024® to FARAD and hold",
+    "turn_direction": "not explicitly stated",
+    "holding_required": "to FARAD and hold",
+    "holding_fix": "to FARAD and hold"
+  }
+}

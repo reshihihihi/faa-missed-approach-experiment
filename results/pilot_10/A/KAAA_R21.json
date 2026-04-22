@@ -1,0 +1,16 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climbing left turn setting. Rwy 21 helicopter visibility reduction below 3 SM NA. to 2700 direct PIMKE and hold. AWOS-3",
+  "climb_altitude": 2700,
+  "waypoints": [
+    "RWY",
+    "PIMKE",
+    "AND",
+    "AWOS"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": null,
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

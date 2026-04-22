@@ -1,0 +1,29 @@
+{
+  "raw_instruction": "Climb to 3000 then climbing right turn to 4000 direct LVZ VORTAC and hold.",
+  "climb_altitude": 4000,
+  "waypoints": [
+    "LVZ"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "LVZ",
+  "initial_track": null,
+  "turn_trigger": "3000",
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Missed approach box upper right: 'Climb to 3000 then climbing right turn to 4000 direct LVZ VORTAC and hold.'",
+    "climb_altitude": "4000 stated as final climb altitude before hold",
+    "waypoints": "LVZ VORTAC named in missed approach instruction",
+    "turn_direction": "'right turn' explicitly stated",
+    "holding_required": "'and hold' explicitly stated",
+    "holding_fix": "LVZ VORTAC named as holding fix"
+  },
+  "_questionnaire": {
+    "Q1": "yes",
+    "Q2": "yes",
+    "Q3": "yes",
+    "Q4": "yes",
+    "Q5": "yes",
+    "Q6": "yes"
+  }
+}

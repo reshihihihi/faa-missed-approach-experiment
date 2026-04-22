@@ -1,0 +1,183 @@
+ILS or LOC RWY 12
+41°47′N-124°14'W
+Amdt 9 15OCT15
+JACK MC NAMARA FLD (CEC)
+CRESCENT CITY, CALIFORNIA
+MIRL Rwy 18-36 
+579 (600-2)
+579 (600-11/2)
+479 (500-1)
+540-1
+CIRCLING
+REIL Rwys 18, 30 and 36
+640-2
+640-1½2
+320 (400-34)
+380-3/4
+S-LOC 12
+HIRL Rwy 12-30 
+250 (300-3½4)
+310-3/
+S-ILS 12
+36
+c
+B
+A
+CATEGORY
+D
+OSLX0009
+0.3
+4.3 NM
+30
+TCH 55
+1600
+GS 3.00°
+5002 X 150
+*
+CEC
+119°
+1600
+YACUS
+R-166
+1600
+299°
+CEC 11
+CEC
+within 10 NM
+CHIDE
+4.9
+CEC
+Remain
+3000
+700
+2
+SLAMM
+18
+CEC
+AAD
+CE
+L
+CCC
+CHIDE
+YOBUN
+(IAF)
+to HUVMA
+119°
+(IAF)
+dON009
+HO 361H
+R-166
+R-181
+09
+TZEE
+!
+19
+EE
+CA∃c
+2998
+a
+CEC
+166°
+HOLD 3000
+CHIDE
+DME from CEC Vortac.
+600
+CEC
+R-166
+346°
+I-CEC and CEC DME required.
+Chan 27
+66
+Simultaneous reception of
+109.0
+APCH FIX
+MISSED
+302° (4.9)
+2200 to SLAMM
+I-CEC
+±
+CEC 4.9
+LOCALIZER 108.7
+CEC 0.6
+SLAMM
+(IAF)
+YACUS
+2090
+1000
+Chan 27
+LR-289
+7200
+109.0 CEC
+270°
+1400
+CRESCENT CITY
+2000
+LR-311
+2540
+090°
+R-325
+074°
+8600
+R-348
+0081
+4700
+Arc
+MSA
+CEC 11
+1000
+GUKTE
+CEC 11 Arc
+1600
+DME REQUIRED
+2800
+2990
+CEC 17.5
+CEC 11
+11
+CEC
+WIPOG
+168° (6.5)
+TAPUE
+HUVMA
+(IAF)
+4500 NoPT
+(IF)
+122.8 (CTAF)
+124.85 306.3
+119.925
+UNICOM
+SEATTLE CENTER
+ASOS
+climb-in-hold to 3000.
+until threshold. Circling to Rwy 18, 30 NA at night.
+Night Landing: Rwy 36 operational VGSI required, remain on or above VGSI glidepath
+DME and hold, continue
+R-166 to CHIDE/CEC 11
+when using Brookings altimeter setting, increase S-ILS 12 all Cats visibility to 1 mile.
+feet; increase S-LOC 12 Cat C/D, and Circling Cat D visibilities ½ mile. For inop MALSR,
+3000 on CEC VORTAC
+climbing right turn to
+received, use Brookings altimeter setting and increase DA to 407 feet and all MDA 100
+Climb to 700 then
+MALSR
+i MALSR, inceae S-LOC 1 all Cats visibility mile. When local almeter setti ot
+MISSED APPROACH:
+In table des not apply to S-ILS 12, except with use of FD or AP or HUD to DA. For
+DME required. S-ILS 12: mile visibility authorized with use of FD or AP or HUD to DA.
+ANA
+JACK MC NAMARA FLD (CEC)
+A
+Z  JO J S22
+19
+AaE A
+09
+TZEE
+119°
+108.7
+5002
+Rwy Ldg
+APP CRS
+LOC I-CEC
+25275
+AL-34 (FAA)
+CRESCENT CITY, CALIFORNIA

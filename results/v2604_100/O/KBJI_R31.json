@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 1589+ft -> DF TEGAE 3200+ft -> HM TEGAE 3200+ft",
+  "climb_altitude": 3200,
+  "waypoints": [
+    "TEGAE"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "TEGAE",
+  "initial_track": null,
+  "turn_trigger": "TEGAE",
+  "holding_details": null
+}

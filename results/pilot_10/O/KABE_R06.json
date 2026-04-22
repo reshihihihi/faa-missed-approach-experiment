@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 594+ft -> DF FONUP 3000+ft -> HM FONUP 3000+ft",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "FONUP"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "FONUP",
+  "initial_track": null,
+  "turn_trigger": "FONUP",
+  "holding_details": null
+}

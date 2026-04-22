@@ -1,0 +1,14 @@
+{
+  "raw_instruction": "CA 507+ft -> DF HOMUX -> TF WAKBI 2000+ft -> HM WAKBI 2000+ft",
+  "climb_altitude": 2000,
+  "waypoints": [
+    "HOMUX",
+    "WAKBI"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "WAKBI",
+  "initial_track": null,
+  "turn_trigger": "HOMUX",
+  "holding_details": null
+}

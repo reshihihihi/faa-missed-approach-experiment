@@ -1,0 +1,14 @@
+{
+  "raw_instruction": "CA 1903+ft -> DF YOLUP -> TF CRYSS 5000+ft -> HM CRYSS 5000+ft",
+  "climb_altitude": 5000,
+  "waypoints": [
+    "YOLUP",
+    "CRYSS"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "CRYSS",
+  "initial_track": null,
+  "turn_trigger": "YOLUP",
+  "holding_details": null
+}

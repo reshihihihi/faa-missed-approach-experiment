@@ -1,0 +1,4 @@
+anthropic
+paddleocr
+requests
+

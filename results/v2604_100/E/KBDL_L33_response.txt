@@ -1,0 +1,31 @@
+QUESTIONNAIRE_ANSWERS:
+Q1: yes
+Q2: yes
+Q3: yes
+Q4: yes
+Q5: yes
+Q6: yes
+
+JSON:
+{
+  "raw_instruction": "Climb to 4000 then right turn direct BAF VORTAC and hold.",
+  "climb_altitude": 4000,
+  "waypoints": ["BAF"],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "BAF",
+  "initial_track": null,
+  "turn_trigger": "4000",
+  "holding_details": {
+    "fix": "BAF",
+    "type": "VORTAC"
+  },
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 4000 then right turn direct BAF VORTAC and hold.",
+    "climb_altitude": "4000",
+    "waypoints": "BAF VORTAC labeled in missed approach fix section",
+    "turn_direction": "right turn direct BAF VORTAC",
+    "holding_required": "hold depicted at BAF with racetrack symbol",
+    "holding_fix": "BAF labeled as MISSED APCH FIX"
+  }
+}

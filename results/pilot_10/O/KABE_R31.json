@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 633+ft -> DF LOCID 3000+ft -> HM LOCID 3000+ft",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "LOCID"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "LOCID",
+  "initial_track": null,
+  "turn_trigger": "LOCID",
+  "holding_details": null
+}

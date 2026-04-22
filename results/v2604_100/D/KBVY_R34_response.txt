@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "Climb to 2000 direct HOMUX and on track 045° to WAKBI and hold.",
+  "climb_altitude": 2000,
+  "waypoints": ["HOMUX", "WAKBI"],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "WAKBI",
+  "initial_track": "045°",
+  "turn_trigger": "HOMUX",
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Upper right corner of chart in MISSED APPROACH note box",
+    "climb_altitude": "Climb to 2000",
+    "waypoints": "direct HOMUX and on track 045° to WAKBI and hold",
+    "turn_direction": "No turn direction explicitly stated",
+    "holding_required": "MISSED APCH FIX box with holding pattern depicted at WAKBI, and 'hold' stated in instruction",
+    "holding_fix": "WAKBI labeled in MISSED APCH FIX box upper right"
+  }
+}

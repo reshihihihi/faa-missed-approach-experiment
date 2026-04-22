@@ -1,0 +1,21 @@
+{
+  "raw_instruction": "Climb to 5100 direct EDUQA and hold.",
+  "climb_altitude": 5100,
+  "waypoints": [
+    "EDUQA"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "EDUQA",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Upper right of plan view in a box labeled 'MISSED APPROACH'",
+    "climb_altitude": "5100 in the missed approach instruction text",
+    "waypoints": "EDUQA named in missed approach text and depicted on plan view",
+    "turn_direction": "No turn direction specified in the instruction",
+    "holding_required": "The word 'hold' appears in the instruction and holding pattern depicted at EDUQA",
+    "holding_fix": "EDUQA named explicitly in missed approach instruction"
+  }
+}

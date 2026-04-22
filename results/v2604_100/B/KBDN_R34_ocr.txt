@@ -1,0 +1,138 @@
+AL-5579 (FAA)
+5201
+26022
+APP CRS
+Rwy Ldg
+TDZE
+3459
+RNAV (GPS) RWY 34
+331°
+Apt Elev
+3459
+BEND MUNI (BDN)
+RNP APCH - GPS.
+R 3 helicopter visibility eduction belowSM NA.When local altimeter setting no
+MISSED APPROACH: Climb to
+reciveduse Redmon altimeter etting and ncreae al MDAs 0 feetan LNAV
+6000 direct CELVA and on track
+lity Cats B, C, and D  SM and Circlin visibility Cats A, B, and C  SM.
+319° to DSD VORTAC and hold.
+AWOS-3
+SEATTLE CENTER
+UNICOM
+134.425
+126.15 269.475
+123.0 (CTAF)0
+MISSED APCH FIX
+Q
+DESCHUTES
+DSD
+Procedure NA for arrival on DSD VORTAC
+5 NM
+airway radials 092 CW 196.
+129°
+319
+8000 to HARBU
+DESCHUTES
+144° (26.7)
+DSD
+CELVA
+(MAP)
+FEDKU
+Final approach course offset 15.00°.
+GUPYE
+25 NM
+4.5 NM to
+MSA RW34
+FEDKU
+11600
+-331°
+(FAF)
+CODAY
+6700
+(2.6)
+NALOE
+316°
+TDZE 3459
+_
+ELEV 3459
+(3.4)
+-HOLD
+17500
+REIL Rwys 16 and 34
+/136°
+8000
+MIRL Rwy 16-34
+(IF/IAF)
+HARBU
+91
+230K
+-316
+d∩ %
+8000 NoPT
+7 NM
+338° (8.5)
+d
+(IAF)
+POCIT
+6000
+CELVA
+DSD
+VGSI and descent angles not coincident
+S2X3035
+tr
+(VGSI Angle 3.00/TCH 44).
+319°
+HARBU
+Q
+NALOE
+7 NM
+CODAY
+Holding Pattern
+GUPYE
+136°
+4.5 NM to
+17500
+1.6 NM to
+<3.00°
+FEDKU
+TCH 53
+-316°
+←316°
+8000
+FEDKU
+FEDKU
+x
+7400
+-331°
+6700
+5100
+0.5
+1.6
+-2.9 NM+
+-5 NM
+2.6 NM
+-3.4 NM
+CATEGORY
+A
+B
+c
+D
+34
+LNAV MDA
+4180-1
+721 (800-1)
+4180-2 721 (800-2)
+4180-2
+4640-3
+-331°
+CIRCLING
+4180-1
+721 (800-1)
+721 (800-2)
+1181 (1200-3)
+BEND, OREGON
+BEND MUNI (BDN)
+Amdt 1 10AUG23
+44°06'N-121°12'W
+RNAV (GPS) RWY 34

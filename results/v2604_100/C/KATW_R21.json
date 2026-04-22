@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climb to 2900 direct APIXE and hold.",
+  "climb_altitude": 2900,
+  "waypoints": [
+    "APIXE"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "APIXE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

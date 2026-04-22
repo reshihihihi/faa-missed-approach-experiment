@@ -1,0 +1,32 @@
+{
+  "raw_instruction": "Climb to 3000 on BOS VOR/DME R-154 to CELTS INT/BOS 11.7 DME and hold.",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "CELTS"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "CELTS",
+  "initial_track": "R-154",
+  "turn_trigger": null,
+  "holding_details": {
+    "fix": "CELTS",
+    "dme": "BOS 11.7"
+  },
+  "evidence": {
+    "raw_instruction": "Text in upper right: 'MISSED APPROACH: Climb to 3000 on BOS VOR/DME R-154 to CELTS INT/BOS 11.7 DME and hold.'",
+    "climb_altitude": "3000 explicitly printed",
+    "waypoints": "CELTS labeled as MISSED APCH FIX",
+    "turn_direction": "No turn direction stated",
+    "holding_required": "Word 'hold' in instruction; holding pattern depicted at CELTS",
+    "holding_fix": "CELTS labeled as MISSED APCH FIX"
+  },
+  "_questionnaire": {
+    "Q1": "yes",
+    "Q2": "yes",
+    "Q3": "yes",
+    "Q4": "no",
+    "Q5": "yes",
+    "Q6": "yes"
+  }
+}

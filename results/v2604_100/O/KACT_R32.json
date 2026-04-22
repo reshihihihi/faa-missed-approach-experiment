@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 766+ft -> DF EVVIS 4000+ft -> HM EVVIS 4000+ft",
+  "climb_altitude": 4000,
+  "waypoints": [
+    "EVVIS"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "EVVIS",
+  "initial_track": null,
+  "turn_trigger": "EVVIS",
+  "holding_details": null
+}

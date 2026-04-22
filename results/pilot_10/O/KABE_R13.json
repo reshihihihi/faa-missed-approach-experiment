@@ -1,0 +1,14 @@
+{
+  "raw_instruction": "CA 586+ft -> DF KOCEC -> TF LIZZI 3000+ft -> HM LIZZI 3000+ft",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "KOCEC",
+    "LIZZI"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "LIZZI",
+  "initial_track": null,
+  "turn_trigger": "KOCEC",
+  "holding_details": null
+}

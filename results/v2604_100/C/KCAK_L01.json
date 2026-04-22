@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climb to 1900 then climbing right turn to 3000 direct ACO VOR/DME and hold.",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "ACO"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "ACO",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

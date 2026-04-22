@@ -1,0 +1,28 @@
+QUESTIONNAIRE_ANSWERS:
+Q1: yes
+Q2: yes
+Q3: yes
+Q4: no
+Q5: yes
+Q6: yes
+
+JSON:
+{
+  "raw_instruction": "Climb to 4500 direct NIMEE and hold.",
+  "climb_altitude": 4500,
+  "waypoints": ["NIMEE"],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "NIMEE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 4500 direct NIMEE and hold.",
+    "climb_altitude": "4500",
+    "waypoints": "NIMEE labeled in missed approach section and depicted with holding pattern",
+    "turn_direction": "No turn direction stated",
+    "holding_required": "Hold depicted at NIMEE with racetrack symbol",
+    "holding_fix": "NIMEE explicitly labeled"
+  }
+}

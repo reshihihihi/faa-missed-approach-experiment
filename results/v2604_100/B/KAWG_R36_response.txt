@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 3000 direct GANAD and hold.",
+  "climb_altitude": 3000,
+  "waypoints": ["GANAD"],
+  "turn_direction": "unknown",
+  "holding_required": true,
+  "holding_fix": "GANAD",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 3000 direct GANAD and hold.",
+    "climb_altitude": "Climb to 3000",
+    "waypoints": "direct GANAD and hold",
+    "turn_direction": "not stated",
+    "holding_required": "direct GANAD and hold",
+    "holding_fix": "direct GANAD and hold"
+  }
+}

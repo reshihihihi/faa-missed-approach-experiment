@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 1500+ft -> DF COFEY 3000+ft -> HM COFEY 3000+ft",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "COFEY"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "COFEY",
+  "initial_track": null,
+  "turn_trigger": "COFEY",
+  "holding_details": null
+}

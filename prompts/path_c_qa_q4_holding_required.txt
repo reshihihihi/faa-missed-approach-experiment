@@ -1,0 +1,18 @@
+This is a FAA Instrument Approach Procedure (IAP) chart.
+
+Task:
+Determine whether the MISSED APPROACH explicitly includes a holding pattern or a hold instruction.
+
+Return exactly one of the following values:
+- true
+- false
+- unknown
+
+Rules:
+- Return true only if the main MISSED APPROACH path itself explicitly ends in a hold instruction or a holding pattern clearly attached to that path.
+- Do not return true for holding patterns, racetracks, or fixes that appear elsewhere on the chart but are not clearly part of the main missed approach path.
+- Return false only if the missed approach can be identified and there is no explicit holding requirement in the main missed approach path.
+- Return unknown if the chart does not allow a confident decision.
+
+Do not return JSON.
+Do not add labels or explanations.

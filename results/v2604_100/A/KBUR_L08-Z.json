@@ -1,0 +1,11 @@
+{
+  "raw_instruction": "minimum climb of 340 feet per NM #Missed approach requires a R-086 to VTU VOR/DME and hold. until threshold. Circling Rwy 26 NA at night and Circling Rwy 33 NA at night heading 210 and VTU VOR/DME MALSR Rwy 33 at night, operational VGSI required, remain on or above VGSI glidepath Straight-in Rwy 8 at night, Circling to",
+  "climb_altitude": "unknown",
+  "waypoints": [],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": null,
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

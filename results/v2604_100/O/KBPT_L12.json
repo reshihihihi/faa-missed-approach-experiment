@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 500+ft -> DF SBI 3000+ft -> HM SBI 3000+ft",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "SBI"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "SBI",
+  "initial_track": null,
+  "turn_trigger": "SBI",
+  "holding_details": null
+}

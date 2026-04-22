@@ -1,0 +1,26 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 1000 then climbing right turn to 2200 on heading 310° and on TOY VORTAC R-322 to TOPAZ INT/TOY 16 DME and hold.",
+  "climb_altitude": 2200,
+  "waypoints": [
+    "TOPAZ INT",
+    "TOY"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "TOPAZ INT",
+  "initial_track": "310°",
+  "turn_trigger": "1000",
+  "holding_details": {
+    "track": "R-322",
+    "direction": null,
+    "leg_time": null
+  },
+  "evidence": {
+    "raw_instruction": "Upper right corner of chart in MISSED APPROACH box",
+    "climb_altitude": "then climbing right turn to 2200",
+    "waypoints": "TOY VORTAC R-322 to TOPAZ INT/TOY 16 DME",
+    "turn_direction": "climbing right turn",
+    "holding_required": "and hold stated at end of missed approach instruction",
+    "holding_fix": "TOPAZ INT/TOY 16 DME and hold"
+  }
+}

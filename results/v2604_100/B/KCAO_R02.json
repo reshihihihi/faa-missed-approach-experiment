@@ -1,0 +1,21 @@
+{
+  "raw_instruction": "Climb to 8000 direct CEBBA and hold, continue climb-in-hold to 8000.",
+  "climb_altitude": 8000,
+  "waypoints": [
+    "CEBBA"
+  ],
+  "turn_direction": "unknown",
+  "holding_required": true,
+  "holding_fix": "CEBBA",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 8000 direct CEBBA and hold, continue climb-in-hold to 8000.",
+    "climb_altitude": "Climb to 8000",
+    "waypoints": "direct CEBBA and hold",
+    "turn_direction": "not stated",
+    "holding_required": "direct CEBBA and hold",
+    "holding_fix": "direct CEBBA and hold"
+  }
+}

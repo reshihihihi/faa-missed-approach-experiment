@@ -1,0 +1,23 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 3000 on heading 063° and STW R-243 to MUDRE INT/STW 20.5 DME/RADAR and hold.",
+  "climb_altitude": 3000,
+  "waypoints": ["MUDRE"],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "MUDRE",
+  "initial_track": "063°",
+  "turn_trigger": "MUDRE INT/STW 20.5 DME/RADAR",
+  "holding_details": {
+    "track": "243°/063°",
+    "direction": "LEFT",
+    "leg_time": "1 min"
+  },
+  "evidence": {
+    "raw_instruction": "Upper right corner of the chart in the MISSED APPROACH box",
+    "climb_altitude": "Climb to 3000",
+    "waypoints": "MUDRE INT/STW 20.5 DME/RADAR",
+    "turn_direction": "No explicit turn direction stated; heading 063° maintained to fix",
+    "holding_required": "Hold depicted at MUDRE INT on plan view and profile view with 4800/3000 altitudes",
+    "holding_fix": "MUDRE INT named in missed approach text and on plan view"
+  }
+}

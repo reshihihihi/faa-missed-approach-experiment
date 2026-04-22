@@ -1,0 +1,17 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 3200 direct SAVKE and via 289 track to HIVSI and Inoperative table does not apply. 202 track to GAFFE and hold.",
+  "climb_altitude": 3200,
+  "waypoints": [
+    "SAVKE",
+    "HIVSI",
+    "GAFFE",
+    "TABLE",
+    "APPLY"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "GAFFE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

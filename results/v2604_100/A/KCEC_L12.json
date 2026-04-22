@@ -1,0 +1,14 @@
+{
+  "raw_instruction": "MISSED APPROACH: In table des not apply to S-ILS 12, except with use of FD or AP or HUD to DA. For DME required. S-ILS 12: mile visibility authorized with use of FD or AP or HUD to DA.",
+  "climb_altitude": "unknown",
+  "waypoints": [
+    "TABLE",
+    "APPLY"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": false,
+  "holding_fix": null,
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

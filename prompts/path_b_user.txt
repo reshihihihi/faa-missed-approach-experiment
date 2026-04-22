@@ -1,0 +1,4 @@
+Below is OCR-extracted text from a FAA Instrument Approach Procedure (IAP) chart. Extract the missed approach information according to the schema and rules provided. Output only the JSON object.
+
+OCR TEXT:
+{ocr_text}

@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 2000+ft -> DF GVE 4000+ft -> HM GVE 4000+ft",
+  "climb_altitude": 4000,
+  "waypoints": [
+    "GVE"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "GVE",
+  "initial_track": null,
+  "turn_trigger": "GVE",
+  "holding_details": null
+}

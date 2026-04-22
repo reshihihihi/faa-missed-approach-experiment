@@ -1,0 +1,90 @@
+OLORADO
+AL-9483 (FAA)
+26078
+APP CRS
+Rwy Ldg
+N/A
+TDZE
+NN/A
+RNAV (GPS)-A
+126°
+Apt Elev
+5945
+HOPKINS FLD (ÅIB)
+RNP APCH-GPS.
+T
+Circling NA to Rwys 11 and 29. Circling Rwy 23 NA at night.
+MISSED APPROACH: Climbing left turn to 1 2000 direct
+A
+When local altimeter setting not received, procedure NA.
+PAROX and hold, continue climb-in-hold to 12000.
+AWOS-3
+DENVER CENTER
+UNICOM
+132.525
+127.1
+122.8 (CTAF)0
+All arrivals on V244 descend to 12000 in PAROX holding pattern before departing PAROX.
+NoPT for arrival at PAROX on V391 southbound.
+HOLD 12000
+7 NM
+320°
+(IAF)
+PAROX
+(IF)
+CULIR
+AIB
+25 NM
+MSA
+13700
+¤
+(FAF)
+IVOYE
+6006
+(MAP)
+ELEV 5945
+TUYUY
+126°
+0.8% UP-
+2
+¤
+12000
+PAROX
+4000 X 80
+PAROX
+CULIR
+∆
+5212X75
+12000
+IVOYE
+-125°
+5
+0.9% UP
+9000
+-126°
+TUYUY
+8100
+*
+-7.5 NM
+-6.6 NM
+-5.8 NM
+CATEGORY
+A
+B
+C
+D
+MIRL Rwy 5-23
+6320-1
+6400-1
+6800-21½2
+REIL Rwys 5 and 23
+CIRCLING
+375 (400-1)
+NA
+455 (500-1)
+855 (900-21/2)
+NUCLA, COLORADO
+HOPKINS FLD (AIB)
+Amdt 1 24MAR22
+38°14'N-108°34'W
+RNAV (GPS)-A

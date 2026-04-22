@@ -1,0 +1,15 @@
+{
+  "raw_instruction": "CA 1118+ft -> DF SAVKE -> TF HIVSI -> TF GAFFE 3200+ft -> HM GAFFE 3200+ft",
+  "climb_altitude": 3200,
+  "waypoints": [
+    "SAVKE",
+    "HIVSI",
+    "GAFFE"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "GAFFE",
+  "initial_track": null,
+  "turn_trigger": "SAVKE",
+  "holding_details": null
+}

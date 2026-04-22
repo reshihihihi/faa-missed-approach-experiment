@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 713+ft -> DF JELVA 3000+ft -> HM JELVA 3000+ft",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "JELVA"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "JELVA",
+  "initial_track": null,
+  "turn_trigger": "JELVA",
+  "holding_details": null
+}

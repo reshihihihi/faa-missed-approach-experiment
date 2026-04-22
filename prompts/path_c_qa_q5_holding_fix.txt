@@ -1,0 +1,19 @@
+This is a FAA Instrument Approach Procedure (IAP) chart.
+
+Task:
+Determine the holding fix used in the MISSED APPROACH, if one is explicitly shown.
+
+Return exactly one of the following:
+- An uppercase fix name such as:
+MUDRE
+- null
+- unknown
+
+Rules:
+- Return the fix name only if the main MISSED APPROACH path explicitly includes a hold and the holding fix is clearly identified as part of that same path.
+- Do not return a fix that belongs only to another chart element, transition, or unrelated holding depiction.
+- Return null only if the missed approach can be identified and clearly does not include holding.
+- Return unknown if holding may exist but the fix cannot be determined confidently.
+
+Do not return JSON.
+Do not add labels or explanations.

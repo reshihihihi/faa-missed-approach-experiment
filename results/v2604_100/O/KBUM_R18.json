@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 1220+ft -> DF FONIE 4000+ft -> HM FONIE 4000+ft",
+  "climb_altitude": 4000,
+  "waypoints": [
+    "FONIE"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "FONIE",
+  "initial_track": null,
+  "turn_trigger": "FONIE",
+  "holding_details": null
+}

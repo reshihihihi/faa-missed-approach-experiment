@@ -1,0 +1,119 @@
+HARIION, IOWA
+AL-6068 (FAA)
+APP CRS
+Rwy Idg
+24025
+4000
+099°
+TDZE
+1046
+RNAV (GPS) RWY 10
+Apt Elev
+1051
+CHARITON MUNI (CNC)
+RNP APCH.
+V
+When local altimeter setting not received, use Lamoni altimeter setting and increase all
+MISSED APPROACH:
+A
+MDA 100 feet. Procedure NA at night. Rwy 10 helicopter visibility reduction below
+Climb to 3000 direct
+1 SM NA.
+EBORE and hold.
+AWOS-3
+DES MOINES APP CON
+UNICOM
+125.525
+123.9 360.7
+122.8 (CTAF)0
+(IAF)
+WIVEY
+Procedure NA for arrivals
+3000 NoPT
+at WIVEY
+via V13-77-161 northbound.
+(11.8)
+(IF/IAF)
+BODGY
+099°
+2600
+1385
+099
+A1166
+279°
+(6.1)
+1159±
+4 NM
+1398
+4 NM
+3000 NoPT
+(∀)
+0660
+0090
+CSSE
+RMTO
+6
+EBORE
+(IAF)
+SECOL
+3000
+1599
+291°
+(23.7)
+2800
+ELEV 1051
+TDZE 1046
+Procedure NA for arrivals
+OHGEE
+at OHGEE
+via V216 northeast bound
+and V175 southeast bound.
+4 NM
+VGSI and descent angles not coincident
+3000
+EBORE
+099°
+Holding Pattern
+(VGSI Angle 3.00/TCH 26).
+∠l
+BODGY
+0.4 % UP
+3000.
+←279°
+COSHE
+099°
+099
+2800 X 75
+4000 X 75
+-0.3% UP
+3.04
+8
+×
+TCH 40
+¤
+2600
+RW10
+0
+35
+-6.1 NM
+4.7 NM
+CATEGORY
+A
+B
+c
+D
+LNAV MDA
+1440-1
+394 (400-1)
+NA
+REIL Rwys 10, 17, 28 and 35
+CIRCLING
+1540-1
+489 (500-1)
+NA
+MIRL Rwys 10-28 and 17-35
+CHARITON, IOWA
+CHARITON MUNI (CNC)
+Dria-B 21JUN18
+41°01'N-93°22'W
+RNAV (GPS) RWY 10

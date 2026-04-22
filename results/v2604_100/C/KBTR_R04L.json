@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climb to 2300 direct KUREC and hold.",
+  "climb_altitude": 2300,
+  "waypoints": [
+    "KUREC"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "KUREC",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

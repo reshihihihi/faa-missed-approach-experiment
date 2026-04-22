@@ -1,0 +1,28 @@
+QUESTIONNAIRE_ANSWERS:
+Q1: yes
+Q2: yes
+Q3: yes
+Q4: no
+Q5: yes
+Q6: yes
+
+JSON:
+{
+  "raw_instruction": "Climb to 2700 direct ESEGE and hold.",
+  "climb_altitude": 2700,
+  "waypoints": ["ESEGE"],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "ESEGE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 2700 direct ESEGE and hold.",
+    "climb_altitude": "2700",
+    "waypoints": "ESEGE labeled in missed approach section and on chart",
+    "turn_direction": "No turn direction stated",
+    "holding_required": "Text says 'and hold'",
+    "holding_fix": "ESEGE"
+  }
+}

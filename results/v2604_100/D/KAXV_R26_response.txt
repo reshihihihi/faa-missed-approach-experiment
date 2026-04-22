@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "Climb to 3000 direct ZUKEC and hold.",
+  "climb_altitude": 3000,
+  "waypoints": ["ZUKEC"],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "ZUKEC",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Upper right notes box labeled MISSED APPROACH",
+    "climb_altitude": "Climb to 3000 direct ZUKEC and hold.",
+    "waypoints": "ZUKEC named in missed approach text and on plan view",
+    "turn_direction": "No turn direction specified in text",
+    "holding_required": "Text states 'and hold'; holding pattern depicted at ZUKEC on plan view",
+    "holding_fix": "ZUKEC named in missed approach instruction"
+  }
+}

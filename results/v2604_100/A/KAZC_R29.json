@@ -1,0 +1,11 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 6600 then climbing",
+  "climb_altitude": 6600,
+  "waypoints": [],
+  "turn_direction": "NONE",
+  "holding_required": false,
+  "holding_fix": null,
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

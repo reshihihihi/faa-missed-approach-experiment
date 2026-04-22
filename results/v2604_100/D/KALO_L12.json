@@ -1,0 +1,21 @@
+{
+  "raw_instruction": "Climb to 1400 then climbing left turn to 3300 on ALO VOR/DME R-096 to DEWAR INT/ALO VOR/DME 10.8 DME and hold.",
+  "climb_altitude": 3300,
+  "waypoints": [
+    "DEWAR"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "DEWAR",
+  "initial_track": "R-096",
+  "turn_trigger": "1400",
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Upper right box labeled MISSED APPROACH",
+    "climb_altitude": "climbing left turn to 3300 on ALO VOR/DME R-096",
+    "waypoints": "DEWAR INT/ALO VOR/DME 10.8 DME",
+    "turn_direction": "climbing left turn",
+    "holding_required": "and hold at end of instruction",
+    "holding_fix": "DEWAR INT/ALO VOR/DME 10.8 DME"
+  }
+}

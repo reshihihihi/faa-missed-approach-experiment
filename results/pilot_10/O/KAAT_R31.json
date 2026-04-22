@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 5400+ft -> DF BACHS 9000+ft -> HM BACHS 9000+ft",
+  "climb_altitude": 9000,
+  "waypoints": [
+    "BACHS"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "BACHS",
+  "initial_track": null,
+  "turn_trigger": "BACHS",
+  "holding_details": null
+}

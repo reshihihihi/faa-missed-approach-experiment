@@ -1,0 +1,33 @@
+{
+  "raw_instruction": "Climb to 3000 direct GANAD and hold.",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "GANAD"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "GANAD",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": {
+    "altitude": 3000,
+    "leg_length": "4 NM",
+    "inbound_course": "184"
+  },
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 3000 direct GANAD and hold.",
+    "climb_altitude": "3000 printed in missed approach text and holding pattern",
+    "waypoints": "GANAD labeled as MISSED APCH FIX",
+    "turn_direction": "No turn direction stated",
+    "holding_required": "Holding pattern depicted at GANAD with racetrack symbol",
+    "holding_fix": "GANAD labeled explicitly"
+  },
+  "_questionnaire": {
+    "Q1": "yes",
+    "Q2": "yes",
+    "Q3": "yes",
+    "Q4": "no",
+    "Q5": "yes",
+    "Q6": "yes"
+  }
+}

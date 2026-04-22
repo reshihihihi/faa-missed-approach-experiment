@@ -1,0 +1,25 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 1800 then climbing left turn to 3500 direct HVQ VOR/DME and hold.",
+  "climb_altitude": 1800,
+  "waypoints": [
+    "HVQ"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "HVQ",
+  "initial_track": null,
+  "turn_trigger": "1800",
+  "holding_details": {
+    "track": null,
+    "direction": null,
+    "leg_time": "One Minute"
+  },
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 1800 then climbing left turn to 3500 direct HVQ VOR/DME and hold.",
+    "climb_altitude": "Climb to 1800",
+    "waypoints": "direct HVQ VOR/DME and hold",
+    "turn_direction": "climbing left turn",
+    "holding_required": "and hold",
+    "holding_fix": "direct HVQ VOR/DME and hold"
+  }
+}

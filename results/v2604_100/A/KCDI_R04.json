@@ -1,0 +1,11 @@
+{
+  "raw_instruction": "Climb to 3000 direct MISSED APPROACH:",
+  "climb_altitude": 3000,
+  "waypoints": [],
+  "turn_direction": "NONE",
+  "holding_required": false,
+  "holding_fix": null,
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

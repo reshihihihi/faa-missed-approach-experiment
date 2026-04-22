@@ -1,0 +1,21 @@
+```json
+{
+  "raw_instruction": "MISSED APPROACHClimbing left turn to 3600 direct IPL VORTAC and hold.",
+  "climb_altitude": 3600,
+  "waypoints": ["IPL"],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "IPL",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACHClimbing left turn to 3600 direct IPL VORTAC and hold.",
+    "climb_altitude": "to 3600",
+    "waypoints": "direct IPL VORTAC and hold",
+    "turn_direction": "Climbing left turn",
+    "holding_required": "IPL VORTAC and hold",
+    "holding_fix": "direct IPL VORTAC and hold"
+  }
+}
+```

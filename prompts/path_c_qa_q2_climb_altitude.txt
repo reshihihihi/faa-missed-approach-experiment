@@ -1,0 +1,17 @@
+This is a FAA Instrument Approach Procedure (IAP) chart.
+
+Task:
+Determine the final climb-to altitude for the MISSED APPROACH.
+
+Output rules:
+- Return only one plain integer in feet, such as:
+3000
+- If the climb altitude cannot be determined confidently, return exactly:
+unknown
+- Do not include units.
+- Do not return JSON.
+- Do not add labels or explanations.
+
+Interpretation rules:
+- If the missed approach includes more than one altitude, return the final target altitude to which the aircraft is instructed to climb.
+- Do not return an intermediate altitude if the instruction later says to continue climbing to a higher altitude.

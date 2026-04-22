@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 420+ft -> DF ONBOE 3000+ft -> HM ONBOE 3000+ft",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "ONBOE"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "ONBOE",
+  "initial_track": null,
+  "turn_trigger": "ONBOE",
+  "holding_details": null
+}

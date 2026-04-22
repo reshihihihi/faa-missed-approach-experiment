@@ -1,0 +1,25 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 3500 direct CYMOL and hold.",
+  "climb_altitude": 3500,
+  "waypoints": [
+    "CYMOL"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "CYMOL",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": {
+    "track": "115/295",
+    "direction": "LEFT",
+    "leg_time": null
+  },
+  "evidence": {
+    "raw_instruction": "Text box in upper portion of chart labeled 'MISSED APPROACH'",
+    "climb_altitude": "'Climb to 3500' in missed approach instruction",
+    "waypoints": "'direct CYMOL' in missed approach instruction",
+    "turn_direction": "No turn direction stated in text; holding pattern depicted at CYMOL",
+    "holding_required": "Word 'hold' in missed approach instruction and holding pattern symbol at CYMOL on plan view",
+    "holding_fix": "'CYMOL' named in missed approach instruction and on plan view"
+  }
+}

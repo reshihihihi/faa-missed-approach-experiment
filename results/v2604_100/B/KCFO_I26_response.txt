@@ -1,0 +1,23 @@
+{
+  "raw_instruction": "Climb to 6100 then climbing left turn to 7200 on heading 080° and on FQF VORTAC R-045 to SKIPI/I-FTG 7 DME and hold.",
+  "climb_altitude": 7200,
+  "waypoints": ["SKIPI", "FQF"],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "SKIPI",
+  "initial_track": "080°",
+  "turn_trigger": "6100",
+  "holding_details": {
+    "track": "083°",
+    "direction": "LEFT",
+    "leg_time": "1 min"
+  },
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 6100 then climbing left turn to 7200 on heading 080° and on FQF VORTAC R-045 to SKIPI/I-FTG 7 DME and hold.",
+    "climb_altitude": "climbing left turn to 7200",
+    "waypoints": "FQF VORTAC R-045 to SKIPI/I-FTG 7 DME",
+    "turn_direction": "climbing left turn",
+    "holding_required": "to SKIPI/I-FTG 7 DME and hold",
+    "holding_fix": "SKIPI/I-FTG 7 DME"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "raw_instruction": "Climb to 8500 on heading 172° and FQF VORTAC R-127 to HUNTN INT/FQF 9.8 DME and hold.",
+  "climb_altitude": 8500,
+  "waypoints": ["HUNTN"],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "HUNTN",
+  "initial_track": "172°",
+  "turn_trigger": null,
+  "holding_details": {
+    "track": "R-127",
+    "direction": null,
+    "leg_time": null
+  },
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 8500 on heading 172° and FQF VORTAC R-127 to HUNTN INT/FQF 9.8 DME and hold.",
+    "climb_altitude": "Climb to 8500",
+    "waypoints": "HUNTN INT/FQF 9.8 DME",
+    "turn_direction": "heading 172° (no turn direction stated)",
+    "holding_required": "and hold",
+    "holding_fix": "HUNTN INT/FQF 9.8 DME"
+  }
+}

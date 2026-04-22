@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "Climb to 4500 direct NIMEE and hold.",
+  "climb_altitude": 4500,
+  "waypoints": ["NIMEE"],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "NIMEE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Upper right of plan view in a box labeled MISSED APPROACH",
+    "climb_altitude": "Climb to 4500 direct NIMEE and hold.",
+    "waypoints": "NIMEE mentioned in missed approach text and depicted on plan view",
+    "turn_direction": "No turn direction stated in the instruction",
+    "holding_required": "Holding pattern depicted at NIMEE on plan view with 145°/325° tracks",
+    "holding_fix": "NIMEE stated in missed approach instruction and labeled on chart"
+  }
+}

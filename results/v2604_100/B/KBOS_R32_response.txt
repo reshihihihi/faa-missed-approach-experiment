@@ -1,0 +1,23 @@
+{
+  "raw_instruction": "Climb to 3000 direct WINDZ and on track 284° to TELLE and hold.",
+  "climb_altitude": 3000,
+  "waypoints": ["WINDZ", "TELLE"],
+  "turn_direction": "unknown",
+  "holding_required": true,
+  "holding_fix": "TELLE",
+  "initial_track": "284°",
+  "turn_trigger": "WINDZ",
+  "holding_details": {
+    "track": null,
+    "direction": null,
+    "leg_time": null
+  },
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 3000 direct WINDZ and on track 284° to TELLE and hold.",
+    "climb_altitude": "Climb to 3000",
+    "waypoints": "direct WINDZ and on track 284° to TELLE and hold",
+    "turn_direction": "not stated",
+    "holding_required": "to TELLE and hold",
+    "holding_fix": "to TELLE and hold"
+  }
+}

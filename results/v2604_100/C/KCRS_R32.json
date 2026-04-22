@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climb to 900, then climbing right turn to 2500 direct HOXDE and hold.",
+  "climb_altitude": 2500,
+  "waypoints": [
+    "HOXDE"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "HOXDE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

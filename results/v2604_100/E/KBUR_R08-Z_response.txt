@@ -1,0 +1,31 @@
+QUESTIONNAIRE_ANSWERS:
+Q1: yes
+Q2: yes
+Q3: yes
+Q4: yes
+Q5: yes
+Q6: yes
+
+JSON:
+{
+  "raw_instruction": "Climbing right turn to 4600 direct COTSI and on track 263° to VTU VOR/DME and hold.",
+  "climb_altitude": 4600,
+  "waypoints": ["COTSI", "VTU"],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "VTU",
+  "initial_track": "263",
+  "turn_trigger": null,
+  "holding_details": {
+    "fix": "VTU",
+    "course": "263"
+  },
+  "evidence": {
+    "raw_instruction": "Missed approach text box upper right of chart",
+    "climb_altitude": "4600 printed in missed approach instruction",
+    "waypoints": "COTSI and VTU labeled in missed approach text and on plan view",
+    "turn_direction": "Climbing right turn stated explicitly",
+    "holding_required": "hold stated in missed approach instruction",
+    "holding_fix": "VTU VOR/DME stated as holding fix"
+  }
+}

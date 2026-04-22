@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climb to 5100 direct EDUQA and hold.",
+  "climb_altitude": 5100,
+  "waypoints": [
+    "EDUQA"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "EDUQA",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

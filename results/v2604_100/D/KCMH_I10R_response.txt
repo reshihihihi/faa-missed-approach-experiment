@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "Climb to 1400 then climbing right turn to 3000 direct BU LOM and hold.",
+  "climb_altitude": 3000,
+  "waypoints": ["BU"],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "BU",
+  "initial_track": null,
+  "turn_trigger": "1400",
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Upper right corner of chart in MISSED APPROACH box",
+    "climb_altitude": "climbing right turn to 3000 direct BU LOM and hold",
+    "waypoints": "direct BU LOM and hold",
+    "turn_direction": "climbing right turn",
+    "holding_required": "and hold stated in missed approach instruction",
+    "holding_fix": "BU LOM"
+  }
+}

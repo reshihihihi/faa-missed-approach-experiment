@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climbing left turn to 5000 direct GRAVE and hold, continue climb-in-hold to 5000.",
+  "climb_altitude": 5000,
+  "waypoints": ["GRAVE"],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "GRAVE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Upper right corner of chart in the MISSED APPROACH box",
+    "climb_altitude": "to 5000",
+    "waypoints": "direct GRAVE and hold",
+    "turn_direction": "Climbing left turn",
+    "holding_required": "hold depicted at GRAVE in plan view and stated in text",
+    "holding_fix": "direct GRAVE and hold"
+  }
+}

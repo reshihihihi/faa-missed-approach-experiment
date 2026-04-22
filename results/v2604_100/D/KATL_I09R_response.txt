@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 4000 on heading 100° and AHN VOR/DME R-235 to CONNI/AHN 30.2 DME and hold.",
+  "climb_altitude": 4000,
+  "waypoints": ["AHN", "CONNI"],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "CONNI",
+  "initial_track": "100°",
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Text box in upper right of chart labeled 'MISSED APPROACH'",
+    "climb_altitude": "Climb to 4000",
+    "waypoints": "AHN VOR/DME R-235 to CONNI/AHN 30.2 DME",
+    "turn_direction": "No turn direction stated; straight heading 100°",
+    "holding_required": "Text says 'and hold'; holding pattern depicted at CONNI in plan view",
+    "holding_fix": "CONNI/AHN 30.2 DME"
+  }
+}

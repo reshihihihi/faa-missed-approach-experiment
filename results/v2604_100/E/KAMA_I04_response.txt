@@ -1,0 +1,31 @@
+QUESTIONNAIRE_ANSWERS:
+Q1: yes
+Q2: yes
+Q3: yes
+Q4: yes
+Q5: yes
+Q6: yes
+
+JSON:
+{
+  "raw_instruction": "Climb to 4100 then climbing right turn to 5000 on PNH VORTAC R-118 to CAUDE/PNH 13 DME and hold.",
+  "climb_altitude": 4100,
+  "waypoints": ["CAUDE"],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "CAUDE",
+  "initial_track": "R-118",
+  "turn_trigger": "4100",
+  "holding_details": {
+    "fix": "CAUDE",
+    "dme": "PNH 13"
+  },
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH box in upper right of chart",
+    "climb_altitude": "4100 explicitly stated",
+    "waypoints": "CAUDE labeled in missed approach text and on chart",
+    "turn_direction": "climbing right turn explicitly stated",
+    "holding_required": "and hold explicitly stated",
+    "holding_fix": "CAUDE/PNH 13 DME explicitly stated"
+  }
+}

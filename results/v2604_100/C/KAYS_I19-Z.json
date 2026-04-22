@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climb to 800 then climbing right turn to 1700 direct WIKET LOM and hold.",
+  "climb_altitude": 1700,
+  "waypoints": [
+    "WIKET"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "WIKET",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

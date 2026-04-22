@@ -1,0 +1,29 @@
+{
+  "raw_instruction": "Climbing left turn to 4800 direct SWOBS and hold.",
+  "climb_altitude": 4800,
+  "waypoints": [
+    "SWOBS"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "SWOBS",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climbing left turn to 4800 direct SWOBS and hold.",
+    "climb_altitude": "4800",
+    "waypoints": "SWOBS labeled as MISSED APCH FIX",
+    "turn_direction": "Climbing left turn",
+    "holding_required": "...and hold",
+    "holding_fix": "SWOBS"
+  },
+  "_questionnaire": {
+    "Q1": "yes",
+    "Q2": "yes",
+    "Q3": "yes",
+    "Q4": "yes",
+    "Q5": "yes",
+    "Q6": "yes"
+  }
+}

@@ -1,0 +1,31 @@
+QUESTIONNAIRE_ANSWERS:
+Q1: yes
+Q2: yes
+Q3: yes
+Q4: yes
+Q5: yes
+Q6: yes
+
+JSON:
+{
+  "raw_instruction": "Climb to 4500 then climbing left turn to 6900 direct BFF VORTAC and hold, continue climb-in-hold to 6900.",
+  "climb_altitude": 6900,
+  "waypoints": ["BFF"],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "BFF",
+  "initial_track": null,
+  "turn_trigger": "4500",
+  "holding_details": {
+    "fix": "BFF",
+    "altitude": 6900
+  },
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH box upper right of chart",
+    "climb_altitude": "6900 stated in missed approach text",
+    "waypoints": "BFF VORTAC explicitly named",
+    "turn_direction": "climbing left turn explicitly stated",
+    "holding_required": "hold explicitly stated",
+    "holding_fix": "BFF VORTAC explicitly named as holding fix"
+  }
+}

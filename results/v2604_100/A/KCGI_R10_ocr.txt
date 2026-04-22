@@ -1,0 +1,144 @@
+RNAV (GPS) RWY 10
+Amdt 1B 16MAY24
+37°14'N-89°34'W
+CAPE GIRARDEAU RGNL (CGI)
+CAPE GIRARDEAU, MISSOURI
+658 (700-1%)
+618 (700-1)
+538 (600-1)
+HIRL Rwy 10-28 
+738 (800-214)
+CIRCLING
+960-1
+l-088
+A7- Ad 
+77-080l
+%El-0001
+(4/-000) ε9
+½-00∠
+LNAV MDA
+363 (400-5%)
+700-5%
+DA
+VNAV
+376 (400-5)
+713-5/
+LNAV/
+200 (200-1½2)
+537-½2
+DA
+LPV
+2
+D
+8
+A
+C
+d
+WN I
+WNI'l
+WNε
+WN 9
+8
+TH HA
+1060
+6500 X150
+AS
+GP 3.00°
+2000
+¤
+RW10
+RW10
+x
+TWR
+F108°
+20
+108°
+1 NM to
+RW10
+108°
+2000
+3000
+2.1 NM to
+288°
+WELVA
+GOGEC
+Holding Pattern
+IYIGO
+4 NM
+FISAV
+3000
+337
+TDZE
+342
+r018°
+EE
+L018°
+30
+OTICO
+A
+3000
+¤
+TIICO
+-198°
+88
+FISAV
+086
+"/08
+RW10
+4 NM
+……
+2WN U0
+MEA
+RL
+280
+(9)
+80
+288°
+4 NM
+GOGEC
+(FAF)
+2000
+108°
+IYIGO
+(IF/IAF)
+122.95
+124.7
+125.525 (CTAF) 
+133.65 292.15
+120.55
+UNICOM
+GND CON
+CAPE GIRARDEAU TOWER *
+MEMPHIS CENTER
+ASOS
+Cats and LNAV Cat C/D visibility to 1 SM.
+1 SM.For inop ALS, when using Cairo altimeter setting, increase LNAV/VNAV all
+For inop ALS, increase LNAV/VNAV visibility all Cats and LNAV visibility Cat C/D to
+FISAV and hold.
+visiility to  SM.Baro-VNAV and VDP NA when using Cairo Rgnl altimeter setting.
+Climb to 3000 direct
+Increase all MDAs 60 feet and LNAV Cat C/D visibility 1/8 SM, and Circling Cats C/D
+MISSED APPROACH:
+MALSR
+increase LPV DA to 585 feet, LNAV/VNAV DA to 761 feet, and all visibilities 1 SM.
+54°C. When local altimeter setting not received, use Cairo altimeter setting and
+For uncompensated Baro-VNAV systems, LNAV/VNAV NA below -17°C or above
+A
+T
+CAPE GIRARDEAU RGNL (CGI)
+RNP APCH - GPS.
+RNAV (GPS) RWY 10
+342
+Apt Elev
+W10A
+337
+TDZE
+108°
+Rwy Ldg
+APP CRS
+CH 61399
+6500
+25275
+AL-943 (FAA)
+WAAS
+CAPE GIRARDEAU, MISSOURI

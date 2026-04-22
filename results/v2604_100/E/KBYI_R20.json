@@ -1,0 +1,31 @@
+{
+  "raw_instruction": "Climbing left turn to 7000 direct IREME and hold, continue climb-in-hold to 7000.",
+  "climb_altitude": 7000,
+  "waypoints": [
+    "IREME"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "IREME",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": {
+    "altitude": 7000
+  },
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH section upper right of chart",
+    "climb_altitude": "7000 stated in missed approach text",
+    "waypoints": "IREME labeled in missed approach text and on plan view",
+    "turn_direction": "left turn explicitly stated",
+    "holding_required": "hold explicitly stated",
+    "holding_fix": "IREME named as holding fix"
+  },
+  "_questionnaire": {
+    "Q1": "yes",
+    "Q2": "yes",
+    "Q3": "yes",
+    "Q4": "yes",
+    "Q5": "yes",
+    "Q6": "yes"
+  }
+}

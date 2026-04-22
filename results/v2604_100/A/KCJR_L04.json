@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "DME required. MISSED APPROACH: Climb to 900 then climbing Rwy 4 helicopter visibility reduction below 3 SM NA. left turn to 2600 on heading 180 and GVE VORTAC R-028 to NISAE/GVE 22.9 DME and hold.",
+  "climb_altitude": 2600,
+  "waypoints": [
+    "NISAE"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "NISAE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

@@ -1,0 +1,21 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 4500 then climbing left turn to 6900 direct BFF VORTAC and hold, continue climb-in-hold to 6900.",
+  "climb_altitude": 6900,
+  "waypoints": [
+    "BFF"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "BFF",
+  "initial_track": null,
+  "turn_trigger": "4500",
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Missed approach box in upper right of plan view",
+    "climb_altitude": "climbing left turn to 6900 direct BFF VORTAC and hold, continue climb-in-hold to 6900",
+    "waypoints": "direct BFF VORTAC and hold",
+    "turn_direction": "climbing left turn",
+    "holding_required": "hold / continue climb-in-hold to 6900",
+    "holding_fix": "BFF VORTAC"
+  }
+}

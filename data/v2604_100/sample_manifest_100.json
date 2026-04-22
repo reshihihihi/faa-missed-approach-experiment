@@ -1,0 +1,1412 @@
+[
+  {
+    "id": "KABE_I06",
+    "image": "00015IL6_p0.png",
+    "airport": "KABE",
+    "proc_ident": "I06",
+    "chart_name": "ILS OR LOC RWY 06",
+    "holding_required": true,
+    "total_legs": 9,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "MUDRE"
+      }
+    ]
+  },
+  {
+    "id": "KALS_I02",
+    "image": "00018IL2_p0.png",
+    "airport": "KALS",
+    "proc_ident": "I02",
+    "chart_name": "ILS OR LOC RWY 02",
+    "holding_required": true,
+    "total_legs": 14,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "ALS"
+      }
+    ]
+  },
+  {
+    "id": "KAMA_I04",
+    "image": "00019IL4_p0.png",
+    "airport": "KAMA",
+    "proc_ident": "I04",
+    "chart_name": "ILS OR LOC RWY 04",
+    "holding_required": true,
+    "total_legs": 22,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "CAUDE"
+      }
+    ]
+  },
+  {
+    "id": "KAPC_I01L",
+    "image": "00281ILZ1L_p0.png",
+    "airport": "KAPC",
+    "proc_ident": "I01L",
+    "chart_name": "ILS OR LOC Z RWY 01L",
+    "holding_required": true,
+    "total_legs": 13,
+    "ma_leg_count": 4,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "BURDE"
+      }
+    ]
+  },
+  {
+    "id": "KATL_I09R",
+    "image": "00026IL9R_p0.png",
+    "airport": "KATL",
+    "proc_ident": "I09R",
+    "chart_name": "ILS OR LOC RWY 09R",
+    "holding_required": true,
+    "total_legs": 13,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "CONNI"
+      }
+    ]
+  },
+  {
+    "id": "KAUS_I18L",
+    "image": "00556IL18L_p0.png",
+    "airport": "KAUS",
+    "proc_ident": "I18L",
+    "chart_name": "ILS OR LOC RWY 18L",
+    "holding_required": true,
+    "total_legs": 14,
+    "ma_leg_count": 4,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "HOOKK"
+      }
+    ]
+  },
+  {
+    "id": "KAVL_I17",
+    "image": "05061IL17_p0.png",
+    "airport": "KAVL",
+    "proc_ident": "I17",
+    "chart_name": "ILS OR LOC RWY 17",
+    "holding_required": true,
+    "total_legs": 17,
+    "ma_leg_count": 2,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "BRA"
+      }
+    ]
+  },
+  {
+    "id": "KAYS_I19-Z",
+    "image": "00994IZLZ19_p0.png",
+    "airport": "KAYS",
+    "proc_ident": "I19-Z",
+    "chart_name": "ILS Z OR LOC Z RWY 19",
+    "holding_required": true,
+    "total_legs": 9,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "AY"
+      }
+    ]
+  },
+  {
+    "id": "KBMI_I29",
+    "image": "05058IL29_p0.png",
+    "airport": "KBMI",
+    "proc_ident": "I29",
+    "chart_name": "ILS OR LOC RWY 29",
+    "holding_required": true,
+    "total_legs": 9,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "PIA"
+      }
+    ]
+  },
+  {
+    "id": "KBUY_I06-Z",
+    "image": "05694IZLZ6_p0.png",
+    "airport": "KBUY",
+    "proc_ident": "I06-Z",
+    "chart_name": "ILS Z OR LOC Z RWY 06",
+    "holding_required": true,
+    "total_legs": 11,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "LIB"
+      }
+    ]
+  },
+  {
+    "id": "KBWG_I03-Y",
+    "image": "00605IYLY3_p0.png",
+    "airport": "KBWG",
+    "proc_ident": "I03-Y",
+    "chart_name": "ILS Y OR LOC Y RWY 03",
+    "holding_required": true,
+    "total_legs": 7,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "NOORA"
+      }
+    ]
+  },
+  {
+    "id": "KCFO_I26",
+    "image": "06851IL26_p0.png",
+    "airport": "KCFO",
+    "proc_ident": "I26",
+    "chart_name": "ILS OR LOC RWY 26",
+    "holding_required": true,
+    "total_legs": 10,
+    "ma_leg_count": 4,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "SKIPI"
+      }
+    ]
+  },
+  {
+    "id": "KCMH_I10R",
+    "image": "00094IL10R_p0.png",
+    "airport": "KCMH",
+    "proc_ident": "I10R",
+    "chart_name": "ILS OR LOC RWY 10R",
+    "holding_required": true,
+    "total_legs": 12,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "BU"
+      }
+    ]
+  },
+  {
+    "id": "KAVP_L04",
+    "image": "00661IL4_p0.png",
+    "airport": "KAVP",
+    "proc_ident": "L04",
+    "chart_name": "ILS OR LOC RWY 04",
+    "holding_required": false,
+    "total_legs": 11,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KAXH_L09",
+    "image": "06575L9_p0.png",
+    "airport": "KAXH",
+    "proc_ident": "L09",
+    "chart_name": "LOC RWY 09",
+    "holding_required": false,
+    "total_legs": 6,
+    "ma_leg_count": 2,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KBDL_L33",
+    "image": "00460IL33_p0.png",
+    "airport": "KBDL",
+    "proc_ident": "L33",
+    "chart_name": "ILS OR LOC RWY 33",
+    "holding_required": false,
+    "total_legs": 11,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KBDR_L06",
+    "image": "00621IL6_p0.png",
+    "airport": "KBDR",
+    "proc_ident": "L06",
+    "chart_name": "ILS OR LOC RWY 06",
+    "holding_required": false,
+    "total_legs": 10,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KBFF_L12",
+    "image": "00383ILD12_p0.png",
+    "airport": "KBFF",
+    "proc_ident": "L12",
+    "chart_name": "ILS OR LOC/DME RWY 12",
+    "holding_required": false,
+    "total_legs": 11,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KBOS_L15R",
+    "image": "00058IL15R_p0.png",
+    "airport": "KBOS",
+    "proc_ident": "L15R",
+    "chart_name": "ILS OR LOC RWY 15R",
+    "holding_required": false,
+    "total_legs": 10,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KBUR_L08-Z",
+    "image": "00067IZLZ8_p0.png",
+    "airport": "KBUR",
+    "proc_ident": "L08-Z",
+    "chart_name": "ILS Z OR LOC Z RWY 08",
+    "holding_required": false,
+    "total_legs": 23,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KBYL_L20",
+    "image": "10311L20_p0.png",
+    "airport": "KBYL",
+    "proc_ident": "L20",
+    "chart_name": "LOC RWY 20",
+    "holding_required": false,
+    "total_legs": 9,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KCEC_L12",
+    "image": "00034IL12_p0.png",
+    "airport": "KCEC",
+    "proc_ident": "L12",
+    "chart_name": "ILS OR LOC RWY 12",
+    "holding_required": false,
+    "total_legs": 17,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KCFO_L17",
+    "image": "06851IL17_p0.png",
+    "airport": "KCFO",
+    "proc_ident": "L17",
+    "chart_name": "ILS OR LOC RWY 17",
+    "holding_required": false,
+    "total_legs": 12,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KCOE_L06",
+    "image": "00527IL6_p0.png",
+    "airport": "KCOE",
+    "proc_ident": "L06",
+    "chart_name": "ILS OR LOC RWY 06",
+    "holding_required": false,
+    "total_legs": 22,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KCRP_L36",
+    "image": "05032IL36_p0.png",
+    "airport": "KCRP",
+    "proc_ident": "L36",
+    "chart_name": "ILS OR LOC RWY 36",
+    "holding_required": false,
+    "total_legs": 17,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KCRW_L05",
+    "image": "00852IL5_p0.png",
+    "airport": "KCRW",
+    "proc_ident": "L05",
+    "chart_name": "ILS OR LOC RWY 05",
+    "holding_required": false,
+    "total_legs": 10,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KALN_L29",
+    "image": "05178IL29_p0.png",
+    "airport": "KALN",
+    "proc_ident": "L29",
+    "chart_name": "ILS OR LOC RWY 29",
+    "holding_required": true,
+    "total_legs": 10,
+    "ma_leg_count": 4,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "TOPAZ"
+      }
+    ]
+  },
+  {
+    "id": "KALO_L12",
+    "image": "00945IL12_p0.png",
+    "airport": "KALO",
+    "proc_ident": "L12",
+    "chart_name": "ILS OR LOC RWY 12",
+    "holding_required": true,
+    "total_legs": 12,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "DEWAR"
+      }
+    ]
+  },
+  {
+    "id": "KAWM_L17",
+    "image": "05386IL17_p0.png",
+    "airport": "KAWM",
+    "proc_ident": "L17",
+    "chart_name": "ILS OR LOC RWY 17",
+    "holding_required": true,
+    "total_legs": 9,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "GQE"
+      }
+    ]
+  },
+  {
+    "id": "KBPT_L12",
+    "image": "00521IL12_p0.png",
+    "airport": "KBPT",
+    "proc_ident": "L12",
+    "chart_name": "ILS OR LOC RWY 12",
+    "holding_required": true,
+    "total_legs": 9,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "SBI"
+      }
+    ]
+  },
+  {
+    "id": "KBRD_L34",
+    "image": "05182IL34_p0.png",
+    "airport": "KBRD",
+    "proc_ident": "L34",
+    "chart_name": "ILS OR LOC RWY 34",
+    "holding_required": true,
+    "total_legs": 14,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "BR"
+      }
+    ]
+  },
+  {
+    "id": "KBTL_L23R",
+    "image": "00041IL23R_p0.png",
+    "airport": "KBTL",
+    "proc_ident": "L23R",
+    "chart_name": "ILS OR LOC RWY 23R",
+    "holding_required": true,
+    "total_legs": 7,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "VVTEN"
+      }
+    ]
+  },
+  {
+    "id": "KBTP_L08",
+    "image": "00899IL8_p0.png",
+    "airport": "KBTP",
+    "proc_ident": "L08",
+    "chart_name": "ILS OR LOC RWY 08",
+    "holding_required": true,
+    "total_legs": 10,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "EWC"
+      }
+    ]
+  },
+  {
+    "id": "KBWI_L15L",
+    "image": "00804IL15L_p0.png",
+    "airport": "KBWI",
+    "proc_ident": "L15L",
+    "chart_name": "ILS OR LOC RWY 15L",
+    "holding_required": true,
+    "total_legs": 9,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "DUDDS"
+      }
+    ]
+  },
+  {
+    "id": "KCAK_L01",
+    "image": "00638IL1_p0.png",
+    "airport": "KCAK",
+    "proc_ident": "L01",
+    "chart_name": "ILS OR LOC RWY 01",
+    "holding_required": true,
+    "total_legs": 8,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "ACO"
+      }
+    ]
+  },
+  {
+    "id": "KCBF_L36",
+    "image": "05540IL36_p0.png",
+    "airport": "KCBF",
+    "proc_ident": "L36",
+    "chart_name": "ILS OR LOC RWY 36",
+    "holding_required": true,
+    "total_legs": 13,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "OVR"
+      }
+    ]
+  },
+  {
+    "id": "KCHA_L20",
+    "image": "00079IL20_p0.png",
+    "airport": "KCHA",
+    "proc_ident": "L20",
+    "chart_name": "ILS OR LOC RWY 20",
+    "holding_required": true,
+    "total_legs": 9,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "CQN"
+      }
+    ]
+  },
+  {
+    "id": "KCJR_L04",
+    "image": "05877L4_p0.png",
+    "airport": "KCJR",
+    "proc_ident": "L04",
+    "chart_name": "LOC RWY 04",
+    "holding_required": true,
+    "total_legs": 11,
+    "ma_leg_count": 4,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "NISAE"
+      }
+    ]
+  },
+  {
+    "id": "KAFN_RNV-B",
+    "image": "05335RB_p0.png",
+    "airport": "KAFN",
+    "proc_ident": "RNV-B",
+    "chart_name": "RNAV (GPS)-B",
+    "holding_required": false,
+    "total_legs": 8,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KAFN_RNV-C",
+    "image": "05335RC_p0.png",
+    "airport": "KAFN",
+    "proc_ident": "RNV-C",
+    "chart_name": "RNAV (GPS)-C",
+    "holding_required": false,
+    "total_legs": 11,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KAIB_RNV-A",
+    "image": "09483RA_p0.png",
+    "airport": "KAIB",
+    "proc_ident": "RNV-A",
+    "chart_name": "RNAV (GPS)-A",
+    "holding_required": false,
+    "total_legs": 8,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KANP_RNV-A",
+    "image": "09806RA_p0.png",
+    "airport": "KANP",
+    "proc_ident": "RNV-A",
+    "chart_name": "RNAV (GPS)-A",
+    "holding_required": false,
+    "total_legs": 9,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KAPT_R04",
+    "image": "05783R4_p0.png",
+    "airport": "KAPT",
+    "proc_ident": "R04",
+    "chart_name": "RNAV (GPS) RWY 04",
+    "holding_required": false,
+    "total_legs": 14,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KAPV_R18",
+    "image": "05822R18_p0.png",
+    "airport": "KAPV",
+    "proc_ident": "R18",
+    "chart_name": "RNAV (GPS) RWY 18",
+    "holding_required": false,
+    "total_legs": 17,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KAQW_RNV-A",
+    "image": "10089RA_p0.png",
+    "airport": "KAQW",
+    "proc_ident": "RNV-A",
+    "chart_name": "RNAV (GPS)-A",
+    "holding_required": false,
+    "total_legs": 14,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KAQW_RNV-B",
+    "image": "10089RB_p0.png",
+    "airport": "KAQW",
+    "proc_ident": "RNV-B",
+    "chart_name": "RNAV (GPS)-B",
+    "holding_required": false,
+    "total_legs": 11,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KAVQ_R12",
+    "image": "10213R12_p0.png",
+    "airport": "KAVQ",
+    "proc_ident": "R12",
+    "chart_name": "RNAV (GPS) RWY 12",
+    "holding_required": false,
+    "total_legs": 10,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KAVQ_R21",
+    "image": "10213R21_p0.png",
+    "airport": "KAVQ",
+    "proc_ident": "R21",
+    "chart_name": "RNAV (GPS) RWY 21",
+    "holding_required": false,
+    "total_legs": 12,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KAXH_R27",
+    "image": "06575R27_p0.png",
+    "airport": "KAXH",
+    "proc_ident": "R27",
+    "chart_name": "RNAV (GPS) RWY 27",
+    "holding_required": false,
+    "total_legs": 9,
+    "ma_leg_count": 3,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KBDH_R31",
+    "image": "10310R31_p0.png",
+    "airport": "KBDH",
+    "proc_ident": "R31",
+    "chart_name": "RNAV (GPS) RWY 31",
+    "holding_required": false,
+    "total_legs": 16,
+    "ma_leg_count": 1,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KBDN_R34",
+    "image": "05579R34_p0.png",
+    "airport": "KBDN",
+    "proc_ident": "R34",
+    "chart_name": "RNAV (GPS) RWY 34",
+    "holding_required": false,
+    "total_legs": 15,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KBJC_R12L",
+    "image": "05612R12L_p0.png",
+    "airport": "KBJC",
+    "proc_ident": "R12L",
+    "chart_name": "RNAV (GPS) RWY 12L",
+    "holding_required": false,
+    "total_legs": 13,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KBLF_R05",
+    "image": "00787R5_p0.png",
+    "airport": "KBLF",
+    "proc_ident": "R05",
+    "chart_name": "RNAV (GPS) RWY 05",
+    "holding_required": false,
+    "total_legs": 13,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KBMQ_R01",
+    "image": "05772R1_p0.png",
+    "airport": "KBMQ",
+    "proc_ident": "R01",
+    "chart_name": "RNAV (GPS) RWY 01",
+    "holding_required": false,
+    "total_legs": 10,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KBOS_R32",
+    "image": "00058R32_p0.png",
+    "airport": "KBOS",
+    "proc_ident": "R32",
+    "chart_name": "RNAV (GPS) RWY 32",
+    "holding_required": false,
+    "total_legs": 27,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KBTV_R33-Y",
+    "image": "00070RY33_p0.png",
+    "airport": "KBTV",
+    "proc_ident": "R33-Y",
+    "chart_name": "RNAV (GPS) Y RWY 33",
+    "holding_required": false,
+    "total_legs": 15,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KBUR_R08-Z",
+    "image": "00067RZ8_p0.png",
+    "airport": "KBUR",
+    "proc_ident": "R08-Z",
+    "chart_name": "RNAV (GPS) Z RWY 08",
+    "holding_required": false,
+    "total_legs": 14,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KBWC_R26",
+    "image": "06932R26_p0.png",
+    "airport": "KBWC",
+    "proc_ident": "R26",
+    "chart_name": "RNAV (GPS) RWY 26",
+    "holding_required": false,
+    "total_legs": 10,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KCAG_R07",
+    "image": "06338R7_p0.png",
+    "airport": "KCAG",
+    "proc_ident": "R07",
+    "chart_name": "RNAV (GPS) RWY 07",
+    "holding_required": false,
+    "total_legs": 10,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KCBE_R05",
+    "image": "05263R5_p0.png",
+    "airport": "KCBE",
+    "proc_ident": "R05",
+    "chart_name": "RNAV (GPS) RWY 05",
+    "holding_required": false,
+    "total_legs": 9,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KCEA_RNV-D",
+    "image": "05142RD_p0.png",
+    "airport": "KCEA",
+    "proc_ident": "RNV-D",
+    "chart_name": "RNAV (GPS)-D",
+    "holding_required": false,
+    "total_legs": 11,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KCII_R33",
+    "image": "06814R33_p0.png",
+    "airport": "KCII",
+    "proc_ident": "R33",
+    "chart_name": "RNAV (GPS) RWY 33",
+    "holding_required": false,
+    "total_legs": 11,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KCOE_R02",
+    "image": "00527R2_p0.png",
+    "airport": "KCOE",
+    "proc_ident": "R02",
+    "chart_name": "RNAV (GPS) RWY 02",
+    "holding_required": false,
+    "total_legs": 13,
+    "ma_leg_count": 0,
+    "ma_holding_legs": []
+  },
+  {
+    "id": "KACT_R32",
+    "image": "00439R32_p0.png",
+    "airport": "KACT",
+    "proc_ident": "R32",
+    "chart_name": "RNAV (GPS) RWY 32",
+    "holding_required": true,
+    "total_legs": 16,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "EVVIS"
+      }
+    ]
+  },
+  {
+    "id": "KADF_R22",
+    "image": "05756R22_p0.png",
+    "airport": "KADF",
+    "proc_ident": "R22",
+    "chart_name": "RNAV (GPS) RWY 22",
+    "holding_required": true,
+    "total_legs": 9,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "CUBUG"
+      }
+    ]
+  },
+  {
+    "id": "KAKH_R03",
+    "image": "06081R3_p0.png",
+    "airport": "KAKH",
+    "proc_ident": "R03",
+    "chart_name": "RNAV (GPS) RWY 03",
+    "holding_required": true,
+    "total_legs": 13,
+    "ma_leg_count": 5,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "GAFFE"
+      }
+    ]
+  },
+  {
+    "id": "KANY_R18",
+    "image": "00533R18_p0.png",
+    "airport": "KANY",
+    "proc_ident": "R18",
+    "chart_name": "RNAV (GPS) RWY 18",
+    "holding_required": true,
+    "total_legs": 13,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "UZZUF"
+      }
+    ]
+  },
+  {
+    "id": "KAOO_R03-Z",
+    "image": "00100RZ3_p0.png",
+    "airport": "KAOO",
+    "proc_ident": "R03-Z",
+    "chart_name": "RNAV (GPS) Z RWY 03",
+    "holding_required": true,
+    "total_legs": 9,
+    "ma_leg_count": 4,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "GANEC"
+      }
+    ]
+  },
+  {
+    "id": "KAOO_R21",
+    "image": "00100R21_p0.png",
+    "airport": "KAOO",
+    "proc_ident": "R21",
+    "chart_name": "RNAV (GPS) RWY 21",
+    "holding_required": true,
+    "total_legs": 10,
+    "ma_leg_count": 4,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "CRYSS"
+      }
+    ]
+  },
+  {
+    "id": "KARG_R04",
+    "image": "00441R4_p0.png",
+    "airport": "KARG",
+    "proc_ident": "R04",
+    "chart_name": "RNAV (GPS) RWY 04",
+    "holding_required": true,
+    "total_legs": 9,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "ESEGE"
+      }
+    ]
+  },
+  {
+    "id": "KATW_R21",
+    "image": "05216R21_p0.png",
+    "airport": "KATW",
+    "proc_ident": "R21",
+    "chart_name": "RNAV (GPS) RWY 21",
+    "holding_required": true,
+    "total_legs": 14,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "APIXE"
+      }
+    ]
+  },
+  {
+    "id": "KAVP_R22",
+    "image": "00661R22_p0.png",
+    "airport": "KAVP",
+    "proc_ident": "R22",
+    "chart_name": "RNAV (GPS) RWY 22",
+    "holding_required": true,
+    "total_legs": 9,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "LOPEZ"
+      }
+    ]
+  },
+  {
+    "id": "KAWG_R36",
+    "image": "06289R36_p0.png",
+    "airport": "KAWG",
+    "proc_ident": "R36",
+    "chart_name": "RNAV (GPS) RWY 36",
+    "holding_required": true,
+    "total_legs": 9,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "GANAD"
+      }
+    ]
+  },
+  {
+    "id": "KAXN_R22",
+    "image": "00014R22_p0.png",
+    "airport": "KAXN",
+    "proc_ident": "R22",
+    "chart_name": "RNAV (GPS) RWY 22",
+    "holding_required": true,
+    "total_legs": 15,
+    "ma_leg_count": 5,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "TILER"
+      }
+    ]
+  },
+  {
+    "id": "KAXV_R26",
+    "image": "06065R26_p0.png",
+    "airport": "KAXV",
+    "proc_ident": "R26",
+    "chart_name": "RNAV (GPS) RWY 26",
+    "holding_required": true,
+    "total_legs": 12,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "ZUKEC"
+      }
+    ]
+  },
+  {
+    "id": "KAZC_R29",
+    "image": "09194R29_p0.png",
+    "airport": "KAZC",
+    "proc_ident": "R29",
+    "chart_name": "RNAV (GPS) RWY 29",
+    "holding_required": true,
+    "total_legs": 22,
+    "ma_leg_count": 4,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "MGHEE"
+      }
+    ]
+  },
+  {
+    "id": "KBFD_R14",
+    "image": "00926R14_p0.png",
+    "airport": "KBFD",
+    "proc_ident": "R14",
+    "chart_name": "RNAV (GPS) RWY 14",
+    "holding_required": true,
+    "total_legs": 13,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "NIMEE"
+      }
+    ]
+  },
+  {
+    "id": "KBJI_R31",
+    "image": "05174R31_p0.png",
+    "airport": "KBJI",
+    "proc_ident": "R31",
+    "chart_name": "RNAV (GPS) RWY 31",
+    "holding_required": true,
+    "total_legs": 13,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "TEGAE"
+      }
+    ]
+  },
+  {
+    "id": "KBKW_R01",
+    "image": "00788R1_p0.png",
+    "airport": "KBKW",
+    "proc_ident": "R01",
+    "chart_name": "RNAV (GPS) RWY 01",
+    "holding_required": true,
+    "total_legs": 14,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "YISUK"
+      }
+    ]
+  },
+  {
+    "id": "KBKX_R30",
+    "image": "00969R30_p0.png",
+    "airport": "KBKX",
+    "proc_ident": "R30",
+    "chart_name": "RNAV (GPS) RWY 30",
+    "holding_required": true,
+    "total_legs": 12,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "CYMOL"
+      }
+    ]
+  },
+  {
+    "id": "KBLV_R32RY",
+    "image": "00046RRZ14L_p0.png",
+    "airport": "KBLV",
+    "proc_ident": "R32RY",
+    "chart_name": "RNAV (RNP) Z RWY 14L",
+    "holding_required": true,
+    "total_legs": 11,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "COFEY"
+      }
+    ]
+  },
+  {
+    "id": "KBTR_R04L",
+    "image": "00040R4L_p0.png",
+    "airport": "KBTR",
+    "proc_ident": "R04L",
+    "chart_name": "RNAV (GPS) RWY 04L",
+    "holding_required": true,
+    "total_legs": 9,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "KUREC"
+      }
+    ]
+  },
+  {
+    "id": "KBUM_R18",
+    "image": "00964R18_p0.png",
+    "airport": "KBUM",
+    "proc_ident": "R18",
+    "chart_name": "RNAV (GPS) RWY 18",
+    "holding_required": true,
+    "total_legs": 14,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "FONIE"
+      }
+    ]
+  },
+  {
+    "id": "KBVY_R34",
+    "image": "05039R34_p0.png",
+    "airport": "KBVY",
+    "proc_ident": "R34",
+    "chart_name": "RNAV (GPS) RWY 34",
+    "holding_required": true,
+    "total_legs": 10,
+    "ma_leg_count": 4,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "WAKBI"
+      }
+    ]
+  },
+  {
+    "id": "KBXA_R18",
+    "image": "06397R18_p0.png",
+    "airport": "KBXA",
+    "proc_ident": "R18",
+    "chart_name": "RNAV (GPS) RWY 18",
+    "holding_required": true,
+    "total_legs": 9,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "LOCHS"
+      }
+    ]
+  },
+  {
+    "id": "KBYH_R36",
+    "image": "00054R36_p0.png",
+    "airport": "KBYH",
+    "proc_ident": "R36",
+    "chart_name": "RNAV (GPS) RWY 36",
+    "holding_required": true,
+    "total_legs": 9,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "CEDVA"
+      }
+    ]
+  },
+  {
+    "id": "KBYI_R20",
+    "image": "00068R20_p0.png",
+    "airport": "KBYI",
+    "proc_ident": "R20",
+    "chart_name": "RNAV (GPS) RWY 20",
+    "holding_required": true,
+    "total_legs": 19,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "IREME"
+      }
+    ]
+  },
+  {
+    "id": "KCAO_R02",
+    "image": "09063R2_p0.png",
+    "airport": "KCAO",
+    "proc_ident": "R02",
+    "chart_name": "RNAV (GPS) RWY 02",
+    "holding_required": true,
+    "total_legs": 14,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "CEBBA"
+      }
+    ]
+  },
+  {
+    "id": "KCBF_R36",
+    "image": "05540R36_p0.png",
+    "airport": "KCBF",
+    "proc_ident": "R36",
+    "chart_name": "RNAV (GPS) RWY 36",
+    "holding_required": true,
+    "total_legs": 17,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "IPORE"
+      }
+    ]
+  },
+  {
+    "id": "KCDI_R04",
+    "image": "05993R4_p0.png",
+    "airport": "KCDI",
+    "proc_ident": "R04",
+    "chart_name": "RNAV (GPS) RWY 04",
+    "holding_required": true,
+    "total_legs": 13,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "ILAXE"
+      }
+    ]
+  },
+  {
+    "id": "KCDR_R03",
+    "image": "00506R3_p0.png",
+    "airport": "KCDR",
+    "proc_ident": "R03",
+    "chart_name": "RNAV (GPS) RWY 03",
+    "holding_required": true,
+    "total_legs": 13,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "EDUQA"
+      }
+    ]
+  },
+  {
+    "id": "KCDS_R36",
+    "image": "00082R36_p0.png",
+    "airport": "KCDS",
+    "proc_ident": "R36",
+    "chart_name": "RNAV (GPS) RWY 36",
+    "holding_required": true,
+    "total_legs": 17,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "JAPUX"
+      }
+    ]
+  },
+  {
+    "id": "KCGI_R10",
+    "image": "00943R10_p0.png",
+    "airport": "KCGI",
+    "proc_ident": "R10",
+    "chart_name": "RNAV (GPS) RWY 10",
+    "holding_required": true,
+    "total_legs": 9,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "FISAV"
+      }
+    ]
+  },
+  {
+    "id": "KCHO_R03",
+    "image": "00765R3_p0.png",
+    "airport": "KCHO",
+    "proc_ident": "R03",
+    "chart_name": "RNAV (GPS) RWY 03",
+    "holding_required": true,
+    "total_legs": 16,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "GVE"
+      }
+    ]
+  },
+  {
+    "id": "KCHQ_R36",
+    "image": "06198R36_p0.png",
+    "airport": "KCHQ",
+    "proc_ident": "R36",
+    "chart_name": "RNAV (GPS) RWY 36",
+    "holding_required": true,
+    "total_legs": 8,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "JELVA"
+      }
+    ]
+  },
+  {
+    "id": "KCIC_R13L",
+    "image": "00557R13L_p0.png",
+    "airport": "KCIC",
+    "proc_ident": "R13L",
+    "chart_name": "RNAV (GPS) RWY 13L",
+    "holding_required": true,
+    "total_legs": 10,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "UNJED"
+      }
+    ]
+  },
+  {
+    "id": "KCLL_R11",
+    "image": "00928R11_p0.png",
+    "airport": "KCLL",
+    "proc_ident": "R11",
+    "chart_name": "RNAV (GPS) RWY 11",
+    "holding_required": true,
+    "total_legs": 11,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "EDAYA"
+      }
+    ]
+  },
+  {
+    "id": "KCNC_R10",
+    "image": "06068R10_p0.png",
+    "airport": "KCNC",
+    "proc_ident": "R10",
+    "chart_name": "RNAV (GPS) RWY 10",
+    "holding_required": true,
+    "total_legs": 13,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "EBORE"
+      }
+    ]
+  },
+  {
+    "id": "KCOI_R11",
+    "image": "06988R11_p0.png",
+    "airport": "KCOI",
+    "proc_ident": "R11",
+    "chart_name": "RNAV (GPS) RWY 11",
+    "holding_required": true,
+    "total_legs": 15,
+    "ma_leg_count": 4,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "MLB"
+      }
+    ]
+  },
+  {
+    "id": "KCRS_R32",
+    "image": "05998R32_p0.png",
+    "airport": "KCRS",
+    "proc_ident": "R32",
+    "chart_name": "RNAV (GPS) RWY 32",
+    "holding_required": true,
+    "total_legs": 13,
+    "ma_leg_count": 3,
+    "ma_holding_legs": [
+      {
+        "rt_type": "HM",
+        "wpt_ident": "HOXDE"
+      }
+    ]
+  }
+]

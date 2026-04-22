@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 1000+ft -> VI -> CF TOPAZ 2200+ft -> HM TOPAZ 2200+ft",
+  "climb_altitude": 2200,
+  "waypoints": [
+    "TOPAZ"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "TOPAZ",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

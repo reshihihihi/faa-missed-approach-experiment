@@ -1,0 +1,119 @@
+AL-10213 (FAA)
+25275
+WAAS
+APP CRS
+Rwy Ldg
+6901
+RNAV (GPS) RWY 12
+CH 58324
+TDZE
+2022
+W12A
+138°
+Apt Elev
+2032
+MARANA RGNL (AVQ)
+RNP APCH - GPS.
+MISSED APPROACH: Climb to 2600 then climbing left turn to
+ANA
+Helicopter visibility reduction below 3% SM NA.
+6500 direct PICLI and hold, continue climb-in-hold to 6500.
+AWOS-3
+TUCSON APP CON
+UNICOM
+118.375
+119.4 318.1
+123.0 (CTAF)0
+128°
+(IAF)
+6 NM
+PICLI
+4900
+085°
+(IF)
+(11.1)
+CITUT
+Procedure NA for arrivals at PICU
+on V16 northwest bound.
+A100
+89
+b
+SECBO
+3000
+168°
+(4.1)
+C00OO
+(A)
+PAPAP
+88
+Final approach course offset 1 4.98°.
+ELEV 2032
+TDZE 2022
+(MAP)
+O
+ZIBAR
+2080
+138°
+z
+2600
+6500
+PICLI
+0.3% UP
+CITUT
+SECBO
+#
+6901 X 100
+4900
+-168°
+PAPBI
+21
+0.6 NM to
+4100
+3.24°
+ZIBAR
+TCH 45
+ZIBAR
+3300
+x
+-138°
+3892X 75
+3
+6.2 NM
+-4.1 NM
+-2.5 NM
+0.6
+90
+CL
+A
+9
+D
+a
+LP
+MDA
+2420-1
+398 (400-1)
+2420-1½
+NA
+398 (400-1%)
+LNAV MDA
+2440-1
+418 (500-1)
+2640-13/
+REIL Rwys 3 and 21
+618 (700-13/)
+NA
+REIL Rwys 12 and 30
+2440-1
+2540-1
+2680-13/
+MIRL Rwys 3-21 and 12-30
+CIRCLING
+408 (500-1)
+508 (600-1)
+648 (700-13/)
+NA
+MARANA, ARIZONA
+MARANA RGNL (AVQ)
+Amdt 2 02OCT25
+32°25'N-111°13'W
+RNAV (GPS) RWY 12

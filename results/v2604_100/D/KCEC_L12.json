@@ -1,0 +1,26 @@
+{
+  "raw_instruction": "Climb to 700 then climbing right turn to 3000 on CEC VORTAC R-166 to CHIDE/CEC 11 DME and hold, continue climb-in-hold to 3000.",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "CEC",
+    "CHIDE"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "CHIDE",
+  "initial_track": "R-166",
+  "turn_trigger": "700",
+  "holding_details": {
+    "track": "R-166",
+    "direction": "unknown",
+    "leg_time": null
+  },
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH box in upper right of chart",
+    "climb_altitude": "climb-in-hold to 3000 / 3000 on CEC VORTAC R-166",
+    "waypoints": "CEC VORTAC R-166 to CHIDE/CEC 11 DME",
+    "turn_direction": "climbing right turn",
+    "holding_required": "and hold depicted in missed approach text and profile view",
+    "holding_fix": "CHIDE/CEC 11 DME"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb Rwy 14 helicopter visibility reduction below 3 SM NA. When local altimeter setting to 500 then climbing left turn Å",
+  "climb_altitude": 500,
+  "waypoints": [
+    "RWY",
+    "WHEN",
+    "LOCAL"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": false,
+  "holding_fix": null,
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

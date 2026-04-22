@@ -1,0 +1,29 @@
+{
+  "raw_instruction": "Climb to 3000 direct ONBOE and hold.",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "ONBOE"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "ONBOE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 3000 direct ONBOE and hold.",
+    "climb_altitude": "3000",
+    "waypoints": "ONBOE labeled on chart and in missed approach text",
+    "turn_direction": "No turn direction stated",
+    "holding_required": "Chart states 'and hold' with racetrack symbol at ONBOE",
+    "holding_fix": "ONBOE labeled at holding pattern"
+  },
+  "_questionnaire": {
+    "Q1": "yes",
+    "Q2": "yes",
+    "Q3": "yes",
+    "Q4": "no",
+    "Q5": "yes",
+    "Q6": "yes"
+  }
+}

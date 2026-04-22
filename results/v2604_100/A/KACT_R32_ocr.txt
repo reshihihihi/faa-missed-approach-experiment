@@ -1,0 +1,154 @@
+AL-439 (FAA)
+25163
+WAAS
+APP CRS
+Rwy Ldg
+CH 69420
+5103
+TDZE
+516
+RNAV (GPS) RWY 32
+W32A
+322°
+Apt Elev
+516
+WACO RGNL (ACT)
+T
+DME/DME RNP-O.3 NA. When local altimeter setting not received use Mc Gregor
+A
+Exec altimeter setting and increase all DA 31 feet and all MDA 40 feet; increase
+MISSED APPROACH:
+LPV and LNAV/VNAV all Cats and LNAV Cats C/D visibility 1/ mile and Circling
+Climb to 4000 direct
+ASR
+Cat D visibility  mile.For uncompensated Baro-VNAV systems, LNAV/VNAV
+EVVIS and hold,
+NA below -13°C (9°F) or above 54°C (130°F). Baro-VNÁV NA when using Mc Gregor
+continue climb-in-hold
+Exec altimeter setting. VDP NA with Mc Gregor Exec altimeter setting.
+to 4000.
+ATIS
+WACO APP CON *
+WACO TOWER *
+GND CON
+UNICOM
+123.85
+127.65 227.125
+119.3(CTAF)0
+257.8
+121.9
+122.95
+MISSED APCH FIX
+u
+Procedure NA for arrivals
+DRILL
+4 NM
+1663
+at DRILL
+RW32
+608
+on V15-54 northeast bound.
+IWIFY
+O
+EVVIS
+9 NM to
+RW32
+(FAF)
+-1021
+SKOCH
+1049
+S
+(IF)
+IUNI
+3000
+(IAF)
+263
+PRKRR
+(8)
+3600
+00
+(IAF)
+Procedure NA for arrivals
+SATTY
+at SATTY
+on V15 southeast bound.
+Λ
+2541
+KOCYU
+2550
+ELEV
+516
+D
+TDZE
+516
+Procedure NA for arrivals
+at BARES
+(IAF)
+on V548 southbound.
+BARES
+61
+4000
+EVVIS
+ILINI
+N
+IWIFY
+A
+1.9 NM to
+SKOCH
+3000
+LNAV only
+RW32
+A
+7107 X150
+WN6'0*
+2100
+2200
+TOME2
+RMR
+*
+2100
+GP 3.00°
+5103 X 150
+*1160
+CH 59
+TWR
+0.9
+-1.0+
+-2.9 NM
+-6.7NM
+CATEGORY
+A
+B
+c
+D
+32
+LPV
+DA
+766-3½
+250 (300-3½4)
+322°
+LNAV/
+DA
+773-3
+257 (300-3½/)
+VNAV
+LNAV MDA
+860-1
+REIL Rwy 14
+344 (400-1)
+HIRL Rwy 1-19
+940-1
+980-1
+1020-11½2
+1160-2
+ CIRCLING
+MIRL Rwy 14-32
+424 (500-1)
+464 (500-1)
+504 (600-11/2)
+644 (700-2)
+WACO, TEXAS
+WACO RGNL (ACT)
+Orig-D 02APR15
+31°37'N-97°14'W
+RNAV (GPS) RWY 32

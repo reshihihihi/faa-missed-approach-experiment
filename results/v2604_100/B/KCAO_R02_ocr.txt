@@ -1,0 +1,144 @@
+ATTON, NEW MEXICO
+AL-9063 (FAA)
+WAAS
+Rwy Idg
+24249
+APP CRS
+5917
+CH 69233
+TDZE
+4967
+RNAV (GPS) RWY 2
+021°
+W02A
+Apt Elev
+4970
+CLAYTON MUNI AIRPARK (CAO)
+For uncompensated Baro-VNAV systems, LNAV/VNAV NA below -16°C (4°F) or above
+4°C (130°F). Circling NA west of Rwy 2-20. DME/DME RNP-0.3 NA. When
+A
+local altimeter setting not received, use Dalhart altimeter setting and increase all DA 227
+feet and all MDA 240 feet, increase LPV all Cats visibility 7/ mile, increase LNAV/VNAV
+MISSED APPROACH: Climb to
+all Cats visibility 1 mile, increase LNAV Cat C visibility 5% mile, and increase Circling
+8000 direct CEBBA and hold,
+Cat C visibility  mile. Baro-VNAV NA when using Dalhart altimeter setting. VDP NA
+continue climb-in-hold to 8000.
+with Dalhart altimeter setting.
+ASOS
+ALBUQUERQUE CENTER
+UNICOM
+120.625
+127.85 285.475
+122.8 (CTAF)
+MISSED APCH FIX
+5448
+Δ
+7 NM
+RW02
+5013
+…
+5091
+Λ
+CEBBA
+ZEMIB
+3 NM to
+(FAF)
+RW02
+ACERO
+O
+25 NM
+(IF/IAF)
+7900
+ACAV
+2200
+0
+7600 NoPT
+337 (6.2)
+Procedure NA for arrivals on DHT
+7 NM
+VORTAC airway radials 234 CW 312.
+9000
+DALHART
+(IAF)
+-270°
+DHT
+021
+7600 NoPT
+(23.6)
+DUBEC
+(34.4)
+ELEV 4970
+TDZE 4967
+(IAF)
+Procedure NA for arrivals at
+ASOYA
+ASOYA on V190 westbound.
+8000
+CEBBA
+20
+WNZ
+Hoo buar
+cCC
+ACG
+-201°
+ZEMIB
+7600
+6700
+3 NM to
+*LNAV only.
+12
+021°→
+-021°
+RW02 *1.1 NM to
+¤
+4105 X 60
+*.
+RW02
+6700
+RW02
+GP 3.00°
+*5960
+TCH 49
+He....
+30
+6 NM
+-2.3 NM
+--1.9 NM--
+1.1 NM
+CATEGORY
+A
+B
+c
+D
+LPV
+DA
+5217-3/ 250 (300-3)
+NA
+LNAV/
+DA
+5367-13½
+400 (400-13/)
+NA
+VNAV
+021°
+5360-11/
+LNAV MDA
+5360-1
+393 (400-1)
+393 (400-1/8)
+NA
+5360-1
+5420-1
+5420-11½2
+CIRCLING
+NA
+390 (400-1)
+450 (500-1)
+450 (500-1½/)
+MIRL Rwys 2-20 and 12-30
+CLAYTON MUNI AIRPARK (CAO)
+CLAYTON, NEW MEXICO
+Amdt 2A 05MAR15
+36°27'N-103°09'W
+RNAV (GPS) RWY 2

@@ -1,0 +1,26 @@
+{
+  "raw_instruction": "Climb to 3000 direct KOCEC and on track 084° to LIZZI and hold.",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "KOCEC",
+    "LIZZI"
+  ],
+  "turn_direction": "unknown",
+  "holding_required": true,
+  "holding_fix": "LIZZI",
+  "initial_track": "084°",
+  "turn_trigger": "KOCEC",
+  "holding_details": {
+    "track": "084°",
+    "direction": "unknown",
+    "leg_time": null
+  },
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 3000 direct KOCEC and on track 084° to LIZZI and hold.",
+    "climb_altitude": "Climb to 3000",
+    "waypoints": "direct KOCEC and on track 084° to LIZZI and hold",
+    "turn_direction": "not explicitly stated",
+    "holding_required": "to LIZZI and hold",
+    "holding_fix": "to LIZZI and hold"
+  }
+}

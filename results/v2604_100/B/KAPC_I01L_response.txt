@@ -1,0 +1,25 @@
+```json
+{
+  "raw_instruction": "and hold, continue climb-in-hold to 3200. 321° hdg (1.9) and",
+  "climb_altitude": 3200,
+  "waypoints": ["BURDE", "SGD"],
+  "turn_direction": "unknown",
+  "holding_required": true,
+  "holding_fix": "BURDE",
+  "initial_track": "321°",
+  "turn_trigger": null,
+  "holding_details": {
+    "track": "230°",
+    "direction": "unknown",
+    "leg_time": "One Minute"
+  },
+  "evidence": {
+    "raw_instruction": "and hold, continue climb-in-hold to 3200. 321° hdg (1.9) and",
+    "climb_altitude": "continue climb-in-hold to 3200",
+    "waypoints": "BURDE INT/SGD 11. DME, SGD VORTAC",
+    "turn_direction": "not explicitly stated",
+    "holding_required": "Holding Pattern, continue climb-in-hold to 3200",
+    "holding_fix": "BURDE INT/SGD 11.3"
+  }
+}
+```

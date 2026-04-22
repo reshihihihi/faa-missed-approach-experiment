@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 40OO direct FONIE and hold, continue climb in hold to",
+  "climb_altitude": "unknown",
+  "waypoints": [
+    "FONIE"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "FONIE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

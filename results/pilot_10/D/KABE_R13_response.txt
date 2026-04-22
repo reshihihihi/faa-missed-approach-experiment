@@ -1,0 +1,28 @@
+QUESTIONNAIRE_ANSWERS:
+Q1: yes
+Q2: yes
+Q3: yes
+Q4: no
+Q5: yes
+Q6: yes
+
+JSON:
+{
+  "raw_instruction": "Climb to 3000 direct KOCEC and on track 084° to LIZZI and hold.",
+  "climb_altitude": 3000,
+  "waypoints": ["KOCEC", "LIZZI"],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "LIZZI",
+  "initial_track": "084",
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH box upper right: 'Climb to 3000 direct KOCEC and on track 084° to LIZZI and hold.'",
+    "climb_altitude": "3000 printed in missed approach instruction",
+    "waypoints": "KOCEC and LIZZI labeled in missed approach section and on plan view",
+    "turn_direction": "No turn direction stated",
+    "holding_required": "Word 'hold' explicitly stated; holding pattern depicted at LIZZI",
+    "holding_fix": "LIZZI labeled at holding pattern fix"
+  }
+}

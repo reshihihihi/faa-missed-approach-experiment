@@ -1,0 +1,173 @@
+JEUR D'ALENE, IDAHO
+AL-527 (FAA)
+25275
+LOC I-COE
+APP CRS
+Rwy Ldg
+7400
+ILS or LOC RWY 6
+110.7
+051°
+TDZE
+2291
+Apt Elev
+2320
+COEUR D'ALENE/PAPPY BOYINGTON FLD (COE)
+DME required.
+MISSED APPROACH: Climb to 2900 then
+T
+Circling Rwy 2 NA at night. Autopilot coupled approach NA below
+MALSR
+climbing left turn to 6000 on COE R-350
+2840. Simultaneous reception of I-COE localizer and COE DME
+outbound then climbing left turn to 6500 on
+required. Circling NA for Cat D southeast of Rwy 6-24.
+COE R-350 inbound to COE VOR/DME
+and hold.
+AWOS-3PT
+SPOKANE APP CON
+UNICOM
+135.075
+132.1 263.0
+122.8 (CTAF)
+COE
+25 NM
+DIANN
+MSA
+GEG
+40.3
+LOCALIZER
+110.7
+7700
+I-COE
+3000
+R30O
+CLASS
+GEG
+62.5
+7900
+ONUCU
+2359.231°
+-240°
+(27.7)
+CIPUT
+COE
+4.3
+HOLD
+6800
+5600
+COE[
+IAF
+7.4
+TIYOS
+SPOKANE
+COE
+0.7
+3000
+115.5 GEG
+4500
+6400 to POBIY
+COEUR D'ALENE
+Chan 102
+-231
+-051
+232° (14.3)
+108.8COE
+1 min
+(6.9)
+Chan 25
+-051
+(IF/IAF)
+231°
+POBIY
+R-054
+COE
+14.3
+5600 NoPT
+054°
+(20.8)
+HILIE
+MLP
+42.6
+Procedure NA for arrival on GEG VORTAC
+ELEV 2320
+TDZE 2291
+airway radials 006 CW 073.
+Use COE DME when on the
+2900
+6000
+COE
+6500
+COE
+COE
+localizer course.
+R-350
+R-350
+D
+POBIY
+outbnd
+inbnd
+One Minute
+COE
+14.3
+20
+Holding Pattern
+CIPUT
+2
+COE 7.4
+6800
+-231°
+ONUCU
+¤
+COE
+4.3
+7400 X 100
+5600
+051°
+051
+4500
+TIYOS
+COE
+0.7
+0.6% UP
+GS 3.00°
+4500
+3480
+051°
+TCH 56
+2
+-6.9 NM
+-3.1 NM-
+-3.6 NM
+CATEGORY
+A
+B
+C
+D
+S-ILS 6
+2491-1½
+200 (200-1/2)
+2860-1
+2860-11/4
+S-LOC 6
+2860-½
+569 (600-1/2)
+569 (600-1)
+569 (600-11/)
+MIRL Rwy 2-20
+2860-1
+2880-1
+3020-2
+3180-23/
+HIRL Rwy 6-24
+CIRCLING
+540 (600-1)
+560 (600-1)
+700 (700-2)
+860 (900-23/)
+REIL Rwys 2 and 240
+COEUR D'ALENE, IDAHO
+COEUR D'ALENE/PAPPY BOYINGTON FLD (COE
+Amdt 5G 15JUN23
+47°46'N-116°49'W
+ILS or IOC RWY 6

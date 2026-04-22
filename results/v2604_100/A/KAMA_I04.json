@@ -1,0 +1,11 @@
+{
+  "raw_instruction": "MISSED APPROACH: MALSR Climb to 4100 then climbing right turn to inop ALS when using Borger altimeter setting, increase visibility S-ILS 4 all Cats to 5500 and",
+  "climb_altitude": 5500,
+  "waypoints": [],
+  "turn_direction": "RIGHT",
+  "holding_required": false,
+  "holding_fix": null,
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

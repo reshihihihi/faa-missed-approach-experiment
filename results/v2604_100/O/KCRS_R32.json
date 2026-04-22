@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 900+ft -> DF HOXDE 2500+ft -> HM HOXDE 2500+ft",
+  "climb_altitude": 2500,
+  "waypoints": [
+    "HOXDE"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "HOXDE",
+  "initial_track": null,
+  "turn_trigger": "HOXDE",
+  "holding_details": null
+}

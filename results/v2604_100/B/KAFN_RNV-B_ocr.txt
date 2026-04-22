@@ -1,0 +1,96 @@
+JAFFREY, NEW HAMPSHIRE
+AL-5335 (FAA)
+26078
+APP CRS
+Rwy Ldg
+N/A
+TDZE
+N/A
+RNAV (GPS)-B
+023°
+Apt Elev
+1040
+JAFFREY AIRFIELD SILVER RANCH (AF'N)
+RNP APCH-GPS.
+When local altimeter setting not received, use Keene altimeter setting and increase
+all MDA 120 feet and all Cats visibility 1 mile. Procedure NA at night.
+MISSED APPROACH: Climb to
+Rwy 16 and 34 helicopter visibility reduction below 1 SM NA.
+3400 direct QOSNU and hold.
+ASOS
+BOSTON CENTER
+UNICOM
+135.875
+123.75 338.2
+122.8 (CTAF)
+2203
+-4 NM
+0ε0
+QOSNU
+(MAP)
+>
+UICAKE
+BUDAC
+1.7 NM to
+UCAKE
+(FAF)
+25 NM
+SCROB
+4400
+S
+NoPT for arrivals at GDM VOR/DME
+ELEV 1040
+on airway radials 179 CW 263.
+(IF/IAF)
+GARDNÉR
+2007
+GDM
+2Z0
+4 NM
+4 NM
+* 2020 when using Keene altimer setting.
+3400
+QOSNU
+2982 X 50
+Holding Pattern
+(ASPHALT)
+2982 X 134
+GARDNER
+SCROB
+BUDAC
+(TURF)
+GDM
+1.7 NM to
+203°
+UCAKE
+3000
+023°
+*
+023°→
+3000
+UCAKE
+0.9% UP
+*1900
+023°
+34
+8.9 NM
+-4.4 NM-
+-1.7NM-
+0.5
+CATEGORY
+A
+B
+c
+D
+1760-1
+1820-1
+CIRCLING
+NA
+780 (800-1)
+LIRL Rwy 16-34
+720 (800-1)
+JAFFREY, NEW HAMPSHIRE
+JAFFREY AIRFIELD SILVER RANCH (AF'N)
+42°48'N-72°00'W
+RNAV (GPS)-B
+Pria-A 22APR21

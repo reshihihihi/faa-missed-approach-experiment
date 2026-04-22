@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 2810+ft -> DF YISUK 5900+ft -> HM YISUK 5900+ft",
+  "climb_altitude": 5900,
+  "waypoints": [
+    "YISUK"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "YISUK",
+  "initial_track": null,
+  "turn_trigger": "YISUK",
+  "holding_details": null
+}

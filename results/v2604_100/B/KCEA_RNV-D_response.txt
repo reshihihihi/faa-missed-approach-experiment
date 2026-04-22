@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "Climbing left turn to 3600 direct BECNA and hold.",
+  "climb_altitude": 3600,
+  "waypoints": ["BECNA"],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "BECNA",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climbing left turn to 3600 direct BECNA and hold.",
+    "climb_altitude": "to 3600 direct BECNA",
+    "waypoints": "direct BECNA and hold",
+    "turn_direction": "Climbing left turn",
+    "holding_required": "direct BECNA and hold",
+    "holding_fix": "direct BECNA and hold"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to no able does ot appl LVand LAV/VNAV Cats. 2700 direct ESEGE and hold.",
+  "climb_altitude": 2700,
+  "waypoints": [
+    "ESEGE",
+    "LVAND"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "ESEGE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

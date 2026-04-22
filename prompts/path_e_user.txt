@@ -1,0 +1,1 @@
+This is a FAA Instrument Approach Procedure (IAP) chart. Follow the two-step process described in the system instructions: first answer the questionnaire, then extract the missed approach information into the JSON object.

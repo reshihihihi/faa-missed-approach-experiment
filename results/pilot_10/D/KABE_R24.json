@@ -1,0 +1,33 @@
+{
+  "raw_instruction": "Climb to 3000 direct SURGE and on track 266° to ETX VOR/DME and hold.",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "SURGE",
+    "ETX"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "ETX",
+  "initial_track": "266",
+  "turn_trigger": null,
+  "holding_details": {
+    "fix": "ETX",
+    "fix_type": "VOR/DME"
+  },
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 3000 direct SURGE and on track 266° to ETX VOR/DME and hold.",
+    "climb_altitude": "3000",
+    "waypoints": "SURGE and ETX labeled in missed approach section",
+    "turn_direction": "No turn direction stated",
+    "holding_required": "...and hold.",
+    "holding_fix": "ETX VOR/DME"
+  },
+  "_questionnaire": {
+    "Q1": "yes",
+    "Q2": "yes",
+    "Q3": "yes",
+    "Q4": "no",
+    "Q5": "yes",
+    "Q6": "yes"
+  }
+}

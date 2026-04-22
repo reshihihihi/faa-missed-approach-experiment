@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "1400 then climbing right turn to MISSED APPROACH: Climb to MALSR ADF required. DME or RADAR required. JOHN GLENN COLUMBUS INTL (CMH)",
+  "climb_altitude": 1400,
+  "waypoints": [
+    "GLENN"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": false,
+  "holding_fix": null,
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

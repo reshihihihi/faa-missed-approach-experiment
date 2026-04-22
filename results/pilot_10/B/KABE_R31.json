@@ -1,0 +1,21 @@
+{
+  "raw_instruction": "Climb to 3000 direct LOCID and hold.",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "LOCID"
+  ],
+  "turn_direction": "unknown",
+  "holding_required": true,
+  "holding_fix": "LOCID",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 3000 direct LOCID and hold.",
+    "climb_altitude": "to 3000 direct LOCID",
+    "waypoints": "direct LOCID and hold",
+    "turn_direction": "not found",
+    "holding_required": "direct LOCID and hold",
+    "holding_fix": "direct LOCID and hold"
+  }
+}

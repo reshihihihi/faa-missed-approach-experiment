@@ -1,0 +1,135 @@
+ROUGE, LOUISIANA
+AL-40 (FAA)
+WAAS
+Rwy Ldg
+7500
+25219
+CH 81825
+APP CRS
+TDZE
+69
+RNAV (GPS) RWY 4L
+W04A
+043°
+Apt Elev
+70
+BATON ROUGE METRO, RYAN FLD(BTR)
+T
+For uncompensated Baro-VNAV systems, LNAV/VNAV NA below -5°C (23°F) or above 54°C (130°F).
+DME/DME RNP-O.3 NA. Baro-VNAV and VDP NA when using Hammond altimeter setting. When
+A
+lol altimeter settg receivd Hammon altmeer setti and increas all A en all
+MDA 100 feet; increase LPV visibility mile all Cats, LNAV/VNAV visibility 1 mile al Cats and
+MISSED APPROACH:
+LNAV Cat C/D visibiliy  mile, Circling Cat C/D visibility  mile. Helicopter visibility reduction
+Climb to 2300 direct
+KUREC and hold.
+below 3 SM NA.
+ATIS
+BATON ROUGE APP CON*
+RYAN TOWER *
+GND CON
+CLNC DEL
+UNICOM
+125.2
+120.3
+278.3
+118.45 (CTAF)  257.8
+121.9
+119.4
+122.95
+MISSED APCH FIX
+4 NM
+L133°
+>
+2800
+HOGTO
+RW04L
+-133°
+2.2 NM to
+IBEKY
+RW04L
+366
+KUREC
+-313°
+(FAF)
+¤
+IBEKY
+GOCET
+-313°
+2800
+2000
+(IF/IAF)
+043°
+(6.9)
+IBEKY
+4 NM
+ELEV
+70
+D
+TDZE
+69
+4 NM
+2300
+KUREC
+IBEKY
+Holding Pattern
+227
+GOCET
+HOGTO
+-223°
+2.2 NM to
+2800
+RW04L
+*LNAV only.
+043°
+043°
+2000
+| *1.6 NM to
+RW04L
+*.
+7500 X 150
+2000
+RW04L
+GP 3.00
+3700
+*820
+¤
+TCH 55
+4R
+6.9 NM
+-3.7 NM -0.6 NM 1.6 NM
+CATEGORY
+A
+B
+c
+D
+LPV
+DA
+345- 7½8 276 (300-7/)
+TWR
+LNAV/
+DA
+656-2 587 (600-2)
+043°
+VNAV
+LNAV MDA
+620-1 551 (600-1)
+620-15/ 551 (600-15)
+TDZ/CL Rwy 22R
+620-1
+660-1
+780-2
+840-2½2
+HIRL Rwys 13-31 and 4L-22R
+CIRCLING
+550 (600-1)
+590 (600-1)
+710 (800-2)
+770 (800-21/2)
+MIRL Rwy 4R-22L
+BATON ROUGE, LOUISIANA
+BATON ROUGE METRO, RYAN FLD(BTR)
+3 20AUG15
+30°32'N-91°09'W
+RNIAV IGPS) PWY 4I

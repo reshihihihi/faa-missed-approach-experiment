@@ -1,0 +1,25 @@
+{
+  "raw_instruction": "Climb to 1600 then climbing right turn to 3000 direct LIB VORTAC and hold.",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "LIB"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "LIB",
+  "initial_track": null,
+  "turn_trigger": "1600",
+  "holding_details": {
+    "track": null,
+    "direction": null,
+    "leg_time": "One Minute"
+  },
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 1600 then climbing right turn to 3000 direct LIB VORTAC and hold.",
+    "climb_altitude": "to 3000 direct LIB VORTAC and hold",
+    "waypoints": "direct LIB VORTAC and hold",
+    "turn_direction": "climbing right turn",
+    "holding_required": "and hold / One Minute Holding Pattern",
+    "holding_fix": "LIB VORTAC"
+  }
+}

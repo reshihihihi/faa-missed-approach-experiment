@@ -1,0 +1,21 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climbing right turn to 2500 direct KEEDS.",
+  "climb_altitude": 2500,
+  "waypoints": [
+    "KEEDS"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": false,
+  "holding_fix": null,
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Upper right corner of the chart in the notes box",
+    "climb_altitude": "to 2500 direct KEEDS",
+    "waypoints": "direct KEEDS",
+    "turn_direction": "Climbing right turn",
+    "holding_required": "No holding pattern depicted or described",
+    "holding_fix": "not found"
+  }
+}

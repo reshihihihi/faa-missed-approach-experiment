@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "Climb to 3000 direct GANAD and hold.",
+  "climb_altitude": 3000,
+  "waypoints": ["GANAD"],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "GANAD",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": {"track": "184", "direction": "LEFT", "leg_time": null},
+  "evidence": {
+    "raw_instruction": "Upper right notes box labeled 'MISSED APPROACH'",
+    "climb_altitude": "Climb to 3000",
+    "waypoints": "direct GANAD and hold",
+    "turn_direction": "No explicit turn direction stated in text; holding pattern depicted",
+    "holding_required": "Holding pattern depicted at GANAD in plan view and profile",
+    "holding_fix": "GANAD named in missed approach text and holding pattern box"
+  }
+}

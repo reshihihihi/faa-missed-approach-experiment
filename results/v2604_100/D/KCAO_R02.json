@@ -1,0 +1,21 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 8000 direct CEBBA and hold, continue climb-in-hold to 8000.",
+  "climb_altitude": 8000,
+  "waypoints": [
+    "CEBBA"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "CEBBA",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Text box in upper right of plan view labeled 'MISSED APPROACH'",
+    "climb_altitude": "Climb to 8000",
+    "waypoints": "direct CEBBA and hold",
+    "turn_direction": "No turn direction explicitly stated",
+    "holding_required": "Holding pattern depicted at CEBBA in upper right corner labeled 'MISSED APCH FIX'",
+    "holding_fix": "CEBBA labeled at holding pattern fix"
+  }
+}

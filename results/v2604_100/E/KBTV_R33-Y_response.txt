@@ -1,0 +1,31 @@
+QUESTIONNAIRE_ANSWERS:
+Q1: yes
+Q2: yes
+Q3: yes
+Q4: no
+Q5: yes
+Q6: yes
+
+JSON:
+{
+  "raw_instruction": "Climb to 3000 direct MANIF and on track 333° to STAEV and hold.",
+  "climb_altitude": 3000,
+  "waypoints": ["MANIF", "STAEV"],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "STAEV",
+  "initial_track": "333",
+  "turn_trigger": "MANIF",
+  "holding_details": {
+    "fix": "STAEV",
+    "inbound_track": "333"
+  },
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH box upper right: 'Climb to 3000 direct MANIF and on track 333° to STAEV and hold.'",
+    "climb_altitude": "3000 explicitly stated",
+    "waypoints": "MANIF and STAEV explicitly named",
+    "turn_direction": "No turn direction stated",
+    "holding_required": "Word 'hold' explicitly stated; MISSED APCH FIX box shows STAEV with holding pattern symbol",
+    "holding_fix": "STAEV labeled in MISSED APCH FIX box"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "raw_instruction": "right turn direct BAF VORTAC and hold. MISSED APCH FIX",
+  "climb_altitude": "unknown",
+  "waypoints": [],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "BAF",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

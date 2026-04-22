@@ -1,0 +1,11 @@
+{
+  "raw_instruction": "VI -> CF CONNI 4000+ft -> HM CONNI 4000+ft",
+  "climb_altitude": 4000,
+  "waypoints": [],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "CONNI",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

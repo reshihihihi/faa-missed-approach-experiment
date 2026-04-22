@@ -1,0 +1,240 @@
+ILS Z or LOC Z RWY 8
+11JUL24
+Amdt 39B
+34°12'N-118°22'W
+CALIFORNIA
+BURBANK
+BOB HOPE (BUR)
+2:05
+2:36
+3:28
+5:12
+Min:Sec
+1542 (1600-3)
+1462 (1500-3)
+502 (600-1½)
+1:44
+862 (900-1/4)
+CIRCLING
+081
+090
+100
+06
+09
+Hoos
+2320-3
+2240-3
+1640-11/4
+1280-1½/
+5.2 NM
+FAF to MAP
+433 (400-1)
+1160/50
+S-LOC 8#
+REIL Rwys 15, 26 and 33
+8-26
+HIRL Rw
+348 (300-1)
+1075/50
+S-ILS 8 #
+MIRL Rwy 15-33
+D
+c
+B
+A
+CATEGORY
+0.9
+5.2 NM
+6 NM
+33
+TCH 60
+@
+¤
+*3000
+3000
+GS 3.00°
+2
+(CFBXN)
+0.5% UP
+5802 X 150
+079°
+3700
+.2% UP
+079°
+2753
+079°
+4000
+TWR
+6886 X150
+<-259°
+5200
+*LOC only
+OM/INT
+BUDDE
+VNY6.1
+210°
+Holding Pattern
+D
+R-086
+py
+SILN
+onun ue
+MIO
+M
+A090
+1300
+R-311
+Chan 45
+16
+0900
+Chan 83
+110.8 SMO
+4400
+275°
+113.6 LAX
+4700
+LOS ANGELES
+242°
+109.5 I-BUR
+D
+095°
+259
+TDZE 727
+q
+8∠L
+EEE
+0006
+R42.2
+185°
+3000
+2c44
+'9 ANA
+2NNM
+A090
+918
+113.1 VNY
+SILEX
+VNY
+MSA
+ALTERNATE MISSED APCH FIX
+Chan 112(Y)
+Chan 45
+116.55 VTU
+110.8 SMO
+(13.8)
+VENTURA
+SANTA MONICA
+4400
+311
+R-086
+IAF
+4000
+079° (8.3)
+14.5
+VTU
+054° (14.5)
+*3000
+A
+R-311
+5200
+HOLD
+to SILEX
+TOAKS
+4600 NoPT
+311°
+ONI/WO
+(∀)
+1ε111ε-
+R
+(9)
+2N 301
+(CFBXN
+BUDDE
+*3000
+-259
+R-054
+min
+LR-248
+1079°
+0799
+\901±
+259
+2000
+R722.
+(8°6)
+sInN
+uon
+ZOON AO
+(1'9)
+I-BUR
+242°
+6.1
+VNY
+4400
+SILEX
+R-136
+109.5
+LOCALIZER
+(IF/IAF)
+7000
+3000
+WIT
+2000
+(A))
+Zca4a
+8
+2000
+VNY
+•
+C
+112.5 FIM
+VAN NUYS
+FILLMORE
+118.0 348.6
+118.7 254.3
+134.2 338.2 (WEST)
+CPDLC
+123.9 348.6
+120.4 360.6 (NORTH)
+134.5
+CLNC DEL
+GND CON
+BURBANK TOWER
+SOCAL APP CON
+D-ATIS
+gradient, see ILS Y or LOC Y RWY 8).
+visibility to 11/ SM. Rwy 8 helicopter visibility reduction below RVR 5000 NA.
+to 2520 (if unable to meet climb
+ALS, increase S-LOC 8 Cats A/B visibility to RVR 6000 and S-LOC 8 Cats C/D
+minimum climb of 340 feet per NM
+NA for Cat D east of Rwy 15-33. Inop table does not apply to S-ILS 8. For inop
+#Missed approach requires a
+As
+for Cat D. Circling NA for Cats A/B/C northeast of Rwy 15 and 26. Circling
+R-086 to VTU VOR/DME and hold.
+until threshold. Circling Rwy 26 NA at night and Circling Rwy 33 NA at night
+heading 210° and VTU VOR/DME
+MALSR
+Rwy 33 at night, operational VGSI required, remain on or above VGSI glidepath
+Straight-in Rwy 8 at night, Circling to
+A
+then climbing right turn to 4600 on
+Localizer unusable within O.9 NM to thld.
+MISSED APPROACH: Climb to 1300
+T
+From MIKEI: RNAV 1-GPS required.
+BOB HOPE (BUR)
+778
+Apt Elev
+ILS Z or LOC Z RWY 8
+727
+079°
+TDZE
+109.5
+5801
+Rwy Ldg
+APP CRS
+LOC I-BUR
+25219
+AL-67 (FAA)
+BURBANK, CALIFORNIA

@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 3500 direct CYMOL and hold. Rwy 30 helicopter visibility reduction below 1 SM NA.",
+  "climb_altitude": 3500,
+  "waypoints": [
+    "CYMOL"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "CYMOL",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

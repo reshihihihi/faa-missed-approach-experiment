@@ -1,0 +1,11 @@
+{
+  "raw_instruction": "and hold, continue climb-in-hold to 3200.",
+  "climb_altitude": 3200,
+  "waypoints": [],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": null,
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

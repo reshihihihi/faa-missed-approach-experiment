@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 6100 then climbing to 1 1/ SM. Autopilot coupled approach NA below left turn to 7200 on heading 080 and on FQF VORTAC R-045 to SKIPI/I-FTG 7 DME and hold.",
+  "climb_altitude": 7200,
+  "waypoints": [
+    "SKIPI"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "SKIPI",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

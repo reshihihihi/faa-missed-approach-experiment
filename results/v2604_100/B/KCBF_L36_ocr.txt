@@ -1,0 +1,165 @@
+AL-5540 (FAA)
+LOC/DME I-CBF
+26078
+APP CRS
+Rwy Ldg
+5500
+111.35
+TDZE
+1245
+ILS or LOC RWY 36
+Chan 50(Y)
+357°
+Apt Elev
+11245
+COUNCIL BLUFFS MUNI (CBF')
+VDP NA with Eppley Airfield altimeter setting. When local altimeter setting not received,
+ANA
+use Eppley Airfield altimeter setting and increase S-ILS 36 DA to 1498 feet, and all
+MISSED APPROACH: Climb to
+MDA 60 feet and increase S-LOC 36 Cats C and D and Circling Cat C and D visibility
+3000 then right turn direct
+ SM. HODIN fix minimums: increase Circling Cat C and D visibility / SM.
+OVR VORTAC and hold.
+AWOS-3
+OMAHA APP CON
+126.575
+UNICOM
+124.5 263.0
+122.725 (CTAF) 0
+LOCALIZER
+111.35
+I-CBF
+•••
+Chan 50(Y)
+1269±X
+HODIN
+OMAHA
+I-CBF [2.8
+116.3 OVR
+..
+Chan 110
+"104°
+-R-269
+284R-104
+(IAF)
+Procedure NA for arrival on
+OVR VORTAC airway radials
+JATIN INT
+3000
+245 CW 312.
+I-CBF
+6.1
+269 (1.1)
+2900
+357 (6.1)
+132°
+(IF)
+WAMET
+I-CBF
+12.3
+OVR
+25 NM
+MSA
+3900
+3000 NoPT to WAMET
+042° hdg (5.3) and
+357° (4.4)
+(IAF)
+IPALY
+OVR 15
+ELEV 1245
+TDZE 1245
+Use I-CBF DME when on the
+REIL Rwys 14, 32, 18, and 36
+JATIN INT
+localizer course.
+3000
+OVR
+MIRL Rwy 14-32
+I·CBF6.1
+81
+Remain
+¤
+HIRL Rwy 18-36
+0
+within 10 NM
+-177°
+HODIN
+*LOC only
+3000
+2900
+I-CBF
+2.8
+*I-CBF
+357°
+1.8
+5500 X 100
+I-CBF
+4O
+x
+1.]
+GS 3.00°
+2900
+TCH 50
+*1760
+-3.4 NM
+-1 NM-
+0.7 NM
+CATEGORY
+A
+B
+c
+D
+¤
+S-ILS 36
+1445-3½/4
+200 (200-3½)
+S-LOC 36
+1760-1 515 (600-1)
+1760-13/
+515 (600-13½/)
+O
+2
+1780-1
+1840-1
+1840-11/2
+1880-2
+CIRCLING
+36
+535 (600-1)
+595 (600-1)
+595 (600-1/2)
+635 (700-2)
+HODIN FIX MINIMUMS
+357°
+S-LOC 36
+1520-1
+275 (300-1)
+FAF to MAP 5.1 NM
+1780-1
+1840-1
+1840-1½
+1880-2
+Knots
+60
+90
+120
+150
+180
+CIRCLING
+535 (600-1)
+595 (600-1)
+595 (600-11/2)
+635 (700-2)
+Min:Sec
+5:06
+3:24
+2:33
+2:02
+1:42
+COUNCIL BLUFFS, IOWA
+COUNCIL BLUFFS MUNI (CBF)
+41°16'N-95°46'W
+ILS or LOC RWY 36
+Amdt 1B 21MAY20

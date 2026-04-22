@@ -1,0 +1,29 @@
+{
+  "raw_instruction": "Climb to 500 then climbing right turn to 3000 direct SBI VOR/DME and hold.",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "SBI"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "SBI",
+  "initial_track": null,
+  "turn_trigger": "500",
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Missed approach box upper right: 'Climb to 500 then climbing right turn to 3000 direct SBI VOR/DME and hold.'",
+    "climb_altitude": "3000 direct SBI VOR/DME",
+    "waypoints": "SBI labeled as MISSED APCH FIX and SABINE PASS SBI",
+    "turn_direction": "'climbing right turn' explicitly stated",
+    "holding_required": "'and hold' explicitly stated",
+    "holding_fix": "SBI VOR/DME"
+  },
+  "_questionnaire": {
+    "Q1": "yes",
+    "Q2": "yes",
+    "Q3": "yes",
+    "Q4": "yes",
+    "Q5": "yes",
+    "Q6": "yes"
+  }
+}

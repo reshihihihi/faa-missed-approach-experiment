@@ -1,0 +1,15 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 3500 When local altimeter setting not received, use Glenwood altimeter setting and direct MOVSE and right turn on track 315 to EVDEQ and on track 024 LNAV Cat D visibility mile. Rwy 22 helicopter visibility reduction below % SM NA. to TILER and hold.",
+  "climb_altitude": 3500,
+  "waypoints": [
+    "MOVSE",
+    "EVDEQ",
+    "TILER"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "TILER",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

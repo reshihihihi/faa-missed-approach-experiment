@@ -1,0 +1,15 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 3300 and S-LOC 35R Cat C/D/E visibility to 13/ SM. then climbing right turn to 4000 direct ANA",
+  "climb_altitude": 4000,
+  "waypoints": [
+    "AND",
+    "CAT",
+    "ANA"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": false,
+  "holding_fix": null,
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

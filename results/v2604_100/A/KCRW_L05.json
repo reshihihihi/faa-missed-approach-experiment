@@ -1,0 +1,11 @@
+{
+  "raw_instruction": "turn to 3500 direct HVQ VOR/DME and hold. MISSED APPROACH: Climb to 1800 then climbing left Autopilot coupled approach NA below 1300.",
+  "climb_altitude": 3500,
+  "waypoints": [],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "HVQ",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

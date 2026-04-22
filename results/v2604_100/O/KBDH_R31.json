@@ -1,0 +1,11 @@
+{
+  "raw_instruction": "TF HEPIV 2800+ft",
+  "climb_altitude": 2800,
+  "waypoints": [],
+  "turn_direction": "NONE",
+  "holding_required": false,
+  "holding_fix": null,
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

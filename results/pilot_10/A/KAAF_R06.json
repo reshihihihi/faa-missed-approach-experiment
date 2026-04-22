@@ -1,0 +1,18 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to Cat C/D 3 SM, and Circling visibility Cat C/D / SM. Straight-in Rwy 6 NA at night, 3000 direct ONBOE and hold. Circling Rwy 6, 18, 24, 32, 36 NA at night. ASOS",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "CAT",
+    "AND",
+    "RWY",
+    "NIGHT",
+    "ONBOE",
+    "ASOS"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": null,
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

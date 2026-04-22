@@ -1,0 +1,179 @@
+BILEINE, TEXAS
+AL-1 (FAA)
+LOC/DME I-ABI
+25303
+APP CRS
+Rwy Ldg
+7198
+110.3
+TDZE
+ILS or LOC RWY 35R
+355°
+Apt Elev
+1776
+Chan 40
+1791
+ABILENE RGNL (ABI)
+ADF required. RADAR required for procedure entry at NUGEN.
+For inop ALS, increase S-ILS 35R Cat E visibility to RVR 4000,
+MALSR
+MISSED APPROACH: Climb to 3300
+and S-LOC 35R Cat C/D/E visibility to 13/ SM.
+then climbing right turn to 4000 direct
+ANA
+** RVR 1800 authorized with use of FD or AP or HUD to DA.
+TOMHI LOM/INT/I-ABI 6.8 DME
+and hold.
+ATIS
+ABILENE APP CON
+125.0 338.3 (EAST)
+ABILENE TOWER
+GND CON
+118.25
+127.2 282.3 (WEST)
+120.1 257.8
+121.7 348.6
+NUGEN
+TRUSS
+ALTERNATE
+ABI 16
+MISSED APCH FIX
+RADAR
+4000 to LOM
+ABILENE
+174° (24)
+Elmdale
+R-285-105
+113.7 ABI
+Airpark
+4000 to LOM
+(Pvt)
+Chan 84
+ABILENE
+(15.6)
+113.7 ABI
+(14.6)
+Chan 84
+29e
+Procedure NA for arrivals
+LOCALIZER 110.3
+at ABI VORTAC
+I-ABI
+on V16 southwest bound
+and V77 northbound.
+Chan 40
+-LOM/IAF
+2010
+TOMHI
+353 AB :.
+A
+I-ABI
+6.8
+2059
+R-052
+1750
+4000
+4000
+-052
+-294°
+((8.9)
+(8.2)
+TUSCOLA
+MEDLY
+111.6 TQA
+Chan 53
+25 NM
+MSAAB
+138°_
+ELEV
+1791
+D
+TDZE 1776
+2∠7
+4600
+175
+130°
+4000
+A
+(CFPLC)
+o
+048
+P∩ %0
+7208 X 150
+TAR
+3300
+A000
+IHWOI
+III/W1 IHW⊥
+¤
+I-ABI 6.8
+Remain
+O
+1∠1
+within 15 NM
+A
+-175°
+35L
+*LOC only.
+3573
+Z1X861
+4000
+*|-ABI
+I-ABI
+2.7
+-355°
+|.4
+3600
+GS 3.00°
+TCH 58
+45
+-1.3-
+4.1 NM
+REIL Rwy 35L
+CATEGORY
+A
+B
+c
+D
+E
+35R
+HIRL Rwys 17L-35R and
+355°
+S-ILS 35R**
+1976/24 200 (200-1/)
+17R-35L
+S-LOC 35R
+2260/24
+484 (500-1/2)
+2260/50
+484 (500-1)
+FAF to MAP
+5.4 NM
+60
+90
+120
+150
+180
+2300-1
+2320-1
+2420-13/4
+2460-2
+Knots
+2620-3
+CIRCLING
+5:24
+3:36
+2:42
+2:10
+1:48
+509 (600-1)
+529 (600-1)
+629 (700-13/)
+669 (700-2)
+829 (900-3)
+Min:Sec
+ABILENE, TEXAS
+ABILENE RGNL (ABI)
+32°25'N-99°41'W
+ILS or LOC RWY 35R
+Amdt 7C 300CT25

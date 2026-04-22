@@ -1,0 +1,19 @@
+This is a FAA Instrument Approach Procedure (IAP) chart.
+
+Task:
+Determine the turn direction for the MISSED APPROACH.
+
+Return exactly one of the following values:
+- LEFT
+- RIGHT
+- NONE
+- unknown
+
+Interpretation rules:
+- Use LEFT or RIGHT only if the MISSED APPROACH instruction text itself explicitly states a left turn or right turn, or if a turn direction is unambiguously attached to the main missed approach path immediately adjacent to that instruction.
+- Do not use LEFT or RIGHT based only on a holding pattern orientation, a feeder/transition path, or chart elements outside the main missed approach path.
+- Use NONE only if the missed approach can be identified and there is no explicit left/right turn requirement in the missed approach instruction.
+- Use unknown if the direction cannot be determined confidently.
+
+Do not return JSON.
+Do not add labels or explanations.

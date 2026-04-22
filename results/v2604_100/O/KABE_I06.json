@@ -1,0 +1,11 @@
+{
+  "raw_instruction": "VI -> CF MUDRE 3000+ft -> HM MUDRE 3000+ft",
+  "climb_altitude": 3000,
+  "waypoints": [],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "MUDRE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

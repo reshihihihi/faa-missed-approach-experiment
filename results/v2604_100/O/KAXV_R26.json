@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 1241+ft -> DF ZUKEC 3000+ft -> HM ZUKEC 3000+ft",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "ZUKEC"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "ZUKEC",
+  "initial_track": null,
+  "turn_trigger": "ZUKEC",
+  "holding_details": null
+}

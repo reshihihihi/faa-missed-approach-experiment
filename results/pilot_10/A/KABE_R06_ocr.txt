@@ -1,0 +1,139 @@
+OWN, PENNSYLVANIA
+AL-15 (FAA)
+WAAS
+Rwy Ldg
+7599
+25219
+CH 69432
+APP CRS
+TDZE
+394
+RNAV (GPS) RWY 6
+W06A
+063°
+Apt Elev
+394
+RNP APCH - GPS.
+LEHIGH VALLEY INTL (ABE
+T
+For uncompensated Baro-VNAV systems, LNAV/VNAV NA below -8°C or
+MALSR
+above 54°C. For inop ALS, increase LNAV Cat C/D visibility to 13/ SM.
+MISSED APPROACH:
+A
+**RVR 1800 authorized with use of FD or AP or HUD to DA.
+m|i--
+Climb to 3000 direct
+A5
+FONUP and hold.
+ATIS
+ALLENTOWN APP CON
+ALLENTOWN TOWER
+GND CON
+126.975
+CLNC DEL
+119.65
+124.45
+351.8
+120.5 257.95
+121.9 257.95
+124.05 257.95
+(IAF)
+579
+.
+SAYOV
+GEBLE
+3 NM to
+A
+RW06
+RW06
+4000
+(FAF)
+068°
+SHAGY
+(17.5)
+DUMMR
+2400
+Procedure NA for arrivals
+0
+at DUMMR on V162 westbound,
+(6.7)
+V93 southwest bound, and
+V276 northwest bound.
+(IF)
+JISTO
+MISSED APCH FIX
+4 NM
+Procedure NA for arrivals on
+19
+ARD VOR/DME airway radials
+3600
+233 CW 304.
+YARDLEY
+4000
+ARD
+FONUP
+(IAF)
+-300°
+ELEV
+394
+D
+TDZE
+HADAD
+31.3)
+394
+VGSI and RNAV glidepath not coincident
+3000
+FONUP
+JISTO
+(VGSI Angle 3.00/TCH 74).
+TWR
+SHAGY
+¤
+3000
+063°
+2400
+GEBLE
+3 NM to
+RW06
+1.3 NM to
+*
+RW06
+2400
+RW06
+GP 3.00°
+1400
+3
+TCH 56
+6.7 NM
+- 3.1 NM —---1.7 NM-1.3 
+CATEGORY
+A
+B
+c
+D
+LPV DA **
+594/24 200 (200-1/2)
+063
+LNAV/
+DA
+644/24 250 (300-1/2)
+VVNAV
+840/24
+446 (500-1/)
+840/45 446 (500-78)
+LNAV MDA
+1180-2/4
+1600-3
+REIL Rwys 24 and 31
+900-1
+506 (600-1)
+CIRCLING
+786 (800-21/4)
+1206 (1300-3)
+HIRL Rwys 6-24 and 13-31
+LEHIGH VALLEY INTL (ABE)
+ALLENTOWN, PENNSYLVANIA
+40°39'N-75°26'W
+RNAV (GPS) RWY 6
+Amdt 1D 16MAY24

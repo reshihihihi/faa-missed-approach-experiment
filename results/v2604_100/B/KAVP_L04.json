@@ -1,0 +1,21 @@
+{
+  "raw_instruction": "Climb to 3000 then climbing right turn to 4000 direct LVZ VORTAC and hold.",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "LVZ"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "LVZ",
+  "initial_track": null,
+  "turn_trigger": "3000",
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Climb to 3000 then climbing right turn to 4000 direct LVZ VORTAC and hold.",
+    "climb_altitude": "Climb to 3000",
+    "waypoints": "direct LVZ VORTAC and hold",
+    "turn_direction": "climbing right turn",
+    "holding_required": "direct LVZ VORTAC and hold",
+    "holding_fix": "direct LVZ VORTAC and hold"
+  }
+}

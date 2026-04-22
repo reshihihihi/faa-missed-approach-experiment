@@ -1,0 +1,32 @@
+{
+  "raw_instruction": "Climb to 1800 then climbing left turn to 3000 direct EWC VOR/DME and hold.",
+  "climb_altitude": 1800,
+  "waypoints": [
+    "EWC"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "EWC",
+  "initial_track": null,
+  "turn_trigger": "climbing to 1800",
+  "holding_details": {
+    "fix": "EWC",
+    "altitude": 3000
+  },
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 1800 then climbing left turn to 3000 direct EWC VOR/DME and hold.",
+    "climb_altitude": "1800",
+    "waypoints": "EWC VOR/DME",
+    "turn_direction": "left turn",
+    "holding_required": "and hold",
+    "holding_fix": "EWC VOR/DME"
+  },
+  "_questionnaire": {
+    "Q1": "yes",
+    "Q2": "yes",
+    "Q3": "yes",
+    "Q4": "yes",
+    "Q5": "yes",
+    "Q6": "yes"
+  }
+}

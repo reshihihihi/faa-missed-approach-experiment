@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "Climb to 8700 then climbing right turn to 11000 direct ALS VORTAC and hold, continue climb in hold to 11000.",
+  "climb_altitude": 11000,
+  "waypoints": ["ALS"],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "ALS",
+  "initial_track": null,
+  "turn_trigger": "8700",
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Upper right corner of chart in the MISSED APPROACH box",
+    "climb_altitude": "continue climb in hold to 11000",
+    "waypoints": "direct ALS VORTAC and hold",
+    "turn_direction": "climbing right turn",
+    "holding_required": "hold depicted at ALS VORTAC on plan view",
+    "holding_fix": "direct ALS VORTAC and hold"
+  }
+}

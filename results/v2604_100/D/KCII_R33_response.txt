@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 6600 direct AMURE and hold.",
+  "climb_altitude": 6600,
+  "waypoints": ["AMURE"],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "AMURE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Text box in upper portion of chart reading 'MISSED APPROACH: Climb to 6600 direct AMURE and hold.'",
+    "climb_altitude": "'Climb to 6600' in the missed approach instruction text",
+    "waypoints": "'direct AMURE' in the missed approach instruction text",
+    "turn_direction": "No turn direction specified in the instruction",
+    "holding_required": "Word 'hold' at end of missed approach instruction; holding pattern depicted at AMURE in plan view",
+    "holding_fix": "'AMURE' named in missed approach instruction and in MISSED APCH FIX box"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "raw_instruction": "Climb to 1000 then climbing left turn to 3000 on heading 040° and CWK VORTAC R-088 to HOOKK/CWK 17 DME and hold.",
+  "climb_altitude": 3000,
+  "waypoints": ["HOOKK", "CWK"],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "HOOKK",
+  "initial_track": "040°",
+  "turn_trigger": "1000",
+  "holding_details": {
+    "track": "088°",
+    "direction": "unknown",
+    "leg_time": null
+  },
+  "evidence": {
+    "raw_instruction": "Upper right corner of chart in the notes box labeled 'MISSED APPROACH'",
+    "climb_altitude": "climbing left turn to 3000",
+    "waypoints": "to HOOKK/CWK 17 DME and hold",
+    "turn_direction": "climbing left turn",
+    "holding_required": "and hold stated at end of missed approach instruction",
+    "holding_fix": "HOOKK/CWK 17 DME and hold"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "raw_instruction": "Climb to 4000 direct FONIE and hold, continue climb in hold to 4000.",
+  "climb_altitude": 4000,
+  "waypoints": [
+    "FONIE"
+  ],
+  "turn_direction": "unknown",
+  "holding_required": true,
+  "holding_fix": "FONIE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 40OO direct FONIE and hold, continue climb in hold to 4000.",
+    "climb_altitude": "Climb to 40OO ... continue climb in hold to 4000.",
+    "waypoints": "direct FONIE and hold",
+    "turn_direction": "no turn direction stated in text",
+    "holding_required": "FONIE and hold, continue climb in hold to 4000.",
+    "holding_fix": "direct FONIE and hold"
+  }
+}

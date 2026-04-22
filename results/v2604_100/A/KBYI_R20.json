@@ -1,0 +1,15 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climbing left turn to 7000 direct IREME stacks located along Rwy 20 extended final approach course approximately 2345 feet and hold, continue climb-in-hold from approach end. When Circling Rwy 20, exhaust stacks located along Rwy 20 extended final approach course approximately 2345 feet from approach end.",
+  "climb_altitude": 7000,
+  "waypoints": [
+    "IREME",
+    "ALONG",
+    "FINAL"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "IREME",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

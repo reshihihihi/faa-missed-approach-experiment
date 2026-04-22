@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climbing left turn to 4500 direct SAQAR and hold. *Missed approach requires minimum climb of 255 feet per NM to 3000.",
+  "climb_altitude": 4500,
+  "waypoints": ["SAQAR"],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "SAQAR",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Upper right corner of the chart in the MISSED APPROACH text box",
+    "climb_altitude": "Climbing left turn to 4500 direct SAQAR",
+    "waypoints": "direct SAQAR and hold",
+    "turn_direction": "Climbing left turn",
+    "holding_required": "and hold - also depicted in MISSED APCH FIX inset diagram",
+    "holding_fix": "direct SAQAR and hold"
+  }
+}

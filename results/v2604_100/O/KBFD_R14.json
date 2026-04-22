@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 2368+ft -> DF NIMEE 4500+ft -> HM NIMEE 4500+ft",
+  "climb_altitude": 4500,
+  "waypoints": [
+    "NIMEE"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "NIMEE",
+  "initial_track": null,
+  "turn_trigger": "NIMEE",
+  "holding_details": null
+}

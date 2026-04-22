@@ -1,0 +1,23 @@
+{
+  "raw_instruction": "Climb to 500 then climbing right turn to 1800 on heading 210° and CCC VOR/DME R-311 to STANE INT/I-BDR 6.2 DME and hold, continue climb-in-hold to 1800.",
+  "climb_altitude": 1800,
+  "waypoints": ["STANE INT", "CCC"],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "STANE INT",
+  "initial_track": "210°",
+  "turn_trigger": "500",
+  "holding_details": {
+    "track": "240°/060°",
+    "direction": "LEFT",
+    "leg_time": "1 min"
+  },
+  "evidence": {
+    "raw_instruction": "Missed approach box in upper right of plan view header area",
+    "climb_altitude": "continue climb-in-hold to 1800",
+    "waypoints": "STANE INT/I-BDR 6.2 DME and CCC VOR/DME R-311 in missed approach text",
+    "turn_direction": "climbing right turn stated in missed approach text",
+    "holding_required": "hold depicted on plan view and stated in missed approach text",
+    "holding_fix": "STANE INT/I-BDR 6.2 DME in missed approach text"
+  }
+}

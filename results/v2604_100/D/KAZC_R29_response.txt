@@ -1,0 +1,23 @@
+{
+  "raw_instruction": "Climb to 6600 then climbing left turn to 9100 direct ZUXOS and track 086° to MGHEE and hold.",
+  "climb_altitude": 9100,
+  "waypoints": ["ZUXOS", "MGHEE"],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "MGHEE",
+  "initial_track": "086°",
+  "turn_trigger": "6600",
+  "holding_details": {
+    "track": "unknown",
+    "direction": "unknown",
+    "leg_time": "unknown"
+  },
+  "evidence": {
+    "raw_instruction": "Upper right corner of the chart in the MISSED APPROACH box",
+    "climb_altitude": "Climb to 6600 then climbing left turn to 9100",
+    "waypoints": "direct ZUXOS and track 086° to MGHEE and hold",
+    "turn_direction": "climbing left turn",
+    "holding_required": "MGHEE 7 NM Holding Pattern shown in profile view",
+    "holding_fix": "track 086° to MGHEE and hold"
+  }
+}

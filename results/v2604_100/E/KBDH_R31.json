@@ -1,0 +1,29 @@
+{
+  "raw_instruction": "Climb to 2800 direct BEESE and hold.",
+  "climb_altitude": 2800,
+  "waypoints": [
+    "BEESE"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "BEESE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 2800 direct BEESE and hold.",
+    "climb_altitude": "2800",
+    "waypoints": "BEESE labeled on chart with holding pattern symbol",
+    "turn_direction": "No turn direction stated",
+    "holding_required": "'and hold' explicitly stated",
+    "holding_fix": "BEESE labeled with holding pattern"
+  },
+  "_questionnaire": {
+    "Q1": "yes",
+    "Q2": "yes",
+    "Q3": "yes",
+    "Q4": "no",
+    "Q5": "yes",
+    "Q6": "yes"
+  }
+}

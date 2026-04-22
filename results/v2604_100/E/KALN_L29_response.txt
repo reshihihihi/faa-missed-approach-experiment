@@ -1,0 +1,32 @@
+QUESTIONNAIRE_ANSWERS:
+Q1: yes
+Q2: yes
+Q3: yes
+Q4: yes
+Q5: yes
+Q6: yes
+
+JSON:
+{
+  "raw_instruction": "Climb to 1000 then climbing right turn to 2200 on heading 310° and on TOY VORTAC R-322 to TOPAZ INT/TOY 16 DME and hold.",
+  "climb_altitude": 2200,
+  "waypoints": ["TOPAZ INT"],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "TOPAZ INT",
+  "initial_track": "310",
+  "turn_trigger": "1000",
+  "holding_details": {
+    "fix": "TOPAZ INT",
+    "radial": "R-322",
+    "dme": "TOY 16 DME"
+  },
+  "evidence": {
+    "raw_instruction": "Missed approach text box upper right of chart",
+    "climb_altitude": "2200 stated in missed approach instructions",
+    "waypoints": "TOPAZ INT/TOY 16 DME explicitly named",
+    "turn_direction": "climbing right turn explicitly stated",
+    "holding_required": "and hold explicitly stated",
+    "holding_fix": "TOPAZ INT explicitly labeled"
+  }
+}

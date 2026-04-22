@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climb to 8500 on heading 172° and FQF VORTAC R-127 to HUNTN INT/FQF 9.8 DME and hold.",
+  "climb_altitude": 8500,
+  "waypoints": [
+    "HUNTN"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "HUNTN",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

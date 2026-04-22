@@ -1,0 +1,21 @@
+{
+  "raw_instruction": "Climb to 3000 direct FONUP and hold.",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "FONUP"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "FONUP",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Upper right corner box labeled 'MISSED APPROACH'",
+    "climb_altitude": "Climb to 3000 direct FONUP and hold.",
+    "waypoints": "FONUP named in missed approach text and on plan view",
+    "turn_direction": "No turn direction stated in instruction",
+    "holding_required": "Text states 'and hold' and holding pattern depicted at FONUP on plan view",
+    "holding_fix": "FONUP named in missed approach instruction"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "RADAR required for procedure entry from DOFFS. DME required. MISSED APPROACH: Climb to 1000 then climbing left turn to 3000 on heading 040 17 DME and hold.",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "DOFFS"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "DOFFS",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

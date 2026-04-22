@@ -1,0 +1,32 @@
+QUESTIONNAIRE_ANSWERS:
+Q1: yes
+Q2: yes
+Q3: yes
+Q4: yes
+Q5: yes
+Q6: yes
+
+JSON:
+{
+  "raw_instruction": "Climbing left turn to 2000 direct AMRTN and hold.",
+  "climb_altitude": 2000,
+  "waypoints": ["AMRTN"],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "AMRTN",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": {
+    "fix": "AMRTN",
+    "altitude": 2000,
+    "leg_length": "4 NM"
+  },
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climbing left turn to 2000 direct AMRTN and hold.",
+    "climb_altitude": "2000",
+    "waypoints": "AMRTN labeled in missed approach section",
+    "turn_direction": "left turn explicitly stated",
+    "holding_required": "hold depicted and stated",
+    "holding_fix": "AMRTN"
+  }
+}

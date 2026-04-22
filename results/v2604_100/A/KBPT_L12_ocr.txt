@@ -1,0 +1,163 @@
+ILS or LOC RWY 12
+TEXAS
+BEAUMONT/PORT ARTHUR,
+Am42A35AM2
+JACK BROOKS RGNL (BPT)
+1:42
+2:02
+2:33
+3:24
+5:06
+Min:Sec
+460/40 445 (500-3)
+S1502
+(8/005) 100/090
+081
+090
+100
+06
+09
+Shous
+WNI
+PAA AA AP
+CCOI M) PMINI X PN)
+35/078
+S-LOC 12
+HIRL Rwys 12-30, 16-34 0
+805 (900-178)
+820-1½
+805 (900-3/)
+RElL Rwys 16, 30 and 34
+250 (300-3½4)
+265/40
+S-ILS 12 *
+E
+D
+c
+8
+A
+CAE
+&8
+-WN I'l-
+2N8A
+WNSL
+8
+-WN
+Θ
+1H H
+3300
+820
+1700
+GS 3.00°
+B
+*
+6751 X 150
+22
+LPP-1
+00
+1PP-1
+1000
+118-1
+1800
+¤
+COUGS
+RADAR
+TWR
+d
+2
+6.4
+I-BPT
+13.9
+I-BPT
+91
+KAZOO
+GIDDY INT
+120°
+SBI
+3000
+500
+Use I-BPT DME when on the localizer course.
+15
+TDZE
+D
+15
+ELEV
+115.4 SBI
+Chan 101
+I-BPT 3.6
+2200
+060°
+COUGS
+D
+() 8 
+8917
+30O
+LFR-1
+R3838
+-180°
+10
+TOCZIEAR
+RAAR
+1000
+MSA
+I-BPT
+KAZOO
+1700
+13.9
+I-BPT
+GIDDY INT
+300
+(IF)
+Chan 101
+1800
+115.4
+SBI
+SABINE PASS
+FIX
+HONEE
+MISSED APCH
+(IAF)
+122.95
+124.85
+119.5 (CTAF)0
+121.3 377.1
+126.3
+UNICOM
+GND CON
+BEAUMONT TOWER *
+HOUSTON APP CON
+ATIS
+*RVR 1800 authorized with use of FD or AP or HUD to DA, NA when using Orange County
+altimeter setting.
+5500 and Cat C/D/E to 13% SM. VDP NA when using Orange County altimeter setting.
+Cat C/D/E to 2½/ SM. COUGS fix minimums: increase S-LOC 12 visibility Cat A/B to RVR
+VOR/DME and hold.
+inase S-ILS 12 all Cats visibility to RVR 4500, S-LOC 12 visiblity Cat A to RVR 5500 an
+3000 direct SBI
+5500 and Cat E to 13/ SM. For inop ALS when using Orange County altimeter stting,
+climbing right turn to
+and Cat C/D/E to 21/ SM. COUGS fix minimums: increase S-LOC visibility Cat A/B to RVR
+Climb to 500 then
+MALSR
+visibility Cat C/D/E to RVR 5000. For inop ALS, increase S-LOC visibility Cat A to RVR 5500
+MISSED APPROACH:
+12 DA to 297 feet; increase all MDAs 40 feet. COUGS fix minimums: increase S-LOC 12
+W t Oan C tS-
+H eV 00 A. Io  p  S- 
+T
+DME or RADAR required.
+JACK BROOKS RGNL (BPT)
+15
+Apt Elev
+Chan 38(Y)
+ILS or LOC RWY 12
+15
+TDZE
+120°
+1LL
+8099
+APD PPS
+LOI-E/L
+22098
+AL-521 (FAA)
+BEAUMONT/PORT ARTHUR, TEXAS

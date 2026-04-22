@@ -1,0 +1,128 @@
+RNAV (GPS) RWY 26
+40°30'N-84°18'W
+WAPAKONETA, OHIO
+Ora-C0ZSEP22
+NEIL ARMSTRONG (AXV)
+REIL Rwys 8 and 26
+(½/1-009) 00
+(1-009) 01 [0001
+INW AGA
+AN
+A7-8 M M
+1/3-0013
+DA
+VNAV
+NA
+1274-1½4 364 (400-1/4)
+LNAV/
+1241-114
+AA
+Ad1
+AN
+(71-000) 1ε
+A
+CE
+D
+c
+B
+6.1 NM
+5.1 NM
+TCH 40
+GP 3.00°
+2600
+8
+RW26
+×
+5500 X 100
+←261°
+261°
+3000
+EVEZA
+081°
+SHOOS
+Holding Pattern
+261°
+4 NM
+ZUKEC
+3000
+--351°
+-351°
+910
+TDZE
+ELEV 912
+3000
+SHOOS
+Anor
+3000
+C
+4ol∠l
+-180
+WNA
+AIlor
+(AA)
+SUXZ
+COON 3001
+6
+RMR
+3
+SOOHS
+V
+11104
+Vε901
+(1'9)
+(IF/IAF)
+1061
+261°
+2600
+EVEZA
+-261°
+(FAF)
+081
+1353
+081°
+3000 NoPT
+4 NM
+7
+6
+α
+CPPDO
+3000
+CPPO
+(IAF)
+A
+1982
+-171°
+122.70
+122.8 (CTAF)
+134.45 294.5
+128.325
+UNICOM
+COLUMBUS APP CON
+AWOS-3PT
+LNAV/VNAV DA to 1324 feet and all visibilities 18 SM. Increase all MDAs 60 feet
+and LNAV visibility Cat C 1/4 SM.
+ZUKEC and hold.
+altimeter setting and increase LPV DA to 1291 feet and all visibilities 18 SM. Increase
+Climb to 3000 direct
+ction below  SM NA. When local altimeter setting not received, use Lima
+MISSED APPROACH:
+systems, LNAV/VNAV NA below-16° or above 54°C. Rwy 6 helicopter visibiliy
+Baro-VNAV NA when using Lima altimeter setting. For uncompensated Baro-VNAV
+ANA
+NEIL ARMSTRONG (AXV)
+RNP APCH - GPS.
+RNAV (GPS) RWY 26
+712
+Ae A
+2310
+M9A
+6
+TZEE
+5263
+Rwy Idg
+APP CRS
+CH 72907
+24137
+AL-6065 (FAA)
+WAAS
+MMH VAIIC

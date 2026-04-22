@@ -1,0 +1,12 @@
+{
+  "error": "parse_failed",
+  "raw_response": "QUESTIONNAIRE_ANSWERS:\nQ1: yes\nQ2: yes\nQ3: yes\nQ4: yes\nQ5: yes\nQ6: yes\n\nJSON:\n{\n  \"raw_instruction\": \"Climb to 1000 then climbing left turn to 3000 on heading 040° and CWK VORTAC R-088 to HOOKK/CWK 17 DME and hold.\",\n  \"climb_altitude\": 3000,\n  \"waypoints\": [\"HOOKK\", \"CWK\"],\n  \"turn_direction\": \"LEFT\",\n  \"holding_required\": true,\n  \"holding_fix\": \"HOOKK\",\n  \"initial_track\": \"040°\",\n  \"turn_trigger\": \"1000\",\n  \"holding_details\": {\n    \"fix\": \"HOOKK\",\n    \"radial\": \"R-088\",\n    \"dme\": \"CWK 17\"\n  },\n  \"evidence\": {\n    \"raw_instruction\": \"Printed in upper right notes box: 'MISSED APPROACH: Climb to 1000 then climbing left turn to 3000 on heading 040° and CWK VORTAC R-088 to HOOKK/CWK 17 DME and hold.'\",\n    \"climb_altitude\": \"3000 visible in missed approach profile and text\",\n    \"waypoints\": \"HOOKK and CWK labeled in missed approach fix box and instruction\",\n    \"turn_direction\": 'LEFT' explicitly stated in instruction\",\n    \"holding_required\": \"Word 'hold' at end of instruction; holding pattern depicted at HOOKK\",\n    \"holding_fix\": \"HOOKK labeled in MISSED APCH FIX box\"\n  }\n}",
+  "_questionnaire": {
+    "Q1": "yes",
+    "Q2": "yes",
+    "Q3": "yes",
+    "Q4": "yes",
+    "Q5": "yes",
+    "Q6": "yes"
+  }
+}

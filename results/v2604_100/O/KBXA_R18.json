@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 387+ft -> DF LOCHS 2000+ft -> HM LOCHS 2000+ft",
+  "climb_altitude": 2000,
+  "waypoints": [
+    "LOCHS"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "LOCHS",
+  "initial_track": null,
+  "turn_trigger": "LOCHS",
+  "holding_details": null
+}

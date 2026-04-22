@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climbing left turn to 5000 direct GRAVE and hold, DME/DME RNP-O.3 NA. Procedure NA at night. continue climb-in-hold to 5000.",
+  "climb_altitude": 5000,
+  "waypoints": [
+    "GRAVE"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "GRAVE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

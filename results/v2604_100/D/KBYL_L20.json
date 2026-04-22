@@ -1,0 +1,21 @@
+{
+  "raw_instruction": "Climb to 1800 then climbing left turn to 4000 direct LOZ VOR/DME and hold.",
+  "climb_altitude": 4000,
+  "waypoints": [
+    "LOZ"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "LOZ",
+  "initial_track": null,
+  "turn_trigger": "1800",
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Upper right corner of chart in MISSED APPROACH box",
+    "climb_altitude": "climbing left turn to 4000 direct LOZ VOR/DME and hold",
+    "waypoints": "direct LOZ VOR/DME and hold",
+    "turn_direction": "climbing left turn",
+    "holding_required": "and hold stated in missed approach instruction",
+    "holding_fix": "LOZ VOR/DME"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "raw_instruction": "Climb to 3000 direct EBORE and hold.",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "EBORE"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "EBORE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 3000 direct EBORE and hold.",
+    "climb_altitude": "3000",
+    "waypoints": "EBORE labeled in missed approach section and on chart",
+    "turn_direction": "No turn direction stated",
+    "holding_required": "Hold depicted at EBORE with racetrack symbol",
+    "holding_fix": "EBORE explicitly labeled"
+  },
+  "_questionnaire": {
+    "Q1": "yes",
+    "Q2": "yes",
+    "Q3": "yes",
+    "Q4": "no",
+    "Q5": "yes",
+    "Q6": "yes"
+  }
+}

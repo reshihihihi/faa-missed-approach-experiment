@@ -1,0 +1,121 @@
+VARANA, ARIZONA
+WAAS
+AL-10213 (FAA)
+25275
+APP CRS
+Rwy Ldg
+3892
+CH 56325
+TDZE
+2026
+RNAV (GPS) RWY 21
+W21A
+199°
+Apt Elev
+2031
+MARANA RGNL (AVQ)
+RNP APCH.
+Rwy 21 helicopter visibility reduction below 1 SM NA. When local
+ÅNA
+altimeter setting not received, use Ryan Fld altimeter setting and
+MISSED APPROACH: Climb to 6700 direct
+increase all MDAs 100 feet, increase LP Cat C visibility 1/ SM
+TUPBO and on track 284 to ALMON and
+and increase LNAV Cat C visibility 1/ SM.
+hold, continue climb-in-hold 6700.
+AWOS-3
+TUCSON APP CON
+UNICOM
+118.375
+119.4 318.1
+123.0 (CTAF)
+(IAF)
+4900
+PICLI
+(IF)
+081°
+NABPI
+(17.3)
+Procedure NA for arrivals at PICLI
+on V16 northwest bound.
+o
+AA00
+R
+(FAF)
+FIMTU
+0099
+2310
+(16.8)
+CD
+2SN NO
+dOWOZ
+WN 9
+(dAW)
+ZOMAP
+Procedure NA for arrivals
+A
+2089±
+at ALMON via V66 eastbound
+and V105 southeast bound.
+ALMON
+284
+ELEV
+2031
+TDZE 2026
+10400
+(11.6)
+TUPBO
+0.3% UP
+6700
+TUPBO
+ALMON
+VGSI and descent angles not coincident
+6901 X 100
+199
+¤
+tr
+(VGSI Angle 2.91/TCH 41).
+284°
+NABPI
+21
+FIMTU
+DUYED
+<3.35
+4900
+2.5 NM to
+ZOMAP
+TCH 40
+ZOMAP
+-171°
+3892 X 75
+*
+-199°
+4400
+3120
+0.5
+--2.5 NM--
+-3.6 NM
+8.7 NM
+CATEGORY
+A
+B
+c
+D
+REIL Rwys 3 and 21
+LP
+MDA
+2340-1 314 (400-1)
+NA
+REIL Rwys 12 and 30
+2640-13
+MIRL Rwys 3-21 and 12-30
+LNAV MDA
+2640-1
+614 (700-1)
+614 (700-1%)
+NA
+MARANA, ARIZONA
+MARANA RGNL (AVQ)
+Amdt 1C 15AUG19
+32°25'N-111°13'W
+RNAV (GPS) RWY 21

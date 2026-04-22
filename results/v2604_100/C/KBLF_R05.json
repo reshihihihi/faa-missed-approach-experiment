@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climbing left turn to 6000 direct KENYA and hold.",
+  "climb_altitude": 6000,
+  "waypoints": [
+    "KENYA"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "KENYA",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

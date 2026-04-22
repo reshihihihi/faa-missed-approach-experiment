@@ -1,0 +1,124 @@
+NIA, NORTH CAROLINA
+AL-6081 (FAA)
+WAAS
+Rwy ldg
+3769
+25107
+CH 90302
+APP CRS
+TDZE
+798
+RNAV (GPS) RWY 3
+W03A
+034°
+Apt Elev
+798
+GASTONIA MUNI (AKH)
+RNP APCH.
+If loal altimeer etting no receivd, us Charlotte Douglas Intl
+ODALS
+MISSED APPROACH: Climb to 3200 direct
+altimeter setting and increase all DAs/MDAs 40 feet.
+:…
+SAVKE and via 289° track to HIVSI and
+Inoperative table does not apply.
+202° track to GAFFE and hold.
+ASOS
+CHARLOTTE APP CON
+CLNC DEL
+135.725
+UNICOM
+120.05 257.2
+127.2
+123.0 (CTAF)0
+HIVSI
+A
+2754
+1484
+A
+SAVKE
+1847
+1090
+1690
+1065
+2
+RW03
+997
+4 NM
+Procedure NA for arrivals
+at GAFFE
+25 NM
+081°
+(FAF)
+via V54 westbound.
+261°
+ACLAC
+3000
+ 
+3800
+(IAF)
+109°
+GAFFE
+(15.1)
+(IF)
+SIDAR
+ELEV
+798
+TDZE
+798
+Procedure NA for arrivals
+at LOCKS
+via V454 southwest bound.
+(IAF)
+LOCKS
+VGSI and RNAV glidepath not coincident
+3200
+SAVKE
+HIVSI
+GAFFE
+(VGSI Angle 3.00/TCH 29).
+tr
+tr
+289°
+202°
+SIDAR
+-0.4% UP
+Procedure
+Tum
+3000
+ACLAC
+NA
+034°
+¤
+RW03
+3769X 100
+*.
+GP 3.00°
+2400
+TCH 40
+3
+6.1 NM
+4.8 NM
+034
+CATEGORY
+A
+B
+c
+D
+LPV
+DA
+1118-1/4
+320 (400-11/4)
+NA
+1440-13/4
+LNAV MDA
+1440-1
+642 (700-1)
+642 (700-13/4)
+NA
+MIRL Rwy 3-21
+GASTONIA, NORTH CAROLINA
+GASTONIA MUNI (AKH)
+35°12'N-81°09'W
+Amdt 1B 15AUG19
+RNAV IGPS) RWY 3

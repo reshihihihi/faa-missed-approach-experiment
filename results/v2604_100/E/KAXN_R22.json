@@ -1,0 +1,34 @@
+{
+  "raw_instruction": "Climb to 3500 direct MOVSE and right turn on track 315° to EVDEQ and on track 024° to TILER and hold.",
+  "climb_altitude": 3500,
+  "waypoints": [
+    "MOVSE",
+    "EVDEQ",
+    "TILER"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "TILER",
+  "initial_track": null,
+  "turn_trigger": "MOVSE",
+  "holding_details": {
+    "fix": "TILER",
+    "inbound_track": "024"
+  },
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH section upper right of chart",
+    "climb_altitude": "3500 printed in missed approach text and altitude arrow",
+    "waypoints": "MOVSE, EVDEQ, TILER explicitly labeled",
+    "turn_direction": "right turn stated in missed approach text",
+    "holding_required": "hold stated at end of instruction; holding pattern depicted at TILER",
+    "holding_fix": "TILER labeled at holding fix"
+  },
+  "_questionnaire": {
+    "Q1": "yes",
+    "Q2": "yes",
+    "Q3": "yes",
+    "Q4": "yes",
+    "Q5": "yes",
+    "Q6": "yes"
+  }
+}

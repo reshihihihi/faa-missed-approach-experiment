@@ -1,0 +1,14 @@
+{
+  "raw_instruction": "Climb to 4000 direct CUYAS and on track 024° to FARAD and hold.",
+  "climb_altitude": 4000,
+  "waypoints": [
+    "CUYAS",
+    "FARAD"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "FARAD",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

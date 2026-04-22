@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climb to 3000 direct MISSED APPROACH: MALSR 54 C. When local altimeter setting not received, use Cairo altimeter setting and For uncompensated Baro-VNAV systems, LNAV/VNAV NA below -17 C or above",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "CAIRO"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": false,
+  "holding_fix": null,
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

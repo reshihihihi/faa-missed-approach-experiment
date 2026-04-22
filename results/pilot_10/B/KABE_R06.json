@@ -1,0 +1,21 @@
+{
+  "raw_instruction": "Climb to 3000 direct FONUP and hold.",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "FONUP"
+  ],
+  "turn_direction": "unknown",
+  "holding_required": true,
+  "holding_fix": "FONUP",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Climb to 3000 direct FONUP and hold.",
+    "climb_altitude": "Climb to 3000",
+    "waypoints": "direct FONUP and hold",
+    "turn_direction": "not stated",
+    "holding_required": "and hold",
+    "holding_fix": "FONUP and hold"
+  }
+}

@@ -1,0 +1,145 @@
+ORD, PENNSYLVANIA
+AL-926 (FAA)
+WAAS
+23110
+APP CRS
+Rwy Idg
+CH 72919
+6306
+145°
+TDZE
+2119
+RNAV (GPS) RWY 14
+W14A
+Apt Elev
+2143
+BRADFORD RGNL (BFD)
+T
+For uncompensated Baro-VNAV systems, LNAV/VNAV NA below -1 9°C (-2°F) or above 53°C
+A
+(1°F). Baro-VNAV and VDP NA when using St. Marys altimeter setting. DME/DME RNP-0.3
+NA. Helicopter visibility reduction below  SM NA. When local altimeter setting not received, use
+MISSED APPROACH:
+S Marys altimeter setting: increase LPV DA to 2454 feet and al visibilities  SM; increase LNAV/
+Climb to 4500 direct
+VNAV DA to 2602 feet and all visibilities/ SM; increase all MDAs 100 feet and Circling Cat C
+NIMEE and hold.
+visibility / SM, and LNAV Cats C and D and Circling Cat D  SM.
+ASOS
+CLEVELAND CENTER
+UNICOM
+133.825
+124.325
+353.85
+123.075 (CTAF)
+(IAF)
+MOGUE
+145°
+5 NM
+-325°
+4500 NoPT
+(5)
+(IF/IAF)
+¤
+MOGUE
+KONBE
+4500
+4500
+325°
+KONBE
+4500 NoPT
+-055°
+(5)
+LEPNE
+(IAF)
+(FAF)
+3.7 NM to
+ROSLE
+GERVE
+RW14
+2305±
+2752
+2412
+RW14
+A
+F
+2242
+…
+2347
+ROSLE
+-325°
+4500
+ELEV
+2143
+D
+TDZE
+2119
+NIMEE
+5 NM
+145°
+5 NM
+VGSI and RNAV glidepath not coincident
+Holding Pattern
+4500
+NIMEE
+KONBE
+(VGSI Angle 3.00/TCH 42).
+-325°
+4500
+GERVE
+145°
+-145°
+LEPNE
+*LNAV only.
+3700 3.7 NM to
+22
+RW14
+*1.3 NM to
+*
+RW14
+4499 X 100_
+3700
+*3340
+RW14
+GP 3.00°
+TCH 55
+2242
+AS
+6.1 NM
+1.1 NM
+-2.4 NM-*
+1.3 NM
+C0.3% UP.
+|-
+CATEGORY
+A
+B
+c
+D
+LPV
+DA
+2369-1
+250 (300-1)
+LNAV/
+DA
+2517-1/
+398 (400-13/8)
+VNAV
+MIRL Rwy 5-23
+LNAV MDA
+2560-1 441 (500-1)
+2560-13/
+441 (500-13½)
+HIRL Rwy 14-320
+2620-1 477 (500-1)
+2720-1½/
+2760-2
+REIL Rwys 5, 14 and 23
+CIRCLING
+577 (600-11/2)
+617 (700-2)
+BRADFORD, PENNSYLVANIA
+BRADFORD RGNL (BFD)
+Amdt 1D 25MAR21
+41°48'N - 78°38'W
+RNAV (GPS) RWY 14

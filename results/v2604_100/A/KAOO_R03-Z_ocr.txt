@@ -1,0 +1,113 @@
+WAAS
+EINNSYLVANIA
+AL-100 (FAA)
+26078
+APP CRS
+Rwy Ldg
+CH 82529
+5465
+RNAV (GPS) Z RWY 3
+026°
+TDZE
+1503
+W03A
+Apt Elev
+1503
+ALTOONA/BLAIR COUNTY (AOO)
+Rwy 3 helicopter visibility reduction below 3 SM NA. DME/DME RNP-0.3
+ANA
+NA. When local altimeter setting not received, use Bedford County altimeter
+MISSED APPROACH: Climb to 5000 direct
+setting and increase all DA 84 feet, and increase all visibilities 3 mile.
+TOGJU and on track 042° to GANEC and
+hold, continue climb-in-hold to 5000.
+ASOS
+JOHNSTOWN APP CON 
+CTAF
+127.125
+121.2
+299.2
+123.60
+MISSED APCH FIX
+4 NM
+(10.8)
+GANEC
+TOGJU
+RW03
+(FAF)
+WOXUB
+30 NM to IDUSE
+5400
+IDUSE
+3090
+026
+11
+A000
+9
+U
+IOSE
+-296
+(IF/IAF)
+-1160
+IDUSE
+4
+900
+ELEV 1503
+IDUSE
+D
+TDZE 1503
+-296
+4500
+026°
+Z00
+WNA
+21
+2
+Goou po bo  pu caa
+5000
+TOGJU
+GANEC
+(VGSI Angle 3.00/TCH 43).
+tr
+¤
+--0.6% UP
+4 NM
+042°
+¤
+3668 X75
+Holding Pattern
+IDUSE
+1551
+3
+-206°
+WOXUB
+4500
+026°
+3600
+RW03
+026°
+308X9900
+*
+3
+GP 3.00°
+3600
+TCH 55
+026
+6 NM
+6.4 NM
+HIRL Rwy 3-210
+B
+c
+D
+MIRL Rwy 12-30
+CATEGORY
+A
+1828-1 325 (400-1)
+REIL Rwys 3, 12, and 30
+LPV
+DA
+ALTOONA, PENNSYLVANIA
+ALTOONA/BLAIR COUNTY (AOO)
+Orig-B 12OCT17
+40°18'N-78°19'W
+RNAV (GPS) Z RWY 3

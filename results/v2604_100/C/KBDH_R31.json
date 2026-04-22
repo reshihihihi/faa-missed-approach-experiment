@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climb to 2800 direct BEESE and hold.",
+  "climb_altitude": 2800,
+  "waypoints": [
+    "BEESE"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "BEESE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

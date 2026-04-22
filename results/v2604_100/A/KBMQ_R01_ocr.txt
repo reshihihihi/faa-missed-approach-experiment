@@ -1,0 +1,95 @@
+BURNET, TEXAS
+AL-5772 (FAA)
+APP CRS
+Rwy Idg
+24305
+5001
+013°
+TDZE
+1269
+RNAV (GPS) RWY 1
+Apt Elev
+1283
+RNP APCH - GPS.
+BURNET MUNI/KATE CRADDOCK FLD (BMQ)
+Ry 1 helicopter visibility reduction belowS NA. When local altimeter setting not
+MISSED APPROACH: Climb to
+received, use Lago Vista altimeter setting and increase all MDA 60 feet.
+3500 direct DLORA and hold.
+ASOS
+HOUSTON CENTER
+119.925
+UNICOM
+132.35 317.5
+122.8 (CTAF)0
+4 NM
+.013°
+DLORA
+A1930
+1797
+1487
+Λ
+1791.
+A
+Λ
+1807
+3097
+1399 ±
+1281
+HUKUD
+1515
+1 NM to
+(MAP)
+25 NM
+BEEPKY
+BEPKY
+(FAF)
+4100
+FINTI
+(IF)
+SUBIE
+ELEV 1283
+TDZE
+1269
+61
+Procedure NA for arrivals at AMUSE on V565
+0
+southeast bound and V163 southbound.
+(IAF)
+AMUSE
+3500
+DLORA
+SUBIE
+FINTI
+5001 X 75
+HUKUD
+3100
+3.04°≥
+1 NM to
+-013°
+TCH 45
+BEPKY
+BEPKY
+2600
+x
+1940
+0.5% UP-
+6NM
+-2 NM-
+-1 NM--1 NM
+CATEGORY
+A
+B
+c
+D
+013
+REIL Rwys 1 and 19
+1660-1½ 391 (400-11½4)
+NA
+LNAV MDA
+MIRL Rwy 1-190
+BURNET MUNI/KATE CRADDOCK FLD (BMQ)
+BURNET, TEXAS
+Drig-F 23FEB23
+30°44'N-98°14'W
+RNAV (GPS) RWY

@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climb to 500 then climbing right turn to 3000 direct SBI VOR/DME and hold.",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "SBI"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "SBI",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

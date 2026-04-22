@@ -1,0 +1,11 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 8700 then climbing right turn to 1 1000 direct ALS VORTAC and hold, continue climb in hold to 11000.",
+  "climb_altitude": 11000,
+  "waypoints": [],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "ALS",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

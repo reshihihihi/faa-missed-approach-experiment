@@ -1,0 +1,11 @@
+{
+  "raw_instruction": "MISSED APPROACHClimbing left turn to 3600 direct",
+  "climb_altitude": 3600,
+  "waypoints": [],
+  "turn_direction": "LEFT",
+  "holding_required": false,
+  "holding_fix": null,
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

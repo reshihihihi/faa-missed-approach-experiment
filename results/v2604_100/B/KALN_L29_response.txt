@@ -1,0 +1,23 @@
+{
+  "raw_instruction": "Climb to 1000 then climbing right turn to 2200 on heading 310° and on TOY VORTAC R-322 to TOPAZ INT/TOY 16 DME and hold.",
+  "climb_altitude": 1000,
+  "waypoints": ["WULIB", "TOPAZ", "TOY"],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "TOPAZ",
+  "initial_track": "310°",
+  "turn_trigger": "1000",
+  "holding_details": {
+    "track": "R-322",
+    "direction": null,
+    "leg_time": null
+  },
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 1000 then climbing right turn to 22o0 on heading 31O°and on TOY VORTAC R-322 to TOPAZ INT/TOY 16 DME and hold.",
+    "climb_altitude": "Climb to 1000",
+    "waypoints": "TOY VORTAC R-322 to TOPAZ INT/TOY 16 DME",
+    "turn_direction": "climbing right turn",
+    "holding_required": "to TOPAZ INT/TOY 16 DME and hold.",
+    "holding_fix": "TOPAZ INT/TOY 16 DME"
+  }
+}

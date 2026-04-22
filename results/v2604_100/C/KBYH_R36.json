@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climb to 2500 direct CEDVA and hold.",
+  "climb_altitude": 2500,
+  "waypoints": [
+    "CEDVA"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "CEDVA",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

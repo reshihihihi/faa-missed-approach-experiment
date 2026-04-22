@@ -1,0 +1,21 @@
+{
+  "raw_instruction": "Climb to 3000 on BOS VOR/DME R-154 to CELTS INT/BOS 11.7 DME and hold.",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "CELTS"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "CELTS",
+  "initial_track": "R-154",
+  "turn_trigger": "CELTS",
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Upper right corner of chart in MISSED APPROACH box",
+    "climb_altitude": "Climb to 3000",
+    "waypoints": "CELTS INT/BOS 11.7 DME",
+    "turn_direction": "No turn direction stated in instruction",
+    "holding_required": "...and hold. stated at end of instruction; holding pattern depicted at CELTS",
+    "holding_fix": "CELTS INT/BOS 11.7 DME and hold"
+  }
+}

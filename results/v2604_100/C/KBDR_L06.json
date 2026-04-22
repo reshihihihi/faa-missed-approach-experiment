@@ -1,0 +1,14 @@
+{
+  "raw_instruction": "Climb to 500 then climbing right turn to 1800 on heading 210° and CCC VOR/DME R-311 to STANE INT/I-BDR 6.2 DME and hold, continue climb-in-hold to 1800.",
+  "climb_altitude": 1800,
+  "waypoints": [
+    "STANE INT",
+    "I-BDR"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "STANE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

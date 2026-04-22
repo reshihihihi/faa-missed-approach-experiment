@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 440+ft -> DF UNJED 3600+ft -> HM UNJED 3600+ft",
+  "climb_altitude": 3600,
+  "waypoints": [
+    "UNJED"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "UNJED",
+  "initial_track": null,
+  "turn_trigger": "UNJED",
+  "holding_details": null
+}

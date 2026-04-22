@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "Climb to 2700 direct RUPRE and via 200° track to KEEDS.",
+  "climb_altitude": 2700,
+  "waypoints": ["RUPRE", "KEEDS"],
+  "turn_direction": "unknown",
+  "holding_required": false,
+  "holding_fix": null,
+  "initial_track": "200°",
+  "turn_trigger": "RUPRE",
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 2700 direct RUPRE and via 200° track to KEEDS.",
+    "climb_altitude": "Climb to 2700",
+    "waypoints": "direct RUPRE and via 200° track to KEEDS",
+    "turn_direction": "no explicit turn direction stated",
+    "holding_required": "no holding pattern mentioned",
+    "holding_fix": "not found"
+  }
+}

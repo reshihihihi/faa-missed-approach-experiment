@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "Climb to 2000 direct CUBUG and hold.",
+  "climb_altitude": 2000,
+  "waypoints": ["CUBUG"],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "CUBUG",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 2000 direct CUBUG and hold.",
+    "climb_altitude": "Climb to 2000 direct CUBUG and hold.",
+    "waypoints": "direct CUBUG and hold.",
+    "turn_direction": "no turn direction stated",
+    "holding_required": "and hold.",
+    "holding_fix": "direct CUBUG and hold."
+  }
+}

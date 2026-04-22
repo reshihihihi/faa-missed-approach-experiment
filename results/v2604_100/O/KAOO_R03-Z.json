@@ -1,0 +1,14 @@
+{
+  "raw_instruction": "CA 1828+ft -> DF TOGJU -> TF GANEC 5000+ft -> HM GANEC 5000+ft",
+  "climb_altitude": 5000,
+  "waypoints": [
+    "TOGJU",
+    "GANEC"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "GANEC",
+  "initial_track": null,
+  "turn_trigger": "TOGJU",
+  "holding_details": null
+}

@@ -1,0 +1,14 @@
+{
+  "raw_instruction": "CA 500+ft -> DF SGD -> TF BURDE 3200+ft -> HM BURDE 3200+ft",
+  "climb_altitude": 3200,
+  "waypoints": [
+    "SGD",
+    "BURDE"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "BURDE",
+  "initial_track": null,
+  "turn_trigger": "SGD",
+  "holding_details": null
+}

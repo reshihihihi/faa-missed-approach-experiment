@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "Climb to 3200 direct SAVKE and via 289° track to HIVSI and 202° track to GAFFE and hold.",
+  "climb_altitude": 3200,
+  "waypoints": ["SAVKE", "HIVSI", "GAFFE"],
+  "turn_direction": "unknown",
+  "holding_required": true,
+  "holding_fix": "GAFFE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Missed approach box in upper right of plan view",
+    "climb_altitude": "Climb to 3200",
+    "waypoints": "direct SAVKE and via 289° track to HIVSI and 202° track to GAFFE and hold",
+    "turn_direction": "No explicit turn direction stated",
+    "holding_required": "Chart states 'and hold' at GAFFE",
+    "holding_fix": "GAFFE and hold"
+  }
+}

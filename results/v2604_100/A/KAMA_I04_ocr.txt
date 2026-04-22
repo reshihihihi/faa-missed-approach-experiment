@@ -1,0 +1,183 @@
+AMARILLO, TEXAS
+AL-19 (FAA)
+25219
+LOC I-AMA
+APP CRS
+Rwy Ldg 13502
+TDZE
+3607
+ILS or LOC RWY 4
+110.3
+038°
+Apt Elev
+3607
+RICK HUSBAND AMARILLO INTL (AMA)
+ADF or DME required.
+When local altimeter setting not received, use Borger altimeter setting and increase S-ILS 4
+DA to 3960 feet and all visibilities to RVR 3000. Increase all MDAs 1 60 feet and S-LOC 4
+MISSED APPROACH:
+A
+visibility Cat C/D/E to RVR 6000 and Circling visibility Cat C/D  SM. For inop ALS,
+MALSR
+Climb to 4100 then
+climbing right turn to
+inop ALS when using Borger altimeter setting, increase visibility S-ILS 4 all Cats to 5500 and
+5000 on PNH VORTAC
+S-LOC 4 Cat C/D/E to 15%/ SM. * RVR 18O0 authorized with use of FD or AP or HUD to DA
+R-118 to CAUDE/
+(NA when using Borger altimeter setting).
+PNH 13 DME and hold.
+ATIS
+AMARILLO APP CON
+AMARILLO TOWER 
+GND CON
+CLNC DEL
+UNICOM
+118.85 350.3
+119.5 307.0
+118.3(CTAF)
+257.9
+121.9 348.6
+121.65 239.275
+122.95
+PANHANDLE
+P-47
+116.6 PNH
+-
+LOCALIZER 110.3
+(IAF)
+(IAF)
+Chan 113
+I-AMA
+MAGRL
+PNH14
+YOLPU
+5300 to LOM
+PNH 14
+217° (7.5)
+-R-078
+R-261
+PNH14 Arc
+5300 NoPT
+3749
+Tradewind
+R-118
+X
+5500
+082°
+(14)
+SIDER
+LR-226
+5300
+LOM/IAF
+118
+PHN20
+-038°
+PANDE
+CAUDE
+(IF)
+(6.5)
+251 AM :-
+PNH
+13
+PAVVI
+PNH
+14
+LR-209
+PNH
+7.5
+32
+ 231
+5500
+DOGIN
+5300 NoPT
+Arc
+PNH 29
+AM
+25
+PNH
+14
+NM
+PNH
+MSA
+-190
+RA1.
+(6'ε1)
+2470
+C000
+EEEE
+3607
+D
+TDZE
+3607
+6100
+0
+060
+5300
+YOCAN
+PNH29
+Procedure turn NA for Cat E.
+AM LOM
+4100
+5000
+CAUDE
+TWR
+PANDE
+Remain
+PNH
+7.5
+within 10 NM
+PNH R-118
+-218°
+5282
+5300
+PNH
+038°
+2.4
+GS 3.00°
+TCH 55
+5300
+038°
+5 NM
+A
+B
+c
+D
+E
+REIL Rwy 13
+CATEGORY
+3807/24 200 (200-1/2)
+HIRL Rwys 4-22 and 13-31
+S-ILS 4 *
+4000/24
+393 (400-1/2)
+4000/35
+S-LOC 4
+393 (400-%/)
+FAF to MAP 5 NM
+4240-13/4
+4280-21/4
+473 (500-1)
+4460-3
+Knots
+60
+90
+120
+150
+180
+CIRCLING
+4080-1
+633 (700-13/)
+673 (700-21/4)
+853 (900-3)
+Min:Sec
+5:00
+3:20
+2:30
+2:00
+1:40
+AMARILLO, TEXAS
+RICK HUSBAND AMARILLO INTL (AMA)
+Amdt 23 14JUL22
+35°13'N-101°42'W
+ILS or LOC RWY 4

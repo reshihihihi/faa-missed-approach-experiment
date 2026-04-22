@@ -1,0 +1,11 @@
+{
+  "raw_instruction": "and hold. Continue climb-in-hold to 5400. MISSED APPROACH: Climb to 540O direct BRA NDB MALSR ADF and DME required.",
+  "climb_altitude": 5400,
+  "waypoints": [],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": null,
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

@@ -1,0 +1,15 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 4000 on heading 100 Inop table does not apply to sidestep Rwy 9L. and AHN VOR/DME R-235 to CONNI/AHN 30.2 DME and hold.",
+  "climb_altitude": 4000,
+  "waypoints": [
+    "CONNI",
+    "TABLE",
+    "APPLY"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "CONNI",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

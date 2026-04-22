@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 1400+ft -> DF BU 3000+ft -> HM BU 3000+ft",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "BU"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "BU",
+  "initial_track": null,
+  "turn_trigger": "BU",
+  "holding_details": null
+}

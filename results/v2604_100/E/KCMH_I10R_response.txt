@@ -1,0 +1,28 @@
+QUESTIONNAIRE_ANSWERS:
+Q1: yes
+Q2: yes
+Q3: yes
+Q4: yes
+Q5: yes
+Q6: yes
+
+JSON:
+{
+  "raw_instruction": "Climb to 1400 then climbing right turn to 3000 direct BU LOM and hold.",
+  "climb_altitude": 3000,
+  "waypoints": ["BU"],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "BU",
+  "initial_track": null,
+  "turn_trigger": "1400",
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 1400 then climbing right turn to 3000 direct BU LOM and hold.",
+    "climb_altitude": "3000",
+    "waypoints": "BU LOM",
+    "turn_direction": "climbing right turn",
+    "holding_required": "and hold",
+    "holding_fix": "BU LOM"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "raw_instruction": "Climb to 6000 direct CELVA and on track 319° to DSD VORTAC and hold.",
+  "climb_altitude": 6000,
+  "waypoints": [
+    "CELVA",
+    "DSD"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "DSD",
+  "initial_track": "319°",
+  "turn_trigger": "CELVA",
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Upper right corner of chart in MISSED APPROACH box",
+    "climb_altitude": "Climb to 6000",
+    "waypoints": "direct CELVA and on track 319° to DSD VORTAC and hold",
+    "turn_direction": "No turn direction specified in text",
+    "holding_required": "Text states 'and hold' at DSD VORTAC",
+    "holding_fix": "DSD VORTAC named in missed approach instruction"
+  }
+}

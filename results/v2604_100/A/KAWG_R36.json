@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 3000 setting. When local altimeter setting not received, use lowa City altimeter setting: direct GANAD and hold.",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "GANAD"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "GANAD",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

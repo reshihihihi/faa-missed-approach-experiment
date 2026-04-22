@@ -1,0 +1,31 @@
+QUESTIONNAIRE_ANSWERS:
+Q1: yes
+Q2: yes
+Q3: yes
+Q4: no
+Q5: yes
+Q6: yes
+
+JSON:
+{
+  "raw_instruction": "Climb to 5400 direct BRA NDB and hold. Continue climb-in-hold to 5400.",
+  "climb_altitude": 5400,
+  "waypoints": ["BRA"],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "BRA",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": {
+    "fix": "BRA",
+    "altitude": 5400
+  },
+  "evidence": {
+    "raw_instruction": "Missed approach box at top of chart: 'MISSED APPROACH: Climb to 5400 direct BRA NDB and hold. Continue climb-in-hold to 5400.'",
+    "climb_altitude": "5400 explicitly stated in missed approach instruction",
+    "waypoints": "BRA NDB explicitly named in missed approach instruction",
+    "turn_direction": "No turn direction stated",
+    "holding_required": "Word 'hold' explicitly in instruction; holding pattern depicted in upper right",
+    "holding_fix": "BRA labeled as MISSED APCH FIX with holding pattern depicted"
+  }
+}

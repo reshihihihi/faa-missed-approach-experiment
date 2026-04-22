@@ -1,0 +1,32 @@
+{
+  "raw_instruction": "Climb to 2400 then climbing right turn to 4000 direct JAPUX and hold.",
+  "climb_altitude": 4000,
+  "waypoints": [
+    "JAPUX"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "JAPUX",
+  "initial_track": null,
+  "turn_trigger": "2400",
+  "holding_details": {
+    "fix": "JAPUX",
+    "pattern_altitude": 4000
+  },
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 2400 then climbing right turn to 4000 direct JAPUX and hold.",
+    "climb_altitude": "4000",
+    "waypoints": "JAPUX labeled in missed approach section and on chart",
+    "turn_direction": "climbing right turn",
+    "holding_required": "and hold",
+    "holding_fix": "JAPUX"
+  },
+  "_questionnaire": {
+    "Q1": "yes",
+    "Q2": "yes",
+    "Q3": "yes",
+    "Q4": "yes",
+    "Q5": "yes",
+    "Q6": "yes"
+  }
+}

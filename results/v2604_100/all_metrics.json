@@ -1,0 +1,6182 @@
+{
+  "A": {
+    "per_sample": {
+      "KABE_I06": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 1.0
+      },
+      "KALS_I02": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 1.0
+      },
+      "KAMA_I04": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": false,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KAPC_I01L": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KATL_I09R": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 1.0
+      },
+      "KAUS_I18L": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KAVL_I17": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KAYS_I19-Z": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KBMI_I29": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.75
+      },
+      "KBUY_I06-Z": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 1.0
+      },
+      "KBWG_I03-Y": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": false,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KCFO_I26": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KCMH_I10R": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": false,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.25
+      },
+      "KAVP_L04": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.0
+      },
+      "KAXH_L09": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBDL_L33": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.0
+      },
+      "KBDR_L06": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBFF_L12": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.5
+      },
+      "KBOS_L15R": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KBUR_L08-Z": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.5
+      },
+      "KBYL_L20": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.5
+      },
+      "KCEC_L12": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 1.0
+      },
+      "KCFO_L17": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KCOE_L06": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.0
+      },
+      "KCRP_L36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCRW_L05": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.5
+      },
+      "KALN_L29": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": false,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.5,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KALO_L12": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KAWM_L17": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KBPT_L12": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": false,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBRD_L34": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.75
+      },
+      "KBTL_L23R": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.75
+      },
+      "KBTP_L08": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 1.0
+      },
+      "KBWI_L15L": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": false,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.75
+      },
+      "KCAK_L01": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.75
+      },
+      "KCBF_L36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.75
+      },
+      "KCHA_L20": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KCJR_L04": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KAFN_RNV-B": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KAFN_RNV-C": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KAIB_RNV-A": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KANP_RNV-A": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KAPT_R04": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KAPV_R18": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KAQW_RNV-A": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KAQW_RNV-B": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 1.0
+      },
+      "KAVQ_R12": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KAVQ_R21": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KAXH_R27": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.6666666666666666,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 1.0
+      },
+      "KBDH_R31": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.6666666666666666
+      },
+      "KBDN_R34": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KBJC_R12L": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBLF_R05": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBMQ_R01": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KBOS_R32": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KBTV_R33-Y": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KBUR_R08-Z": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBWC_R26": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.5
+      },
+      "KCAG_R07": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.5
+      },
+      "KCBE_R05": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 1.0
+      },
+      "KCEA_RNV-D": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KCII_R33": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KCOE_R02": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KACT_R32": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KADF_R22": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAKH_R03": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.6,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 1.0
+      },
+      "KANY_R18": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAOO_R03-Z": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAOO_R21": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KARG_R04": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.5,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 1.0
+      },
+      "KATW_R21": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAVP_R22": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAWG_R36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAXN_R22": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KAXV_R26": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KAZC_R29": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": false,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBFD_R14": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.5,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 1.0
+      },
+      "KBJI_R31": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KBKW_R01": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBKX_R30": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBLV_R32RY": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": false,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.25
+      },
+      "KBTR_R04L": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBUM_R18": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": false,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KBVY_R34": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBXA_R18": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBYH_R36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBYI_R20": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.3333333333333333,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 1.0
+      },
+      "KCAO_R02": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCBF_R36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCDI_R04": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KCDR_R03": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": false,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.25
+      },
+      "KCDS_R36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.5,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 1.0
+      },
+      "KCGI_R10": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KCHO_R03": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.75
+      },
+      "KCHQ_R36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": false,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.25
+      },
+      "KCIC_R13L": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.75
+      },
+      "KCLL_R11": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCNC_R10": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCOI_R11": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.5,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.75
+      },
+      "KCRS_R32": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": false,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      }
+    },
+    "aggregate": {
+      "fields": {
+        "climb_altitude": {
+          "tp": 53,
+          "fp": 36,
+          "fn": 12
+        },
+        "turn_direction": {
+          "tp": 70,
+          "fp": 30,
+          "fn": 30
+        },
+        "holding_required": {
+          "tp": 56,
+          "fp": 44,
+          "fn": 44
+        },
+        "holding_fix": {
+          "tp": 37,
+          "fp": 34,
+          "fn": 25
+        }
+      },
+      "waypoints": {
+        "tp": 40,
+        "fp": 72,
+        "fn": 31,
+        "jaccard_total": 39.1,
+        "exact_count": 35
+      },
+      "samples_with_output": 100
+    }
+  },
+  "B": {
+    "per_sample": {
+      "KABE_I06": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 1.0
+      },
+      "KALS_I02": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAMA_I04": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.5,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.75
+      },
+      "KAPC_I01L": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KATL_I09R": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.75
+      },
+      "KAUS_I18L": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.5,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.75
+      },
+      "KAVL_I17": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.75
+      },
+      "KAYS_I19-Z": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": false,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KBMI_I29": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KBUY_I06-Z": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBWG_I03-Y": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCFO_I26": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.5,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.75
+      },
+      "KCMH_I10R": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAVP_L04": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KAXH_L09": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBDL_L33": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBDR_L06": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBFF_L12": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBOS_L15R": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBUR_L08-Z": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBYL_L20": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KCEC_L12": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KCFO_L17": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KCOE_L06": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KCRP_L36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KCRW_L05": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KALN_L29": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": false,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.3333333333333333,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KALO_L12": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.5,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.75
+      },
+      "KAWM_L17": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KBPT_L12": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBRD_L34": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.75
+      },
+      "KBTL_L23R": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.75
+      },
+      "KBTP_L08": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBWI_L15L": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 1.0
+      },
+      "KCAK_L01": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KCBF_L36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.5,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 1.0
+      },
+      "KCHA_L20": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": false,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KCJR_L04": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.5,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.75
+      },
+      "KAFN_RNV-B": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KAFN_RNV-C": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KAIB_RNV-A": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KANP_RNV-A": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KAPT_R04": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KAPV_R18": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KAQW_RNV-A": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KAQW_RNV-B": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KAVQ_R12": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KAVQ_R21": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KAXH_R27": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.6666666666666666
+      },
+      "KBDH_R31": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.3333333333333333
+      },
+      "KBDN_R34": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBJC_R12L": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBLF_R05": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBMQ_R01": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBOS_R32": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBTV_R33-Y": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBUR_R08-Z": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBWC_R26": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KCAG_R07": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KCBE_R05": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KCEA_RNV-D": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KCII_R33": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KCOE_R02": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KACT_R32": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KADF_R22": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAKH_R03": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KANY_R18": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAOO_R03-Z": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KAOO_R21": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KARG_R04": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KATW_R21": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAVP_R22": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAWG_R36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KAXN_R22": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KAXV_R26": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KAZC_R29": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": false,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KBFD_R14": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KBJI_R31": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KBKW_R01": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KBKX_R30": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBLV_R32RY": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KBTR_R04L": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KBUM_R18": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KBVY_R34": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KBXA_R18": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBYH_R36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBYI_R20": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCAO_R02": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KCBF_R36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KCDI_R04": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KCDR_R03": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KCDS_R36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCGI_R10": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KCHO_R03": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCHQ_R36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KCIC_R13L": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KCLL_R11": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KCNC_R10": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KCOI_R11": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KCRS_R32": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      }
+    },
+    "aggregate": {
+      "fields": {
+        "climb_altitude": {
+          "tp": 61,
+          "fp": 38,
+          "fn": 4
+        },
+        "turn_direction": {
+          "tp": 31,
+          "fp": 69,
+          "fn": 69
+        },
+        "holding_required": {
+          "tp": 64,
+          "fp": 36,
+          "fn": 36
+        },
+        "holding_fix": {
+          "tp": 57,
+          "fp": 41,
+          "fn": 5
+        }
+      },
+      "waypoints": {
+        "tp": 66,
+        "fp": 67,
+        "fn": 5,
+        "jaccard_total": 51.333333333333336,
+        "exact_count": 48
+      },
+      "samples_with_output": 100
+    }
+  },
+  "C": {
+    "per_sample": {
+      "KABE_I06": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 1.0
+      },
+      "KALS_I02": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAMA_I04": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KAPC_I01L": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KATL_I09R": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 1.0
+      },
+      "KAUS_I18L": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KAVL_I17": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 1.0
+      },
+      "KAYS_I19-Z": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.75
+      },
+      "KBMI_I29": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KBUY_I06-Z": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBWG_I03-Y": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCFO_I26": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.5,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.75
+      },
+      "KCMH_I10R": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KAVP_L04": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KAXH_L09": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBDL_L33": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBDR_L06": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBFF_L12": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBOS_L15R": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KBUR_L08-Z": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBYL_L20": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KCEC_L12": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KCFO_L17": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KCOE_L06": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KCRP_L36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KCRW_L05": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KALN_L29": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.75
+      },
+      "KALO_L12": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KAWM_L17": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KBPT_L12": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBRD_L34": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.75
+      },
+      "KBTL_L23R": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBTP_L08": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBWI_L15L": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 1.0
+      },
+      "KCAK_L01": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KCBF_L36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCHA_L20": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCJR_L04": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KAFN_RNV-B": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KAFN_RNV-C": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KAIB_RNV-A": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KANP_RNV-A": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KAPT_R04": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KAPV_R18": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KAQW_RNV-A": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KAQW_RNV-B": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KAVQ_R12": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KAVQ_R21": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KAXH_R27": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBDH_R31": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.6666666666666666
+      },
+      "KBDN_R34": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KBJC_R12L": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBLF_R05": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBMQ_R01": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KBOS_R32": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KBTV_R33-Y": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 1.0
+      },
+      "KBUR_R08-Z": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBWC_R26": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KCAG_R07": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KCBE_R05": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KCEA_RNV-D": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KCII_R33": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KCOE_R02": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KACT_R32": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KADF_R22": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAKH_R03": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KANY_R18": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAOO_R03-Z": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAOO_R21": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KARG_R04": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KATW_R21": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAVP_R22": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAWG_R36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAXN_R22": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KAXV_R26": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAZC_R29": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBFD_R14": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBJI_R31": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBKW_R01": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBKX_R30": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBLV_R32RY": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KBTR_R04L": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBUM_R18": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBVY_R34": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBXA_R18": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBYH_R36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBYI_R20": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCAO_R02": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCBF_R36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCDI_R04": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCDR_R03": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCDS_R36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCGI_R10": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCHO_R03": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCHQ_R36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCIC_R13L": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCLL_R11": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCNC_R10": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCOI_R11": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KCRS_R32": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      }
+    },
+    "aggregate": {
+      "fields": {
+        "climb_altitude": {
+          "tp": 65,
+          "fp": 35,
+          "fn": 0
+        },
+        "turn_direction": {
+          "tp": 68,
+          "fp": 32,
+          "fn": 32
+        },
+        "holding_required": {
+          "tp": 65,
+          "fp": 35,
+          "fn": 35
+        },
+        "holding_fix": {
+          "tp": 57,
+          "fp": 39,
+          "fn": 5
+        }
+      },
+      "waypoints": {
+        "tp": 67,
+        "fp": 56,
+        "fn": 4,
+        "jaccard_total": 55.5,
+        "exact_count": 55
+      },
+      "samples_with_output": 100
+    }
+  },
+  "D": {
+    "per_sample": {
+      "KABE_I06": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 1.0
+      },
+      "KALS_I02": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAMA_I04": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KAPC_I01L": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KATL_I09R": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 1.0
+      },
+      "KAUS_I18L": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.5,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.75
+      },
+      "KAVL_I17": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 1.0
+      },
+      "KAYS_I19-Z": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.75
+      },
+      "KBMI_I29": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KBUY_I06-Z": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBWG_I03-Y": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCFO_I26": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.5,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.75
+      },
+      "KCMH_I10R": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAVP_L04": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KAXH_L09": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBDL_L33": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBDR_L06": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBFF_L12": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBOS_L15R": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KBUR_L08-Z": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBYL_L20": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KCEC_L12": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KCFO_L17": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KCOE_L06": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KCRP_L36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KCRW_L05": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KALN_L29": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KALO_L12": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KAWM_L17": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KBPT_L12": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBRD_L34": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.75
+      },
+      "KBTL_L23R": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBTP_L08": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBWI_L15L": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 1.0
+      },
+      "KCAK_L01": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KCBF_L36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCHA_L20": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCJR_L04": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.5,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.75
+      },
+      "KAFN_RNV-B": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KAFN_RNV-C": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KAIB_RNV-A": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KANP_RNV-A": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KAPT_R04": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KAPV_R18": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KAQW_RNV-A": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KAQW_RNV-B": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KAVQ_R12": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KAVQ_R21": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KAXH_R27": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBDH_R31": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.6666666666666666
+      },
+      "KBDN_R34": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KBJC_R12L": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBLF_R05": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBMQ_R01": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KBOS_R32": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KBTV_R33-Y": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBUR_R08-Z": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBWC_R26": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KCAG_R07": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KCBE_R05": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KCEA_RNV-D": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KCII_R33": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KCOE_R02": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KACT_R32": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KADF_R22": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAKH_R03": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KANY_R18": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAOO_R03-Z": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KAOO_R21": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KARG_R04": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KATW_R21": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAVP_R22": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAWG_R36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAXN_R22": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KAXV_R26": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAZC_R29": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBFD_R14": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBJI_R31": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBKW_R01": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBKX_R30": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBLV_R32RY": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KBTR_R04L": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBUM_R18": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBVY_R34": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBXA_R18": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBYH_R36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBYI_R20": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCAO_R02": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCBF_R36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCDI_R04": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCDR_R03": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCDS_R36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCGI_R10": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCHO_R03": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCHQ_R36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCIC_R13L": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCLL_R11": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCNC_R10": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCOI_R11": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCRS_R32": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      }
+    },
+    "aggregate": {
+      "fields": {
+        "climb_altitude": {
+          "tp": 65,
+          "fp": 35,
+          "fn": 0
+        },
+        "turn_direction": {
+          "tp": 61,
+          "fp": 39,
+          "fn": 39
+        },
+        "holding_required": {
+          "tp": 64,
+          "fp": 36,
+          "fn": 36
+        },
+        "holding_fix": {
+          "tp": 58,
+          "fp": 40,
+          "fn": 4
+        }
+      },
+      "waypoints": {
+        "tp": 67,
+        "fp": 60,
+        "fn": 4,
+        "jaccard_total": 54.5,
+        "exact_count": 53
+      },
+      "samples_with_output": 100
+    }
+  },
+  "E": {
+    "per_sample": {
+      "KABE_I06": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.75
+      },
+      "KALS_I02": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAMA_I04": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": false,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.5
+      },
+      "KAPC_I01L": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KATL_I09R": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 1.0
+      },
+      "KAUS_I18L": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": false,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KAVL_I17": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 1.0
+      },
+      "KAYS_I19-Z": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.75
+      },
+      "KBMI_I29": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KBUY_I06-Z": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBWG_I03-Y": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCFO_I26": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.5,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.75
+      },
+      "KCMH_I10R": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAVP_L04": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KAXH_L09": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.6666666666666666
+      },
+      "KBDL_L33": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBDR_L06": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBFF_L12": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBOS_L15R": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KBUR_L08-Z": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBYL_L20": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KCEC_L12": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KCFO_L17": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KCOE_L06": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KCRP_L36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KCRW_L05": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KALN_L29": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KALO_L12": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KAWM_L17": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KBPT_L12": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBRD_L34": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.75
+      },
+      "KBTL_L23R": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBTP_L08": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": false,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KBWI_L15L": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 1.0
+      },
+      "KCAK_L01": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KCBF_L36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCHA_L20": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCJR_L04": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KAFN_RNV-B": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KAFN_RNV-C": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KAIB_RNV-A": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KANP_RNV-A": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KAPT_R04": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KAPV_R18": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KAQW_RNV-A": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KAQW_RNV-B": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KAVQ_R12": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KAVQ_R21": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KAXH_R27": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBDH_R31": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.6666666666666666
+      },
+      "KBDN_R34": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KBJC_R12L": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBLF_R05": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBMQ_R01": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KBOS_R32": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KBTV_R33-Y": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KBUR_R08-Z": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KBWC_R26": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KCAG_R07": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KCBE_R05": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KCEA_RNV-D": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": false,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.0
+      },
+      "KCII_R33": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KCOE_R02": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": null,
+          "turn_direction": true,
+          "holding_required": false,
+          "holding_fix": null
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KACT_R32": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KADF_R22": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAKH_R03": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KANY_R18": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAOO_R03-Z": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAOO_R21": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KARG_R04": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KATW_R21": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAVP_R22": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAWG_R36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAXN_R22": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 0.75
+      },
+      "KAXV_R26": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KAZC_R29": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBFD_R14": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBJI_R31": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBKW_R01": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBKX_R30": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBLV_R32RY": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": false,
+          "holding_required": true,
+          "holding_fix": false
+        },
+        "waypoints_jaccard": 0.0,
+        "waypoints_exact": false,
+        "scalar_exact_rate": 0.5
+      },
+      "KBTR_R04L": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBUM_R18": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBVY_R34": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBXA_R18": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBYH_R36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KBYI_R20": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCAO_R02": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCBF_R36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCDI_R04": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCDR_R03": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCDS_R36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCGI_R10": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCHO_R03": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCHQ_R36": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCIC_R13L": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCLL_R11": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCNC_R10": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCOI_R11": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      },
+      "KCRS_R32": {
+        "has_output": true,
+        "field_matches": {
+          "climb_altitude": true,
+          "turn_direction": true,
+          "holding_required": true,
+          "holding_fix": true
+        },
+        "waypoints_jaccard": 1.0,
+        "waypoints_exact": true,
+        "scalar_exact_rate": 1.0
+      }
+    },
+    "aggregate": {
+      "fields": {
+        "climb_altitude": {
+          "tp": 62,
+          "fp": 37,
+          "fn": 3
+        },
+        "turn_direction": {
+          "tp": 68,
+          "fp": 31,
+          "fn": 32
+        },
+        "holding_required": {
+          "tp": 62,
+          "fp": 37,
+          "fn": 38
+        },
+        "holding_fix": {
+          "tp": 56,
+          "fp": 42,
+          "fn": 6
+        }
+      },
+      "waypoints": {
+        "tp": 66,
+        "fp": 55,
+        "fn": 5,
+        "jaccard_total": 54.5,
+        "exact_count": 54
+      },
+      "samples_with_output": 100
+    }
+  }
+}

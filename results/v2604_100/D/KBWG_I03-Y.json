@@ -1,0 +1,21 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 2000 then climbing right turn to 2400 direct NOORA LOM and hold.",
+  "climb_altitude": 2400,
+  "waypoints": [
+    "NOORA"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "NOORA",
+  "initial_track": null,
+  "turn_trigger": "2000",
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Text box in upper right of chart header area labeled 'MISSED APPROACH'",
+    "climb_altitude": "climbing right turn to 2400",
+    "waypoints": "direct NOORA LOM and hold",
+    "turn_direction": "climbing right turn",
+    "holding_required": "and hold stated in missed approach text",
+    "holding_fix": "NOORA LOM named in missed approach text"
+  }
+}

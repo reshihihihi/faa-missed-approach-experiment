@@ -1,0 +1,100 @@
+RNAV (GPS) RWY 36
+CHARLESTON, MISSOURI
+MISSISSIPPI COUNTY (CHQ)
+547 (600-1)
+487 (500-1)
+800-1
+C CIRCLING
+NA
+860-1
+RW36
+487 (500-1)
+800-1
+LNAV MDA
+002° to
+NA
+B
+A
+CATEGORY
+d
+2
+3NS
+WN
+9ε
+2000
+RW36
+×
+TCH 45
+002°
+3.00°
+002°
+3000
+09 X 961ε
+∠182°
+ZEROV
+Holding Pattern
+(VGSI Angle 3.00/TCH 40).
+CEDKA
+4 NM
+JELVA
+3000
+VGSI and descent angle not coincident
+¤
+WN7
+14
+WN 38
+18
+R pu  S 13
+182°
+3000
+MIRL Rwy 18-36
+CEDKA
+CEDKA
+TDZE 313
+ELEV 313
+(IF/IAF)
+-—272°
+092°——
+o000
+5
+2000
+22∠
+o60
+CEXA
+ZEROZ
+(A A)
+3000
+CCA
+v
+04
+WN 3
+A517
+1009
+RW36
+A332
+4 NM
+122.9 0
+133.65 292.15
+CTAF
+119.175
+MEMPHIS CENTER
+SIK AWOS-3
+3000 direct JELVA and hold.
+when not received use Cairo, IL altimeter setting and increase all MDA 20 feet.
+Helicopter visibility reduction below 1 SM NA.
+MISSED APPROACH: Climb to
+DME/DME RNP-O.3 NA. Procedure NA at night. Use Sikeston altimeter setting,
+ANA
+MISSISSIPPI COUNTY (CHQ)
+RNAV (GPS) RWY 36
+313
+Apt Elev
+313
+TDZE
+002°
+19283
+3196
+Rwy Idg
+APP CRS
+AL-6198 (FAA)
+CHARLESTON, MISSOURI

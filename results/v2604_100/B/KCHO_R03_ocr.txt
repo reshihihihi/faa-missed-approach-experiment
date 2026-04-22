@@ -1,0 +1,174 @@
+VILLE, VIRGINIA
+AL-765 (FAA)
+WAAS
+23166
+APP CRS
+Rwy ldg
+6801
+CH 61105
+TDZE
+640
+RNAV (GPS) RWY 3
+W03A
+030°
+Apt Elev
+640
+CHARLOTTESVILLE-ALBEMARLE (CHO)
+RNP APCH.
+T
+For uncompensated Baro-VNAV systems, LNAV/VNAV NA below -12°C or above 54°C.
+When local altimeter setting not received, use Orange altimeter setting and increase LV DA
+to 910, LNAV/VNAV DA to 985, and all MDA 80 feet; increase LNAV/VNAV all Cats
+MALSR
+MISSED APPROACH:
+Climb to 2000 then
+visibility  SM, LNAV Cat C/D visibility 1 SM and Circling Cats C/D visibility  SM.
+climbing right turn to
+Baro-VNAV and VDP NA when using Orange altimeter setting. For Inop ALS, increase
+LNAV/VNAV all Cats visibiliy to / SM and LNAV Cats C/D visibility to 1 SM. For inop
+4000 direct GVE
+ALS when using Orange altimeter setting, increase LPV all Cats visibility to  SM, and
+VORTAC and hold.
+LNAV/VNAV all Cats visibility to 1 SM.
+ATIS
+POTOMAC APP CON
+CHARLOTTESVILLE TOWER *
+GND CON
+118.425
+UNICOM
+132.85
+323.125
+124.5 (CTAF) ( 338.275
+121.9
+338.275
+122.95
+2864
+Procedure NA for arrivals
+3389
+at MITER on V1 40 northeast bound.
+25 NM
+MITER
+2491
+3374
+5300
+•1378
+1580
+RW03
+3290
+5000
+A
+754
+1830
+3032
+JITIV
+Λ
+2.5 NM
+to RW03
+GORDONSVILLE
+(FAF)
+1498
+GVE
+2660
+SIPME
+2090
+000
+Λ
+3400
+(∠'9)
+1785
+264°
+330
+(IF/IAF)
+(19.8)
+2533
+3851
+^
+WULDU
+•213
+4 NM
+oa
+030°
+Po   o
+O G C
+LPO A0D1
+ c C Cp Cc
+(A1)
+(12.7)
+4 NM
+ROMAN
+ELEV
+640
+D
+TDZE
+640
+HOLD
+6000
+Procedure NA for arrivals
+3400
+at ROMAN on V290 northwest bound.
+21
+4 NM
+WULDU
+2000
+4000
+GVE
+Holding Pattern
+SIPME
+←
+¤
+6000
+-210°
+JITIV
+-030°
+2600
+2.5 NM
+*LNAV only
+0.3% UP
+300
+F000
+TM
+WNI*
+*
+to RW03
+TWR
+2600
+GP 3.00°
+RW03
+*1480
+6801 X 150
+685
+TCH 54
+-6.7 NM
+3.5 NM→-1.5 NM 1 NM
+CATEGORY
+A
+B
+c
+D
+LPV
+DA
+840-1½ 200 (200-1/2)
+LNAV/
+DA
+915-1½2
+275 (300-1/2)
+VNAV
+LNAV MDA
+1020-1½
+380 (400-1/2)
+1020-5/380 (400-5%)
+1500-21½2
+030°
+1100-1
+460 (500-1)
+1500-23/
+HIRL Rwy 3-210
+CIRCLING
+860 (900-21/2)
+860 (900-23/)
+REIL Rwy 21
+CHARLOTTESVILLE, VIRGINIA
+CHARLOTTESVILLE-ALBEMARLE (CHO)
+3A 22APR21
+38°08'N-78°27'W
+RNIAV IGPS) RWY ?

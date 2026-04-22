@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "Climb to 3500 direct MOVSE and right turn on track 315° to EVDEQ and on track 024° to TILER and hold.",
+  "climb_altitude": 3500,
+  "waypoints": ["MOVSE", "EVDEQ", "TILER"],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "TILER",
+  "initial_track": "315°",
+  "turn_trigger": "MOVSE",
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 3500 direct MOVSE and right turn on track 315° to EVDEQ and on track 024° to TILER and hold.",
+    "climb_altitude": "Climb to 3500",
+    "waypoints": "direct MOVSE and right turn on track 315° to EVDEQ and on track 024° to TILER and hold.",
+    "turn_direction": "right turn",
+    "holding_required": "to TILER and hold.",
+    "holding_fix": "to TILER and hold."
+  }
+}

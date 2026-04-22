@@ -1,0 +1,94 @@
+, MARYLAND
+AL-9806 (FAA)
+24305
+APP CRS
+Rwy Idg
+N/A
+TDZE
+N/A
+RNAV (GPS)-A
+298°
+Apt Elev
+34
+LEE (ANP)
+RNP APCH - GPS.
+Procedure NA at night. Rwy 12, and 30 helicopter visibility reduction
+MISSED APPROACH: Climbing left turn to
+ANA
+below 1 SM NA. Use BWI altimeter setting.
+2000 direct AMRTN and hold.
+BWI ASOS
+POTOMAC APP CON
+CTAF
+115.1 127.8
+119.7 290.475
+122.90
+1049
+A
+Procedure NA for arrivals at GRACO on T291-T295
+A624
+northbound and on V379 eastbound.
+704
+A449
+^
+629
+(IAF)
+200±
+280
+(FAF)
+GRAC
+(MAP)
+DENII
+623.
+STRGL
+1700
+(IF/IAF)
+A
+298°
+AAMRTN
+(6.4)
+HOLD
+6000
+2000
+4 NM
+2600
+ELEV
+34
+2
+2000
+AMRTN
+2505 X 48
+298°
+AMRTN
+4 NM
+Holding Pattern
+¤
+3
+DENII
+118°
+6000
+-298°
+200
+-298°
+STRGL
+*
+1700
+3.06
+TCH 40
+4.5 NM
+6.4 NM
+CATEGORY
+A
+B
+c
+D
+LIRL Rwy 12-30
+CIRCLING
+660-1
+626 (700-1)
+NA
+ANNAPOLIS, MARYLAND
+LEE (ANP)
+Orig-C 31OCT24
+38°57'N-76°34'W
+RNAV (GPS)-A

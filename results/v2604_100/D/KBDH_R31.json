@@ -1,0 +1,21 @@
+{
+  "raw_instruction": "Climb to 2800 direct BEESE and hold.",
+  "climb_altitude": 2800,
+  "waypoints": [
+    "BEESE"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "BEESE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Upper right of plan view in MISSED APPROACH note box",
+    "climb_altitude": "Climb to 2800 direct BEESE and hold.",
+    "waypoints": "BEESE named in missed approach instruction and shown on plan view",
+    "turn_direction": "No turn direction specified in instruction",
+    "holding_required": "Text states 'and hold' at BEESE",
+    "holding_fix": "BEESE named in missed approach instruction"
+  }
+}

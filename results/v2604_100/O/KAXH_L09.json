@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 469+ft -> DF KEEDS 2500+ft",
+  "climb_altitude": 2500,
+  "waypoints": [
+    "KEEDS"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": false,
+  "holding_fix": null,
+  "initial_track": null,
+  "turn_trigger": "KEEDS",
+  "holding_details": null
+}

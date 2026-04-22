@@ -1,0 +1,21 @@
+{
+  "raw_instruction": "Climb to 3500 direct CYMOL and hold.",
+  "climb_altitude": 3500,
+  "waypoints": [
+    "CYMOL"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "CYMOL",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 3500 direct CYMOL and hold.",
+    "climb_altitude": "Climb to 3500",
+    "waypoints": "direct CYMOL and hold",
+    "turn_direction": "no turn direction stated",
+    "holding_required": "and hold",
+    "holding_fix": "CYMOL"
+  }
+}

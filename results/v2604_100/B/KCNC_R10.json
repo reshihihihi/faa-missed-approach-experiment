@@ -1,0 +1,21 @@
+{
+  "raw_instruction": "Climb to 3000 direct EBORE and hold.",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "EBORE"
+  ],
+  "turn_direction": "unknown",
+  "holding_required": true,
+  "holding_fix": "EBORE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Climb to 3000 direct EBORE and hold.",
+    "climb_altitude": "Climb to 3000 direct",
+    "waypoints": "direct EBORE and hold.",
+    "turn_direction": "not found",
+    "holding_required": "EBORE and hold.",
+    "holding_fix": "direct EBORE and hold."
+  }
+}

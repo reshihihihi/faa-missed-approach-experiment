@@ -1,0 +1,32 @@
+{
+  "raw_instruction": "Climb to 2000 direct CUBUG and hold.",
+  "climb_altitude": 2000,
+  "waypoints": [
+    "CUBUG"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "CUBUG",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": {
+    "fix": "CUBUG",
+    "pattern_altitude": 2000
+  },
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 2000 direct CUBUG and hold.",
+    "climb_altitude": "2000",
+    "waypoints": "CUBUG labeled in missed approach section and on plan view",
+    "turn_direction": "No turn direction stated",
+    "holding_required": "Holding pattern depicted at CUBUG with racetrack symbol",
+    "holding_fix": "CUBUG explicitly labeled"
+  },
+  "_questionnaire": {
+    "Q1": "yes",
+    "Q2": "yes",
+    "Q3": "yes",
+    "Q4": "no",
+    "Q5": "yes",
+    "Q6": "yes"
+  }
+}

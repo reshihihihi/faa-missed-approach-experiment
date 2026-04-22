@@ -1,0 +1,21 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to -1 6°C or above 54°C. For inop ALS, increase LNAV Cat C/D visibility 3000 direct KOCEC and on to 1½g SM. track 084° to LIZZI and hold. ATIS",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "FOR",
+    "INOP",
+    "ALS",
+    "LNAV",
+    "CAT",
+    "KOCEC",
+    "AND",
+    "LIZZI",
+    "ATIS"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": null,
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

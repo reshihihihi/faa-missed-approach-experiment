@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "Climb to 2600 then climbing left turn to 6500 direct PICLI and hold, continue climb-in-hold to 6500.",
+  "climb_altitude": 6500,
+  "waypoints": ["PICLI"],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "PICLI",
+  "initial_track": null,
+  "turn_trigger": "2600",
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Top of chart in the missed approach box, upper right of plan view header",
+    "climb_altitude": "climb to 2600 then climbing left turn to 6500",
+    "waypoints": "direct PICLI and hold",
+    "turn_direction": "climbing left turn",
+    "holding_required": "and hold, continue climb-in-hold to 6500",
+    "holding_fix": "direct PICLI and hold"
+  }
+}

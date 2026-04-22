@@ -1,0 +1,31 @@
+QUESTIONNAIRE_ANSWERS:
+Q1: yes
+Q2: yes
+Q3: yes
+Q4: no
+Q5: yes
+Q6: yes
+
+JSON:
+{
+  "raw_instruction": "Climb to 5900 direct YISUK and hold, continue climb-in-hold to 5900.",
+  "climb_altitude": 5900,
+  "waypoints": ["YISUK"],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "YISUK",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": {
+    "fix": "YISUK",
+    "altitude": 5900
+  },
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH box upper right: 'Climb to 5900 direct YISUK and hold, continue climb-in-hold to 5900.'",
+    "climb_altitude": "5900 explicitly stated",
+    "waypoints": "YISUK labeled in missed approach section and on chart",
+    "turn_direction": "No turn direction stated",
+    "holding_required": "Hold explicitly stated at YISUK",
+    "holding_fix": "YISUK labeled as MISSED APCH FIX"
+  }
+}

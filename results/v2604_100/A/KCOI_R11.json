@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to Rwy 11 helicopter visibility reduction below 1 SM NA. When local altimeter setting 3000 direct YONUS and on track 190 to MLB VOR/DME MDA 40 feet, increase LPV all Cats visibility mile. Night landing: Rwy 11 NA. and hold.",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "YONUS"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "YONUS",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

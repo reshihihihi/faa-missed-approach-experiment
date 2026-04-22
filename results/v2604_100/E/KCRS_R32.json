@@ -1,0 +1,29 @@
+{
+  "raw_instruction": "Climb to 900, then climbing right turn to 2500 direct HOXDE and hold.",
+  "climb_altitude": 2500,
+  "waypoints": [
+    "HOXDE"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "HOXDE",
+  "initial_track": null,
+  "turn_trigger": "900",
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 900, then climbing right turn to 2500 direct HOXDE and hold.",
+    "climb_altitude": "2500 depicted in missed approach profile and instruction",
+    "waypoints": "HOXDE labeled in missed approach section",
+    "turn_direction": "right turn explicitly stated",
+    "holding_required": "and hold stated in instruction; holding symbol depicted",
+    "holding_fix": "HOXDE labeled with triangle symbol in profile"
+  },
+  "_questionnaire": {
+    "Q1": "yes",
+    "Q2": "yes",
+    "Q3": "yes",
+    "Q4": "yes",
+    "Q5": "yes",
+    "Q6": "yes"
+  }
+}

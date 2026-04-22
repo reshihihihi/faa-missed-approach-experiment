@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 1000 then climbing right turn to 2000 on GQE KEHOE FIX MINIMUMS S-LOC 17 Cats C/D visibility to 1 SM. VOR/DME R-147 to GQE VOR/DME and hold.",
+  "climb_altitude": 2000,
+  "waypoints": [
+    "KEHOE"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "KEHOE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

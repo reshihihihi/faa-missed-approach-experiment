@@ -1,0 +1,21 @@
+{
+  "raw_instruction": "Climb to 3000 direct LOCID and hold.",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "LOCID"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "LOCID",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Upper right corner box labeled MISSED APPROACH",
+    "climb_altitude": "Climb to 3000 direct LOCID and hold.",
+    "waypoints": "direct LOCID and hold",
+    "turn_direction": "No turn direction stated in instruction",
+    "holding_required": "Word 'hold' explicitly stated; holding pattern depicted at LOCID in plan view",
+    "holding_fix": "LOCID named in missed approach instruction and shown in plan view"
+  }
+}

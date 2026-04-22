@@ -1,0 +1,28 @@
+QUESTIONNAIRE_ANSWERS:
+Q1: yes
+Q2: yes
+Q3: yes
+Q4: yes
+Q5: yes
+Q6: yes
+
+JSON:
+{
+  "raw_instruction": "Climbing left turn to 6000 direct KENYA and hold.",
+  "climb_altitude": 6000,
+  "waypoints": ["KENYA"],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "KENYA",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climbing left turn to 6000 direct KENYA and hold.",
+    "climb_altitude": "6000",
+    "waypoints": "KENYA",
+    "turn_direction": "left turn",
+    "holding_required": "and hold",
+    "holding_fix": "KENYA"
+  }
+}

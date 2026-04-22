@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 1002+ft -> DF GANAD 3000+ft -> HM GANAD 3000+ft",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "GANAD"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "GANAD",
+  "initial_track": null,
+  "turn_trigger": "GANAD",
+  "holding_details": null
+}

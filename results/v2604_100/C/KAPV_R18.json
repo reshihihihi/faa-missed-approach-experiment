@@ -1,0 +1,15 @@
+{
+  "raw_instruction": "Climb to 6000 direct FAPID and track 253° to FEBAX and track 316° to NASTE and hold.",
+  "climb_altitude": 6000,
+  "waypoints": [
+    "FAPID",
+    "FEBAX",
+    "NASTE"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "NASTE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

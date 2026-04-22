@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Local secrets
+.env
+.env.*
+
+# Large raw datasets and source artifacts
+data/pilot_10/charts/
+data/pilot_10/cifp/
+data/pilot_10/samples/
+data/preparation/
+data/v2604_100/charts/
+data/v2604_100/images/
+data/v2604_100/pdfs/
+data/v2604_100/cifp/
+data/v2604_100/sources/
+
+# Keep dataset manifests and pairing metadata
+!data/pilot_10/sample_manifest.json
+!data/v2604_100/sample_manifest_100.json
+!data/v2604_100/pairs_100.json
+!data/v2604_100/selection_100.json
+!data/v2604_100/candidate_pool.json
+

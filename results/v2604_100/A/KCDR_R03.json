@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "MISSED APPROACH: MALSR LNAV Cats C and D visibility to 13/ SM. VDP NA with Pine Ridge altimeter setting. using Pine Ridge altimeter setting, increase LNAV/VNAV all Cats visibility to 1/ SM, VNAV systems, LNAV/VNAV NA below -21 C or above 54 C. For inop ALS, when Baro-VNAV NA when using Pine Ridge altimeter setting. For uncompensated Baro-",
+  "climb_altitude": "unknown",
+  "waypoints": [
+    "RIDGE"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": false,
+  "holding_fix": null,
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

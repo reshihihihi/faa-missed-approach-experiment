@@ -1,0 +1,23 @@
+{
+  "raw_instruction": "Climb to 2000 direct CUBUG and hold.",
+  "climb_altitude": 2000,
+  "waypoints": ["CUBUG"],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "CUBUG",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": {
+    "track": "040/220",
+    "direction": "LEFT",
+    "leg_time": "4 NM"
+  },
+  "evidence": {
+    "raw_instruction": "Upper right corner of chart in the notes box labeled MISSED APPROACH",
+    "climb_altitude": "Climb to 2000 direct CUBUG and hold.",
+    "waypoints": "CUBUG named in missed approach text and depicted in plan view lower left",
+    "turn_direction": "No explicit turn direction stated in text; holding pattern depicted with left turns at CUBUG",
+    "holding_required": "Holding pattern depicted at CUBUG in plan view with '4 NM' legs",
+    "holding_fix": "CUBUG named in missed approach instruction and shown in plan view"
+  }
+}

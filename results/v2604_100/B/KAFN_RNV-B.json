@@ -1,0 +1,21 @@
+{
+  "raw_instruction": "Climb to 3400 direct QOSNU and hold.",
+  "climb_altitude": 3400,
+  "waypoints": [
+    "QOSNU"
+  ],
+  "turn_direction": "unknown",
+  "holding_required": true,
+  "holding_fix": "QOSNU",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 3400 direct QOSNU and hold.",
+    "climb_altitude": "Climb to 3400 direct QOSNU and hold.",
+    "waypoints": "direct QOSNU and hold.",
+    "turn_direction": "not found",
+    "holding_required": "direct QOSNU and hold.",
+    "holding_fix": "direct QOSNU and hold."
+  }
+}

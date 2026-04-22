@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 345+ft -> DF KUREC 2300+ft -> HM KUREC 2300+ft",
+  "climb_altitude": 2300,
+  "waypoints": [
+    "KUREC"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "KUREC",
+  "initial_track": null,
+  "turn_trigger": "KUREC",
+  "holding_details": null
+}

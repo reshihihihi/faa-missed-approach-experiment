@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climb to 4000 direct FONIE and hold, continue climb in hold to 4000.",
+  "climb_altitude": 4000,
+  "waypoints": [
+    "FONIE"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "FONIE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

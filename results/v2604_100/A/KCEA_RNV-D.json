@@ -1,0 +1,14 @@
+{
+  "raw_instruction": "DME/DME RNP-O.3 NA. Procedure NA at night. Use Wichita MISSED APPROACH: Climbing left turn received, use Colonel James Jabara altimeter setting. to 3600 direct BECNA and hold.",
+  "climb_altitude": 3600,
+  "waypoints": [
+    "BECNA",
+    "JAMES"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "BECNA",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

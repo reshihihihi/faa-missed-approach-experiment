@@ -1,0 +1,123 @@
+COEUR D'ALENE, IDAHO
+AL-527 (FAA)
+25275
+APP CRS
+Rwy Ldg
+5400
+TDZE
+2311
+RNAV (GPS) RWY 2
+354°
+Apt Elev
+2320
+COEUR D'ALENE/PAPPY BOYINGTON FLD (COE)
+RNP APCH-GPS.
+Rwy 2 helicopter visibility reduction below 1 SM NA.
+MISSED APPROACH: Climb to 7000 direct ZEXEL
+A
+Straight-in Rwy 2 NA at night, Circling Rwy 2 NA at night.
+and hold, continue climb-in-hold to 7000.
+AWOS-3PT
+SPOKANE APP CON
+135.075
+UNICOM
+132.1 263.0
+122.8 (CTAF)
+MISSED APCH FIX
+7 NM
+ZEXEL
+>
+"
+(MAP)
+EGGID
+Final approach course offset 19.35°.
+2445
+GOREY
+7600
+2.4 NM to
+EGGID
+ZUKVU
+3.4 NM to
+EGGID
+(FAF)
+CANGE
+4300
+336° (1.7)
+ZAXIK
+(3.3)
+3
+(IF)
+JINAP
+3000
+(3.6)
+-336°
+5300
+ELEV 2320
+D
+TDZE 2311
+(IAF)
+HIRL Rwy 6-24
+HIPRR
+MIRL Rwy 2-20
+Procedure NA for arrivals at ATOXE
+6400
+REIL Rwys 2 and 24
+on V253 south bound.
+048°
+ATOXE
+(30)
+VGSI and descent angles not coincident
+7000
+ZEXEL
+2200
+JINAP
+(VGSI Angle 3.00/TCH 36).
+ZAXIK
+CANGE
+ZUKVU
+3.4 NM to
+5300
+-336°
+7400 X 100
+EGGID
+GOREY
+3.00
+2.4 NM to
+0.6% UP
+4700
+4
+TCH 45
+EGGID
+4300
+-354
+EGGID
+3600
+3260
+-3.3 NM
+-1.7 NM-
+-2.2 NM-
+1.1 NM
+--2.4 NM-+0.5
+CATEGORY
+A
+B
+C
+D
+LNAV MDA
+2700-1 389 (400-1)
+2700-1½8389 (400-1/8)
+354°
+2740-1
+2880-1
+3020-2
+3940-3
+CIRCLING
+420 (500-1)
+560 (600-1)
+700 (700-2)
+1620 (1700-3)
+COEUR D'ALENE, IDAHO
+COEUR D'ALENE/PAPPY BOYINGTON FLD (COE)
+Drig-A
+14JUL22
+47°46'N-116°49'W

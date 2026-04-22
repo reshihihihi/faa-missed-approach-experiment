@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climb to 1800 then climbing left turn to 4000 direct LOZ VOR/DME and hold.",
+  "climb_altitude": 4000,
+  "waypoints": [
+    "LOZ"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "LOZ",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

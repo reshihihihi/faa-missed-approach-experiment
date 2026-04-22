@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 1129+ft -> DF APIXE 2900+ft -> HM APIXE 2900+ft",
+  "climb_altitude": 2900,
+  "waypoints": [
+    "APIXE"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "APIXE",
+  "initial_track": null,
+  "turn_trigger": "APIXE",
+  "holding_details": null
+}

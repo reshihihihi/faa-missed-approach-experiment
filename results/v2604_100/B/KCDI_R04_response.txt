@@ -1,0 +1,21 @@
+```json
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 3000 direct ILAXE and hold.",
+  "climb_altitude": 3000,
+  "waypoints": ["ILAXE"],
+  "turn_direction": "unknown",
+  "holding_required": true,
+  "holding_fix": "ILAXE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Climb to 3000 direct ILAXE and hold.",
+    "climb_altitude": "Climb to 3000",
+    "waypoints": "direct ILAXE and hold",
+    "turn_direction": "not stated",
+    "holding_required": "ILAXE and hold",
+    "holding_fix": "direct ILAXE and hold"
+  }
+}
+```

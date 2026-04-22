@@ -1,0 +1,11 @@
+{
+  "raw_instruction": "VI -> CF DUDDS 2500+ft -> HM DUDDS 2500+ft",
+  "climb_altitude": 2500,
+  "waypoints": [],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "DUDDS",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

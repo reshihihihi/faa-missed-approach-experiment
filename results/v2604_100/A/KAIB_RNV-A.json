@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climbing left turn to 1 2000 direct When local altimeter setting not received, procedure NA. PAROX and hold, continue climb-in-hold to 12000.",
+  "climb_altitude": 12000,
+  "waypoints": [
+    "PAROX"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "PAROX",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

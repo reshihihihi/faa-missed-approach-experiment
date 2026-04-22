@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 3000 then right turn direct SM. HODIN fix minimums: increase Circling Cat C and D visibility / SM. OVR VORTAC and hold.",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "HODIN"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "HODIN",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

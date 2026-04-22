@@ -1,0 +1,120 @@
+TILE CREEK, MICHIGAN
+AL-41 (FAA)
+LOC I-BTL
+Rwy Ldg 10004
+26022
+APP CRS
+110.5
+TDZE
+929
+ILS or LOC RWY 23R
+227°
+Apt Elev
+952
+BATTLE CREEK EXEC AT KELLOGG FLD (BTL)
+ADF required. RADAR required for procedure entry. RNP APCH - GPS.
+V
+Circling NA to Rwys 5R and 23L. Circling Rwy 31 NA at night.
+MALSR
+MISSED APPROACH: Climb
+Å
+For inop ALS increase S-LOC 23R Cat C/D visibility to 1 3% SM.
+to 1 400 then climbing left turn
+* RVR 1800 authorized with use of FD or AP or HUD to DA
+to 3000 direct VTEN and
+(NA when using Grand Rapids altimeter setting).
+hold, continue climb-in-hold
+to 3000.
+ATIS
+GREAT LAKES APP CON
+BATTLE CREEK TOWER
+GND CON
+UNICOM
+128.325
+119.2
+239.25
+126.825 (CTAF)
+121.7
+122.95
+8
+002°
+(IF)
+TEEDO
+RADAR
+LOM/IAF
+BATOL
+272 BT
+LOCALIZER 110.5
+I-BTL
+4 NM
+°06
+010
+3000
+ELEV
+952
+D
+TDZE
+929
+WTEN
+227
+27
+1400
+3000
+VTEN
+BATOL LOM
+Remain
+-047°
+within 10 NM
+TWR
+2172
+2600
+227°
+2200
+51
+GS 2.98
+TCH 49
+HIRL Rwy 5L-23R
+3.7 NM
+MIRL Rwy 13-31 and 5R-23L
+CATEGORY
+A
+B
+C
+D
+REIL Rwys 5L, 5R, 13, 23L and 31
+S-ILS 23R*
+1129/24
+200 (200-1/2)
+FAF to MAP
+3.7 NM
+S-LOC 23R
+1400/24
+471 (500-1/2)
+1400/50
+471 (500-1)
+Knots
+60
+90
+120
+150
+180
+1420-1
+1480-1
+1520-11/2
+1520-2
+CIRCLING
+3:42
+2:28
+1:51
+1:29
+1:14
+468 (500-1)
+528 (600-1)
+Min:Sec
+568 (600-11½2)
+568 (600-2)
+BATTLE CREEK, MICHIGAN
+BATTLE CREEK EXEC AT KELLOGG FLD (BTL)
+Amdt 20 19MAY22
+42°18'N-85°15'W
+ILS or LOC RWY 23R

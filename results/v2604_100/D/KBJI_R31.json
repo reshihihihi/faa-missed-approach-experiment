@@ -1,0 +1,25 @@
+{
+  "raw_instruction": "Climb to 3200 direct TEGAE and hold.",
+  "climb_altitude": 3200,
+  "waypoints": [
+    "TEGAE"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "TEGAE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": {
+    "track": "313",
+    "direction": "LEFT",
+    "leg_time": null
+  },
+  "evidence": {
+    "raw_instruction": "Upper right box labeled MISSED APPROACH",
+    "climb_altitude": "Climb to 3200 direct TEGAE and hold.",
+    "waypoints": "TEGAE named in missed approach text and in MISSED APCH FIX box",
+    "turn_direction": "No explicit turn direction stated in text; holding pattern depicted in plan view",
+    "holding_required": "Holding pattern depicted at TEGAE in plan view and 'hold' stated in instruction",
+    "holding_fix": "TEGAE named in missed approach instruction and labeled MISSED APCH FIX"
+  }
+}

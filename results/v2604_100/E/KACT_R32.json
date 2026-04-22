@@ -1,0 +1,29 @@
+{
+  "raw_instruction": "Climb to 4000 direct EVVIS and hold, continue climb-in-hold to 4000.",
+  "climb_altitude": 4000,
+  "waypoints": [
+    "EVVIS"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "EVVIS",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH box upper right: 'Climb to 4000 direct EVVIS and hold, continue climb-in-hold to 4000.'",
+    "climb_altitude": "4000 explicitly stated",
+    "waypoints": "EVVIS labeled in missed approach fix diagram and text",
+    "turn_direction": "No turn direction stated",
+    "holding_required": "Hold at EVVIS explicitly stated",
+    "holding_fix": "EVVIS labeled as MISSED APCH FIX"
+  },
+  "_questionnaire": {
+    "Q1": "yes",
+    "Q2": "yes",
+    "Q3": "yes",
+    "Q4": "no",
+    "Q5": "yes",
+    "Q6": "yes"
+  }
+}

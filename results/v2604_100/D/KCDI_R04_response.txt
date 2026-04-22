@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "Climb to 3000 direct ILAXE and hold.",
+  "climb_altitude": 3000,
+  "waypoints": ["ILAXE"],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "ILAXE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Upper right box labeled 'MISSED APPROACH': 'Climb to 3000 direct ILAXE and hold.'",
+    "climb_altitude": "'Climb to 3000' in the missed approach box",
+    "waypoints": "'direct ILAXE' in the missed approach box",
+    "turn_direction": "No turn direction specified in the instruction",
+    "holding_required": "Text states 'and hold'; holding pattern depicted at ILAXE in plan view",
+    "holding_fix": "'ILAXE' named in missed approach box and shown as MISSED APCH FIX in plan view"
+  }
+}

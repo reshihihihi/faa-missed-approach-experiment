@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "unknown",
+  "climb_altitude": 4800,
+  "waypoints": ["MANYS", "SWOBS"],
+  "turn_direction": "unknown",
+  "holding_required": true,
+  "holding_fix": "SWOBS",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "No explicit missed approach instruction text found in OCR",
+    "climb_altitude": "4800",
+    "waypoints": "MISSED APCH FIX SWOBS, (MAP) MANYS",
+    "turn_direction": "not found",
+    "holding_required": "Holding Pattern",
+    "holding_fix": "MISSED APCH FIX SWOBS"
+  }
+}

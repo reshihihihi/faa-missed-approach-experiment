@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 2000+ft -> DF NOORA 2400+ft -> HM NOORA 2400+ft",
+  "climb_altitude": 2400,
+  "waypoints": [
+    "NOORA"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "NOORA",
+  "initial_track": null,
+  "turn_trigger": "NOORA",
+  "holding_details": null
+}

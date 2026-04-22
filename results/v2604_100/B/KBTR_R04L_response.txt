@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "Climb to 2300 direct KUREC and hold.",
+  "climb_altitude": 2300,
+  "waypoints": ["KUREC"],
+  "turn_direction": "unknown",
+  "holding_required": true,
+  "holding_fix": "KUREC",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 2300 direct KUREC and hold.",
+    "climb_altitude": "Climb to 2300 direct KUREC and hold.",
+    "waypoints": "direct KUREC and hold.",
+    "turn_direction": "not found",
+    "holding_required": "KUREC and hold.",
+    "holding_fix": "direct KUREC and hold."
+  }
+}

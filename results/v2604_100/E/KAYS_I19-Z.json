@@ -1,0 +1,29 @@
+{
+  "raw_instruction": "Climb to 800 then climbing right turn to 1700 direct WIKET LOM and hold.",
+  "climb_altitude": 1700,
+  "waypoints": [
+    "WIKET"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "WIKET",
+  "initial_track": null,
+  "turn_trigger": "800",
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 800 then climbing right turn to 1700 direct WIKET LOM and hold.",
+    "climb_altitude": "1700",
+    "waypoints": "WIKET LOM",
+    "turn_direction": "climbing right turn",
+    "holding_required": "and hold",
+    "holding_fix": "WIKET LOM"
+  },
+  "_questionnaire": {
+    "Q1": "yes",
+    "Q2": "yes",
+    "Q3": "yes",
+    "Q4": "yes",
+    "Q5": "yes",
+    "Q6": "yes"
+  }
+}

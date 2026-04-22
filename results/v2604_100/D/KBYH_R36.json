@@ -1,0 +1,25 @@
+{
+  "raw_instruction": "Climb to 2500 direct CEDVA and hold.",
+  "climb_altitude": 2500,
+  "waypoints": [
+    "CEDVA"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "CEDVA",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": {
+    "track": "181",
+    "direction": "LEFT",
+    "leg_time": null
+  },
+  "evidence": {
+    "raw_instruction": "Upper right corner of chart in MISSED APPROACH box",
+    "climb_altitude": "Climb to 2500 direct CEDVA and hold.",
+    "waypoints": "CEDVA named in missed approach text and in MISSED APCH FIX diagram",
+    "turn_direction": "No explicit turn direction stated in text; holding pattern diagram shows left turns",
+    "holding_required": "Holding pattern depicted at CEDVA in plan view with 'and hold' in instruction",
+    "holding_fix": "CEDVA named in missed approach instruction and fix diagram"
+  }
+}

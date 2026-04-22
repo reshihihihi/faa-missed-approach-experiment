@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 3000+ft -> DF OVR 3000+ft -> HM OVR 3000+ft",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "OVR"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "OVR",
+  "initial_track": null,
+  "turn_trigger": "OVR",
+  "holding_details": null
+}

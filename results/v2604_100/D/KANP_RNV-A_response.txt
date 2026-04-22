@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "Climbing left turn to 2000 direct AMRTN and hold.",
+  "climb_altitude": 2000,
+  "waypoints": ["AMRTN"],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "AMRTN",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": {"track": "118", "direction": "RIGHT", "leg_time": "4 NM"},
+  "evidence": {
+    "raw_instruction": "Upper right notes box labeled MISSED APPROACH",
+    "climb_altitude": "to 2000 direct AMRTN",
+    "waypoints": "direct AMRTN and hold",
+    "turn_direction": "Climbing left turn",
+    "holding_required": "hold depicted at AMRTN on plan view and profile, '4 NM Holding Pattern'",
+    "holding_fix": "AMRTN named in missed approach text and holding pattern depiction"
+  }
+}

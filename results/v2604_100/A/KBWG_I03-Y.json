@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "† DME from BWG DME. MISSED APPROACH: Climb to 2000 then climbing Circling Rwy 30 NA at night. ADF required. RADAR required for procedure entry. BOWLING GREEN-WARREN COUNTY RGNL (BWG)",
+  "climb_altitude": 2000,
+  "waypoints": [
+    "GREEN"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": false,
+  "holding_fix": null,
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

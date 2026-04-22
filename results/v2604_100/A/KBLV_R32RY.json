@@ -1,0 +1,16 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 200O then For uncompensated Baro-VNAV systems, procedure NA below -15 C RNP AR APCH - GPS. Authorization required. From RECLA, COSET: RF. SCOTT AFB/MIDAMERICA ST LOUIS (BLV)",
+  "climb_altitude": "unknown",
+  "waypoints": [
+    "RECLA",
+    "COSET",
+    "SCOTT",
+    "LOUIS"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": false,
+  "holding_fix": null,
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 569+ft -> DF EDAYA 3000+ft -> HM EDAYA 3000+ft",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "EDAYA"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "EDAYA",
+  "initial_track": null,
+  "turn_trigger": "EDAYA",
+  "holding_details": null
+}

@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climb to 3000 direct ILAXE and hold.",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "ILAXE"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "ILAXE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

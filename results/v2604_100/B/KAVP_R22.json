@@ -1,0 +1,21 @@
+{
+  "raw_instruction": "Climb to 1900 then climbing right turn to 4000 direct LOPEZ and hold.",
+  "climb_altitude": 4000,
+  "waypoints": [
+    "LOPEZ"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "LOPEZ",
+  "initial_track": null,
+  "turn_trigger": "1900",
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 1900 then climbing right turn to 4000 direct LOPEZ and hold.",
+    "climb_altitude": "climbing right turn to 4000 direct LOPEZ",
+    "waypoints": "direct LOPEZ and hold",
+    "turn_direction": "climbing right turn",
+    "holding_required": "direct LOPEZ and hold",
+    "holding_fix": "direct LOPEZ and hold"
+  }
+}

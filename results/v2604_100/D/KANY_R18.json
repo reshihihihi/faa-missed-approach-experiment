@@ -1,0 +1,25 @@
+{
+  "raw_instruction": "Climb to 3000 then climbing left turn to 3300 direct UZZUF and hold.",
+  "climb_altitude": 3300,
+  "waypoints": [
+    "UZZUF"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "UZZUF",
+  "initial_track": null,
+  "turn_trigger": "3000",
+  "holding_details": {
+    "track": "355",
+    "direction": "LEFT",
+    "leg_time": null
+  },
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH box in upper right of chart",
+    "climb_altitude": "climbing left turn to 3300 direct UZZUF and hold",
+    "waypoints": "direct UZZUF and hold",
+    "turn_direction": "climbing left turn",
+    "holding_required": "hold depicted at UZZUF in plan view and profile view with '4 NM Holding Pattern'",
+    "holding_fix": "direct UZZUF and hold"
+  }
+}

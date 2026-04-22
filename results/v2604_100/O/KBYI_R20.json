@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 4554+ft -> DF IREME 7000+ft -> HM IREME 7000+ft",
+  "climb_altitude": 7000,
+  "waypoints": [
+    "IREME"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "IREME",
+  "initial_track": null,
+  "turn_trigger": "IREME",
+  "holding_details": null
+}

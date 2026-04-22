@@ -1,0 +1,11 @@
+This is a FAA Instrument Approach Procedure (IAP) chart.
+
+Task:
+Locate the MISSED APPROACH instruction and return its text as it appears on the chart.
+
+Output rules:
+- Return only the missed approach instruction text.
+- If no missed approach instruction can be identified confidently, return exactly:
+unknown
+- Do not return JSON.
+- Do not add labels or explanations.

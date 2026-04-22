@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 1900+ft -> DF LOPEZ 4000+ft -> HM LOPEZ 4000+ft",
+  "climb_altitude": 4000,
+  "waypoints": [
+    "LOPEZ"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "LOPEZ",
+  "initial_track": null,
+  "turn_trigger": "LOPEZ",
+  "holding_details": null
+}

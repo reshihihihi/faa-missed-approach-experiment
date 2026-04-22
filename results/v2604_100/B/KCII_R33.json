@@ -1,0 +1,21 @@
+{
+  "raw_instruction": "Climb to 6600 direct AMURE and hold.",
+  "climb_altitude": 6600,
+  "waypoints": [
+    "AMURE"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "AMURE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 6600 direct AMURE and hold.",
+    "climb_altitude": "Climb to 6600",
+    "waypoints": "direct AMURE and hold",
+    "turn_direction": "No turn direction stated",
+    "holding_required": "and hold",
+    "holding_fix": "direct AMURE and hold"
+  }
+}

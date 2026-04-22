@@ -1,0 +1,22 @@
+{
+  "raw_instruction": "Climbing right turn to 4600 direct COTSI and on track 263° to VTU VOR/DME and hold.",
+  "climb_altitude": 4600,
+  "waypoints": [
+    "COTSI",
+    "VTU"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "VTU",
+  "initial_track": "263°",
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Climbing right turn to 4600 direct COTSI and on track 263° to VTU VOR/DME and hold.",
+    "climb_altitude": "4600 direct COTSI",
+    "waypoints": "direct COTSI and on track 263° to VTU VOR/DME and hold",
+    "turn_direction": "Climbing right turn",
+    "holding_required": "to VTU VOR/DME and hold",
+    "holding_fix": "to VTU VOR/DME and hold"
+  }
+}

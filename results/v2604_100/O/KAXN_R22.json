@@ -1,0 +1,15 @@
+{
+  "raw_instruction": "CA 1677+ft -> DF MOVSE -> TF EVDEQ -> TF TILER 3500+ft -> HM TILER 3500+ft",
+  "climb_altitude": 3500,
+  "waypoints": [
+    "MOVSE",
+    "EVDEQ",
+    "TILER"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "TILER",
+  "initial_track": null,
+  "turn_trigger": "MOVSE",
+  "holding_details": null
+}

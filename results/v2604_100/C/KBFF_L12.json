@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climb to 4500 then climbing left turn to 6900 direct BFF VORTAC and hold, continue climb-in-hold to 6900.",
+  "climb_altitude": 6900,
+  "waypoints": [
+    "BFF"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "BFF",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

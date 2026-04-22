@@ -1,0 +1,151 @@
+L3S, TEXAS
+WAAS
+AL-82 (FAA)
+21364
+APP CRS
+Rwy Idg
+5949
+CH 97432
+356°
+TDZE
+1954
+RNAV (GPS) RWY 36
+W36A
+Apt Elev
+1954
+Crcling to Rwy 4, 18, 2 NA at nih. For uncompensatd Baro-VNAV systes, LNAV/VNAV NA belw
+CHILDRESS MUNI(CDS)
+°C (°F)  abov 54°C (10°FDME/ME RNP-0. NA. When local altiete settin not recid,
+u Altus/Quartz Mountain Rnl altimeter setting and ncreas all DA 88 feet, all MDA 0 eet an
+MISSED APPROACH:
+Climb to 2400 then
+increase LPV all Cats visibility 5%mile, LNAV/VNAV all Cats visibility mile, LNAV Cats C and D
+climbing right turn to
+litymileCircling Cat Cisibilyile, and Circlig Cat Dvisbility ilBarNAn
+4000 direct JAPUX
+VDP NA with Altus/Quartz Mountain Rgnl altimeter setting.
+and hold.
+ASOS
+FORT WORTH CENTER
+135.125
+UNICOM
+133.5 350.35
+122.8 (CTAF)0
+25 NM
+2153
+JAPUX
+4000
+2346
+A2134±
+4 NM
+2089±
+A
+RW36
+WUDBU
+CHILDRESS
+1.8 NM to
+CDS
+RW36
+4000 to FIPIT
+(FAF)
+176° (8.6)
+RIFUG
+Procedure NA for arrivals
+at CDS VORTAC
+on V404 northwest bound.
+ 
+3000
+(IF/IAF)
+FIPIT
+EXONE
+PEWAE
+5800
+(IAF)
+4000 NoPT
+4000 NoPT
+9∠
+091°
+ZELOM
+298
+5800
+(13.9)
+(7.3)
+356°
+(ε)
+(A)
+2330
+WOOH
+(∠ε)
+4 NM
+ELEV
+1954
+TDZE 1954
+2400
+4000
+JAPUX
+4 NM
+Holding Pattern
+FIPIT
+RIFUG
+WUDBU
+*LNAV only.
+-176°
+4000
+1.8 NM to
+356°
+-356°
+3500
+RW36
+*1.1 NM
+22
+8l
+to RW36
+*.
+a
+RW36
+GP 3.00
+3500
+*2560
+5949X75
+TO HAO
+×
+2NAM
+-2N6A
+Z0
+-1.1-
+CATEGORY
+A
+B
+c
+D
+2154- 3/
+200 (200-3½)
+P
+LPV
+DA
+36
+LNAV/
+DA
+2376-11½
+422 (500-1/2)
+VNAV
+2340-1
+386 (400-1)
+2340-1/
+386 (400-1/8)
+356° to
+LNAV MDA
+RW36
+2600-13/4
+2500-1
+546 (600-1)
+2700-21½2
+CIRCLING
+646 (700-13/)
+746 (800-21/2)
+MIRL Rwy 18-36
+CHILDRESS, TEXAS
+CHILDRESS MUNI(CDS)
+Amdt 1B 30DEC21
+34°26'N-100°17'W
+RNAV (GPS) RWY 36

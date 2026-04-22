@@ -1,0 +1,145 @@
+BRIDGEPORT, CONNECTICUT
+AL-621 (FAA)
+25331
+LOC/DME I-BDR
+APP CRS
+Rwy Ldg
+4677
+110.7
+ILS or LOC RWY 6
+060°
+TDZE
+Chan 44
+7
+Apt Elev
+9
+BRIDGEPORT/SIKORSKY(BDR)
+T
+Circling to Rwy 11, 29 NA at night. Rwy 6 helicopter
+MISSED APPROACH: Climb to 500 then climbing right turn to
+A
+visibility reduction below 3 SM NA. Autopilot coupled
+1800 on heading 210° and CCC VOR/DME R-311 to STANE
+approach NA below 350.
+INT/I-BDR 6.2 DME and hold, continue climb-in-hold to 1800.
+ATIS
+NEW YORK APP CON
+BRIDGEPORT TOWER *
+GND CON
+UNICOM
+119.15
+124.075 343.65
+120.9 0 (CTAF) 257.8
+121.75 257.8
+123.0
+LOCALIZER 110.7
+I-BDR
+Chan 44
+2100
+LOC offset 2.17°
+mn
+(IAF)
+ALTERNATE MISSED
+STANE INT
+APCH FIX
+I-BDR6.2
+CALVERTON
+CCC
+114.55
+han 92(Y)
+R-311
+265R-085
+1 min
+240°
+HOLD
+4500
+(CFVFS)
+1800
+1800
+CALVERTON
+311
+(21.6)
+114.55 CCC EE
+Chan 92(Y)
+240°
+Procedure NA for arrival on CCC VOR/DME
+airway radials 263 CW 326.
+ELEV
+9
+D
+TDZE
+7
+STANE INT
+500
+1800
+I-BDR[
+6.2
+CCC
+STANE
+=
+4759 X 150
+One Minute
+Holding Pattern
+hdg
+R-311
+INT
+TWR
+2
+1800
+210°
+¤
+4500
+-240°
+060°
+I-BDR
+1800
+060°
+1.8
+I-BDR
+4677 X 100
+0.8
+GS 3.00°
+1800
+TCH 51
+-4.5 NM
+1 NM
+060°
+CATEGORY
+A
+B
+c
+D
+S-ILS 6
+257-1
+250 (300-1)
+REIL Rwys 6, 11, 24, and 29
+HIRL Rwys 6-24 and 11-29
+S-LOC 6
+380-1 373 (400-1)
+FAF to MAP 5.5 NM
+480-1
+620-1
+820-21½
+820-23/
+Knots
+60
+90
+120
+150
+180
+CIRCLING
+471 (500-1)
+611 (700-1)
+811 (900-2%½)
+811 (900-2½)
+Min:Sec
+5:30
+3:40
+2:45
+2:12
+1:50
+BRIDGEPORT, CONNECTICUT
+BRIDGEPORT/SIKORSKY (BDR)
+Amdt 11 12JUN25
+41°10'N-73°08'W
+ILS or IOC RWY 6

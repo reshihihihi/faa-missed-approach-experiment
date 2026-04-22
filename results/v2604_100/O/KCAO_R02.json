@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 5216+ft -> DF CEBBA 8000+ft -> HM CEBBA 8000+ft",
+  "climb_altitude": 8000,
+  "waypoints": [
+    "CEBBA"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "CEBBA",
+  "initial_track": null,
+  "turn_trigger": "CEBBA",
+  "holding_details": null
+}

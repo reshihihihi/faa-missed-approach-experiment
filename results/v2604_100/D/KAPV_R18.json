@@ -1,0 +1,27 @@
+{
+  "raw_instruction": "Climb to 6000 direct FAPID and track 253° to FEBAX and track 316° to NASTE and hold.",
+  "climb_altitude": 6000,
+  "waypoints": [
+    "FAPID",
+    "FEBAX",
+    "NASTE"
+  ],
+  "turn_direction": "unknown",
+  "holding_required": true,
+  "holding_fix": "NASTE",
+  "initial_track": "253°",
+  "turn_trigger": "FEBAX",
+  "holding_details": {
+    "track": "068°/248°",
+    "direction": "LEFT",
+    "leg_time": null
+  },
+  "evidence": {
+    "raw_instruction": "Missed approach box in upper right of chart header area",
+    "climb_altitude": "Climb to 6000",
+    "waypoints": "direct FAPID and track 253° to FEBAX and track 316° to NASTE and hold",
+    "turn_direction": "No explicit turn direction stated in text; holding pattern depicted at NASTE",
+    "holding_required": "Holding pattern depicted at NASTE on plan view with 'and hold' in instruction",
+    "holding_fix": "NASTE and hold"
+  }
+}

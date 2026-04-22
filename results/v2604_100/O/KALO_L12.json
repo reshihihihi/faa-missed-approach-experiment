@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 1400+ft -> CF DEWAR 3300+ft -> HM DEWAR 3300+ft",
+  "climb_altitude": 3300,
+  "waypoints": [
+    "DEWAR"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "DEWAR",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

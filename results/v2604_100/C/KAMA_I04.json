@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climb to 4100 then climbing right turn to 5000 on PNH VORTAC R-118 to CAUDE/PNH 13 DME and hold.",
+  "climb_altitude": 5000,
+  "waypoints": [
+    "CAUDE"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "CAUDE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

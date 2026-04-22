@@ -1,0 +1,170 @@
+VAYCROSS, GEORGIA
+AL-994 (FAA)
+25163
+LOC I-AYS
+APP CRS
+Rwy Ldg
+5992
+ILS Z or LOC Z RWY 19
+108.3
+184°
+TDZE
+140
+Apt Elev
+141
+WAYCROSS-WARE COUNTY (AYS)
+ADF Required. When local altimeter setting not received, use Alma altimeter setting:
+increase DA to 390 feet and all MDA 60 feet; increase S-LOC 19 Cat C/D visibility
+A
+MALSR
+MISSED APPROACH: Climb
+ mile; increase Circling Cat C/D visibility 14 mile. For inop MALSR, increase
+to 800 then climbing right
+S-LOC 19 Cat C/D visibility to 1 mile. For inop MALSR when using Alma altimeter
+turn to 1700 direct
+setting, increase S-LOC 19 Cat C/D visibility to 1½ mile. Increase SHOGI Fix Minimums
+WIKET LOM and hold.
+S-LOC 19 Cat C/D visibility to 11/ mile. Night Landing Rwy 5, 31 NA.
+AWOS-3
+JACKSONVILLE CENTER
+UNICOM
+118.575
+127.575 269.025
+122.8 (CTAF)
+ALTERNATE MISSED
+APCH FIX
+WAYCROSS
+AYS
+004°
+112.4
+2300
+Chan 71
+-R-248
+2290
+(CFFGH)
+x
+LOM/IAF
+WIKET
+219 AY
+WIKET INT
+AYS
+8.7
+R-067
+SHOGI
+1700
+067
+INT
+(8.7)
+-R-085
+207
+WAYCROSS
+A551
+LOCALIZER 108.3
+112.4 AYS
+338
+249±
+Chan 71
+Λ
+I-AYS
+1260
+A340
+A686
+ELEV
+141
+TDZE
+140
+557
+-184°
+1628
+800
+1700
+AY
+WIKET
+LOM/INT
+Remain
+within 10 NM
+61
+004°
+ε1
+VGSI and ILS glidepath not coincident
+d
+-2
+(VGSI Angle 3.00/TCH 45).
+1529
+219
+SHOGI
+1700
+INT
+*
+-184°
+5992 X 100
+1700
+GS 3.00°
+3
+*LOC only
+*600
+*660 when using Alma altimeter setting.
+TCH 51
+-1.5 NM—
+2.7 NM
+CATEGORY
+A
+B
+c
+D
+S-ILS 19
+340-1½2
+200 (200-1/2)
+s
+S-LOC 19
+600-1/2
+460 (500-1/½)
+600-7/
+460 (500-7%)
+660-1
+720-1
+860-2
+860-21/4
+R
+HIRL Rwy 1-190
+C CIRCLING
+519 (600-1)
+579 (600-1)
+719 (800-2)
+719 (800-21)
+REIL Rwy 190
+SHOGI FIX MINIMUMS (DUAL VOR RECEIVERS REQUIRED)
+FAF to MAP
+4.2 NM
+S-LOC 19
+500-1½2
+360 (400-1½2)
+500-5/
+360 (400-5%/)
+Knots
+09
+06
+100
+090
+081
+l-099
+720-1
+860-2
+860-21/4
+CIRCLING
+Min:Sec
+4:12
+2:48
+2:06
+1:41
+1:24
+519 (600-1)
+579 (600-1)
+719 (800-2)
+719 (800-21/4)
+WAYCROSS, GEORGIA
+WAYCROSS-WARE COUNTY (AYS)
+Amdt 3A
+28APR16
+31°15'N-82°24'W
+ILS Z or LOC Z RWY 19

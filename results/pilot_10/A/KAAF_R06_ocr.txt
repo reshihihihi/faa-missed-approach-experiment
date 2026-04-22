@@ -1,0 +1,111 @@
+APALACHICOLA, FLORIDA
+AL-5600 (FAA)
+25275
+APP CRS
+Rwy Ldg
+5271
+TDZE
+20
+RNAV (GPS) RWY 6
+063°
+Apt Elev
+20
+APALACHICOLA RGNL-CLEVE RANDOLPH FLD (AAF)
+RNP APCH - GPS.
+V
+Rwy 6 helicopter visibility reduction below 1 SM NA. When local altimeter setting not
+A
+received, use ECP altimeter setting and increase all MDAs 140 feet and LNAV visibility
+MISSED APPROACH: Climb to
+Cat C/D 3 SM, and Circling visibility Cat C/D / SM. Straight-in Rwy 6 NA at night,
+3000 direct ONBOE and hold.
+Circling Rwy 6, 18, 24, 32, 36 NA at night.
+ASOS
+TYNDALL APP CON 
+UNICOM
+119.925
+124.15
+122.8 (CTAF)
+Procedure NA for arrivals at TERES
+on T336 southeast bound.
+4 NM
+TYNDALL E MOA
+ONBOE
+TERES
+RW06
+2300 to CADIV
+252°
+(49.5)
+(FAF)
+DONÉY
+(IF/IAF)
+CADIV
+1600
+063°
+TYNDALL G MOA
+(6)
+TYNDALL F MOA
+063°
+153°
+4 NM
+153°
+W- 470A
+2300
+2300
+¤
+ELEV
+20
+TDZE
+20
+CADIV
+CADIV
+W-151B
+-333°
+¤
+-333°
+81
+S X 351
+3000
+ONBOE
+4 NM
+CADIV
+1A
+Holding Pattern
+Z
+←243°
+2300
+DONEY
+063°→
+063°
+3.00°
+RW06
+TCH 40
+*
+a
+¤
+1600
+6 NM
+4.8 NM
+063°
+CATEGORY
+A
+B
+c
+D
+LNAV MDA
+460-1 440 (500-1)
+460-13½
+440 (500-13½)
+680-13/
+680-2
+CIRCLING
+520-1
+500 (500-1)
+660 (700-13½)
+660 (700-2)
+MIRL Rwys 6-24 and 14-32
+APALACHICOLA RGNL-CLEVE RANDOLPH FLD (AAF
+APALACHICOLA, FLORIDA
+Amdt 1D 02OCT25
+29°44'N-85°02'W
+PNIAV IGPSLRWY

@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 3000 direct EDAYA and hold.",
+  "climb_altitude": 3000,
+  "waypoints": ["EDAYA"],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "EDAYA",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Upper right of plan view in a text box labeled 'MISSED APPROACH'",
+    "climb_altitude": "Climb to 3000",
+    "waypoints": "direct EDAYA and hold",
+    "turn_direction": "No turn direction explicitly stated",
+    "holding_required": "Text states 'and hold' at EDAYA; holding pattern depicted on plan view",
+    "holding_fix": "EDAYA named in missed approach text and depicted on plan view"
+  }
+}

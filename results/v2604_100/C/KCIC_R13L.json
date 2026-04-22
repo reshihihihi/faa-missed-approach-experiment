@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climb to 3600 direct UNJED and hold, continue climb-in-hold to 3600.",
+  "climb_altitude": 3600,
+  "waypoints": [
+    "UNJED"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "UNJED",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

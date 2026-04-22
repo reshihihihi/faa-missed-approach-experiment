@@ -1,0 +1,28 @@
+QUESTIONNAIRE_ANSWERS:
+Q1: yes
+Q2: yes
+Q3: yes
+Q4: yes
+Q5: yes
+Q6: yes
+
+JSON:
+{
+  "raw_instruction": "Climbing left turn to 12000 direct PAROX and hold, continue climb-in-hold to 12000.",
+  "climb_altitude": 12000,
+  "waypoints": ["PAROX"],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "PAROX",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climbing left turn to 12000 direct PAROX and hold, continue climb-in-hold to 12000.",
+    "climb_altitude": "12000",
+    "waypoints": "PAROX labeled in missed approach text and on chart",
+    "turn_direction": "left turn explicitly stated",
+    "holding_required": "hold at PAROX stated in instruction",
+    "holding_fix": "PAROX"
+  }
+}

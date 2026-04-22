@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "or above 54 C (130 F). Circling NA east of Rwy 18-36. DME/DME RNP-0.3 NA. MISSED APPROACH: Climb to 2500 direct CEDVA and hold. MISSED APCH FIX",
+  "climb_altitude": 2500,
+  "waypoints": [
+    "CEDVA"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "CEDVA",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

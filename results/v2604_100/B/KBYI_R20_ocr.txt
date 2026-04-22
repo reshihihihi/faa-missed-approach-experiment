@@ -1,0 +1,136 @@
+ORLET, IDAHO
+AL-68 (FAA)
+25275
+APP CRS
+Rwy Ldg
+3787
+TDZE
+4152
+RNAV (GPS) RWY 20
+202°
+Apt Elev
+4154
+BURLÉY MUNI (BYI)
+RNP APCH-GPS.
+T
+Procedure NA at night. Rwy 20 helicopter visibility reduction below 1 SM NA. When
+Å
+local altimeter setting not received, use TWF altimeter setting and increase all MDAs
+MISSED APPROACH: Climbing
+80 feet and LNAV visibility Cats C 1 SM, and Circling visibility Cat C  SM. Exhaust
+left turn to 7000 direct IREME
+stacks located along Rwy 20 extended final approach course approximately 2345 feet
+and hold, continue climb-in-hold
+from approach end. When Circling Rwy 20, exhaust stacks located along Rwy 20
+to 7000.
+extended final approach course approximately 2345 feet from approach end.
+ASOS
+TWIN FALLS APP CON *
+CTAF
+135.575
+126.7 353.75
+122.90
+SHONE
+Procedure NA for arrivals at SHONE
+8200
+on V444 northwest bound.
+-079°
+(14.9)
+(IAF)
+7 NM
+7300
+BATSE
+HOLD
+11000
+TOXEE
+-068°
+NoPT
+7000
+(32)
+(6.8)
+Procedure NA for arrivals at TOXEE
+on V484 southbound and T302 westbound.
+(IF/IAF)
+IREME
+7000 NoPT
+6000
+202°
+(5.3)
+(6.8)
+(IAF)
+(FAF)
+MUTOE
+HIKLO
+JAMID
+-1.9 NM to
+8200
+11600
+4291
+-022
+RW20
+(5.8)
+RW20
+PAXTO
+8200
+(7.9)
+ELEV
+4154
+TDZE
+4152
+MALTT
+Procedure NA for arrivals at MALTT
+on V101 northwest bound.
+202°
+20
+7000
+IREME
+Visual Segment - Obstacles.
+IREME
+7 NM
+HIKLO
+Holding Pattern
+4072 X 75
+JAMID
+9
+1.9 NM to
+022°
+11000
+RW20
+-202°
+7000
+4202
+RW20
+-202°
+←
+2
+6000
+4800
+-1.9 NM
+-3.8 NM
+-5.3 NM
+CATEGORY
+A
+B
+c
+D
+4600-13/
+LNAV MDA
+4600-1
+448 (500-1)
+448 (500-1½)
+NA
+REIL Rwy 20
+4640-1
+4660-1
+4740-11/2
+MIRL Rwys 2-20 and 6-24
+CIRCLING
+586 (600-11/2)
+NA
+486 (500-1)
+506 (600-1)
+BURLEY, IDAHO
+BURLEY MUNI (BYI)
+Amdt 1 20FEB25
+42°33'N-113°46'W
+RNAV (GPS) RWY 20

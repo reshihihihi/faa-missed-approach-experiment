@@ -1,0 +1,88 @@
+RNAV (GPS)-B
+HARRIMAN-AND-WEST (AQW)
+0 
+HARRIMAN-AND-WEST (AQW)
+Holding Pattern
+D
+oios po sos hoo oo o ont
+WNA
+←0611
+Weh bue d CIr
+1A 2AA1
+O 
+25 NM
+3200
+0668→
+WODINN
+IOH
+2626 (2700-3)
+3280-3
+WUDIE
+C
+4 NM
+299°
+299°
+AZOTH
+Visual Segment - Obstacles.
+6.1 NM-
+(IAF)
+(8.4)
+2626 (2700-1/2)
+3280-1½2
+209°
+3600
+3700
+(IF/IAF)
+WUDIE
+B
+LOUSY
+(8.4)
+*
+029
+132.825 307.2
+3600
+299
+3700
+(IAF)
+YOGUV
+ALBANY APP CON
+2626 (2700-11%)
+(6.1)
+3280-1/4
+7.6 NM
+A
+Circling NA south of Rwy 11-9. Procedure NA at night.
+Rwy 29 helicopter visibility reduction below 1 SM NA.
+(FAF)
+LOUSY
+SWOBS
+MANYS
+CATEGORY
+CIRCLING
+4800
+Final approach offset 7.92°.
+29
+299°
+N/A
+N/A
+654
+(MAP)
+MANYS
+134.775
+ASOS
+MISSED APCH FIX
+SWOBS
+4300 X 100
+Rwy Ldg
+Apt Elev
+MIRL Rwy 11-29
+NORTH ADAMS, MA
+TDZE
+5 NM
+ELEV 654
+RNP APCH.
+APP CRS
+299°
+<
+A
+l [

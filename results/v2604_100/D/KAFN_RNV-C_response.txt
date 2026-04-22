@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "Climb to 3000 direct SCROB and hold.",
+  "climb_altitude": 3000,
+  "waypoints": ["SCROB"],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "SCROB",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Upper right box labeled MISSED APPROACH",
+    "climb_altitude": "Climb to 3000 direct SCROB and hold.",
+    "waypoints": "SCROB named in missed approach text and on plan view",
+    "turn_direction": "No turn direction stated in instruction",
+    "holding_required": "Hold depicted at SCROB on plan view with holding pattern symbol",
+    "holding_fix": "SCROB named in missed approach text"
+  }
+}

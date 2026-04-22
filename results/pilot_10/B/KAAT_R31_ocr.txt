@@ -1,0 +1,120 @@
+43, CALIFORNIA
+WAAS
+AL-6436 (FAA)
+24025
+CH 70620
+APP CRS
+Rwy Idg
+4228
+312°
+TDZE
+4378
+RNAV (GPS) RWY 31
+W31A
+Apt Elev
+4378
+ALTURAS MUNI (AAT)
+For uncompensated Baro-VNAV systems, LNAV/VNAV NA below -23°C (-9°F)
+or above 54°C (130°F). Rwy 31 helicopter visibility reduction below 1 SM NA.
+MISSED APPROACH: Climb to 5400,
+DME/DME RNP- O.3 NA. Procedure NA at night.
+then climbing left turn to 9000 direct
+BACHS and hold.
+ASOS
+SEATTLE CENTER
+124.175
+UNICOM
+127.6
+346.35
+122.8 (CTAF)
+RW31
+25 NM
+MSA
+11200
+4730
+4538±
+RW31
+(FAF)
+TEFAN
+6931
+(IF)
+LUTIY
+33°
+7080
+7 NM
+BACHS
+9300
+(IAF)
+7200
+•313°
+042
+075°
+NONIY
+(7)
+(20)
+Procedure NA for arrivals at BACHS
+via V452 northwest bound.
+ELEV
+4378
+TDZE
+4378
+5400
+9000
+BACHS
+VGSI and RNAV glidepath not coincident.
+∆
+LUTIY
+13
+TAN
+2200
+¤
+3009
+2120
+4228 X 50
+RW31
+×
+6300
+GP 3.00
+2506 X 60
+TCH 40
+5.9 NM
+5.6 NM
+CATEGORY
+A
+B
+c
+D
+E
+LPV
+DA
+4830-13/
+452 (500-13/)
+NA
+LNAV/
+DA
+4880-13/
+502 (600-13½)
+NA
+31
+VNAV
+5120-1
+5120-11/4
+NA
+REIL Rwys 3 and 31
+LNAV MDA
+742 (800-1)
+742 (800-11/)
+MIRL Rwy 13-310
+312°
+5120-1
+5200-11/4
+NA
+URL Rwy 3-21
+CIRCLING
+742 (800-1)
+822 (900-11/4)
+ALTURAS MUNI (AAT)
+ALTURAS, CALIFORNIA
+Amdt 2 01FEB18
+41°29'N-120°34'W
+RNAV (GPS) RWY 31

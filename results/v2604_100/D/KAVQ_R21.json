@@ -1,0 +1,26 @@
+{
+  "raw_instruction": "Climb to 6700 direct TUPBO and on track 284° to ALMON and hold, continue climb-in-hold 6700.",
+  "climb_altitude": 6700,
+  "waypoints": [
+    "TUPBO",
+    "ALMON"
+  ],
+  "turn_direction": "unknown",
+  "holding_required": true,
+  "holding_fix": "ALMON",
+  "initial_track": "284°",
+  "turn_trigger": "ALMON",
+  "holding_details": {
+    "track": "284°",
+    "direction": null,
+    "leg_time": null
+  },
+  "evidence": {
+    "raw_instruction": "Upper right corner of chart in MISSED APPROACH box",
+    "climb_altitude": "Climb to 6700",
+    "waypoints": "direct TUPBO and on track 284° to ALMON and hold",
+    "turn_direction": "No explicit turn direction stated in text",
+    "holding_required": "Holding pattern depicted at ALMON in plan view; 'hold' stated in instruction",
+    "holding_fix": "ALMON named in missed approach instruction and depicted in plan view"
+  }
+}

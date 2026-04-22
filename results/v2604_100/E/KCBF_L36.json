@@ -1,0 +1,29 @@
+{
+  "raw_instruction": "Climb to 3000 then right turn direct OVR VORTAC and hold.",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "OVR"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "OVR",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 3000 then right turn direct OVR VORTAC and hold.",
+    "climb_altitude": "3000",
+    "waypoints": "OVR VORTAC",
+    "turn_direction": "right turn",
+    "holding_required": "and hold",
+    "holding_fix": "OVR VORTAC"
+  },
+  "_questionnaire": {
+    "Q1": "yes",
+    "Q2": "yes",
+    "Q3": "yes",
+    "Q4": "yes",
+    "Q5": "yes",
+    "Q6": "yes"
+  }
+}

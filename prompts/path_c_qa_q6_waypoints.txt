@@ -1,0 +1,18 @@
+This is a FAA Instrument Approach Procedure (IAP) chart.
+
+Task:
+List the key waypoint or fix names that define the MISSED APPROACH path.
+
+Output rules:
+- Return only a JSON array of uppercase strings.
+- Example:
+["MUDRE", "HOOKK"]
+- If no waypoint or fix name can be identified confidently, return:
+[]
+- Do not include commentary or any other text.
+
+Selection rules:
+- Include named fixes, intersections, or waypoints that the aircraft is instructed to proceed to, hold at, or use as part of the missed approach path.
+- Exclude airport names, frequencies, headings, distances, generic labels, and chart annotations.
+- Exclude standalone navaid names when they appear only as supporting references for a radial, DME, or intersection naming pattern and are not themselves the destination fix.
+- If both an intersection/fix and a supporting navaid appear together, prefer the actual destination fix or intersection.

@@ -1,0 +1,162 @@
+RNAV (GPS) RWY 3
+Amdt 1D 08SEP22
+42°50'N-103°06'W
+CHADRON MUNI (CDR)
+CHADRON, NEBRASKA
+622 (700-1)
+522 (600-1)
+REIL Rwys 21 and 30 
+922 (1000-3)
+622 (700-13)
+CIRCLING
+3920-1
+3820-1
+MIRL Rwy 12-30 
+4220-3
+3920-13½
+LNAV MDA
+HIRL Rwy 3-210
+526 (600-1)
+3820-1
+DA
+VNAV
+608 (700-13%)
+3902-13/
+LNAV/
+RW03
+028 to
+DA
+LPV
+200 (200-1)
+3494-1
+B
+A
+CATEGORY
+3363
+D
+c
+-1.5 NM-
+1 NM
+-4.2 NM
+8NM-
+30
+TCH 60
+4400 X75
+*4140
+5500
+GP 3.00°
+RW03
+RW03
+×
+*1.5 NM to
+028°
+2
+*LNAV only
+RW03
+5500
+028°
+7500
+2.5 NM to
+IDXUL
+208°
+ZAMAT
+HADIR
+Holding Pattern
+(VGSI Angle 3.00/TCH 61).
+0.5 % UP
+001X 8669
+Bpn fo bd  p a
+WN∠
+EOUOA
+C010
+21
+JUVEB
+(NoPT)
+(IAF)
+323°
+7500 NoPT
+7 NM
+00∠
+v
+TLZ8 ZA
+@
+E22 3
+G00A
+HADIR
+¤
+4976
+093°
+208°
+5017
+(9.5)
+4700±
+-323°
+HADIR
+-093°
+(IF/IAF)
+7500 NoPT
+A4575
+(8)
+028°
+PETYO
+5500
+(IAF)
+4169
+JUVEB
+7500
+IDXUL
+(FAF)
+¤
+.808
+ε60
+BOOO
+PELO
+RW03
+2.5 NM to
+3868
+Λ3566±
+ZAMAT
+-208 °
+00
+R
+WN
+ROR
+WO HOPA WSIN
+…
+122.8 (CTAF) 0
+127.95 338.2
+UNICOM
+118.05
+DENVER CENTER
+ASOS
+using Pine Ridge altimeter setting, inop table does not apply to LPV all Cats and
+LNAV Cats A/B.
+Cats A/B. For inop ALS increase LNAV/VNAV all Cats visibility to 13/. When
+Circling visibility Cat C  SM. Inop table does not apply to LPV all Cats and LNAV
+visibilities g SM. Increase all MDAs 80 feet and LNAV visibility Cat C/D 3% SM, and
+EDUQA and hold.
+Climb to 5100 direct
+increase LPV DA to 3564 feet, increase LNAV/VNAV DA to 3972 feet and all
+When local altimeter setting not received, use Pine Ridge altimeter setting and
+MISSED APPROACH:
+MALSR
+LNAV Cats C and D visibility to 13/ SM. VDP NA with Pine Ridge altimeter setting.
+using Pine Ridge altimeter setting, increase LNAV/VNAV all Cats visibility to 1/ SM,
+VNAV systems, LNAV/VNAV NA below -21°C or above 54°C. For inop ALS, when
+Baro-VNAV NA when using Pine Ridge altimeter setting. For uncompensated Baro-
+CHADRON MUNI (CDR)
+RNP APCH-GPS.
+3298
+RNAV (GPS) RWY 3
+Apt Elev
+028°
+W03A
+3294
+TDZE
+G211
+APD dPS
+CHGG9 E
+2221
+AV3) 909-A
+WAAS
+CHADRON, NEBRASKA

@@ -1,0 +1,28 @@
+QUESTIONNAIRE_ANSWERS:
+Q1: yes
+Q2: yes
+Q3: yes
+Q4: yes
+Q5: yes
+Q6: yes
+
+JSON:
+{
+  "raw_instruction": "Climb to 2000 then climbing right turn to 2400 direct NOORA LOM and hold.",
+  "climb_altitude": 2400,
+  "waypoints": ["NOORA"],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "NOORA",
+  "initial_track": null,
+  "turn_trigger": "2000",
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 2000 then climbing right turn to 2400 direct NOORA LOM and hold.",
+    "climb_altitude": "2400 visible in missed approach instruction and profile",
+    "waypoints": "NOORA LOM labeled in missed approach text",
+    "turn_direction": "right turn explicitly stated",
+    "holding_required": "hold explicitly stated",
+    "holding_fix": "NOORA LOM"
+  }
+}

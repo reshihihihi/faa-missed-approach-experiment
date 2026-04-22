@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 1440+ft -> DF EBORE 3000+ft -> HM EBORE 3000+ft",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "EBORE"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "EBORE",
+  "initial_track": null,
+  "turn_trigger": "EBORE",
+  "holding_details": null
+}

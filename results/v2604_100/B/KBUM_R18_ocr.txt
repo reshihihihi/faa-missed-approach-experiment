@@ -1,0 +1,125 @@
+BUTLER, MISSOURI
+WAAS
+AL-964 (FAA)
+25219
+CH 82630
+APP CRS
+Rwy Ldg
+3999
+TDZE
+888
+RNAV (GPS) RWY 18
+W18A
+178°
+Apt Elev
+894
+RNP APCH.
+BUTLER MEML (BUM)
+Baro-VNAV NA. Use Clinton altimeter setting; when not received, use
+MISSED APPROACH: Climb to 40OO direct
+ANA
+Kansas City Downtown/Wheeler Fld altimeter setting and increase all
+FONIE and hold, continue climb in hold to
+DA/MDA 60 feet, increase LPV and LNAV/VNAV all Cats visibility mile.
+4000.
+KANSAS CITY CENTER
+CTAF
+125.55 327.0
+122.9
+(IAF)
+25 NM
+INRAM
+MSA RW
+COON 0001
+2900
+o8∠
+(ll)
+4 NM
+89
+8∠
+3000 NoPT
+(IAF)
+088°
+(IF/IAF)
+ANIFO
+(5.7)
+LADSY
+8
+2000
+6
+(FAF)
+REMDY
+FABUV
+2.5 NM to
+Procedure NA for arrivals on
+3000
+004°
+(11.7)
+8RTR
+066V
+RO DM W
+radials 309 CW 085.
+RW18
+BUTLER
+BUM
+MISSED APCH FIX
+ELEV
+894
+TDZE
+888
+FONIE
+-178°
+358°
+18
+WNA
+0.6 % UP
+A000
+ENE
+LADSY
+4 NM
+REMDY
+Holding Pattern
+FABUV
+358°
+*LNAV only
+-3000
+2.5 NM to
+2500
+←178°
+RW18
+-178°
+3X6663
+RW18
+¤
+×
+2500
+GP 3.00
+1700*
+TCH 37
+-2.5 NM—
+--2.5 NM
+5 NM
+CATEGORY
+A
+B
+c
+D
+LPV
+DA
+1220-11/8 332 (400-1/8)
+NA
+LNAV/
+DA
+1220-11/8 332 (400-1½8)
+NA
+VNAV
+36
+1340-1 452 (500-1)
+NA
+MIRL Rwy 18-36
+LNAV MDA
+BUTLER, MISSOURI
+BUTLER MEML (BUM)
+Orig-B 18JUL19
+38°17'N-94°20'W
+RNAV (GPS) RWY 18

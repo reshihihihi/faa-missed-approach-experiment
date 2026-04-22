@@ -1,0 +1,16 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 6000 direct NARwy 18 helicopter visibility reduction below SM NA. Use FAPID and track 253 to FEBAX and track 316 to NASTE and hold.",
+  "climb_altitude": 6000,
+  "waypoints": [
+    "NARWY",
+    "FEBAX",
+    "NASTE",
+    "FAPID"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "NASTE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

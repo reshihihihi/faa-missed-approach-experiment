@@ -1,0 +1,14 @@
+{
+  "raw_instruction": "CA 587+ft -> DF SURGE -> TF ETX 3000+ft -> HM ETX 3000+ft",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "SURGE",
+    "ETX"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "ETX",
+  "initial_track": null,
+  "turn_trigger": "SURGE",
+  "holding_details": null
+}

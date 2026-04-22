@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 1300+ft -> DF CQN 3700+ft -> HM CQN 3700+ft",
+  "climb_altitude": 3700,
+  "waypoints": [
+    "CQN"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "CQN",
+  "initial_track": null,
+  "turn_trigger": "CQN",
+  "holding_details": null
+}

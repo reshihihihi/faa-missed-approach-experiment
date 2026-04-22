@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 3200 direct TEGAE and hold.",
+  "climb_altitude": 3200,
+  "waypoints": ["TEGAE"],
+  "turn_direction": "unknown",
+  "holding_required": true,
+  "holding_fix": "TEGAE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 3200 direct TEGAE and hold.",
+    "climb_altitude": "Climb to 3200",
+    "waypoints": "direct TEGAE and hold",
+    "turn_direction": "not found",
+    "holding_required": "TEGAE and hold.",
+    "holding_fix": "direct TEGAE and hold"
+  }
+}

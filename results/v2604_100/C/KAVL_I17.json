@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climb to 5400 direct BRA NDB and hold. Continue climb-in-hold to 5400.",
+  "climb_altitude": 5400,
+  "waypoints": [
+    "BRA"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "BRA",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climb to 4000 then right turn direct BAF VORTAC and hold.",
+  "climb_altitude": 4000,
+  "waypoints": [
+    "BAF"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "BAF",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

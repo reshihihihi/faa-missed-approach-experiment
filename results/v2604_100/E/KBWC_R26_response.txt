@@ -1,0 +1,28 @@
+QUESTIONNAIRE_ANSWERS:
+Q1: yes
+Q2: yes
+Q3: yes
+Q4: yes
+Q5: yes
+Q6: yes
+
+JSON:
+{
+  "raw_instruction": "Climbing left turn to 3600 direct IPL VORTAC and hold.",
+  "climb_altitude": 3600,
+  "waypoints": ["IPL"],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "IPL",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climbing left turn to 3600 direct IPL VORTAC and hold.",
+    "climb_altitude": "3600",
+    "waypoints": "IPL VORTAC",
+    "turn_direction": "left turn",
+    "holding_required": "and hold",
+    "holding_fix": "IPL VORTAC"
+  }
+}

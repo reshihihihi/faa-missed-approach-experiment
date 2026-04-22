@@ -1,0 +1,15 @@
+{
+  "raw_instruction": "MISSED APCH FIX JHNNM. JAYDS SAQAR JHNNM",
+  "climb_altitude": "unknown",
+  "waypoints": [
+    "JHNNM",
+    "JAYDS",
+    "SAQAR"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": false,
+  "holding_fix": null,
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

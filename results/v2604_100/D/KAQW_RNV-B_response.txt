@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "Climbing left turn to 4800 direct SWOBS and hold.",
+  "climb_altitude": 4800,
+  "waypoints": ["SWOBS"],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "SWOBS",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Upper right of chart in MISSED APPROACH box: 'MISSED APPROACH: Climbing left turn to 4800 direct SWOBS and hold.'",
+    "climb_altitude": "4800 in the missed approach instruction text",
+    "waypoints": "SWOBS named in missed approach instruction and labeled 'MISSED APCH FIX' on plan view",
+    "turn_direction": "'Climbing left turn' in missed approach instruction",
+    "holding_required": "Word 'hold' at end of missed approach instruction; holding pattern depicted at SWOBS on plan view",
+    "holding_fix": "SWOBS named in missed approach instruction and on chart as MISSED APCH FIX"
+  }
+}

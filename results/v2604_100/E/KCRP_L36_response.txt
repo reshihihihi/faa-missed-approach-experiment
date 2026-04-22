@@ -1,0 +1,32 @@
+QUESTIONNAIRE_ANSWERS:
+Q1: yes
+Q2: yes
+Q3: yes
+Q4: yes
+Q5: yes
+Q6: yes
+
+JSON:
+{
+  "raw_instruction": "Climb to 700 then climbing left turn to 2000 on heading 338° and CRP VORTAC R-287 to ATHIS INT/CRP 23.3 DME and hold.",
+  "climb_altitude": 2000,
+  "waypoints": ["ATHIS"],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "ATHIS",
+  "initial_track": "338",
+  "turn_trigger": "700",
+  "holding_details": {
+    "fix": "ATHIS",
+    "dme": "CRP 23.3 DME",
+    "radial": "R-287"
+  },
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH section top of chart",
+    "climb_altitude": "2000 printed in missed approach text",
+    "waypoints": "ATHIS INT/CRP 23.3 DME",
+    "turn_direction": "climbing left turn",
+    "holding_required": "...and hold",
+    "holding_fix": "ATHIS INT/CRP 23.3 DME"
+  }
+}

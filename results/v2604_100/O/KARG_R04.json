@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 529+ft -> DF ESEGE 2700+ft -> HM ESEGE 2700+ft",
+  "climb_altitude": 2700,
+  "waypoints": [
+    "ESEGE"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "ESEGE",
+  "initial_track": null,
+  "turn_trigger": "ESEGE",
+  "holding_details": null
+}

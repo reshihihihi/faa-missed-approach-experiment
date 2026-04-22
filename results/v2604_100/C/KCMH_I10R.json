@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climb to 1400 then climbing right turn to 3000 direct BU LOM and hold.",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "BU"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "unknown",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

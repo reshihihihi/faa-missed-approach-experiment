@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 537+ft -> DF FISAV 3000+ft -> HM FISAV 3000+ft",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "FISAV"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "FISAV",
+  "initial_track": null,
+  "turn_trigger": "FISAV",
+  "holding_details": null
+}

@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climb to 2000 direct LOCHS and hold.",
+  "climb_altitude": 2000,
+  "waypoints": [
+    "LOCHS"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "LOCHS",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

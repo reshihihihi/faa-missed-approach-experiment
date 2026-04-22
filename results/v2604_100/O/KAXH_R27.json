@@ -1,0 +1,14 @@
+{
+  "raw_instruction": "CA 367+ft -> DF RUPRE -> TF KEEDS 2700+ft",
+  "climb_altitude": 2700,
+  "waypoints": [
+    "RUPRE",
+    "KEEDS"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": false,
+  "holding_fix": null,
+  "initial_track": null,
+  "turn_trigger": "RUPRE",
+  "holding_details": null
+}

@@ -1,0 +1,31 @@
+QUESTIONNAIRE_ANSWERS:
+Q1: yes
+Q2: yes
+Q3: yes
+Q4: no
+Q5: yes
+Q6: yes
+
+JSON:
+{
+  "raw_instruction": "Climb to 4000 direct CUYAS and on track 024° to FARAD and hold.",
+  "climb_altitude": 4000,
+  "waypoints": ["CUYAS", "FARAD"],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "FARAD",
+  "initial_track": "024°",
+  "turn_trigger": null,
+  "holding_details": {
+    "fix": "FARAD",
+    "inbound_course": "024°"
+  },
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH box upper right: 'Climb to 4000 direct CUYAS and on track 024° to FARAD and hold.'",
+    "climb_altitude": "4000 explicitly stated",
+    "waypoints": "CUYAS and FARAD explicitly named",
+    "turn_direction": "No turn direction stated",
+    "holding_required": "Word 'hold' explicitly present; racetrack symbol at FARAD depicted",
+    "holding_fix": "FARAD labeled as MISSED APCH FIX"
+  }
+}

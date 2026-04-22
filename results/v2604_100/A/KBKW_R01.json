@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to Baro-VNAV systems, LNAV/VNAV NA below -1 4 C or above 54 C. 5900 direct YISUK and hold, continue climb-in-hold to 5900.",
+  "climb_altitude": 5900,
+  "waypoints": [
+    "YISUK"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "YISUK",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

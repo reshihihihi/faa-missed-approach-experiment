@@ -1,0 +1,144 @@
+VASHINGTON, IOWA
+AL-6289 (FAA)
+WAAS
+24081
+APP CRS
+Rwy Idg 4000
+CH 90416
+TDZE
+752
+RNAV (GPS) RWY 36
+W36A
+0040
+Apt Elev
+754
+RNP APCH.
+WASHINGTON MUNI (AWG)
+For uncompensated Baro-VNAV systems, LNAV/VNAV NA below -6°C (22°F) or
+T
+above 54°C (130°F). Baro-VNAV and VDP NA when using lowa City altimeter
+MISSED APPROACH: Climb to 3000
+A
+setting. When local altimeter setting not received, use lowa City altimeter setting:
+direct GANAD and hold.
+increase LPV DA to 1064 feet and LNAV/VNAV DA to 1072 feet; increase all MDAs
+80 feet and visibility LNAV and Circling Cat C 1/ SM.
+AWOS-3
+CHICAGO CENTER
+UNICOM
+127.825
+135.6 370.95
+122.7 (CTAF)0
+MISSED APCH FIX
+—…………………
+4 NM
+1065
+A
+GANAD
+786
+1149
+839±
+RW36
+JELEL
+1.6 NM to
+RW36
+1950
+A
+(FAF)
+BEHTY
+SENOC
+NM
+to
+30
+3000
+AA00
+BEHTY
+094°
+¤
+-274°
+(IF/IAF)
+BEHTY
+-094°
+¤
+274°
+BEHTY
+o8
+3000
+30 NM to
+0
+4 NM
+ELEV 754
+TDZE 752
+BEHTY
+(NoPT)
+MIRL Rwys 13-31 and 18-36
+VGSI and RNAV glidepath not coincident
+REIL Rwys 18, 13, 31 and 36
+3000
+GANAD
+(VGSI Angle 3.00/TCH 35).
+4 NM
+BEHTY
+81
+Holding Pattern
+SENOC
+ξ
+JELEL
+¤
+←184°
+1.6 NM to
+*LNAV only
+3000
+-004°
+2400
+RW36
+004°
+ *1 NM to
+3401 X 60
+x
+RW36
+RW36
+2400
+GP 3.00°
+*1300
+LX0005
+TCH 45
+3
+6 NM
+-3.4 NM
+90
+WN I
+C
+A
+8
+2
+D
+LPV
+DA
+1002-1
+250 (300-1)
+NA
+LNAV/
+DA
+1010-1
+258 (300-1)
+NA
+VNAV
+36
+LNAV MDA
+1100-1 348 (400-1)
+NA
+1260-1
+1500-21/4
+-004°
+1200-1
+CIRCLING
+506 (600-1)
+746 (800-21/4)
+NA
+446 (500-1)
+WASHINGTON, IOWA
+WASHINGTON MUNI (AWG)
+Amdt 1A 20JUN19
+41°17'N-91°41W
+RNAV (GPS) RWY 36

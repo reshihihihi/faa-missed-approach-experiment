@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 8000 direct CEBBA and hold, Cat C visibility mile. Baro-VNAV NA when using Dalhart altimeter setting. VDP NA continue climb-in-hold to 8000.",
+  "climb_altitude": 8000,
+  "waypoints": [
+    "CEBBA"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "CEBBA",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

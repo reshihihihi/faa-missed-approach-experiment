@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "Climb to 5100 direct EDUQA and hold.",
+  "climb_altitude": 5100,
+  "waypoints": ["EDUQA"],
+  "turn_direction": "unknown",
+  "holding_required": true,
+  "holding_fix": "EDUQA",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Climb to 5100 direct EDUQA and hold.",
+    "climb_altitude": "Climb to 5100 direct EDUQA and hold.",
+    "waypoints": "Climb to 5100 direct EDUQA and hold.",
+    "turn_direction": "not found",
+    "holding_required": "Climb to 5100 direct EDUQA and hold.",
+    "holding_fix": "Climb to 5100 direct EDUQA and hold."
+  }
+}

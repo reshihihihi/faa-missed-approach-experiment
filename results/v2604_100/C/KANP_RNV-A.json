@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climbing left turn to 2000 direct AMRTN and hold.",
+  "climb_altitude": 2000,
+  "waypoints": [
+    "AMRTN"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "AMRTN",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

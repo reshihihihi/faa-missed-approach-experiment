@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "DME from BAL VORTAC. Simultaneous reception of I-UQC and BAL DME required. DME required. Simultaneous approach authorized with Rwy 15R. Helicopter MISSED APPROACH: Climb to 2500 on visibility reduction below RVR 4000 NA. heading 155 and BAL VORTAC R-153 to DUDDS/BAL 12 DME and hold.",
+  "climb_altitude": 4000,
+  "waypoints": [
+    "DUDDS"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "DUDDS",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

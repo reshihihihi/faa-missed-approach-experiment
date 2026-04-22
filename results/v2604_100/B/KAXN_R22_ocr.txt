@@ -1,0 +1,136 @@
+NDRIA, MINNESOTA
+AL-14 (FAA)
+WAAS
+Rwy Ldg
+4098
+25219
+CH 48917
+APP CRS
+TDZE
+1424
+W22A
+225°
+RNAV (GPS) RWY 22
+Apt Elev
+1425
+RNP APCH.
+ALEXANDRIA RGNL/CHANDLER FLD (AXN)
+Baro-VNAV NA when using Glenwood altimeter setting. For uncompensated
+Baro-VNAV systems, LNAV/VNAV NA below -17°C or above 46°C.
+MISSED APPROACH: Climb to 3500
+When local altimeter setting not received, use Glenwood altimeter setting and
+direct MOVSE and right turn on track
+increase all DA 37 feet and all MDA 40 feet, increase LNAV/VNAV all Cats and
+315° to EVDEQ and on track 024°
+LNAV Cat D visibility  mile. Rwy 22 helicopter visibility reduction below % SM NA.
+to TILER and hold.
+ASOS
+MINNEAPOLIS CENTER
+118.375
+UNICOM
+126.1 269.2
+123.0 (CTAF)0
+122°
+302°..
+TILER
+4 NM
+L135°-
+(IAF)
+HUDRO
+4 NM
+3500
+3500
+KILVE
+35°
+NoP
+I
+HUDRO
+15
+225
+ (IF/IAF)
+-316°
+3500 NoPT
+KILVE
+(FAF)
+3000
+316°
+WANBI
+25
+(5)
+COXÉT
+1.6 NM to
+(6.1)
+EVDEQ
+RW22
+(IAF)
+VEMVY
+1568A1579±
+RW22
+VEMVY
+045°
+3600
+-316°
+MOVSE
+ELEV 1425
+TDZE 1424
+225°
+3500
+MOVSE
+EVDEQ
+TILER
+VGSI and RNAV glidepath not coincident
+12
+tr
+(VGSI Angle 3.00/TCH 44).
+22
+tr
+024°
+315°
+KILVE
+5099 X 100
+4 NM
+*LNAV only.
+Holding Pattern
+4098 X 75
+COXET
+1474
+WANBI
+045°
+3500
+1.6 NM to
+3000
+-225°
+←225°
+RW22
+RW22
+×
+3000
+GP 3.00
+"
+1980*
+TCH 50
+1.6 NM
+3.2 NM
+-6.1 NM
+CATEGORY
+A
+B
+c
+D
+LPV
+DA
+1677-1 253 (300-1)
+LNAV/
+DA
+1880-1½2 456 (500-1½2)
+REIL Rwys 4, 13, and 22
+VNAV
+MIRL Rwys 4-22 and 13-31
+LNAV MDA
+1840-1 416 (500-1)
+1840-11/4 416 (500-114)
+ALEXANDRIA, MINNESOTA
+ALEXANDRIA RGNL/CHANDLER FLD (AXN)
+Orig-B 18JUL19
+45°52'N-95°24'W
+RNAV (GPS) RWY 22

@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climb to 1300 then climbing right turn to 4600 on heading 210° and VTU VOR/DME R-086 to VTU VOR/DME and hold.",
+  "climb_altitude": 4600,
+  "waypoints": [
+    "VTU"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "VTU",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

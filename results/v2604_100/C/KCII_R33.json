@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climb to 6600 direct AMURE and hold.",
+  "climb_altitude": 6600,
+  "waypoints": [
+    "AMURE"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "AMURE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

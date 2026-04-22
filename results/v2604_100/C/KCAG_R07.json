@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climb to 10000 direct CHE VOR/DME and hold, continue climb-in-hold to 10000.",
+  "climb_altitude": 10000,
+  "waypoints": [
+    "CHE"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "CHE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

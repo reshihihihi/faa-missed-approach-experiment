@@ -1,0 +1,34 @@
+{
+  "raw_instruction": "Climb to 3200 direct SAVKE and via 289° track to HIVSI and 202° track to GAFFE and hold.",
+  "climb_altitude": 3200,
+  "waypoints": [
+    "SAVKE",
+    "HIVSI",
+    "GAFFE"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "GAFFE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": {
+    "fix": "GAFFE",
+    "inbound_course": "202"
+  },
+  "evidence": {
+    "raw_instruction": "Missed approach text box upper right of chart",
+    "climb_altitude": "3200 printed in missed approach instruction",
+    "waypoints": "SAVKE, HIVSI, GAFFE explicitly named",
+    "turn_direction": "No turn direction stated",
+    "holding_required": "Word 'hold' at end of instruction; holding pattern depicted at GAFFE",
+    "holding_fix": "GAFFE labeled as holding fix"
+  },
+  "_questionnaire": {
+    "Q1": "yes",
+    "Q2": "yes",
+    "Q3": "yes",
+    "Q4": "no",
+    "Q5": "yes",
+    "Q6": "yes"
+  }
+}

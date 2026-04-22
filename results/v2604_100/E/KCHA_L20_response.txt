@@ -1,0 +1,31 @@
+QUESTIONNAIRE_ANSWERS:
+Q1: yes
+Q2: yes
+Q3: yes
+Q4: yes
+Q5: yes
+Q6: yes
+
+JSON:
+{
+  "raw_instruction": "Climb to 1300 then climbing left turn to 3700 direct CQN NDB and hold, continue climb-in-hold to 3700.",
+  "climb_altitude": 3700,
+  "waypoints": ["CQN"],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "CQN",
+  "initial_track": null,
+  "turn_trigger": "1300",
+  "holding_details": {
+    "fix": "CQN",
+    "altitude": 3700
+  },
+  "evidence": {
+    "raw_instruction": "Missed approach text box upper right of chart",
+    "climb_altitude": "3700 stated in missed approach instruction",
+    "waypoints": "CQN NDB explicitly named",
+    "turn_direction": "LEFT explicitly stated",
+    "holding_required": "hold depicted and stated",
+    "holding_fix": "CQN NDB labeled as holding fix"
+  }
+}

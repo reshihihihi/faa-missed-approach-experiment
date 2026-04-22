@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climb to 3500 direct DLORA and hold.",
+  "climb_altitude": 3500,
+  "waypoints": [
+    "DLORA"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "DLORA",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

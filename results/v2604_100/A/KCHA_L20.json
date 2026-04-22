@@ -1,0 +1,11 @@
+{
+  "raw_instruction": "climbing left turn to 3700 direct CQN NDB MISSED APPROACH: Climb to 1300 then",
+  "climb_altitude": 3700,
+  "waypoints": [],
+  "turn_direction": "LEFT",
+  "holding_required": false,
+  "holding_fix": null,
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

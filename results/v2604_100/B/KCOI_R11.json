@@ -1,0 +1,26 @@
+{
+  "raw_instruction": "Climb to 3000 direct YONUS and on track 190° to MLB VOR/DME and hold.",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "YONUS",
+    "MLB"
+  ],
+  "turn_direction": "unknown",
+  "holding_required": true,
+  "holding_fix": "MLB",
+  "initial_track": "190°",
+  "turn_trigger": "YONUS",
+  "holding_details": {
+    "track": null,
+    "direction": null,
+    "leg_time": null
+  },
+  "evidence": {
+    "raw_instruction": "Climb to 3000 direct YONUS and on track 190° to MLB VOR/DME and hold.",
+    "climb_altitude": "Climb to 3000",
+    "waypoints": "direct YONUS and on track 190° to MLB VOR/DME",
+    "turn_direction": "not explicitly stated",
+    "holding_required": "and hold.",
+    "holding_fix": "MLB VOR/DME and hold."
+  }
+}

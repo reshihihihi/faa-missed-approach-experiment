@@ -1,0 +1,106 @@
+4, TENAS
+AL-6575 (FAA)
+WAAS
+Rwy Ldg
+26078
+CH 81903
+APP CRS
+5002
+TDZE
+67
+RNAV (GPS) RWY 27
+W27A
+269°
+Apt Elev
+68
+HOUSTON/SOUTHWEST (AXH)
+RNP APCH.
+T
+For uncompensated Baro-VNAV systems, LNAV/VNAV NA below -15°C (5°F)
+ANA
+or above 54°C (130°F). Rwy 27 helicopter visibility reduction below 3 SM NA.
+MISSED APPROACH: Climb
+Obtain local altimeter setting on CTAF; when not received use William P. Hobby
+to 2700 direct RUPRE and
+altimeter setting and increase all DAs/MDA's 40 feet, and LPV, LNAV Cat C
+via 200° track to KEEDS.
+visibility /4 mile. Baro-VNAV NA when using William P. Hobby altimeter setting.
+AWOS-3
+HOUSTON APP CON
+CLNC DEL
+UNICOM
+123.625
+123.8 257.7
+120.8
+123.0 (CTAF)0
+RADAR REQUIRED
+RUPRE
+RW27
+263
+1100
+(IF)
+A
+-269°
+VAGGE
+^
+250
+(FAF)
+((6.2)
+HEGRE
+2000
+2668
+6
+25 NM
+(IAF)
+TEGOY
+KEEDS
+3100
+ELEV
+68
+TDZE
+67
+2700
+RUPRE
+KEEDS
+tr
+VAGGE
+200
+269°
+HEGRE
+2000
+6
+.
+-269°
+RW27
+*
+-1100
+GP 3.00
+TCH 45
+-3.1 NM
+-6.2 NM
+CATEGORY
+A
+B
+c
+D
+LPV
+DA
+367-1 300 (300-1)
+NA
+LNAV/
+DA
+604-2 537 (600-2)
+NA
+REIL Rwy 9 and 27
+VNAV
+560-11/4
+MIRL Rwy 9-27
+LNAV MDA
+560-1 493 (500-1)
+NA
+493 (500-114)
+HOUSTON, TEXAS
+HOUSTON/SOUTHWEST (AXH)
+Amdt 1A 07NOV19
+29°30'N-95°29'W
+RNAV (GPS) RWY 27

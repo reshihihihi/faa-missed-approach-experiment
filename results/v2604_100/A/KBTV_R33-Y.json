@@ -1,0 +1,14 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 3000 direct MANIF and on track 333 to STAEV and hold.",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "MANIF",
+    "STAEV"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "STAEV",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

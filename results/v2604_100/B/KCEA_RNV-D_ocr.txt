@@ -1,0 +1,103 @@
+WICHITA, KANSAS
+AL-5142 (FAA)
+21280
+APP CRS
+Rwy Idg
+N/A
+RNAV (GPS)-D
+TDZE
+NN/A
+280°
+Apt Elev
+1378
+CESSNA ACFT FLD (CEA)
+ANA
+DME/DME RNP-O.3 NA. Procedure NA at night. Use Wichita
+Dwight D Eisenhower Ntl altimeter setting; when not
+MISSED APPROACH: Climbing left turn
+received, use Colonel James Jabara altimeter setting.
+to 3600 direct BECNA and hold.
+WICHITA APP CON
+CTAF
+134.8 269.1
+122.9
+"o06l
+A-683
+3600
+SOCOL
+1818
+-100°
+Beech
+Factory
+(IAF)
+(MAP)
+SOCOL
+MAHYE
+1495
+A1578
+061
+5
+Mc Connell
+3000
+(FAF)
+280°
+3600 NoPT
+AFB
+-100°
+5 NM
+FOGOR
+((6.1)
+-2802
+010
+(IF/IAF)
+006 1-
+5
+BECNA
+3600 NoPT
+-100
+(IAF)
+BECNA
+HEGER
+HEGER
+3600
+010
+3600
+ELEV 1378
+∠1
+2563
+3 X 3∠80
+3600
+BECNA
+BECNA
+5 NM
+FOGOR
+Holding Pattern
+280° to
+100°
+3600
+MAHYE
+MAHYE
+-280°
+←280°
+*
+35
+3000
+0.1
+-4.8 NM-
+6.1 NM
+CATEGORY
+A
+B
+c
+D
+1960-11/2
+CIRCLING
+1920-1
+542 (600-1)
+NA
+582 (600-1/2)
+CESSNA ACFT FLD (CEA)
+WICHITA, KANSAS
+37°39'N-97°15'W
+RNAV (GPS)-D
+Amdt 1A 07OCT21

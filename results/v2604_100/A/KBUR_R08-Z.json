@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "MISSED APPROACH: Rwy 33 NA at night for Cat D. Circling NA for Cats A/B/C northeast of Rwy 15 and 26. Climbing right turn to 4600 direct COTSI and on track 263 to VTU VOR/DME and hold. visibility to 11 SM. Rwy 8 helicopter visibility reduction below RVR 5000 NA.",
+  "climb_altitude": 5000,
+  "waypoints": [
+    "COTSI"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "COTSI",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

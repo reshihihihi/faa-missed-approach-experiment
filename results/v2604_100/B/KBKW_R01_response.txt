@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "Climb to 5900 direct YISUK and hold, continue climb-in-hold to 5900.",
+  "climb_altitude": 5900,
+  "waypoints": ["YISUK"],
+  "turn_direction": "unknown",
+  "holding_required": true,
+  "holding_fix": "YISUK",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 5900 direct YISUK and hold, continue climb-in-hold to 5900.",
+    "climb_altitude": "Climb to 5900",
+    "waypoints": "direct YISUK and hold",
+    "turn_direction": "not explicitly stated",
+    "holding_required": "direct YISUK and hold",
+    "holding_fix": "direct YISUK and hold"
+  }
+}

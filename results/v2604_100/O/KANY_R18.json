@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 3000+ft -> DF UZZUF 3300+ft -> HM UZZUF 3300+ft",
+  "climb_altitude": 3300,
+  "waypoints": [
+    "UZZUF"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "UZZUF",
+  "initial_track": null,
+  "turn_trigger": "UZZUF",
+  "holding_details": null
+}

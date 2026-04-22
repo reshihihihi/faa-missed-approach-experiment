@@ -1,0 +1,21 @@
+{
+  "raw_instruction": "Climb to 3000 direct JELVA and hold.",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "JELVA"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "JELVA",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Upper right box labeled 'MISSED APPROACH'",
+    "climb_altitude": "Climb to 3000",
+    "waypoints": "direct JELVA and hold",
+    "turn_direction": "No turn direction stated",
+    "holding_required": "Chart states 'and hold' at JELVA; holding pattern depicted at JELVA in plan view",
+    "holding_fix": "JELVA named in missed approach instruction and depicted with holding pattern"
+  }
+}

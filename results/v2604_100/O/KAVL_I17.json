@@ -1,0 +1,11 @@
+{
+  "raw_instruction": "DF BRA 5400+ft -> HM BRA 5400+ft",
+  "climb_altitude": 5400,
+  "waypoints": [],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "BRA",
+  "initial_track": null,
+  "turn_trigger": "BRA",
+  "holding_details": null
+}

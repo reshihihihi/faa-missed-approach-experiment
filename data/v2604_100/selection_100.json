@@ -1,0 +1,248 @@
+{
+  "cycle": "2604",
+  "seed": 2604,
+  "per_airport_cap": 2,
+  "quotas": [
+    {
+      "kind": "RNAV",
+      "holding_required": false,
+      "count": 25
+    },
+    {
+      "kind": "LOC",
+      "holding_required": false,
+      "count": 13
+    },
+    {
+      "kind": "ILS",
+      "holding_required": false,
+      "count": 2
+    },
+    {
+      "kind": "RNAV",
+      "holding_required": true,
+      "count": 35
+    },
+    {
+      "kind": "LOC",
+      "holding_required": true,
+      "count": 12
+    },
+    {
+      "kind": "ILS",
+      "holding_required": true,
+      "count": 13
+    }
+  ],
+  "selected_counts": [
+    {
+      "kind": "ILS",
+      "holding_required": true,
+      "count": 13
+    },
+    {
+      "kind": "LOC",
+      "holding_required": false,
+      "count": 13
+    },
+    {
+      "kind": "LOC",
+      "holding_required": true,
+      "count": 12
+    },
+    {
+      "kind": "RNAV",
+      "holding_required": false,
+      "count": 25
+    },
+    {
+      "kind": "RNAV",
+      "holding_required": true,
+      "count": 37
+    }
+  ],
+  "airport_counts_top20": [
+    [
+      "KCFO",
+      2
+    ],
+    [
+      "KAVP",
+      2
+    ],
+    [
+      "KAXH",
+      2
+    ],
+    [
+      "KBOS",
+      2
+    ],
+    [
+      "KBUR",
+      2
+    ],
+    [
+      "KCOE",
+      2
+    ],
+    [
+      "KCBF",
+      2
+    ],
+    [
+      "KAFN",
+      2
+    ],
+    [
+      "KAQW",
+      2
+    ],
+    [
+      "KAVQ",
+      2
+    ],
+    [
+      "KAOO",
+      2
+    ],
+    [
+      "KABE",
+      1
+    ],
+    [
+      "KALS",
+      1
+    ],
+    [
+      "KAMA",
+      1
+    ],
+    [
+      "KAPC",
+      1
+    ],
+    [
+      "KATL",
+      1
+    ],
+    [
+      "KAUS",
+      1
+    ],
+    [
+      "KAVL",
+      1
+    ],
+    [
+      "KAYS",
+      1
+    ],
+    [
+      "KBMI",
+      1
+    ]
+  ],
+  "selected_ids": [
+    "KABE_I06",
+    "KALS_I02",
+    "KAMA_I04",
+    "KAPC_I01L",
+    "KATL_I09R",
+    "KAUS_I18L",
+    "KAVL_I17",
+    "KAYS_I19-Z",
+    "KBMI_I29",
+    "KBUY_I06-Z",
+    "KBWG_I03-Y",
+    "KCFO_I26",
+    "KCMH_I10R",
+    "KAVP_L04",
+    "KAXH_L09",
+    "KBDL_L33",
+    "KBDR_L06",
+    "KBFF_L12",
+    "KBOS_L15R",
+    "KBUR_L08-Z",
+    "KBYL_L20",
+    "KCEC_L12",
+    "KCFO_L17",
+    "KCOE_L06",
+    "KCRP_L36",
+    "KCRW_L05",
+    "KALN_L29",
+    "KALO_L12",
+    "KAWM_L17",
+    "KBPT_L12",
+    "KBRD_L34",
+    "KBTL_L23R",
+    "KBTP_L08",
+    "KBWI_L15L",
+    "KCAK_L01",
+    "KCBF_L36",
+    "KCHA_L20",
+    "KCJR_L04",
+    "KAFN_RNV-B",
+    "KAFN_RNV-C",
+    "KAIB_RNV-A",
+    "KANP_RNV-A",
+    "KAPT_R04",
+    "KAPV_R18",
+    "KAQW_RNV-A",
+    "KAQW_RNV-B",
+    "KAVQ_R12",
+    "KAVQ_R21",
+    "KAXH_R27",
+    "KBDH_R31",
+    "KBDN_R34",
+    "KBJC_R12L",
+    "KBLF_R05",
+    "KBMQ_R01",
+    "KBOS_R32",
+    "KBTV_R33-Y",
+    "KBUR_R08-Z",
+    "KBWC_R26",
+    "KCAG_R07",
+    "KCBE_R05",
+    "KCEA_RNV-D",
+    "KCII_R33",
+    "KCOE_R02",
+    "KACT_R32",
+    "KADF_R22",
+    "KAKH_R03",
+    "KANY_R18",
+    "KAOO_R03-Z",
+    "KAOO_R21",
+    "KARG_R04",
+    "KATW_R21",
+    "KAVP_R22",
+    "KAWG_R36",
+    "KAXN_R22",
+    "KAXV_R26",
+    "KAZC_R29",
+    "KBFD_R14",
+    "KBJI_R31",
+    "KBKW_R01",
+    "KBKX_R30",
+    "KBLV_R32RY",
+    "KBTR_R04L",
+    "KBUM_R18",
+    "KBVY_R34",
+    "KBXA_R18",
+    "KBYH_R36",
+    "KBYI_R20",
+    "KCAO_R02",
+    "KCBF_R36",
+    "KCDI_R04",
+    "KCDR_R03",
+    "KCDS_R36",
+    "KCGI_R10",
+    "KCHO_R03",
+    "KCHQ_R36",
+    "KCIC_R13L",
+    "KCLL_R11",
+    "KCNC_R10",
+    "KCOI_R11",
+    "KCRS_R32"
+  ]
+}

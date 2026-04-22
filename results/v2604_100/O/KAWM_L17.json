@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 1000+ft -> CF GQE 2000+ft -> HM GQE 2000+ft",
+  "climb_altitude": 2000,
+  "waypoints": [
+    "GQE"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "GQE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

@@ -1,0 +1,11 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 10000 direct Rwy 7 helicopter visibility reduction below 3 SM NA. CHE VOR/DME and hold, continue climb- Circling Rwy 25 NA at night. in-hold to 10000.",
+  "climb_altitude": 10000,
+  "waypoints": [],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": null,
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

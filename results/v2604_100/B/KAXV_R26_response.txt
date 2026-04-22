@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 3000 direct ZUKEC and hold.",
+  "climb_altitude": 3000,
+  "waypoints": ["ZUKEC"],
+  "turn_direction": "unknown",
+  "holding_required": true,
+  "holding_fix": "ZUKEC",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 3000 direct ZUKEC and hold.",
+    "climb_altitude": "Climb to 3000",
+    "waypoints": "direct ZUKEC and hold",
+    "turn_direction": "not stated",
+    "holding_required": "ZUKEC and hold",
+    "holding_fix": "direct ZUKEC and hold"
+  }
+}

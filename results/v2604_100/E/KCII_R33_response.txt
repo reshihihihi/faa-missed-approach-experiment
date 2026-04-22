@@ -1,0 +1,28 @@
+QUESTIONNAIRE_ANSWERS:
+Q1: yes
+Q2: yes
+Q3: yes
+Q4: no
+Q5: yes
+Q6: yes
+
+JSON:
+{
+  "raw_instruction": "Climb to 6600 direct AMURE and hold.",
+  "climb_altitude": 6600,
+  "waypoints": ["AMURE"],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "AMURE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 6600 direct AMURE and hold.",
+    "climb_altitude": "6600",
+    "waypoints": "AMURE labeled in missed approach fix box and instruction",
+    "turn_direction": "No turn direction stated",
+    "holding_required": "Hold depicted at AMURE in MISSED APCH FIX box",
+    "holding_fix": "AMURE labeled in holding pattern diagram"
+  }
+}

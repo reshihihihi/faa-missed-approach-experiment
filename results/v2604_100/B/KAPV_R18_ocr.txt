@@ -1,0 +1,152 @@
+APPLE VALLEY, CALIFORNIA
+AL-5822 (FAA)
+26078
+WAAS
+APP CRS
+Rwy Ldg
+6498
+CH 63102
+RNAV (GPS) RWY 18
+180°
+TDZE
+3062
+W18A
+Apt Elev
+3062
+APPLE VALLEY (APV)
+RNP APCH.
+T
+Circling NA to Rwys 8 and 26. Circling to Rwy 36 NA at night.
+MISSED APPROACH: Climb to 6000 direct
+NARwy 18 helicopter visibility reduction below  SM NA. Use
+FAPID and track 253° to FEBAX and track
+Victorville altimeter setting; if not received, procedure NA.
+316° to NASTE and hold.
+VCV AWOS-3
+JOSHUA APP CON
+AUNICOM
+135.475
+124.55 363.0
+122.8 (CTAF)0
+R-2515
+(IF)
+HEDRI
+(IAF)
+180K
+(IAF)
+CUREL
+6000
+6000
+DAVAY
+075°
+-255°
+BUCKHORN
+(6.5)
+(6.5)
+MOA
+6800
+-281°
+(6.7)
+165°
+5800
+(8.6)
+6300
+BASAL
+040°
+(12.2)
+Procedure NA for arrivals at BASAL
+NASTE
+(FAF)
+on V210-394 northeast bound.
+248°
+VICVU
+JUTGA
+Final approach course
+068
+4 NM to
+offset 2.50.
+5 NM
+(CFFCG))
+1
+CUVED
+2.6 NM to
+11000
+(CFFCG)
+(MAP)
+X
+CFFCG)
+ELEV 3062
+TDZE 3062
+FEBAX
+…
+FAPID
+(7)
+81
+180°
+6000
+FAPID
+FEBAX
+NASTE
+VGSI and RNAV glidepath not coincident
+tr
+tr
+(VGSI Angle 3.50/TCH 49).
+A
+253°
+316
+HEDRI
+VICVU
+*LNAV only
+JUTGA
+4 NM to
+5800
+6000
+CUVED
+(CFFCG)
+2.6 NM to
+-165°
+(CFFCG)
+×
+5800
+O %1
+(CFFCG)
+-180°
+4620*
+4100*
+GP 3.50°
+TCH 60
+6498 X 150
+2.6 NM
+-1.4 NM-
+3.2 NM
+6.7 NM
+CATEGORY
+A
+B
+c
+D
+36
+DA
+3380-7/
+318 (400- 7/)
+∞
+2
+LPV
+0.4% UP-
+4100 X 60
+3600-1
+538 (600-1)
+3600-1½ 538 (600-1½)
+LNAV MDA
+4220-11½4
+4440-1½2
+4740-3 1678 (1700-3)
+MIRL Rwy 18-36
+CIRCLING
+1158 (1200-1/4)
+1378 (1400-1½2)
+APPLE VALLEY (APV)
+APPLE VALLEY, CALIFORNIA
+34°35'N-117°11'W
+RNAV (GPS) RWY 18
+Amdt 1 05DEC19

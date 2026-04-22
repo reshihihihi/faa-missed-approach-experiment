@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 1500+ft -> DF PIA 3000+ft -> HM PIA 3000+ft",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "PIA"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "PIA",
+  "initial_track": null,
+  "turn_trigger": "PIA",
+  "holding_details": null
+}

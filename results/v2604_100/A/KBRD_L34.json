@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "DME required. ADF required. MISSED APPROACH: Climb to 1700 then climbing right turn VDP NA when using AIT altimeter setting. When local altimeter setting not received, to 4000 direct LAREW LOM and hold, continue climb-in-hold to 4000.",
+  "climb_altitude": 4000,
+  "waypoints": [
+    "LAREW"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "LAREW",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

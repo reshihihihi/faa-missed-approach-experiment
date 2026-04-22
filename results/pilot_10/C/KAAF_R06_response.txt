@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "Climb to 3000 direct ONBOE and hold.",
+  "climb_altitude": 3000,
+  "waypoints": ["ONBOE"],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "ONBOE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Upper right corner of chart in MISSED APPROACH box",
+    "climb_altitude": "Climb to 3000 direct ONBOE and hold.",
+    "waypoints": "direct ONBOE and hold",
+    "turn_direction": "No turn direction stated in instruction",
+    "holding_required": "Text states 'and hold' at ONBOE; holding pattern depicted in plan view at ONBOE",
+    "holding_fix": "ONBOE named in missed approach instruction and depicted on chart"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb mile; increase Circling Cat C/D visibility 14 mile. For inop MALSR, increase to 800 then climbing right S-LOC 19 Cat C/D visibility to 1 mile. For inop MALSR when using Alma altimeter turn to 1700 direct setting, increase S-LOC 19 Cat C/D visibility to 1½ mile. Increase SHOGI Fix Minimums WIKET LOM and hold. S-LOC 19 Cat C/D visibility to 11/ mile. Night Landing Rwy 5, 31 NA.",
+  "climb_altitude": 1700,
+  "waypoints": [
+    "SHOGI",
+    "WIKET"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "SHOGI",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

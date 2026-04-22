@@ -1,0 +1,108 @@
+BLUEFIELD, WEST VIRGINIA
+AL-787 (FAA)
+25331
+APP CRS
+Rwy Ldg
+4743
+RNAV (GPS) RWY 5
+064°
+TDZE
+2850
+Apt Elev
+28577
+MERCER COUNTY (BLF)
+RNP APCH.
+Procedure NA at night.
+MISSED APPROACH: Climbing left turn to 6000 direct
+Rwy 5 helicopter visibility reduction below 1 SM NA.
+KENYA and hold.
+ASOS
+INDIANAPOLIS CENTER
+CTAF
+132.725
+126.575 257.85
+122.9 0
+25 NM
+6000
+Procedure NA for arrivals at
+KENYA on V1 40 westbound.
+(IAF)
+KENYA
+"101°
+281°
+(MAP)
+5 NM
+JOSOM
+4700
+3195±
+093° (3.5)
+064
+JUNAR
+Final approach course offset 15.00°
+5500
+2.7 NM to
+(IF)
+093
+JOSOM
+OTONE
+(3.5)
+(FAF)
+WABIS
+3819±
+VOCUG
+0009
+(A)
+TEOOG
+P so J Vr opo
+LL27 EC
+!
+TDZE 2850
+TELOC on V519 southwest bound.
+22
+OTONE
+VGSI and descent angles not coincident
+6000
+KENYA
+WABIS
+(VGSI Angle 3.00/TCH 40).
+VOCUG
+4743 x 100
+JUNAR
+6000
+093°
+2.7 NM to
+JOSOM
+5500
+3.10°
+TCH 45
+JOSOM
+¤
+4700
+064°
+5
+2913
+3940
+-3.5 NM
+-3.5 NM
+-2.3 NM-
+-2.7 NM
+0.5
+CATEGORY
+A
+B
+c
+D
+3560-2
+3560-21/4
+064°
+HIRL Rwy 5-23
+LNAV MDA
+3560-1 710 (800-1)
+710 (800-2)
+710 (800-21/4)
+REIL Rwys 5 and 23
+BLUEFIELD, WEST VIRGINIA
+MERCER COUNTY (BLF)
+Orig-B 10SEP20
+37°18'N - 81°12'W
+RNAV (GPS) RWY 5

@@ -1,0 +1,28 @@
+QUESTIONNAIRE_ANSWERS:
+Q1: yes
+Q2: yes
+Q3: yes
+Q4: yes
+Q5: yes
+Q6: yes
+
+JSON:
+{
+  "raw_instruction": "Climb to 2000 then climbing right turn to 4000 direct GVE VORTAC and hold.",
+  "climb_altitude": 4000,
+  "waypoints": ["GVE"],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "GVE",
+  "initial_track": null,
+  "turn_trigger": "2000",
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Text box upper right: 'MISSED APPROACH: Climb to 2000 then climbing right turn to 4000 direct GVE VORTAC and hold.'",
+    "climb_altitude": "4000 stated as climb target before hold",
+    "waypoints": "GVE VORTAC explicitly named",
+    "turn_direction": "'climbing right turn' explicitly stated",
+    "holding_required": "'and hold' explicitly stated",
+    "holding_fix": "GVE VORTAC explicitly named as holding fix"
+  }
+}

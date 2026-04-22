@@ -1,0 +1,14 @@
+{
+  "raw_instruction": "CA 6600+ft -> DF ZUXOS -> TF MGHEE 9100+ft -> HM MGHEE 9100+ft",
+  "climb_altitude": 9100,
+  "waypoints": [
+    "ZUXOS",
+    "MGHEE"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "MGHEE",
+  "initial_track": null,
+  "turn_trigger": "ZUXOS",
+  "holding_details": null
+}

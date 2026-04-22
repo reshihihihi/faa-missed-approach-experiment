@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "Climbing left turn to 3600 direct IPL VORTAC and hold.",
+  "climb_altitude": 3600,
+  "waypoints": ["IPL"],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "IPL",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Found in the missed approach box in the upper right of the chart header area",
+    "climb_altitude": "to 3600",
+    "waypoints": "direct IPL VORTAC and hold",
+    "turn_direction": "Climbing left turn",
+    "holding_required": "and hold stated in instruction; holding pattern depicted in profile view",
+    "holding_fix": "IPL VORTAC"
+  }
+}

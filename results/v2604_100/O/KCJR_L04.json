@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 900+ft -> VI -> CF NISAE 2600+ft -> HM NISAE 2600+ft",
+  "climb_altitude": 2600,
+  "waypoints": [
+    "NISAE"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "NISAE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

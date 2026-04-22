@@ -1,0 +1,23 @@
+{
+  "raw_instruction": "Climb to 7000 direct ZEXEL and hold, continue climb-in-hold to 7000.",
+  "climb_altitude": 7000,
+  "waypoints": ["ZEXEL"],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "ZEXEL",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": {
+    "track": "115/295",
+    "direction": "LEFT",
+    "leg_time": null
+  },
+  "evidence": {
+    "raw_instruction": "Upper right of chart in MISSED APPROACH note box",
+    "climb_altitude": "Climb to 7000",
+    "waypoints": "direct ZEXEL and hold",
+    "turn_direction": "No explicit turn direction stated in text; holding pattern depicted in plan view",
+    "holding_required": "Holding pattern depicted at MISSED APCH FIX box with ZEXEL label",
+    "holding_fix": "ZEXEL labeled in MISSED APCH FIX box upper left of plan view"
+  }
+}

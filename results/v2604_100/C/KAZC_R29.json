@@ -1,0 +1,14 @@
+{
+  "raw_instruction": "Climb to 6600 then climbing left turn to 9100 direct ZUXOS and track 086° to MGHEE and hold.",
+  "climb_altitude": 9100,
+  "waypoints": [
+    "ZUXOS",
+    "MGHEE"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "MGHEE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

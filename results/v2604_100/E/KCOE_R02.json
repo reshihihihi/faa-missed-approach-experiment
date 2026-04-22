@@ -1,0 +1,32 @@
+{
+  "raw_instruction": "Climb to 7000 direct ZEXEL and hold, continue climb-in-hold to 7000.",
+  "climb_altitude": 7000,
+  "waypoints": [
+    "ZEXEL"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "ZEXEL",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": {
+    "fix": "ZEXEL",
+    "altitude": 7000
+  },
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH section top of chart: 'Climb to 7000 direct ZEXEL and hold, continue climb-in-hold to 7000.'",
+    "climb_altitude": "7000 explicitly stated in missed approach instruction",
+    "waypoints": "ZEXEL labeled in missed approach instruction and on chart",
+    "turn_direction": "No turn direction stated",
+    "holding_required": "Word 'hold' explicitly in instruction; holding pattern depicted at ZEXEL",
+    "holding_fix": "ZEXEL labeled as MISSED APCH FIX with holding pattern depicted"
+  },
+  "_questionnaire": {
+    "Q1": "yes",
+    "Q2": "yes",
+    "Q3": "yes",
+    "Q4": "no",
+    "Q5": "yes",
+    "Q6": "yes"
+  }
+}

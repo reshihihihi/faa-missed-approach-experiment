@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 582+ft -> DF CUBUG 2000+ft -> HM CUBUG 2000+ft",
+  "climb_altitude": 2000,
+  "waypoints": [
+    "CUBUG"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "CUBUG",
+  "initial_track": null,
+  "turn_trigger": "CUBUG",
+  "holding_details": null
+}

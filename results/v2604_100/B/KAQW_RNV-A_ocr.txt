@@ -1,0 +1,113 @@
+NORTH ADAMS, MASSACHUSETTS
+AL-10089 (FAA)
+25275
+APP CRS
+Rwy Ldg
+N/A
+TDZE
+N/A
+RNAV (GPS)-A
+066°
+Apt Elev
+654
+HARRIMAN-AND-WEST (AQW)
+T
+When local altimeter setting not received, use Bennington altimeter
+Å
+setting and increase all MDA 60 feet. Circling NA south of Rwy 11-29.
+MISSED APPROACH: Climbing left
+turn to 5000 direct GRAVE and hold,
+DME/DME RNP-O.3 NA. Procedure NA at night.
+continue climb-in-hold to 5000.
+ASOS
+ALBANY APP CON
+UNICOM
+134.775
+132.825 307.2
+122.8 (CTAF)
+C
+25 NM
+CAMBRIDGE
+KNURS
+CAM
+MSA
+4800 to SWOBS
+5200
+201° (26.9)
+Procedure NA for arrivals
+5 NM
+on CAM VOR/DME
+airway radials 203 CW 286.
+GRAVE
+(MAP)
+WAINS
+KNURS
+6.5 NM to
+KNURS
+(FAF)
+(IF/IAF)
+3900
+JEKOP
+060
+SWOBS
+(6)
+(IAF)
+4800 NoPT
+088°
+CIRRU
+(12.4)
+ELEV
+654
+5 NM
+APON 008D
+00
+(6'92)
+Procedure NA for arrivals at
+BOWAN on V487 southbound
+and V292/T295 westbound.
+(IAF)
+BOWAN
+=
+¤
+5 NM
+5000
+GRAVE
+4300 X 100
+2
+Holding Pattern
+SWOBS
+JEKOP
+-246°
+WAINS
+4800
+-066°
+6.5 NM to
+990
+RNURS
+0990
+3060
+x
+RNURSS
+3280
+-6 NM-
+-1.5 NM
+-6.5 NM
+CATEGORY
+A
+B
+c
+D
+2740-11/
+2740-11½2
+2780-3
+CIRCLING
+NA
+MIRL Rwy 11-290
+2086 (2100-1/)
+2086 (2100-11/2)
+2126 (2200-3)
+NORTH ADAMS, MASSACHUSETTS
+HARRIMAN-AND-WEST (AQW
+T15
+42°42'N-73°10'W
+PALAVICDSL

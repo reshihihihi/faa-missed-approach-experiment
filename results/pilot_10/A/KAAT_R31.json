@@ -1,0 +1,17 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 5400, DME/DME RNP- O.3 NA. Procedure NA at night. then climbing left turn to 9000 direct BACHS and hold. ASOS",
+  "climb_altitude": 9000,
+  "waypoints": [
+    "RNP",
+    "NIGHT",
+    "BACHS",
+    "AND",
+    "ASOS"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": null,
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

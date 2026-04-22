@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 994+ft -> DF PIMKE 2700+ft -> HM PIMKE 2700+ft",
+  "climb_altitude": 2700,
+  "waypoints": [
+    "PIMKE"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "PIMKE",
+  "initial_track": null,
+  "turn_trigger": "PIMKE",
+  "holding_details": null
+}

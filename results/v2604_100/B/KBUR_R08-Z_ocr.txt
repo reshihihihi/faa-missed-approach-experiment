@@ -1,0 +1,161 @@
+CALIFORNIA
+AL-67 (FAA)
+WAAS
+25219
+APP CRS
+Rwy Ldg
+5801
+CH 53638
+TDZE
+727
+RNAV (GPS) Z RWY 8
+W08A
+079°
+Apt Elev
+778
+BOB HOPE (BUR)
+RNP APCH.
+Straight-in Rwy 8 at night, Circling to Rwy 33 at night, operational VGSI required, remain
+ or above VGSI glidepath until threshold.Cirling Rwy 26 NA at night and Circling
+MALSR
+MISSED APPROACH:
+Rwy 33 NA at night for Cat D. Circling NA for Cats A/B/C northeast of Rwy 15 and 26.
+Climbing right turn to
+Circling NA for Cat D east of Rwy 15-33. For inop ALS, increase LP Cat A/B visibility to
+4600 direct COTSI and
+1 SM and LP Cat C/D visibility to 21/ SM. For inop ALS, increase LNAV Cat A/B
+on track 263° to VTU
+VOR/DME and hold.
+visibility to 11 SM. Rwy 8 helicopter visibility reduction below RVR 5000 NA.
+D-ATIS
+SOCAL APP CON
+120.4 360.6 (NORTH)
+BURBANK TOWER
+GND CON
+CLNC DEL
+134.5
+118.7 254.3
+123.9 348.6
+118.0 348.6
+CPDLC
+134.2 338.2 (WEST)
+MISSED APCH FIX
+5 NM
+2000
+3000
+2000
+3000
+(IAF)
+MIKEI
+VENTURA
+7000
+VTU
+4100 NoPT
+(9.8)
+Van
+(IF/IAF)
+Nuys
+TOAKS 4100
+SILEX
+3000
+901±
+900
+079°
+079°
+079°
+(IAF)
+(8.3)
+(5.1)
+(MAP)
+1EE
+VENTURA
+4600 NoPT
+-259°
+(FAF)
+VTU
+HOLD
+8000
+BUBNE
+HIMEN
+(14.5)
+4100
+5 NM
+Procedure NA for arrival on VTU VOR/DME
+airway radials 015 CW 129.
+HIMEN
+(29.4)
+/
+MSA
+9500
+COTSI
+ELEV
+778
+D
+TDZE
+727
+4600
+COTSI
+VTU
+11
+tr
+5 NM
+SILEX
+263°
+Holding Pattern
+A
+BUBNE
+8000
+←259°
+6886 X 150
+4100
+079°→
+079°
+3.00°
+TCH 60
+HIMEN
+-1.2% UP
+x.
+079°
+TWR
+3000
+Θ
+5802 X 150
+-0.5% UP
+2
+-5.1 NM
+5.7 NM
+-1.3-
+G
+¤
+CATEGORY
+A
+B
+c
+D
+LP
+MDA
+1540/60
+813 (800-1/4)
+1540-17½
+813 (800-17%)
+LNAV
+MDA
+1660/60
+933 (900-114)
+1660-2
+933 (900-2)
+MIRL Rwy 15-33
+2240-3
+2320-3
+HIRL Rwy 8-26
+CIRCLING
+1660-1/2
+882 (900-1/2)
+1462 (1500-3)
+1542 (1600-3)
+REIL Rwys 15, 26, and 33
+BURBANK, CALIFORNIA
+BOB HOPE (BUR)
+Amdt 2B 11JUL24
+34°12'N-118°22'W
+RNAV (GPS) Z RWY 8

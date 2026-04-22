@@ -1,0 +1,28 @@
+QUESTIONNAIRE_ANSWERS:
+Q1: yes
+Q2: yes
+Q3: yes
+Q4: yes
+Q5: yes
+Q6: yes
+
+JSON:
+{
+  "raw_instruction": "Climb to 2000 then climbing left turn to 3000 direct DUTMY and hold.",
+  "climb_altitude": 3000,
+  "waypoints": ["DUTMY"],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "DUTMY",
+  "initial_track": null,
+  "turn_trigger": "2000",
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 2000 then climbing left turn to 3000 direct DUTMY and hold.",
+    "climb_altitude": "3000 shown in missed approach instructions and profile view",
+    "waypoints": "DUTMY labeled in planview and missed approach profile",
+    "turn_direction": "left turn explicitly stated in missed approach text",
+    "holding_required": "hold stated in missed approach instruction",
+    "holding_fix": "DUTMY labeled as holding fix"
+  }
+}

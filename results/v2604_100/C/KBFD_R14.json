@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climb to 4500 direct NIMEE and hold.",
+  "climb_altitude": 4500,
+  "waypoints": [
+    "NIMEE"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "NIMEE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

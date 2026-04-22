@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 4100+ft -> CF CAUDE 5000+ft -> HM CAUDE 5000+ft",
+  "climb_altitude": 5000,
+  "waypoints": [
+    "CAUDE"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "CAUDE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

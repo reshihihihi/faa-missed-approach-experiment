@@ -1,0 +1,26 @@
+{
+  "raw_instruction": "Climb to 5000 direct TOGJU and on track 042° to GANEC and hold, continue climb-in-hold to 5000.",
+  "climb_altitude": 5000,
+  "waypoints": [
+    "TOGJU",
+    "GANEC"
+  ],
+  "turn_direction": "unknown",
+  "holding_required": true,
+  "holding_fix": "GANEC",
+  "initial_track": "042°",
+  "turn_trigger": "TOGJU",
+  "holding_details": {
+    "track": "042°",
+    "direction": "unknown",
+    "leg_time": null
+  },
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 5000 direct TOGJU and on track 042° to GANEC and hold, continue climb-in-hold to 5000.",
+    "climb_altitude": "Climb to 5000",
+    "waypoints": "direct TOGJU and on track 042° to GANEC",
+    "turn_direction": "not explicitly stated",
+    "holding_required": "to GANEC and hold",
+    "holding_fix": "to GANEC and hold"
+  }
+}

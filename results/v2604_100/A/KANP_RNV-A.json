@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climbing left turn to below 1 SM NA. Use BWI altimeter setting. 2000 direct AMRTN and hold.",
+  "climb_altitude": 2000,
+  "waypoints": [
+    "AMRTN"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "AMRTN",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

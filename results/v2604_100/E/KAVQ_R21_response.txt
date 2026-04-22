@@ -1,0 +1,32 @@
+QUESTIONNAIRE_ANSWERS:
+Q1: yes
+Q2: yes
+Q3: yes
+Q4: no
+Q5: yes
+Q6: yes
+
+JSON:
+{
+  "raw_instruction": "Climb to 6700 direct TUPBO and on track 284° to ALMON and hold, continue climb-in-hold 6700.",
+  "climb_altitude": 6700,
+  "waypoints": ["TUPBO", "ALMON"],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "ALMON",
+  "initial_track": "284",
+  "turn_trigger": null,
+  "holding_details": {
+    "fix": "ALMON",
+    "altitude": 6700,
+    "climb_in_hold": true
+  },
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH section upper right of chart",
+    "climb_altitude": "6700 explicitly stated",
+    "waypoints": "TUPBO and ALMON explicitly named",
+    "turn_direction": "No turn direction stated",
+    "holding_required": "hold depicted and stated",
+    "holding_fix": "ALMON labeled as holding fix"
+  }
+}

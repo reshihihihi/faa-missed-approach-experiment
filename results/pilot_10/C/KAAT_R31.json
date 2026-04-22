@@ -1,0 +1,25 @@
+{
+  "raw_instruction": "Climb to 5400, then climbing left turn to 9000 direct BACHS and hold.",
+  "climb_altitude": 9000,
+  "waypoints": [
+    "BACHS"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "BACHS",
+  "initial_track": null,
+  "turn_trigger": "5400",
+  "holding_details": {
+    "track": "075°",
+    "direction": "LEFT",
+    "leg_time": null
+  },
+  "evidence": {
+    "raw_instruction": "Missed approach box in upper right of chart header area",
+    "climb_altitude": "climbing left turn to 9000",
+    "waypoints": "direct BACHS and hold",
+    "turn_direction": "climbing left turn",
+    "holding_required": "hold depicted at BACHS in plan view and profile view",
+    "holding_fix": "direct BACHS and hold"
+  }
+}

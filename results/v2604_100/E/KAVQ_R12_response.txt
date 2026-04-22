@@ -1,0 +1,31 @@
+QUESTIONNAIRE_ANSWERS:
+Q1: yes
+Q2: yes
+Q3: yes
+Q4: yes
+Q5: yes
+Q6: yes
+
+JSON:
+{
+  "raw_instruction": "Climb to 2600 then climbing left turn to 6500 direct PICLI and hold, continue climb-in-hold to 6500.",
+  "climb_altitude": 6500,
+  "waypoints": ["PICLI"],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "PICLI",
+  "initial_track": null,
+  "turn_trigger": "2600",
+  "holding_details": {
+    "fix": "PICLI",
+    "climb_in_hold_to": 6500
+  },
+  "evidence": {
+    "raw_instruction": "Text in header: 'MISSED APPROACH: Climb to 2600 then climbing left turn to 6500 direct PICLI and hold, continue climb-in-hold to 6500.'",
+    "climb_altitude": "6500 stated as target altitude",
+    "waypoints": "PICLI labeled in missed approach text and depicted with triangle symbol",
+    "turn_direction": "LEFT explicitly stated",
+    "holding_required": "hold stated in instruction",
+    "holding_fix": "PICLI explicitly named"
+  }
+}

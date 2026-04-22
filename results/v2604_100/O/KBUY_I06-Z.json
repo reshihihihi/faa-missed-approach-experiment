@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 1600+ft -> DF LIB 3000+ft -> HM LIB 3000+ft",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "LIB"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "LIB",
+  "initial_track": null,
+  "turn_trigger": "LIB",
+  "holding_details": null
+}

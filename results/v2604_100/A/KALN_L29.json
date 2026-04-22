@@ -1,0 +1,14 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 1000 For inop ALS, increase WULIB fix minimums S-LOC 29 Cats MALSR then climbing right turn to 22o0 on heading 31O and on TOY VORTAC R-322 to TOPAZ INT/TOY 16 DME and hold.",
+  "climb_altitude": 1000,
+  "waypoints": [
+    "TOPAZ",
+    "WULIB"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "TOPAZ",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

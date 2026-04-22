@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climb to 3400 direct QOSNU and hold.",
+  "climb_altitude": 3400,
+  "waypoints": [
+    "QOSNU"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "QOSNU",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

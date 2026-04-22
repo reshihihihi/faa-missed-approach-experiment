@@ -1,0 +1,25 @@
+{
+  "raw_instruction": "Climbing left turn to 2700 direct PIMKE and hold.",
+  "climb_altitude": 2700,
+  "waypoints": [
+    "PIMKE"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "PIMKE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": {
+    "track": "035",
+    "direction": "LEFT",
+    "leg_time": null
+  },
+  "evidence": {
+    "raw_instruction": "Upper right notes box labeled MISSED APPROACH",
+    "climb_altitude": "to 2700 direct PIMKE and hold",
+    "waypoints": "direct PIMKE and hold",
+    "turn_direction": "Climbing left turn",
+    "holding_required": "4 NM Holding Pattern depicted at PIMKE in profile view",
+    "holding_fix": "direct PIMKE and hold"
+  }
+}

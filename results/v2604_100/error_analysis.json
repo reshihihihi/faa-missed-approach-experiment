@@ -1,0 +1,1836 @@
+{
+  "A": {
+    "counts": {
+      "holding_required:false_hold": 30,
+      "climb_altitude:spurious_prediction": 29,
+      "waypoints:spurious_only": 29,
+      "holding_fix:spurious_prediction": 26,
+      "turn_direction:hallucinated_turn": 24,
+      "holding_fix:missing_prediction": 17,
+      "waypoints:missed_all": 15,
+      "holding_required:missed_hold": 14,
+      "waypoints:noisy_mismatch": 13,
+      "holding_fix:wrong_fix": 8,
+      "climb_altitude:wrong_value": 7,
+      "waypoints:extra_points": 7,
+      "turn_direction:missed_turn": 6,
+      "climb_altitude:missing_prediction": 5,
+      "waypoints:missing_points": 1
+    },
+    "examples": {
+      "waypoints:spurious_only": [
+        "KABE_I06",
+        "KATL_I09R",
+        "KBDR_L06",
+        "KBOS_L15R",
+        "KCEC_L12",
+        "KCFO_L17",
+        "KBWI_L15L",
+        "KAFN_RNV-B",
+        "KAFN_RNV-C",
+        "KAIB_RNV-A"
+      ],
+      "waypoints:missed_all": [
+        "KALS_I02",
+        "KAMA_I04",
+        "KAPC_I01L",
+        "KBMI_I29",
+        "KBUY_I06-Z",
+        "KBPT_L12",
+        "KCAK_L01",
+        "KCHA_L20",
+        "KAXV_R26",
+        "KAZC_R29"
+      ],
+      "climb_altitude:wrong_value": [
+        "KAMA_I04",
+        "KBWG_I03-Y",
+        "KCMH_I10R",
+        "KALN_L29",
+        "KBWI_L15L",
+        "KAZC_R29",
+        "KCRS_R32"
+      ],
+      "turn_direction:hallucinated_turn": [
+        "KAMA_I04",
+        "KAUS_I18L",
+        "KBMI_I29",
+        "KCFO_I26",
+        "KAVP_L04",
+        "KBDL_L33",
+        "KBDR_L06",
+        "KBFF_L12",
+        "KCOE_L06",
+        "KALN_L29"
+      ],
+      "holding_required:missed_hold": [
+        "KAMA_I04",
+        "KBWG_I03-Y",
+        "KCMH_I10R",
+        "KBPT_L12",
+        "KCHA_L20",
+        "KAXV_R26",
+        "KAZC_R29",
+        "KBJI_R31",
+        "KBLV_R32RY",
+        "KCDI_R04"
+      ],
+      "holding_fix:missing_prediction": [
+        "KAMA_I04",
+        "KAPC_I01L",
+        "KAVL_I17",
+        "KBWG_I03-Y",
+        "KCMH_I10R",
+        "KBPT_L12",
+        "KCHA_L20",
+        "KAXV_R26",
+        "KAZC_R29",
+        "KBJI_R31"
+      ],
+      "turn_direction:missed_turn": [
+        "KAPC_I01L",
+        "KAYS_I19-Z",
+        "KBWG_I03-Y",
+        "KBPT_L12",
+        "KAZC_R29",
+        "KCRS_R32"
+      ],
+      "holding_fix:wrong_fix": [
+        "KAUS_I18L",
+        "KAYS_I19-Z",
+        "KAWM_L17",
+        "KBRD_L34",
+        "KBTL_L23R",
+        "KCBF_L36",
+        "KCIC_R13L",
+        "KCOI_R11"
+      ],
+      "waypoints:noisy_mismatch": [
+        "KAUS_I18L",
+        "KAYS_I19-Z",
+        "KBWG_I03-Y",
+        "KCMH_I10R",
+        "KAWM_L17",
+        "KBRD_L34",
+        "KBTL_L23R",
+        "KBTP_L08",
+        "KCBF_L36",
+        "KBLV_R32RY"
+      ],
+      "climb_altitude:spurious_prediction": [
+        "KAVP_L04",
+        "KBDR_L06",
+        "KBFF_L12",
+        "KBOS_L15R",
+        "KCFO_L17",
+        "KCOE_L06",
+        "KCRP_L36",
+        "KCRW_L05",
+        "KAFN_RNV-B",
+        "KAFN_RNV-C"
+      ],
+      "holding_required:false_hold": [
+        "KAVP_L04",
+        "KBDL_L33",
+        "KBDR_L06",
+        "KBOS_L15R",
+        "KBUR_L08-Z",
+        "KBYL_L20",
+        "KCFO_L17",
+        "KCOE_L06",
+        "KCRW_L05",
+        "KAFN_RNV-B"
+      ],
+      "holding_fix:spurious_prediction": [
+        "KAVP_L04",
+        "KBDL_L33",
+        "KBDR_L06",
+        "KBOS_L15R",
+        "KCFO_L17",
+        "KCRW_L05",
+        "KAFN_RNV-B",
+        "KAFN_RNV-C",
+        "KAIB_RNV-A",
+        "KANP_RNV-A"
+      ],
+      "waypoints:extra_points": [
+        "KALN_L29",
+        "KAXH_R27",
+        "KAKH_R03",
+        "KARG_R04",
+        "KBFD_R14",
+        "KBYI_R20",
+        "KCDS_R36"
+      ],
+      "climb_altitude:missing_prediction": [
+        "KBPT_L12",
+        "KBLV_R32RY",
+        "KBUM_R18",
+        "KCDR_R03",
+        "KCHQ_R36"
+      ],
+      "waypoints:missing_points": [
+        "KCOI_R11"
+      ]
+    },
+    "field_counts": {
+      "climb_altitude": {
+        "climb_altitude:spurious_prediction": 29,
+        "climb_altitude:wrong_value": 7,
+        "climb_altitude:missing_prediction": 5
+      },
+      "turn_direction": {
+        "turn_direction:hallucinated_turn": 24,
+        "turn_direction:missed_turn": 6
+      },
+      "holding_required": {
+        "holding_required:false_hold": 30,
+        "holding_required:missed_hold": 14
+      },
+      "holding_fix": {
+        "holding_fix:spurious_prediction": 26,
+        "holding_fix:missing_prediction": 17,
+        "holding_fix:wrong_fix": 8
+      },
+      "waypoints": {
+        "waypoints:spurious_only": 29,
+        "waypoints:missed_all": 15,
+        "waypoints:noisy_mismatch": 13,
+        "waypoints:extra_points": 7,
+        "waypoints:missing_points": 1
+      }
+    },
+    "field_examples": {
+      "climb_altitude": {
+        "climb_altitude:wrong_value": [
+          "KAMA_I04",
+          "KBWG_I03-Y",
+          "KCMH_I10R",
+          "KALN_L29",
+          "KBWI_L15L",
+          "KAZC_R29",
+          "KCRS_R32"
+        ],
+        "climb_altitude:spurious_prediction": [
+          "KAVP_L04",
+          "KBDR_L06",
+          "KBFF_L12",
+          "KBOS_L15R",
+          "KCFO_L17",
+          "KCOE_L06",
+          "KCRP_L36",
+          "KCRW_L05",
+          "KAFN_RNV-B",
+          "KAFN_RNV-C"
+        ],
+        "climb_altitude:missing_prediction": [
+          "KBPT_L12",
+          "KBLV_R32RY",
+          "KBUM_R18",
+          "KCDR_R03",
+          "KCHQ_R36"
+        ]
+      },
+      "turn_direction": {
+        "turn_direction:hallucinated_turn": [
+          "KAMA_I04",
+          "KAUS_I18L",
+          "KBMI_I29",
+          "KCFO_I26",
+          "KAVP_L04",
+          "KBDL_L33",
+          "KBDR_L06",
+          "KBFF_L12",
+          "KCOE_L06",
+          "KALN_L29"
+        ],
+        "turn_direction:missed_turn": [
+          "KAPC_I01L",
+          "KAYS_I19-Z",
+          "KBWG_I03-Y",
+          "KBPT_L12",
+          "KAZC_R29",
+          "KCRS_R32"
+        ]
+      },
+      "holding_required": {
+        "holding_required:missed_hold": [
+          "KAMA_I04",
+          "KBWG_I03-Y",
+          "KCMH_I10R",
+          "KBPT_L12",
+          "KCHA_L20",
+          "KAXV_R26",
+          "KAZC_R29",
+          "KBJI_R31",
+          "KBLV_R32RY",
+          "KCDI_R04"
+        ],
+        "holding_required:false_hold": [
+          "KAVP_L04",
+          "KBDL_L33",
+          "KBDR_L06",
+          "KBOS_L15R",
+          "KBUR_L08-Z",
+          "KBYL_L20",
+          "KCFO_L17",
+          "KCOE_L06",
+          "KCRW_L05",
+          "KAFN_RNV-B"
+        ]
+      },
+      "holding_fix": {
+        "holding_fix:missing_prediction": [
+          "KAMA_I04",
+          "KAPC_I01L",
+          "KAVL_I17",
+          "KBWG_I03-Y",
+          "KCMH_I10R",
+          "KBPT_L12",
+          "KCHA_L20",
+          "KAXV_R26",
+          "KAZC_R29",
+          "KBJI_R31"
+        ],
+        "holding_fix:wrong_fix": [
+          "KAUS_I18L",
+          "KAYS_I19-Z",
+          "KAWM_L17",
+          "KBRD_L34",
+          "KBTL_L23R",
+          "KCBF_L36",
+          "KCIC_R13L",
+          "KCOI_R11"
+        ],
+        "holding_fix:spurious_prediction": [
+          "KAVP_L04",
+          "KBDL_L33",
+          "KBDR_L06",
+          "KBOS_L15R",
+          "KCFO_L17",
+          "KCRW_L05",
+          "KAFN_RNV-B",
+          "KAFN_RNV-C",
+          "KAIB_RNV-A",
+          "KANP_RNV-A"
+        ]
+      },
+      "waypoints": {
+        "waypoints:spurious_only": [
+          "KABE_I06",
+          "KATL_I09R",
+          "KBDR_L06",
+          "KBOS_L15R",
+          "KCEC_L12",
+          "KCFO_L17",
+          "KBWI_L15L",
+          "KAFN_RNV-B",
+          "KAFN_RNV-C",
+          "KAIB_RNV-A"
+        ],
+        "waypoints:missed_all": [
+          "KALS_I02",
+          "KAMA_I04",
+          "KAPC_I01L",
+          "KBMI_I29",
+          "KBUY_I06-Z",
+          "KBPT_L12",
+          "KCAK_L01",
+          "KCHA_L20",
+          "KAXV_R26",
+          "KAZC_R29"
+        ],
+        "waypoints:noisy_mismatch": [
+          "KAUS_I18L",
+          "KAYS_I19-Z",
+          "KBWG_I03-Y",
+          "KCMH_I10R",
+          "KAWM_L17",
+          "KBRD_L34",
+          "KBTL_L23R",
+          "KBTP_L08",
+          "KCBF_L36",
+          "KBLV_R32RY"
+        ],
+        "waypoints:extra_points": [
+          "KALN_L29",
+          "KAXH_R27",
+          "KAKH_R03",
+          "KARG_R04",
+          "KBFD_R14",
+          "KBYI_R20",
+          "KCDS_R36"
+        ],
+        "waypoints:missing_points": [
+          "KCOI_R11"
+        ]
+      }
+    },
+    "sample_signatures": {
+      "climb_altitude:spurious_prediction | holding_fix:spurious_prediction | holding_required:false_hold | waypoints:spurious_only": 13,
+      "climb_altitude:spurious_prediction | holding_fix:spurious_prediction | holding_required:false_hold | turn_direction:hallucinated_turn | waypoints:spurious_only": 9,
+      "waypoints:extra_points": 6,
+      "waypoints:spurious_only": 5,
+      "holding_fix:missing_prediction | holding_required:missed_hold | waypoints:missed_all": 4,
+      "holding_fix:wrong_fix | waypoints:noisy_mismatch": 4,
+      "turn_direction:hallucinated_turn": 4,
+      "climb_altitude:missing_prediction | holding_fix:missing_prediction | holding_required:missed_hold | waypoints:noisy_mismatch": 2,
+      "climb_altitude:spurious_prediction | turn_direction:hallucinated_turn": 2,
+      "climb_altitude:wrong_value | holding_fix:missing_prediction | holding_required:missed_hold | turn_direction:missed_turn | waypoints:missed_all": 2,
+      "holding_fix:wrong_fix | turn_direction:hallucinated_turn | waypoints:noisy_mismatch": 2,
+      "holding_required:false_hold": 2,
+      "turn_direction:hallucinated_turn | waypoints:missed_all": 2,
+      "waypoints:missed_all": 2,
+      "climb_altitude:missing_prediction": 1,
+      "climb_altitude:missing_prediction | holding_fix:missing_prediction | holding_required:missed_hold | turn_direction:missed_turn | waypoints:missed_all": 1,
+      "climb_altitude:missing_prediction | holding_fix:missing_prediction | holding_required:missed_hold | waypoints:missed_all": 1,
+      "climb_altitude:spurious_prediction": 1,
+      "climb_altitude:spurious_prediction | holding_fix:spurious_prediction | holding_required:false_hold": 1,
+      "climb_altitude:spurious_prediction | holding_fix:spurious_prediction | holding_required:false_hold | turn_direction:hallucinated_turn": 1,
+      "climb_altitude:spurious_prediction | holding_required:false_hold": 1,
+      "climb_altitude:spurious_prediction | holding_required:false_hold | turn_direction:hallucinated_turn": 1,
+      "climb_altitude:wrong_value | holding_fix:missing_prediction | holding_required:missed_hold | turn_direction:hallucinated_turn | waypoints:missed_all": 1,
+      "climb_altitude:wrong_value | holding_fix:missing_prediction | holding_required:missed_hold | turn_direction:missed_turn | waypoints:noisy_mismatch": 1,
+      "climb_altitude:wrong_value | holding_fix:missing_prediction | holding_required:missed_hold | waypoints:noisy_mismatch": 1,
+      "climb_altitude:wrong_value | turn_direction:hallucinated_turn | waypoints:extra_points": 1,
+      "climb_altitude:wrong_value | waypoints:spurious_only": 1,
+      "holding_fix:missing_prediction": 1,
+      "holding_fix:missing_prediction | holding_required:missed_hold | waypoints:noisy_mismatch": 1,
+      "holding_fix:missing_prediction | turn_direction:missed_turn | waypoints:missed_all": 1,
+      "holding_fix:missing_prediction | waypoints:missed_all": 1,
+      "holding_fix:spurious_prediction | holding_required:false_hold | turn_direction:hallucinated_turn": 1,
+      "holding_fix:spurious_prediction | holding_required:false_hold | waypoints:spurious_only": 1,
+      "holding_fix:wrong_fix | turn_direction:missed_turn | waypoints:noisy_mismatch": 1,
+      "holding_fix:wrong_fix | waypoints:missing_points": 1,
+      "waypoints:noisy_mismatch": 1
+    },
+    "sample_signature_examples": {
+      "waypoints:spurious_only": [
+        "KABE_I06",
+        "KATL_I09R",
+        "KCEC_L12",
+        "KAQW_RNV-B",
+        "KCBE_R05"
+      ],
+      "waypoints:missed_all": [
+        "KALS_I02",
+        "KBUY_I06-Z"
+      ],
+      "climb_altitude:wrong_value | holding_fix:missing_prediction | holding_required:missed_hold | turn_direction:hallucinated_turn | waypoints:missed_all": [
+        "KAMA_I04"
+      ],
+      "holding_fix:missing_prediction | turn_direction:missed_turn | waypoints:missed_all": [
+        "KAPC_I01L"
+      ],
+      "holding_fix:wrong_fix | turn_direction:hallucinated_turn | waypoints:noisy_mismatch": [
+        "KAUS_I18L",
+        "KAWM_L17"
+      ],
+      "holding_fix:missing_prediction": [
+        "KAVL_I17"
+      ],
+      "holding_fix:wrong_fix | turn_direction:missed_turn | waypoints:noisy_mismatch": [
+        "KAYS_I19-Z"
+      ],
+      "turn_direction:hallucinated_turn | waypoints:missed_all": [
+        "KBMI_I29",
+        "KCAK_L01"
+      ],
+      "climb_altitude:wrong_value | holding_fix:missing_prediction | holding_required:missed_hold | turn_direction:missed_turn | waypoints:noisy_mismatch": [
+        "KBWG_I03-Y"
+      ],
+      "turn_direction:hallucinated_turn": [
+        "KCFO_I26",
+        "KALO_L12",
+        "KCJR_L04",
+        "KAXN_R22"
+      ],
+      "climb_altitude:wrong_value | holding_fix:missing_prediction | holding_required:missed_hold | waypoints:noisy_mismatch": [
+        "KCMH_I10R"
+      ],
+      "climb_altitude:spurious_prediction | holding_fix:spurious_prediction | holding_required:false_hold | turn_direction:hallucinated_turn": [
+        "KAVP_L04"
+      ],
+      "holding_fix:spurious_prediction | holding_required:false_hold | turn_direction:hallucinated_turn": [
+        "KBDL_L33"
+      ],
+      "climb_altitude:spurious_prediction | holding_fix:spurious_prediction | holding_required:false_hold | turn_direction:hallucinated_turn | waypoints:spurious_only": [
+        "KBDR_L06",
+        "KAIB_RNV-A",
+        "KANP_RNV-A",
+        "KAQW_RNV-A",
+        "KAVQ_R12",
+        "KBJC_R12L",
+        "KBLF_R05",
+        "KBUR_R08-Z",
+        "KCEA_RNV-D"
+      ],
+      "climb_altitude:spurious_prediction | turn_direction:hallucinated_turn": [
+        "KBFF_L12",
+        "KBWC_R26"
+      ],
+      "climb_altitude:spurious_prediction | holding_fix:spurious_prediction | holding_required:false_hold | waypoints:spurious_only": [
+        "KBOS_L15R",
+        "KCFO_L17",
+        "KAFN_RNV-B",
+        "KAFN_RNV-C",
+        "KAPT_R04",
+        "KAPV_R18",
+        "KAVQ_R21",
+        "KBDN_R34",
+        "KBMQ_R01",
+        "KBOS_R32"
+      ],
+      "holding_required:false_hold": [
+        "KBUR_L08-Z",
+        "KBYL_L20"
+      ],
+      "climb_altitude:spurious_prediction | holding_required:false_hold | turn_direction:hallucinated_turn": [
+        "KCOE_L06"
+      ],
+      "climb_altitude:spurious_prediction": [
+        "KCRP_L36"
+      ],
+      "climb_altitude:spurious_prediction | holding_fix:spurious_prediction | holding_required:false_hold": [
+        "KCRW_L05"
+      ],
+      "climb_altitude:wrong_value | turn_direction:hallucinated_turn | waypoints:extra_points": [
+        "KALN_L29"
+      ],
+      "climb_altitude:missing_prediction | holding_fix:missing_prediction | holding_required:missed_hold | turn_direction:missed_turn | waypoints:missed_all": [
+        "KBPT_L12"
+      ],
+      "holding_fix:wrong_fix | waypoints:noisy_mismatch": [
+        "KBRD_L34",
+        "KBTL_L23R",
+        "KCBF_L36",
+        "KCIC_R13L"
+      ],
+      "waypoints:noisy_mismatch": [
+        "KBTP_L08"
+      ],
+      "climb_altitude:wrong_value | waypoints:spurious_only": [
+        "KBWI_L15L"
+      ],
+      "holding_fix:missing_prediction | holding_required:missed_hold | waypoints:missed_all": [
+        "KCHA_L20",
+        "KAXV_R26",
+        "KBJI_R31",
+        "KCDI_R04"
+      ],
+      "waypoints:extra_points": [
+        "KAXH_R27",
+        "KAKH_R03",
+        "KARG_R04",
+        "KBFD_R14",
+        "KBYI_R20",
+        "KCDS_R36"
+      ],
+      "holding_fix:spurious_prediction | holding_required:false_hold | waypoints:spurious_only": [
+        "KBDH_R31"
+      ],
+      "climb_altitude:spurious_prediction | holding_required:false_hold": [
+        "KCAG_R07"
+      ],
+      "climb_altitude:wrong_value | holding_fix:missing_prediction | holding_required:missed_hold | turn_direction:missed_turn | waypoints:missed_all": [
+        "KAZC_R29",
+        "KCRS_R32"
+      ],
+      "climb_altitude:missing_prediction | holding_fix:missing_prediction | holding_required:missed_hold | waypoints:noisy_mismatch": [
+        "KBLV_R32RY",
+        "KCDR_R03"
+      ],
+      "climb_altitude:missing_prediction": [
+        "KBUM_R18"
+      ],
+      "holding_fix:missing_prediction | holding_required:missed_hold | waypoints:noisy_mismatch": [
+        "KCGI_R10"
+      ],
+      "holding_fix:missing_prediction | waypoints:missed_all": [
+        "KCHO_R03"
+      ],
+      "climb_altitude:missing_prediction | holding_fix:missing_prediction | holding_required:missed_hold | waypoints:missed_all": [
+        "KCHQ_R36"
+      ],
+      "holding_fix:wrong_fix | waypoints:missing_points": [
+        "KCOI_R11"
+      ]
+    }
+  },
+  "B": {
+    "counts": {
+      "waypoints:spurious_only": 40,
+      "turn_direction:wrong_direction": 38,
+      "holding_fix:spurious_prediction": 36,
+      "holding_required:false_hold": 36,
+      "climb_altitude:spurious_prediction": 34,
+      "turn_direction:hallucinated_turn": 31,
+      "waypoints:extra_points": 7,
+      "holding_fix:wrong_fix": 5,
+      "waypoints:noisy_mismatch": 5,
+      "climb_altitude:wrong_value": 4
+    },
+    "examples": {
+      "waypoints:spurious_only": [
+        "KABE_I06",
+        "KATL_I09R",
+        "KAVL_I17",
+        "KAVP_L04",
+        "KBDL_L33",
+        "KBDR_L06",
+        "KBFF_L12",
+        "KBOS_L15R",
+        "KBUR_L08-Z",
+        "KBYL_L20"
+      ],
+      "turn_direction:hallucinated_turn": [
+        "KAMA_I04",
+        "KAUS_I18L",
+        "KBMI_I29",
+        "KCFO_I26",
+        "KAVP_L04",
+        "KBDL_L33",
+        "KBDR_L06",
+        "KBFF_L12",
+        "KBUR_L08-Z",
+        "KBYL_L20"
+      ],
+      "waypoints:extra_points": [
+        "KAMA_I04",
+        "KAUS_I18L",
+        "KCFO_I26",
+        "KALN_L29",
+        "KALO_L12",
+        "KCBF_L36",
+        "KCJR_L04"
+      ],
+      "turn_direction:wrong_direction": [
+        "KAPC_I01L",
+        "KATL_I09R",
+        "KAVL_I17",
+        "KBOS_L15R",
+        "KAFN_RNV-B",
+        "KAPT_R04",
+        "KAPV_R18",
+        "KAQW_RNV-B",
+        "KAVQ_R21",
+        "KAXH_R27"
+      ],
+      "climb_altitude:wrong_value": [
+        "KAYS_I19-Z",
+        "KALN_L29",
+        "KCHA_L20",
+        "KAZC_R29"
+      ],
+      "holding_fix:wrong_fix": [
+        "KAYS_I19-Z",
+        "KBRD_L34",
+        "KBTL_L23R",
+        "KBLV_R32RY",
+        "KCIC_R13L"
+      ],
+      "waypoints:noisy_mismatch": [
+        "KAYS_I19-Z",
+        "KBRD_L34",
+        "KBTL_L23R",
+        "KBLV_R32RY",
+        "KCIC_R13L"
+      ],
+      "climb_altitude:spurious_prediction": [
+        "KAVP_L04",
+        "KBDR_L06",
+        "KBFF_L12",
+        "KBOS_L15R",
+        "KBUR_L08-Z",
+        "KBYL_L20",
+        "KCEC_L12",
+        "KCFO_L17",
+        "KCOE_L06",
+        "KCRP_L36"
+      ],
+      "holding_required:false_hold": [
+        "KAVP_L04",
+        "KBDL_L33",
+        "KBDR_L06",
+        "KBFF_L12",
+        "KBOS_L15R",
+        "KBUR_L08-Z",
+        "KBYL_L20",
+        "KCEC_L12",
+        "KCFO_L17",
+        "KCOE_L06"
+      ],
+      "holding_fix:spurious_prediction": [
+        "KAVP_L04",
+        "KBDL_L33",
+        "KBDR_L06",
+        "KBFF_L12",
+        "KBOS_L15R",
+        "KBUR_L08-Z",
+        "KBYL_L20",
+        "KCEC_L12",
+        "KCFO_L17",
+        "KCOE_L06"
+      ]
+    },
+    "field_counts": {
+      "climb_altitude": {
+        "climb_altitude:spurious_prediction": 34,
+        "climb_altitude:wrong_value": 4
+      },
+      "turn_direction": {
+        "turn_direction:wrong_direction": 38,
+        "turn_direction:hallucinated_turn": 31
+      },
+      "holding_required": {
+        "holding_required:false_hold": 36
+      },
+      "holding_fix": {
+        "holding_fix:spurious_prediction": 36,
+        "holding_fix:wrong_fix": 5
+      },
+      "waypoints": {
+        "waypoints:spurious_only": 40,
+        "waypoints:extra_points": 7,
+        "waypoints:noisy_mismatch": 5
+      }
+    },
+    "field_examples": {
+      "climb_altitude": {
+        "climb_altitude:wrong_value": [
+          "KAYS_I19-Z",
+          "KALN_L29",
+          "KCHA_L20",
+          "KAZC_R29"
+        ],
+        "climb_altitude:spurious_prediction": [
+          "KAVP_L04",
+          "KBDR_L06",
+          "KBFF_L12",
+          "KBOS_L15R",
+          "KBUR_L08-Z",
+          "KBYL_L20",
+          "KCEC_L12",
+          "KCFO_L17",
+          "KCOE_L06",
+          "KCRP_L36"
+        ]
+      },
+      "turn_direction": {
+        "turn_direction:hallucinated_turn": [
+          "KAMA_I04",
+          "KAUS_I18L",
+          "KBMI_I29",
+          "KCFO_I26",
+          "KAVP_L04",
+          "KBDL_L33",
+          "KBDR_L06",
+          "KBFF_L12",
+          "KBUR_L08-Z",
+          "KBYL_L20"
+        ],
+        "turn_direction:wrong_direction": [
+          "KAPC_I01L",
+          "KATL_I09R",
+          "KAVL_I17",
+          "KBOS_L15R",
+          "KAFN_RNV-B",
+          "KAPT_R04",
+          "KAPV_R18",
+          "KAQW_RNV-B",
+          "KAVQ_R21",
+          "KAXH_R27"
+        ]
+      },
+      "holding_required": {
+        "holding_required:false_hold": [
+          "KAVP_L04",
+          "KBDL_L33",
+          "KBDR_L06",
+          "KBFF_L12",
+          "KBOS_L15R",
+          "KBUR_L08-Z",
+          "KBYL_L20",
+          "KCEC_L12",
+          "KCFO_L17",
+          "KCOE_L06"
+        ]
+      },
+      "holding_fix": {
+        "holding_fix:wrong_fix": [
+          "KAYS_I19-Z",
+          "KBRD_L34",
+          "KBTL_L23R",
+          "KBLV_R32RY",
+          "KCIC_R13L"
+        ],
+        "holding_fix:spurious_prediction": [
+          "KAVP_L04",
+          "KBDL_L33",
+          "KBDR_L06",
+          "KBFF_L12",
+          "KBOS_L15R",
+          "KBUR_L08-Z",
+          "KBYL_L20",
+          "KCEC_L12",
+          "KCFO_L17",
+          "KCOE_L06"
+        ]
+      },
+      "waypoints": {
+        "waypoints:spurious_only": [
+          "KABE_I06",
+          "KATL_I09R",
+          "KAVL_I17",
+          "KAVP_L04",
+          "KBDL_L33",
+          "KBDR_L06",
+          "KBFF_L12",
+          "KBOS_L15R",
+          "KBUR_L08-Z",
+          "KBYL_L20"
+        ],
+        "waypoints:extra_points": [
+          "KAMA_I04",
+          "KAUS_I18L",
+          "KCFO_I26",
+          "KALN_L29",
+          "KALO_L12",
+          "KCBF_L36",
+          "KCJR_L04"
+        ],
+        "waypoints:noisy_mismatch": [
+          "KAYS_I19-Z",
+          "KBRD_L34",
+          "KBTL_L23R",
+          "KBLV_R32RY",
+          "KCIC_R13L"
+        ]
+      }
+    },
+    "sample_signatures": {
+      "turn_direction:wrong_direction": 23,
+      "climb_altitude:spurious_prediction | holding_fix:spurious_prediction | holding_required:false_hold | turn_direction:hallucinated_turn | waypoints:spurious_only": 19,
+      "climb_altitude:spurious_prediction | holding_fix:spurious_prediction | holding_required:false_hold | turn_direction:wrong_direction | waypoints:spurious_only": 11,
+      "turn_direction:hallucinated_turn | waypoints:extra_points": 5,
+      "climb_altitude:spurious_prediction | holding_fix:spurious_prediction | holding_required:false_hold | waypoints:spurious_only": 4,
+      "turn_direction:hallucinated_turn": 4,
+      "climb_altitude:wrong_value": 2,
+      "holding_fix:wrong_fix | waypoints:noisy_mismatch": 2,
+      "turn_direction:wrong_direction | waypoints:spurious_only": 2,
+      "waypoints:spurious_only": 2,
+      "climb_altitude:wrong_value | holding_fix:wrong_fix | waypoints:noisy_mismatch": 1,
+      "climb_altitude:wrong_value | turn_direction:hallucinated_turn | waypoints:extra_points": 1,
+      "holding_fix:spurious_prediction | holding_required:false_hold | turn_direction:hallucinated_turn | waypoints:spurious_only": 1,
+      "holding_fix:spurious_prediction | holding_required:false_hold | turn_direction:wrong_direction | waypoints:spurious_only": 1,
+      "holding_fix:wrong_fix | turn_direction:hallucinated_turn | waypoints:noisy_mismatch": 1,
+      "holding_fix:wrong_fix | turn_direction:wrong_direction | waypoints:noisy_mismatch": 1,
+      "waypoints:extra_points": 1
+    },
+    "sample_signature_examples": {
+      "waypoints:spurious_only": [
+        "KABE_I06",
+        "KBWI_L15L"
+      ],
+      "turn_direction:hallucinated_turn | waypoints:extra_points": [
+        "KAMA_I04",
+        "KAUS_I18L",
+        "KCFO_I26",
+        "KALO_L12",
+        "KCJR_L04"
+      ],
+      "turn_direction:wrong_direction": [
+        "KAPC_I01L",
+        "KAXH_R27",
+        "KACT_R32",
+        "KAKH_R03",
+        "KAOO_R03-Z",
+        "KAOO_R21",
+        "KAWG_R36",
+        "KAXV_R26",
+        "KBFD_R14",
+        "KBJI_R31"
+      ],
+      "turn_direction:wrong_direction | waypoints:spurious_only": [
+        "KATL_I09R",
+        "KAVL_I17"
+      ],
+      "climb_altitude:wrong_value | holding_fix:wrong_fix | waypoints:noisy_mismatch": [
+        "KAYS_I19-Z"
+      ],
+      "turn_direction:hallucinated_turn": [
+        "KBMI_I29",
+        "KAWM_L17",
+        "KCAK_L01",
+        "KAXN_R22"
+      ],
+      "climb_altitude:spurious_prediction | holding_fix:spurious_prediction | holding_required:false_hold | turn_direction:hallucinated_turn | waypoints:spurious_only": [
+        "KAVP_L04",
+        "KBDR_L06",
+        "KBFF_L12",
+        "KBUR_L08-Z",
+        "KBYL_L20",
+        "KCEC_L12",
+        "KCOE_L06",
+        "KCRP_L36",
+        "KCRW_L05",
+        "KAIB_RNV-A"
+      ],
+      "holding_fix:spurious_prediction | holding_required:false_hold | turn_direction:hallucinated_turn | waypoints:spurious_only": [
+        "KBDL_L33"
+      ],
+      "climb_altitude:spurious_prediction | holding_fix:spurious_prediction | holding_required:false_hold | turn_direction:wrong_direction | waypoints:spurious_only": [
+        "KBOS_L15R",
+        "KAFN_RNV-B",
+        "KAPT_R04",
+        "KAPV_R18",
+        "KAQW_RNV-B",
+        "KAVQ_R21",
+        "KBDN_R34",
+        "KBMQ_R01",
+        "KBOS_R32",
+        "KBTV_R33-Y"
+      ],
+      "climb_altitude:spurious_prediction | holding_fix:spurious_prediction | holding_required:false_hold | waypoints:spurious_only": [
+        "KCFO_L17",
+        "KAFN_RNV-C",
+        "KCII_R33",
+        "KCOE_R02"
+      ],
+      "climb_altitude:wrong_value | turn_direction:hallucinated_turn | waypoints:extra_points": [
+        "KALN_L29"
+      ],
+      "holding_fix:wrong_fix | waypoints:noisy_mismatch": [
+        "KBRD_L34",
+        "KBTL_L23R"
+      ],
+      "waypoints:extra_points": [
+        "KCBF_L36"
+      ],
+      "climb_altitude:wrong_value": [
+        "KCHA_L20",
+        "KAZC_R29"
+      ],
+      "holding_fix:spurious_prediction | holding_required:false_hold | turn_direction:wrong_direction | waypoints:spurious_only": [
+        "KBDH_R31"
+      ],
+      "holding_fix:wrong_fix | turn_direction:hallucinated_turn | waypoints:noisy_mismatch": [
+        "KBLV_R32RY"
+      ],
+      "holding_fix:wrong_fix | turn_direction:wrong_direction | waypoints:noisy_mismatch": [
+        "KCIC_R13L"
+      ]
+    }
+  },
+  "C": {
+    "counts": {
+      "waypoints:spurious_only": 40,
+      "climb_altitude:spurious_prediction": 35,
+      "holding_fix:spurious_prediction": 35,
+      "holding_required:false_hold": 35,
+      "turn_direction:hallucinated_turn": 32,
+      "holding_fix:wrong_fix": 4,
+      "waypoints:noisy_mismatch": 4,
+      "holding_fix:missing_prediction": 1,
+      "waypoints:extra_points": 1
+    },
+    "examples": {
+      "waypoints:spurious_only": [
+        "KABE_I06",
+        "KATL_I09R",
+        "KAVL_I17",
+        "KAVP_L04",
+        "KBDL_L33",
+        "KBDR_L06",
+        "KBFF_L12",
+        "KBOS_L15R",
+        "KBUR_L08-Z",
+        "KBYL_L20"
+      ],
+      "turn_direction:hallucinated_turn": [
+        "KAMA_I04",
+        "KAUS_I18L",
+        "KBMI_I29",
+        "KCFO_I26",
+        "KAVP_L04",
+        "KBDL_L33",
+        "KBDR_L06",
+        "KBFF_L12",
+        "KBUR_L08-Z",
+        "KBYL_L20"
+      ],
+      "holding_fix:wrong_fix": [
+        "KAYS_I19-Z",
+        "KBRD_L34",
+        "KBLV_R32RY",
+        "KCOI_R11"
+      ],
+      "waypoints:noisy_mismatch": [
+        "KAYS_I19-Z",
+        "KALN_L29",
+        "KBRD_L34",
+        "KBLV_R32RY"
+      ],
+      "waypoints:extra_points": [
+        "KCFO_I26"
+      ],
+      "holding_fix:missing_prediction": [
+        "KCMH_I10R"
+      ],
+      "climb_altitude:spurious_prediction": [
+        "KAVP_L04",
+        "KBDL_L33",
+        "KBDR_L06",
+        "KBFF_L12",
+        "KBOS_L15R",
+        "KBUR_L08-Z",
+        "KBYL_L20",
+        "KCEC_L12",
+        "KCFO_L17",
+        "KCOE_L06"
+      ],
+      "holding_required:false_hold": [
+        "KAVP_L04",
+        "KBDL_L33",
+        "KBDR_L06",
+        "KBFF_L12",
+        "KBOS_L15R",
+        "KBUR_L08-Z",
+        "KBYL_L20",
+        "KCEC_L12",
+        "KCFO_L17",
+        "KCOE_L06"
+      ],
+      "holding_fix:spurious_prediction": [
+        "KAVP_L04",
+        "KBDL_L33",
+        "KBDR_L06",
+        "KBFF_L12",
+        "KBOS_L15R",
+        "KBUR_L08-Z",
+        "KBYL_L20",
+        "KCEC_L12",
+        "KCFO_L17",
+        "KCOE_L06"
+      ]
+    },
+    "field_counts": {
+      "climb_altitude": {
+        "climb_altitude:spurious_prediction": 35
+      },
+      "turn_direction": {
+        "turn_direction:hallucinated_turn": 32
+      },
+      "holding_required": {
+        "holding_required:false_hold": 35
+      },
+      "holding_fix": {
+        "holding_fix:spurious_prediction": 35,
+        "holding_fix:wrong_fix": 4,
+        "holding_fix:missing_prediction": 1
+      },
+      "waypoints": {
+        "waypoints:spurious_only": 40,
+        "waypoints:noisy_mismatch": 4,
+        "waypoints:extra_points": 1
+      }
+    },
+    "field_examples": {
+      "climb_altitude": {
+        "climb_altitude:spurious_prediction": [
+          "KAVP_L04",
+          "KBDL_L33",
+          "KBDR_L06",
+          "KBFF_L12",
+          "KBOS_L15R",
+          "KBUR_L08-Z",
+          "KBYL_L20",
+          "KCEC_L12",
+          "KCFO_L17",
+          "KCOE_L06"
+        ]
+      },
+      "turn_direction": {
+        "turn_direction:hallucinated_turn": [
+          "KAMA_I04",
+          "KAUS_I18L",
+          "KBMI_I29",
+          "KCFO_I26",
+          "KAVP_L04",
+          "KBDL_L33",
+          "KBDR_L06",
+          "KBFF_L12",
+          "KBUR_L08-Z",
+          "KBYL_L20"
+        ]
+      },
+      "holding_required": {
+        "holding_required:false_hold": [
+          "KAVP_L04",
+          "KBDL_L33",
+          "KBDR_L06",
+          "KBFF_L12",
+          "KBOS_L15R",
+          "KBUR_L08-Z",
+          "KBYL_L20",
+          "KCEC_L12",
+          "KCFO_L17",
+          "KCOE_L06"
+        ]
+      },
+      "holding_fix": {
+        "holding_fix:wrong_fix": [
+          "KAYS_I19-Z",
+          "KBRD_L34",
+          "KBLV_R32RY",
+          "KCOI_R11"
+        ],
+        "holding_fix:missing_prediction": [
+          "KCMH_I10R"
+        ],
+        "holding_fix:spurious_prediction": [
+          "KAVP_L04",
+          "KBDL_L33",
+          "KBDR_L06",
+          "KBFF_L12",
+          "KBOS_L15R",
+          "KBUR_L08-Z",
+          "KBYL_L20",
+          "KCEC_L12",
+          "KCFO_L17",
+          "KCOE_L06"
+        ]
+      },
+      "waypoints": {
+        "waypoints:spurious_only": [
+          "KABE_I06",
+          "KATL_I09R",
+          "KAVL_I17",
+          "KAVP_L04",
+          "KBDL_L33",
+          "KBDR_L06",
+          "KBFF_L12",
+          "KBOS_L15R",
+          "KBUR_L08-Z",
+          "KBYL_L20"
+        ],
+        "waypoints:noisy_mismatch": [
+          "KAYS_I19-Z",
+          "KALN_L29",
+          "KBRD_L34",
+          "KBLV_R32RY"
+        ],
+        "waypoints:extra_points": [
+          "KCFO_I26"
+        ]
+      }
+    },
+    "sample_signatures": {
+      "climb_altitude:spurious_prediction | holding_fix:spurious_prediction | holding_required:false_hold | turn_direction:hallucinated_turn | waypoints:spurious_only": 21,
+      "climb_altitude:spurious_prediction | holding_fix:spurious_prediction | holding_required:false_hold | waypoints:spurious_only": 13,
+      "turn_direction:hallucinated_turn": 8,
+      "waypoints:spurious_only": 4,
+      "holding_fix:wrong_fix | waypoints:noisy_mismatch": 2,
+      "climb_altitude:spurious_prediction | waypoints:spurious_only": 1,
+      "holding_fix:missing_prediction": 1,
+      "holding_fix:spurious_prediction | holding_required:false_hold | waypoints:spurious_only": 1,
+      "holding_fix:wrong_fix": 1,
+      "holding_fix:wrong_fix | turn_direction:hallucinated_turn | waypoints:noisy_mismatch": 1,
+      "turn_direction:hallucinated_turn | waypoints:extra_points": 1,
+      "turn_direction:hallucinated_turn | waypoints:noisy_mismatch": 1
+    },
+    "sample_signature_examples": {
+      "waypoints:spurious_only": [
+        "KABE_I06",
+        "KATL_I09R",
+        "KAVL_I17",
+        "KBWI_L15L"
+      ],
+      "turn_direction:hallucinated_turn": [
+        "KAMA_I04",
+        "KAUS_I18L",
+        "KBMI_I29",
+        "KALO_L12",
+        "KAWM_L17",
+        "KCAK_L01",
+        "KCJR_L04",
+        "KAXN_R22"
+      ],
+      "holding_fix:wrong_fix | waypoints:noisy_mismatch": [
+        "KAYS_I19-Z",
+        "KBRD_L34"
+      ],
+      "turn_direction:hallucinated_turn | waypoints:extra_points": [
+        "KCFO_I26"
+      ],
+      "holding_fix:missing_prediction": [
+        "KCMH_I10R"
+      ],
+      "climb_altitude:spurious_prediction | holding_fix:spurious_prediction | holding_required:false_hold | turn_direction:hallucinated_turn | waypoints:spurious_only": [
+        "KAVP_L04",
+        "KBDL_L33",
+        "KBDR_L06",
+        "KBFF_L12",
+        "KBUR_L08-Z",
+        "KBYL_L20",
+        "KCEC_L12",
+        "KCOE_L06",
+        "KCRP_L36",
+        "KCRW_L05"
+      ],
+      "climb_altitude:spurious_prediction | holding_fix:spurious_prediction | holding_required:false_hold | waypoints:spurious_only": [
+        "KBOS_L15R",
+        "KCFO_L17",
+        "KAFN_RNV-B",
+        "KAFN_RNV-C",
+        "KAPT_R04",
+        "KAPV_R18",
+        "KAVQ_R21",
+        "KBDN_R34",
+        "KBMQ_R01",
+        "KBOS_R32"
+      ],
+      "turn_direction:hallucinated_turn | waypoints:noisy_mismatch": [
+        "KALN_L29"
+      ],
+      "holding_fix:spurious_prediction | holding_required:false_hold | waypoints:spurious_only": [
+        "KBDH_R31"
+      ],
+      "climb_altitude:spurious_prediction | waypoints:spurious_only": [
+        "KBTV_R33-Y"
+      ],
+      "holding_fix:wrong_fix | turn_direction:hallucinated_turn | waypoints:noisy_mismatch": [
+        "KBLV_R32RY"
+      ],
+      "holding_fix:wrong_fix": [
+        "KCOI_R11"
+      ]
+    }
+  },
+  "D": {
+    "counts": {
+      "waypoints:spurious_only": 40,
+      "holding_fix:spurious_prediction": 36,
+      "holding_required:false_hold": 36,
+      "climb_altitude:spurious_prediction": 35,
+      "turn_direction:hallucinated_turn": 34,
+      "turn_direction:wrong_direction": 5,
+      "holding_fix:wrong_fix": 4,
+      "waypoints:noisy_mismatch": 4,
+      "waypoints:extra_points": 3
+    },
+    "examples": {
+      "waypoints:spurious_only": [
+        "KABE_I06",
+        "KATL_I09R",
+        "KAVL_I17",
+        "KAVP_L04",
+        "KBDL_L33",
+        "KBDR_L06",
+        "KBFF_L12",
+        "KBOS_L15R",
+        "KBUR_L08-Z",
+        "KBYL_L20"
+      ],
+      "turn_direction:hallucinated_turn": [
+        "KAMA_I04",
+        "KAUS_I18L",
+        "KBMI_I29",
+        "KCFO_I26",
+        "KAVP_L04",
+        "KBDL_L33",
+        "KBDR_L06",
+        "KBFF_L12",
+        "KBUR_L08-Z",
+        "KBYL_L20"
+      ],
+      "waypoints:extra_points": [
+        "KAUS_I18L",
+        "KCFO_I26",
+        "KCJR_L04"
+      ],
+      "holding_fix:wrong_fix": [
+        "KAYS_I19-Z",
+        "KALN_L29",
+        "KBRD_L34",
+        "KBLV_R32RY"
+      ],
+      "waypoints:noisy_mismatch": [
+        "KAYS_I19-Z",
+        "KALN_L29",
+        "KBRD_L34",
+        "KBLV_R32RY"
+      ],
+      "climb_altitude:spurious_prediction": [
+        "KAVP_L04",
+        "KBDL_L33",
+        "KBDR_L06",
+        "KBFF_L12",
+        "KBOS_L15R",
+        "KBUR_L08-Z",
+        "KBYL_L20",
+        "KCEC_L12",
+        "KCFO_L17",
+        "KCOE_L06"
+      ],
+      "holding_required:false_hold": [
+        "KAVP_L04",
+        "KBDL_L33",
+        "KBDR_L06",
+        "KBFF_L12",
+        "KBOS_L15R",
+        "KBUR_L08-Z",
+        "KBYL_L20",
+        "KCEC_L12",
+        "KCFO_L17",
+        "KCOE_L06"
+      ],
+      "holding_fix:spurious_prediction": [
+        "KAVP_L04",
+        "KBDL_L33",
+        "KBDR_L06",
+        "KBFF_L12",
+        "KBOS_L15R",
+        "KBUR_L08-Z",
+        "KBYL_L20",
+        "KCEC_L12",
+        "KCFO_L17",
+        "KCOE_L06"
+      ],
+      "turn_direction:wrong_direction": [
+        "KAPV_R18",
+        "KAVQ_R21",
+        "KBTV_R33-Y",
+        "KACT_R32",
+        "KAKH_R03"
+      ]
+    },
+    "field_counts": {
+      "climb_altitude": {
+        "climb_altitude:spurious_prediction": 35
+      },
+      "turn_direction": {
+        "turn_direction:hallucinated_turn": 34,
+        "turn_direction:wrong_direction": 5
+      },
+      "holding_required": {
+        "holding_required:false_hold": 36
+      },
+      "holding_fix": {
+        "holding_fix:spurious_prediction": 36,
+        "holding_fix:wrong_fix": 4
+      },
+      "waypoints": {
+        "waypoints:spurious_only": 40,
+        "waypoints:noisy_mismatch": 4,
+        "waypoints:extra_points": 3
+      }
+    },
+    "field_examples": {
+      "climb_altitude": {
+        "climb_altitude:spurious_prediction": [
+          "KAVP_L04",
+          "KBDL_L33",
+          "KBDR_L06",
+          "KBFF_L12",
+          "KBOS_L15R",
+          "KBUR_L08-Z",
+          "KBYL_L20",
+          "KCEC_L12",
+          "KCFO_L17",
+          "KCOE_L06"
+        ]
+      },
+      "turn_direction": {
+        "turn_direction:hallucinated_turn": [
+          "KAMA_I04",
+          "KAUS_I18L",
+          "KBMI_I29",
+          "KCFO_I26",
+          "KAVP_L04",
+          "KBDL_L33",
+          "KBDR_L06",
+          "KBFF_L12",
+          "KBUR_L08-Z",
+          "KBYL_L20"
+        ],
+        "turn_direction:wrong_direction": [
+          "KAPV_R18",
+          "KAVQ_R21",
+          "KBTV_R33-Y",
+          "KACT_R32",
+          "KAKH_R03"
+        ]
+      },
+      "holding_required": {
+        "holding_required:false_hold": [
+          "KAVP_L04",
+          "KBDL_L33",
+          "KBDR_L06",
+          "KBFF_L12",
+          "KBOS_L15R",
+          "KBUR_L08-Z",
+          "KBYL_L20",
+          "KCEC_L12",
+          "KCFO_L17",
+          "KCOE_L06"
+        ]
+      },
+      "holding_fix": {
+        "holding_fix:wrong_fix": [
+          "KAYS_I19-Z",
+          "KALN_L29",
+          "KBRD_L34",
+          "KBLV_R32RY"
+        ],
+        "holding_fix:spurious_prediction": [
+          "KAVP_L04",
+          "KBDL_L33",
+          "KBDR_L06",
+          "KBFF_L12",
+          "KBOS_L15R",
+          "KBUR_L08-Z",
+          "KBYL_L20",
+          "KCEC_L12",
+          "KCFO_L17",
+          "KCOE_L06"
+        ]
+      },
+      "waypoints": {
+        "waypoints:spurious_only": [
+          "KABE_I06",
+          "KATL_I09R",
+          "KAVL_I17",
+          "KAVP_L04",
+          "KBDL_L33",
+          "KBDR_L06",
+          "KBFF_L12",
+          "KBOS_L15R",
+          "KBUR_L08-Z",
+          "KBYL_L20"
+        ],
+        "waypoints:extra_points": [
+          "KAUS_I18L",
+          "KCFO_I26",
+          "KCJR_L04"
+        ],
+        "waypoints:noisy_mismatch": [
+          "KAYS_I19-Z",
+          "KALN_L29",
+          "KBRD_L34",
+          "KBLV_R32RY"
+        ]
+      }
+    },
+    "sample_signatures": {
+      "climb_altitude:spurious_prediction | holding_fix:spurious_prediction | holding_required:false_hold | turn_direction:hallucinated_turn | waypoints:spurious_only": 21,
+      "climb_altitude:spurious_prediction | holding_fix:spurious_prediction | holding_required:false_hold | waypoints:spurious_only": 11,
+      "turn_direction:hallucinated_turn": 8,
+      "waypoints:spurious_only": 4,
+      "climb_altitude:spurious_prediction | holding_fix:spurious_prediction | holding_required:false_hold | turn_direction:wrong_direction | waypoints:spurious_only": 3,
+      "turn_direction:hallucinated_turn | waypoints:extra_points": 3,
+      "holding_fix:wrong_fix | turn_direction:hallucinated_turn | waypoints:noisy_mismatch": 2,
+      "holding_fix:wrong_fix | waypoints:noisy_mismatch": 2,
+      "turn_direction:wrong_direction": 2,
+      "holding_fix:spurious_prediction | holding_required:false_hold | waypoints:spurious_only": 1
+    },
+    "sample_signature_examples": {
+      "waypoints:spurious_only": [
+        "KABE_I06",
+        "KATL_I09R",
+        "KAVL_I17",
+        "KBWI_L15L"
+      ],
+      "turn_direction:hallucinated_turn": [
+        "KAMA_I04",
+        "KBMI_I29",
+        "KALO_L12",
+        "KAWM_L17",
+        "KCAK_L01",
+        "KAOO_R03-Z",
+        "KAOO_R21",
+        "KAXN_R22"
+      ],
+      "turn_direction:hallucinated_turn | waypoints:extra_points": [
+        "KAUS_I18L",
+        "KCFO_I26",
+        "KCJR_L04"
+      ],
+      "holding_fix:wrong_fix | waypoints:noisy_mismatch": [
+        "KAYS_I19-Z",
+        "KBRD_L34"
+      ],
+      "climb_altitude:spurious_prediction | holding_fix:spurious_prediction | holding_required:false_hold | turn_direction:hallucinated_turn | waypoints:spurious_only": [
+        "KAVP_L04",
+        "KBDL_L33",
+        "KBDR_L06",
+        "KBFF_L12",
+        "KBUR_L08-Z",
+        "KBYL_L20",
+        "KCEC_L12",
+        "KCOE_L06",
+        "KCRP_L36",
+        "KCRW_L05"
+      ],
+      "climb_altitude:spurious_prediction | holding_fix:spurious_prediction | holding_required:false_hold | waypoints:spurious_only": [
+        "KBOS_L15R",
+        "KCFO_L17",
+        "KAFN_RNV-B",
+        "KAFN_RNV-C",
+        "KAPT_R04",
+        "KBDN_R34",
+        "KBMQ_R01",
+        "KBOS_R32",
+        "KCAG_R07",
+        "KCII_R33"
+      ],
+      "holding_fix:wrong_fix | turn_direction:hallucinated_turn | waypoints:noisy_mismatch": [
+        "KALN_L29",
+        "KBLV_R32RY"
+      ],
+      "climb_altitude:spurious_prediction | holding_fix:spurious_prediction | holding_required:false_hold | turn_direction:wrong_direction | waypoints:spurious_only": [
+        "KAPV_R18",
+        "KAVQ_R21",
+        "KBTV_R33-Y"
+      ],
+      "holding_fix:spurious_prediction | holding_required:false_hold | waypoints:spurious_only": [
+        "KBDH_R31"
+      ],
+      "turn_direction:wrong_direction": [
+        "KACT_R32",
+        "KAKH_R03"
+      ]
+    }
+  },
+  "E": {
+    "counts": {
+      "waypoints:spurious_only": 40,
+      "holding_fix:spurious_prediction": 37,
+      "holding_required:false_hold": 37,
+      "climb_altitude:spurious_prediction": 35,
+      "turn_direction:hallucinated_turn": 31,
+      "holding_fix:wrong_fix": 5,
+      "waypoints:noisy_mismatch": 4,
+      "climb_altitude:wrong_value": 2,
+      "climb_altitude:missing_prediction": 1,
+      "holding_fix:missing_prediction": 1,
+      "holding_required:missing_prediction": 1,
+      "turn_direction:missing_prediction": 1,
+      "waypoints:extra_points": 1,
+      "waypoints:missed_all": 1
+    },
+    "examples": {
+      "holding_fix:wrong_fix": [
+        "KABE_I06",
+        "KAYS_I19-Z",
+        "KALN_L29",
+        "KBRD_L34",
+        "KBLV_R32RY"
+      ],
+      "waypoints:spurious_only": [
+        "KABE_I06",
+        "KATL_I09R",
+        "KAVL_I17",
+        "KAVP_L04",
+        "KBDL_L33",
+        "KBDR_L06",
+        "KBFF_L12",
+        "KBOS_L15R",
+        "KBUR_L08-Z",
+        "KBYL_L20"
+      ],
+      "climb_altitude:wrong_value": [
+        "KAMA_I04",
+        "KBTP_L08"
+      ],
+      "turn_direction:hallucinated_turn": [
+        "KAMA_I04",
+        "KBMI_I29",
+        "KCFO_I26",
+        "KAVP_L04",
+        "KBDL_L33",
+        "KBDR_L06",
+        "KBFF_L12",
+        "KBUR_L08-Z",
+        "KBYL_L20",
+        "KCEC_L12"
+      ],
+      "climb_altitude:missing_prediction": [
+        "KAUS_I18L"
+      ],
+      "turn_direction:missing_prediction": [
+        "KAUS_I18L"
+      ],
+      "holding_required:missing_prediction": [
+        "KAUS_I18L"
+      ],
+      "holding_fix:missing_prediction": [
+        "KAUS_I18L"
+      ],
+      "waypoints:missed_all": [
+        "KAUS_I18L"
+      ],
+      "waypoints:noisy_mismatch": [
+        "KAYS_I19-Z",
+        "KALN_L29",
+        "KBRD_L34",
+        "KBLV_R32RY"
+      ],
+      "waypoints:extra_points": [
+        "KCFO_I26"
+      ],
+      "climb_altitude:spurious_prediction": [
+        "KAVP_L04",
+        "KBDL_L33",
+        "KBDR_L06",
+        "KBFF_L12",
+        "KBOS_L15R",
+        "KBUR_L08-Z",
+        "KBYL_L20",
+        "KCEC_L12",
+        "KCFO_L17",
+        "KCOE_L06"
+      ],
+      "holding_required:false_hold": [
+        "KAVP_L04",
+        "KAXH_L09",
+        "KBDL_L33",
+        "KBDR_L06",
+        "KBFF_L12",
+        "KBOS_L15R",
+        "KBUR_L08-Z",
+        "KBYL_L20",
+        "KCEC_L12",
+        "KCFO_L17"
+      ],
+      "holding_fix:spurious_prediction": [
+        "KAVP_L04",
+        "KAXH_L09",
+        "KBDL_L33",
+        "KBDR_L06",
+        "KBFF_L12",
+        "KBOS_L15R",
+        "KBUR_L08-Z",
+        "KBYL_L20",
+        "KCEC_L12",
+        "KCFO_L17"
+      ]
+    },
+    "field_counts": {
+      "climb_altitude": {
+        "climb_altitude:spurious_prediction": 35,
+        "climb_altitude:wrong_value": 2,
+        "climb_altitude:missing_prediction": 1
+      },
+      "turn_direction": {
+        "turn_direction:hallucinated_turn": 31,
+        "turn_direction:missing_prediction": 1
+      },
+      "holding_required": {
+        "holding_required:false_hold": 37,
+        "holding_required:missing_prediction": 1
+      },
+      "holding_fix": {
+        "holding_fix:spurious_prediction": 37,
+        "holding_fix:wrong_fix": 5,
+        "holding_fix:missing_prediction": 1
+      },
+      "waypoints": {
+        "waypoints:spurious_only": 40,
+        "waypoints:noisy_mismatch": 4,
+        "waypoints:extra_points": 1,
+        "waypoints:missed_all": 1
+      }
+    },
+    "field_examples": {
+      "climb_altitude": {
+        "climb_altitude:wrong_value": [
+          "KAMA_I04",
+          "KBTP_L08"
+        ],
+        "climb_altitude:missing_prediction": [
+          "KAUS_I18L"
+        ],
+        "climb_altitude:spurious_prediction": [
+          "KAVP_L04",
+          "KBDL_L33",
+          "KBDR_L06",
+          "KBFF_L12",
+          "KBOS_L15R",
+          "KBUR_L08-Z",
+          "KBYL_L20",
+          "KCEC_L12",
+          "KCFO_L17",
+          "KCOE_L06"
+        ]
+      },
+      "turn_direction": {
+        "turn_direction:hallucinated_turn": [
+          "KAMA_I04",
+          "KBMI_I29",
+          "KCFO_I26",
+          "KAVP_L04",
+          "KBDL_L33",
+          "KBDR_L06",
+          "KBFF_L12",
+          "KBUR_L08-Z",
+          "KBYL_L20",
+          "KCEC_L12"
+        ],
+        "turn_direction:missing_prediction": [
+          "KAUS_I18L"
+        ]
+      },
+      "holding_required": {
+        "holding_required:missing_prediction": [
+          "KAUS_I18L"
+        ],
+        "holding_required:false_hold": [
+          "KAVP_L04",
+          "KAXH_L09",
+          "KBDL_L33",
+          "KBDR_L06",
+          "KBFF_L12",
+          "KBOS_L15R",
+          "KBUR_L08-Z",
+          "KBYL_L20",
+          "KCEC_L12",
+          "KCFO_L17"
+        ]
+      },
+      "holding_fix": {
+        "holding_fix:wrong_fix": [
+          "KABE_I06",
+          "KAYS_I19-Z",
+          "KALN_L29",
+          "KBRD_L34",
+          "KBLV_R32RY"
+        ],
+        "holding_fix:missing_prediction": [
+          "KAUS_I18L"
+        ],
+        "holding_fix:spurious_prediction": [
+          "KAVP_L04",
+          "KAXH_L09",
+          "KBDL_L33",
+          "KBDR_L06",
+          "KBFF_L12",
+          "KBOS_L15R",
+          "KBUR_L08-Z",
+          "KBYL_L20",
+          "KCEC_L12",
+          "KCFO_L17"
+        ]
+      },
+      "waypoints": {
+        "waypoints:spurious_only": [
+          "KABE_I06",
+          "KATL_I09R",
+          "KAVL_I17",
+          "KAVP_L04",
+          "KBDL_L33",
+          "KBDR_L06",
+          "KBFF_L12",
+          "KBOS_L15R",
+          "KBUR_L08-Z",
+          "KBYL_L20"
+        ],
+        "waypoints:missed_all": [
+          "KAUS_I18L"
+        ],
+        "waypoints:noisy_mismatch": [
+          "KAYS_I19-Z",
+          "KALN_L29",
+          "KBRD_L34",
+          "KBLV_R32RY"
+        ],
+        "waypoints:extra_points": [
+          "KCFO_I26"
+        ]
+      }
+    },
+    "sample_signatures": {
+      "climb_altitude:spurious_prediction | holding_fix:spurious_prediction | holding_required:false_hold | turn_direction:hallucinated_turn | waypoints:spurious_only": 21,
+      "climb_altitude:spurious_prediction | holding_fix:spurious_prediction | holding_required:false_hold | waypoints:spurious_only": 14,
+      "turn_direction:hallucinated_turn": 6,
+      "waypoints:spurious_only": 3,
+      "holding_fix:wrong_fix | turn_direction:hallucinated_turn | waypoints:noisy_mismatch": 2,
+      "holding_fix:wrong_fix | waypoints:noisy_mismatch": 2,
+      "climb_altitude:missing_prediction | holding_fix:missing_prediction | holding_required:missing_prediction | turn_direction:missing_prediction | waypoints:missed_all": 1,
+      "climb_altitude:wrong_value": 1,
+      "climb_altitude:wrong_value | turn_direction:hallucinated_turn": 1,
+      "holding_fix:spurious_prediction | holding_required:false_hold": 1,
+      "holding_fix:spurious_prediction | holding_required:false_hold | waypoints:spurious_only": 1,
+      "holding_fix:wrong_fix | waypoints:spurious_only": 1,
+      "turn_direction:hallucinated_turn | waypoints:extra_points": 1
+    },
+    "sample_signature_examples": {
+      "holding_fix:wrong_fix | waypoints:spurious_only": [
+        "KABE_I06"
+      ],
+      "climb_altitude:wrong_value | turn_direction:hallucinated_turn": [
+        "KAMA_I04"
+      ],
+      "waypoints:spurious_only": [
+        "KATL_I09R",
+        "KAVL_I17",
+        "KBWI_L15L"
+      ],
+      "climb_altitude:missing_prediction | holding_fix:missing_prediction | holding_required:missing_prediction | turn_direction:missing_prediction | waypoints:missed_all": [
+        "KAUS_I18L"
+      ],
+      "holding_fix:wrong_fix | waypoints:noisy_mismatch": [
+        "KAYS_I19-Z",
+        "KBRD_L34"
+      ],
+      "turn_direction:hallucinated_turn": [
+        "KBMI_I29",
+        "KALO_L12",
+        "KAWM_L17",
+        "KCAK_L01",
+        "KCJR_L04",
+        "KAXN_R22"
+      ],
+      "turn_direction:hallucinated_turn | waypoints:extra_points": [
+        "KCFO_I26"
+      ],
+      "climb_altitude:spurious_prediction | holding_fix:spurious_prediction | holding_required:false_hold | turn_direction:hallucinated_turn | waypoints:spurious_only": [
+        "KAVP_L04",
+        "KBDL_L33",
+        "KBDR_L06",
+        "KBFF_L12",
+        "KBUR_L08-Z",
+        "KBYL_L20",
+        "KCEC_L12",
+        "KCOE_L06",
+        "KCRP_L36",
+        "KCRW_L05"
+      ],
+      "holding_fix:spurious_prediction | holding_required:false_hold": [
+        "KAXH_L09"
+      ],
+      "climb_altitude:spurious_prediction | holding_fix:spurious_prediction | holding_required:false_hold | waypoints:spurious_only": [
+        "KBOS_L15R",
+        "KCFO_L17",
+        "KAFN_RNV-B",
+        "KAFN_RNV-C",
+        "KAPT_R04",
+        "KAPV_R18",
+        "KAVQ_R21",
+        "KBDN_R34",
+        "KBMQ_R01",
+        "KBOS_R32"
+      ],
+      "holding_fix:wrong_fix | turn_direction:hallucinated_turn | waypoints:noisy_mismatch": [
+        "KALN_L29",
+        "KBLV_R32RY"
+      ],
+      "climb_altitude:wrong_value": [
+        "KBTP_L08"
+      ],
+      "holding_fix:spurious_prediction | holding_required:false_hold | waypoints:spurious_only": [
+        "KBDH_R31"
+      ]
+    }
+  }
+}

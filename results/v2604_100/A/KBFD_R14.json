@@ -1,0 +1,14 @@
+{
+  "raw_instruction": "(1 F). Baro-VNAV and VDP NA when using St. Marys altimeter setting. DME/DME RNP-0.3 MISSED APPROACH: S Marys altimeter setting: increase LPV DA to 2454 feet and al visibilities SM; increase LNAV/ Climb to 4500 direct NIMEE and hold.",
+  "climb_altitude": 4500,
+  "waypoints": [
+    "NIMEE",
+    "MARYS"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "NIMEE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

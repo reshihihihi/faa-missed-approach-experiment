@@ -1,0 +1,14 @@
+{
+  "raw_instruction": "Climb to 2700 direct RUPRE and via 200° track to KEEDS.",
+  "climb_altitude": 2700,
+  "waypoints": [
+    "RUPRE",
+    "KEEDS"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": false,
+  "holding_fix": null,
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

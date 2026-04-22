@@ -1,0 +1,22 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climb to 700 then climbing left turn to 2000 on heading 338° and CRP VORTAC R-287 to ATHIS INT/CRP 23.3 DME and hold.",
+  "climb_altitude": 2000,
+  "waypoints": [
+    "ATHIS",
+    "CRP"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "ATHIS",
+  "initial_track": "338°",
+  "turn_trigger": "700",
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 700 then climbing left turn to 2000 on heading 338° and CRP VORTAC R-287 to ATHIS INT/CRP 23.3 DME and hold.",
+    "climb_altitude": "turn to 2000 on heading 338°",
+    "waypoints": "CRP VORTAC R-287 to ATHIS INT/CRP 23.3 DME",
+    "turn_direction": "climbing left turn",
+    "holding_required": "to ATHIS INT/CRP 23.3 DME and hold",
+    "holding_fix": "ATHIS INT/CRP 23.3 DME"
+  }
+}

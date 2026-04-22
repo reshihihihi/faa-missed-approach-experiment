@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climb to 3000 then right turn direct OVR VORTAC and hold.",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "OVR"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "OVR",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

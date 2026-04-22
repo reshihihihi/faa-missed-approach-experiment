@@ -1,0 +1,127 @@
+UMBERLAND, MARYLAND
+AL-5263 (FAA)
+WAAS
+26078
+CH 40447
+APP CRS
+Rwy Ldg
+3929
+TDZE
+753
+RNAV (GPS) RWY 5
+W05A
+030°
+Apt Elev
+758
+GREATER CUMBERLAND RGNL (CBE)
+RNP APCH - GPS.
+T
+MISSED APPROACH: Climbing
+Circling NA northwest of Rwys 5 and 23. Helicopter visibility reduction below
+left turn to 4500 direct SAQAR
+A
+1 SM NA. Straight-in Rwy 5 NA at night, Circling Rwy 5, 11, 29 NA at night.
+and hold. *Missed approach
+-14
+requires minimum climb of
+255 feet per NM to 3000.
+AWOS-3
+JOHNSTOWN APP CON
+UNICOM
+128.625
+121.2 299.2
+122.8 (CTAF)
+MISSED APCH FIX
+(MAP)
+5 NM
+JHNNM.
+1809±
+1068±
+JAYDS
+SAQAR
+3.1 NM to
+JHNNM
+(FAF)
+Final approach
+OTEES
+course offset 19.18
+5700
+NM to
+8
+DJJAL
+-120°
+5400
+120°
+DJJAL
+(IF/IAF)
+-300
+DJJAL
+DJJAL
+300°
+030
+300
+0009
+cAr1
+OH
+2A00
+6400
+5 NM
+(NoPT)
+ELEV 758
+TDZE 753
+5 NM
+Visual Segment - Obstacles.
+DJJAL
+4500
+SAQAR
+Holding Pattern
+OTEES
+JAYDS
+6000
+←210°
+3.1 NM to
+¤
+5400
+030°
+JHNNM
+030°
+3000
+JHNNM
+0X150
+2800
+2
+2100
+-9NM
+-1.9 NM
+-3.1 NM—
+0.5 NM
+CATEGORY
+A
+B
+c
+D
+LP MDA*
+1320-1
+567 (600-1)
+NA
+1820-11/4
+1820-11½2
+LNAV MDA
+1067 (1100-11/4)
+1067 (1100-1/2)
+NA
+030°
+REIL Rwy 230
+1820-11/4
+2000-11½2
+LIRL Rwy 11-290
+CIRCLING
+NA
+1062 (1100-1½)
+1242 (1300-11½)
+HIRL Rwy 5-23
+CUMBERLAND, MARYLAND
+GREATER CUMBERLAND RGNL (CBE)
+Orig 19MAR26
+39°37'N-78°46'W
+RNAV (GPS) RWY 5

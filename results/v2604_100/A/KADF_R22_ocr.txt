@@ -1,0 +1,121 @@
+DELPHIA, ARKANSAS
+AL-5756 (FAA)
+WAAS
+26078
+CH 93835
+APP CRS
+Rwy Ldg
+5002
+RNAV (GPS) RWY 22
+220°
+TDZE
+W22A
+182
+Apt Elev
+182
+DEXTER B FLORENCE MEML FLD (ADF')
+DME/DME RNP-O.3 NA. When local altimeter setting not received, use Hot Springs
+altimeter setting and increase all MDAs 120 feet, and increase LP and LNAV Cat C
+ANA
+visibility 3½ SM and Circling Cat C visibility 1 mile. Night landing: Rwy 22 NA.
+MISSED APPROACH: Climb to
+2000 direct CUBUG and hold.
+Helicopter visibility reduction below 1 SM NA.
+AWOS-3PT
+MEMPHIS CENTER
+UNICOM
+118.175
+128.475 377.15
+122.7 (CTAF)
+C
+4 NM
+(IF/IAF)
+2000
+COVNO
+30
+NM
+-220°
+(5)
+2900
+L130°
+A NM
+(FAF)
+to
+ZULSO
+2100
+446
+^
+COVNO
+346
+ITVOW
+130°
+1.7 NM to
+RW22
+④
+RW22
+-310
+COVNO
+3000
+-310°
+4 NM
+CUBUG
+ELEV 182
+TDZE
+182
+220°
+2000
+CUBUG
+Visual Segment - Obstacles.
+4 NM
+COVNO
+Holding Pattern
+←
+¤
+ZULSO
+ITVOW
+040°
+-2100
+1.7 NM to
+-220°
+RW22
+-220°
+RW22
+*
+2000
+760
+5002 X 75
+-1.7
+-3.9 NM
+-5NM
+A
+B
+c
+D
+CATEGORY
+600-13/
+600-1 418 (500-1)
+NA
+LP
+MDA
+418 (500-13/)
+680-13/
+680-1 498 (500-1)
+NA
+LNAV MDA
+498 (500-13½)
+800-1
+1040-2½2
+MIRL Rwy 4-22
+760-1
+NA
+858 (900-21/2)
+REIL Rwys 4 and 22
+CIRCLING
+578 (600-1)
+618 (700-1)
+DEXTER B FLORENCE MEML FLD (ADF)
+ARKADELPHIA, ARKANSAS
+17AUG17
+34°06'N-93°04'W
+RNAV (GPS) RWY 22
+rig-B

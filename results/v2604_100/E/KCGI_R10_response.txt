@@ -1,0 +1,28 @@
+QUESTIONNAIRE_ANSWERS:
+Q1: yes
+Q2: yes
+Q3: yes
+Q4: no
+Q5: yes
+Q6: yes
+
+JSON:
+{
+  "raw_instruction": "Climb to 3000 direct FISAV and hold.",
+  "climb_altitude": 3000,
+  "waypoints": ["FISAV"],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "FISAV",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH box upper right: 'Climb to 3000 direct FISAV and hold.'",
+    "climb_altitude": "3000 explicitly stated",
+    "waypoints": "FISAV labeled in missed approach text and on chart",
+    "turn_direction": "No turn direction stated",
+    "holding_required": "Word 'hold' present in instruction; holding pattern depicted at FISAV",
+    "holding_fix": "FISAV explicitly labeled"
+  }
+}

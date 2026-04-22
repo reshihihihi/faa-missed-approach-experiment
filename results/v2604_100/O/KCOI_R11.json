@@ -1,0 +1,14 @@
+{
+  "raw_instruction": "CA 291+ft -> DF YONUS -> TF MLB 3000+ft -> HM MLB 3000+ft",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "YONUS",
+    "MLB"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "MLB",
+  "initial_track": null,
+  "turn_trigger": "YONUS",
+  "holding_details": null
+}

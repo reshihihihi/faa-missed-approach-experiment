@@ -1,0 +1,33 @@
+{
+  "raw_instruction": "Climb to 8500 on heading 172° and FQF VORTAC R-127 to HUNTN INT/FQF 9.8 DME and hold.",
+  "climb_altitude": 8500,
+  "waypoints": [
+    "HUNTN"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "HUNTN",
+  "initial_track": "172",
+  "turn_trigger": null,
+  "holding_details": {
+    "fix": "HUNTN",
+    "radial": "R-127",
+    "dme": "FQF 9.8"
+  },
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 8500 on heading 172° and FQF VORTAC R-127 to HUNTN INT/FQF 9.8 DME and hold.",
+    "climb_altitude": "8500",
+    "waypoints": "HUNTN INT/FQF 9.8 DME",
+    "turn_direction": "No turn direction stated",
+    "holding_required": "...and hold.",
+    "holding_fix": "HUNTN labeled on chart with holding pattern symbol"
+  },
+  "_questionnaire": {
+    "Q1": "yes",
+    "Q2": "yes",
+    "Q3": "yes",
+    "Q4": "no",
+    "Q5": "yes",
+    "Q6": "yes"
+  }
+}

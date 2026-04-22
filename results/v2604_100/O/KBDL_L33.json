@@ -1,0 +1,11 @@
+{
+  "raw_instruction": "unknown",
+  "climb_altitude": "unknown",
+  "waypoints": [],
+  "turn_direction": "NONE",
+  "holding_required": false,
+  "holding_fix": null,
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

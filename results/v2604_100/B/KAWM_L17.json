@@ -1,0 +1,21 @@
+{
+  "raw_instruction": "Climb to 1000 then climbing right turn to 2000 on GQE VOR/DME R-147 to GQE VOR/DME and hold.",
+  "climb_altitude": 2000,
+  "waypoints": [
+    "GQE"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "GQE",
+  "initial_track": "R-147",
+  "turn_trigger": "1000",
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 1000 then climbing right turn to 2000 on GQE VOR/DME R-147 to GQE VOR/DME and hold.",
+    "climb_altitude": "climbing right turn to 2000",
+    "waypoints": "to GQE VOR/DME and hold",
+    "turn_direction": "climbing right turn",
+    "holding_required": "to GQE VOR/DME and hold",
+    "holding_fix": "to GQE VOR/DME and hold"
+  }
+}

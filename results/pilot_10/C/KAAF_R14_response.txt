@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "Climb to 500 then climbing left turn to 3000 direct ONBOE and hold, continue climb-in-hold to 3000.",
+  "climb_altitude": 3000,
+  "waypoints": ["ONBOE"],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "ONBOE",
+  "initial_track": null,
+  "turn_trigger": "500",
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Upper right corner box labeled MISSED APPROACH",
+    "climb_altitude": "climbing left turn to 3000 direct ONBOE and hold, continue climb-in-hold to 3000",
+    "waypoints": "direct ONBOE and hold",
+    "turn_direction": "climbing left turn",
+    "holding_required": "hold, continue climb-in-hold to 3000",
+    "holding_fix": "direct ONBOE and hold"
+  }
+}

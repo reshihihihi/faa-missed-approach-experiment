@@ -1,0 +1,21 @@
+{
+  "raw_instruction": "Climb to 3000 direct IPORE and hold.",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "IPORE"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "IPORE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Upper right area of chart in MISSED APPROACH box",
+    "climb_altitude": "Climb to 3000 direct IPORE and hold.",
+    "waypoints": "IPORE named in missed approach text and depicted as MISSED APCH FIX",
+    "turn_direction": "No turn direction specified in instruction",
+    "holding_required": "Hold depicted at IPORE in plan view and stated in missed approach text",
+    "holding_fix": "IPORE named in missed approach instruction and labeled MISSED APCH FIX"
+  }
+}

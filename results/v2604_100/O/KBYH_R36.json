@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 454+ft -> DF CEDVA 2500+ft -> HM CEDVA 2500+ft",
+  "climb_altitude": 2500,
+  "waypoints": [
+    "CEDVA"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "CEDVA",
+  "initial_track": null,
+  "turn_trigger": "CEDVA",
+  "holding_details": null
+}

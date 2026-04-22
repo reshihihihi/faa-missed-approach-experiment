@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 1000+ft -> VI -> CF HOOKK 3000+ft -> HM HOOKK 3000+ft",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "HOOKK"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "HOOKK",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 1800+ft -> DF EWC 3000+ft -> HM EWC 3000+ft",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "EWC"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "EWC",
+  "initial_track": null,
+  "turn_trigger": "EWC",
+  "holding_details": null
+}

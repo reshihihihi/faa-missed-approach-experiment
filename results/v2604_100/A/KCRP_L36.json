@@ -1,0 +1,11 @@
+{
+  "raw_instruction": "turn to 2000 on heading 338 and CRP VORTAC MISSED APPROACH: Climb to 700 then climbing MALSR DME required.",
+  "climb_altitude": 2000,
+  "waypoints": [],
+  "turn_direction": "NONE",
+  "holding_required": false,
+  "holding_fix": null,
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

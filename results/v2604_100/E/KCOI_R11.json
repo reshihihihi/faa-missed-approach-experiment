@@ -1,0 +1,33 @@
+{
+  "raw_instruction": "Climb to 3000 direct YONUS and on track 190° to MLB VOR/DME and hold.",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "YONUS",
+    "MLB"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "MLB",
+  "initial_track": "190°",
+  "turn_trigger": null,
+  "holding_details": {
+    "fix": "MLB",
+    "inbound_course": "198°"
+  },
+  "evidence": {
+    "raw_instruction": "Missed approach text in upper right: 'Climb to 3000 direct YONUS and on track 190° to MLB VOR/DME and hold.'",
+    "climb_altitude": "3000 shown in missed approach text and profile",
+    "waypoints": "YONUS and MLB labeled on chart",
+    "turn_direction": "No turn direction stated",
+    "holding_required": "Holding pattern depicted at MLB in MISSED APCH FIX inset",
+    "holding_fix": "MELBOURNE MLB labeled in missed approach fix inset"
+  },
+  "_questionnaire": {
+    "Q1": "yes",
+    "Q2": "yes",
+    "Q3": "yes",
+    "Q4": "no",
+    "Q5": "yes",
+    "Q6": "yes"
+  }
+}

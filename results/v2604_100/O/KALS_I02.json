@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 8700+ft -> DF ALS 11000+ft -> HM ALS 11000+ft",
+  "climb_altitude": 11000,
+  "waypoints": [
+    "ALS"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "ALS",
+  "initial_track": null,
+  "turn_trigger": "ALS",
+  "holding_details": null
+}

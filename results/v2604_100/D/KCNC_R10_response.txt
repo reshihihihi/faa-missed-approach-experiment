@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "Climb to 3000 direct EBORE and hold.",
+  "climb_altitude": 3000,
+  "waypoints": ["EBORE"],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "EBORE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Upper right corner of chart in MISSED APPROACH box",
+    "climb_altitude": "Climb to 3000 direct EBORE and hold.",
+    "waypoints": "EBORE named in missed approach instruction and depicted on plan view",
+    "turn_direction": "No turn direction specified in instruction",
+    "holding_required": "Holding pattern depicted at EBORE on plan view with 099°/279° tracks, 4 NM",
+    "holding_fix": "EBORE named in missed approach instruction"
+  }
+}

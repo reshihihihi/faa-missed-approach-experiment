@@ -1,0 +1,21 @@
+{
+  "raw_instruction": "Climb to 3000 direct FISAV and hold.",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "FISAV"
+  ],
+  "turn_direction": "unknown",
+  "holding_required": true,
+  "holding_fix": "FISAV",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 3000 direct FISAV and hold.",
+    "climb_altitude": "Climb to 3000 direct FISAV and hold.",
+    "waypoints": "direct FISAV and hold.",
+    "turn_direction": "not found",
+    "holding_required": "FISAV and hold.",
+    "holding_fix": "direct FISAV and hold."
+  }
+}

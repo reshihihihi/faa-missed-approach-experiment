@@ -1,0 +1,112 @@
+INCOLN, ILLINOIS
+AL-5697 (FAA)
+26022
+APP CRS
+Rwy Ldg
+4000
+TDZE
+593
+RNAV (GPS) RWY 3
+035°
+Apt Elev
+594
+RNP APCH.
+LOGAN COUNTY (AAA)
+V
+If local altimeter setting not received, use Springfield, IL altimeter setting
+A
+and increase all MDAs 60 feet. VDP NA with Springfield, IL altimeter
+MISSED APPROACH: Climb to 2700 direct
+setting. Rwy 3 helicopter visibility reduction below 3 SM NA.
+PIMKE and hold.
+AWOS-3
+SAINT LOUIS APP CON
+118.775
+UNICOM
+126.15 323.0
+122.8 (CTAF)0
+MISSED APCH FIX
+3100
+4 NM
+PIMKE
+RW03
+810
+(IAF)
+GROWL
+(FAF)
+2500 NoPT
+RUCON
+-116°
+(11.7)
+(IF/IAF)
+2300
+035
+TENCU
+(6.3)
+2500 NoPT
+305° (4.4)
+Procedure NA for arrivals at
+(IAF)
+SPI VORTAC on V173 and
+OBACO
+on V9-69 southwest bound.
+4 NM
+2500 NoPT
+ELEV
+594
+TDZE 593
+315°
+043°
+(18.1)
+2500 NoPT
+(13)
+F
+(IAF)
+2
+SPINNER
+SPI
+(IAF)
+LATHA
+VGSI and descent angles not coincident
+2700
+PIMKE
+4 NM
+TENCU
+(VGSI Angle 3.50/TCH 26).
+Holding Pattern
+-215°
+RUCON
+2500
+-035°
+1.5 NM
+035°→
+to RW03
+3
+2300
+x
+RW03
+3.05°
+TCH 36
+6.3 NM
+-3.7 NM
+1.5 NM
+035
+CATEGORY
+A
+B
+c
+D
+REIL Rwy 30
+1120-1½/2
+1120-13½/4
+LNAV MDA
+1120-1
+527 (600-1)
+MIRL Rwy 3-210
+527 (600-1½)
+527 (600-13/)
+LINCOLN, ILLINOIS
+LOGAN COUNTY (AAA)
+Orig-B 18JUL19
+40°10'N-89°20'W
+RNAV (GPS) RWY 3

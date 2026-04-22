@@ -1,0 +1,21 @@
+{
+  "raw_instruction": "Climbing left turn to 6000 direct KENYA and hold.",
+  "climb_altitude": 6000,
+  "waypoints": [
+    "KENYA"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "KENYA",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climbing left turn to 6000 direct KENYA and hold.",
+    "climb_altitude": "Climbing left turn to 6000 direct KENYA and hold.",
+    "waypoints": "direct KENYA and hold.",
+    "turn_direction": "Climbing left turn",
+    "holding_required": "direct KENYA and hold.",
+    "holding_fix": "direct KENYA and hold."
+  }
+}

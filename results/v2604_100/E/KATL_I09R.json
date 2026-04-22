@@ -1,0 +1,34 @@
+{
+  "raw_instruction": "Climb to 4000 on heading 100° and AHN VOR/DME R-235 to CONNI/AHN 30.2 DME and hold.",
+  "climb_altitude": 4000,
+  "waypoints": [
+    "AHN",
+    "CONNI"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "CONNI",
+  "initial_track": "100°",
+  "turn_trigger": null,
+  "holding_details": {
+    "fix": "CONNI",
+    "radial": "R-235",
+    "dme": 30.2
+  },
+  "evidence": {
+    "raw_instruction": "Missed approach text box upper right: 'Climb to 4000 on heading 100° and AHN VOR/DME R-235 to CONNI/AHN 30.2 DME and hold.'",
+    "climb_altitude": "4000 explicitly stated in instruction",
+    "waypoints": "AHN and CONNI explicitly named in instruction and on chart",
+    "turn_direction": "No turn direction stated",
+    "holding_required": "Word 'hold' explicitly in instruction; racetrack depicted at CONNI",
+    "holding_fix": "CONNI labeled as MISSED APCH FIX on chart"
+  },
+  "_questionnaire": {
+    "Q1": "yes",
+    "Q2": "yes",
+    "Q3": "yes",
+    "Q4": "no",
+    "Q5": "yes",
+    "Q6": "yes"
+  }
+}

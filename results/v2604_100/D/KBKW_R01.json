@@ -1,0 +1,21 @@
+{
+  "raw_instruction": "Climb to 5900 direct YISUK and hold, continue climb-in-hold to 5900.",
+  "climb_altitude": 5900,
+  "waypoints": [
+    "YISUK"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "YISUK",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Upper right corner of chart in MISSED APPROACH box",
+    "climb_altitude": "Climb to 5900",
+    "waypoints": "direct YISUK and hold",
+    "turn_direction": "No turn direction stated in instruction",
+    "holding_required": "Hold depicted at YISUK in plan view and stated in missed approach text",
+    "holding_fix": "YISUK named in missed approach instruction and shown in plan view"
+  }
+}

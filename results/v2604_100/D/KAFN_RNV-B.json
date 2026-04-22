@@ -1,0 +1,21 @@
+{
+  "raw_instruction": "Climb to 3400 direct QOSNU and hold.",
+  "climb_altitude": 3400,
+  "waypoints": [
+    "QOSNU"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "QOSNU",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Found in the MISSED APPROACH box in the upper right of the chart header area",
+    "climb_altitude": "3400 direct QOSNU and hold",
+    "waypoints": "QOSNU named in missed approach instruction and depicted on plan view",
+    "turn_direction": "No turn direction specified in the instruction",
+    "holding_required": "Holding pattern depicted at QOSNU on plan view with 'and hold' stated in instruction",
+    "holding_fix": "QOSNU named explicitly in missed approach instruction"
+  }
+}

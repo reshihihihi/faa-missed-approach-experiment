@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climb to 2700 direct ESEGE and hold.",
+  "climb_altitude": 2700,
+  "waypoints": [
+    "ESEGE"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "ESEGE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

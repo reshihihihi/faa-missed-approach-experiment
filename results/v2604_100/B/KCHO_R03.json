@@ -1,0 +1,21 @@
+{
+  "raw_instruction": "Climb to 2000 then climbing right turn to 4000 direct GVE VORTAC and hold.",
+  "climb_altitude": 4000,
+  "waypoints": [
+    "GVE"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "GVE",
+  "initial_track": null,
+  "turn_trigger": "2000",
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 2000 then climbing right turn to 4000 direct GVE VORTAC and hold.",
+    "climb_altitude": "climbing right turn to 4000 direct GVE VORTAC and hold.",
+    "waypoints": "direct GVE VORTAC and hold.",
+    "turn_direction": "climbing right turn",
+    "holding_required": "direct GVE VORTAC and hold.",
+    "holding_fix": "direct GVE VORTAC and hold."
+  }
+}

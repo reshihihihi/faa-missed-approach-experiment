@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "Climb to 3500 direct DLORA and hold.",
+  "climb_altitude": 3500,
+  "waypoints": ["DLORA"],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "DLORA",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Upper right notes box labeled 'MISSED APPROACH'",
+    "climb_altitude": "Climb to 3500 direct DLORA and hold.",
+    "waypoints": "DLORA named in missed approach text and on plan view",
+    "turn_direction": "No turn direction stated in instruction",
+    "holding_required": "Text states 'and hold' at DLORA; holding pattern depicted on plan view",
+    "holding_fix": "DLORA named in missed approach instruction"
+  }
+}

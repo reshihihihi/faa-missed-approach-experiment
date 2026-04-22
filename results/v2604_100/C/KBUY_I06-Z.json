@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climb to 1600 then climbing right turn to 3000 direct LIB VORTAC and hold.",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "LIB"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "LIB",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

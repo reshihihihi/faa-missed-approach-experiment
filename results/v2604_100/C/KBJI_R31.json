@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climb to 3200 direct TEGAE and hold.",
+  "climb_altitude": 3200,
+  "waypoints": [
+    "TEGAE"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "TEGAE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

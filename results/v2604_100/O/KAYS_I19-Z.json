@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 800+ft -> DF AY 1700+ft -> HM AY 1700+ft",
+  "climb_altitude": 1700,
+  "waypoints": [
+    "AY"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "AY",
+  "initial_track": null,
+  "turn_trigger": "AY",
+  "holding_details": null
+}

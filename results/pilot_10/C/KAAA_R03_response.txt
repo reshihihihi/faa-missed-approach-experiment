@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "Climb to 2700 direct PIMKE and hold.",
+  "climb_altitude": 2700,
+  "waypoints": ["PIMKE"],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "PIMKE",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Upper right notes box labeled 'MISSED APPROACH'",
+    "climb_altitude": "Climb to 2700 direct PIMKE and hold.",
+    "waypoints": "PIMKE named in missed approach text and in MISSED APCH FIX box",
+    "turn_direction": "No turn direction stated in instruction",
+    "holding_required": "Text states 'and hold' at PIMKE; holding pattern depicted in MISSED APCH FIX inset",
+    "holding_fix": "PIMKE named in missed approach text and fix inset"
+  }
+}

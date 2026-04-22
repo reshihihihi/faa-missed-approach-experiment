@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climbing left turn to 12000 direct PAROX and hold, continue climb-in-hold to 12000.",
+  "climb_altitude": 12000,
+  "waypoints": [
+    "PAROX"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "PAROX",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

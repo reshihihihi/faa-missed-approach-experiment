@@ -1,0 +1,22 @@
+{
+  "raw_instruction": "Climb to 4000 on heading 100° and AHN VOR/DME R-235 to CONNI/AHN 30.2 DME and hold.",
+  "climb_altitude": 4000,
+  "waypoints": [
+    "CONNI",
+    "AHN"
+  ],
+  "turn_direction": "unknown",
+  "holding_required": true,
+  "holding_fix": "CONNI",
+  "initial_track": "100°",
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 4000 on heading 100° and AHN VOR/DME R-235 to CONNI/AHN 30.2 DME and hold.",
+    "climb_altitude": "Climb to 4000",
+    "waypoints": "CONNI/AHN 30.2 DME",
+    "turn_direction": "not explicitly stated",
+    "holding_required": "and hold.",
+    "holding_fix": "CONNI/AHN 30.2 DME"
+  }
+}

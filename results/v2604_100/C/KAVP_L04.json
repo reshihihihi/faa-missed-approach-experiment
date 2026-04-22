@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climb to 3000 then climbing right turn to 4000 direct LVZ VORTAC and hold.",
+  "climb_altitude": 4000,
+  "waypoints": [
+    "LVZ"
+  ],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "LVZ",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

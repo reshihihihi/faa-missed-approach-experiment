@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "Climbing left turn to 4800 direct SWOBS and hold.",
+  "climb_altitude": 4800,
+  "waypoints": [
+    "SWOBS"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "SWOBS",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

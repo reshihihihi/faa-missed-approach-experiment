@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "MISSED APPROACH: Climbing left turn to 6000 direct Rwy 5 helicopter visibility reduction below 1 SM NA. KENYA and hold.",
+  "climb_altitude": 6000,
+  "waypoints": [
+    "KENYA"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "KENYA",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

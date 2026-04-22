@@ -1,0 +1,115 @@
+RNAV (RNP) Z RWY 14I
+38°33'N-89°50'W
+Drig. 2ZNOV25
+SCOTT AFB/MIDAMERICA ST LOUIS (BLV)
+BELLEVILLE, ILLINOIS
+HIRL Rwys 14R-32L and 14L-32R
+AUTHORIZATION REQUIRED
+REIL Rwy 14L
+RNP 0.30 DA
+425 (500-3)
+867/40
+773/40
+RNP 0.15 DA
+331 (400-3/)
+A
+CATEGORY
+D
+c
+B
+5.4 NM
+1.6 NM-
+TCH 55
+m
+GP 3.00°
+6ε
+2000
+RRML
+27l
+8ε
+A
+2000
+2000
+TMR
+NMOO
+Cogno IS
+OFAFY
+See planview for multiple
+PIRPY
+A
+AR
+∆
+(VGSI Angle 3.00/TCH 71).
+DUTMY
+3000
+2000
+VGSI and RNAV glidepath not coincident
+139°
+TDZE 442
+D
+ELEV 459
+Δ283°
+DUTMY
+210K
+AIRIK
+103
+(IF)
+4 NM
+ 
+RW14L
+3
+COSE
+6ε
+('g)
+210
+()8
+NHOR
+200
+(31)
+¤
+OAA
+A A)
+(96)
+DPPRP
+2200
+O
+8
+000
+RECLA
+BALLY
+700
+(IF)
+2700
+MSA
+119.2 275.8
+128.25 253.5
+125.2 281.5
+GND CON
+SCOTT TOWER
+128.7 256.7
+ST LOUIS APP CON
+ATIS
+and hold.
+climbing left turn to 3000 direct DUTMY
+obov 54°C.For inop ALS,incea RNP 0.15 all Cats visbility
+to RVR 5000.
+ASR
+MISSED APPROACH: Climb to 200O then
+For uncompensated Baro-VNAV systems, procedure NA below -15°C
+NA
+RNP AR APCH - GPS. Authorization required. From RECLA, COSET: RF.
+T
+SCOTT AFB/MIDAMERICA ST LOUIS (BLV)
+RNAV (RNP) Z RWY 14L
+459
+Apt Elev
+442
+TDZE
+139°
+25331
+AL-46 (FAA)
+10000
+Rwy Ldg
+APP CRS
+SIONIMII
+EELIllIE.

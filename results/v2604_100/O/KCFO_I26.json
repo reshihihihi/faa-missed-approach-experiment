@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 6100+ft -> VI -> CF SKIPI 7200+ft -> HM SKIPI 7200+ft",
+  "climb_altitude": 7200,
+  "waypoints": [
+    "SKIPI"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "SKIPI",
+  "initial_track": null,
+  "turn_trigger": null,
+  "holding_details": null
+}

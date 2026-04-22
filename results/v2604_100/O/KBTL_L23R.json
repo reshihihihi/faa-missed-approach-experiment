@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 1400+ft -> DF VVTEN 3000+ft -> HM VVTEN 3000+ft",
+  "climb_altitude": 3000,
+  "waypoints": [
+    "VVTEN"
+  ],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "VVTEN",
+  "initial_track": null,
+  "turn_trigger": "VVTEN",
+  "holding_details": null
+}

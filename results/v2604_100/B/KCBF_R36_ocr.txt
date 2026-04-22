@@ -1,0 +1,150 @@
+BLorPS, IOWA
+AL-5540 (FAA)
+WAAS
+26078
+CH 53606
+APP CRS
+Rwy Ldg
+5500
+357°
+TDZE
+1245
+RNAV (GPS) RWY 36
+W36A
+Apt Elev
+1245
+COUNCIL BLUFFS MUNI (CBF)
+RNP APCH.
+T
+Baro-VNAV and VDP NA when using Eppley Airfield altimeter setting. For uncompensated
+Å
+Baro-VNAV systems, LNAV/VNAV NA below -17°C or above 54°C. When local altimeter
+setting not received, use Eppley Airfield altimeter setting and increase LPV DA to 1498 feet,
+MISSED APPROACH: Climb to
+LNAV/VNAV DA to 1548 feet, and all MDA 60 feet and increase LNAV/VNAV all Cats
+3000 direct IPORE and hold.
+visibility /8 SM, LNAV Cat C and D visibility/8 SM, and Circling Cat C and D visibility  SM.
+AWOS-3
+OMAHA APP CON
+UNICOM
+126.575
+124.5 263.0
+122.725 (CTAF)
+……………………………
+MISSED APCH FIX
+4 NM
+IPORE
+3900
+RW36
+M1319±
+HODIN
+1.7 NM to
+RW36
+(FAF)
+OMAHA
+Procedure NA for arrival on OVR
+JATIN
+OVR
+VORTAC airway radials 104 CW 276.
+3000
+2220
+187° (6.1)
+2060
+(IF/IAF)
+(19)
+MEPWE
+WAMET
+3000
+092°
+3000 NoPT
+3000
+EMEND
+086°
+3000 NoPT
+(7.8)
+267°
+262
+(IAF)
+(6.4)
+(6.4)
+(8.6)
+CAVIP
+(IAF)
+VOHBU
+3
+5000
+4 NM
+HOLD
+3000
+ELEV
+1245
+TDZE 1245
+REIL Rwys 14, 32, 18, and 36
+MIRL Rwy 14-32
+WAMET
+3000
+IPORE
+HIRL Rwy 18-36
+4 NM
+81
+Holding Pattern
+JATIN
+a
+HODIN
+5000
+177°
+1.7 NM to
+2900
+*LNAV only
+RW36
+300
+357°
+-357°
+*0.9 NM to
+5500 X 100
+×
+RW36
+2900
+RW36
+GP 3.00°
+*1820
+TCH 50
+6.1 NM
+3.4 NM
+0.8 NM
+0.9 NM
+CATEGORY
+A
+B
+c
+D
+¤
+LPV
+DA
+1445-3/ 200 (200-3½)
+LNAV/
+1495-3/
+250 (300-3/)
+①
+DA
+32
+VNAV
+36
+LNAV MDA
+1580-1
+335 (400-1)
+357°
+1780-1
+1840-1
+1840-1½2
+1880-2
+CIRCLING
+535 (600-1)
+595 (600-1)
+595 (600-11/2)
+635 (700-2)
+COUNCIL BLUFFS, IOWA
+COUNCIL BLUFFS MUNI(CBF)
+Amdt 2A 100CT19
+41°16'N - 95°46'W
+RNAV (GPS) RWY 36

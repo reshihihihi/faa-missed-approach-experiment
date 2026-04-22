@@ -1,0 +1,23 @@
+{
+  "raw_instruction": "Climb to 900 then climbing left turn to 2600 on heading 180° and GVE VORTAC R-028 to NISAE/GVE 22.9 DME and hold.",
+  "climb_altitude": 2600,
+  "waypoints": ["NISAE", "GVE"],
+  "turn_direction": "LEFT",
+  "holding_required": true,
+  "holding_fix": "NISAE",
+  "initial_track": "180°",
+  "turn_trigger": "900",
+  "holding_details": {
+    "track": "028°",
+    "direction": "LEFT",
+    "leg_time": "1 min"
+  },
+  "evidence": {
+    "raw_instruction": "Missed approach box in upper right of plan view header area",
+    "climb_altitude": "climbing left turn to 2600",
+    "waypoints": "NISAE/GVE 22.9 DME",
+    "turn_direction": "climbing left turn",
+    "holding_required": "hold depicted at NISAE in plan view and profile view with 'HOLD 4800/2600' label",
+    "holding_fix": "NISAE/GVE 22.9 DME and hold"
+  }
+}

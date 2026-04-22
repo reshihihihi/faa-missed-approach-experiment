@@ -1,0 +1,42 @@
+{
+  "id": "KBUY_I06-Z",
+  "image": "05694IZLZ6_p0.png",
+  "model": "claude-sonnet-4-6",
+  "system_prompt": "You are an expert aviation information extractor specializing in FAA Instrument Approach Procedures (IAPs).\n\nYou will receive an image of a FAA IAP chart and one focused extraction question about the MISSED APPROACH procedure.\n\nGLOBAL RULES:\n1. Use only information explicitly visible in the chart image.\n2. Do not guess, infer, or fill gaps with aviation knowledge.\n3. If the requested value cannot be determined confidently from the image, return the required fallback value exactly as instructed.\n4. Treat each question independently. Do not assume answers to other questions.\n5. When waypoint or fix names are requested, return uppercase strings.\n6. Do not add explanations, markdown, commentary, or extra text.\n7. Output exactly the response format requested by the user prompt.\n\nThe goal of this setup is field-level extraction, so remain conservative and prefer \"unknown\" over unsupported inference.",
+  "questions": {
+    "raw_instruction": {
+      "prompt": "This is a FAA Instrument Approach Procedure (IAP) chart.\n\nTask:\nLocate the MISSED APPROACH instruction and return its text as it appears on the chart.\n\nOutput rules:\n- Return only the missed approach instruction text.\n- If no missed approach instruction can be identified confidently, return exactly:\nunknown\n- Do not return JSON.\n- Do not add labels or explanations.",
+      "response": "Climb to 1600 then climbing right turn to 3000 direct LIB VORTAC and hold."
+    },
+    "climb_altitude": {
+      "prompt": "This is a FAA Instrument Approach Procedure (IAP) chart.\n\nTask:\nDetermine the final climb-to altitude for the MISSED APPROACH.\n\nOutput rules:\n- Return only one plain integer in feet, such as:\n3000\n- If the climb altitude cannot be determined confidently, return exactly:\nunknown\n- Do not include units.\n- Do not return JSON.\n- Do not add labels or explanations.\n\nInterpretation rules:\n- If the missed approach includes more than one altitude, return the final target altitude to which the aircraft is instructed to climb.\n- Do not return an intermediate altitude if the instruction later says to continue climbing to a higher altitude.",
+      "response": "3000"
+    },
+    "turn_direction": {
+      "prompt": "This is a FAA Instrument Approach Procedure (IAP) chart.\n\nTask:\nDetermine the turn direction for the MISSED APPROACH.\n\nReturn exactly one of the following values:\n- LEFT\n- RIGHT\n- NONE\n- unknown\n\nInterpretation rules:\n- Use LEFT or RIGHT only if the MISSED APPROACH instruction text itself explicitly states a left turn or right turn, or if a turn direction is unambiguously attached to the main missed approach path immediately adjacent to that instruction.\n- Do not use LEFT or RIGHT based only on a holding pattern orientation, a feeder/transition path, or chart elements outside the main missed approach path.\n- Use NONE only if the missed approach can be identified and there is no explicit left/right turn requirement in the missed approach instruction.\n- Use unknown if the direction cannot be determined confidently.\n\nDo not return JSON.\nDo not add labels or explanations.",
+      "response": "RIGHT"
+    },
+    "holding_required": {
+      "prompt": "This is a FAA Instrument Approach Procedure (IAP) chart.\n\nTask:\nDetermine whether the MISSED APPROACH explicitly includes a holding pattern or a hold instruction.\n\nReturn exactly one of the following values:\n- true\n- false\n- unknown\n\nRules:\n- Return true only if the main MISSED APPROACH path itself explicitly ends in a hold instruction or a holding pattern clearly attached to that path.\n- Do not return true for holding patterns, racetracks, or fixes that appear elsewhere on the chart but are not clearly part of the main missed approach path.\n- Return false only if the missed approach can be identified and there is no explicit holding requirement in the main missed approach path.\n- Return unknown if the chart does not allow a confident decision.\n\nDo not return JSON.\nDo not add labels or explanations.",
+      "response": "true"
+    },
+    "holding_fix": {
+      "prompt": "This is a FAA Instrument Approach Procedure (IAP) chart.\n\nTask:\nDetermine the holding fix used in the MISSED APPROACH, if one is explicitly shown.\n\nReturn exactly one of the following:\n- An uppercase fix name such as:\nMUDRE\n- null\n- unknown\n\nRules:\n- Return the fix name only if the main MISSED APPROACH path explicitly includes a hold and the holding fix is clearly identified as part of that same path.\n- Do not return a fix that belongs only to another chart element, transition, or unrelated holding depiction.\n- Return null only if the missed approach can be identified and clearly does not include holding.\n- Return unknown if holding may exist but the fix cannot be determined confidently.\n\nDo not return JSON.\nDo not add labels or explanations.",
+      "response": "LIB"
+    },
+    "waypoints": {
+      "prompt": "This is a FAA Instrument Approach Procedure (IAP) chart.\n\nTask:\nList the key waypoint or fix names that define the MISSED APPROACH path.\n\nOutput rules:\n- Return only a JSON array of uppercase strings.\n- Example:\n[\"MUDRE\", \"HOOKK\"]\n- If no waypoint or fix name can be identified confidently, return:\n[]\n- Do not include commentary or any other text.\n\nSelection rules:\n- Include named fixes, intersections, or waypoints that the aircraft is instructed to proceed to, hold at, or use as part of the missed approach path.\n- Exclude airport names, frequencies, headings, distances, generic labels, and chart annotations.\n- Exclude standalone navaid names when they appear only as supporting references for a radial, DME, or intersection naming pattern and are not themselves the destination fix.\n- If both an intersection/fix and a supporting navaid appear together, prefer the actual destination fix or intersection.",
+      "response": "[\"LIB\"]"
+    }
+  },
+  "parsed_answers": {
+    "raw_instruction": "Climb to 1600 then climbing right turn to 3000 direct LIB VORTAC and hold.",
+    "climb_altitude": 3000,
+    "turn_direction": "RIGHT",
+    "holding_required": true,
+    "holding_fix": "LIB",
+    "waypoints": [
+      "LIB"
+    ]
+  }
+}

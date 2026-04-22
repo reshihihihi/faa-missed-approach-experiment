@@ -1,0 +1,19 @@
+{
+  "raw_instruction": "Climb to 2500 on heading 155° and BAL VORTAC R-153 to DUDDS/BAL 12 DME and hold.",
+  "climb_altitude": 2500,
+  "waypoints": ["DUDDS"],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "DUDDS",
+  "initial_track": "155°",
+  "turn_trigger": null,
+  "holding_details": null,
+  "evidence": {
+    "raw_instruction": "Upper right corner of chart in MISSED APPROACH box",
+    "climb_altitude": "Climb to 2500",
+    "waypoints": "to DUDDS/BAL 12 DME and hold",
+    "turn_direction": "No turn direction explicitly stated",
+    "holding_required": "Text states 'and hold' at DUDDS",
+    "holding_fix": "DUDDS/BAL 12 DME"
+  }
+}

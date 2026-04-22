@@ -1,0 +1,13 @@
+{
+  "raw_instruction": "CA 1887+ft -> DF CYMOL 3500+ft -> HM CYMOL 3500+ft",
+  "climb_altitude": 3500,
+  "waypoints": [
+    "CYMOL"
+  ],
+  "turn_direction": "NONE",
+  "holding_required": true,
+  "holding_fix": "CYMOL",
+  "initial_track": null,
+  "turn_trigger": "CYMOL",
+  "holding_details": null
+}

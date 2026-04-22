@@ -1,0 +1,130 @@
+WAAS
+AL-10310 (FAA)
+24025
+CH72632
+APP CRS
+Rwy Idg
+5500
+TDZE
+1126
+RNAV (GPS) RWY 31
+W31A
+306°
+Apt Elev
+126
+RNP APCH - GPS.
+WILLMAR MUNI/JOHN L RICE FLD (BDH)
+For uncompensated Baro-VNAV systems, LNAV/VNAV NA below -17°C or above
+54°C. When local altimeter setting not received, use Olivia altimeter setting; increase
+LPV DA to 1381 feet; increase LNAV/VNAV DA to 1475 feet and all visibilities 1 SM;
+MISSED APPROACH: Climb to
+increase all MDAs 60 feet and LNAV visibility Cat C and D  SM. Baro-VNAV and
+2800 direct BEESE and hold.
+VDP NA when using Olivia Rgnl altimeter setting.
+AWOS-3PT
+MINNEAPOLIS CENTER
+UNICOM
+118.75
+125.5 323.1
+122.8 (CTAF)0
+126°
+ARMUW
+Procedure NA for arrivals at
+25 NM
+ARMUW on V175 northbound.
+3100 to HEPIV
+4 NM
+BEESE
+3100
+(29.5)
+2047
+1704
+A1528
+1165
+1239±
+A1330
+RW31
+Procedure NA for arrivals at
+CLAPS on T462 westbound.
+ZONUL
+1.6 NM to
+CLAPS
+2800
+RW31
+-099°
+(FAF)
+(17.6)
+FIKIG
+2800
+-306
+(6.2)
+126°
+(IF/IAF)
+HEPIV
+4 NM
+2
+(∠≥ε)
+HOLD
+6000
+ELEV 1126
+TDZE 1126
+2800
+(IAF)
+2800 NoPT
+REDWOOD FALLS
+Procedure NA for arrival on RWF VOR/DME
+RWF
+airway radials 350 CW 076.
+2800
+BEESE
+FIKIG
+HEPIV
+4 NM
+Holding Pattern
+ZONUL
+5500 X 100
+2800
+1.6 NM to
+RW31
+126°
+6000
+22
+1 NM to
+*
+306°
+←306°
+22800
+RW31
+2800
+RW31
+1680
+GP 3.00°
+31
+TCH 49
+3E
+1 NM
+90
+WN SE
+WN'9
+2908
+CT
+A
+B
+c
+D
+LPV
+DA
+1326-3½ 200 (200-3/)
+LNAV/
+DA
+1420-3 294 (300-3/)
+VNAV
+HIRL Rwy 13-310
+REIL Rwy 310
+LNAV MDA
+1500-1 374 (400-1)
+WILLMAR, MINNESOTA
+WILLMAR MUNI/JOHN L RICE FLD (BDH)
+Amdt 2 25JAN24
+45°07'N-95°08'W
+RNAV (GPS) RWY 31

@@ -1,0 +1,23 @@
+{
+  "raw_instruction": "Climb to 1700 then climbing right turn to 4000 direct LAREW LOM and hold, continue climb-in-hold to 4000.",
+  "climb_altitude": 4000,
+  "waypoints": ["LAREW"],
+  "turn_direction": "RIGHT",
+  "holding_required": true,
+  "holding_fix": "LAREW",
+  "initial_track": null,
+  "turn_trigger": "1700",
+  "holding_details": {
+    "track": null,
+    "direction": null,
+    "leg_time": "One Minute"
+  },
+  "evidence": {
+    "raw_instruction": "MISSED APPROACH: Climb to 1700 then climbing right turn to 4000 direct LAREW LOM and hold, continue climb-in-hold to 4000.",
+    "climb_altitude": "to 4000 direct LAREW LOM and hold, continue climb-in-hold to 4000",
+    "waypoints": "direct LAREW LOM",
+    "turn_direction": "climbing right turn",
+    "holding_required": "and hold, continue climb-in-hold to 4000",
+    "holding_fix": "direct LAREW LOM and hold"
+  }
+}

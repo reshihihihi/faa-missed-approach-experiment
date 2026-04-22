@@ -1,0 +1,1 @@
+This is a FAA Instrument Approach Procedure (IAP) chart. Extract only the missed approach information as specified in the schema above. Output only the JSON object.

@@ -1,0 +1,130 @@
+KRTTT ISLAND, FLORIDA
+AL-6988 (FAA)
+25107
+WAAS
+APP CRS
+Rwy Idg
+3601
+RNAV (GPS) RWY 11
+CH 65899
+114°
+TDZE
+6
+W11A
+Apt Elev
+6
+MERRITT ISLAND (COI)
+RNP APCH.
+MISSED APPROACH: Climb to
+Rwy 11 helicopter visibility reduction below 1 SM NA. When local altimeter setting
+3000 direct YONUS and on
+A  Mlu e tc A
+track 190° to MLB VOR/DME
+MDA 40 feet, increase LPV all Cats visibility mile. Night landing: Rwy 11 NA.
+and hold.
+AWOS-3PT
+ORLANDO APP CON
+UNICOM
+119.025
+134.95 281.425
+122.975 (CTAF)
+MALET
+R-2934
+(IAF)
+PALCY
+R-2932
+O
+R-2933
+(IF)
+LOUSA
+1600
+(FAF)
+COYDA
+-114°
+ACHMOD
+2.4 NM to
+(5.1)
+00
+RW11
+253
+459
+289
+RW11
+444^
+YONUS
+(IAF)
+IPZOF
+25 NM
+A
+533
+12.8)
+30O0
+PPP
+WI HOPA WSIN
+ETEY
+9
+TDZE
+6
+MELBOURNE
+MLB
+Procedure NA for arrivals
+º8
+on MLB VORTAC airway
+radials 276 CW 329.
+MELBOURNE
+4 NM2,
+MLB
+114°
+VGSI and RNAV glidepath not coincident
+3000
+YONUS
+MLB
+(VGSI Angle 3.00/TCH 42).
+tr
+190°
+LOUSA
+2000
+ACMOD
+*LNAV only.
+-114°
+COYDA
+3601 X 75
+1600
+2.4 NM to
+2a
+RW11
+*
+RW11
+GP 3.00°
+1600
+TCH 33
+*800
+5.1 NM
+- 2.4 NM−-
+-2.4NM-
+CATEGORY
+A
+B
+c
+D
+LPV
+DA
+291-1
+285 (300-1)
+NA
+LNAV MDA
+600-1
+594 (600-1)
+NA
+600-1
+620-1
+CIRCLING
+NA
+594 (600-1)
+614 (700-1)
+MIRL Rwy 11-290
+MERRITT ISLAND, FLORIDA
+MERRITT ISLAND (COI)
+1D 30JAN20
+28°20'N-80°41'W
+RNAV IGPS)RWY 1
