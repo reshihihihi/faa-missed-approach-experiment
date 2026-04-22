@@ -26,8 +26,8 @@
 
 样本集位于：
 
-- [sample_manifest_100.json](E:/experiment/data/v2604_100/sample_manifest_100.json)
-- [pairs_100.json](E:/experiment/data/v2604_100/pairs_100.json)
+- `data/v2604_100/sample_manifest_100.json`
+- `data/v2604_100/pairs_100.json`
 
 ### 2.2 样本规模与构成
 
@@ -50,7 +50,7 @@
 
 参考输出位于：
 
-- [O](E:/experiment/results/v2604_100/O)
+- `results/v2604_100/O`
 
 ## 3. 实验方案
 
@@ -114,12 +114,12 @@
 
 评估脚本位于：
 
-- [evaluate.py](E:/experiment/evaluate.py)
+- `evaluate.py`
 
 评估结果位于：
 
-- [evaluation_report.md](E:/experiment/results/v2604_100/evaluation_report.md)
-- [all_metrics.json](E:/experiment/results/v2604_100/all_metrics.json)
+- `results/v2604_100/evaluation_report.md`
+- `results/v2604_100/all_metrics.json`
 
 ### 4.1 Scalar 指标
 
@@ -314,8 +314,8 @@
 
 错误分类结果位于：
 
-- [error_analysis_report.md](E:/experiment/results/v2604_100/error_analysis_report.md)
-- [error_analysis.json](E:/experiment/results/v2604_100/error_analysis.json)
+- `results/v2604_100/error_analysis_report.md`
+- `results/v2604_100/error_analysis.json`
 
 ### 7.1 A 的主要错误
 

@@ -1,7 +1,12 @@
 """Analyze KAAA/R03 record positions precisely."""
 from pathlib import Path
 
-CIFP_FILE = Path("e:/experiment/data/cifp/FAACIFP18")
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from repo_paths import get_dataset_dir
+
+CIFP_FILE = get_dataset_dir("v2604_100") / "cifp" / "FAACIFP18"
 
 print("KAAA / FR03 records:\n")
 with open(CIFP_FILE, "r", encoding="latin-1") as f:

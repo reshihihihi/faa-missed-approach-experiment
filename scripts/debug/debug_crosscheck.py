@@ -1,10 +1,17 @@
 """Cross-check pilot.json proc_ident vs CIFP proc_ident for all 10 samples."""
 import json
+import os
 from pathlib import Path
 
-MANIFEST  = Path("e:/experiment/data/pilot_10/sample_manifest.json")
-PAIRS_FILE = Path("e:/hangtu3/data/pairs/pilot.json")
-CIFP_FILE = Path("e:/experiment/data/pilot_10/cifp/FAACIFP18")
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from repo_paths import REPO_ROOT
+
+LEGACY_DATA_ROOT = Path(os.getenv("FAA_LEGACY_DATA_ROOT", REPO_ROOT / "data" / "preparation" / "legacy_pilot"))
+MANIFEST = REPO_ROOT / "data" / "pilot_10" / "sample_manifest.json"
+PAIRS_FILE = LEGACY_DATA_ROOT / "pairs" / "pilot.json"
+CIFP_FILE = REPO_ROOT / "data" / "pilot_10" / "cifp" / "FAACIFP18"
 
 with open(MANIFEST) as f:
     manifest = json.load(f)

@@ -64,10 +64,10 @@
 
 新 `C` 必须与现有 100 样本实验保持严格对齐：
 
-- 数据集：`E:/experiment/data/v2604_100`
-- 样本清单：[sample_manifest_100.json](E:/experiment/data/v2604_100/sample_manifest_100.json)
-- 样本配对：[pairs_100.json](E:/experiment/data/v2604_100/pairs_100.json)
-- 参考基准：[O](E:/experiment/results/v2604_100/O)
+- 数据集：`data/v2604_100`
+- 样本清单：`data/v2604_100/sample_manifest_100.json`
+- 样本配对：`data/v2604_100/pairs_100.json`
+- 参考基准：`results/v2604_100/O`
 
 输入模态固定为：
 
@@ -252,7 +252,7 @@
 
 目录：
 
-- `E:/experiment/results/v2604_100/C`
+- `results/v2604_100/C`
 
 每个样本输出：
 
@@ -281,8 +281,8 @@
 新 `C` 必须完全复用现有 100 样本评估体系：
 
 - 参考基准：路径 `O`
-- 评估脚本：[evaluate.py](E:/experiment/evaluate.py)
-- 错误分析脚本：[error_analysis.py](E:/experiment/error_analysis.py)
+- 评估脚本：`evaluate.py`
+- 错误分析脚本：`error_analysis.py`
 
 核心指标保持不变：
 

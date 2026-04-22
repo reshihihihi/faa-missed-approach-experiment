@@ -5,7 +5,7 @@ This is a non-destructive staging implementation for the new "C" method:
 image input + multiple single-field QA + final JSON aggregation.
 
 Outputs are written under:
-  e:/experiment/results/v2604_100/C_QA
+  results/v2604_100/C_QA
 
 Once the numbering migration is finalized, this script can be promoted to the
 official run_C.py entrypoint and the output directory can be renamed to C.

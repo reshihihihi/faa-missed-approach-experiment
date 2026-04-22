@@ -1,12 +1,44 @@
 # Reproduction Guide
 
-## Scope
+This document explains how to reproduce the formal 100-sample experiment in this repository.
 
-This document describes the practical reproduction assumptions for the current repository state.
+## 1. Reproduction Target
 
-It is intentionally lightweight and focuses on the current public repository layout rather than a full environment capture.
+The reproduction target is the formal dataset and result setting under:
 
-## 1. Install Dependencies
+- `data/v2604_100/`
+- `results/v2604_100/`
+
+This repository does not ask you to rediscover a new 100-sample split. The formal split is already fixed and committed through:
+
+- `data/v2604_100/sample_manifest_100.json`
+- `data/v2604_100/pairs_100.json`
+- `data/v2604_100/selection_100.json`
+
+In other words, reproduction here means:
+
+1. regenerate the missing public raw FAA inputs locally
+2. rerun the extraction paths on the same committed 100 samples
+3. rerun evaluation and error analysis
+
+## 2. What Is Already Included
+
+The repository already includes:
+
+- the formal 100-sample manifest
+- the committed paired structured CIFP procedure data
+- the prompts for all LLM paths
+- the current formal reports and metrics
+
+The repository does not include the large raw inputs by default:
+
+- chart PDFs
+- rendered chart PNGs
+- FAA CIFP archive contents
+
+Those are recreated locally from public FAA sources.
+
+## 3. Environment Setup
 
 Install Python dependencies:
 
@@ -14,87 +46,157 @@ Install Python dependencies:
 pip install -r requirements.txt
 ```
 
-Current key packages:
+Run a quick repository self-check:
 
-- `anthropic`
-- `paddleocr`
-- `requests`
+```bash
+python scripts/smoke_test.py
+```
 
-## 2. Configure Credentials
+Expected result:
 
-LLM-based paths expect Anthropic-compatible credentials through environment variables such as:
+- the script should report 100 manifest entries
+- the script should report 100 pair entries
+- the script should end with `Smoke test passed.`
+
+## 4. Download and Materialize Public FAA Inputs
+
+Run:
+
+```bash
+python scripts/build_dataset_100.py
+```
+
+This script performs the reproducibility-critical bootstrap:
+
+1. downloads the official FAA CIFP archive for cycle `2604`
+2. extracts `FAACIFP18` into `data/v2604_100/cifp/`
+3. downloads the FAA d-TPP metafile for traceability
+4. downloads the 100 chart PDFs referenced by the committed manifest
+5. renders page 1 of each PDF to the expected PNG filename under `data/v2604_100/charts/`
+
+Useful optional flags:
+
+```bash
+python scripts/build_dataset_100.py --skip-downloads
+python scripts/build_dataset_100.py --skip-render
+python scripts/build_dataset_100.py --force-render
+```
+
+After a successful run, the following local directories should exist:
+
+- `data/v2604_100/sources/`
+- `data/v2604_100/cifp/`
+- `data/v2604_100/pdfs/`
+- `data/v2604_100/charts/`
+
+The script also writes:
+
+- `data/v2604_100/materialization_report.json`
+
+## 5. Configure Model Credentials
+
+Paths `B`, `C`, `D`, and `E` require Anthropic-compatible credentials.
+
+Use either:
 
 ```bash
 ANTHROPIC_API_KEY=...
 ```
 
-or
+or:
 
 ```bash
 ANTHROPIC_AUTH_TOKEN=...
 ANTHROPIC_BASE_URL=...
 ```
 
-Do not commit secrets to the repository.
+Example PowerShell:
 
-## 3. Data Availability
+```powershell
+$env:ANTHROPIC_AUTH_TOKEN="your_token"
+$env:ANTHROPIC_BASE_URL="https://your-compatible-endpoint"
+```
 
-This repository keeps lightweight manifests and reports under version control, but excludes large raw FAA source files by default.
+## 6. Run the Formal Experiment
 
-If you want to fully rerun the pipeline, you will need access to the corresponding FAA chart PDFs, rendered chart images, and CIFP files.
+Reference baseline:
 
-Useful metadata files already included:
+```bash
+python scripts/run_O.py
+```
 
-- `data/v2604_100/sample_manifest_100.json`
-- `data/v2604_100/pairs_100.json`
-- `data/v2604_100/selection_100.json`
-- `data/v2604_100/candidate_pool.json`
+OCR paths:
 
-## 4. Important Path Assumption
+```bash
+python scripts/run_A.py
+python scripts/run_B.py
+```
 
-Some current scripts still assume local absolute paths such as:
-
-- `E:/experiment/...`
-
-If you run this repository in another location, update those path settings first.
-
-In particular, inspect:
-
-- `scripts/dataset_config.py`
-- `scripts/build_dataset_100.py`
-- any script with hard-coded `E:/experiment/...` paths
-
-## 5. Main Execution Entrypoints
-
-Formal path scripts:
-
-- `scripts/run_A.py`
-- `scripts/run_B.py`
-- `scripts/run_C.py`
-- `scripts/run_D.py`
-- `scripts/run_E.py`
-- `scripts/run_O.py`
-
-Evaluation:
-
-- `evaluate.py`
-- `error_analysis.py`
-
-## 6. Example Workflow
+Image-direct paths:
 
 ```bash
 python scripts/run_C.py
+python scripts/run_D.py
+python scripts/run_E.py
+```
+
+Then recompute metrics and error analysis:
+
+```bash
 python evaluate.py
 python error_analysis.py
 ```
 
-## 7. Current Reference Reports
+## 7. Expected Output Locations
 
-The current repository already includes generated reports for the formal 100-sample experiment:
+Formal outputs are written under:
+
+- `results/v2604_100/O/`
+- `results/v2604_100/A/`
+- `results/v2604_100/B/`
+- `results/v2604_100/C/`
+- `results/v2604_100/D/`
+- `results/v2604_100/E/`
+
+Reports are written to:
+
+- `results/v2604_100/evaluation_report.md`
+- `results/v2604_100/all_metrics.json`
+- `results/v2604_100/error_analysis_report.md`
+- `results/v2604_100/error_analysis.json`
+
+## 8. What Changed To Improve Reproducibility
+
+The main reproducibility fixes in the current repository state are:
+
+1. Core scripts no longer require the repository to live at `E:/experiment`.
+2. Evaluation scripts no longer rely on hard-coded absolute import paths.
+3. The formal dataset bootstrap no longer depends on an external private `e:/hangtu3` codebase.
+4. The missing public raw inputs can now be recreated directly from a repository script.
+5. A smoke test is provided so a new user can validate the repository before running expensive paths.
+
+## 9. Remaining Practical Limits
+
+The project is now reproducible in the practical sense for the fixed formal 100-sample setup, but a few limits still remain:
+
+1. LLM-based paths depend on external API availability and provider behavior.
+2. OCR-based paths depend on the local OCR environment and package installation.
+3. If the FAA changes or removes historical download URLs in the future, the raw-source bootstrap step may need maintenance.
+4. The repository reproduces the committed formal split, not a fresh independent sample-selection study.
+
+## 10. Recommended Verification Order
+
+For a fresh machine, the recommended order is:
+
+1. `python scripts/smoke_test.py`
+2. `python scripts/build_dataset_100.py`
+3. `python scripts/run_O.py`
+4. one path script among `A/B/C/D/E`
+5. `python evaluate.py`
+6. `python error_analysis.py`
+
+If you only want to inspect the current published result without rerunning everything, start from:
 
 - `results/v2604_100/final_report_100.md`
 - `results/v2604_100/evaluation_report.md`
 - `results/v2604_100/error_analysis_report.md`
-
-These are the main files to consult if you only want to inspect the current experiment results without rerunning everything.
-

@@ -11,7 +11,7 @@ from collections import defaultdict
 from pathlib import Path
 import sys
 
-sys.path.insert(0, str(Path("e:/experiment/scripts")))
+sys.path.insert(0, str(Path(__file__).resolve().parent / "scripts"))
 from dataset_config import MANIFEST_PATH, RESULTS_DIR
 
 MANIFEST = MANIFEST_PATH

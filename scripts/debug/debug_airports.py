@@ -1,7 +1,12 @@
 """Check all SUSAP subsections present for KABE and other sample airports."""
 from pathlib import Path
 
-CIFP_FILE = Path("e:/experiment/data/cifp/FAACIFP18")
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from repo_paths import get_dataset_dir
+
+CIFP_FILE = get_dataset_dir("v2604_100") / "cifp" / "FAACIFP18"
 
 target_airports = {"KAAT", "KABE", "KABI", "KAAA", "KAAF"}
 

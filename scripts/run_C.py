@@ -5,7 +5,7 @@ This path implements the new "C" method:
 image input + multiple single-field QA + final JSON aggregation.
 
 Outputs are written under:
-  e:/experiment/results/v2604_100/C
+  results/v2604_100/C
 """
 
 import argparse

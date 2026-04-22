@@ -31,6 +31,7 @@ data/v2604_100/images/
 data/v2604_100/pdfs/
 data/v2604_100/cifp/
 data/v2604_100/sources/
+data/v2604_100/materialization_report.json
 
 # Keep dataset manifests and pairing metadata
 !data/pilot_10/sample_manifest.json
@@ -38,4 +39,3 @@ data/v2604_100/sources/
 !data/v2604_100/pairs_100.json
 !data/v2604_100/selection_100.json
 !data/v2604_100/candidate_pool.json
-
