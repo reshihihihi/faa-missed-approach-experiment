@@ -93,7 +93,53 @@ The script also writes:
 
 - `data/v2604_100/materialization_report.json`
 
-## 5. Configure Model Credentials
+### Public FAA Source Traceability
+
+The repository uses official FAA public materials for cycle `2604`.
+
+The exact source endpoints are defined in [scripts/build_dataset_100.py](/E:/experiment/scripts/build_dataset_100.py):
+
+- `CIFP_ZIP_URL`
+  Official FAA CIFP zip used to reconstruct `FAACIFP18`
+- `DTPP_XML_URL`
+  FAA d-TPP XML metafile used for traceability and chart metadata
+- `DTPP_PDF_BASE`
+  Base URL from which the formal 100 chart PDFs are downloaded
+
+The reproduction workflow therefore does not depend on a private local dataset mirror. It reconstructs the raw assets from committed metadata plus public FAA sources.
+
+## 5. How The Formal 100-Sample Split Was Constructed
+
+This repository reproduces a fixed committed 100-sample split. It does not ask a new reader to invent a fresh split.
+
+The relevant files are:
+
+- `data/v2604_100/candidate_pool.json`
+- `data/v2604_100/selection_100.json`
+- `data/v2604_100/sample_manifest_100.json`
+- `data/v2604_100/pairs_100.json`
+
+The committed split should be understood as follows:
+
+1. Candidate approach procedures were derived from FAA cycle `2604` CIFP data.
+2. Candidate procedures were matched to FAA d-TPP approach chart PDFs.
+3. The paired CIFP procedure legs were used to identify missed-approach structure and whether the procedure required holding.
+4. A stratified sampling rule was applied over `procedure kind × holding_required`.
+5. A per-airport cap of `2` was used to avoid heavy concentration from a small number of airports.
+6. A fixed random seed `2604` was used for the formal committed split.
+
+The committed quota summary recorded in `selection_100.json` is:
+
+- `RNAV`, `holding_required=false`: `25`
+- `LOC`, `holding_required=false`: `13`
+- `ILS`, `holding_required=false`: `2`
+- `RNAV`, `holding_required=true`: `35`
+- `LOC`, `holding_required=true`: `12`
+- `ILS`, `holding_required=true`: `13`
+
+The selected-count summary also remains committed in the same file, so readers can inspect the exact realized composition of the formal split.
+
+## 6. Configure Model Credentials
 
 Paths `B`, `C`, `D`, and `E` require Anthropic-compatible credentials.
 
@@ -117,7 +163,7 @@ $env:ANTHROPIC_AUTH_TOKEN="your_token"
 $env:ANTHROPIC_BASE_URL="https://your-compatible-endpoint"
 ```
 
-## 6. Run the Formal Experiment
+## 7. Run the Formal Experiment
 
 Reference baseline:
 
@@ -147,7 +193,7 @@ python evaluate.py
 python error_analysis.py
 ```
 
-## 7. Expected Output Locations
+## 8. Expected Output Locations
 
 Formal outputs are written under:
 
@@ -165,7 +211,7 @@ Reports are written to:
 - `results/v2604_100/error_analysis_report.md`
 - `results/v2604_100/error_analysis.json`
 
-## 8. What Changed To Improve Reproducibility
+## 9. What Changed To Improve Reproducibility
 
 The main reproducibility fixes in the current repository state are:
 
@@ -175,7 +221,7 @@ The main reproducibility fixes in the current repository state are:
 4. The missing public raw inputs can now be recreated directly from a repository script.
 5. A smoke test is provided so a new user can validate the repository before running expensive paths.
 
-## 9. Remaining Practical Limits
+## 10. Remaining Practical Limits
 
 The project is now reproducible in the practical sense for the fixed formal 100-sample setup, but a few limits still remain:
 
@@ -184,7 +230,7 @@ The project is now reproducible in the practical sense for the fixed formal 100-
 3. If the FAA changes or removes historical download URLs in the future, the raw-source bootstrap step may need maintenance.
 4. The repository reproduces the committed formal split, not a fresh independent sample-selection study.
 
-## 10. Recommended Verification Order
+## 11. Recommended Verification Order
 
 For a fresh machine, the recommended order is:
 

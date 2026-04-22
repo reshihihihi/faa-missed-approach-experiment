@@ -164,6 +164,56 @@ python evaluate.py
 python error_analysis.py
 ```
 
+## Public Data Sources
+
+The formal dataset is built from official FAA public materials for cycle `2604`.
+
+Source families:
+
+- FAA CIFP archive
+- FAA d-TPP metafile
+- FAA d-TPP chart PDFs
+
+In the current implementation, the exact source endpoints are defined in [scripts/build_dataset_100.py](/E:/experiment/scripts/build_dataset_100.py):
+
+- `CIFP_ZIP_URL`
+- `DTPP_XML_URL`
+- `DTPP_PDF_BASE`
+
+The repository does not ask readers to search for files manually. Instead, it uses the committed manifest plus these official FAA sources to recreate the missing raw inputs locally.
+
+## How The 100 Samples Were Chosen
+
+The formal 100-sample experiment uses a fixed committed split. Readers do not need to resample the dataset to reproduce the reported experiment, but the selection logic is still preserved for traceability.
+
+The committed files are:
+
+- `data/v2604_100/candidate_pool.json`
+- `data/v2604_100/selection_100.json`
+- `data/v2604_100/sample_manifest_100.json`
+- `data/v2604_100/pairs_100.json`
+
+Selection logic, as reflected by the repository files and scripts:
+
+1. Candidate procedures were drawn from FAA cycle `2604` CIFP data.
+2. Only approach procedures relevant to this study were kept, primarily `RNAV`, `LOC`, and `ILS`.
+3. Each candidate procedure was matched to an FAA d-TPP approach chart PDF.
+4. The missed-approach segment was inspected from the paired CIFP procedure legs to determine attributes such as `holding_required`.
+5. A stratified quota was applied over `procedure kind × holding_required`.
+6. A per-airport cap of `2` was enforced to reduce over-concentration from a small number of airports.
+7. A fixed random seed `2604` was used for the committed formal split.
+
+The current committed quota summary is recorded in [selection_100.json](/E:/experiment/data/v2604_100/selection_100.json):
+
+- `RNAV`, `holding_required=false`: `25`
+- `LOC`, `holding_required=false`: `13`
+- `ILS`, `holding_required=false`: `2`
+- `RNAV`, `holding_required=true`: `35`
+- `LOC`, `holding_required=true`: `12`
+- `ILS`, `holding_required=true`: `13`
+
+Because the repository preserves the final manifest and pairs file, practical reproduction means rerunning the experiment on this same committed split, not regenerating a brand-new split from scratch.
+
 ## Reproducibility Scope
 
 This repository now supports two practical levels of reproduction:
