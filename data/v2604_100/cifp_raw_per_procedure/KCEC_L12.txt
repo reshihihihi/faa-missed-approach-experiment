@@ -1,0 +1,27 @@
+# Raw ARINC 424.18 PF records for KCEC_L12
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 17
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KCECK2FL12   ACEC   010CEC  K2D 0V       IF                                             18000                 0 DS   467352007
+SUSAP KCECK2FL12   ACEC   020SLAMMK2PC0E       TF                                 + 02200                           0 DS   467361511
+SUSAP KCECK2FL12   ACEC   030SLAMMK2PC0EE AR   PI CEC K2      3017004925420100D   + 01600                           0 DS   467371511
+SUSAP KCECK2FL12   ACHIDE 010CHIDEK2EA0E  A    IF                                             18000                 0 DS   467382412
+SUSAP KCECK2FL12   ACHIDE 020HUVMAK2PC0EE BR   AF CEC K2      300301101658    D   + 01600                           0 DS   467391511
+SUSAP KCECK2FL12   AWIPOG 010WIPOGK1EA0E  A    IF                                             18000                 0 DS   467401511
+SUSAP KCECK2FL12   AWIPOG 020GUKTEK2PC0E       TF CEC K2      34780110        D   + 04500                           0 DS   467411511
+SUSAP KCECK2FL12   AWIPOG 030TAPUEK2PC0E   L   AF CEC K2      325001103479    D   + 02800                           0 DS   467421511
+SUSAP KCECK2FL12   AWIPOG 040HUVMAK2PC0EE BL   AF CEC K2      300301103250    D   + 01600                           0 DS   467431511
+SUSAP KCECK2FL12   AYOBUN 010YOBUNK2EA0E  A    IF                                             18000                 0 DS   467442412
+SUSAP KCECK2FL12   AYOBUN 020HUVMAK2PC0EE BR   AF CEC K2      300301101810    D   + 01600                           0 DS   467451511
+SUSAP KCECK2FL12   L      010HUVMAK2PC0E  I    IF ICECK2      29920118        PI  + 01600     18000                 0 DS   467461511
+SUSAP KCECK2FL12   L      020SLAMMK2PC0E  F    CF ICECK2      2992005711900061PI  + 01600                 CEC   K2D 0 DS   467471511
+SUSAP KCECK2FL12   L      030YACUSK2PC0EY M    CF ICECK2      2992001311900043PI    00212             -301          0 DS   467482412
+SUSAP KCECK2FL12   L      040         0  M     CA                     1192        + 00700                           0 DS   467491511
+SUSAP KCECK2FL12   L      050CHIDEK2EA0EY      CF CEC K2      1658011016580070D   + 03000                           0 DS   467501511
+SUSAP KCECK2FL12   L      060CHIDEK2EA0EE  L   HM                     34580040    + 03000                           0 DS   467511511

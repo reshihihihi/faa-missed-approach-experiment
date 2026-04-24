@@ -1,0 +1,27 @@
+# Raw ARINC 424.18 PF records for KAPV_R18
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 17
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KAPVK2FR18   ABASAL 010BASALK2EA0E       IF                                             18000                 A JS   227041913
+SUSAP KAPVK2FR18   ABASAL 020DAVAYK2PC0E  A 010TF                     28110086    + 06800                           A JS   227051913
+SUSAP KAPVK2FR18   ABASAL 030HEDRIK2PC0EE B 010TF                     25470065    + 06000          180              A-JS   227061913
+SUSAP KAPVK2FR18   ANASTE 010NASTEK2EA0E       IF                                             18000                 A JS   227071913
+SUSAP KAPVK2FR18   ANASTE 020CURELK2PC0E  A 010TF                     04010122    + 06300                           A JS   227081913
+SUSAP KAPVK2FR18   ANASTE 030HEDRIK2PC0EE B 010TF                     07450065    + 06000          180              A-JS   227091913
+SUSAP KAPVK2FR18   R      010HEDRIK2PC0E  I    IF                                 + 06000     18000180              A-JS   227101913
+SUSAP KAPVK2FR18   R      020VICVUK2PC1E  F 010TF                     16460067    + 05800                 CFFCG K2PCA JS   227111913
+SUSAP KAPVK2FR18   R      020VICVUK2PC2WALPV       N          ALNAV                                                   JS   227121913
+SUSAP KAPVK2FR18   R      021JUTGAK2PC0E S  031TF                     17960032    V 0462004620        -350          A JS   227131913
+SUSAP KAPVK2FR18   R      022CUVEDK2PC0E S  031TF                     17960014    V 0410004100        -350          A JS   227141913
+SUSAP KAPVK2FR18   R      030CFFCGK2PC0EY M 031TF                     17960026      03122             -350          A JS   227151913
+SUSAP KAPVK2FR18   R      040         0  M     CA                     1796        + 03380                           A JS   227161913
+SUSAP KAPVK2FR18   R      050FAPIDK2PC0E    010DF                                                                   A JS   227171913
+SUSAP KAPVK2FR18   R      060FEBAXK2PC0E    010TF                     25310070                                      A JS   227181913
+SUSAP KAPVK2FR18   R      070NASTEK2EA0EY   010TF                     31580134    + 06000                           A JS   227191913
+SUSAP KAPVK2FR18   R      080NASTEK2EA0EE  L   HM                     24800050    + 06000                           A JS   227201913

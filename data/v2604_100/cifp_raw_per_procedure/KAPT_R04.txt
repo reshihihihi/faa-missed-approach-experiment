@@ -1,0 +1,24 @@
+# Raw ARINC 424.18 PF records for KAPT_R04
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 14
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KAPTK7FR04   AGICEG 010GICEGK7PC0E  A    IF                                             18000                 B PS   226722306
+SUSAP KAPTK7FR04   AGICEG 020OSEPEK7PC0EE B 010TF                                 + 03200                           B PS   226732306
+SUSAP KAPTK7FR04   AHINIV 010HINIVK7PC0E  A    IF                                             18000                 B PS   226742306
+SUSAP KAPTK7FR04   AHINIV 020OSEPEK7PC0EE B 010TF                                 + 03200                           B PS   226752306
+SUSAP KAPTK7FR04   R      010OSEPEK7PC0E  I    IF                                 + 03200     18000                 B PS   226762008
+SUSAP KAPTK7FR04   R      011ZIPOPK7PC0E    010TF                                 + 03100                           B PS   226772008
+SUSAP KAPTK7FR04   R      020GEKEFK7PC1E  F 010TF                                 + 02700                 ITIYO K7PCB PS   226782008
+SUSAP KAPTK7FR04   R      020GEKEFK7PC2WN          N          ALNAV                                                   PS   226792008
+SUSAP KAPTK7FR04   R      021CUKVAK7PC0E S  031TF                                 + 02240                           B PS   226802008
+SUSAP KAPTK7FR04   R      030ITIYOK7PC0EY M 031TF                                   00835              000          B PS   226812306
+SUSAP KAPTK7FR04   R      040         0  M     CA                     0250        + 01041                           B PS   226822008
+SUSAP KAPTK7FR04   R      050CUYASK7PC0E    010DF                                                                   B PS   226832008
+SUSAP KAPTK7FR04   R      060FARADK7PC0EY   010TF                                 + 04000                           B PS   226842010
+SUSAP KAPTK7FR04   R      070FARADK7PC0EE  R   HM                     02430050    + 04000                           B PS   226852010

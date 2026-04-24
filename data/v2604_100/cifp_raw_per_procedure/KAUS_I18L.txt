@@ -1,0 +1,24 @@
+# Raw ARINC 424.18 PF records for KAUS_I18L
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 14
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KAUSK4FI18L  ADOFFS 010DOFFSK4PC0E  A    IF                                 + 05000     18000                 0 DS   277322104
+SUSAP KAUSK4FI18L  ADOFFS 020SCALIK4PC0E       TF                                 + 04000                           0 DS   277332409
+SUSAP KAUSK4FI18L  ADOFFS 030RRTOOK4PC0EE B    CF IVNKK4      3547008017470046PI  + 02500                           0 DS   277342104
+SUSAP KAUSK4FI18L  AHOUKM 010HOUKMK4PC0E  A    IF                                   05000     18000210              0-PS   277352104
+SUSAP KAUSK4FI18L  AHOUKM 020RRTOOK4PC0EE B 010TF IVNKK4      35470080        PI  + 02500                           0 PS   277362207
+SUSAP KAUSK4FI18L  AJEDYE 010JEDYEK4PC0E  A    IF                                   04000     18000210              0-PS   277372104
+SUSAP KAUSK4FI18L  AJEDYE 020RRTOOK4PC0EE B 010TF IVNKK4      35470080        PI  + 02500                           0 PS   277382207
+SUSAP KAUSK4FI18L  I      010RRTOOK4PC0E  I    IF IVNKK4      35470080        PI  J 025000160018000                 0 DS   277392104
+SUSAP KAUSK4FI18L  I      020DDTOOK4PC0E  F    CF IVNKK4      3547005017500030PI  H 0160001600            CWK   K4D 0 DS   277402104
+SUSAP KAUSK4FI18L  I      030RW18LK4PG0GY M    CF IVNKK4      3547001717500033PI    00552             -300          0 DS   277412104
+SUSAP KAUSK4FI18L  I      040         0  M     CA                     1747        + 01000                           0 DS   277422104
+SUSAP KAUSK4FI18L  I      050         0    L   VIY                    0400                                          0 DS   277432104
+SUSAP KAUSK4FI18L  I      060HOOKKK4EA0EY      CF CWK K4      0877017008770110D   + 03000                           0 DS   277442104
+SUSAP KAUSK4FI18L  I      070HOOKKK4EA0EE  R   HM                     2677T010    + 03000                           0 DS   277452104

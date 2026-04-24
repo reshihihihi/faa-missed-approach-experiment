@@ -1,0 +1,23 @@
+# Raw ARINC 424.18 PF records for KCOE_R02
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 13
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KCOEK1FR02   AATOXE 010ATOXEK1EA0E       IF                                             18000                 B PS   547722203
+SUSAP KCOEK1FR02   AATOXE 020HIPRRK1EA0E  A 010TF                                 + 06400                           B PS   547732203
+SUSAP KCOEK1FR02   AATOXE 030JINAPK1PC0EE B 010TF                                 + 05300                           B PS   547742203
+SUSAP KCOEK1FR02   R      010JINAPK1PC0E  I    IF                                 + 05300     18000                 B PS   547752203
+SUSAP KCOEK1FR02   R      011ZAXIKK1PC0E    010TF                                 + 04700                           B PS   547762203
+SUSAP KCOEK1FR02   R      020CANGEK1PC1E  F 010TF                                 + 04300                 EGGID K1PCB PS   547772203
+SUSAP KCOEK1FR02   R      020CANGEK1PC2WN          N          ALNAV                                                   PS   547782203
+SUSAP KCOEK1FR02   R      021ZUKVUK1PC0E S  031TF                                 V 0360003600        -300          B PS   547792203
+SUSAP KCOEK1FR02   R      022GOREYK1PC0E S  031TF                                 V 0326003262        -300          B PS   547802203
+SUSAP KCOEK1FR02   R      030EGGIDK1PC0EY M 031TF                                   02507             -300          B PS   547812203
+SUSAP KCOEK1FR02   R      040         0  M     CA                     3540        + 02700                           B PS   547822203
+SUSAP KCOEK1FR02   R      050ZEXELK1PC0EY   010DF                                 + 07000                           B PS   547832203
+SUSAP KCOEK1FR02   R      060ZEXELK1PC0EE  R   HM                     11500070    + 07000                           B PS   547842203

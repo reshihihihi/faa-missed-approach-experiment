@@ -1,0 +1,20 @@
+# Raw ARINC 424.18 PF records for KBDR_L06
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 10
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KBDRK6FL06   ACCC   010CCC  K6D 0V       IF                                             18000                 0 NS   315621308
+SUSAP KBDRK6FL06   ACCC   020STANEK6PC0EY      TF                                 + 01800                           0 NS   315631310
+SUSAP KBDRK6FL06   ACCC   030STANEK6PC0EE AR   HF IBDRK6      240200620602T010PI  + 01800                           0 NS   315641707
+SUSAP KBDRK6FL06   L      010CFVFSK6PC0E  I    IF IBDRK6      24020132        PI  + 01800     18000                 0 NS   315651707
+SUSAP KBDRK6FL06   L      020STANEK6PC0E  F    CF IBDRK6      2402006206000070PI  + 01800                 CCC   K6D 0 NS   315662506
+SUSAP KBDRK6FL06   L      030CFLVPK6PC0EY M    CF IBDRK6      2402000806000055PI    00058             -300          0 NS   315672506
+SUSAP KBDRK6FL06   L      040         0  M     CA                     0602        + 00500                           0 NS   315682506
+SUSAP KBDRK6FL06   L      050         0    R   VIY                    2100                                          0 NS   315692506
+SUSAP KBDRK6FL06   L      060STANEK6PC0EY  R   CFYCCC K6      3105021631050043D   + 01800                           0 NS   315702506
+SUSAP KBDRK6FL06   L      070STANEK6PC0EE  R   HM                     0602T010    + 01800                           0 NS   315712506

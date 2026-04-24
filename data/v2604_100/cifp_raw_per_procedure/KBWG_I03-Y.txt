@@ -1,0 +1,17 @@
+# Raw ARINC 424.18 PF records for KBWG_I03-Y
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 7
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KBWGK5FI03-Y ANOORA 010NOORAK5PC0EE AR   PI IBWGK5      2139006716890100PI  + 02400     18000                 0 NS   429861911
+SUSAP KBWGK5FI03-Y I      010WEDVOK5PC0E  I    IF IBWGK5      21390130        PI  J 024000240018000                 0 NS   429871911
+SUSAP KBWGK5FI03-Y I      020NOORAK5PC0E  F    CF IBWGK5      2139006703400063PI  H 0240002326        -300BW    K5PN0 NS   429882413
+SUSAP KBWGK5FI03-Y I      030RW03 K5PG0GY M    CF IBWGK5      2139001303400054PI    00591             -300          0 NS   429891911
+SUSAP KBWGK5FI03-Y I      040         0  M     CA                     0339        + 02000                           0 NS   429901911
+SUSAP KBWGK5FI03-Y I      050NOORAK5PC0EY  R   DF                                 + 02400                           0 NS   429912413
+SUSAP KBWGK5FI03-Y I      060NOORAK5PC0EE  R   HM                     0339T010    + 02400                           0 NS   429922413

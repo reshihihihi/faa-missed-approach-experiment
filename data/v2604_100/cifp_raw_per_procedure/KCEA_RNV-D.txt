@@ -1,0 +1,21 @@
+# Raw ARINC 424.18 PF records for KCEA_RNV-D
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 11
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KCEAK3FRNV-D ABECNA 010BECNAK3PC0EE AR   HF                     27990050    + 03600     18000                 B PC   466512110
+SUSAP KCEAK3FRNV-D AHEGER 010HEGERK3PC0E  A    IF                                             18000                 B PC   466522110
+SUSAP KCEAK3FRNV-D AHEGER 020BECNAK3PC0EE B 010TF                                 + 03600                           B PC   466532110
+SUSAP KCEAK3FRNV-D ASOCOL 010SOCOLK3PC0E  A    IF                                             18000                 B PC   466542110
+SUSAP KCEAK3FRNV-D ASOCOL 020BECNAK3PC0EE B 010TF                                 + 03600                           B PC   466552110
+SUSAP KCEAK3FRNV-D R      010BECNAK3PC0E  I    IF                                 + 03600     18000                 B PC   466562110
+SUSAP KCEAK3FRNV-D R      020FOGORK3PC0E  F 031TF                                 + 03000                           B PC   466572110
+SUSAP KCEAK3FRNV-D R      030MAHYEK3PC0EY M 031TF                                   01378              000          B PC   466582204
+SUSAP KCEAK3FRNV-D R      040         0  M     CA                     2798        + 01778                           B PC   466592110
+SUSAP KCEAK3FRNV-D R      050BECNAK3PC0EY  L010DF                                 + 03600                           B PC   466602110
+SUSAP KCEAK3FRNV-D R      060BECNAK3PC0EE  R   HM                     27990050    + 03600                           B PC   466612110

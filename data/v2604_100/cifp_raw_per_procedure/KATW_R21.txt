@@ -1,0 +1,24 @@
+# Raw ARINC 424.18 PF records for KATW_R21
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 14
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KATWK5FR21   AASIGE 010ASIGEK5PC0EE AR   HF                     20820040    + 02700     18000                 A JS   268022213
+SUSAP KATWK5FR21   ARABEE 010RABEEK5EA0E       IF                                             18000                 A JS   268031006
+SUSAP KATWK5FR21   ARABEE 020WUPONK5PC0E  A 010TF                                 + 03100                           A JS   268042008
+SUSAP KATWK5FR21   ARABEE 030ASIGEK5PC0EE B 010TF                                 + 02700                           A JS   268052008
+SUSAP KATWK5FR21   ATIDME 010TIDMEK5PC0E  A    IF                                             18000                 A JS   268062213
+SUSAP KATWK5FR21   ATIDME 020ASIGEK5PC0EE B 010TF                                 + 02700                           A JS   268072213
+SUSAP KATWK5FR21   R      010ASIGEK5PC0E  I    IF                                 + 02700     18000                 A JS   268081310
+SUSAP KATWK5FR21   R      020SEMOEK5PC1E  F 010TF                                 + 02700                 RW21  K5PGA JS   268092008
+SUSAP KATWK5FR21   R      020SEMOEK5PC2WALPV       ALNAV/VNAV ALNAV                                                   JS   268101310
+SUSAP KATWK5FR21   R      021TUCNYK5PC0E S  031TF                                 V 0144001440        -300          A JS   268112008
+SUSAP KATWK5FR21   R      030RW21 K5PG0GY M 031TF                                   00928             -300          A JS   268122008
+SUSAP KATWK5FR21   R      040         0  M     CA                     2082        + 01129                           A JS   268131006
+SUSAP KATWK5FR21   R      050APIXEK5PC0EY   010DF                                 + 02900                           A JS   268141310
+SUSAP KATWK5FR21   R      060APIXEK5PC0EE  R   HM                     02800040    + 02900                           A JS   268152008

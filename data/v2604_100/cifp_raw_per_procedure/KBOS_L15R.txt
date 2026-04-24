@@ -1,0 +1,20 @@
+# Raw ARINC 424.18 PF records for KBOS_L15R
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 10
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KBOSK6FL15R  AAADMS 010AADMSK6PC0E  A    IF                                             18000                 0 PS   397282005
+SUSAP KBOSK6FL15R  AAADMS 020SWIGGK6EA0EE B 010TF IMDCK6      32860153        PI  + 04000                           0 PS   397292208
+SUSAP KBOSK6FL15R  AGDM   010GDM  K6D 0V  A    FC GDM K6      0000000010500341D   + 04000     18000                 0 DS   397302102
+SUSAP KBOSK6FL15R  AGDM   020SWIGGK6EA0EE B    CF IMDCK6      3286015310500020PI  + 04000                           0 DS   397312102
+SUSAP KBOSK6FL15R  L      010SWIGGK6EA0E  I    IF IMDCK6      32860153        PI  + 04000     18000                 0 DS   397321907
+SUSAP KBOSK6FL15R  L      011WOBURK6PC0E       CF IMDCK6      3286010514900048PI  + 03000                           0 DS   397331711
+SUSAP KBOSK6FL15R  L      020MALDYK6PC0E  F    CF IMDCK6      3285006414900041PI  + 01700                 BOS   K6D 0 DS   397342406
+SUSAP KBOSK6FL15R  L      030ZASMUK6PC0EY M    CF IMDCK6      3286001714900047PI    00204             -300          0 DS   397352406
+SUSAP KBOSK6FL15R  L      040CELTSK6EA0EYM     CF BOS K6      1540011715400131D   + 03000                           0 DS   397362102
+SUSAP KBOSK6FL15R  L      050CELTSK6EA0EE  R   HM                     3340T010    + 03000                           0 DS   397371113

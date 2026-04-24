@@ -1,0 +1,27 @@
+# Raw ARINC 424.18 PF records for KAVL_I17
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 17
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KAVLK7FI17   ABRA   010BRA  K7DB0N       IF                                             18000                 0 DS   280582102
+SUSAP KAVLK7FI17   ABRA   020KEANSK7PC0E       TF                                 + 06000                           0 DS   280592102
+SUSAP KAVLK7FI17   ABRA   030KEANSK7PC0EE AL   PI IIMOK7      3468007103180100PI  + 05600                           0 DS   280602102
+SUSAP KAVLK7FI17   ASOT   010SOT  K7D 0V  A    FC SOT K7      0000000011360190D   + 06600     18000                 0 DS   280612102
+SUSAP KAVLK7FI17   ASOT   020JUNOEK7PC0EE B    CF IIMOK7      3468015911360020PI  + 06600                           0 DS   280622102
+SUSAP KAVLK7FI17   ASUG   010SUG  K7D 0V       IF                                             18000                 0 DS   280632102
+SUSAP KAVLK7FI17   ASUG   020KEANSK7PC0E       TF                                 + 06600                           0 DS   280642102
+SUSAP KAVLK7FI17   ASUG   030KEANSK7PC0EE AL   PI IIMOK7      3468007103180100PI  + 05600                           0 DS   280652102
+SUSAP KAVLK7FI17   AWEAKS 010WEAKSK7EA0E       IF                                             18000                 0 DS   280662102
+SUSAP KAVLK7FI17   AWEAKS 020KEANSK7PC0E       TF                                 + 07500                           0 DS   280672102
+SUSAP KAVLK7FI17   AWEAKS 030KEANSK7PC0EE AL   PI IIMOK7      3468007103180100PI  + 05600                           0 DS   280682102
+SUSAP KAVLK7FI17   I      010JUNOEK7PC0E  I    IF IIMOK7      34680159        PI  J 066000410018000                 0 DS   280692102
+SUSAP KAVLK7FI17   I      011WUGAGK7PC0E       CF IIMOK7      3468010016700059PI  + 05000                           0 DS   280702102
+SUSAP KAVLK7FI17   I      020KEANSK7PC0E  F    CF IIMOK7      3468007116700030PI  H 0410004012        -300IM    K7PN0 DS   280712102
+SUSAP KAVLK7FI17   I      030RW17 K7PG0GY M    CF IIMOK7      3468001516700055PI    02219             -300          0 DS   280722102
+SUSAP KAVLK7FI17   I      040BRA  K7DB0NYM     DF                                 + 05400                           0 DS   280732102
+SUSAP KAVLK7FI17   I      050BRA  K7DB0NE  R   HM                     3468T010    + 05400                           0 DS   280742102

@@ -1,0 +1,20 @@
+# Raw ARINC 424.18 PF records for KBTP_L08
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 10
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KBTPK6FL08   AEWC   010EWC  K6D 0V       IF                                             18000                 0 NS   411511208
+SUSAP KBTPK6FL08   AEWC   020WOTIDK6PC0EY      TF                                 + 03000                           0 NS   411521310
+SUSAP KBTPK6FL08   AEWC   030WOTIDK6PC0EE AR   HF IBTPK6      260001230800T010PI  + 03000                           0 NS   411531713
+SUSAP KBTPK6FL08   L      010WOTIDK6PC0E  I    IF IBTPK6      26000123        PI  + 03000     18000                 0 NS   411541310
+SUSAP KBTPK6FL08   L      020ZUGOPK6PC0E  F    CF IBTPK6      2600006208000061PI  + 03000                 EWC   K6D 0 NS   411551310
+SUSAP KBTPK6FL08   L      021WOPOGK6PC0E S     CF IBTPK6      2600002608000036PI  + 01740             -300          0 NS   411561713
+SUSAP KBTPK6FL08   L      030RW08 K6PG0GY M    CF IBTPK6      2600000808000018PI    01282             -300          0 NS   411571713
+SUSAP KBTPK6FL08   L      040         0  M     CA                     0800        + 01800                           0 NS   411581713
+SUSAP KBTPK6FL08   L      050EWC  K6D 0VY  L   DF                                 + 03000                           0 NS   411591208
+SUSAP KBTPK6FL08   L      060EWC  K6D 0VE  R   HM                     1000T010    + 03000                           0 NS   411602014

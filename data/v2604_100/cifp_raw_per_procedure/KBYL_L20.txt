@@ -1,0 +1,19 @@
+# Raw ARINC 424.18 PF records for KBYL_L20
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 9
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KBYLK5FL20   ALOZ   010LOZ  K5D 0V  A    FC LOZ K5      0000000020780005D   + 04000     18000                 0 DS   443931210
+SUSAP KBYLK5FL20   ALOZ   020ZELUMK5PC0EE B    CF IBYLK5      0200012620780020PI  + 04000                           0 DS   443941310
+SUSAP KBYLK5FL20   L      010ZELUMK5PC0E  I    IF IBYLK5      02000126        PI  + 04000     18000                 0 DS   443951310
+SUSAP KBYLK5FL20   L      020HINORK5PC0E  F    CF IBYLK5      0200006620000060PI  + 03100                 LOZ   K5D 0 DS   443961310
+SUSAP KBYLK5FL20   L      021WENIPK5PC0E S     CF IBYLK5      0200002920000037PI  + 01940             -295          0 DS   443971310
+SUSAP KBYLK5FL20   L      030ITOZEK5PC0EY M    CF IBYLK5      0200000620000023PI    01223             -295          0 DS   443981310
+SUSAP KBYLK5FL20   L      040         0  M     CA                     2000        + 01800                           0 DS   443991210
+SUSAP KBYLK5FL20   L      050LOZ  K5D 0VY  L   DF                                 + 04000                           0 DS   444001210
+SUSAP KBYLK5FL20   L      060LOZ  K5D 0VE  R   HM                     1998T010    + 04000                           0 DS   444011210

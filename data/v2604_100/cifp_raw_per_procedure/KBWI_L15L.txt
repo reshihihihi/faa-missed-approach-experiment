@@ -1,0 +1,19 @@
+# Raw ARINC 424.18 PF records for KBWI_L15L
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 9
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KBWIK6FL15L  AKRENE 010KRENEK6PC0E  B    IF                                 + 03000     18000                 0 DS   438211310
+SUSAP KBWIK6FL15L  AKRENE 020MNKEYK6PC0EE      CF IUQCK6      3352009915520030PI  + 02500                           0 DS   438221602
+SUSAP KBWIK6FL15L  L      010MNKEYK6PC0E  I    IF IUQCK6      33520099        PI  + 02500     18000                 0 DS   438231602
+SUSAP KBWIK6FL15L  L      020ZOWEEK6PC0E  F    CF IUQCK6      3352006915500030PI  + 02100                 BAL   K6D 0 DS   438241602
+SUSAP KBWIK6FL15L  L      021ADCOKK6PC0E S     CF IUQCK6      3352003415500035PI  + 00980             -301          0 DS   438251310
+SUSAP KBWIK6FL15L  L      030RW15LK6PG0GY M    CF IUQCK6      3352000915500025PI    00189             -301          0 DS   438261212
+SUSAP KBWIK6FL15L  L      040         0  M     VI                     1550                                          0 DS   438271212
+SUSAP KBWIK6FL15L  L      050DUDDSK6PC0EY      CF BAL K6      1529012015290030D   + 02500                           0 DS   438281310
+SUSAP KBWIK6FL15L  L      060DUDDSK6PC0EE  L   HM                     3329T010    + 02500                           0 DS   438291310

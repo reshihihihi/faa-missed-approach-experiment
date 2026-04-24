@@ -1,0 +1,23 @@
+# Raw ARINC 424.18 PF records for KAPC_I01L
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 13
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KAPCK2FI01L  AREBAS 010REBASK2EA0E  A    IF                                             18000                 0 NS   221441911
+SUSAP KAPCK2FI01L  AREBAS 020         0        VI                     3210        + 02600                           0 NS   221451911
+SUSAP KAPCK2FI01L  AREBAS 030FESAVK2PC0EE B    CF IAPCK2      1857012500570039PI  + 02600                           0 NS   221461911
+SUSAP KAPCK2FI01L  ASGD   010SGD  K2D 0V       IF                                             18000                 0 NS   221471911
+SUSAP KAPCK2FI01L  ASGD   020FESAVK2PC0EY      TF                                 + 02600                           0 NS   221481911
+SUSAP KAPCK2FI01L  ASGD   030FESAVK2PC0EE AR   HF IAPCK2      185701250057T010PI  + 02600                           0 NS   221491911
+SUSAP KAPCK2FI01L  I      010FESAVK2PC0E  I    IF IAPCK2      18570125        PI  J 026000180018000                 0 NS   221501911
+SUSAP KAPCK2FI01L  I      020CIKPIK2PC0E  F    CF IAPCK2      1857006500600060PI  H 0180001800            SGD   K2D 0 NS   221511911
+SUSAP KAPCK2FI01L  I      030RW01LK2PG0GY M    CF IAPCK2      1857001100600055PI    00065             -300          0 NS   221521911
+SUSAP KAPCK2FI01L  I      040         0  M     CA                     0057        + 00500                           0 NS   221531911
+SUSAP KAPCK2FI01L  I      050SGD  K2D 0V   L   DF                                                                   0 NS   221541911
+SUSAP KAPCK2FI01L  I      060BURDEK2EA0EY      TF                                 + 03200                           0 NS   221551911
+SUSAP KAPCK2FI01L  I      070BURDEK2EA0EE  R   HM                     2300T010    + 03200                           0 NS   221561911

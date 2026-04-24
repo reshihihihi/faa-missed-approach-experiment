@@ -1,0 +1,28 @@
+{
+  "cifp_file": "data/v2604_100/cifp/FAACIFP18",
+  "total_pairs": 100,
+  "procedures_extracted": 100,
+  "procedures_failed": [],
+  "cifp_scan": {
+    "total_lines": 397415,
+    "approach_primary_legs": 110502,
+    "matched_to_100": 1112
+  },
+  "leg_count_distribution": {
+    "3": 74,
+    "4": 20,
+    "2": 3,
+    "5": 3
+  },
+  "path_terminator_distribution": {
+    "HM": 98,
+    "CA": 94,
+    "DF": 83,
+    "TF": 19,
+    "CF": 17,
+    "VI": 11,
+    "FA": 1
+  },
+  "unexpected_path_terminators": {},
+  "warnings": []
+}

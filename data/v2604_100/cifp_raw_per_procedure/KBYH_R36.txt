@@ -1,0 +1,19 @@
+# Raw ARINC 424.18 PF records for KBYH_R36
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 9
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KBYHK4FR36   AHABSI 010HABSIK4PC0EE AR   HF                     00100060    + 02500     18000                 A JS   443211413
+SUSAP KBYHK4FR36   R      010HABSIK4PC0E  I    IF                                 + 02500     18000                 A JS   443221310
+SUSAP KBYHK4FR36   R      020GENREK4PC1E  F 051TF                     00100060    + 02000                           A JS   443231413
+SUSAP KBYHK4FR36   R      020GENREK4PC2WALPV       ALNAV/VNAV ALNAV                                                   JS   443241310
+SUSAP KBYHK4FR36   R      021TETOEK4PC0E S  031TF                     00100039    V 0074000749        -300          A JS   443251413
+SUSAP KBYHK4FR36   R      030RW36 K4PG0GY M 031TF                     00100014      00303             -300          A JS   443261413
+SUSAP KBYHK4FR36   R      040         0  M     CA                     0010        + 00454                           A JS   443271413
+SUSAP KBYHK4FR36   R      050CEDVAK3PC0EY      DF                                 + 02500                           A JS   443281413
+SUSAP KBYHK4FR36   R      060CEDVAK3PC0EE  R   HM                     18100060    + 02500                           A JS   443291413

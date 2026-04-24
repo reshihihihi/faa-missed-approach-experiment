@@ -1,0 +1,21 @@
+# Raw ARINC 424.18 PF records for KBLV_R32RY
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 11
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KBLVK5FR32RY ACOFEY 010COFEYK5EA0E  A    IF                                             18000                 A JS   367882512
+SUSAP KBLVK5FR32RY ACOFEY 020OJAMOK5PC0EE B 010TF                                 + 03000                           A JS   367892512
+SUSAP KBLVK5FR32RY AOJAMO 010OJAMOK5PC0EE AR   HF                     31870040    + 03000     18000                 A JS   367902512
+SUSAP KBLVK5FR32RY R      010OJAMOK5PC0E  I    IF                                 + 03000     18000                 A JS   367912512
+SUSAP KBLVK5FR32RY R      020AFEBEK5PC1E  F 010TF                                 + 02200                 RW32R K5PGA JS   367922512
+SUSAP KBLVK5FR32RY R      020AFEBEK5PC2WALPV       ALNAV/VNAV ALNAV                                                   JS   367932512
+SUSAP KBLVK5FR32RY R      021ENRRNK5PC0E S  031TF                                 V 0140001400        -300          A JS   367942512
+SUSAP KBLVK5FR32RY R      030RW32RK5PG0GY M 031TF                                   00497             -300          A JS   367952512
+SUSAP KBLVK5FR32RY R      040         0  M     CA                     3186        + 01500                           A JS   367962512
+SUSAP KBLVK5FR32RY R      050COFEYK5EA0EY   010DF                                 + 03000                           A JS   367972512
+SUSAP KBLVK5FR32RY R      060COFEYK5EA0EE  R   HM                     28350040    + 03000                           A JS   367982512

@@ -1,0 +1,19 @@
+# Raw ARINC 424.18 PF records for KADF_R22
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 9
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KADFK4FR22   ACOVNO 010COVNOK4PC0EE AR   HF                     22030040    + 02100     18000                 A JS   151591412
+SUSAP KADFK4FR22   R      010COVNOK4PC0E  I    IF                                 + 02100     18000                 A JS   151601412
+SUSAP KADFK4FR22   R      020ZULSOK4PC1E  F 010TF                                 + 02000                           A JS   151612008
+SUSAP KADFK4FR22   R      020ZULSOK4PC2WALP        N          ALNAV                                                   JS   151621412
+SUSAP KADFK4FR22   R      021ITVOWK4PC0E S  031TF                                 + 00760                           A JS   151632008
+SUSAP KADFK4FR22   R      030RW22 K4PG0GY M 031TF                                   00221              000          A JS   151642008
+SUSAP KADFK4FR22   R      040         0  M     CA                     2203        + 00582                           A JS   151651412
+SUSAP KADFK4FR22   R      050CUBUGK4PC0EY   010DF                                 + 02000                           A JS   151662008
+SUSAP KADFK4FR22   R      060CUBUGK4PC0EE  L   HM                     04010040    + 02000                           A JS   151671412

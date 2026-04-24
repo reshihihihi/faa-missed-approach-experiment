@@ -1,0 +1,27 @@
+# Raw ARINC 424.18 PF records for KCDS_R36
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 17
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KCDSK4FR36   ACDS   010CDS  K4D 0V       IF                                             18000                 A JS   464491305
+SUSAP KCDSK4FR36   ACDS   020FIPITK4PC0EY   010TF                                 + 04000                           A JS   464502113
+SUSAP KCDSK4FR36   ACDS   030FIPITK4PC0EE AR   HF                     35590040    + 04000                           A JS   464511310
+SUSAP KCDSK4FR36   AEXONE 010EXONEK4EA0E       IF                                             18000                 A JS   464521305
+SUSAP KCDSK4FR36   AEXONE 020ZELOMK4PC0E  A 010TF                                 + 05800                           A JS   464532113
+SUSAP KCDSK4FR36   AEXONE 030FIPITK4PC0EE B 010TF                                 + 04000                           A JS   464542113
+SUSAP KCDSK4FR36   APEWAE 010PEWAEK4EA0E       IF                                             18000                 A JS   464551305
+SUSAP KCDSK4FR36   APEWAE 020HUTOMK4PC0E  A 010TF                                 + 05800                           A JS   464562113
+SUSAP KCDSK4FR36   APEWAE 030FIPITK4PC0EE B 010TF                                 + 04000                           A JS   464572113
+SUSAP KCDSK4FR36   R      010FIPITK4PC0E  I    IF                                 + 04000     18000                 A JS   464581310
+SUSAP KCDSK4FR36   R      020RIFUGK4PC1E  F 010TF                                 + 03500                 RW36  K4PGA JS   464592113
+SUSAP KCDSK4FR36   R      020RIFUGK4PC2WALPV       ALNAV/VNAV ALNAV                                                   JS   464601310
+SUSAP KCDSK4FR36   R      021WUDBUK4PC0E S  031TF                                 V 0256002567        -300          A JS   464612113
+SUSAP KCDSK4FR36   R      030RW36 K4PG0GY M 031TF                                   01994             -300          A JS   464622113
+SUSAP KCDSK4FR36   R      040         0  M     CA                     3559        + 02400                           A JS   464631305
+SUSAP KCDSK4FR36   R      050JAPUXK4EA0EY  R010DF                                 + 04000                           A JS   464642113
+SUSAP KCDSK4FR36   R      060JAPUXK4EA0EE  R   HM                     05770040    + 04000                           A JS   464651305

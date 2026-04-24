@@ -1,0 +1,21 @@
+# Raw ARINC 424.18 PF records for KCLL_R11
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 11
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KCLLK4FR11   AGOVEY 010GOVEYK4PC0E  A    IF                                             18000                 A JS   516081903
+SUSAP KCLLK4FR11   AGOVEY 020ICESOK4PC0EE B 010TF                     01570100    + 02000                           A JS   516091903
+SUSAP KCLLK4FR11   AHAXUN 010HAXUNK4PC0E  A    IF                                             18000                 A JS   516101903
+SUSAP KCLLK4FR11   AHAXUN 020ICESOK4PC0EE B 010TF                     19570100    + 02000                           A JS   516111903
+SUSAP KCLLK4FR11   R      010ICESOK4PC0E  I    IF                                 + 02000     18000                 A JS   516121903
+SUSAP KCLLK4FR11   R      020APZICK4PC1E  F 010TF                     10570070    + 02000                 RW11  K4PGA JS   516131903
+SUSAP KCLLK4FR11   R      020APZICK4PC2WALPV       ALNAV/VNAV ALNAV                                                   JS   516141903
+SUSAP KCLLK4FR11   R      030RW11 K4PG0GY M 031TF                     10570051      00369             -300          A JS   516151903
+SUSAP KCLLK4FR11   R      040         0  M     CA                     1057        + 00569                           A JS   516161903
+SUSAP KCLLK4FR11   R      050EDAYAK4PC0EY   010DF                                 + 03000                           A JS   516171903
+SUSAP KCLLK4FR11   R      060EDAYAK4PC0EE  R   HM                     28590070    + 03000                           A JS   516181903

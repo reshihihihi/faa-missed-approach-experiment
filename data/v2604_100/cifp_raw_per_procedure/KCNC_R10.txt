@@ -1,0 +1,23 @@
+# Raw ARINC 424.18 PF records for KCNC_R10
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 13
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KCNCK3FR10   ABODGY 010BODGYK3PC0EE AR   HF                     09860040    + 03000     18000                 B PS   540412406
+SUSAP KCNCK3FR10   AOHGEE 010OHGEEK3EA0E       IF                                             18000                 B PS   540422406
+SUSAP KCNCK3FR10   AOHGEE 020SECOLK3PC0E  A 010TF                                 + 03000                           B PS   540432406
+SUSAP KCNCK3FR10   AOHGEE 030BODGYK3PC0EE B 010TF                                 + 03000                           B PS   540442406
+SUSAP KCNCK3FR10   AWIVEY 010WIVEYK3EA0E  A    IF                                             18000                 B PS   540452406
+SUSAP KCNCK3FR10   AWIVEY 020BODGYK3PC0EE B 010TF                                 + 03000                           B PS   540462406
+SUSAP KCNCK3FR10   R      010BODGYK3PC0E  I    IF                                 + 03000     18000                 B PS   540472406
+SUSAP KCNCK3FR10   R      020COSHEK3PC1E  F 010TF                                 + 02600                 RW10  K3PGB PS   540482406
+SUSAP KCNCK3FR10   R      020COSHEK3PC2WN          N          ALNAV                                                   PS   540492406
+SUSAP KCNCK3FR10   R      030RW10 K3PG0GY M 031TF                                   01086             -304          B PS   540502406
+SUSAP KCNCK3FR10   R      040         0  M     CA                     0986        + 01440                           B PS   540512406
+SUSAP KCNCK3FR10   R      050EBOREK3PC0EY   010DF                                 + 03000                           B PS   540522406
+SUSAP KCNCK3FR10   R      060EBOREK3PC0EE  R   HM                     27870040    + 03000                           B PS   540532406

@@ -1,0 +1,19 @@
+# Raw ARINC 424.18 PF records for KBMI_I29
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 9
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KBMIK5FI29   AANNAY 010ANNAYK5PC0EE AR   PI IBMIK5      1109008006590100PI  + 03100     18000                 0 DS   370222413
+SUSAP KBMIK5FI29   ACMI   010CMI  K5D 0V  A    FC CMI K5      0000000032310245D   + 03100     18000                 0 DS   370232413
+SUSAP KBMIK5FI29   ACMI   020FEXIKK5PC0EE B    CF IBMIK5      1109016432310020PI  + 03100                           0 DS   370242413
+SUSAP KBMIK5FI29   I      010FEXIKK5PC0E  I    IF IBMIK5      11090164        PI  J 031000310018000                 0 DS   370252413
+SUSAP KBMIK5FI29   I      020ANNAYK5PC0E  F    CF IBMIK5      1109008029100084PI  H 0310003019        -300KBMI  K5PA0 DS   370262413
+SUSAP KBMIK5FI29   I      030RW29 K5PG0GY M    CF IBMIK5      1109001429100066PI    00927             -300          0 DS   370272413
+SUSAP KBMIK5FI29   I      040         0  M     CA                     2909        + 01500                           0 DS   370282413
+SUSAP KBMIK5FI29   I      050PIA  K5D 0VY      DF                                 + 03000                           0 DS   370292413
+SUSAP KBMIK5FI29   I      060PIA  K5D 0VE  R   HM                     0950T010    + 03000                           0 DS   370302413

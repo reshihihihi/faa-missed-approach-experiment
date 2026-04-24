@@ -1,0 +1,18 @@
+# Raw ARINC 424.18 PF records for KAIB_RNV-A
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 8
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KAIBK2FRNV-A APAROX 010PAROXK2EA0E  A    IF                                 + 12000     18000                 B PC   181842203
+SUSAP KAIBK2FRNV-A APAROX 020CULIRK2PC0EE B 010TF                                 + 09000                           B PC   181852203
+SUSAP KAIBK2FRNV-A R      010CULIRK2PC0E  I    IF                                 + 09000     18000                 B PC   181862203
+SUSAP KAIBK2FRNV-A R      020IVOYEK2PC0E  F 010TF                                 + 08100                 KAIB  K2PAB PC   181872203
+SUSAP KAIBK2FRNV-A R      030TUYUYK2PC0EY M 031TF                                   05945              000          B PC   181882204
+SUSAP KAIBK2FRNV-A R      040         0  M     CA                     1256        + 06345                           B PC   181892203
+SUSAP KAIBK2FRNV-A R      050PAROXK2EA0EY  L010DF                                 + 12000                           B PC   181902203
+SUSAP KAIBK2FRNV-A R      060PAROXK2EA0EE  L   HM                     13970070    + 12000                           B PC   181912203

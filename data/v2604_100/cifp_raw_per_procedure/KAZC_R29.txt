@@ -1,0 +1,32 @@
+# Raw ARINC 424.18 PF records for KAZC_R29
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 22
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KAZCK2FR29   AJALMA 010JALMAK2EA0E       IF                                             18000                 A JS   293541710
+SUSAP KAZCK2FR29   AJALMA 020HITARK2PC0E    020TF                     28800110    + 11100                           A JS   293551710
+SUSAP KAZCK2FR29   AJALMA 030GLIMEK2PC0E  A 020TF                     28710145    + 10100                           A JS   293561710
+SUSAP KAZCK2FR29   AJALMA 040MGHEEK2PC0EE B 010TF                     28980052    + 09100                           A JS   293571710
+SUSAP KAZCK2FR29   AJITKA 010JITKAK2EA0E       IF                                             18000                 A JS   293581710
+SUSAP KAZCK2FR29   AJITKA 020MGHEEK2PC0EY   020TF                     09940434    + 09100                           A JS   293591710
+SUSAP KAZCK2FR29   AJITKA 030MGHEEK2PC0EE AL   HF                     28970070    + 09100                           A JS   293601710
+SUSAP KAZCK2FR29   AKACIR 010KACIRK2EA0E  A    IF                                             18000                 A JS   293611710
+SUSAP KAZCK2FR29   AKACIR 020MGHEEK2PC0EE B 010TF                     23450265    + 09100                           A JS   293621710
+SUSAP KAZCK2FR29   AMATZO 010MATZOK2EA0E       IF                                             18000                 A JS   293631710
+SUSAP KAZCK2FR29   AMATZO 020CUDILK2PC0E    020TF                     12220230    + 09900                           A JS   293641710
+SUSAP KAZCK2FR29   AMATZO 030MGHEEK2PC0EY   020TF                     12240127    + 09100                           A JS   293651710
+SUSAP KAZCK2FR29   AMATZO 040MGHEEK2PC0EE AL   HF                     28970070    + 09100                           A JS   293661710
+SUSAP KAZCK2FR29   R      010MGHEEK2PC0E  I    IF                                 + 09100     18000                 A JS   293671710
+SUSAP KAZCK2FR29   R      020PECHSK2PC1E  F 010TF                     28970063    + 07600                 RW29  K2PGA JS   293681710
+SUSAP KAZCK2FR29   R      020PECHSK2PC2WALPV       ALNAV/VNAV ALNAV                                                   JS   293691710
+SUSAP KAZCK2FR29   R      021ZAREDK2PC0E S  031TF                     28970044    V 0620006216        -300          A JS   293701710
+SUSAP KAZCK2FR29   R      030RW29 K2PG0G  M 031TF                     28970041      04894             -300          A JS   293711710
+SUSAP KAZCK2FR29   R      040         0  M     CA                     2897        + 06600                           A JS   293721710
+SUSAP KAZCK2FR29   R      050ZUXOSK2PC0E   L010DF                                                                   A JS   293731710
+SUSAP KAZCK2FR29   R      060MGHEEK2PC0EY   010TF                     08590118    + 09100                           A JS   293741710
+SUSAP KAZCK2FR29   R      070MGHEEK2PC0EE  L   HM                     28970070    + 09100                           A JS   293751710

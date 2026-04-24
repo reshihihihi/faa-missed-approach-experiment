@@ -1,0 +1,19 @@
+# Raw ARINC 424.18 PF records for KABE_I06
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 9
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KABEK6FI06   AETX   010ETX  K6D 0V       IF                                             18000                 0 NS   130711307
+SUSAP KABEK6FI06   AETX   020JISTOK6PC0EY      TF                                 + 03000                           0 NS   130721310
+SUSAP KABEK6FI06   AETX   030JISTOK6PC0EE AR   HF IABEK6      243301410633T010PI  + 03000                           0 NS   130731310
+SUSAP KABEK6FI06   I      010JISTOK6PC0E  I    IF IABEK6      24330141        PI  J 030000240018000                 0 NS   130741310
+SUSAP KABEK6FI06   I      020SHAGYK6PC0E  F    CF IABEK6      2433007506300067PI  H 0240002400            ETX   K6D 0 NS   130752105
+SUSAP KABEK6FI06   I      030RW06 K6PG0GY M    CF IABEK6      2433001306300061PI    00450             -300          0 NS   130761307
+SUSAP KABEK6FI06   I      040         0  M     VI                     0633                                          0 NS   130771307
+SUSAP KABEK6FI06   I      050MUDREK6PC0EY      CF STW K6      2431020506310130D   + 03000                           0 NS   130781901
+SUSAP KABEK6FI06   I      060MUDREK6PC0EE  R   HM STW K6      243102052431T010D   + 03000                           0 NS   130791901

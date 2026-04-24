@@ -1,0 +1,19 @@
+# Raw ARINC 424.18 PF records for KAWM_L17
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 9
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KAWMK4FL17   AGQE   010GQE  K4D 0V  A    FC GQE K4      0000000008950101D   + 02000     18000                 0 NS   284871111
+SUSAP KAWMK4FL17   AGQE   020PALYNK4PC0EE B    CF ILWRK4      3596012708950020PI  + 02000                           0 NS   284881310
+SUSAP KAWMK4FL17   L      010PALYNK4PC0E  I    IF ILWRK4      35960127        PI  + 02000     18000                 0 NS   284891310
+SUSAP KAWMK4FL17   L      020DANNZK4PC0E  F    CF ILWRK4      3596006718000060PI  + 02000                 GQE   K4D 0 NS   284901310
+SUSAP KAWMK4FL17   L      021KEHOEK4PC0E S     CF ILWRK4      3595002718000040PI  + 00680             -301          0 NS   284912006
+SUSAP KAWMK4FL17   L      030RW17 K4PG0GY M    CF ILWRK4      3596001318000014PI    00264             -301          0 NS   284922006
+SUSAP KAWMK4FL17   L      040         0  M     CA                     1796        + 01000                           0 NS   284931111
+SUSAP KAWMK4FL17   L      050GQE  K4D 0VY  R   CFYGQE K4      0000000032700188D   + 02000                           0 NS   284942006
+SUSAP KAWMK4FL17   L      060GQE  K4D 0VE  R   HM                     1220T010    + 02000                           0 NS   284951111

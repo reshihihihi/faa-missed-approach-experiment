@@ -1,0 +1,23 @@
+# Raw ARINC 424.18 PF records for KBLF_R05
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 13
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KBLFK6FR05   AKENYA 010KENYAK6EA0E  A    IF                                             18000                 B PS   361442010
+SUSAP KBLFK6FR05   AKENYA 020OTONEK6EA0EE B 010TF                                 + 06000                           B PS   361452010
+SUSAP KBLFK6FR05   ATELOC 010TELOCK6EA0E  A    IF                                             18000                 B PS   361462010
+SUSAP KBLFK6FR05   ATELOC 020OTONEK6EA0EE B 010TF                                 + 06000                           B PS   361472010
+SUSAP KBLFK6FR05   R      010OTONEK6EA0E  I    IF                                 + 06000     18000                 B PS   361482010
+SUSAP KBLFK6FR05   R      011WABISK6PC0E    010TF                                 + 05500                           B PS   361492010
+SUSAP KBLFK6FR05   R      020VOCUGK6PC1E  F 010TF                                 + 04700                 JOSOM K6PCB PS   361502010
+SUSAP KBLFK6FR05   R      020VOCUGK6PC2WN          N          ALNAV                                                   PS   361512010
+SUSAP KBLFK6FR05   R      021JUNARK6PC0E S  031TF                                 V 0394003959        -310          B PS   361522010
+SUSAP KBLFK6FR05   R      030JOSOMK6PC0EY M 031TF                                   03058             -310          B PS   361532010
+SUSAP KBLFK6FR05   R      040         0  M     CA                     0638        + 03257                           B PS   361542010
+SUSAP KBLFK6FR05   R      050KENYAK6EA0EY  L010DF                                 + 06000                           B PS   361552010
+SUSAP KBLFK6FR05   R      060KENYAK6EA0EE  R   HM                     10060050    + 06000                           B PS   361562010

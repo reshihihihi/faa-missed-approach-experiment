@@ -1,0 +1,20 @@
+# Raw ARINC 424.18 PF records for KAVQ_R12
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 10
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KAVQK2FR12   APICLI 010PICLIK2EA0E  A    IF                                             18000                 A JS   283231109
+SUSAP KAVQK2FR12   APICLI 020CITUTK2PC0EE B 010TF                                 + 04900                           A JS   283242012
+SUSAP KAVQK2FR12   R      010CITUTK2PC0E  I    IF                                 + 04900     18000                 A JS   283251310
+SUSAP KAVQK2FR12   R      011SECBOK2PC0E    010TF                                 + 04100                           A JS   283262510
+SUSAP KAVQK2FR12   R      020PAPBIK2PC1E  F 010TF                                 + 03300                 ZIBAR K2PCA JS   283272510
+SUSAP KAVQK2FR12   R      020PAPBIK2PC2WALP        N          ALNAV                                                   JS   283281310
+SUSAP KAVQK2FR12   R      030ZIBARK2PC0EY M 031TF                                   02226             -324          A JS   283292510
+SUSAP KAVQK2FR12   R      040         0  M     CA                     1384        + 02600                           A JS   283302510
+SUSAP KAVQK2FR12   R      050PICLIK2EA0EY  L   DF                                 + 06500                           A JS   283312510
+SUSAP KAVQK2FR12   R      060PICLIK2EA0EE  R   HM                     12810060    + 06500                           A JS   283321109

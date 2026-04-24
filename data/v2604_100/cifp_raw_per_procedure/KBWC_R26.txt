@@ -1,0 +1,20 @@
+# Raw ARINC 424.18 PF records for KBWC_R26
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 10
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KBWCK2FR26   AIPL   010IPL  K2D 0V       IF                                             18000                 B PS   428672406
+SUSAP KBWCK2FR26   AIPL   020MUMSEK2PC0E  A 010TF                                 + 02900                           B PS   428682406
+SUSAP KBWCK2FR26   AIPL   030TODUEK2PC0EE B 010TF                                 + 01700                           B PS   428692406
+SUSAP KBWCK2FR26   R      010TODUEK2PC0E  I    IF                                 + 01700     18000                 B PS   428702406
+SUSAP KBWCK2FR26   R      020WAKMIK2PC1E  F 031TF                                 + 01000                 ZEROS K2PCB PS   428712406
+SUSAP KBWCK2FR26   R      020WAKMIK2PC2WN          N          ALNAV                                                   PS   428722406
+SUSAP KBWCK2FR26   R      030ZEROSK2PC0EY M 031TF                                   00001             -295          B PS   428732406
+SUSAP KBWCK2FR26   R      040         0  M     CA                     2720        + 00272                           B PS   428742406
+SUSAP KBWCK2FR26   R      050IPL  K2D 0VY  L010DF                                 + 03600                           B PS   428752406
+SUSAP KBWCK2FR26   R      060IPL  K2D 0VE  R   HM                     25480040    + 03600                           B PS   428762406

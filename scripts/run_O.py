@@ -34,13 +34,17 @@ def parse_app_record(line):
     if cont_num not in ("0", "1"):
         return None
 
+    # ARINC 424.18 PF record column layout (1-indexed, inclusive).
+    # Bug fixes 2026-04-24:
+    #   proc_ident was cols 14-18 (5 chars) -> now cols 14-19 (6 chars per spec 5.9+5.10).
+    #   rt_type was cols 48-50 (3 chars, overran into col 50 turn_dir_valid) -> cols 48-49 (2 chars per spec 5.21).
     return {
         "airport": line[6:10].strip(),
-        "proc_ident": line[13:18].strip(),
+        "proc_ident": line[13:19].rstrip(),
         "trans_ident": line[19:25].strip(),
         "seq_no": line[26:29].strip(),
         "turn_dir": line[43].strip() if len(line) > 43 else "",
-        "rt_type": line[47:50].strip() if len(line) > 50 else "",
+        "rt_type": line[47:49].strip() if len(line) > 49 else "",
     }
 
 

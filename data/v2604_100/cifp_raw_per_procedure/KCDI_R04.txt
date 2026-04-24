@@ -1,0 +1,23 @@
+# Raw ARINC 424.18 PF records for KCDI_R04
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 13
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KCDIK5FR04   ABEALL 010BEALLK5EA0E       IF                                             18000                 B PS   462631913
+SUSAP KCDIK5FR04   ABEALL 020YISUGK5PC0EY   010TF                     27770320    + 03000                           B PS   462641913
+SUSAP KCDIK5FR04   ABEALL 030YISUGK5PC0EE AR   HF                     04000040    + 03000                           B PS   462651913
+SUSAP KCDIK5FR04   AGAZED 010GAZEDK5PC0E  A    IF                                             18000                 B PS   462661913
+SUSAP KCDIK5FR04   AGAZED 020YISUGK5PC0EE B 010TF                     05720084    + 03000                           B PS   462671913
+SUSAP KCDIK5FR04   R      010YISUGK5PC0E  I    IF                                 + 03000     18000                 B PS   462681913
+SUSAP KCDIK5FR04   R      020WUVAPK5PC1E  F 010TF                     04000072    + 02700                 RW04  K5PGB PS   462691913
+SUSAP KCDIK5FR04   R      020WUVAPK5PC2WN          N          ALNAV                                                   PS   462701913
+SUSAP KCDIK5FR04   R      021ZUSAVK5PC0E S  031TF                     04010035    + 01600                           B PS   462711913
+SUSAP KCDIK5FR04   R      030RW04 K5PG0GY M 031TF                     04010024      00827              000          B PS   462721913
+SUSAP KCDIK5FR04   R      040         0  M     CA                     0401        + 01199                           B PS   462731913
+SUSAP KCDIK5FR04   R      050ILAXEK5PC0EY   010DF                                 + 03000                           B PS   462741913
+SUSAP KCDIK5FR04   R      060ILAXEK5PC0EE  R   HM                     22020040    + 03000                           B PS   462751913

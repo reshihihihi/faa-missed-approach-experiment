@@ -1,0 +1,26 @@
+# Raw ARINC 424.18 PF records for KACT_R32
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 16
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KACTK4FR32   ABARES 010BARESK4EA0E  A    IF                                             18000                 A JS   147231103
+SUSAP KACTK4FR32   ABARES 020KOCYUK4PC0E    010TF                                 + 03600                           A JS   147242308
+SUSAP KACTK4FR32   ABARES 030ILINIK4PC0EE B 010TF                                 + 03000                           A JS   147252308
+SUSAP KACTK4FR32   ADRILL 010DRILLK4EA0E       IF                                             18000                 A JS   147261103
+SUSAP KACTK4FR32   ADRILL 020PRKRRK4PC0E  A 010TF                                 + 03000                           A JS   147272308
+SUSAP KACTK4FR32   ADRILL 030ILINIK4PC0EE B 010TF                                 + 03000                           A JS   147282308
+SUSAP KACTK4FR32   ASATTY 010SATTYK4EA0E  A    IF                                             18000                 A JS   147291103
+SUSAP KACTK4FR32   ASATTY 020ILINIK4PC0EE B 010TF                                 + 03000                           A JS   147302308
+SUSAP KACTK4FR32   R      010ILINIK4PC0E  I    IF                                 + 03000     18000                 A JS   147311310
+SUSAP KACTK4FR32   R      020SKOCHK4PC1E  F 010TF                                 + 02100                 RW32  K4PGA JS   147322308
+SUSAP KACTK4FR32   R      020SKOCHK4PC2WALPV       ALNAV/VNAV ALNAV                                                   JS   147331310
+SUSAP KACTK4FR32   R      021IWIFYK4PC0E S  031TF                                 V 0116001175        -300          A JS   147342308
+SUSAP KACTK4FR32   R      030RW32 K4PG0GY M 031TF                                   00571             -300          A JS   147352308
+SUSAP KACTK4FR32   R      040         0  M     CA                     3223        + 00766                           A JS   147361504
+SUSAP KACTK4FR32   R      050EVVISK4PC0EY   010DF                                 + 04000                           A JS   147372308
+SUSAP KACTK4FR32   R      060EVVISK4PC0EE  R   HM                     14220040    + 04000                           A JS   147381402

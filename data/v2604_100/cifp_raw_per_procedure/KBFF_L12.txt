@@ -1,0 +1,21 @@
+# Raw ARINC 424.18 PF records for KBFF_L12
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 11
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KBFFK3FL12   ABFF   010BFF  K3D 0V       IF                                             18000                 0 DS   321311206
+SUSAP KBFFK3FL12   ABFF   020LEDSEK3PC0EY      TF                                 + 06900                           0 DS   321321310
+SUSAP KBFFK3FL12   ABFF   030LEDSEK3PC0EE AR   HF IRMTK3      305601281256T010PI  + 06900                           0 DS   321331310
+SUSAP KBFFK3FL12   AWHARF 010WHARFK3EA0E  A    IF                                             18000                 0 DS   321341206
+SUSAP KBFFK3FL12   AWHARF 020LEDSEK3PC0EE B    CF IRMTK3      3056012812560045PI  + 06900                           0 DS   321351310
+SUSAP KBFFK3FL12   L      010LEDSEK3PC0E  I    IF IRMTK3      30560128        PI  + 06900     18000                 0 DS   321361310
+SUSAP KBFFK3FL12   L      020CAPGAK3PC0E  F    CF IRMTK3      3056006712600061PI  + 05700                 BFF   K3D 0 DS   321371310
+SUSAP KBFFK3FL12   L      030FERPOK3PC0EY M    CF IRMTK3      3056001812600049PI    04106             -305          0 DS   321381310
+SUSAP KBFFK3FL12   L      040         0  M     CA                     1256        + 04500                           0 DS   321391206
+SUSAP KBFFK3FL12   L      050BFF  K3D 0VY  L   DF                                 + 06900                           0 DS   321401206
+SUSAP KBFFK3FL12   L      060BFF  K3D 0VE  R   HM                     2450T010    + 06900                           0 DS   321411206

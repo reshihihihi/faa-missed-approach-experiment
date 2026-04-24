@@ -1,0 +1,24 @@
+# Raw ARINC 424.18 PF records for KBUM_R18
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 14
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KBUMK3FR18   ABUM   010BUM  K3D 0V       IF                                             18000                 A JS   417581301
+SUSAP KBUMK3FR18   ABUM   020ANIFOK3PC0E  A 020TF                     00420117    + 03000                           A JS   417591310
+SUSAP KBUMK3FR18   ABUM   030LADSYK3PC0EE B 010TF                     08780057    + 03000                           A JS   417601310
+SUSAP KBUMK3FR18   AINRAM 010INRAMK3EA0E  A    IF                                             18000                 A JS   417611301
+SUSAP KBUMK3FR18   AINRAM 020LADSYK3PC0EE B 010TF                     17790112    + 03000                           A JS   417621310
+SUSAP KBUMK3FR18   ALADSY 010LADSYK3PC0EE AR   HF                     17790040    + 03000     18000                 A JS   417631310
+SUSAP KBUMK3FR18   R      010LADSYK3PC0E  I    IF                                 + 03000     18000                 A JS   417641310
+SUSAP KBUMK3FR18   R      020REMDYK3PC1E  F 051TF                     17790050    + 02500                 RW18  K3PGA JS   417651310
+SUSAP KBUMK3FR18   R      020REMDYK3PC2WALPV       ALNAV/VNAV ALNAV                                                   JS   417661310
+SUSAP KBUMK3FR18   R      021FABUVK3PC0E S  031TF                     17790025    V 0170001703        -300          A JS   417671310
+SUSAP KBUMK3FR18   R      030RW18 K3PG0GY M 031TF                     17790025      00908             -300          A JS   417681301
+SUSAP KBUMK3FR18   R      040         0  M     CA                     1779        + 01220                           A JS   417691504
+SUSAP KBUMK3FR18   R      050FONIEK3PC0EY      DF                                 + 04000                           A JS   417701310
+SUSAP KBUMK3FR18   R      060FONIEK3PC0EE  R   HM                     35790040    + 04000                           A JS   417711310

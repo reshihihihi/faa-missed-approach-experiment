@@ -1,0 +1,23 @@
+# Raw ARINC 424.18 PF records for KBJI_R31
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 13
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KBJIK3FR31   AOMIGY 010OMIGYK3PC0EE AR   HF                     31320040    + 03200     18000                 A JS   349971406
+SUSAP KBJIK3FR31   AUDAYU 010UDAYUK3PC0E  A    IF                                             18000                 A JS   349981310
+SUSAP KBJIK3FR31   AUDAYU 020OMIGYK3PC0EE B 010TF                     22320050    + 03200                           A JS   349991406
+SUSAP KBJIK3FR31   AWOFPE 010WOFPEK3PC0E  A    IF                                             18000                 A JS   350001310
+SUSAP KBJIK3FR31   AWOFPE 020OMIGYK3PC0EE B 010TF                     04310050    + 03200                           A JS   350011406
+SUSAP KBJIK3FR31   R      010OMIGYK3PC0E  I    IF                                 + 03200     18000                 A JS   350021310
+SUSAP KBJIK3FR31   R      020IPEMYK3PC1E  F 010TF                     31320061    + 03200                           A JS   350032002
+SUSAP KBJIK3FR31   R      020IPEMYK3PC2WALPV       ALNAV/VNAV ALNAV                                                   JS   350041310
+SUSAP KBJIK3FR31   R      021HIPAVK3PC0E S  031TF                     31310029    V 0224002257        -300          A JS   350051406
+SUSAP KBJIK3FR31   R      030RW31 K3PG0GY M 031TF                     31310026      01429             -300          A JS   350061406
+SUSAP KBJIK3FR31   R      040         0  M     CA                     3131        + 01589                           A JS   350071406
+SUSAP KBJIK3FR31   R      050TEGAEK3PC0EY   010DF                                 + 03200                           A JS   350082002
+SUSAP KBJIK3FR31   R      060TEGAEK3PC0EE  R   HM                     13280040    + 03200                           A JS   350091406

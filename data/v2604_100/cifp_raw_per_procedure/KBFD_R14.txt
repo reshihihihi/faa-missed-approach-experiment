@@ -1,0 +1,23 @@
+# Raw ARINC 424.18 PF records for KBFD_R14
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 13
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KBFDK6FR14   AKONBE 010KONBEK6PC0EE AR   HF                     14470050    + 04500     18000                 A JS   320011310
+SUSAP KBFDK6FR14   AMOGUE 010MOGUEK6PC0E  A    IF                                             18000                 A JS   320021310
+SUSAP KBFDK6FR14   AMOGUE 020KONBEK6PC0EE B 010TF                     23480050    + 04500                           A JS   320031310
+SUSAP KBFDK6FR14   AROSLE 010ROSLEK6PC0E  A    IF                                             18000                 A JS   320041310
+SUSAP KBFDK6FR14   AROSLE 020KONBEK6PC0EE B 010TF                     05470050    + 04500                           A JS   320051310
+SUSAP KBFDK6FR14   R      010KONBEK6PC0E  I    IF                                 + 04500     18000                 A JS   320061310
+SUSAP KBFDK6FR14   R      020GERVEK6PC1E  F 010TF                     14470061    + 03700                           A JS   320071606
+SUSAP KBFDK6FR14   R      020GERVEK6PC2WALPV       ALNAV/VNAV ALNAV                                                   JS   320081310
+SUSAP KBFDK6FR14   R      021LEPNEK6PC0E S  031TF                     14480011    V 0334003355        -300          A JS   320091310
+SUSAP KBFDK6FR14   R      030RW14 K6PG0GY M 031TF                     14480037      02163             -300          A JS   320101402
+SUSAP KBFDK6FR14   R      040         0  M     CA                     1448        + 02368                           A JS   320111606
+SUSAP KBFDK6FR14   R      050NIMEEK6PC0EY      DF                                 + 04500                           A JS   320121402
+SUSAP KBFDK6FR14   R      060NIMEEK6PC0EE  R   HM                     32500050    + 04500                           A JS   320131402

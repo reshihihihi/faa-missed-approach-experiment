@@ -1,0 +1,24 @@
+# Raw ARINC 424.18 PF records for KAQW_RNV-A
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 14
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KAQWK6FRNV-A ABOWAN 010BOWANK6EA0E  A    IF                                             18000                 B PC   228072008
+SUSAP KAQWK6FRNV-A ABOWAN 020SWOBSK6PC0EE B 010TF                                 + 04800                           B PC   228082008
+SUSAP KAQWK6FRNV-A ACAM   010CAM  K6D 0V       IF                                             18000                 B PC   228092008
+SUSAP KAQWK6FRNV-A ACAM   020SWOBSK6PC0EY   010TF                                 + 04800                           B PC   228102008
+SUSAP KAQWK6FRNV-A ACAM   030SWOBSK6PC0EE AR   HF                     06560050    + 04800                           B PC   228112008
+SUSAP KAQWK6FRNV-A ACIRRU 010CIRRUK6EA0E  A    IF                                             18000                 B PC   228122008
+SUSAP KAQWK6FRNV-A ACIRRU 020SWOBSK6PC0EE B 010TF                                 + 04800                           B PC   228132008
+SUSAP KAQWK6FRNV-A R      010SWOBSK6PC0E  I    IF                                 + 04800     18000                 B PC   228142008
+SUSAP KAQWK6FRNV-A R      020JEKOPK6PC0E  F 010TF                                 + 03900                 KNURS K6PCB PC   228152008
+SUSAP KAQWK6FRNV-A R      021WAINSK6PC0E S  031TF                                 + 03280                           B PC   228162008
+SUSAP KAQWK6FRNV-A R      030KNURSK6PC0EY M 031TF                                   00654              000          B PC   228172204
+SUSAP KAQWK6FRNV-A R      040         0  M     CA                     0657        + 01054                           B PC   228182008
+SUSAP KAQWK6FRNV-A R      050GRAVEK6EA0EY  L010DF                                 + 05000                           B PC   228192008
+SUSAP KAQWK6FRNV-A R      060GRAVEK6EA0EE  L   HM                     09700050    + 05000                           B PC   228202008

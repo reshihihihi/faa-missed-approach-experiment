@@ -1,0 +1,25 @@
+# Raw ARINC 424.18 PF records for KBDN_R34
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 15
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KBDNK1FR34   ADSD   010DSD  K1D 0V       IF                                             18000                 B PS   313771907
+SUSAP KBDNK1FR34   ADSD   020HARBUK1PC0EY   010TF                                 + 08000          230              B-PS   313782308
+SUSAP KBDNK1FR34   ADSD   030HARBUK1PC0EE AR   HF                     31620070    + 08000                           B PS   313792308
+SUSAP KBDNK1FR34   APOCIT 010POCITK1EA0E  A    IF                                             18000                 B PS   313801907
+SUSAP KBDNK1FR34   APOCIT 020HARBUK1PC0EE B 010TF                                 + 08000          230              B-PS   313812308
+SUSAP KBDNK1FR34   R      010HARBUK1PC0E  I    IF                                 + 08000     18000230              B-PS   313822308
+SUSAP KBDNK1FR34   R      011NALOEK1PC0E    010TF                                 + 07400                           B PS   313832308
+SUSAP KBDNK1FR34   R      020CODAYK1PC1E  F 010TF                                 + 06700                 RW34  K1PGB PS   313842308
+SUSAP KBDNK1FR34   R      020CODAYK1PC2WN          N          ALNAV                                                   PS   313851907
+SUSAP KBDNK1FR34   R      021GUPYEK1PC0E S  031TF                                 V 0510005105        -300          B PS   313862308
+SUSAP KBDNK1FR34   R      030FEDKUK1PC0EY M 031TF                                   03668             -300          B PS   313872308
+SUSAP KBDNK1FR34   R      040         0  M     CA                     3311        + 03859                           B PS   313882308
+SUSAP KBDNK1FR34   R      050CELVAK1PC0E    010DF                                                                   B PS   313891907
+SUSAP KBDNK1FR34   R      060DSD  K1D 0VY   010TF                                 + 06000                           B PS   313902308
+SUSAP KBDNK1FR34   R      070DSD  K1D 0VE  L   HM                     12900050    + 06000                           B PS   313912308

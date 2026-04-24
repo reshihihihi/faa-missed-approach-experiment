@@ -1,0 +1,32 @@
+# Raw ARINC 424.18 PF records for KCOE_L06
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 22
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KCOEK1FL06   ACLASS 010CLASSK1EA0E       IF                                             18000                 0 DS   547501212
+SUSAP KCOEK1FL06   ACLASS 020COE  K1D 0V       TF                                 + 07900                           0 DS   547511212
+SUSAP KCOEK1FL06   ACLASS 030POBIYK1PC0EY      TF                                 + 06400                           0 DS   547521310
+SUSAP KCOEK1FL06   ACLASS 040POBIYK1PC0EE AL   HF ICOEK1      231101500511T010PI  + 05600                           0 DS   547532407
+SUSAP KCOEK1FL06   ADIANN 010DIANNK1EA0E       IF                                             18000                 0 DS   547541212
+SUSAP KCOEK1FL06   ADIANN 020COE  K1D 0V       TF                                 + 09000                           0 DS   547551212
+SUSAP KCOEK1FL06   ADIANN 030POBIYK1PC0EY  R   TFY                                + 06400                           0 DS   547561310
+SUSAP KCOEK1FL06   ADIANN 040POBIYK1PC0EE AL   HF ICOEK1      231101500511T010PI  + 05600                           0 DS   547572407
+SUSAP KCOEK1FL06   AGEG   010GEG  K1D 0V  A    FC GEG K1      0000000005390188D   + 05600     18000                 0 DS   547582306
+SUSAP KCOEK1FL06   AGEG   020POBIYK1PC0EE B    CF ICOEK1      2311015005390020PI  + 05600                           0 DS   547592306
+SUSAP KCOEK1FL06   AHILIE 010HILIEK1EA0E       IF                                             18000                 0 DS   547601212
+SUSAP KCOEK1FL06   AHILIE 020COE  K1D 0V       TF                                 + 06700                           0 DS   547611212
+SUSAP KCOEK1FL06   AHILIE 030POBIYK1PC0EY  L   TFY                                + 06400                           0 DS   547621310
+SUSAP KCOEK1FL06   AHILIE 040POBIYK1PC0EE AL   HF ICOEK1      231101500511T010PI  + 05600                           0 DS   547632407
+SUSAP KCOEK1FL06   L      010POBIYK1PC0E  I    IF ICOEK1      23110150        PI  + 05600     18000                 0 DS   547641310
+SUSAP KCOEK1FL06   L      020CIPUTK1PC0E  F    CF ICOEK1      2311008105100069PI  + 04500                 COE   K1D 0 DS   547651310
+SUSAP KCOEK1FL06   L      021ONUCUK1PC0E S     CF ICOEK1      2311005005100031PI  + 03480             -306          0 DS   547661310
+SUSAP KCOEK1FL06   L      030TIYOSK1PC0EY M    CF ICOEK1      2311001405100036PI    02333             -306          0 DS   547671310
+SUSAP KCOEK1FL06   L      040         0  M     CA                     0511        + 02900                           0 DS   547681212
+SUSAP KCOEK1FL06   L      050COE  K1D 0V       FA COE K1      000000003500    D   + 06000                           0 DS   547691212
+SUSAP KCOEK1FL06   L      060COE  K1D 0VY  L   CFYCOE K1      0000000017000140D   + 06500                           0 DS   547701212
+SUSAP KCOEK1FL06   L      070COE  K1D 0VE  L   HM                     0510T010    + 06500                           0 DS   547711212

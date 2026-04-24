@@ -1,0 +1,25 @@
+# Raw ARINC 424.18 PF records for KCOI_R11
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 15
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KCOIK7FR11   AMALET 010MALETK7EA0E       IF                                             18000                 A JS   548600804
+SUSAP KCOIK7FR11   AMALET 020PALCYK7PC0E  A 020TF                                 + 02000                           A JS   548611310
+SUSAP KCOIK7FR11   AMALET 030LOUSAK7PC0EE B 010TF                                 + 02000                           A JS   548621310
+SUSAP KCOIK7FR11   AMLB   010MLB  K7D 0V       IF                                             18000                 A JS   548630804
+SUSAP KCOIK7FR11   AMLB   020IPZOFK7PC0E  A 020TF                                 + 02100                           A JS   548641310
+SUSAP KCOIK7FR11   AMLB   030LOUSAK7PC0EE B 010TF                                 + 02000                           A JS   548651310
+SUSAP KCOIK7FR11   R      010LOUSAK7PC0E  I    IF                                 + 02000     18000                 A JS   548661310
+SUSAP KCOIK7FR11   R      020ACMODK7PC1E  F 051TF                                 + 01600                 RW11  K7PGA JS   548671310
+SUSAP KCOIK7FR11   R      020ACMODK7PC2WALPV       N          ALNAV                                                   JS   548681310
+SUSAP KCOIK7FR11   R      021COYDAK7PC0E S  031TF                                 V 0080000803        -300          A JS   548691310
+SUSAP KCOIK7FR11   R      030RW11 K7PG0GY M 031TF                                   00039             -300          A JS   548701210
+SUSAP KCOIK7FR11   R      040         0  M     CA                     1143        + 00291                           A JS   548710804
+SUSAP KCOIK7FR11   R      050YONUSK7PC0E       DF                                                                   A JS   548721310
+SUSAP KCOIK7FR11   R      060MLB  K7D 0VY   010TF                                 + 03000                           A JS   548731210
+SUSAP KCOIK7FR11   R      070MLB  K7D 0VE  L   HM                     01800040    + 03000                           A JS   548742209

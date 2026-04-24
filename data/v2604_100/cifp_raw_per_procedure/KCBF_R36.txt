@@ -1,0 +1,27 @@
+# Raw ARINC 424.18 PF records for KCBF_R36
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 17
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KCBFK3FR36   AEMEND 010EMENDK3EA0E       IF                                             18000                 A JS   457330906
+SUSAP KCBFK3FR36   AEMEND 020VOHBUK3PC0E  A 010TF                     26180086    + 03000                           A JS   457341911
+SUSAP KCBFK3FR36   AEMEND 030WAMETK3PC0EE B 010TF                     26660064    + 03000                           A JS   457351412
+SUSAP KCBFK3FR36   AMEPWE 010MEPWEK3EA0E       IF                                             18000                 A JS   457360906
+SUSAP KCBFK3FR36   AMEPWE 020CAVIPK3PC0E  A 010TF                     09210078    + 03000                           A JS   457371911
+SUSAP KCBFK3FR36   AMEPWE 030WAMETK3PC0EE B 010TF                     08640064    + 03000                           A JS   457381412
+SUSAP KCBFK3FR36   AOVR   010OVR  K3D 0V       IF                                             18000                 A JS   457390906
+SUSAP KCBFK3FR36   AOVR   020WAMETK3PC0EY   010TF                     18680061    + 03000                           A JS   457401911
+SUSAP KCBFK3FR36   AOVR   030WAMETK3PC0EE AR   HF                     35650040    + 03000                           A JS   457411310
+SUSAP KCBFK3FR36   R      010WAMETK3PC0E  I    IF                                 + 03000     18000                 A JS   457421310
+SUSAP KCBFK3FR36   R      020JATINK3PC1E  F 010TF                     35650061    + 02900                 RW36  K3PGA JS   457431911
+SUSAP KCBFK3FR36   R      020JATINK3PC2WALPV       ALNAV/VNAV ALNAV                                                   JS   457441310
+SUSAP KCBFK3FR36   R      021HODINK3PC0E S  031TF                     35650034    V 0182001833        -300          A JS   457451412
+SUSAP KCBFK3FR36   R      030RW36 K3PG0GY M 031TF                     35650017      01292             -300          A JS   457461008
+SUSAP KCBFK3FR36   R      040         0  M     CA                     3565        + 01445                           A JS   457471008
+SUSAP KCBFK3FR36   R      050IPOREK3PC0EY   010DF                                 + 03000                           A JS   457481911
+SUSAP KCBFK3FR36   R      060IPOREK3PC0EE  R   HM                     17650040    + 03000                           A JS   457491412

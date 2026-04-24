@@ -1,0 +1,22 @@
+# Raw ARINC 424.18 PF records for KAXV_R26
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 12
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KAXVK5FR26   ACIPRO 010CIPROK5PC0E  A    IF                                             18000                 A JS   291621310
+SUSAP KAXVK5FR26   ACIPRO 020SHOOSK5PC0EE B 010TF                                 + 03000                           A JS   291632309
+SUSAP KAXVK5FR26   AJOLIV 010JOLIVK5PC0E  A    IF                                             18000                 A JS   291641310
+SUSAP KAXVK5FR26   AJOLIV 020SHOOSK5PC0EE B 010TF                                 + 03000                           A JS   291652309
+SUSAP KAXVK5FR26   ASHOOS 010SHOOSK5PC0EE AR   HF                     26080040    + 03000     18000                 A JS   291661310
+SUSAP KAXVK5FR26   R      010SHOOSK5PC0E  I    IF                                 + 03000     18000                 A JS   291671310
+SUSAP KAXVK5FR26   R      020EVEZAK5PC1E  F 010TF                                 + 02600                           A JS   291682309
+SUSAP KAXVK5FR26   R      020EVEZAK5PC2WALPV       ALNAV/VNAV ALNAV                                                   JS   291691310
+SUSAP KAXVK5FR26   R      030RW26 K5PG0GY M 031TF                                   00948             -300          A JS   291702309
+SUSAP KAXVK5FR26   R      040         0  M     CA                     2607        + 01241                           A JS   291710808
+SUSAP KAXVK5FR26   R      050ZUKECK5PC0EY   010DF                                 + 03000                           A JS   291722309
+SUSAP KAXVK5FR26   R      060ZUKECK5PC0EE  R   HM                     08040040    + 03000                           A JS   291731310

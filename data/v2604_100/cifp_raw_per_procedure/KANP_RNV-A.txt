@@ -1,0 +1,19 @@
+# Raw ARINC 424.18 PF records for KANP_RNV-A
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 9
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KANPK6FRNV-A AAMRTN 010AMRTNK6EA0EE AL   HF                     29770040    + 02000     18000                 B PC   210912112
+SUSAP KANPK6FRNV-A AGRACO 010GRACOK6EA0E  A    IF                                             18000                 B PC   210922112
+SUSAP KANPK6FRNV-A AGRACO 020AMRTNK6EA0EE B 010TF                                 + 02000                           B PC   210932112
+SUSAP KANPK6FRNV-A R      010AMRTNK6EA0E  I    IF                                 + 02000     18000                 B PC   210942112
+SUSAP KANPK6FRNV-A R      020DENIIK6PC0E  F 010TF                                 + 01700                 STRGL K6PCB PC   210952409
+SUSAP KANPK6FRNV-A R      030STRGLK6PC0EY M 031TF                                   00233             -306          B PC   210962409
+SUSAP KANPK6FRNV-A R      040         0  M     CA                     2976        + 00434                           B PC   210972112
+SUSAP KANPK6FRNV-A R      050AMRTNK6EA0EY  L010DF                                 + 02000                           B PC   210982112
+SUSAP KANPK6FRNV-A R      060AMRTNK6EA0EE  L   HM                     29770040    + 02000                           B PC   210992112

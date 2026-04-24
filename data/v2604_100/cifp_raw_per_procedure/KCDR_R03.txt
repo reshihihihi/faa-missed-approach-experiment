@@ -1,0 +1,23 @@
+# Raw ARINC 424.18 PF records for KCDR_R03
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 13
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KCDRK3FR03   AHADIR 010HADIRK3PC0EE AR   HF                     02800070    + 07500     18000                 A JS   463891602
+SUSAP KCDRK3FR03   AJUVEB 010JUVEBK3PC0E  A    IF                                             18000                 A JS   463901602
+SUSAP KCDRK3FR03   AJUVEB 020HADIRK3PC0EE B 010TF                                 + 07500                           A JS   463912209
+SUSAP KCDRK3FR03   APETYO 010PETYOK3PC0E  A    IF                                             18000                 A JS   463921602
+SUSAP KCDRK3FR03   APETYO 020HADIRK3PC0EE B 010TF                                 + 07500                           A JS   463932209
+SUSAP KCDRK3FR03   R      010HADIRK3PC0E  I    IF                                 + 07500     18000                 A JS   463941602
+SUSAP KCDRK3FR03   R      020IDXULK3PC1E  F 010TF                                 + 05500                           A JS   463952209
+SUSAP KCDRK3FR03   R      020IDXULK3PC2WALPV       ALNAV/VNAV ALNAV                                                   JS   463961602
+SUSAP KCDRK3FR03   R      021ZAMATK3PC0E S  031TF                                 V 0414004151        -300          A JS   463972209
+SUSAP KCDRK3FR03   R      030RW03 K3PG0GY M 031TF                                   03354             -300          A JS   463982209
+SUSAP KCDRK3FR03   R      040         0  M     CA                     0280        + 03494                           A JS   463991602
+SUSAP KCDRK3FR03   R      050EDUQAK3PC0EY   010DF                                 + 05100                           A JS   464002209
+SUSAP KCDRK3FR03   R      060EDUQAK3PC0EE  R   HM                     20820050    + 05100                           A JS   464011602
