@@ -1,0 +1,26 @@
+# Raw ARINC 424.18 PF records for KBDH_R31
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 16
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KBDHK3FR31   AARMUW 010ARMUWK3EA0E       IF                                             18000                 A JS   310371305
+SUSAP KBDHK3FR31   AARMUW 020HEPIVK3PC0EY   010TF                                 + 03100                           A JS   310382401
+SUSAP KBDHK3FR31   AARMUW 030HEPIVK3PC0EE AR   HF                     30590040    + 02800                           A JS   310391310
+SUSAP KBDHK3FR31   ACLAPS 010CLAPSK3EA0E       IF                                             18000                 A JS   310401305
+SUSAP KBDHK3FR31   ACLAPS 020HEPIVK3PC0EY   010TF                                 + 02800                           A JS   310412401
+SUSAP KBDHK3FR31   ACLAPS 030HEPIVK3PC0EE AR   HF                     30590040    + 02800                           A JS   310421310
+SUSAP KBDHK3FR31   ARWF   010RWF  K3D 0V  A    IF                                             18000                 A JS   310431305
+SUSAP KBDHK3FR31   ARWF   020HEPIVK3PC0EE B 010TF                                 + 02800                           A JS   310442401
+SUSAP KBDHK3FR31   R      010HEPIVK3PC0E  I    IF                                 + 02800     18000                 A JS   310451310
+SUSAP KBDHK3FR31   R      020FIKIGK3PC1E  F 010TF                                 + 02800                 RW31  K3PGA JS   310462401
+SUSAP KBDHK3FR31   R      020FIKIGK3PC2WALPV       ALNAV/VNAV ALNAV                                                   JS   310471310
+SUSAP KBDHK3FR31   R      021ZONULK3PC0E S  031TF                                 V 0168001680        -300          A JS   310482401
+SUSAP KBDHK3FR31   R      030RW31 K3PG0GY M 031TF                                   01175             -300          A JS   310492401
+SUSAP KBDHK3FR31   R      040         0  M     CA                     3058        + 01326                           A JS   310501305
+SUSAP KBDHK3FR31   R      050BEESEK3PC0EY   010DF                                 + 02800                           A JS   310512401
+SUSAP KBDHK3FR31   R      060BEESEK3PC0EE  R   HM                     12560040    + 02800                           A JS   310521310

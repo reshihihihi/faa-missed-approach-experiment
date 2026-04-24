@@ -1,0 +1,22 @@
+# Raw ARINC 424.18 PF records for KAVQ_R21
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 12
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KAVQK2FR21   AALMON 010ALMONK2EA0E       IF                                             18000                 A JS   283331109
+SUSAP KAVQK2FR21   AALMON 020PICLIK2EA0E  A 010TF                                 + 06600                           A JS   283342012
+SUSAP KAVQK2FR21   AALMON 030NABPIK2PC0EE B 010TF                                 + 04900                           A JS   283352012
+SUSAP KAVQK2FR21   R      010NABPIK2PC0E  I    IF                                 + 04900     18000                 A JS   283361310
+SUSAP KAVQK2FR21   R      020FIMTUK2PC1E  F 010TF                                 + 04400                 ZOMAP K2PCA JS   283372012
+SUSAP KAVQK2FR21   R      020FIMTUK2PC2WALP        N          ALNAV                                                   JS   283381310
+SUSAP KAVQK2FR21   R      021DUYEDK2PC0E S  031TF                                 V 0312003131        -335          A JS   283392012
+SUSAP KAVQK2FR21   R      030ZOMAPK2PC0EY M 031TF                                   02241             -335          A JS   283402012
+SUSAP KAVQK2FR21   R      040         0  M     CA                     1986        + 02340                           A JS   283411109
+SUSAP KAVQK2FR21   R      050TUPBOK2PC0E    010DF                                                                   A JS   283422012
+SUSAP KAVQK2FR21   R      060ALMONK2EA0EY   010TF                                 + 06700                           A JS   283432012
+SUSAP KAVQK2FR21   R      070ALMONK2EA0EE  L   HM                     11100060    + 06700                           A JS   283441109

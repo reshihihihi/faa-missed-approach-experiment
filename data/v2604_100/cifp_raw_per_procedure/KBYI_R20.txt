@@ -1,0 +1,29 @@
+# Raw ARINC 424.18 PF records for KBYI_R20
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 19
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KBYIK1FR20   AIREME 010IREMEK1PC0EE AR   HF                     20250070    + 07000     18000                 B PS   443462101
+SUSAP KBYIK1FR20   AMALTT 010MALTTK1EA0E       IF                                             18000                 B PS   443472101
+SUSAP KBYIK1FR20   AMALTT 020PAXTOK1PC0E    010TF                                 + 08200                           B PS   443482502
+SUSAP KBYIK1FR20   AMALTT 030MUTOEK1PC0E  A 010TF                                 + 08200                           B PS   443492502
+SUSAP KBYIK1FR20   AMALTT 040IREMEK1PC0EE B 010TF                                 + 07000                           B PS   443502502
+SUSAP KBYIK1FR20   ASHONE 010SHONEK1EA0E       IF                                             18000                 B PS   443512101
+SUSAP KBYIK1FR20   ASHONE 020BATSEK1PC0E  A 010TF                                 + 08200                           B PS   443522502
+SUSAP KBYIK1FR20   ASHONE 030IREMEK1PC0EE B 010TF                                 + 07000                           B PS   443532101
+SUSAP KBYIK1FR20   ATOXEE 010TOXEEK1EA0E       IF                                             18000                 B PS   443542502
+SUSAP KBYIK1FR20   ATOXEE 020BATSEK1PC0E  A 010TF                                 + 07300                           B PS   443552502
+SUSAP KBYIK1FR20   ATOXEE 030IREMEK1PC0EE B 010TF                                 + 07000                           B PS   443562502
+SUSAP KBYIK1FR20   R      010IREMEK1PC0E  I    IF                                 + 07000     18000                 B PS   443572101
+SUSAP KBYIK1FR20   R      020HIKLOK1PC1E  F 010TF                                 + 06000                 RW20  K1PGB PS   443582101
+SUSAP KBYIK1FR20   R      020HIKLOK1PC2WN          N          ALNAV                                                   PS   443592101
+SUSAP KBYIK1FR20   R      021JAMIDK1PC0E S  031TF                                 + 04800                           B PS   443602502
+SUSAP KBYIK1FR20   R      030RW20 K1PG0GY M 031TF                                   04182              000          B PS   443612502
+SUSAP KBYIK1FR20   R      040         0  M     CA                     2025        + 04554                           B PS   443622101
+SUSAP KBYIK1FR20   R      050IREMEK1PC0EY  L010DF                                 + 07000                           B PS   443632101
+SUSAP KBYIK1FR20   R      060IREMEK1PC0EE  R   HM                     20250070    + 07000                           B PS   443642101

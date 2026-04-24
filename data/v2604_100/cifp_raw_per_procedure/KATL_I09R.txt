@@ -1,0 +1,23 @@
+# Raw ARINC 424.18 PF records for KATL_I09R
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 13
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KATLK7FI09R  AANDIY 010ANDIYK7PC0E  A    IF                                 + 07000     18000                 0 DS   262472104
+SUSAP KATLK7FI09R  AANDIY 020DFINSK7PC0E       TF                                 + 06000                           0 DS   262482104
+SUSAP KATLK7FI09R  AANDIY 030GGUYYK7PC0EE B    CF IFUNK7      2750015209500038PI  + 05000                           0 DS   262492104
+SUSAP KATLK7FI09R  ADFINS 010DFINSK7PC0E       IF                                 + 06000     18000                 0 DS   262502104
+SUSAP KATLK7FI09R  ADFINS 020GGUYYK7PC0E  B    TF                                 + 05000                           0 DS   262512104
+SUSAP KATLK7FI09R  ADFINS 030EEASYK7PC0EE      CF IFUNK7      2750011809500035PI  + 04000                           0 DS   262522104
+SUSAP KATLK7FI09R  I      010GGUYYK7PC0E  I    IF IFUNK7      27500152        PI  J 050000270018000                 0 DS   262532104
+SUSAP KATLK7FI09R  I      011EEASYK7PC0E       CF IFUNK7      2750011809500035PI  + 04000                           0 DS   262542104
+SUSAP KATLK7FI09R  I      020BURNYK7PC0E  F    CF IFUNK7      2750006809500050PI  H 0270002700            KATL  K7PA0 DS   262552104
+SUSAP KATLK7FI09R  I      030RW09RK7PG0GY M    CF IFUNK7      2750001709500050PI    01082             -300          0 DS   262562104
+SUSAP KATLK7FI09R  I      040         0  M     VI                     1000                                          0 DS   262572104
+SUSAP KATLK7FI09R  I      050CONNIK7PC0EY      CF AHN K7      2346030205460056D   + 04000                           0 DS   262582104
+SUSAP KATLK7FI09R  I      060CONNIK7PC0EE  R   HM                     0546T010    + 04000                           0 DS   262592104

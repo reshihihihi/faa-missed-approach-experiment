@@ -1,0 +1,23 @@
+# Raw ARINC 424.18 PF records for KCBF_L36
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 13
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KCBFK3FL36   AIPALY 010IPALYK3PC0E  A    IF                                             18000                 0 NS   456872302
+SUSAP KCBFK3FL36   AIPALY 020         0        VI                     0415        + 03000                           0 NS   456881911
+SUSAP KCBFK3FL36   AIPALY 030WAMETK3PC0EE B    CF ICBFK3      1765012335650044PI  + 03000                           0 NS   456891412
+SUSAP KCBFK3FL36   AOVR   010OVR  K3D 0V       IF                                             18000                 0 NS   456901209
+SUSAP KCBFK3FL36   AOVR   020JATINK3PC0E       TF                                 + 03000                           0 NS   456911310
+SUSAP KCBFK3FL36   AOVR   030JATINK3PC0EE AR   PI ICBFK3      1765006113150100PI  + 03000                           0 NS   456921911
+SUSAP KCBFK3FL36   L      010WAMETK3PC0E  I    IF ICBFK3      17650123        PI  + 03000     18000                 0 NS   456931310
+SUSAP KCBFK3FL36   L      020JATINK3PC0E  F    CF ICBFK3      1765006135700061PI  + 02900                 OVR   K3D 0 NS   456941412
+SUSAP KCBFK3FL36   L      021HODINK3PC0E S     CF ICBFK3      1765002835700034PI  + 01760             -301          0 NS   456951412
+SUSAP KCBFK3FL36   L      030RW36 K3PG0GY M    CF ICBFK3      1765001135700017PI    01292             -301          0 NS   456961412
+SUSAP KCBFK3FL36   L      040         0  M     CA                     3565        + 03000                           0 NS   456971209
+SUSAP KCBFK3FL36   L      050OVR  K3D 0VY  R   DF                                 + 03000                           0 NS   456981209
+SUSAP KCBFK3FL36   L      060OVR  K3D 0VE  R   HM                     2840T010    + 03000                           0 NS   456991209

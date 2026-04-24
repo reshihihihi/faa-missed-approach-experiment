@@ -1,0 +1,23 @@
+# Raw ARINC 424.18 PF records for KBJC_R12L
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 13
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KBJCK2FR12L  ADRROP 010DRROPK2PC0E  A    IF                                             18000210              A-JS   348332004
+SUSAP KBJCK2FR12L  ADRROP 020NTOOOK2PC0E    010TF                                 + 08100                           A JS   348342501
+SUSAP KBJCK2FR12L  ADRROP 030HALFFK2PC0EE B 010TF                                 + 07100                           A JS   348352501
+SUSAP KBJCK2FR12L  APYDRT 010PYDRTK2EA0E  A    IF                                   09000     18000210              A-JS   348362004
+SUSAP KBJCK2FR12L  APYDRT 020OTHERK2PC0E    010TF                                 + 08100                           A JS   348372501
+SUSAP KBJCK2FR12L  APYDRT 030HALFFK2PC0EE B 010TF                                 + 07100                           A JS   348382501
+SUSAP KBJCK2FR12L  R      010HALFFK2PC0E  I    IF                                 + 07100     18000                 A JS   348391709
+SUSAP KBJCK2FR12L  R      020PYYPPK2PC1E  F 010TF                     15420040    + 06700                 DUUUD K2PCA JS   348402004
+SUSAP KBJCK2FR12L  R      020PYYPPK2PC2WALP        N          ALNAV                                                   JS   348411709
+SUSAP KBJCK2FR12L  R      030DUUUDK2PC0EY M 031TF                                   05973             -300          A JS   348422501
+SUSAP KBJCK2FR12L  R      040         0  M     CA                     1353        + 06200                           A JS   348431709
+SUSAP KBJCK2FR12L  R      050NSPYRK2PC0EY  L010DF                                 + 08400                           A JS   348442004
+SUSAP KBJCK2FR12L  R      060NSPYRK2PC0EE  L   HM                     33830070    + 08400                           A JS   348452004

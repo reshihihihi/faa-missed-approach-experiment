@@ -1,0 +1,20 @@
+# Raw ARINC 424.18 PF records for KBMQ_R01
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 10
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KBMQK4FR01   AAMUSE 010AMUSEK4EA0E  A    IF                                             18000                 B PS   371882201
+SUSAP KBMQK4FR01   AAMUSE 020SUBIEK4PC0EE B 010TF                                 + 03100                           B PS   371892201
+SUSAP KBMQK4FR01   R      010SUBIEK4PC0E  I    IF                                 + 03100     18000                 B PS   371902201
+SUSAP KBMQK4FR01   R      020FINTIK4PC1E  F 010TF                                 + 02600                 BEPKY K4PCB PS   371912201
+SUSAP KBMQK4FR01   R      020FINTIK4PC2WN          N          ALNAV                                                   PS   371922201
+SUSAP KBMQK4FR01   R      021HUKUDK4PC0E S  031TF                                 V 0194001953        -304          B PS   371932201
+SUSAP KBMQK4FR01   R      030BEPKYK4PC0EY M 031TF                                   01628             -304          B PS   371942201
+SUSAP KBMQK4FR01   R      040         0  M     CA                     0131        + 01660                           B PS   371952302
+SUSAP KBMQK4FR01   R      050DLORAK4PC0EY   010DF                                 + 03500                           B PS   371962201
+SUSAP KBMQK4FR01   R      060DLORAK4PC0EE  R   HM                     19320040    + 03500                           B PS   371972302

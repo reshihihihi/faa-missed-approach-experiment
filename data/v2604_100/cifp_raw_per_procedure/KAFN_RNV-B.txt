@@ -1,0 +1,18 @@
+# Raw ARINC 424.18 PF records for KAFN_RNV-B
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 8
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KAFNK6FRNV-B AGDM   010GDM  K6D 0VE AR   HF                     02290040    + 03000     18000                 B PC   167422008
+SUSAP KAFNK6FRNV-B R      010GDM  K6D 0V  I    IF                                 + 03000     18000                 B PC   167432008
+SUSAP KAFNK6FRNV-B R      020SCROBK6PC0E  F 010TF                                 + 03000                 UCAKE K6PCB PC   167442008
+SUSAP KAFNK6FRNV-B R      021BUDACK6PC0E S  031TF                                 + 01900                           B PC   167452008
+SUSAP KAFNK6FRNV-B R      030UCAKEK6PC0EY M 031TF                                   01040              000          B PC   167462204
+SUSAP KAFNK6FRNV-B R      040         0  M     CA                     0229        + 01440                           B PC   167472008
+SUSAP KAFNK6FRNV-B R      050QOSNUK6PC0EY   010DF                                 + 03400                           B PC   167482008
+SUSAP KAFNK6FRNV-B R      060QOSNUK6PC0EE  L   HM                     20300040    + 03400                           B PC   167492008

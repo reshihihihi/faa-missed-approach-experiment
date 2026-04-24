@@ -1,0 +1,22 @@
+# Raw ARINC 424.18 PF records for KBKX_R30
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 12
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KBKXK3FR30   AASTOE 010ASTOEK3EA0E       IF                                             18000                 A JS   360761410
+SUSAP KBKXK3FR30   AASTOE 020SEEPSK3PC0E  A 010TF                                 + 03500                           A JS   360772102
+SUSAP KBKXK3FR30   AASTOE 030REEKYK3PC0EE B 010TF                                 + 03500                           A JS   360782102
+SUSAP KBKXK3FR30   AFSD   010FSD  K3D 0V  A    IF                                             18000                 A JS   360791410
+SUSAP KBKXK3FR30   AFSD   020REEKYK3PC0EE B 010TF                                 + 03500                           A JS   360802102
+SUSAP KBKXK3FR30   R      010REEKYK3PC0E  I    IF                                 + 03500     18000                 A JS   360811410
+SUSAP KBKXK3FR30   R      020ZURPAK3PC1E  F 010TF                                 + 03300                 RW30  K3PGA JS   360822102
+SUSAP KBKXK3FR30   R      020ZURPAK3PC2WALPV       ALNAV/VNAV ALNAV                                                   JS   360831410
+SUSAP KBKXK3FR30   R      030RW30 K3PG0GY M 031TF                                   01682             -300          A JS   360842102
+SUSAP KBKXK3FR30   R      040         0  M     CA                     2956        + 01887                           A JS   360851410
+SUSAP KBKXK3FR30   R      050CYMOLK3PC0EY   010DF                                 + 03500                           A JS   360862102
+SUSAP KBKXK3FR30   R      060CYMOLK3PC0EE  R   HM                     11540040    + 03500                           A JS   360871410

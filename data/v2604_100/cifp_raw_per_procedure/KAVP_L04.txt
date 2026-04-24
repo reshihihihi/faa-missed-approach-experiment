@@ -1,0 +1,21 @@
+# Raw ARINC 424.18 PF records for KAVP_L04
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 11
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KAVPK6FL04   ALVZ   010LVZ  K6D 0V       IF                                             18000                 0 DS   282451311
+SUSAP KAVPK6FL04   ALVZ   020HEAPPK6PC0EY      TF                                 + 04000                           0 DS   282461311
+SUSAP KAVPK6FL04   ALVZ   030HEAPPK6PC0EE AR   HF IAVPK6      225501760455T010PI  + 04000                           0 DS   282471311
+SUSAP KAVPK6FL04   L      010HEAPPK6PC0E  I    IF IAVPK6      22550176        PI  + 04000     18000                 0 DS   282481310
+SUSAP KAVPK6FL04   L      020JISAGK6PC0E  F    CF IAVPK6      2255010104500076PI  + 03900                 LVZ   K6D 0 DS   282491310
+SUSAP KAVPK6FL04   L      021ZEXESK6PC0E S     CF IAVPK6      2255006704500034PI  + 02820             -300          0 DS   282501310
+SUSAP KAVPK6FL04   L      022TUYOTK6PC0E S     CF IAVPK6      2255003804500029PI  + 01900             -300          0 DS   282511310
+SUSAP KAVPK6FL04   L      030FEVORK6PC0EY M    CF IAVPK6      2255001004500028PI    01018             -300          0 DS   282522312
+SUSAP KAVPK6FL04   L      040         0  M     CA                     0455        + 03000                           0 DS   282531304
+SUSAP KAVPK6FL04   L      050LVZ  K6D 0VY  R   DF                                 + 04000                           0 DS   282541304
+SUSAP KAVPK6FL04   L      060LVZ  K6D 0VE  R   HM                     0100T010    + 04000                           0 DS   282551304

@@ -1,0 +1,23 @@
+# Raw ARINC 424.18 PF records for KAKH_R03
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 13
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KAKHK7FR03   AGAFFE 010GAFFEK7EA0E  A    IF                                             18000                 A JS   189430804
+SUSAP KAKHK7FR03   AGAFFE 020SIDARK7PC0EE B 010TF                                 + 03000                           A JS   189442205
+SUSAP KAKHK7FR03   ALOCKS 010LOCKSK7EA0E  A    IF                                             18000                 A JS   189450804
+SUSAP KAKHK7FR03   ALOCKS 020SIDARK7PC0EE B 010TF                                 + 03000                           A JS   189462205
+SUSAP KAKHK7FR03   R      010SIDARK7PC0E  I    IF                                 + 03000     18000                 A JS   189471310
+SUSAP KAKHK7FR03   R      020ACLACK7PC1E  F 010TF                                 + 02400                 RW03  K7PGA JS   189482205
+SUSAP KAKHK7FR03   R      020ACLACK7PC2WALPV       N          ALNAV                                                   JS   189491310
+SUSAP KAKHK7FR03   R      030RW03 K7PG0GY M 031TF                                   00836             -300          A JS   189502205
+SUSAP KAKHK7FR03   R      040         0  M     CA                     0343        + 01118                           A JS   189510804
+SUSAP KAKHK7FR03   R      050SAVKEK7PC0E    010DF                                                                   A JS   189522205
+SUSAP KAKHK7FR03   R      060HIVSIK7PC0E    010TF                                                                   A JS   189532205
+SUSAP KAKHK7FR03   R      070GAFFEK7EA0EY   010TF                                 + 03200                           A JS   189542205
+SUSAP KAKHK7FR03   R      080GAFFEK7EA0EE  R   HM                     26070040    + 03200                           A JS   189552205

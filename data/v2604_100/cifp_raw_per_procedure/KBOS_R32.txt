@@ -1,0 +1,37 @@
+# Raw ARINC 424.18 PF records for KBOS_R32
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 27
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KBOSK6FR32   AFREDO 010FREDOK6EA0E       IF                                             18000                 B PS   398302113
+SUSAP KBOSK6FR32   AFREDO 020DUNKKK6EA0E    010TF                                 + 04000                           B PS   398312406
+SUSAP KBOSK6FR32   AFREDO 030HAVRDK6PC0E  A 010TF                                 + 04000                           B PS   398322406
+SUSAP KBOSK6FR32   AFREDO 040YAARDK6PC0EE B 010TF                                 + 03000                           B PS   398332113
+SUSAP KBOSK6FR32   AINNDY 010INNDYK6EA0E       IF                                             18000                 B PS   398342113
+SUSAP KBOSK6FR32   AINNDY 020QUINCK6PC0E    010TF                                 + 04000                           B PS   398352406
+SUSAP KBOSK6FR32   AINNDY 030DUNKKK6EA0E    010TF                                 + 04000                           B PS   398362406
+SUSAP KBOSK6FR32   AINNDY 040HAVRDK6PC0E  A 010TF                                 + 04000                           B PS   398372406
+SUSAP KBOSK6FR32   AINNDY 050YAARDK6PC0EE B 010TF                                 + 03000                           B PS   398382113
+SUSAP KBOSK6FR32   ASCUPP 010SCUPPK EA0E       IF                                             18000                 B PS   398392113
+SUSAP KBOSK6FR32   ASCUPP 020BOATZK6PC0E    010TF                                 + 04000                           B PS   398402406
+SUSAP KBOSK6FR32   ASCUPP 030DUNKKK6EA0E    010TF                                 + 04000                           B PS   398412406
+SUSAP KBOSK6FR32   ASCUPP 040HAVRDK6PC0E  A 010TF                                 + 04000                           B PS   398422406
+SUSAP KBOSK6FR32   ASCUPP 050YAARDK6PC0EE B 010TF                                 + 03000                           B PS   398432113
+SUSAP KBOSK6FR32   AWOONS 010WOONSK6EA0E       IF                                             18000                 B PS   398442113
+SUSAP KBOSK6FR32   AWOONS 020QUINCK6PC0E    010TF                                 + 04000                           B PS   398452406
+SUSAP KBOSK6FR32   AWOONS 030DUNKKK6EA0E    010TF                                 + 04000                           B PS   398462406
+SUSAP KBOSK6FR32   AWOONS 040HAVRDK6PC0E  A 010TF                                 + 04000                           B PS   398472406
+SUSAP KBOSK6FR32   AWOONS 050YAARDK6PC0EE B 010TF                                 + 03000                           B PS   398482113
+SUSAP KBOSK6FR32   R      010YAARDK6PC0E  I    IF                                 + 03000     18000                 B PS   398492113
+SUSAP KBOSK6FR32   R      020BGDIGK6PC1E  F 010TF                                 + 01500                 PAARK K6PCB PS   398502113
+SUSAP KBOSK6FR32   R      020BGDIGK6PC2WN          N          ALNAV                                                   PS   398512113
+SUSAP KBOSK6FR32   R      030PAARKK6PC0EY M 031TF                                   00206             -291          B PS   398522113
+SUSAP KBOSK6FR32   R      040         0  M     CA                     3307        + 00419                           B PS   398532113
+SUSAP KBOSK6FR32   R      050WINDZK6PC0E    010DF                                                                   B PS   398542113
+SUSAP KBOSK6FR32   R      060TELLEK6PC0EY   010TF                                 + 03000                           B PS   398552113
+SUSAP KBOSK6FR32   R      070TELLEK6PC0EE  R   HM                     28410050    + 03000                           B PS   398562113

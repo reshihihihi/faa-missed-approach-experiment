@@ -1,0 +1,16 @@
+# Raw ARINC 424.18 PF records for KAXH_L09
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 6
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KAXHK4FL09   ADUCKS 010DUCKSK4PC0EE AR   PI IAXHK4      2692007022420100PI  + 02400     18000                 0 PS   289021907
+SUSAP KAXHK4FL09   L      010CFFLRK4PC0E  I    IF IAXHK4      26930130        PI  + 03100     18000                 0 PS   289031907
+SUSAP KAXHK4FL09   L      020DUCKSK4PC0E  F    CF IAXHK4      2692007008900060PI  + 02400                 IAH   K4D 0 PS   289041907
+SUSAP KAXHK4FL09   L      030RW09 K4PG0GY M    CF IAXHK4      2692000908900061PI    00119             -350          0 PS   289051907
+SUSAP KAXHK4FL09   L      040         0  M     CA                     0892        + 00469                           0 PS   289061907
+SUSAP KAXHK4FL09   L      050KEEDSK4EA0EE  R010DF                                 + 02500                           0 PS   289071907

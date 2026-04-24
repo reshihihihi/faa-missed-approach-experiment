@@ -1,0 +1,19 @@
+# Raw ARINC 424.18 PF records for KBXA_R18
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 9
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KBXAK4FR18   AOSTOE 010OSTOEK4PC0EE AR   HF                     18280040    + 02000     18000                 A JS   440801310
+SUSAP KBXAK4FR18   R      010OSTOEK4PC0E  I    IF                                 + 02000     18000                 A JS   440811310
+SUSAP KBXAK4FR18   R      020APALYK4PC1E  F 010TF                                 + 01500                           A JS   440822004
+SUSAP KBXAK4FR18   R      020APALYK4PC2WALPV       ALNAV/VNAV ALNAV                                                   JS   440831310
+SUSAP KBXAK4FR18   R      021BAPAYK4PC0E S  031TF                                 V 0076000774        -300          A JS   440842004
+SUSAP KBXAK4FR18   R      030RW18 K4PG0GY M 031TF                                   00169             -300          A JS   440852004
+SUSAP KBXAK4FR18   R      040         0  M     CA                     1828        + 00387                           A JS   440862004
+SUSAP KBXAK4FR18   R      050LOCHSK4PC0EY   010DF                                 + 02000                           A JS   440872004
+SUSAP KBXAK4FR18   R      060LOCHSK4PC0EE  R   HM                     00280040    + 02000                           A JS   440881310

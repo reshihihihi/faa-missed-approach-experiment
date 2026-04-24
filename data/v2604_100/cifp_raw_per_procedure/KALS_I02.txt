@@ -1,0 +1,24 @@
+# Raw ARINC 424.18 PF records for KALS_I02
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 14
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KALSK2FI02   AALS   010ALS  K2D 0V       IF                                             18000                 0 NS   198021303
+SUSAP KALSK2FI02   AALS   020RODDSK2EA0EY      TF                                 + 12200                           0 NS   198031705
+SUSAP KALSK2FI02   AALS   030RODDSK2EA0EE AR   HF ALS K2      219001400390T010D   + 12200                           0 NS   198041705
+SUSAP KALSK2FI02   ALYSSA 010LYSSAK2EA0E  A    IF                                             18000                 0 DS   198052304
+SUSAP KALSK2FI02   ALYSSA 020RODDSK2EA0EE BR   AF ALS K2      219001401727    D   + 12200                           0 DS   198062304
+SUSAP KALSK2FI02   AWAPRE 010WAPREK2EA0E  A    FC ALS K2      2190020003900040D   + 12200     18000                 0 NS   198072304
+SUSAP KALSK2FI02   AWAPRE 020RODDSK2EA0EE B    CF IVQRK2      2028017103900020PI  + 12200                           0 NS   198081705
+SUSAP KALSK2FI02   I      010RODDSK2EA0E  I    IF IVQRK2      20280171        PI  J 122000930018000                 0 NS   198091705
+SUSAP KALSK2FI02   I      011KROWZK2PC0E       CF IVQRK2      2028009102300080PI  + 09900                           0 NS   198102203
+SUSAP KALSK2FI02   I      020BREZEK2PC0E  F    CF IVQRK2      2028006902300021PI  H 0930009300            ALS   K2D 0 NS   198112203
+SUSAP KALSK2FI02   I      030RW02 K2PG0GY M    CF IVQRK2      2028001602300054PI    07588             -300          0 NS   198122203
+SUSAP KALSK2FI02   I      040         0  M     CA                     0228        + 08700                           0 NS   198131303
+SUSAP KALSK2FI02   I      050ALS  K2D 0VY  R   DF                                 + 11000                           0 NS   198142203
+SUSAP KALSK2FI02   I      060ALS  K2D 0VE  R   HM                     1420T010    + 11000                           0 NS   198152203

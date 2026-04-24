@@ -1,0 +1,19 @@
+# Raw ARINC 424.18 PF records for KAOO_R03-Z
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 9
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KAOOK6FR03-Z AIDUSE 010IDUSEK6PC0EE AR   HF                     02590040    + 04500     18000                 A WS   214062211
+SUSAP KAOOK6FR03-Z R      010IDUSEK6PC0E  I    IF                                 + 04500     18000                 A WS   214072211
+SUSAP KAOOK6FR03-Z R      020WOXUBK6PC1E  F 010TF                                 + 03600                           A WS   214082211
+SUSAP KAOOK6FR03-Z R      020WOXUBK6PC2WALPV       N          N                                                       WS   214092211
+SUSAP KAOOK6FR03-Z R      030RW03 K6PG0GY M 031TF                                   01558             -300          A WS   214102211
+SUSAP KAOOK6FR03-Z R      040         0  M     CA                     0260        + 01828                           A WS   214112211
+SUSAP KAOOK6FR03-Z R      050TOGJUK6PC0E    010DF                                                                   A WS   214122211
+SUSAP KAOOK6FR03-Z R      060GANECK6PC0EY   010TF                                 + 05000                           A WS   214132211
+SUSAP KAOOK6FR03-Z R      070GANECK6PC0EE  R   HM                     22010040    + 05000                           A WS   214142211

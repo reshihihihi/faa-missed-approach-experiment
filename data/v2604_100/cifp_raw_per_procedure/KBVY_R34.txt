@@ -1,0 +1,20 @@
+# Raw ARINC 424.18 PF records for KBVY_R34
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 10
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KBVYK6FR34   ACROCR 010CROCRK6PC0EE AR   HF                     33680040    + 02000     18000                 B PS   428382601
+SUSAP KBVYK6FR34   R      010CROCRK6PC0E  I    IF                                 + 02000     18000                 B PS   428392601
+SUSAP KBVYK6FR34   R      020WUSUPK6PC1E  F 010TF                                 + 01800                 RW34  K6PGB PS   428402601
+SUSAP KBVYK6FR34   R      020WUSUPK6PC2WN          N          ALNAV                                                   PS   428412601
+SUSAP KBVYK6FR34   R      021UNIREK6PC0E S  031TF                                 V 0076000773        -300          B PS   428422601
+SUSAP KBVYK6FR34   R      030RW34 K6PG0GY M 031TF                                   00136             -300          B PS   428432601
+SUSAP KBVYK6FR34   R      040         0  M     CA                     3367        + 00507                           B PS   428442601
+SUSAP KBVYK6FR34   R      050HOMUXK6PC0E    010DF                                                                   B PS   428452601
+SUSAP KBVYK6FR34   R      060WAKBIK6EA0EY   010TF                                 + 02000                           B PS   428462601
+SUSAP KBVYK6FR34   R      070WAKBIK6EA0EE  L   HM                     02100040    + 02000                           B PS   428472601

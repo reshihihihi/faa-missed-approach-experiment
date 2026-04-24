@@ -1,0 +1,21 @@
+# Raw ARINC 424.18 PF records for KCJR_L04
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 11
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KCJRK6FL04   AGVE   010GVE  K6D 0V  A    FC GVE K6      0000000002840209D   + 02600     18000                 0 DS   501032509
+SUSAP KCJRK6FL04   AGVE   020NISAEK6PC0EE B    CF IDZHK6      2182011302840020PI  + 02600                           0 DS   501042509
+SUSAP KCJRK6FL04   ANISAE 010NISAEK6PC0EE AR   HF IDZHK6      218201130284T010PI  + 02600                           0 DS   501052509
+SUSAP KCJRK6FL04   L      010NISAEK6PC0E  I    IF IDZHK6      21820113        PI  + 02600     18000                 0 DS   501062509
+SUSAP KCJRK6FL04   L      020RACOPK6PC0E  F    CF IDZHK6      2182005303800060PI  + 01800                 MSQ  AK6DB0 DS   501072509
+SUSAP KCJRK6FL04   L      021BERWAK6PC0E S     CF IDZHK6      2182002803800024PI  + 01000             -312          0 DS   501082509
+SUSAP KCJRK6FL04   L      030RW04 K6PG0GY M    CF IDZHK6      2182000903800020PI    00355             -312          0 DS   501092509
+SUSAP KCJRK6FL04   L      040         0  M     CA                     0382        + 00900                           0 DS   501102509
+SUSAP KCJRK6FL04   L      050         0    L   VIY                    1800                                          0 DS   501112509
+SUSAP KCJRK6FL04   L      060NISAEK6PC0EY      CF GVE K6      0284022920800100D   + 02600                           0 DS   501122509
+SUSAP KCJRK6FL04   L      070NISAEK6PC0EE  R   HM                     0284T010    + 02600                           0 DS   501132509

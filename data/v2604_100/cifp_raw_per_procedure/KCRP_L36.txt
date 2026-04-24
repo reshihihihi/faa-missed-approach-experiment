@@ -1,0 +1,27 @@
+# Raw ARINC 424.18 PF records for KCRP_L36
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 17
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KCRPK4FL36   ACRP   010CRP  K4D 0V       IF                                             18000                 0 DS   572601913
+SUSAP KCRPK4FL36   ACRP   020HADONK4PC0EY      TF                                 + 02000                           0 DS   572611913
+SUSAP KCRPK4FL36   ACRP   030HADONK4PC0EE AR   HF IOYCK4      175101313551T010PI  + 02000                           0 DS   572621913
+SUSAP KCRPK4FL36   AJETTY 010JETTYK4EA0E  A    IF                                             18000                 0 DS   572631913
+SUSAP KCRPK4FL36   AJETTY 020         0        VI                     0551        + 02000                           0 DS   572641913
+SUSAP KCRPK4FL36   AJETTY 030HADONK4PC0EE B    CF IOYCK4      1751013135510023PI  + 02000                           0 DS   572651913
+SUSAP KCRPK4FL36   ASOLON 010SOLONK4EA0E  A    IF                                             18000                 0 DS   572661913
+SUSAP KCRPK4FL36   ASOLON 020         0        VI                     3101        + 02000                           0 DS   572671913
+SUSAP KCRPK4FL36   ASOLON 030HADONK4PC0EE B    CF IOYCK4      1751013135510045PI  + 02000                           0 DS   572681913
+SUSAP KCRPK4FL36   L      010HADONK4PC0E  I    IF IOYCK4      17510131        PI  + 02000     18000                 0 DS   572691913
+SUSAP KCRPK4FL36   L      020OSSOEK4PC0E  F    CF IOYCK4      1751007235500059PI  + 02000                 CRP   K4D 0 DS   572701913
+SUSAP KCRPK4FL36   L      021ALKOJK4PC0E S     CF IOYCK4      1751003235500040PI  + 00720             -300          0 DS   572712311
+SUSAP KCRPK4FL36   L      030TENUHK4PC0EY M    CF IOYCK4      1751001635500016PI    00229             -300          0 DS   572722311
+SUSAP KCRPK4FL36   L      040         0  M     CA                     3551        + 00700                           0 DS   572731913
+SUSAP KCRPK4FL36   L      050         0        VI                     3380                                          0 DS   572741913
+SUSAP KCRPK4FL36   L      060ATHISK4EA0EY      CF CRP K4      2870023328700180D   + 02000                           0 DS   572751913
+SUSAP KCRPK4FL36   L      070ATHISK4EA0EE  R   HM                     1070T010    + 02000                           0 DS   572761913

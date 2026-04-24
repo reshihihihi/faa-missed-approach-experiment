@@ -1,0 +1,21 @@
+# Raw ARINC 424.18 PF records for KBUY_I06-Z
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 11
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KBUYK7FI06-Z AGSO   010GSO  K7D 0V  A    FC GSO K7      0000000012450139D   + 04000     18000                 0 NS   423861406
+SUSAP KBUYK7FI06-Z AGSO   020KAKLEK7PC0EE B    CF IHBJK7      2401014512450020PI  + 04000                           0 NS   423871406
+SUSAP KBUYK7FI06-Z AKAKLE 010KAKLEK7PC0EE AR   HF IHBJK7      240101450601T010PI  + 04000     18000                 0 NS   423881406
+SUSAP KBUYK7FI06-Z ALIB   010LIB  K7D 0V  A    FC LIB K7      0000000032690051D   + 04000     18000                 0 NS   423891406
+SUSAP KBUYK7FI06-Z ALIB   020KAKLEK7PC0EE B    CF IHBJK7      2401014532690020PI  + 04000                           0 NS   423901406
+SUSAP KBUYK7FI06-Z I      010KAKLEK7PC0E  I    IF IHBJK7      24010145        PI  J 040000300018000                 0 NS   423911406
+SUSAP KBUYK7FI06-Z I      020ALAMMK7PC0E  F    CF IHBJK7      2401007606000070PI  H 0300002743        -300HB    K7DB0 NS   423921406
+SUSAP KBUYK7FI06-Z I      030RW06 K7PG0GY M    CF IHBJK7      2401001206000064PI    00666             -300          0 NS   423931406
+SUSAP KBUYK7FI06-Z I      040         0  M     CA                     0601        + 01600                           0 NS   423941406
+SUSAP KBUYK7FI06-Z I      050LIB  K7D 0VY  R   DF                                 + 03000                           0 NS   423951406
+SUSAP KBUYK7FI06-Z I      060LIB  K7D 0VE  R   HM                     2360T010    + 03000                           0 NS   423961406

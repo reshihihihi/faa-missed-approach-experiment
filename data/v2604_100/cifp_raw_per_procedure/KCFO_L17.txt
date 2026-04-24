@@ -1,0 +1,22 @@
+# Raw ARINC 424.18 PF records for KCFO_L17
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 12
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KCFOK2FL17   ADVV   010DVV  K2D 0V       IF                                             18000                 0 NS   477062002
+SUSAP KCFOK2FL17   ADVV   020FYZERK2PC0E       TF                                 + 07700                           0 NS   477072002
+SUSAP KCFOK2FL17   ADVV   030FYZERK2PC0EE AL   PI DVV K2      1045005003700100D   + 07000                           0 NS   477082002
+SUSAP KCFOK2FL17   AFQF   010FQF  K2D 0V       IF                                             18000                 0 NS   477092002
+SUSAP KCFOK2FL17   AFQF   020FYZERK2PC0E       TF                                 + 08100                           0 NS   477102002
+SUSAP KCFOK2FL17   AFQF   030FYZERK2PC0EE AL   PI DVV K2      1045005003700100D   + 07000                           0 NS   477112002
+SUSAP KCFOK2FL17   L      010CFPPSK2PC0E  I    IF IFZRK2      35200121        PI  + 07000     18000                 0 NS   477122002
+SUSAP KCFOK2FL17   L      020FYZERK2PC0E  F    CF IFZRK2      3520006117200060PI  + 07000                 FQF   K2D 0 NS   477132002
+SUSAP KCFOK2FL17   L      030USDEQK2PC0EY M    CF IFZRK2      3520002017200041PI    05691             -300          0 NS   477142002
+SUSAP KCFOK2FL17   L      040         0  M     VI                     1720                                          0 NS   477152002
+SUSAP KCFOK2FL17   L      050HUNTNK2EA0EY      CF FQF K2      1270009812700040D   + 08500                           0 NS   477162002
+SUSAP KCFOK2FL17   L      060HUNTNK2EA0EE  R   HM                     3070T010    + 08500                           0 NS   477172002

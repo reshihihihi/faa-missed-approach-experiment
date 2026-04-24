@@ -1,0 +1,32 @@
+# Raw ARINC 424.18 PF records for KAMA_I04
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 22
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KAMAK4FI04   ADOGIN 010DOGINK4EA0E       IF                                             18000                 0 NS   202191211
+SUSAP KAMAK4FI04   ADOGIN 020PANDEK4PC0E       TF                                 + 05500                           0 NS   202201310
+SUSAP KAMAK4FI04   ADOGIN 030PANDEK4PC0EE AR   PI PNH K4      2180006617300100D   + 05300                           0 NS   202212207
+SUSAP KAMAK4FI04   AMAGRL 010MAGRLK4PC0E  A    IF                                             18000                 0 NS   202222207
+SUSAP KAMAK4FI04   AMAGRL 020PAVVIK4PC0EE BR   AF PNH K4      218001400780    D   + 05300                           0 NS   202232207
+SUSAP KAMAK4FI04   APNH   010PNH  K4D 0V       IF                                             18000                 0 NS   202241211
+SUSAP KAMAK4FI04   APNH   020PANDEK4PC0E       TF                                 + 05300                           0 NS   202251310
+SUSAP KAMAK4FI04   APNH   030PANDEK4PC0EE AR   PI PNH K4      2180006617300100D   + 05300                           0 NS   202262207
+SUSAP KAMAK4FI04   ASIDER 010SIDERK4EA0E       IF                                             18000                 0 NS   202271211
+SUSAP KAMAK4FI04   ASIDER 020PANDEK4PC0E       TF                                 + 05500                           0 NS   202281310
+SUSAP KAMAK4FI04   ASIDER 030PANDEK4PC0EE AR   PI PNH K4      2180006617300100D   + 05300                           0 NS   202292207
+SUSAP KAMAK4FI04   AYOCAN 010YOCANK4EA0E       IF                                             18000                 0 NS   202301211
+SUSAP KAMAK4FI04   AYOCAN 020PANDEK4PC0E       TF                                 + 05500                           0 NS   202311310
+SUSAP KAMAK4FI04   AYOCAN 030PANDEK4PC0EE AR   PI PNH K4      2180006617300100D   + 05300                           0 NS   202322207
+SUSAP KAMAK4FI04   AYOLPU 010YOLPUK4PC0E  A    IF                                             18000                 0 NS   202332207
+SUSAP KAMAK4FI04   AYOLPU 020PAVVIK4PC0EE BL   AF PNH K4      218001402610    D   + 05300                           0 NS   202342207
+SUSAP KAMAK4FI04   I      010PAVVIK4PC0E  I    IF IAMAK4      21800141        PI  J 053000530018000                 0 NS   202352207
+SUSAP KAMAK4FI04   I      020PANDEK4PC0E  F    CF IAMAK4      2180006603800065PI  H 0530005282        -300AM    K4PN0 NS   202362207
+SUSAP KAMAK4FI04   I      030RW04 K4PG0GY M    CF IAMAK4      2180002403800050PI    03662             -300          0 NS   202372207
+SUSAP KAMAK4FI04   I      040         0  M     CA                     0380        + 04100                           0 NS   202381211
+SUSAP KAMAK4FI04   I      050CAUDEK4EA0EY      CF PNH K4      1183013011830130D   + 05000                           0 NS   202391211
+SUSAP KAMAK4FI04   I      060CAUDEK4EA0EE  R   HM                     2983T010    + 05000                           0 NS   202402207

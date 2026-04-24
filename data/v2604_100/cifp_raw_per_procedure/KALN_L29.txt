@@ -1,0 +1,20 @@
+# Raw ARINC 424.18 PF records for KALN_L29
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 10
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KALNK5FL29   AJACOB 010JACOBK5EA0E  A    IF                                 + 02100     18000                 0 NS   195741105
+SUSAP KALNK5FL29   AJACOB 020QUNIEK5PC0EE B    CF IALNK5      1144013029440060PI  + 02100                           0 NS   195751310
+SUSAP KALNK5FL29   L      010QUNIEK5PC0E  I    IF IALNK5      11440130        PI  + 02100     18000                 0 NS   195761310
+SUSAP KALNK5FL29   L      020OSEREK5PC0E  F    CF IALNK5      1144006329400068PI  + 02100                 TOY   K5D 0 NS   195771811
+SUSAP KALNK5FL29   L      021WULIBK5PC0E S     CF IALNK5      1144002929400034PI  + 00980             -300          0 NS   195781811
+SUSAP KALNK5FL29   L      030RW29 K5PG0GY M    CF IALNK5      1143001529400014PI    00581             -300          0 NS   195791105
+SUSAP KALNK5FL29   L      040         0  M     CA                     2944        + 01000                           0 NS   195801105
+SUSAP KALNK5FL29   L      050         0    R   VI                     3100                                          0 NS   195812004
+SUSAP KALNK5FL29   L      060TOPAZK5PC0EY      CF TOY K5      3220016032200030D   + 02200                           0 NS   195822004
+SUSAP KALNK5FL29   L      070TOPAZK5PC0EE  L   HM TOY K5      322001601420T010D   + 02200                           0 NS   195831811

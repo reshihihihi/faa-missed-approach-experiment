@@ -1,0 +1,19 @@
+# Raw ARINC 424.18 PF records for KAXH_R27
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 9
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KAXHK4FR27   ATEGOY 010TEGOYK4PC0E  A    IF                                             18000                 A JS   289191310
+SUSAP KAXHK4FR27   ATEGOY 020VAGGEK4PC0EE      TF                     35930050    + 02000                           A JS   289201310
+SUSAP KAXHK4FR27   R      010VAGGEK4PC0E  I    IF                                 + 02000     18000                 A JS   289211310
+SUSAP KAXHK4FR27   R      020HEGREK4PC1E  F 031TF                     26930062    + 01100                 RW27  K4PGA JS   289221310
+SUSAP KAXHK4FR27   R      020HEGREK4PC2WALPV       ALNAV/VNAV ALNAV                                                   JS   289231310
+SUSAP KAXHK4FR27   R      030RW27 K4PG0GY M 031TF                     26930031      00111             -300          A JS   289240804
+SUSAP KAXHK4FR27   R      040         0  M     CA                     2693        + 00367                           A JS   289250804
+SUSAP KAXHK4FR27   R      050RUPREK4PC0E       DF                                                                   A JS   289261310
+SUSAP KAXHK4FR27   R      060KEEDSK4EA0EE      TF                     2004        + 02700                           A JS   289270804

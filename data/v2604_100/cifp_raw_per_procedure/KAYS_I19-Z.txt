@@ -1,0 +1,19 @@
+# Raw ARINC 424.18 PF records for KAYS_I19-Z
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 9
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KAYSK7FI19-Z AAYS   010AYS  K7D 0V       IF                                             18000                 0 NS   292401602
+SUSAP KAYSK7FI19-Z AAYS   020WIKETK7PC0E       TF                                 + 01700                           0 NS   292411602
+SUSAP KAYSK7FI19-Z AAYS   030WIKETK7PC0EE AL   PI IAYSK7      0042005304920100PI  + 01700                           0 NS   292421602
+SUSAP KAYSK7FI19-Z I      010CFFGHK7PC0E  I    IF IAYSK7      00420113        PI  J 017000170018000                 0 NS   292431602
+SUSAP KAYSK7FI19-Z I      020WIKETK7PC0E  F    CF IAYSK7      0042005318400060PI  H 0170001529        -300AY    K7PN0 NS   292441602
+SUSAP KAYSK7FI19-Z I      030RW19 K7PG0GY M    CF IAYSK7      0042001218400042PI    00190             -300          0 NS   292451602
+SUSAP KAYSK7FI19-Z I      040         0  M     CA                     1842        + 00800                           0 NS   292461602
+SUSAP KAYSK7FI19-Z I      050AY   K7PN0NY  R   DF                                 + 01700                           0 NS   292471602
+SUSAP KAYSK7FI19-Z I      060AY   K7PN0NE  L   HM                     1859T010    + 01700                           0 NS   292481602

@@ -1,0 +1,19 @@
+# Raw ARINC 424.18 PF records for KBPT_L12
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 9
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KBPTK4FL12   AHONEE 010HONEEK4EA0E  A    FC SBI K4      3285047414850206D   + 01800     18000                 0 NS   402081209
+SUSAP KBPTK4FL12   AHONEE 020GIDDYK4PC0EE B    CF IBPTK4      3000013914850020PI  + 01800                           0 NS   402092401
+SUSAP KBPTK4FL12   L      010GIDDYK4PC0E  I    IF IBPTK4      30000139        PI  + 01800     18000                 0 NS   402102401
+SUSAP KBPTK4FL12   L      020KAZOOK4PC0E  F    CF IBPTK4      3000006412000075PI  + 01700                 SBI   K4D 0 NS   402112401
+SUSAP KBPTK4FL12   L      021COUGSK4PC0E S     CF IBPTK4      3000003612000028PI  + 00820             -300          0 NS   402122401
+SUSAP KBPTK4FL12   L      030RW12 K4PG0GY M    CF IBPTK4      3000001312000024PI    00066             -300          0 NS   402132401
+SUSAP KBPTK4FL12   L      040         0  M     CA                     1200        + 00500                           0 NS   402142401
+SUSAP KBPTK4FL12   L      050SBI  K4D 0VY  R   DF                                 + 03000                           0 NS   402152401
+SUSAP KBPTK4FL12   L      060SBI  K4D 0VE  R   HM                     0530T010    + 03000                           0 NS   402162401

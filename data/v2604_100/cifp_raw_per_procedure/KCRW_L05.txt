@@ -1,0 +1,20 @@
+# Raw ARINC 424.18 PF records for KCRW_L05
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 10
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KCRWK6FL05   AHVQ   010HVQ  K6D 0V       IF                                             18000                 0 NS   578152104
+SUSAP KCRWK6FL05   AHVQ   020SHOALK6PC0EY      TF                                 + 03500                           0 NS   578162104
+SUSAP KCRWK6FL05   AHVQ   030SHOALK6PC0EE AL   HF IHCVK6      231701260517T010PI  + 03500                           0 NS   578172104
+SUSAP KCRWK6FL05   L      010SHOALK6PC0E  I    IF IHCVK6      23170126        PI  + 03500     18000                 0 NS   578182104
+SUSAP KCRWK6FL05   L      020KANCOK6PC0E  F    CF IHCVK6      2317006705200059PI  + 02900                 HVQ   K6D 0 NS   578192104
+SUSAP KCRWK6FL05   L      021ZEVRUK6PC0E S     CF IHCVK6      2317002805200040PI  + 01640             -301          0 NS   578202104
+SUSAP KCRWK6FL05   L      030UCYUZK6PC0EY M    CF IHCVK6      2317000805200020PI    01013             -301          0 NS   578212104
+SUSAP KCRWK6FL05   L      040         0  M     CA                     0517        + 01800                           0 NS   578222104
+SUSAP KCRWK6FL05   L      050HVQ  K6D 0VY  L   DF                                 + 03500                           0 NS   578232104
+SUSAP KCRWK6FL05   L      060HVQ  K6D 0VE  R   HM                     0810T010    + 03500                           0 NS   578242104

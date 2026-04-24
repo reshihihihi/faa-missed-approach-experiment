@@ -1,0 +1,20 @@
+# Raw ARINC 424.18 PF records for KCFO_I26
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 10
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KCFOK2FI26   AFQF   010FQF  K2D 0V       IF                                             18000                 0 DS   476842002
+SUSAP KCFOK2FI26   AFQF   020SKIPIK2PC0EY      TF                                 + 08000                           0 DS   476852002
+SUSAP KCFOK2FI26   AFQF   030SKIPIK2PC0EE AL   HF IFTGK2      083100702632T010PI  + 07200                           0 DS   476862106
+SUSAP KCFOK2FI26   I      010CFNRMK2PC0E  I    IF IFTGK2      08310110        PI  J 072000720018000                 0 DS   476872002
+SUSAP KCFOK2FI26   I      020SKIPIK2PC0E  F    CF IFTGK2      0831007026300040PI  H 0720007200            FQF   K2D 0 DS   476882002
+SUSAP KCFOK2FI26   I      030RW26 K2PG0GY M    CF IFTGK2      0831001726300052PI    05539             -300          0 DS   476892002
+SUSAP KCFOK2FI26   I      040         0  M     CA                     2632        + 06100                           0 DS   476902002
+SUSAP KCFOK2FI26   I      050         0    L   VIY                    0800                                          0 DS   476912002
+SUSAP KCFOK2FI26   I      060SKIPIK2PC0EY      CF FQF K2      0452011004520050D   + 07200                           0 DS   476922002
+SUSAP KCFOK2FI26   I      070SKIPIK2PC0EE  L   HM                     2632T010    + 07200                           0 DS   476932106

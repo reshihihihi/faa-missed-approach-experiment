@@ -1,0 +1,19 @@
+# Raw ARINC 424.18 PF records for KAWG_R36
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 9
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KAWGK3FR36   ABEHTY 010BEHTYK3PC0EE AR   HF                     00410040    + 03000     18000                 A JS   284311604
+SUSAP KAWGK3FR36   R      010BEHTYK3PC0E  I    IF                                 + 03000     18000                 A JS   284321310
+SUSAP KAWGK3FR36   R      020SENOCK3PC1E  F 010TF                     00410060    + 02400                           A JS   284331604
+SUSAP KAWGK3FR36   R      020SENOCK3PC2WALPV       ALNAV/VNAV ALNAV                                                   JS   284341310
+SUSAP KAWGK3FR36   R      021JELELK3PC0E S  031TF                     00410034    V 0130001306        -300          A JS   284351604
+SUSAP KAWGK3FR36   R      030RW36 K3PG0GY M 031TF                     00410016      00796             -300          A JS   284361604
+SUSAP KAWGK3FR36   R      040         0  M     CA                     0041        + 01002                           A JS   284371604
+SUSAP KAWGK3FR36   R      050GANADK3PC0EY      DF                                 + 03000                           A JS   284381604
+SUSAP KAWGK3FR36   R      060GANADK3PC0EE  R   HM                     18410040    + 03000                           A JS   284391604

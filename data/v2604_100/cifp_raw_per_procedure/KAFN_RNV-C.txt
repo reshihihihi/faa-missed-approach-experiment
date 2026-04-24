@@ -1,0 +1,21 @@
+# Raw ARINC 424.18 PF records for KAFN_RNV-C
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 11
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KAFNK6FRNV-C ANOMBE 010NOMBEK6PC0E  A    IF                                             18000                 B PC   167502102
+SUSAP KAFNK6FRNV-C ANOMBE 020PETAEK6PC0EE B 010TF                                 + 03900                           B PC   167512102
+SUSAP KAFNK6FRNV-C AOGIPE 010OGIPEK6PC0E  A    IF                                             18000                 B PC   167522102
+SUSAP KAFNK6FRNV-C AOGIPE 020PETAEK6PC0EE B 010TF                                 + 03900                           B PC   167532102
+SUSAP KAFNK6FRNV-C APETAE 010PETAEK6PC0EE AR   HF                     20300040    + 03900     18000                 B PC   167542102
+SUSAP KAFNK6FRNV-C R      010PETAEK6PC0E  I    IF                                 + 03900     18000                 B PC   167552102
+SUSAP KAFNK6FRNV-C R      020QOSNUK6PC0E  F 010TF                                 + 03100                           B PC   167562102
+SUSAP KAFNK6FRNV-C R      030RIGLEK6PC0EY M 031TF                                   01040              000          B PC   167572204
+SUSAP KAFNK6FRNV-C R      040         0  M     CA                     2030        + 01440                           B PC   167582008
+SUSAP KAFNK6FRNV-C R      050SCROBK6PC0EY   010DF                                 + 03000                           B PC   167592008
+SUSAP KAFNK6FRNV-C R      060SCROBK6PC0EE  L   HM                     02290040    + 03000                           B PC   167602008

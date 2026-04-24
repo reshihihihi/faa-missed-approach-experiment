@@ -1,0 +1,23 @@
+# Raw ARINC 424.18 PF records for KCRS_R32
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 13
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KCRSK4FR32   ACANTA 010CANTAK4PC0E  A    IF                                             18000                 B PS   576511911
+SUSAP KCRSK4FR32   ACANTA 020XEWHYK4PC0EE B 010TF                                 + 02500                           B PS   576522008
+SUSAP KCRSK4FR32   AHOXDE 010HOXDEK4EA0E  A    IF                                             18000                 B PS   576531911
+SUSAP KCRSK4FR32   AHOXDE 020XEWHYK4PC0EE B 010TF                                 + 02500                           B PS   576542008
+SUSAP KCRSK4FR32   ANARCS 010NARCSK4EA0E  A    IF                                             18000                 B PS   576551911
+SUSAP KCRSK4FR32   ANARCS 020XEWHYK4PC0EE B 010TF                                 + 02500                           B PS   576562008
+SUSAP KCRSK4FR32   R      010XEWHYK4PC0E  I    IF                                 + 02500     18000                 B PS   576571911
+SUSAP KCRSK4FR32   R      020TOYANK4PC1E  F 010TF                                 + 02200                 RW32  K4PGB PS   576582008
+SUSAP KCRSK4FR32   R      020TOYANK4PC2WN          N          ALNAV                                                   PS   576591911
+SUSAP KCRSK4FR32   R      030RW32 K4PG0GY M 031TF                                   00472             -300          B PS   576602008
+SUSAP KCRSK4FR32   R      040         0  M     CA                     3191        + 00900                           B PS   576611911
+SUSAP KCRSK4FR32   R      050HOXDEK4EA0EY  R010DF                                 + 02500                           B PS   576621911
+SUSAP KCRSK4FR32   R      060HOXDEK4EA0EE  R   HM                     16280040    + 02500                           B PS   576631911

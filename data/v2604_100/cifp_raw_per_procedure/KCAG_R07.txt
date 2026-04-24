@@ -1,0 +1,20 @@
+# Raw ARINC 424.18 PF records for KCAG_R07
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 10
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KCAGK2FR07   ASTRIM 010STRIMK2EA0E  A    IF                                             18000                 A JS   451851806
+SUSAP KCAGK2FR07   ASTRIM 020TEVREK2PC0EE B 010TF                                 + 09000                           A JS   451862407
+SUSAP KCAGK2FR07   R      010TEVREK2PC0E  I    IF                                 + 09000     18000                 A JS   451871806
+SUSAP KCAGK2FR07   R      020PUQHOK2PC1E  F 010TF                                 + 07900                 MOZCA K2PCA JS   451882407
+SUSAP KCAGK2FR07   R      020PUQHOK2PC2WALP        N          ALNAV                                                   JS   451891806
+SUSAP KCAGK2FR07   R      021ANEARK2PC0E S  031TF                                 V 0710007118        -300          A JS   451902407
+SUSAP KCAGK2FR07   R      030MOZCAK2PC0EY M 031TF                                   06481             -300          A JS   451912407
+SUSAP KCAGK2FR07   R      040         0  M     CA                     0739        + 06598                           A JS   451921806
+SUSAP KCAGK2FR07   R      050CHE  K2D 0VY   010DF                                 + 10000                           A JS   451931806
+SUSAP KCAGK2FR07   R      060CHE  K2D 0VE  R   HM                     10800070    + 10000                           A JS   451941806

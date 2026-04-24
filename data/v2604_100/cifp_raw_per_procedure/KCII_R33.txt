@@ -1,0 +1,21 @@
+# Raw ARINC 424.18 PF records for KCII_R33
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 11
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KCIIK1FR33   ACHOTE 010CHOTEK1EA0EE AL   HF                     35680070    + 07000     18000                 B PS   497551913
+SUSAP KCIIK1FR33   ASHIMY 010SHIMYK1EA0E  A    IF                                             18000                 B PS   497561913
+SUSAP KCIIK1FR33   ASHIMY 020CHOTEK1EA0EE B 010TF                     34040123    + 07000                           B PS   497571913
+SUSAP KCIIK1FR33   R      010CHOTEK1EA0E  I    IF                                 + 07000     18000                 B PS   497581913
+SUSAP KCIIK1FR33   R      020DOZREK1PC1E  F 010TF                     35680046    + 05600                 FAMOT K1PCB PS   497591913
+SUSAP KCIIK1FR33   R      020DOZREK1PC2WN          N          ALNAV                                                   PS   497601913
+SUSAP KCIIK1FR33   R      021EMUTEK1PC0E S  031TF                     33780019    V 0500005100        -300          B PS   497611913
+SUSAP KCIIK1FR33   R      030FAMOTK1PC0EY M 031TF                     33780029      04066             -300          B PS   497621913
+SUSAP KCIIK1FR33   R      040         0  M     CA                     3378        + 04347                           B PS   497631913
+SUSAP KCIIK1FR33   R      050AMUREK1PC0EY   010DF                                 + 06600                           B PS   497641913
+SUSAP KCIIK1FR33   R      060AMUREK1PC0EE  R   HM                     14770070    + 06600                           B PS   497651913

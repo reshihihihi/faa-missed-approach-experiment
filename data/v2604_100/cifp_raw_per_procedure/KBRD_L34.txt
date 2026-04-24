@@ -1,0 +1,24 @@
+# Raw ARINC 424.18 PF records for KBRD_L34
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 14
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KBRDK3FL34   AGOLLF 010GOLLFK3EA0E  A    IF                                             18000                 0 PS   404961804
+SUSAP KBRDK3FL34   AGOLLF 020IRIYAK3PC0EE B 010TF ILERK3      15970150        PI  + 04000                           0 PS   404972512
+SUSAP KBRDK3FL34   AJIPKO 010JIPKOK3PC0E  A    IF                                             18000                 0 DS   404981709
+SUSAP KBRDK3FL34   AJIPKO 020IRIYAK3PC0EE B    CF ILERK3      1597015033970056PI  + 04000                           0 DS   404992512
+SUSAP KBRDK3FL34   ALAREW 010LAREWK3PC0E       IF                                             18000                 0 DS   405002512
+SUSAP KBRDK3FL34   ALAREW 020IRIYAK3PC0EY      TF                                                                   0 DS   405012512
+SUSAP KBRDK3FL34   ALAREW 030IRIYAK3PC0EE AR   HF ILERK3      159701503397T010PI  + 04000                           0 DS   405022512
+SUSAP KBRDK3FL34   L      010IRIYAK3PC0E  I    IF ILERK3      15970150        PI  + 04000     18000                 0 DS   405032512
+SUSAP KBRDK3FL34   L      020ZIBEGK3PC0E  F    CF ILERK3      1597006734000082PI  + 03000                 BR    K3PN0 DS   405042512
+SUSAP KBRDK3FL34   L      021UXOWOK3PC0E S     CF ILERK3      1596003034000037PI  + 01820             -300          0 DS   405052512
+SUSAP KBRDK3FL34   L      030RW34 K3PG0GY M    CF ILERK3      1597001334000017PI    01279             -300          0 DS   405062512
+SUSAP KBRDK3FL34   L      040         0  M     CA                     3397        + 01700                           0 DS   405071113
+SUSAP KBRDK3FL34   L      050BR   K3PN0NY  R   DF                                 + 04000                           0 DS   405082512
+SUSAP KBRDK3FL34   L      060BR   K3PN0NE  R   HM                     2313T010    + 04000                           0 DS   405091804

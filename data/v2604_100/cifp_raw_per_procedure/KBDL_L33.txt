@@ -1,0 +1,21 @@
+# Raw ARINC 424.18 PF records for KBDL_L33
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 11
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KBDLK6FL33   AHADUX 010HADUXK6PC0EE AR   HF IIKXK6      148401223284T010PI  + 02500     18000                 0 NS   312342110
+SUSAP KBDLK6FL33   AHFD   010HFD  K6D 0V  A    FC HFD K6      0000000002490079D   + 02500     18000                 0 NS   312351111
+SUSAP KBDLK6FL33   AHFD   020HADUXK6PC0EE B    CF IIKXK6      1484012202490020PI  + 02500                           0 NS   312361310
+SUSAP KBDLK6FL33   AORW   010ORW  K6D 0V  A    FC ORW K6      0000000031730250D   + 02500     18000                 0 NS   312371111
+SUSAP KBDLK6FL33   AORW   020HADUXK6PC0EE B    CF IIKXK6      1484012231730020PI  + 02500                           0 NS   312381310
+SUSAP KBDLK6FL33   L      010HADUXK6PC0E  I    IF IIKXK6      14840122        PI  + 02500     18000                 0 NS   312391310
+SUSAP KBDLK6FL33   L      020HOMEYK6PC0E  F    CF IIKXK6      1484006332800059PI  + 01800                 BAF   K6D 0 NS   312401804
+SUSAP KBDLK6FL33   L      030IDOCOK6PC0EY M    CF IIKXK6      1484001832800044PI    00386             -300          0 NS   312411804
+SUSAP KBDLK6FL33   L      040         0  M     CA                     3284        + 04000                           0 NS   312421111
+SUSAP KBDLK6FL33   L      050BAF  K6D 0VY  R   DF                                 + 04000                           0 NS   312431804
+SUSAP KBDLK6FL33   L      060BAF  K6D 0VE  L   HM                     2748T010    + 04000                           0 NS   312441111

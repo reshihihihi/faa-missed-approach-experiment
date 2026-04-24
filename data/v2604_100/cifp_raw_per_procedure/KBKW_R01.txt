@@ -1,0 +1,24 @@
+# Raw ARINC 424.18 PF records for KBKW_R01
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 14
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KBKWK6FR01   AGOSNE 010GOSNEK6PC0E  A    IF                                             18000                 A JS   359542413
+SUSAP KBKWK6FR01   AGOSNE 020WAGIDK6PC0EE B 010TF                                 + 05900                           A JS   359552413
+SUSAP KBKWK6FR01   AWAGID 010WAGIDK6PC0EE AR   HF                     01350060    + 05900     18000                 A JS   359562413
+SUSAP KBKWK6FR01   AZABIK 010ZABIKK6PC0E  A    IF                                             18000                 A JS   359572413
+SUSAP KBKWK6FR01   AZABIK 020WAGIDK6PC0EE B 010TF                                 + 05900                           A JS   359582413
+SUSAP KBKWK6FR01   R      010WAGIDK6PC0E  I    IF                                 + 05900     18000                 A JS   359592413
+SUSAP KBKWK6FR01   R      011SUCOGK6PC0E    010TF                                 + 05000                           A JS   359602413
+SUSAP KBKWK6FR01   R      020HUDIRK6PC1E  F 010TF                                 + 04200                           A JS   359612413
+SUSAP KBKWK6FR01   R      020HUDIRK6PC2WALPV       ALNAV/VNAV ALNAV                                                   JS   359621310
+SUSAP KBKWK6FR01   R      021OMUBEK6PC0E S  031TF                                 V 0348003480        -300          A JS   359632413
+SUSAP KBKWK6FR01   R      030RW01 K6PG0GY M 031TF                                   02535             -300          A JS   359642110
+SUSAP KBKWK6FR01   R      040         0  M     CA                     0135        + 02810                           A JS   359651109
+SUSAP KBKWK6FR01   R      050YISUKK6PC0EY   010DF                                 + 05900                           A JS   359662413
+SUSAP KBKWK6FR01   R      060YISUKK6PC0EE  R   HM                     19350060    + 05900                           A JS   359672413

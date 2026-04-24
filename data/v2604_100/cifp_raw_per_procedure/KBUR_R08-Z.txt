@@ -1,0 +1,24 @@
+# Raw ARINC 424.18 PF records for KBUR_R08-Z
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 14
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KBURK2FR08-Z AMIKEI 010MIKEIK2EA0E  A    IF                                   07000     18000                 A JS   422231802
+SUSAP KBURK2FR08-Z AMIKEI 020SILEXK2EA0EE B 010TF                                 + 04100                           A JS   422242407
+SUSAP KBURK2FR08-Z ASILEX 010SILEXK2EA0EE AR   HF                     07890050    + 04100     18000                 A JS   422251606
+SUSAP KBURK2FR08-Z AVTU   010VTU  K2D 0V  A    IF                                             18000                 A JS   422261606
+SUSAP KBURK2FR08-Z AVTU   020TOAKSK2EA0E    010TF                                 + 04600                           A JS   422272407
+SUSAP KBURK2FR08-Z AVTU   030SILEXK2EA0EE B 010TF                                 + 04100                           A JS   422282407
+SUSAP KBURK2FR08-Z R      010SILEXK2EA0E  I    IF                                 + 04100     18000                 A JS   422291606
+SUSAP KBURK2FR08-Z R      020BUBNEK2PC1E  F 010TF                                 + 03000                 HIMEN K2PCA JS   422302407
+SUSAP KBURK2FR08-Z R      020BUBNEK2PC2WALP        N          ALNAV                                                   JS   422311606
+SUSAP KBURK2FR08-Z R      030HIMENK2PC0EY M 031TF                                   01201             -300          A JS   422322407
+SUSAP KBURK2FR08-Z R      040         0  M     CA                     0789        + 01178                           A JS   422331606
+SUSAP KBURK2FR08-Z R      050COTSIK2PC0E   R010DF                                                                   A JS   422341903
+SUSAP KBURK2FR08-Z R      060VTU  K2D 0VY   010TF                                 + 04600                           A JS   422352407
+SUSAP KBURK2FR08-Z R      070VTU  K2D 0VE  L   HM                     13060050    + 04600                           A JS   422361606

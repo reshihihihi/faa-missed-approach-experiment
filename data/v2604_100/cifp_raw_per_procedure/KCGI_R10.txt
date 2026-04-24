@@ -1,0 +1,19 @@
+# Raw ARINC 424.18 PF records for KCGI_R10
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 9
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KCGIK3FR10   AIYIGO 010IYIGOK3PC0EE AR   HF                     10770040    + 03000     18000                 A JS   482831310
+SUSAP KCGIK3FR10   R      010IYIGOK3PC0E  I    IF                                 + 03000     18000                 A JS   482841310
+SUSAP KCGIK3FR10   R      020GOGECK3PC1E  F 010TF                                 + 02000                           A JS   482852208
+SUSAP KCGIK3FR10   R      020GOGECK3PC2WALPV       ALNAV/VNAV ALNAV                                                   JS   482861310
+SUSAP KCGIK3FR10   R      021WELVAK3PC0E S  031TF                                 V 0106001060        -300          A JS   482872208
+SUSAP KCGIK3FR10   R      030RW10 K3PG0GY M 031TF                                   00391             -300          A JS   482882208
+SUSAP KCGIK3FR10   R      040         0  M     CA                     1078        + 00537                           A JS   482891307
+SUSAP KCGIK3FR10   R      050FISAVK5PC0EY   010DF                                 + 03000                           A JS   482902208
+SUSAP KCGIK3FR10   R      060FISAVK5PC0EE  R   HM                     28800040    + 03000                           A JS   482911310

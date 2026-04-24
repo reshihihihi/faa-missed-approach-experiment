@@ -1,0 +1,22 @@
+# Raw ARINC 424.18 PF records for KALO_L12
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 12
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KALOK3FL12   AALO   010ALO  K3D 0V       IF                                             18000                 0 NS   197061203
+SUSAP KALOK3FL12   AALO   020EYUCEK3PC0EY      TF                                 + 03400                           0 NS   197071310
+SUSAP KALOK3FL12   AALO   030EYUCEK3PC0EE AR   HF IALOK3      307801401278T010PI  + 03400                           0 NS   197081810
+SUSAP KALOK3FL12   AMCW   010MCW  K3D 0V  A    FC MCW K3      0000000012190372D   + 03400     18000                 0 NS   197091203
+SUSAP KALOK3FL12   AMCW   020EYUCEK3PC0EE B    CF IALOK3      3078014012190020PI  + 03400                           0 NS   197101810
+SUSAP KALOK3FL12   L      010EYUCEK3PC0E  I    IF IALOK3      30780140        PI  + 03400     18000                 0 NS   197111810
+SUSAP KALOK3FL12   L      020CULCAK3PC0E  F    CF IALOK3      3078007612800064PI  + 02800                 ALO   K3D 0 NS   197121810
+SUSAP KALOK3FL12   L      021ZESOPK3PC0E S     CF IALOK3      3078003312800043PI  + 01420             -301          0 NS   197131810
+SUSAP KALOK3FL12   L      030RW12 K3PG0GY M    CF IALOK3      3078001712800016PI    00928             -301          0 NS   197141810
+SUSAP KALOK3FL12   L      040         0  M     CA                     1278        + 01400                           0 NS   197151810
+SUSAP KALOK3FL12   L      050DEWARK3EA0EY      CF ALO K3      0965010809650110D   + 03300                           0 NS   197161810
+SUSAP KALOK3FL12   L      060DEWARK3EA0EE  R   HM                     2765T010    + 03300                           0 NS   197171810

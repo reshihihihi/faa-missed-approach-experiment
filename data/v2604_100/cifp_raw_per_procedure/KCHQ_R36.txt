@@ -1,0 +1,18 @@
+# Raw ARINC 424.18 PF records for KCHQ_R36
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 8
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KCHQK3FR36   ACEDKA 010CEDKAK3PC0EE AR   HF                     00220040    + 03000     18000                 B PS   489412203
+SUSAP KCHQK3FR36   R      010CEDKAK3PC0E  I    IF                                 + 03000     18000                 B PS   489422203
+SUSAP KCHQK3FR36   R      020ZEROVK3PC1E  F 010TF                                 + 02000                           B PS   489432203
+SUSAP KCHQK3FR36   R      020ZEROVK3PC2WN          N          ALNAV                                                   PS   489442203
+SUSAP KCHQK3FR36   R      030RW36 K3PG0GY M 031TF                                   00358             -300          B PS   489452203
+SUSAP KCHQK3FR36   R      040         0  M     CA                     0022        + 00713                           B PS   489462203
+SUSAP KCHQK3FR36   R      050JELVAK3PC0EY   010DF                                 + 03000                           B PS   489472203
+SUSAP KCHQK3FR36   R      060JELVAK3PC0EE  R   HM                     18220040    + 03000                           B PS   489482203

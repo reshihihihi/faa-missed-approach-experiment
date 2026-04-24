@@ -1,0 +1,25 @@
+# Raw ARINC 424.18 PF records for KBTV_R33-Y
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 15
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KBTVK6FR33-Y ACREME 010CREMEK6PC0E  A    IF                                             18000                 B PS   414322601
+SUSAP KBTVK6FR33-Y ACREME 020SILDEK6PC0EE B 010TF                                 + 06000                           B PS   414332601
+SUSAP KBTVK6FR33-Y ASILDE 010SILDEK6PC0EE AR   HF                     31090050    + 06000     18000                 B PS   414342601
+SUSAP KBTVK6FR33-Y R      010SILDEK6PC0E  I    IF                                 + 06000     18000                 B PS   414351812
+SUSAP KBTVK6FR33-Y R      011FOGMOK6PC0E    010TF                                 + 04600                           B PS   414362110
+SUSAP KBTVK6FR33-Y R      020ZABOXK6PC1E  F 010TF                                 + 03900                           B PS   414372110
+SUSAP KBTVK6FR33-Y R      020ZABOXK6PC2WN          N          ALNAV                                                   PS   414381812
+SUSAP KBTVK6FR33-Y R      021WENKIK6PC0E S  031TF                                 V 0212002120        -347          B PS   414392601
+SUSAP KBTVK6FR33-Y R      022IRAGEK6PC0E S  031TF                                 V 0132001320        -347          B PS   414402601
+SUSAP KBTVK6FR33-Y R      023NASEEK6PC0E S  031TF                                 V 0094000940        -347          B PS   414412601
+SUSAP KBTVK6FR33-Y R      030HABOKK6PC0EY M 031TF                                   00572             -347          B PS   414422601
+SUSAP KBTVK6FR33-Y R      040         0  M     CA                     3111        + 00735                           B PS   414432601
+SUSAP KBTVK6FR33-Y R      050MANIFK6PC0E    010DF                                                                   B PS   414441812
+SUSAP KBTVK6FR33-Y R      060STAEVK6PC0EY   010TF                                 + 03000                           B PS   414452110
+SUSAP KBTVK6FR33-Y R      070STAEVK6PC0EE  R   HM                     14570040    + 03000                           B PS   414461812

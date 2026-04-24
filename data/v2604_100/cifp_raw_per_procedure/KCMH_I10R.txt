@@ -1,0 +1,22 @@
+# Raw ARINC 424.18 PF records for KCMH_I10R
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 12
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KCMHK5FI10R  AAPE   010APE  K5D 0V       IF                                             18000                 0 NS   534861309
+SUSAP KCMHK5FI10R  AAPE   020JOGMAK5PC0EY      TF                                 + 03300                           0 NS   534872104
+SUSAP KCMHK5FI10R  AAPE   030JOGMAK5PC0EE AR   HF IAQIK5      281200961012T010PI  + 03300                           0 NS   534882104
+SUSAP KCMHK5FI10R  AEPATY 010EPATYK5PC0E  A    IF                                             18000                 0 NS   534892104
+SUSAP KCMHK5FI10R  AEPATY 020AVUSEK5PC0E       CF IAQIK5      2812011710120035PI  + 04000                           0 NS   534902104
+SUSAP KCMHK5FI10R  AEPATY 030JOGMAK5PC0EE B    CF IAQIK5      2812009610120021PI  + 03300                           0 NS   534912104
+SUSAP KCMHK5FI10R  I      010JOGMAK5PC0E  I    IF IAQIK5      28120096        PI  J 033000230018000                 0 NS   534922104
+SUSAP KCMHK5FI10R  I      020SHUUUK5PC0E  F    CF IAQIK5      2812006410100032PI  H 0230002300            APE   K5D 0 NS   534932104
+SUSAP KCMHK5FI10R  I      030RW10RK5PG0GY M    CF IAQIK5      2812001810100045PI    00859             -300          0 NS   534942104
+SUSAP KCMHK5FI10R  I      040         0  M     CA                     1012        + 01400                           0 NS   534952104
+SUSAP KCMHK5FI10R  I      050BU   K5DB0NY  R   DF                                 + 03000                           0 NS   534962104
+SUSAP KCMHK5FI10R  I      060BU   K5DB0NE  L   HM                     0380T010    + 03000                           0 NS   534972104

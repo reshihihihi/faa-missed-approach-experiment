@@ -1,0 +1,19 @@
+# Raw ARINC 424.18 PF records for KAVP_R22
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 9
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KAVPK6FR22   AJIDPU 010JIDPUK6PC0EE AR   HF                     22380040    + 04000     18000                 A JS   282761311
+SUSAP KAVPK6FR22   R      010JIDPUK6PC0E  I    IF                                 + 04000     18000                 A JS   282771311
+SUSAP KAVPK6FR22   R      011JODIEK6PC0E    010TF                                 + 03300                           A JS   282782309
+SUSAP KAVPK6FR22   R      020KONAAK6PC1E  F 010TF                                 + 02900                           A JS   282792309
+SUSAP KAVPK6FR22   R      020KONAAK6PC2WALPV       ALNAV/VNAV ALNAV                                                   JS   282801311
+SUSAP KAVPK6FR22   R      030RW22 K6PG0GY M 031TF                                   00962             -300          A JS   282812309
+SUSAP KAVPK6FR22   R      040         0  M     CA                     2238        + 01900                           A JS   282821311
+SUSAP KAVPK6FR22   R      050LOPEZK6EA0EY  R010DF                                 + 04000                           A JS   282832309
+SUSAP KAVPK6FR22   R      060LOPEZK6EA0EE  R   HM                     13980040    + 04000                           A JS   282841311

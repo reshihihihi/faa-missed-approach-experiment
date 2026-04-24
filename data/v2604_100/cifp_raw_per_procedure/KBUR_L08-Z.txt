@@ -1,0 +1,33 @@
+# Raw ARINC 424.18 PF records for KBUR_L08-Z
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 23
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KBURK2FL08-Z ALAX   010LAX  K2D 0V       IF                                             18000                 0 NS   422001606
+SUSAP KBURK2FL08-Z ALAX   020SILEXK2EA0EY      TF                                 + 04600                           0 NS   422011606
+SUSAP KBURK2FL08-Z ALAX   030SILEXK2EA0EE AR   HF IBURK2      258901190789T010PI  + 04000                           0 NS   422021903
+SUSAP KBURK2FL08-Z AMIKEI 010MIKEIK2EA0E  A    IF                                   07000     18000                 0 PS   422031802
+SUSAP KBURK2FL08-Z AMIKEI 020SILEXK2EA0EE B 010TF IBURK2      25890119        PI  + 03700                           0 PS   422042208
+SUSAP KBURK2FL08-Z ASMO   010SMO  K2D 0V       IF                                             18000                 0 NS   422051606
+SUSAP KBURK2FL08-Z ASMO   020SILEXK2EA0EY      TF                                 + 04400                           0 NS   422061606
+SUSAP KBURK2FL08-Z ASMO   030SILEXK2EA0EE AR   HF IBURK2      258901190789T010PI  + 04000                           0 NS   422071903
+SUSAP KBURK2FL08-Z ATOAKS 010TOAKSK2EA0E  A    IF                                             18000                 0 NS   422081606
+SUSAP KBURK2FL08-Z ATOAKS 020SILEXK2EA0EE B    CF IBURK2      2589011907890083PI  + 03700                           0 NS   422091903
+SUSAP KBURK2FL08-Z AVNY   010VNY  K2D 0V       IF                                             18000                 0 NS   422101606
+SUSAP KBURK2FL08-Z AVNY   020SILEXK2EA0EY      TF                                 + 04400                           0 NS   422111606
+SUSAP KBURK2FL08-Z AVNY   030SILEXK2EA0EE AR   HF IBURK2      258901190789T010PI  + 04000                           0 NS   422121903
+SUSAP KBURK2FL08-Z AVTU   010VTU  K2D 0V  A    IF                                             18000                 0 NS   422131606
+SUSAP KBURK2FL08-Z AVTU   020TOAKSK2EA0E       TF                                 + 04600                           0 NS   422141606
+SUSAP KBURK2FL08-Z AVTU   030SILEXK2EA0EE B    CF IBURK2      2589011907890083PI  + 03700                           0 NS   422151903
+SUSAP KBURK2FL08-Z L      010SILEXK2EA0E  I    IF IBURK2      25890119        PI  + 03700     18000                 0 NS   422161903
+SUSAP KBURK2FL08-Z L      020BUDDEK2EA0E  F    CF IBURK2      2589005907900060PI    03000                 VNY   K2D 0 NS   422171606
+SUSAP KBURK2FL08-Z L      030CFBXNK2PC0EY M    CF IBURK2      2589000707900052PI    01115             -344          0 NS   422181903
+SUSAP KBURK2FL08-Z L      040         0  M     CA                     0789        + 01300                           0 NS   422191606
+SUSAP KBURK2FL08-Z L      050         0    R   VIY                    2100                                          0 NS   422201606
+SUSAP KBURK2FL08-Z L      060VTU  K2D 0VY      CF VTU K2      0000000026600310D   + 04600                           0 NS   422211606
+SUSAP KBURK2FL08-Z L      070VTU  K2D 0VE  L   HM                     1306T010    + 04600                           0 NS   422221606

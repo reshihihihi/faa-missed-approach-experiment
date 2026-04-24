@@ -1,0 +1,26 @@
+# Raw ARINC 424.18 PF records for KCHO_R03
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 16
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KCHOK6FR03   AGVE   010GVE  K6D 0V       IF                                             18000                 A JS   488660804
+SUSAP KCHOK6FR03   AGVE   020WULDUK6PC0EY   010TF                                 + 03400                           A JS   488672104
+SUSAP KCHOK6FR03   AGVE   030WULDUK6PC0EE AR   HF                     03010040    + 03400                           A JS   488681501
+SUSAP KCHOK6FR03   AMITER 010MITERK6EA0E       IF                                             18000                 A JS   488690804
+SUSAP KCHOK6FR03   AMITER 020WULDUK6PC0EY   010TF                                 + 05000                           A JS   488702104
+SUSAP KCHOK6FR03   AMITER 030WULDUK6PC0EE AR   HF                     03010040    + 03400                           A JS   488711501
+SUSAP KCHOK6FR03   AROMAN 010ROMANK6EA0E  A    IF                                             18000                 A JS   488720804
+SUSAP KCHOK6FR03   AROMAN 020WULDUK6PC0EE B 010TF                                 + 03400                           A JS   488732104
+SUSAP KCHOK6FR03   R      010WULDUK6PC0E  I    IF                                 + 03400     18000                 A JS   488741501
+SUSAP KCHOK6FR03   R      020SIPMEK6PC1E  F 010TF                                 + 02600                 RW03  K6PGA JS   488752104
+SUSAP KCHOK6FR03   R      020SIPMEK6PC2WALPV       ALNAV/VNAV ALNAV                                                   JS   488761310
+SUSAP KCHOK6FR03   R      021JITIVK6PC0E S  031TF                                 V 0148001489        -300          A JS   488772104
+SUSAP KCHOK6FR03   R      030RW03 K6PG0GY M 031TF                                   00694             -300          A JS   488782104
+SUSAP KCHOK6FR03   R      040         0  M     CA                     0301        + 02000                           A JS   488791501
+SUSAP KCHOK6FR03   R      050GVE  K6D 0VY  R010DF                                 + 04000                           A JS   488802104
+SUSAP KCHOK6FR03   R      060GVE  K6D 0VE  R   HM                     03300040    + 04000                           A JS   488811501

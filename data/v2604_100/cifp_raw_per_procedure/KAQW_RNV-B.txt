@@ -1,0 +1,21 @@
+# Raw ARINC 424.18 PF records for KAQW_RNV-B
+# Source: FAACIFP18 cycle 2604 (effective 16 APR 2026)
+# Includes all transitions for this procedure (primary + continuation records)
+# Total records: 11
+#
+# Column ruler (1-indexed, 132 chars):
+#         0         0         0         0         0         0         0         0         0         1         1         1         1 
+#         1         2         3         4         5         6         7         8         9         0         1         2         3 
+#12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901
+
+SUSAP KAQWK6FRNV-B AAZOTH 010AZOTHK6PC0E  A    IF                                             18000                 B PC   228211901
+SUSAP KAQWK6FRNV-B AAZOTH 020WUDIEK6PC0EE B 010TF                                 + 03700                           B PC   228222008
+SUSAP KAQWK6FRNV-B AWUDIE 010WUDIEK6PC0EE AR   HF                     29870040    + 03700     18000                 B PC   228231901
+SUSAP KAQWK6FRNV-B AYOGUV 010YOGUVK6PC0E  A    IF                                             18000                 B PC   228241901
+SUSAP KAQWK6FRNV-B AYOGUV 020WUDIEK6PC0EE B 010TF                                 + 03700                           B PC   228252008
+SUSAP KAQWK6FRNV-B R      010WUDIEK6PC0E  I    IF                                 + 03700     18000                 B PC   228261901
+SUSAP KAQWK6FRNV-B R      020LOUSYK6PC0E  F 010TF                                 + 03600                 MANYS K6PCB PC   228272008
+SUSAP KAQWK6FRNV-B R      030MANYSK6PC0EY M 031TF                                   00790              000          B PC   228282206
+SUSAP KAQWK6FRNV-B R      040         0  M     CA                     2986        + 01054                           B PC   228291901
+SUSAP KAQWK6FRNV-B R      050SWOBSK6PC0EY  L010DF                                 + 04800                           B PC   228301901
+SUSAP KAQWK6FRNV-B R      060SWOBSK6PC0EE  R   HM                     06560050    + 04800                           B PC   228311901

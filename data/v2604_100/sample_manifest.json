@@ -1,0 +1,1811 @@
+{
+  "dataset": "faa-missed-approach-v2604-100",
+  "cifp_cycle": "2604",
+  "cifp_effective": "2026-04-16",
+  "extraction_script_version": "scripts/extract_missed_approach.py@uncommitted",
+  "schema_version": "canonical_leg_v1",
+  "schema_file": "schemas/missed_approach_leg.schema.json",
+  "sample_count": 100,
+  "samples": [
+    {
+      "chart_id": "KABE_I06",
+      "airport": "KABE",
+      "approach_ident": "I06",
+      "chart_name": "ILS OR LOC RWY 06",
+      "pdf_source_name": "00015IL6.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00015IL6.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "6e6150c567c2cfac0183dc374fb9e14aa27010e804a5de7bb3141aab0deaf5d6",
+      "canonical_sha256": "42c551b0ae135fb2a08e0ccc5ccdcefdb66b720c5010c2788c4d96c92e78b74e",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KABE_I06.json",
+        "cifp_raw": "cifp_raw_per_procedure/KABE_I06.txt",
+        "chart_pdf_local": "charts/pdfs/00015IL6.PDF",
+        "chart_image_local": "charts/images/KABE_I06.png"
+      }
+    },
+    {
+      "chart_id": "KALS_I02",
+      "airport": "KALS",
+      "approach_ident": "I02",
+      "chart_name": "ILS OR LOC RWY 02",
+      "pdf_source_name": "00018IL2.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00018IL2.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "56b408396ede630ef5f407235556ca4370ffadadcac5f580815165bfe704617f",
+      "canonical_sha256": "3162aad11208e63e1cc7759d6bb643bc6366f4a0eae16ebc2609f8f4d156023d",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KALS_I02.json",
+        "cifp_raw": "cifp_raw_per_procedure/KALS_I02.txt",
+        "chart_pdf_local": "charts/pdfs/00018IL2.PDF",
+        "chart_image_local": "charts/images/KALS_I02.png"
+      }
+    },
+    {
+      "chart_id": "KAMA_I04",
+      "airport": "KAMA",
+      "approach_ident": "I04",
+      "chart_name": "ILS OR LOC RWY 04",
+      "pdf_source_name": "00019IL4.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00019IL4.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "fcfe55077022a2fbc5b214ac1e50a5e47a38dc4053c4a34fdbfe89ec22654754",
+      "canonical_sha256": "c4b446fb29bc41f1ea5856bf6791c9b8751417c2ada9fb62d9bb769fa2542972",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KAMA_I04.json",
+        "cifp_raw": "cifp_raw_per_procedure/KAMA_I04.txt",
+        "chart_pdf_local": "charts/pdfs/00019IL4.PDF",
+        "chart_image_local": "charts/images/KAMA_I04.png"
+      }
+    },
+    {
+      "chart_id": "KAPC_I01L",
+      "airport": "KAPC",
+      "approach_ident": "I01L",
+      "chart_name": "ILS OR LOC Z RWY 01L",
+      "pdf_source_name": "00281ILZ1L.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00281ILZ1L.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "dd0d9f8978446d2a71f660ae382c822734d6ecf225a8ae55cf0b6f34e8fe2100",
+      "canonical_sha256": "9d3d0d8938e742d78e8ac68232752a76762b01258366884a6abef3586b02f466",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KAPC_I01L.json",
+        "cifp_raw": "cifp_raw_per_procedure/KAPC_I01L.txt",
+        "chart_pdf_local": "charts/pdfs/00281ILZ1L.PDF",
+        "chart_image_local": "charts/images/KAPC_I01L.png"
+      }
+    },
+    {
+      "chart_id": "KATL_I09R",
+      "airport": "KATL",
+      "approach_ident": "I09R",
+      "chart_name": "ILS OR LOC RWY 09R",
+      "pdf_source_name": "00026IL9R.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00026IL9R.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "ca24cf6a28de45669b00112977dd403b8714a7b82ce4e054c5fee7ffee230cff",
+      "canonical_sha256": "393eb33bdd2c1e10b9995341b30bdffd6f4c13c63ad927164fa1362e40f54def",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KATL_I09R.json",
+        "cifp_raw": "cifp_raw_per_procedure/KATL_I09R.txt",
+        "chart_pdf_local": "charts/pdfs/00026IL9R.PDF",
+        "chart_image_local": "charts/images/KATL_I09R.png"
+      }
+    },
+    {
+      "chart_id": "KAUS_I18L",
+      "airport": "KAUS",
+      "approach_ident": "I18L",
+      "chart_name": "ILS OR LOC RWY 18L",
+      "pdf_source_name": "00556IL18L.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00556IL18L.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "1afcf1a7d2182670356dd04664aac757fae67f9841f2e39391d28c4952c58384",
+      "canonical_sha256": "ddd2e8a5be8fa814aa6e3347f0efa048d56a830d9de599a5a64774c05cb1a380",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KAUS_I18L.json",
+        "cifp_raw": "cifp_raw_per_procedure/KAUS_I18L.txt",
+        "chart_pdf_local": "charts/pdfs/00556IL18L.PDF",
+        "chart_image_local": "charts/images/KAUS_I18L.png"
+      }
+    },
+    {
+      "chart_id": "KAVL_I17",
+      "airport": "KAVL",
+      "approach_ident": "I17",
+      "chart_name": "ILS OR LOC RWY 17",
+      "pdf_source_name": "05061IL17.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/05061IL17.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "4bbb2a4e4eb34806cb144c6175101e249e985a07b5b3a234046588fa7f8d7bf9",
+      "canonical_sha256": "99648e3f008ca4a09c7746b22753dbc4e2b21678ec51d6f4d7c313224565751b",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KAVL_I17.json",
+        "cifp_raw": "cifp_raw_per_procedure/KAVL_I17.txt",
+        "chart_pdf_local": "charts/pdfs/05061IL17.PDF",
+        "chart_image_local": "charts/images/KAVL_I17.png"
+      }
+    },
+    {
+      "chart_id": "KAYS_I19-Z",
+      "airport": "KAYS",
+      "approach_ident": "I19-Z",
+      "chart_name": "ILS Z OR LOC Z RWY 19",
+      "pdf_source_name": "00994IZLZ19.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00994IZLZ19.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "ab5920868896af559f8af8cfc5cb36a451e12712c56732f9d2a53a51e84afd59",
+      "canonical_sha256": "ee3c5973ffe4224aaa2e042ae048c01c5243d851d529693ab0902aed7a138664",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KAYS_I19-Z.json",
+        "cifp_raw": "cifp_raw_per_procedure/KAYS_I19-Z.txt",
+        "chart_pdf_local": "charts/pdfs/00994IZLZ19.PDF",
+        "chart_image_local": "charts/images/KAYS_I19-Z.png"
+      }
+    },
+    {
+      "chart_id": "KBMI_I29",
+      "airport": "KBMI",
+      "approach_ident": "I29",
+      "chart_name": "ILS OR LOC RWY 29",
+      "pdf_source_name": "05058IL29.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/05058IL29.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "9d9e0bc9606f825274c19dbf64cc456f84ba4f539f29c7b8d1d58e25a4e7911a",
+      "canonical_sha256": "4dfa44fba1fed669e7e5fd389ed164275fc88af1cd0a7cb470c95c49d5b97703",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KBMI_I29.json",
+        "cifp_raw": "cifp_raw_per_procedure/KBMI_I29.txt",
+        "chart_pdf_local": "charts/pdfs/05058IL29.PDF",
+        "chart_image_local": "charts/images/KBMI_I29.png"
+      }
+    },
+    {
+      "chart_id": "KBUY_I06-Z",
+      "airport": "KBUY",
+      "approach_ident": "I06-Z",
+      "chart_name": "ILS Z OR LOC Z RWY 06",
+      "pdf_source_name": "05694IZLZ6.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/05694IZLZ6.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "64e2e8cdb4b77ca4f6086d29aeb98f335ebb2bc96770d409d381f045e3302665",
+      "canonical_sha256": "5e52aaf32cd1749cb6193161eee77fec1b3802046004ed221c5042657835fb96",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KBUY_I06-Z.json",
+        "cifp_raw": "cifp_raw_per_procedure/KBUY_I06-Z.txt",
+        "chart_pdf_local": "charts/pdfs/05694IZLZ6.PDF",
+        "chart_image_local": "charts/images/KBUY_I06-Z.png"
+      }
+    },
+    {
+      "chart_id": "KBWG_I03-Y",
+      "airport": "KBWG",
+      "approach_ident": "I03-Y",
+      "chart_name": "ILS Y OR LOC Y RWY 03",
+      "pdf_source_name": "00605IYLY3.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00605IYLY3.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "5dd5a3898e842c06127de98866d1de1194a33f7f04858098cb9c15886eac9ee2",
+      "canonical_sha256": "915e096a4a17c26c257bb75f65cff192d0f4773178fdef91b3654c33575bce51",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KBWG_I03-Y.json",
+        "cifp_raw": "cifp_raw_per_procedure/KBWG_I03-Y.txt",
+        "chart_pdf_local": "charts/pdfs/00605IYLY3.PDF",
+        "chart_image_local": "charts/images/KBWG_I03-Y.png"
+      }
+    },
+    {
+      "chart_id": "KCFO_I26",
+      "airport": "KCFO",
+      "approach_ident": "I26",
+      "chart_name": "ILS OR LOC RWY 26",
+      "pdf_source_name": "06851IL26.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/06851IL26.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "5c6a3adc34a62d792c7a3c248647c82450f364c836f68bfe2d56160263d94df0",
+      "canonical_sha256": "ab4a782b0145cccd672336db246fb55a7cda0e30d6502d0402ebf5021eed9a6b",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KCFO_I26.json",
+        "cifp_raw": "cifp_raw_per_procedure/KCFO_I26.txt",
+        "chart_pdf_local": "charts/pdfs/06851IL26.PDF",
+        "chart_image_local": "charts/images/KCFO_I26.png"
+      }
+    },
+    {
+      "chart_id": "KCMH_I10R",
+      "airport": "KCMH",
+      "approach_ident": "I10R",
+      "chart_name": "ILS OR LOC RWY 10R",
+      "pdf_source_name": "00094IL10R.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00094IL10R.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "49d55f7f22045c8c5d5ab58ab9b5f135759bb3bff01ee3e6e3d1eb021114dd56",
+      "canonical_sha256": "4a88aa671d0b6ba8573324c6f12915421dee9562afff9e5f9e5461d48cfac0b8",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KCMH_I10R.json",
+        "cifp_raw": "cifp_raw_per_procedure/KCMH_I10R.txt",
+        "chart_pdf_local": "charts/pdfs/00094IL10R.PDF",
+        "chart_image_local": "charts/images/KCMH_I10R.png"
+      }
+    },
+    {
+      "chart_id": "KAVP_L04",
+      "airport": "KAVP",
+      "approach_ident": "L04",
+      "chart_name": "ILS OR LOC RWY 04",
+      "pdf_source_name": "00661IL4.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00661IL4.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "fcef92825fd9f4fde69e0369c5c734b67daf3da7b7e93a2b0e1dab32e4010d1f",
+      "canonical_sha256": "ad2882f2715c2fd5c0c173ed0185e0de4f4b3053f9f1d17f65eb953318929078",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KAVP_L04.json",
+        "cifp_raw": "cifp_raw_per_procedure/KAVP_L04.txt",
+        "chart_pdf_local": "charts/pdfs/00661IL4.PDF",
+        "chart_image_local": "charts/images/KAVP_L04.png"
+      }
+    },
+    {
+      "chart_id": "KAXH_L09",
+      "airport": "KAXH",
+      "approach_ident": "L09",
+      "chart_name": "LOC RWY 09",
+      "pdf_source_name": "06575L9.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/06575L9.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "b1c474ecc7efcf6bc0ecc7168dcbdf30663c224d9b448560eb7b55f583ff8912",
+      "canonical_sha256": "c8daf2e32864bb06529165e6b5759e29ae704c565cdde460a9bfce6338b5c40b",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KAXH_L09.json",
+        "cifp_raw": "cifp_raw_per_procedure/KAXH_L09.txt",
+        "chart_pdf_local": "charts/pdfs/06575L9.PDF",
+        "chart_image_local": "charts/images/KAXH_L09.png"
+      }
+    },
+    {
+      "chart_id": "KBDL_L33",
+      "airport": "KBDL",
+      "approach_ident": "L33",
+      "chart_name": "ILS OR LOC RWY 33",
+      "pdf_source_name": "00460IL33.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00460IL33.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "0d897f081cb9f6e738c3e4f61bff6b2c8efca85a5304ff735467840a317142cc",
+      "canonical_sha256": "94ef00d44feb89011e70ada53d9f8c8e9c7772ad36df9e4279945177bfd9f416",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KBDL_L33.json",
+        "cifp_raw": "cifp_raw_per_procedure/KBDL_L33.txt",
+        "chart_pdf_local": "charts/pdfs/00460IL33.PDF",
+        "chart_image_local": "charts/images/KBDL_L33.png"
+      }
+    },
+    {
+      "chart_id": "KBDR_L06",
+      "airport": "KBDR",
+      "approach_ident": "L06",
+      "chart_name": "ILS OR LOC RWY 06",
+      "pdf_source_name": "00621IL6.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00621IL6.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "db21ce946374870192346155a1e2042dd61382512abc23466908a203e2887bf2",
+      "canonical_sha256": "143260b94522d4a544da9115a297ce1418e939d918ae5b37a18f3a1401d1b4b8",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KBDR_L06.json",
+        "cifp_raw": "cifp_raw_per_procedure/KBDR_L06.txt",
+        "chart_pdf_local": "charts/pdfs/00621IL6.PDF",
+        "chart_image_local": "charts/images/KBDR_L06.png"
+      }
+    },
+    {
+      "chart_id": "KBFF_L12",
+      "airport": "KBFF",
+      "approach_ident": "L12",
+      "chart_name": "ILS OR LOC/DME RWY 12",
+      "pdf_source_name": "00383ILD12.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00383ILD12.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "4451e2265246aeb410956562eacf32afd0c069d439f480f3ec7f8ab9d214c86e",
+      "canonical_sha256": "2268a93608c1eceaf568c0919521dcd02ffc5f2c329654aefea9225cfde19a28",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KBFF_L12.json",
+        "cifp_raw": "cifp_raw_per_procedure/KBFF_L12.txt",
+        "chart_pdf_local": "charts/pdfs/00383ILD12.PDF",
+        "chart_image_local": "charts/images/KBFF_L12.png"
+      }
+    },
+    {
+      "chart_id": "KBOS_L15R",
+      "airport": "KBOS",
+      "approach_ident": "L15R",
+      "chart_name": "ILS OR LOC RWY 15R",
+      "pdf_source_name": "00058IL15R.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00058IL15R.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "208fc39fa24e8c91c61bf83579f649c1dfe625a271f99ba0d772cb83fdf008c3",
+      "canonical_sha256": "06bef91f4dbc4565ab8d268a6959372cd1e0b59696581cf6c4455da21bd93eac",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KBOS_L15R.json",
+        "cifp_raw": "cifp_raw_per_procedure/KBOS_L15R.txt",
+        "chart_pdf_local": "charts/pdfs/00058IL15R.PDF",
+        "chart_image_local": "charts/images/KBOS_L15R.png"
+      }
+    },
+    {
+      "chart_id": "KBUR_L08-Z",
+      "airport": "KBUR",
+      "approach_ident": "L08-Z",
+      "chart_name": "ILS Z OR LOC Z RWY 08",
+      "pdf_source_name": "00067IZLZ8.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00067IZLZ8.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "b633d8b8c616d6563c210eaa22d5196766cb8059075bcabf384c82da00849461",
+      "canonical_sha256": "ecf873409f9abf61bf038522baa017ff9bb87a4b9675e08cff84045a01d02b17",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KBUR_L08-Z.json",
+        "cifp_raw": "cifp_raw_per_procedure/KBUR_L08-Z.txt",
+        "chart_pdf_local": "charts/pdfs/00067IZLZ8.PDF",
+        "chart_image_local": "charts/images/KBUR_L08-Z.png"
+      }
+    },
+    {
+      "chart_id": "KBYL_L20",
+      "airport": "KBYL",
+      "approach_ident": "L20",
+      "chart_name": "LOC RWY 20",
+      "pdf_source_name": "10311L20.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/10311L20.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "c5ffd6f35c7dbea76c3e010b09931014fcafec7d3b7e90d9795bbaa4c346b21d",
+      "canonical_sha256": "c485d31352d6537802bab6431916a4fbf4e5fe825d15f9179ebc78630f4d89b3",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KBYL_L20.json",
+        "cifp_raw": "cifp_raw_per_procedure/KBYL_L20.txt",
+        "chart_pdf_local": "charts/pdfs/10311L20.PDF",
+        "chart_image_local": "charts/images/KBYL_L20.png"
+      }
+    },
+    {
+      "chart_id": "KCEC_L12",
+      "airport": "KCEC",
+      "approach_ident": "L12",
+      "chart_name": "ILS OR LOC RWY 12",
+      "pdf_source_name": "00034IL12.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00034IL12.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "050ad87f12569ab876c6ded8bfb64e8287314d676784b4f086eca48194b79793",
+      "canonical_sha256": "61a71acd144d5b86d187b3ed6ad27b362c29b84f7c715412e77e4598298c9699",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KCEC_L12.json",
+        "cifp_raw": "cifp_raw_per_procedure/KCEC_L12.txt",
+        "chart_pdf_local": "charts/pdfs/00034IL12.PDF",
+        "chart_image_local": "charts/images/KCEC_L12.png"
+      }
+    },
+    {
+      "chart_id": "KCFO_L17",
+      "airport": "KCFO",
+      "approach_ident": "L17",
+      "chart_name": "ILS OR LOC RWY 17",
+      "pdf_source_name": "06851IL17.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/06851IL17.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "4f4ccdc94aaf533612e1d6da4f8ddb9c5fec63273b3f2a0d58519594709a41ba",
+      "canonical_sha256": "cfcd75c1d6667277c3a77ca90d96cc9bdcde27973daa8ecfdc76611628d9dae0",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KCFO_L17.json",
+        "cifp_raw": "cifp_raw_per_procedure/KCFO_L17.txt",
+        "chart_pdf_local": "charts/pdfs/06851IL17.PDF",
+        "chart_image_local": "charts/images/KCFO_L17.png"
+      }
+    },
+    {
+      "chart_id": "KCOE_L06",
+      "airport": "KCOE",
+      "approach_ident": "L06",
+      "chart_name": "ILS OR LOC RWY 06",
+      "pdf_source_name": "00527IL6.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00527IL6.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "698f59eeb598b38d741d6ab923c2646a0eeb74786dcf15d01ea89de7cce3869c",
+      "canonical_sha256": "bf95edd3f95519e485e32e25c0669cbec158db2897e17848c2ad010658d7ba55",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KCOE_L06.json",
+        "cifp_raw": "cifp_raw_per_procedure/KCOE_L06.txt",
+        "chart_pdf_local": "charts/pdfs/00527IL6.PDF",
+        "chart_image_local": "charts/images/KCOE_L06.png"
+      }
+    },
+    {
+      "chart_id": "KCRP_L36",
+      "airport": "KCRP",
+      "approach_ident": "L36",
+      "chart_name": "ILS OR LOC RWY 36",
+      "pdf_source_name": "05032IL36.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/05032IL36.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "34b1e437443a5a343deba10cab91ef354806e0643b74973987234c3843b5be45",
+      "canonical_sha256": "8b73673a91302447ccc5561e1db9fba3ecb655689658c82502dd072345046913",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KCRP_L36.json",
+        "cifp_raw": "cifp_raw_per_procedure/KCRP_L36.txt",
+        "chart_pdf_local": "charts/pdfs/05032IL36.PDF",
+        "chart_image_local": "charts/images/KCRP_L36.png"
+      }
+    },
+    {
+      "chart_id": "KCRW_L05",
+      "airport": "KCRW",
+      "approach_ident": "L05",
+      "chart_name": "ILS OR LOC RWY 05",
+      "pdf_source_name": "00852IL5.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00852IL5.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "1c81ab648ac8da4cc67f66c47845e67f823852e823794139f55f59337c5c76ae",
+      "canonical_sha256": "047a4c70055e214e528046d3c9d4d51c047fd5cf51fcf491d8acda0b07c4fcfe",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KCRW_L05.json",
+        "cifp_raw": "cifp_raw_per_procedure/KCRW_L05.txt",
+        "chart_pdf_local": "charts/pdfs/00852IL5.PDF",
+        "chart_image_local": "charts/images/KCRW_L05.png"
+      }
+    },
+    {
+      "chart_id": "KALN_L29",
+      "airport": "KALN",
+      "approach_ident": "L29",
+      "chart_name": "ILS OR LOC RWY 29",
+      "pdf_source_name": "05178IL29.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/05178IL29.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "cb0da0e9afd0c67607d919bc4de69f126398185b70084a5450dadbce88389382",
+      "canonical_sha256": "0abb17ce49dc2f1fe874f5198923a89687896b6a51aa351a1a41cc18861050c9",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KALN_L29.json",
+        "cifp_raw": "cifp_raw_per_procedure/KALN_L29.txt",
+        "chart_pdf_local": "charts/pdfs/05178IL29.PDF",
+        "chart_image_local": "charts/images/KALN_L29.png"
+      }
+    },
+    {
+      "chart_id": "KALO_L12",
+      "airport": "KALO",
+      "approach_ident": "L12",
+      "chart_name": "ILS OR LOC RWY 12",
+      "pdf_source_name": "00945IL12.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00945IL12.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "fdc2bfa11a1b5ac7527f34bf94141191573a9542d6f24d2b874fd12ca0862c55",
+      "canonical_sha256": "3c2c39f5f4296d2d69101bb86028fa053a5fa9dcfa0a4e59ee73ca8973d1fcd9",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KALO_L12.json",
+        "cifp_raw": "cifp_raw_per_procedure/KALO_L12.txt",
+        "chart_pdf_local": "charts/pdfs/00945IL12.PDF",
+        "chart_image_local": "charts/images/KALO_L12.png"
+      }
+    },
+    {
+      "chart_id": "KAWM_L17",
+      "airport": "KAWM",
+      "approach_ident": "L17",
+      "chart_name": "ILS OR LOC RWY 17",
+      "pdf_source_name": "05386IL17.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/05386IL17.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "9d81f8d914e22839f69ecaca352d82a93fc851c47b36f5eb1d8ae9499456f00a",
+      "canonical_sha256": "136c4d6e102d10a08ed25fde655127c42e04d3d76e82f59cf19e88993c9dc5a0",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KAWM_L17.json",
+        "cifp_raw": "cifp_raw_per_procedure/KAWM_L17.txt",
+        "chart_pdf_local": "charts/pdfs/05386IL17.PDF",
+        "chart_image_local": "charts/images/KAWM_L17.png"
+      }
+    },
+    {
+      "chart_id": "KBPT_L12",
+      "airport": "KBPT",
+      "approach_ident": "L12",
+      "chart_name": "ILS OR LOC RWY 12",
+      "pdf_source_name": "00521IL12.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00521IL12.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "3d3c2bc52f75285fc21ed45644259b9d496a73c590b1df1dc17084b36e790b3b",
+      "canonical_sha256": "4201525b707b694e10663d906e3ddf31a94ef19467ee010903f3c4bfea66ece3",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KBPT_L12.json",
+        "cifp_raw": "cifp_raw_per_procedure/KBPT_L12.txt",
+        "chart_pdf_local": "charts/pdfs/00521IL12.PDF",
+        "chart_image_local": "charts/images/KBPT_L12.png"
+      }
+    },
+    {
+      "chart_id": "KBRD_L34",
+      "airport": "KBRD",
+      "approach_ident": "L34",
+      "chart_name": "ILS OR LOC RWY 34",
+      "pdf_source_name": "05182IL34.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/05182IL34.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "8ab76446e5293141b173f52d3f96fee7355755b94eab31c7968607e9b47f4ad7",
+      "canonical_sha256": "5ab419f868d82bd2cd15dac81aef05552bf799bd3bb339a7992cf85379d23c60",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KBRD_L34.json",
+        "cifp_raw": "cifp_raw_per_procedure/KBRD_L34.txt",
+        "chart_pdf_local": "charts/pdfs/05182IL34.PDF",
+        "chart_image_local": "charts/images/KBRD_L34.png"
+      }
+    },
+    {
+      "chart_id": "KBTL_L23R",
+      "airport": "KBTL",
+      "approach_ident": "L23R",
+      "chart_name": "ILS OR LOC RWY 23R",
+      "pdf_source_name": "00041IL23R.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00041IL23R.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "f95dfbc00a0eec45b48a708575db2923b95b949de41f9ea9cf831a57f172659f",
+      "canonical_sha256": "b10ddcdaa08f5ee50152f4941acf1fe741020e439de74cd2310667e2ef011c17",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KBTL_L23R.json",
+        "cifp_raw": "cifp_raw_per_procedure/KBTL_L23R.txt",
+        "chart_pdf_local": "charts/pdfs/00041IL23R.PDF",
+        "chart_image_local": "charts/images/KBTL_L23R.png"
+      }
+    },
+    {
+      "chart_id": "KBTP_L08",
+      "airport": "KBTP",
+      "approach_ident": "L08",
+      "chart_name": "ILS OR LOC RWY 08",
+      "pdf_source_name": "00899IL8.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00899IL8.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "d69ca43b2c167963570ad95fef2cc76df4350fb58e1f01168b63a556c528ccd2",
+      "canonical_sha256": "6f4fa77968c07a879416f3a0b75982b68591a6721654e8217ba963a52e50381d",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KBTP_L08.json",
+        "cifp_raw": "cifp_raw_per_procedure/KBTP_L08.txt",
+        "chart_pdf_local": "charts/pdfs/00899IL8.PDF",
+        "chart_image_local": "charts/images/KBTP_L08.png"
+      }
+    },
+    {
+      "chart_id": "KBWI_L15L",
+      "airport": "KBWI",
+      "approach_ident": "L15L",
+      "chart_name": "ILS OR LOC RWY 15L",
+      "pdf_source_name": "00804IL15L.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00804IL15L.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "873758e641bfe14134272d8cd961d2f8b518f805e9184444785ee7aae890951f",
+      "canonical_sha256": "9459230dd94f6825e2571814b412b2e669942706ef40c0809842b134070d861c",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KBWI_L15L.json",
+        "cifp_raw": "cifp_raw_per_procedure/KBWI_L15L.txt",
+        "chart_pdf_local": "charts/pdfs/00804IL15L.PDF",
+        "chart_image_local": "charts/images/KBWI_L15L.png"
+      }
+    },
+    {
+      "chart_id": "KCAK_L01",
+      "airport": "KCAK",
+      "approach_ident": "L01",
+      "chart_name": "ILS OR LOC RWY 01",
+      "pdf_source_name": "00638IL1.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00638IL1.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "83b8726252e326a73603c7b2548759cee9c81805d95a8b48c21555944abaa4f9",
+      "canonical_sha256": "d31f27e2447a2cf7058bedf24f800e0cb26b4a8c82fe03ea9b3375d79a199c5b",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KCAK_L01.json",
+        "cifp_raw": "cifp_raw_per_procedure/KCAK_L01.txt",
+        "chart_pdf_local": "charts/pdfs/00638IL1.PDF",
+        "chart_image_local": "charts/images/KCAK_L01.png"
+      }
+    },
+    {
+      "chart_id": "KCBF_L36",
+      "airport": "KCBF",
+      "approach_ident": "L36",
+      "chart_name": "ILS OR LOC RWY 36",
+      "pdf_source_name": "05540IL36.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/05540IL36.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "fa30d7f06cccd89bdea3e2c1f5d07cadb3d87ff2ac834912c53ec8c14835775b",
+      "canonical_sha256": "95153bd2c2d0017b0a6fe9f999fc7f15c26eb57a4575f3a795fc0dd2c953800c",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KCBF_L36.json",
+        "cifp_raw": "cifp_raw_per_procedure/KCBF_L36.txt",
+        "chart_pdf_local": "charts/pdfs/05540IL36.PDF",
+        "chart_image_local": "charts/images/KCBF_L36.png"
+      }
+    },
+    {
+      "chart_id": "KCHA_L20",
+      "airport": "KCHA",
+      "approach_ident": "L20",
+      "chart_name": "ILS OR LOC RWY 20",
+      "pdf_source_name": "00079IL20.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00079IL20.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "97575a09a790328f32ad515c2b5eef33424068f230ab427d2995851c2e4c5119",
+      "canonical_sha256": "68eedcc6baa85b0f8619699066cdebd249f93406daee09b81b3937e52994f6c2",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KCHA_L20.json",
+        "cifp_raw": "cifp_raw_per_procedure/KCHA_L20.txt",
+        "chart_pdf_local": "charts/pdfs/00079IL20.PDF",
+        "chart_image_local": "charts/images/KCHA_L20.png"
+      }
+    },
+    {
+      "chart_id": "KCJR_L04",
+      "airport": "KCJR",
+      "approach_ident": "L04",
+      "chart_name": "LOC RWY 04",
+      "pdf_source_name": "05877L4.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/05877L4.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "30a15d6398f90864b8c8d93f391c1286894ff12c611db644e3539a81223f1aa9",
+      "canonical_sha256": "9b85914ee733fd9296809805737ec5d7ddc19c355816b35a39719c7a88febb03",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KCJR_L04.json",
+        "cifp_raw": "cifp_raw_per_procedure/KCJR_L04.txt",
+        "chart_pdf_local": "charts/pdfs/05877L4.PDF",
+        "chart_image_local": "charts/images/KCJR_L04.png"
+      }
+    },
+    {
+      "chart_id": "KAFN_RNV-B",
+      "airport": "KAFN",
+      "approach_ident": "RNV-B",
+      "chart_name": "RNAV (GPS)-B",
+      "pdf_source_name": "05335RB.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/05335RB.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "9552d889cbf48b2735195a63ae8df2e331831659d669888d26ac24786ac1d7a9",
+      "canonical_sha256": "24e90b1d058ef6b7ca5f2d918dc258a2281867a9dc7668812344ac39f04d863e",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KAFN_RNV-B.json",
+        "cifp_raw": "cifp_raw_per_procedure/KAFN_RNV-B.txt",
+        "chart_pdf_local": "charts/pdfs/05335RB.PDF",
+        "chart_image_local": "charts/images/KAFN_RNV-B.png"
+      }
+    },
+    {
+      "chart_id": "KAFN_RNV-C",
+      "airport": "KAFN",
+      "approach_ident": "RNV-C",
+      "chart_name": "RNAV (GPS)-C",
+      "pdf_source_name": "05335RC.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/05335RC.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "6be76cf1bbff5af88d6058f28ae1130efc5eff307b4773f081010a1c0c4b1882",
+      "canonical_sha256": "627428c9dea896579670bfa4ca6fd2799ee65a1a2515c9c1ae0ffd7043a25e23",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KAFN_RNV-C.json",
+        "cifp_raw": "cifp_raw_per_procedure/KAFN_RNV-C.txt",
+        "chart_pdf_local": "charts/pdfs/05335RC.PDF",
+        "chart_image_local": "charts/images/KAFN_RNV-C.png"
+      }
+    },
+    {
+      "chart_id": "KAIB_RNV-A",
+      "airport": "KAIB",
+      "approach_ident": "RNV-A",
+      "chart_name": "RNAV (GPS)-A",
+      "pdf_source_name": "09483RA.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/09483RA.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "af5eb758ef0835d9618ecd44ddff4e3719623e1f7eb184656f17ecdbfddfca00",
+      "canonical_sha256": "9e35ca0598a388b143ba3f588b69888b8158459d61d773331dbb6886ee18afcc",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KAIB_RNV-A.json",
+        "cifp_raw": "cifp_raw_per_procedure/KAIB_RNV-A.txt",
+        "chart_pdf_local": "charts/pdfs/09483RA.PDF",
+        "chart_image_local": "charts/images/KAIB_RNV-A.png"
+      }
+    },
+    {
+      "chart_id": "KANP_RNV-A",
+      "airport": "KANP",
+      "approach_ident": "RNV-A",
+      "chart_name": "RNAV (GPS)-A",
+      "pdf_source_name": "09806RA.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/09806RA.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "d71122bb602b35fa17ccabba9fbc7f672c1823ef1567990defa594b738591ddb",
+      "canonical_sha256": "c5fbbb36fd3131f63117c6598c98092ee06090c098f9ea92f42ffcb1451e1e8a",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KANP_RNV-A.json",
+        "cifp_raw": "cifp_raw_per_procedure/KANP_RNV-A.txt",
+        "chart_pdf_local": "charts/pdfs/09806RA.PDF",
+        "chart_image_local": "charts/images/KANP_RNV-A.png"
+      }
+    },
+    {
+      "chart_id": "KAPT_R04",
+      "airport": "KAPT",
+      "approach_ident": "R04",
+      "chart_name": "RNAV (GPS) RWY 04",
+      "pdf_source_name": "05783R4.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/05783R4.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "b8dd2fcb0f8ad356245635df2033c6de7468b5e515104dc4c2acaff378e95ecf",
+      "canonical_sha256": "5abfed1ce251218a2d85c70097cf58f7c6f093a8d42887c325679b2aedaf9984",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KAPT_R04.json",
+        "cifp_raw": "cifp_raw_per_procedure/KAPT_R04.txt",
+        "chart_pdf_local": "charts/pdfs/05783R4.PDF",
+        "chart_image_local": "charts/images/KAPT_R04.png"
+      }
+    },
+    {
+      "chart_id": "KAPV_R18",
+      "airport": "KAPV",
+      "approach_ident": "R18",
+      "chart_name": "RNAV (GPS) RWY 18",
+      "pdf_source_name": "05822R18.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/05822R18.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "fc2204e712e0f5c30863b96c7011fa9cafdf58c91a2399be5524fa6537e95c6e",
+      "canonical_sha256": "3bd5e4a229ccc8ec901a07e71126b09c7cdc616f4548c3086b9336fbef2dcf06",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KAPV_R18.json",
+        "cifp_raw": "cifp_raw_per_procedure/KAPV_R18.txt",
+        "chart_pdf_local": "charts/pdfs/05822R18.PDF",
+        "chart_image_local": "charts/images/KAPV_R18.png"
+      }
+    },
+    {
+      "chart_id": "KAQW_RNV-A",
+      "airport": "KAQW",
+      "approach_ident": "RNV-A",
+      "chart_name": "RNAV (GPS)-A",
+      "pdf_source_name": "10089RA.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/10089RA.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "6ce044f560953eb598c03af2c2b9988b4a8bf3ddf45461b1f760f51da40ac976",
+      "canonical_sha256": "52e8b1fc43e504244768ce3a5a76b8d631881781a2d9dd498a6a38533ccf230a",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KAQW_RNV-A.json",
+        "cifp_raw": "cifp_raw_per_procedure/KAQW_RNV-A.txt",
+        "chart_pdf_local": "charts/pdfs/10089RA.PDF",
+        "chart_image_local": "charts/images/KAQW_RNV-A.png"
+      }
+    },
+    {
+      "chart_id": "KAQW_RNV-B",
+      "airport": "KAQW",
+      "approach_ident": "RNV-B",
+      "chart_name": "RNAV (GPS)-B",
+      "pdf_source_name": "10089RB.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/10089RB.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "98b07c3de89292fe2b10001a3f65d89ebdb4a5ae2ed912993ee82e264306fc10",
+      "canonical_sha256": "826446cbe72aab4ea839eb8dc6205de27540123a8af2ba7280879a6d3d0df5eb",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KAQW_RNV-B.json",
+        "cifp_raw": "cifp_raw_per_procedure/KAQW_RNV-B.txt",
+        "chart_pdf_local": "charts/pdfs/10089RB.PDF",
+        "chart_image_local": "charts/images/KAQW_RNV-B.png"
+      }
+    },
+    {
+      "chart_id": "KAVQ_R12",
+      "airport": "KAVQ",
+      "approach_ident": "R12",
+      "chart_name": "RNAV (GPS) RWY 12",
+      "pdf_source_name": "10213R12.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/10213R12.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "11b4e5149d7d50729fdbfbc1a263523633a17f47db64cf21c23ac020b642b148",
+      "canonical_sha256": "044532450db5869a3cbc564fa1dacbd4d95bef5afb94bbaf1b091d110fa2f4e4",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KAVQ_R12.json",
+        "cifp_raw": "cifp_raw_per_procedure/KAVQ_R12.txt",
+        "chart_pdf_local": "charts/pdfs/10213R12.PDF",
+        "chart_image_local": "charts/images/KAVQ_R12.png"
+      }
+    },
+    {
+      "chart_id": "KAVQ_R21",
+      "airport": "KAVQ",
+      "approach_ident": "R21",
+      "chart_name": "RNAV (GPS) RWY 21",
+      "pdf_source_name": "10213R21.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/10213R21.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "8c0524785b308b9c10f4ed8b899ac42987fe968fa7371e060a42da0f229efd05",
+      "canonical_sha256": "731625cd8e42c3992544610cb234b3291b8a721cbb07baff107bb433cf317a05",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KAVQ_R21.json",
+        "cifp_raw": "cifp_raw_per_procedure/KAVQ_R21.txt",
+        "chart_pdf_local": "charts/pdfs/10213R21.PDF",
+        "chart_image_local": "charts/images/KAVQ_R21.png"
+      }
+    },
+    {
+      "chart_id": "KAXH_R27",
+      "airport": "KAXH",
+      "approach_ident": "R27",
+      "chart_name": "RNAV (GPS) RWY 27",
+      "pdf_source_name": "06575R27.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/06575R27.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "70b99777ac5078cde648719760f4efefbe397d2ea5a1d06e4e2785bae0824380",
+      "canonical_sha256": "e309443db9592d3869b4b449013518659bc32b0d40e7a9d8a99819aea05ff905",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KAXH_R27.json",
+        "cifp_raw": "cifp_raw_per_procedure/KAXH_R27.txt",
+        "chart_pdf_local": "charts/pdfs/06575R27.PDF",
+        "chart_image_local": "charts/images/KAXH_R27.png"
+      }
+    },
+    {
+      "chart_id": "KBDH_R31",
+      "airport": "KBDH",
+      "approach_ident": "R31",
+      "chart_name": "RNAV (GPS) RWY 31",
+      "pdf_source_name": "10310R31.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/10310R31.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "51f4ea1fd405edefce832c61f18f7125ab6df739b06caf6ece29a98d4e35f08e",
+      "canonical_sha256": "f9b561c867796a716e5f215ef3fa8efb99c90763d9aa3fb7d72fbfccf9f0bef5",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KBDH_R31.json",
+        "cifp_raw": "cifp_raw_per_procedure/KBDH_R31.txt",
+        "chart_pdf_local": "charts/pdfs/10310R31.PDF",
+        "chart_image_local": "charts/images/KBDH_R31.png"
+      }
+    },
+    {
+      "chart_id": "KBDN_R34",
+      "airport": "KBDN",
+      "approach_ident": "R34",
+      "chart_name": "RNAV (GPS) RWY 34",
+      "pdf_source_name": "05579R34.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/05579R34.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "a7a4857104da28381dd7d6f0a2a0a7dae6853a6aeb8f36833a8f279ef57fe1e1",
+      "canonical_sha256": "b53045d101c506db50d7f3ffbe5289b5026d93e1170fbb48eea71eb2aa4d4db9",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KBDN_R34.json",
+        "cifp_raw": "cifp_raw_per_procedure/KBDN_R34.txt",
+        "chart_pdf_local": "charts/pdfs/05579R34.PDF",
+        "chart_image_local": "charts/images/KBDN_R34.png"
+      }
+    },
+    {
+      "chart_id": "KBJC_R12L",
+      "airport": "KBJC",
+      "approach_ident": "R12L",
+      "chart_name": "RNAV (GPS) RWY 12L",
+      "pdf_source_name": "05612R12L.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/05612R12L.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "cf28fb689f5f499bb7243aa88b99d17a575786da01e0feee77a5e4fbc4573b84",
+      "canonical_sha256": "11d01754cd994aef23a1327a959a16f744a0a139a4b5a9b8b40a70e3bd540278",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KBJC_R12L.json",
+        "cifp_raw": "cifp_raw_per_procedure/KBJC_R12L.txt",
+        "chart_pdf_local": "charts/pdfs/05612R12L.PDF",
+        "chart_image_local": "charts/images/KBJC_R12L.png"
+      }
+    },
+    {
+      "chart_id": "KBLF_R05",
+      "airport": "KBLF",
+      "approach_ident": "R05",
+      "chart_name": "RNAV (GPS) RWY 05",
+      "pdf_source_name": "00787R5.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00787R5.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "7da5f8454974cbc6babe6c0922dddc4af750a69bae05c130b4bc59d3372b69d0",
+      "canonical_sha256": "f8daf56173778a3d72b268455e15f5fa5967223a648f0d0ca28aaf321a3e9730",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KBLF_R05.json",
+        "cifp_raw": "cifp_raw_per_procedure/KBLF_R05.txt",
+        "chart_pdf_local": "charts/pdfs/00787R5.PDF",
+        "chart_image_local": "charts/images/KBLF_R05.png"
+      }
+    },
+    {
+      "chart_id": "KBMQ_R01",
+      "airport": "KBMQ",
+      "approach_ident": "R01",
+      "chart_name": "RNAV (GPS) RWY 01",
+      "pdf_source_name": "05772R1.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/05772R1.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "aa6d615db00027f67a6b718be692aea8f22027c008b4504143317234227a99fb",
+      "canonical_sha256": "14de75e39ac44b87b2015de27b95695e1a0b426a73efd990959440900db6cd65",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KBMQ_R01.json",
+        "cifp_raw": "cifp_raw_per_procedure/KBMQ_R01.txt",
+        "chart_pdf_local": "charts/pdfs/05772R1.PDF",
+        "chart_image_local": "charts/images/KBMQ_R01.png"
+      }
+    },
+    {
+      "chart_id": "KBOS_R32",
+      "airport": "KBOS",
+      "approach_ident": "R32",
+      "chart_name": "RNAV (GPS) RWY 32",
+      "pdf_source_name": "00058R32.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00058R32.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "d6e1df3bfdd44ab14abe99e9e26af30fdd33843d3af164151ebda582df9c1faa",
+      "canonical_sha256": "d56b7391ad99ed930770d0055314c0e804c2742cc07cc13b70606a71a97828b1",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KBOS_R32.json",
+        "cifp_raw": "cifp_raw_per_procedure/KBOS_R32.txt",
+        "chart_pdf_local": "charts/pdfs/00058R32.PDF",
+        "chart_image_local": "charts/images/KBOS_R32.png"
+      }
+    },
+    {
+      "chart_id": "KBTV_R33-Y",
+      "airport": "KBTV",
+      "approach_ident": "R33-Y",
+      "chart_name": "RNAV (GPS) Y RWY 33",
+      "pdf_source_name": "00070RY33.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00070RY33.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "4f7a3565d901158fe23d83641b388aefa3c111f472ab83920b2e337174ddf632",
+      "canonical_sha256": "e3a02a804945b412b6687ba5b25ba975cda9eb2f333c754e4400f213bab1c085",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KBTV_R33-Y.json",
+        "cifp_raw": "cifp_raw_per_procedure/KBTV_R33-Y.txt",
+        "chart_pdf_local": "charts/pdfs/00070RY33.PDF",
+        "chart_image_local": "charts/images/KBTV_R33-Y.png"
+      }
+    },
+    {
+      "chart_id": "KBUR_R08-Z",
+      "airport": "KBUR",
+      "approach_ident": "R08-Z",
+      "chart_name": "RNAV (GPS) Z RWY 08",
+      "pdf_source_name": "00067RZ8.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00067RZ8.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "5ba59648dc6c3e02943923d7515c808f4bd780fe91ca579f642a3c9a4ff25dff",
+      "canonical_sha256": "ea02d007b56f57f80fab433c325da155882f47320df67e2e838e470f4b858920",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KBUR_R08-Z.json",
+        "cifp_raw": "cifp_raw_per_procedure/KBUR_R08-Z.txt",
+        "chart_pdf_local": "charts/pdfs/00067RZ8.PDF",
+        "chart_image_local": "charts/images/KBUR_R08-Z.png"
+      }
+    },
+    {
+      "chart_id": "KBWC_R26",
+      "airport": "KBWC",
+      "approach_ident": "R26",
+      "chart_name": "RNAV (GPS) RWY 26",
+      "pdf_source_name": "06932R26.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/06932R26.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "fecca4494131c0903c3dfd2337f80db929a15bebad7efb12c0860a932fd0a972",
+      "canonical_sha256": "537b609a9ab4a7a854c1c4afa768facddee9e86ab9843bd2469ac3c71b5152de",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KBWC_R26.json",
+        "cifp_raw": "cifp_raw_per_procedure/KBWC_R26.txt",
+        "chart_pdf_local": "charts/pdfs/06932R26.PDF",
+        "chart_image_local": "charts/images/KBWC_R26.png"
+      }
+    },
+    {
+      "chart_id": "KCAG_R07",
+      "airport": "KCAG",
+      "approach_ident": "R07",
+      "chart_name": "RNAV (GPS) RWY 07",
+      "pdf_source_name": "06338R7.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/06338R7.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "4ef7b0b6d79cb82f30fb10ebfd574b4c27f5465940c5c2feaf35237e9351ac98",
+      "canonical_sha256": "8069c6e8de1942bde27e62b154ade5aabd41a524f312be66a9b0d0574a0c6ece",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KCAG_R07.json",
+        "cifp_raw": "cifp_raw_per_procedure/KCAG_R07.txt",
+        "chart_pdf_local": "charts/pdfs/06338R7.PDF",
+        "chart_image_local": "charts/images/KCAG_R07.png"
+      }
+    },
+    {
+      "chart_id": "KCBE_R05",
+      "airport": "KCBE",
+      "approach_ident": "R05",
+      "chart_name": "RNAV (GPS) RWY 05",
+      "pdf_source_name": "05263R5.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/05263R5.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "09214830b62610dcbbe32e0c0fbf1cb82e8715743830bd171f3d963dcb08f4e6",
+      "canonical_sha256": "167906abc788680a9b7a25d223ebefa700bbab1e20953ddc2e99caa966f7021d",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KCBE_R05.json",
+        "cifp_raw": "cifp_raw_per_procedure/KCBE_R05.txt",
+        "chart_pdf_local": "charts/pdfs/05263R5.PDF",
+        "chart_image_local": "charts/images/KCBE_R05.png"
+      }
+    },
+    {
+      "chart_id": "KCEA_RNV-D",
+      "airport": "KCEA",
+      "approach_ident": "RNV-D",
+      "chart_name": "RNAV (GPS)-D",
+      "pdf_source_name": "05142RD.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/05142RD.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "d3a7016c7334afe88fa93ec8d8ecdebcedf336a389794d28a55e3d2d3597c0b2",
+      "canonical_sha256": "c4fbe6911092f17afb2354f404066951429ec0913122acb84d6260edcb2d7867",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KCEA_RNV-D.json",
+        "cifp_raw": "cifp_raw_per_procedure/KCEA_RNV-D.txt",
+        "chart_pdf_local": "charts/pdfs/05142RD.PDF",
+        "chart_image_local": "charts/images/KCEA_RNV-D.png"
+      }
+    },
+    {
+      "chart_id": "KCII_R33",
+      "airport": "KCII",
+      "approach_ident": "R33",
+      "chart_name": "RNAV (GPS) RWY 33",
+      "pdf_source_name": "06814R33.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/06814R33.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "706241dcacda1effef26c5de25fc4d5b06b7aecc2369a584cc29e62ae3beb449",
+      "canonical_sha256": "285157aa1990eb0f7b02e467e4909e6d01fac4787f567721b595627a25d0affa",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KCII_R33.json",
+        "cifp_raw": "cifp_raw_per_procedure/KCII_R33.txt",
+        "chart_pdf_local": "charts/pdfs/06814R33.PDF",
+        "chart_image_local": "charts/images/KCII_R33.png"
+      }
+    },
+    {
+      "chart_id": "KCOE_R02",
+      "airport": "KCOE",
+      "approach_ident": "R02",
+      "chart_name": "RNAV (GPS) RWY 02",
+      "pdf_source_name": "00527R2.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00527R2.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "fb1818a15eccf362db764fea09edbbe8e149e053c6df29eacb164e9cc56dcf5c",
+      "canonical_sha256": "456f9002a5c9b5bf84f8f02fded09832efd3f925c0426a666a24b2b7e90d5bb0",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KCOE_R02.json",
+        "cifp_raw": "cifp_raw_per_procedure/KCOE_R02.txt",
+        "chart_pdf_local": "charts/pdfs/00527R2.PDF",
+        "chart_image_local": "charts/images/KCOE_R02.png"
+      }
+    },
+    {
+      "chart_id": "KACT_R32",
+      "airport": "KACT",
+      "approach_ident": "R32",
+      "chart_name": "RNAV (GPS) RWY 32",
+      "pdf_source_name": "00439R32.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00439R32.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "b4c5f12408f65c3b0a7765f76b1f405cb0f64624b0da2fe8ed852990360b56d0",
+      "canonical_sha256": "b13e742bef4b5fa2a4f04a212ca90c42cdb8a29c11f871ec413ec7b4616687d6",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KACT_R32.json",
+        "cifp_raw": "cifp_raw_per_procedure/KACT_R32.txt",
+        "chart_pdf_local": "charts/pdfs/00439R32.PDF",
+        "chart_image_local": "charts/images/KACT_R32.png"
+      }
+    },
+    {
+      "chart_id": "KADF_R22",
+      "airport": "KADF",
+      "approach_ident": "R22",
+      "chart_name": "RNAV (GPS) RWY 22",
+      "pdf_source_name": "05756R22.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/05756R22.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "91d1d18614699eaba068ae99eb7632d5f86685ec1b1e5079071d1ece2ee4ee76",
+      "canonical_sha256": "9c24f593934fc6e9d81bc4f754e3fad41fd3fb7a105783a8c74c352c97e4896d",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KADF_R22.json",
+        "cifp_raw": "cifp_raw_per_procedure/KADF_R22.txt",
+        "chart_pdf_local": "charts/pdfs/05756R22.PDF",
+        "chart_image_local": "charts/images/KADF_R22.png"
+      }
+    },
+    {
+      "chart_id": "KAKH_R03",
+      "airport": "KAKH",
+      "approach_ident": "R03",
+      "chart_name": "RNAV (GPS) RWY 03",
+      "pdf_source_name": "06081R3.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/06081R3.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "e3abcb14788f09a07280374e17405f7a7a61308b1a03f158cd25c359190c4105",
+      "canonical_sha256": "e1ec325063d4252475ded38cee241dc89c34add179c21774de394aa856c3d89d",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KAKH_R03.json",
+        "cifp_raw": "cifp_raw_per_procedure/KAKH_R03.txt",
+        "chart_pdf_local": "charts/pdfs/06081R3.PDF",
+        "chart_image_local": "charts/images/KAKH_R03.png"
+      }
+    },
+    {
+      "chart_id": "KANY_R18",
+      "airport": "KANY",
+      "approach_ident": "R18",
+      "chart_name": "RNAV (GPS) RWY 18",
+      "pdf_source_name": "00533R18.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00533R18.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "fdf9b6eac227123cfcd6a9c91aa9bb93993c1abd83dcc940416986d5974a6f25",
+      "canonical_sha256": "9d68f4a0a3f627c2c8786a11c0cc72c5f1e5070e2decd4cd0e91bb3f3a828e8d",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KANY_R18.json",
+        "cifp_raw": "cifp_raw_per_procedure/KANY_R18.txt",
+        "chart_pdf_local": "charts/pdfs/00533R18.PDF",
+        "chart_image_local": "charts/images/KANY_R18.png"
+      }
+    },
+    {
+      "chart_id": "KAOO_R03-Z",
+      "airport": "KAOO",
+      "approach_ident": "R03-Z",
+      "chart_name": "RNAV (GPS) Z RWY 03",
+      "pdf_source_name": "00100RZ3.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00100RZ3.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "dcc02348028cee0b77230d86eaed490e6242d0218028d927f1da5850115310c0",
+      "canonical_sha256": "1d0480c4fc2265eba3e55979264b8ccef70685e7e1e20e955b11cf2b5344f31c",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KAOO_R03-Z.json",
+        "cifp_raw": "cifp_raw_per_procedure/KAOO_R03-Z.txt",
+        "chart_pdf_local": "charts/pdfs/00100RZ3.PDF",
+        "chart_image_local": "charts/images/KAOO_R03-Z.png"
+      }
+    },
+    {
+      "chart_id": "KAOO_R21",
+      "airport": "KAOO",
+      "approach_ident": "R21",
+      "chart_name": "RNAV (GPS) RWY 21",
+      "pdf_source_name": "00100R21.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00100R21.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "9825cb5b52894495467c5328c1285bb31d238420212b24517578bee1ab1ccfad",
+      "canonical_sha256": "631276046ada9437409a21df0131f126457381ccf70ee6d7dea5de7f0c029bd7",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KAOO_R21.json",
+        "cifp_raw": "cifp_raw_per_procedure/KAOO_R21.txt",
+        "chart_pdf_local": "charts/pdfs/00100R21.PDF",
+        "chart_image_local": "charts/images/KAOO_R21.png"
+      }
+    },
+    {
+      "chart_id": "KARG_R04",
+      "airport": "KARG",
+      "approach_ident": "R04",
+      "chart_name": "RNAV (GPS) RWY 04",
+      "pdf_source_name": "00441R4.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00441R4.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "b79d6953771a909ae4e6f31cef3e3a7055f6bceefa181fee28e20047eea8a21f",
+      "canonical_sha256": "6f7f9b7dbfac43b4b29ef7684f3f3bf184c044a6c8bb1a1c0858e91cfe47753f",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KARG_R04.json",
+        "cifp_raw": "cifp_raw_per_procedure/KARG_R04.txt",
+        "chart_pdf_local": "charts/pdfs/00441R4.PDF",
+        "chart_image_local": "charts/images/KARG_R04.png"
+      }
+    },
+    {
+      "chart_id": "KATW_R21",
+      "airport": "KATW",
+      "approach_ident": "R21",
+      "chart_name": "RNAV (GPS) RWY 21",
+      "pdf_source_name": "05216R21.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/05216R21.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "c456cf612e59be55af42ff40f860a2bc3cf9ba4b3ed218e361cb4c67a827f4ce",
+      "canonical_sha256": "0ab15a6cef9e92e23184e3d1b06be1894546f8fa07d0cfc7f93b63078690938d",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KATW_R21.json",
+        "cifp_raw": "cifp_raw_per_procedure/KATW_R21.txt",
+        "chart_pdf_local": "charts/pdfs/05216R21.PDF",
+        "chart_image_local": "charts/images/KATW_R21.png"
+      }
+    },
+    {
+      "chart_id": "KAVP_R22",
+      "airport": "KAVP",
+      "approach_ident": "R22",
+      "chart_name": "RNAV (GPS) RWY 22",
+      "pdf_source_name": "00661R22.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00661R22.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "0f27d7b3e69d35227f5a95ed0523393bff68512d2b69140bcb3403a5f1671aa1",
+      "canonical_sha256": "c8be4c74cb07b65d901fa0a245869ddd76ad48e13f5e46db70f035cd7e0d8835",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KAVP_R22.json",
+        "cifp_raw": "cifp_raw_per_procedure/KAVP_R22.txt",
+        "chart_pdf_local": "charts/pdfs/00661R22.PDF",
+        "chart_image_local": "charts/images/KAVP_R22.png"
+      }
+    },
+    {
+      "chart_id": "KAWG_R36",
+      "airport": "KAWG",
+      "approach_ident": "R36",
+      "chart_name": "RNAV (GPS) RWY 36",
+      "pdf_source_name": "06289R36.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/06289R36.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "f8a951e9f94c8461938a1972741c97acc00c2b76936c601e4d9584dfc127ffe5",
+      "canonical_sha256": "82d62c99d495877ab4df7dc6274eb19fa76cfc4eaba4fc1583fff2dd38024f8c",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KAWG_R36.json",
+        "cifp_raw": "cifp_raw_per_procedure/KAWG_R36.txt",
+        "chart_pdf_local": "charts/pdfs/06289R36.PDF",
+        "chart_image_local": "charts/images/KAWG_R36.png"
+      }
+    },
+    {
+      "chart_id": "KAXN_R22",
+      "airport": "KAXN",
+      "approach_ident": "R22",
+      "chart_name": "RNAV (GPS) RWY 22",
+      "pdf_source_name": "00014R22.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00014R22.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "42e16c03f3d87e114405eb84e2443fc2a8e220fc15ee0557901b99fbc01eddb5",
+      "canonical_sha256": "629774e9203232a877c507a235efcee2e8e1167b71acd04c365b545d4b2cf34f",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KAXN_R22.json",
+        "cifp_raw": "cifp_raw_per_procedure/KAXN_R22.txt",
+        "chart_pdf_local": "charts/pdfs/00014R22.PDF",
+        "chart_image_local": "charts/images/KAXN_R22.png"
+      }
+    },
+    {
+      "chart_id": "KAXV_R26",
+      "airport": "KAXV",
+      "approach_ident": "R26",
+      "chart_name": "RNAV (GPS) RWY 26",
+      "pdf_source_name": "06065R26.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/06065R26.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "ff198a1dbc0720bc70ffdb8f151fb8574ca15353cabbe8e3c13dd4657b10040e",
+      "canonical_sha256": "eb6e5e278cafc2d6fe4899d5622933f0389672ee21494283cbad793205d7acf0",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KAXV_R26.json",
+        "cifp_raw": "cifp_raw_per_procedure/KAXV_R26.txt",
+        "chart_pdf_local": "charts/pdfs/06065R26.PDF",
+        "chart_image_local": "charts/images/KAXV_R26.png"
+      }
+    },
+    {
+      "chart_id": "KAZC_R29",
+      "airport": "KAZC",
+      "approach_ident": "R29",
+      "chart_name": "RNAV (GPS) RWY 29",
+      "pdf_source_name": "09194R29.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/09194R29.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "c67b9ed328c793c7df13eeaab44d035fd7c79304b5e3904970b1b53fffe20d1e",
+      "canonical_sha256": "31b05aba8fdf7b69dd0194c182e9bf0565e6ef1cf69f3d9e8c8497835d79148a",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KAZC_R29.json",
+        "cifp_raw": "cifp_raw_per_procedure/KAZC_R29.txt",
+        "chart_pdf_local": "charts/pdfs/09194R29.PDF",
+        "chart_image_local": "charts/images/KAZC_R29.png"
+      }
+    },
+    {
+      "chart_id": "KBFD_R14",
+      "airport": "KBFD",
+      "approach_ident": "R14",
+      "chart_name": "RNAV (GPS) RWY 14",
+      "pdf_source_name": "00926R14.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00926R14.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "84bf69bf98370d122e235630c06794e4ea3cbb5e76ff4dd1d27b94594afa7956",
+      "canonical_sha256": "e37c7fc86a33f2d7accf57b25914c0042423a9399d7c9d1497aba605cb245f04",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KBFD_R14.json",
+        "cifp_raw": "cifp_raw_per_procedure/KBFD_R14.txt",
+        "chart_pdf_local": "charts/pdfs/00926R14.PDF",
+        "chart_image_local": "charts/images/KBFD_R14.png"
+      }
+    },
+    {
+      "chart_id": "KBJI_R31",
+      "airport": "KBJI",
+      "approach_ident": "R31",
+      "chart_name": "RNAV (GPS) RWY 31",
+      "pdf_source_name": "05174R31.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/05174R31.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "e7c34d60b8481ddd6afb5d3d512486a044e7ad52679c8c9ac95c70e59207f8c6",
+      "canonical_sha256": "7fbe4e0fbf901a3aa523896b1f01af3b06abb59788a834a6a77715cb28c7a9a5",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KBJI_R31.json",
+        "cifp_raw": "cifp_raw_per_procedure/KBJI_R31.txt",
+        "chart_pdf_local": "charts/pdfs/05174R31.PDF",
+        "chart_image_local": "charts/images/KBJI_R31.png"
+      }
+    },
+    {
+      "chart_id": "KBKW_R01",
+      "airport": "KBKW",
+      "approach_ident": "R01",
+      "chart_name": "RNAV (GPS) RWY 01",
+      "pdf_source_name": "00788R1.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00788R1.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "2d5a31c7db552efe2f87494fd62d822e57dba969aeaefa9c546c4cbdd34ab7e1",
+      "canonical_sha256": "f229e8a61c4786d99a343576569d7e8641053ae17908d430cfa0b5d2786d61a8",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KBKW_R01.json",
+        "cifp_raw": "cifp_raw_per_procedure/KBKW_R01.txt",
+        "chart_pdf_local": "charts/pdfs/00788R1.PDF",
+        "chart_image_local": "charts/images/KBKW_R01.png"
+      }
+    },
+    {
+      "chart_id": "KBKX_R30",
+      "airport": "KBKX",
+      "approach_ident": "R30",
+      "chart_name": "RNAV (GPS) RWY 30",
+      "pdf_source_name": "00969R30.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00969R30.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "2fc6e04e50314015b83eb612c1143aab561ff4bc902ccd7944505a151418df93",
+      "canonical_sha256": "93b14f9b8b0c5c7376796d322e9f7f9ab6ef6b23ee6a2ff480a4ba1e5cbcd3fb",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KBKX_R30.json",
+        "cifp_raw": "cifp_raw_per_procedure/KBKX_R30.txt",
+        "chart_pdf_local": "charts/pdfs/00969R30.PDF",
+        "chart_image_local": "charts/images/KBKX_R30.png"
+      }
+    },
+    {
+      "chart_id": "KBLV_R32RY",
+      "airport": "KBLV",
+      "approach_ident": "R32RY",
+      "chart_name": "RNAV (RNP) Z RWY 14L",
+      "pdf_source_name": "00046RRZ14L.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00046RRZ14L.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "241ece25f165f6f00a88d627adde66832f676f7b205a9fdb35f1008c606fae17",
+      "canonical_sha256": "bfdd36ccb23bf918fba1733f300bb4663301dc2cbedb6aeb118b6cbaa355ec04",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KBLV_R32RY.json",
+        "cifp_raw": "cifp_raw_per_procedure/KBLV_R32RY.txt",
+        "chart_pdf_local": "charts/pdfs/00046RRZ14L.PDF",
+        "chart_image_local": "charts/images/KBLV_R32RY.png"
+      }
+    },
+    {
+      "chart_id": "KBTR_R04L",
+      "airport": "KBTR",
+      "approach_ident": "R04L",
+      "chart_name": "RNAV (GPS) RWY 04L",
+      "pdf_source_name": "00040R4L.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00040R4L.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "a9d3846e1eac78f1d3881a744868535b3e0f4c933002788cd01d34537491351b",
+      "canonical_sha256": "332fb00d1d08fa889116e3b533627b37255760c0ef04683727c0a1806d786a30",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KBTR_R04L.json",
+        "cifp_raw": "cifp_raw_per_procedure/KBTR_R04L.txt",
+        "chart_pdf_local": "charts/pdfs/00040R4L.PDF",
+        "chart_image_local": "charts/images/KBTR_R04L.png"
+      }
+    },
+    {
+      "chart_id": "KBUM_R18",
+      "airport": "KBUM",
+      "approach_ident": "R18",
+      "chart_name": "RNAV (GPS) RWY 18",
+      "pdf_source_name": "00964R18.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00964R18.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "252e2dd767558e0135b27c71ce40defb26c9d6f63e000247f860f00ed187f3a3",
+      "canonical_sha256": "070776f0a8fc43e8a3abb3628aeeb8a57d2fec60420007e42335bbddc0abf692",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KBUM_R18.json",
+        "cifp_raw": "cifp_raw_per_procedure/KBUM_R18.txt",
+        "chart_pdf_local": "charts/pdfs/00964R18.PDF",
+        "chart_image_local": "charts/images/KBUM_R18.png"
+      }
+    },
+    {
+      "chart_id": "KBVY_R34",
+      "airport": "KBVY",
+      "approach_ident": "R34",
+      "chart_name": "RNAV (GPS) RWY 34",
+      "pdf_source_name": "05039R34.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/05039R34.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "a15b47a009febf4f0a3531af657535d87c6bc55b8abe7d0780f01faf87b04f6a",
+      "canonical_sha256": "8fd9a69734bc86f99c827a540db53b01f1348f86b6da2ce8147aac09102ce7a7",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KBVY_R34.json",
+        "cifp_raw": "cifp_raw_per_procedure/KBVY_R34.txt",
+        "chart_pdf_local": "charts/pdfs/05039R34.PDF",
+        "chart_image_local": "charts/images/KBVY_R34.png"
+      }
+    },
+    {
+      "chart_id": "KBXA_R18",
+      "airport": "KBXA",
+      "approach_ident": "R18",
+      "chart_name": "RNAV (GPS) RWY 18",
+      "pdf_source_name": "06397R18.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/06397R18.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "82df65e31183c8b6f15e2f998ccba19ba88e45e45269447aea82d15491a0cc74",
+      "canonical_sha256": "7aa1d33907de86a2a61b330b2d0af9e2c985288f19d8fd547dfe891ee8b9ddef",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KBXA_R18.json",
+        "cifp_raw": "cifp_raw_per_procedure/KBXA_R18.txt",
+        "chart_pdf_local": "charts/pdfs/06397R18.PDF",
+        "chart_image_local": "charts/images/KBXA_R18.png"
+      }
+    },
+    {
+      "chart_id": "KBYH_R36",
+      "airport": "KBYH",
+      "approach_ident": "R36",
+      "chart_name": "RNAV (GPS) RWY 36",
+      "pdf_source_name": "00054R36.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00054R36.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "fbffafd1265b135528e719edf7bc5d97364ec9e028437f3afda984fcb61beb9c",
+      "canonical_sha256": "9adea0576e828ddef3d92e18741127d3b94b5cd0765074800876e2fb625dafe6",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KBYH_R36.json",
+        "cifp_raw": "cifp_raw_per_procedure/KBYH_R36.txt",
+        "chart_pdf_local": "charts/pdfs/00054R36.PDF",
+        "chart_image_local": "charts/images/KBYH_R36.png"
+      }
+    },
+    {
+      "chart_id": "KBYI_R20",
+      "airport": "KBYI",
+      "approach_ident": "R20",
+      "chart_name": "RNAV (GPS) RWY 20",
+      "pdf_source_name": "00068R20.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00068R20.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "fb2d98cfc36dd658868a27e893ce95dccd3d3bc7e28f1dbc40b6cab3fc9b2c15",
+      "canonical_sha256": "d9bc5b32eec2fed17f6e58adae03e72b1bc73851d4122b89e0d0c2641003dd46",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KBYI_R20.json",
+        "cifp_raw": "cifp_raw_per_procedure/KBYI_R20.txt",
+        "chart_pdf_local": "charts/pdfs/00068R20.PDF",
+        "chart_image_local": "charts/images/KBYI_R20.png"
+      }
+    },
+    {
+      "chart_id": "KCAO_R02",
+      "airport": "KCAO",
+      "approach_ident": "R02",
+      "chart_name": "RNAV (GPS) RWY 02",
+      "pdf_source_name": "09063R2.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/09063R2.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "d2c3a52883ffe001e3094accf10f54ca2cff5d5b9281bbfcd709c479305c5a82",
+      "canonical_sha256": "9340d7c35cdb38c3d09dbffd0a6aa9d68835e0885655645bc9444933f6cc1668",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KCAO_R02.json",
+        "cifp_raw": "cifp_raw_per_procedure/KCAO_R02.txt",
+        "chart_pdf_local": "charts/pdfs/09063R2.PDF",
+        "chart_image_local": "charts/images/KCAO_R02.png"
+      }
+    },
+    {
+      "chart_id": "KCBF_R36",
+      "airport": "KCBF",
+      "approach_ident": "R36",
+      "chart_name": "RNAV (GPS) RWY 36",
+      "pdf_source_name": "05540R36.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/05540R36.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "6d4484bef583367fdb3a39b9f820e830d94ccde396e37cfce28a987387fc70ce",
+      "canonical_sha256": "271e96ebdfcf72d1677fd56d142e243c46df146b4bc21118cb6772d62209fb30",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KCBF_R36.json",
+        "cifp_raw": "cifp_raw_per_procedure/KCBF_R36.txt",
+        "chart_pdf_local": "charts/pdfs/05540R36.PDF",
+        "chart_image_local": "charts/images/KCBF_R36.png"
+      }
+    },
+    {
+      "chart_id": "KCDI_R04",
+      "airport": "KCDI",
+      "approach_ident": "R04",
+      "chart_name": "RNAV (GPS) RWY 04",
+      "pdf_source_name": "05993R4.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/05993R4.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "be0c22baa4032eaa7d4c0c0cccd96b9f86f2d1132fa2cfd257ff52e48f99cb0a",
+      "canonical_sha256": "aa28de014151c32449aac86353ae89a24afe7ff838a905275c75f45f0f740f1a",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KCDI_R04.json",
+        "cifp_raw": "cifp_raw_per_procedure/KCDI_R04.txt",
+        "chart_pdf_local": "charts/pdfs/05993R4.PDF",
+        "chart_image_local": "charts/images/KCDI_R04.png"
+      }
+    },
+    {
+      "chart_id": "KCDR_R03",
+      "airport": "KCDR",
+      "approach_ident": "R03",
+      "chart_name": "RNAV (GPS) RWY 03",
+      "pdf_source_name": "00506R3.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00506R3.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "3684d391c41774b976fd4a3ca8f88c9f8928366d2bb172eb6202e26be912bcdd",
+      "canonical_sha256": "d78e601d8eb30e6b7385a9665a6807e86157b728f4950e719f2d0b38cddb70c2",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KCDR_R03.json",
+        "cifp_raw": "cifp_raw_per_procedure/KCDR_R03.txt",
+        "chart_pdf_local": "charts/pdfs/00506R3.PDF",
+        "chart_image_local": "charts/images/KCDR_R03.png"
+      }
+    },
+    {
+      "chart_id": "KCDS_R36",
+      "airport": "KCDS",
+      "approach_ident": "R36",
+      "chart_name": "RNAV (GPS) RWY 36",
+      "pdf_source_name": "00082R36.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00082R36.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "b21bb25030b64d86dbf9d518b4dc0be0b6bcfb76d2a8da180384426ff78ffc29",
+      "canonical_sha256": "77bf1294929580b2d08e8f3e61135b8bf733588e4fcf844688188c3bbdf3acf9",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KCDS_R36.json",
+        "cifp_raw": "cifp_raw_per_procedure/KCDS_R36.txt",
+        "chart_pdf_local": "charts/pdfs/00082R36.PDF",
+        "chart_image_local": "charts/images/KCDS_R36.png"
+      }
+    },
+    {
+      "chart_id": "KCGI_R10",
+      "airport": "KCGI",
+      "approach_ident": "R10",
+      "chart_name": "RNAV (GPS) RWY 10",
+      "pdf_source_name": "00943R10.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00943R10.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "8191edd75faf5327602d7e56c03532ba0b47117d68b0acaf8b47b1a5383f8c6f",
+      "canonical_sha256": "968b7e2fdc13fa773980457938ecdae8a45e2309808b321d6b135718f78da98d",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KCGI_R10.json",
+        "cifp_raw": "cifp_raw_per_procedure/KCGI_R10.txt",
+        "chart_pdf_local": "charts/pdfs/00943R10.PDF",
+        "chart_image_local": "charts/images/KCGI_R10.png"
+      }
+    },
+    {
+      "chart_id": "KCHO_R03",
+      "airport": "KCHO",
+      "approach_ident": "R03",
+      "chart_name": "RNAV (GPS) RWY 03",
+      "pdf_source_name": "00765R3.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00765R3.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "99873d5dd9cf9166c6768d723caa10a0a78c3e8cb7d89975b491a46119f7d557",
+      "canonical_sha256": "bd109bd393455711cb4cff81d04721aefac3d26ebb8299588d45d9bee78208c8",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KCHO_R03.json",
+        "cifp_raw": "cifp_raw_per_procedure/KCHO_R03.txt",
+        "chart_pdf_local": "charts/pdfs/00765R3.PDF",
+        "chart_image_local": "charts/images/KCHO_R03.png"
+      }
+    },
+    {
+      "chart_id": "KCHQ_R36",
+      "airport": "KCHQ",
+      "approach_ident": "R36",
+      "chart_name": "RNAV (GPS) RWY 36",
+      "pdf_source_name": "06198R36.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/06198R36.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "85b4706484e15fc17421312c3d2d9b6446688ed0318254816acac3361904e7c1",
+      "canonical_sha256": "30a411539381663f591a3ddde599eb593281b83de1561bf1626b3774130a2248",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KCHQ_R36.json",
+        "cifp_raw": "cifp_raw_per_procedure/KCHQ_R36.txt",
+        "chart_pdf_local": "charts/pdfs/06198R36.PDF",
+        "chart_image_local": "charts/images/KCHQ_R36.png"
+      }
+    },
+    {
+      "chart_id": "KCIC_R13L",
+      "airport": "KCIC",
+      "approach_ident": "R13L",
+      "chart_name": "RNAV (GPS) RWY 13L",
+      "pdf_source_name": "00557R13L.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00557R13L.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "3c70662120de421be8eb01cabb89c01163622215f4da2ca94d960c6128861260",
+      "canonical_sha256": "6449f186db3996ae3d005f078b39c3d03987600b53b979a753a82d3f1173d325",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KCIC_R13L.json",
+        "cifp_raw": "cifp_raw_per_procedure/KCIC_R13L.txt",
+        "chart_pdf_local": "charts/pdfs/00557R13L.PDF",
+        "chart_image_local": "charts/images/KCIC_R13L.png"
+      }
+    },
+    {
+      "chart_id": "KCLL_R11",
+      "airport": "KCLL",
+      "approach_ident": "R11",
+      "chart_name": "RNAV (GPS) RWY 11",
+      "pdf_source_name": "00928R11.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/00928R11.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "fdea317e0dbe7fe81956c73e28c765581bbe5764c2fc21a85834b86325a0bde1",
+      "canonical_sha256": "c55ccdbcc5a5db0bf4ec12af7d05a88b2d5f7f9a79bc967263d72041cea3bd1c",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KCLL_R11.json",
+        "cifp_raw": "cifp_raw_per_procedure/KCLL_R11.txt",
+        "chart_pdf_local": "charts/pdfs/00928R11.PDF",
+        "chart_image_local": "charts/images/KCLL_R11.png"
+      }
+    },
+    {
+      "chart_id": "KCNC_R10",
+      "airport": "KCNC",
+      "approach_ident": "R10",
+      "chart_name": "RNAV (GPS) RWY 10",
+      "pdf_source_name": "06068R10.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/06068R10.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "da55a50a86ec782c0b6bff12fa4fa57380c040029819f1238f9fcffbf391aa0d",
+      "canonical_sha256": "a4075f4d5905855e2bcb862b7d773119c2c6df473b414a7cb492ac24a0dc9eec",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KCNC_R10.json",
+        "cifp_raw": "cifp_raw_per_procedure/KCNC_R10.txt",
+        "chart_pdf_local": "charts/pdfs/06068R10.PDF",
+        "chart_image_local": "charts/images/KCNC_R10.png"
+      }
+    },
+    {
+      "chart_id": "KCOI_R11",
+      "airport": "KCOI",
+      "approach_ident": "R11",
+      "chart_name": "RNAV (GPS) RWY 11",
+      "pdf_source_name": "06988R11.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/06988R11.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "616902986dc2fc5366a8ad137f22b9645c332d654cdd7c5cf00ff03e7f4c3e98",
+      "canonical_sha256": "03bb508e029d9944665afe3b9155c25b9aefce36db1e6e9ff5536bfc5ed35845",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KCOI_R11.json",
+        "cifp_raw": "cifp_raw_per_procedure/KCOI_R11.txt",
+        "chart_pdf_local": "charts/pdfs/06988R11.PDF",
+        "chart_image_local": "charts/images/KCOI_R11.png"
+      }
+    },
+    {
+      "chart_id": "KCRS_R32",
+      "airport": "KCRS",
+      "approach_ident": "R32",
+      "chart_name": "RNAV (GPS) RWY 32",
+      "pdf_source_name": "05998R32.PDF",
+      "pdf_url": "https://aeronav.faa.gov/d-tpp/2604/05998R32.PDF",
+      "pdf_sha256": null,
+      "shares_pdf_with": [],
+      "cifp_raw_sha256": "6d4009bf8c13e0d702c0228d397019419d2ff30d9f0f3c99dce0528b452ff748",
+      "canonical_sha256": "4baf73b7e80a5b3f3e634f7b3bd69be40ee7e7bb2459dad3d4f1ff7f2189a101",
+      "paths": {
+        "missed_approach_gt": "missed_approach/KCRS_R32.json",
+        "cifp_raw": "cifp_raw_per_procedure/KCRS_R32.txt",
+        "chart_pdf_local": "charts/pdfs/05998R32.PDF",
+        "chart_image_local": "charts/images/KCRS_R32.png"
+      }
+    }
+  ]
+}
