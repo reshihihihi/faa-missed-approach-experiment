@@ -4,6 +4,8 @@ Date: 2026-04-25
 
 This document summarizes the current B-group pilot experiment for missed-approach extraction. The scope is limited to 10 approach charts and is intended as a reviewable pilot result, not the final 100/300-chart release.
 
+For a fuller method walkthrough in Chinese, see `docs/b3v3_method_summary_pilot10.md`.
+
 ## Scope
 
 The experiment compares chart-derived methods that output the PR #28 `missed_approach_leg_v1` JSON format.
