@@ -1,0 +1,1279 @@
+{
+  "chart_id": "KATL_I09R",
+  "sample_id": "sample_0004",
+  "method": "B3V3",
+  "trace_policy": "sidecar only; not inserted into PR #28 method_output schema",
+  "trace_summary": {
+    "present_field_count": 10,
+    "matched_field_count": 10,
+    "matched_field_rate": 1.0
+  },
+  "field_traces": [
+    {
+      "field_path": "legs[1].answers.Q_terminator",
+      "predicted_value": "VI",
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_01",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_01",
+          "action_type": "initial_climb_or_heading",
+          "source_snippet": "Climb to 4000",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_heading_cell",
+              "bbox": {
+                "x_center": 0.4938,
+                "y_center": 0.679775,
+                "width": 0.0776,
+                "height": 0.06255
+              },
+              "ocr_texts": [
+                "I",
+                "4000",
+                "100° hdg"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "HEADING_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0004__r005",
+                "sample_0004__r004",
+                "sample_0004__r006"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "VI"
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_01",
+          "semantic_step_id": "semantic_step_01",
+          "candidate_ref": null,
+          "action_type": "initial_climb_to_altitude",
+          "source_snippet": "Climb to 4000",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_heading_cell",
+              "bbox": {
+                "x_center": 0.4938,
+                "y_center": 0.679775,
+                "width": 0.0776,
+                "height": 0.06255
+              },
+              "ocr_texts": [
+                "I",
+                "4000",
+                "100° hdg"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "HEADING_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0004__r005",
+                "sample_0004__r004",
+                "sample_0004__r006"
+              ]
+            }
+          ],
+          "hint_confidence": "low",
+          "hint_status": null,
+          "hint_value": [
+            "CA",
+            "VA",
+            "VI"
+          ]
+        }
+      ]
+    },
+    {
+      "field_path": "legs[1].answers.Q4_course_or_radial",
+      "predicted_value": {
+        "type": "course_deg",
+        "course_deg": 100
+      },
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_01",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_01",
+          "action_type": "initial_climb_or_heading",
+          "source_snippet": "Climb to 4000",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_heading_cell",
+              "bbox": {
+                "x_center": 0.4938,
+                "y_center": 0.679775,
+                "width": 0.0776,
+                "height": 0.06255
+              },
+              "ocr_texts": [
+                "I",
+                "4000",
+                "100° hdg"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "HEADING_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0004__r005",
+                "sample_0004__r004",
+                "sample_0004__r006"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "type": "course_deg",
+            "course_deg": 100
+          }
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_01",
+          "semantic_step_id": "semantic_step_01",
+          "candidate_ref": null,
+          "action_type": "initial_climb_to_altitude",
+          "source_snippet": "Climb to 4000",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_heading_cell",
+              "bbox": {
+                "x_center": 0.4938,
+                "y_center": 0.679775,
+                "width": 0.0776,
+                "height": 0.06255
+              },
+              "ocr_texts": [
+                "I",
+                "4000",
+                "100° hdg"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "HEADING_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0004__r005",
+                "sample_0004__r004",
+                "sample_0004__r006"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": null,
+          "hint_value": {
+            "type": "course_deg",
+            "course_deg": 100
+          }
+        }
+      ]
+    },
+    {
+      "field_path": "legs[2].answers.Q_terminator",
+      "predicted_value": "CF",
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_02",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_02",
+          "action_type": "radial_to_fix",
+          "source_snippet": "DME R-235 to CONNI",
+          "evidence_refs": [
+            "cell_02",
+            "cell_03"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_02",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.5626,
+                "y_center": 0.6824,
+                "width": 0.06,
+                "height": 0.0352
+              },
+              "ocr_texts": [
+                "AHN",
+                "R-235"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0004__r007",
+                "sample_0004__r008"
+              ]
+            },
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "fix_text_cell",
+              "bbox": {
+                "x_center": 0.6289,
+                "y_center": 0.6766,
+                "width": 0.064,
+                "height": 0.0518
+              },
+              "ocr_texts": [
+                "CONNI",
+                "AHN 30.2",
+                "30.2"
+              ],
+              "observed_types": [
+                "DME_DISTANCE_TEXT",
+                "FIX_TEXT",
+                "NAVAID_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0004__r009",
+                "sample_0004__r010",
+                "sample_0004__r011"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "CF"
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_02",
+          "semantic_step_id": "semantic_step_02",
+          "candidate_ref": null,
+          "action_type": "radial_or_course_to_fix",
+          "source_snippet": "DME R-235 to CONNI",
+          "evidence_refs": [
+            "cell_02",
+            "cell_03"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_02",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.5626,
+                "y_center": 0.6824,
+                "width": 0.06,
+                "height": 0.0352
+              },
+              "ocr_texts": [
+                "AHN",
+                "R-235"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0004__r007",
+                "sample_0004__r008"
+              ]
+            },
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "fix_text_cell",
+              "bbox": {
+                "x_center": 0.6289,
+                "y_center": 0.6766,
+                "width": 0.064,
+                "height": 0.0518
+              },
+              "ocr_texts": [
+                "CONNI",
+                "AHN 30.2",
+                "30.2"
+              ],
+              "observed_types": [
+                "DME_DISTANCE_TEXT",
+                "FIX_TEXT",
+                "NAVAID_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0004__r009",
+                "sample_0004__r010",
+                "sample_0004__r011"
+              ]
+            }
+          ],
+          "hint_confidence": "low",
+          "hint_status": null,
+          "hint_value": [
+            "CR",
+            "CF",
+            "FA",
+            "TF"
+          ]
+        }
+      ]
+    },
+    {
+      "field_path": "legs[2].answers.Q1_fix_ident",
+      "predicted_value": "CONNI",
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_02",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_02",
+          "action_type": "radial_to_fix",
+          "source_snippet": "DME R-235 to CONNI",
+          "evidence_refs": [
+            "cell_02",
+            "cell_03"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_02",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.5626,
+                "y_center": 0.6824,
+                "width": 0.06,
+                "height": 0.0352
+              },
+              "ocr_texts": [
+                "AHN",
+                "R-235"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0004__r007",
+                "sample_0004__r008"
+              ]
+            },
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "fix_text_cell",
+              "bbox": {
+                "x_center": 0.6289,
+                "y_center": 0.6766,
+                "width": 0.064,
+                "height": 0.0518
+              },
+              "ocr_texts": [
+                "CONNI",
+                "AHN 30.2",
+                "30.2"
+              ],
+              "observed_types": [
+                "DME_DISTANCE_TEXT",
+                "FIX_TEXT",
+                "NAVAID_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0004__r009",
+                "sample_0004__r010",
+                "sample_0004__r011"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "CONNI"
+        },
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_03",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_03",
+          "action_type": "hold_at_fix",
+          "source_snippet": "terminal fix/DME likely hold; OCR may be truncated",
+          "evidence_refs": [
+            "cell_01",
+            "cell_03"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_heading_cell",
+              "bbox": {
+                "x_center": 0.4938,
+                "y_center": 0.679775,
+                "width": 0.0776,
+                "height": 0.06255
+              },
+              "ocr_texts": [
+                "I",
+                "4000",
+                "100° hdg"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "HEADING_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0004__r005",
+                "sample_0004__r004",
+                "sample_0004__r006"
+              ]
+            },
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "fix_text_cell",
+              "bbox": {
+                "x_center": 0.6289,
+                "y_center": 0.6766,
+                "width": 0.064,
+                "height": 0.0518
+              },
+              "ocr_texts": [
+                "CONNI",
+                "AHN 30.2",
+                "30.2"
+              ],
+              "observed_types": [
+                "DME_DISTANCE_TEXT",
+                "FIX_TEXT",
+                "NAVAID_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0004__r009",
+                "sample_0004__r010",
+                "sample_0004__r011"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "CONNI"
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_02",
+          "semantic_step_id": "semantic_step_02",
+          "candidate_ref": null,
+          "action_type": "radial_or_course_to_fix",
+          "source_snippet": "DME R-235 to CONNI",
+          "evidence_refs": [
+            "cell_02",
+            "cell_03"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_02",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.5626,
+                "y_center": 0.6824,
+                "width": 0.06,
+                "height": 0.0352
+              },
+              "ocr_texts": [
+                "AHN",
+                "R-235"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0004__r007",
+                "sample_0004__r008"
+              ]
+            },
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "fix_text_cell",
+              "bbox": {
+                "x_center": 0.6289,
+                "y_center": 0.6766,
+                "width": 0.064,
+                "height": 0.0518
+              },
+              "ocr_texts": [
+                "CONNI",
+                "AHN 30.2",
+                "30.2"
+              ],
+              "observed_types": [
+                "DME_DISTANCE_TEXT",
+                "FIX_TEXT",
+                "NAVAID_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0004__r009",
+                "sample_0004__r010",
+                "sample_0004__r011"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": null,
+          "hint_value": "CONNI"
+        }
+      ]
+    },
+    {
+      "field_path": "legs[2].answers.Q2_altitude_constraint",
+      "predicted_value": {
+        "desc": "AT_OR_ABOVE",
+        "altitude_ft": 4000,
+        "altitude_2_ft": null
+      },
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_02",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_02",
+          "action_type": "radial_to_fix",
+          "source_snippet": "DME R-235 to CONNI",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_heading_cell",
+              "bbox": {
+                "x_center": 0.4938,
+                "y_center": 0.679775,
+                "width": 0.0776,
+                "height": 0.06255
+              },
+              "ocr_texts": [
+                "I",
+                "4000",
+                "100° hdg"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "HEADING_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0004__r005",
+                "sample_0004__r004",
+                "sample_0004__r006"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4000,
+            "altitude_2_ft": null
+          }
+        },
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_03",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_03",
+          "action_type": "hold_at_fix",
+          "source_snippet": "terminal fix/DME likely hold; OCR may be truncated",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_heading_cell",
+              "bbox": {
+                "x_center": 0.4938,
+                "y_center": 0.679775,
+                "width": 0.0776,
+                "height": 0.06255
+              },
+              "ocr_texts": [
+                "I",
+                "4000",
+                "100° hdg"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "HEADING_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0004__r005",
+                "sample_0004__r004",
+                "sample_0004__r006"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4000,
+            "altitude_2_ft": null
+          }
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_01",
+          "semantic_step_id": "semantic_step_01",
+          "candidate_ref": null,
+          "action_type": "initial_climb_to_altitude",
+          "source_snippet": "Climb to 4000",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_heading_cell",
+              "bbox": {
+                "x_center": 0.4938,
+                "y_center": 0.679775,
+                "width": 0.0776,
+                "height": 0.06255
+              },
+              "ocr_texts": [
+                "I",
+                "4000",
+                "100° hdg"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "HEADING_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0004__r005",
+                "sample_0004__r004",
+                "sample_0004__r006"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": null,
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4000,
+            "altitude_2_ft": null
+          }
+        }
+      ]
+    },
+    {
+      "field_path": "legs[2].answers.Q4_course_or_radial",
+      "predicted_value": {
+        "type": "navaid_radial",
+        "navaid": "AHN",
+        "radial_deg": 235,
+        "direction": "inbound"
+      },
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_02",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_02",
+          "action_type": "radial_to_fix",
+          "source_snippet": "DME R-235 to CONNI",
+          "evidence_refs": [
+            "cell_02",
+            "cell_03"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_02",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.5626,
+                "y_center": 0.6824,
+                "width": 0.06,
+                "height": 0.0352
+              },
+              "ocr_texts": [
+                "AHN",
+                "R-235"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0004__r007",
+                "sample_0004__r008"
+              ]
+            },
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "fix_text_cell",
+              "bbox": {
+                "x_center": 0.6289,
+                "y_center": 0.6766,
+                "width": 0.064,
+                "height": 0.0518
+              },
+              "ocr_texts": [
+                "CONNI",
+                "AHN 30.2",
+                "30.2"
+              ],
+              "observed_types": [
+                "DME_DISTANCE_TEXT",
+                "FIX_TEXT",
+                "NAVAID_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0004__r009",
+                "sample_0004__r010",
+                "sample_0004__r011"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "type": "navaid_radial",
+            "navaid": "AHN",
+            "radial_deg": 235,
+            "direction": "inbound"
+          }
+        }
+      ]
+    },
+    {
+      "field_path": "legs[3].answers.Q_terminator",
+      "predicted_value": "HM",
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_03",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_03",
+          "action_type": "hold_at_fix",
+          "source_snippet": "terminal fix/DME likely hold; OCR may be truncated",
+          "evidence_refs": [
+            "cell_01",
+            "cell_03"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_heading_cell",
+              "bbox": {
+                "x_center": 0.4938,
+                "y_center": 0.679775,
+                "width": 0.0776,
+                "height": 0.06255
+              },
+              "ocr_texts": [
+                "I",
+                "4000",
+                "100° hdg"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "HEADING_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0004__r005",
+                "sample_0004__r004",
+                "sample_0004__r006"
+              ]
+            },
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "fix_text_cell",
+              "bbox": {
+                "x_center": 0.6289,
+                "y_center": 0.6766,
+                "width": 0.064,
+                "height": 0.0518
+              },
+              "ocr_texts": [
+                "CONNI",
+                "AHN 30.2",
+                "30.2"
+              ],
+              "observed_types": [
+                "DME_DISTANCE_TEXT",
+                "FIX_TEXT",
+                "NAVAID_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0004__r009",
+                "sample_0004__r010",
+                "sample_0004__r011"
+              ]
+            }
+          ],
+          "hint_confidence": "low",
+          "hint_status": "present",
+          "hint_value": "HM"
+        }
+      ]
+    },
+    {
+      "field_path": "legs[3].answers.Q1_fix_ident",
+      "predicted_value": "CONNI",
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_02",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_02",
+          "action_type": "radial_to_fix",
+          "source_snippet": "DME R-235 to CONNI",
+          "evidence_refs": [
+            "cell_02",
+            "cell_03"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_02",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.5626,
+                "y_center": 0.6824,
+                "width": 0.06,
+                "height": 0.0352
+              },
+              "ocr_texts": [
+                "AHN",
+                "R-235"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0004__r007",
+                "sample_0004__r008"
+              ]
+            },
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "fix_text_cell",
+              "bbox": {
+                "x_center": 0.6289,
+                "y_center": 0.6766,
+                "width": 0.064,
+                "height": 0.0518
+              },
+              "ocr_texts": [
+                "CONNI",
+                "AHN 30.2",
+                "30.2"
+              ],
+              "observed_types": [
+                "DME_DISTANCE_TEXT",
+                "FIX_TEXT",
+                "NAVAID_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0004__r009",
+                "sample_0004__r010",
+                "sample_0004__r011"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "CONNI"
+        },
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_03",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_03",
+          "action_type": "hold_at_fix",
+          "source_snippet": "terminal fix/DME likely hold; OCR may be truncated",
+          "evidence_refs": [
+            "cell_01",
+            "cell_03"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_heading_cell",
+              "bbox": {
+                "x_center": 0.4938,
+                "y_center": 0.679775,
+                "width": 0.0776,
+                "height": 0.06255
+              },
+              "ocr_texts": [
+                "I",
+                "4000",
+                "100° hdg"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "HEADING_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0004__r005",
+                "sample_0004__r004",
+                "sample_0004__r006"
+              ]
+            },
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "fix_text_cell",
+              "bbox": {
+                "x_center": 0.6289,
+                "y_center": 0.6766,
+                "width": 0.064,
+                "height": 0.0518
+              },
+              "ocr_texts": [
+                "CONNI",
+                "AHN 30.2",
+                "30.2"
+              ],
+              "observed_types": [
+                "DME_DISTANCE_TEXT",
+                "FIX_TEXT",
+                "NAVAID_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0004__r009",
+                "sample_0004__r010",
+                "sample_0004__r011"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "CONNI"
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_02",
+          "semantic_step_id": "semantic_step_02",
+          "candidate_ref": null,
+          "action_type": "radial_or_course_to_fix",
+          "source_snippet": "DME R-235 to CONNI",
+          "evidence_refs": [
+            "cell_02",
+            "cell_03"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_02",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.5626,
+                "y_center": 0.6824,
+                "width": 0.06,
+                "height": 0.0352
+              },
+              "ocr_texts": [
+                "AHN",
+                "R-235"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0004__r007",
+                "sample_0004__r008"
+              ]
+            },
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "fix_text_cell",
+              "bbox": {
+                "x_center": 0.6289,
+                "y_center": 0.6766,
+                "width": 0.064,
+                "height": 0.0518
+              },
+              "ocr_texts": [
+                "CONNI",
+                "AHN 30.2",
+                "30.2"
+              ],
+              "observed_types": [
+                "DME_DISTANCE_TEXT",
+                "FIX_TEXT",
+                "NAVAID_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0004__r009",
+                "sample_0004__r010",
+                "sample_0004__r011"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": null,
+          "hint_value": "CONNI"
+        }
+      ]
+    },
+    {
+      "field_path": "legs[3].answers.Q2_altitude_constraint",
+      "predicted_value": {
+        "desc": "AT_OR_ABOVE",
+        "altitude_ft": 4000,
+        "altitude_2_ft": null
+      },
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_02",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_02",
+          "action_type": "radial_to_fix",
+          "source_snippet": "DME R-235 to CONNI",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_heading_cell",
+              "bbox": {
+                "x_center": 0.4938,
+                "y_center": 0.679775,
+                "width": 0.0776,
+                "height": 0.06255
+              },
+              "ocr_texts": [
+                "I",
+                "4000",
+                "100° hdg"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "HEADING_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0004__r005",
+                "sample_0004__r004",
+                "sample_0004__r006"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4000,
+            "altitude_2_ft": null
+          }
+        },
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_03",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_03",
+          "action_type": "hold_at_fix",
+          "source_snippet": "terminal fix/DME likely hold; OCR may be truncated",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_heading_cell",
+              "bbox": {
+                "x_center": 0.4938,
+                "y_center": 0.679775,
+                "width": 0.0776,
+                "height": 0.06255
+              },
+              "ocr_texts": [
+                "I",
+                "4000",
+                "100° hdg"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "HEADING_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0004__r005",
+                "sample_0004__r004",
+                "sample_0004__r006"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4000,
+            "altitude_2_ft": null
+          }
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_01",
+          "semantic_step_id": "semantic_step_01",
+          "candidate_ref": null,
+          "action_type": "initial_climb_to_altitude",
+          "source_snippet": "Climb to 4000",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_heading_cell",
+              "bbox": {
+                "x_center": 0.4938,
+                "y_center": 0.679775,
+                "width": 0.0776,
+                "height": 0.06255
+              },
+              "ocr_texts": [
+                "I",
+                "4000",
+                "100° hdg"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "HEADING_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0004__r005",
+                "sample_0004__r004",
+                "sample_0004__r006"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": null,
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4000,
+            "altitude_2_ft": null
+          }
+        }
+      ]
+    },
+    {
+      "field_path": "legs[3].answers.Q5_hold_params",
+      "predicted_value": {
+        "inbound_course_deg": 55.0,
+        "leg_time_min": 1.0,
+        "leg_distance_nm": null,
+        "turn": "RIGHT"
+      },
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_03",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_03",
+          "action_type": "hold_at_fix",
+          "source_snippet": "terminal fix/DME likely hold; OCR may be truncated",
+          "evidence_refs": [
+            "cell_01",
+            "cell_03"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_heading_cell",
+              "bbox": {
+                "x_center": 0.4938,
+                "y_center": 0.679775,
+                "width": 0.0776,
+                "height": 0.06255
+              },
+              "ocr_texts": [
+                "I",
+                "4000",
+                "100° hdg"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "HEADING_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0004__r005",
+                "sample_0004__r004",
+                "sample_0004__r006"
+              ]
+            },
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "fix_text_cell",
+              "bbox": {
+                "x_center": 0.6289,
+                "y_center": 0.6766,
+                "width": 0.064,
+                "height": 0.0518
+              },
+              "ocr_texts": [
+                "CONNI",
+                "AHN 30.2",
+                "30.2"
+              ],
+              "observed_types": [
+                "DME_DISTANCE_TEXT",
+                "FIX_TEXT",
+                "NAVAID_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0004__r009",
+                "sample_0004__r010",
+                "sample_0004__r011"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "inbound_course_deg": 55.0,
+            "leg_time_min": 1.0,
+            "leg_distance_nm": null,
+            "turn": "RIGHT"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,632 @@
+{
+  "chart_id": "KAQW_RNV-B",
+  "sample_id": "sample_0007",
+  "method": "B3V3",
+  "trace_policy": "sidecar only; not inserted into PR #28 method_output schema",
+  "trace_summary": {
+    "present_field_count": 10,
+    "matched_field_count": 10,
+    "matched_field_rate": 1.0
+  },
+  "field_traces": [
+    {
+      "field_path": "legs[1].answers.Q_terminator",
+      "predicted_value": "CA",
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_01",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_01",
+          "action_type": "initial_climb_or_heading",
+          "source_snippet": "Climbing left rn to 4800",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "turn_or_arc_altitude_cell",
+              "bbox": {
+                "x_center": 0.3748,
+                "y_center": 0.75685,
+                "width": 0.0578,
+                "height": 0.0554
+              },
+              "ocr_texts": [
+                "4800"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "PATH_SEGMENT"
+              ],
+              "source_element_ids": [
+                "sample_0007__r004",
+                "sample_0007__r005"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "CA"
+        }
+      ]
+    },
+    {
+      "field_path": "legs[2].answers.Q_terminator",
+      "predicted_value": "DF",
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_02",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_02",
+          "action_type": "direct_to_fix",
+          "source_snippet": "direct SWOBS",
+          "evidence_refs": [],
+          "resolved_evidence_cells": [],
+          "hint_confidence": "high",
+          "hint_status": "present",
+          "hint_value": "DF"
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_01",
+          "semantic_step_id": "semantic_step_01",
+          "candidate_ref": null,
+          "action_type": "direct_to_fix",
+          "source_snippet": "direct SWOBS",
+          "evidence_refs": [],
+          "resolved_evidence_cells": [],
+          "hint_confidence": "medium",
+          "hint_status": null,
+          "hint_value": [
+            "DF",
+            "TF"
+          ]
+        }
+      ]
+    },
+    {
+      "field_path": "legs[2].answers.Q1_fix_ident",
+      "predicted_value": "SWOBS",
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_02",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_02",
+          "action_type": "direct_to_fix",
+          "source_snippet": "direct SWOBS",
+          "evidence_refs": [],
+          "resolved_evidence_cells": [],
+          "hint_confidence": "high",
+          "hint_status": "present",
+          "hint_value": "SWOBS"
+        },
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_03",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_03",
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "turn_or_arc_altitude_cell",
+              "bbox": {
+                "x_center": 0.3748,
+                "y_center": 0.75685,
+                "width": 0.0578,
+                "height": 0.0554
+              },
+              "ocr_texts": [
+                "4800"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "PATH_SEGMENT"
+              ],
+              "source_element_ids": [
+                "sample_0007__r004",
+                "sample_0007__r005"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "SWOBS"
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_01",
+          "semantic_step_id": "semantic_step_01",
+          "candidate_ref": null,
+          "action_type": "direct_to_fix",
+          "source_snippet": "direct SWOBS",
+          "evidence_refs": [],
+          "resolved_evidence_cells": [],
+          "hint_confidence": "high",
+          "hint_status": null,
+          "hint_value": "SWOBS"
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_02",
+          "semantic_step_id": "semantic_step_02",
+          "candidate_ref": null,
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [],
+          "resolved_evidence_cells": [],
+          "hint_confidence": "medium",
+          "hint_status": null,
+          "hint_value": "SWOBS"
+        }
+      ]
+    },
+    {
+      "field_path": "legs[2].answers.Q2_altitude_constraint",
+      "predicted_value": {
+        "desc": "AT_OR_ABOVE",
+        "altitude_ft": 4800,
+        "altitude_2_ft": null
+      },
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_02",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_02",
+          "action_type": "direct_to_fix",
+          "source_snippet": "direct SWOBS",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "turn_or_arc_altitude_cell",
+              "bbox": {
+                "x_center": 0.3748,
+                "y_center": 0.75685,
+                "width": 0.0578,
+                "height": 0.0554
+              },
+              "ocr_texts": [
+                "4800"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "PATH_SEGMENT"
+              ],
+              "source_element_ids": [
+                "sample_0007__r004",
+                "sample_0007__r005"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4800,
+            "altitude_2_ft": null
+          }
+        },
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_03",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_03",
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "turn_or_arc_altitude_cell",
+              "bbox": {
+                "x_center": 0.3748,
+                "y_center": 0.75685,
+                "width": 0.0578,
+                "height": 0.0554
+              },
+              "ocr_texts": [
+                "4800"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "PATH_SEGMENT"
+              ],
+              "source_element_ids": [
+                "sample_0007__r004",
+                "sample_0007__r005"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4800,
+            "altitude_2_ft": null
+          }
+        }
+      ]
+    },
+    {
+      "field_path": "legs[2].answers.Q3_turn",
+      "predicted_value": "LEFT",
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_02",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_02",
+          "action_type": "direct_to_fix",
+          "source_snippet": "direct SWOBS",
+          "evidence_refs": [],
+          "resolved_evidence_cells": [],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "LEFT"
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_01",
+          "semantic_step_id": "semantic_step_01",
+          "candidate_ref": null,
+          "action_type": "direct_to_fix",
+          "source_snippet": "direct SWOBS",
+          "evidence_refs": [],
+          "resolved_evidence_cells": [],
+          "hint_confidence": "medium",
+          "hint_status": null,
+          "hint_value": "LEFT"
+        }
+      ]
+    },
+    {
+      "field_path": "legs[2].answers.Q4_course_or_radial",
+      "predicted_value": {
+        "type": "direct"
+      },
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_02",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_02",
+          "action_type": "direct_to_fix",
+          "source_snippet": "direct SWOBS",
+          "evidence_refs": [],
+          "resolved_evidence_cells": [],
+          "hint_confidence": "high",
+          "hint_status": "present",
+          "hint_value": {
+            "type": "direct"
+          }
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_01",
+          "semantic_step_id": "semantic_step_01",
+          "candidate_ref": null,
+          "action_type": "direct_to_fix",
+          "source_snippet": "direct SWOBS",
+          "evidence_refs": [],
+          "resolved_evidence_cells": [],
+          "hint_confidence": "high",
+          "hint_status": null,
+          "hint_value": {
+            "type": "direct"
+          }
+        }
+      ]
+    },
+    {
+      "field_path": "legs[3].answers.Q_terminator",
+      "predicted_value": "HM",
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_03",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_03",
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "turn_or_arc_altitude_cell",
+              "bbox": {
+                "x_center": 0.3748,
+                "y_center": 0.75685,
+                "width": 0.0578,
+                "height": 0.0554
+              },
+              "ocr_texts": [
+                "4800"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "PATH_SEGMENT"
+              ],
+              "source_element_ids": [
+                "sample_0007__r004",
+                "sample_0007__r005"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "HM"
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_02",
+          "semantic_step_id": "semantic_step_02",
+          "candidate_ref": null,
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [],
+          "resolved_evidence_cells": [],
+          "hint_confidence": "low",
+          "hint_status": null,
+          "hint_value": [
+            "HM",
+            "HF",
+            "HA"
+          ]
+        }
+      ]
+    },
+    {
+      "field_path": "legs[3].answers.Q1_fix_ident",
+      "predicted_value": "SWOBS",
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_02",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_02",
+          "action_type": "direct_to_fix",
+          "source_snippet": "direct SWOBS",
+          "evidence_refs": [],
+          "resolved_evidence_cells": [],
+          "hint_confidence": "high",
+          "hint_status": "present",
+          "hint_value": "SWOBS"
+        },
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_03",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_03",
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "turn_or_arc_altitude_cell",
+              "bbox": {
+                "x_center": 0.3748,
+                "y_center": 0.75685,
+                "width": 0.0578,
+                "height": 0.0554
+              },
+              "ocr_texts": [
+                "4800"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "PATH_SEGMENT"
+              ],
+              "source_element_ids": [
+                "sample_0007__r004",
+                "sample_0007__r005"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "SWOBS"
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_01",
+          "semantic_step_id": "semantic_step_01",
+          "candidate_ref": null,
+          "action_type": "direct_to_fix",
+          "source_snippet": "direct SWOBS",
+          "evidence_refs": [],
+          "resolved_evidence_cells": [],
+          "hint_confidence": "high",
+          "hint_status": null,
+          "hint_value": "SWOBS"
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_02",
+          "semantic_step_id": "semantic_step_02",
+          "candidate_ref": null,
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [],
+          "resolved_evidence_cells": [],
+          "hint_confidence": "medium",
+          "hint_status": null,
+          "hint_value": "SWOBS"
+        }
+      ]
+    },
+    {
+      "field_path": "legs[3].answers.Q2_altitude_constraint",
+      "predicted_value": {
+        "desc": "AT_OR_ABOVE",
+        "altitude_ft": 4800,
+        "altitude_2_ft": null
+      },
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_02",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_02",
+          "action_type": "direct_to_fix",
+          "source_snippet": "direct SWOBS",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "turn_or_arc_altitude_cell",
+              "bbox": {
+                "x_center": 0.3748,
+                "y_center": 0.75685,
+                "width": 0.0578,
+                "height": 0.0554
+              },
+              "ocr_texts": [
+                "4800"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "PATH_SEGMENT"
+              ],
+              "source_element_ids": [
+                "sample_0007__r004",
+                "sample_0007__r005"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4800,
+            "altitude_2_ft": null
+          }
+        },
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_03",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_03",
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "turn_or_arc_altitude_cell",
+              "bbox": {
+                "x_center": 0.3748,
+                "y_center": 0.75685,
+                "width": 0.0578,
+                "height": 0.0554
+              },
+              "ocr_texts": [
+                "4800"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "PATH_SEGMENT"
+              ],
+              "source_element_ids": [
+                "sample_0007__r004",
+                "sample_0007__r005"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4800,
+            "altitude_2_ft": null
+          }
+        }
+      ]
+    },
+    {
+      "field_path": "legs[3].answers.Q5_hold_params",
+      "predicted_value": {
+        "inbound_course_deg": null,
+        "leg_time_min": 1.0,
+        "leg_distance_nm": null,
+        "turn": "RIGHT"
+      },
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_03",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_03",
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "turn_or_arc_altitude_cell",
+              "bbox": {
+                "x_center": 0.3748,
+                "y_center": 0.75685,
+                "width": 0.0578,
+                "height": 0.0554
+              },
+              "ocr_texts": [
+                "4800"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "PATH_SEGMENT"
+              ],
+              "source_element_ids": [
+                "sample_0007__r004",
+                "sample_0007__r005"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "inbound_course_deg": null,
+            "leg_time_min": 1.0,
+            "leg_distance_nm": null,
+            "turn": "RIGHT"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "sample_id": "sample_0001",
+    "prompt_input": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/prompt_inputs/sample_0001__prompt_input.json",
+    "semantic_steps": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/semantic_steps/sample_0001__semantic_steps.json",
+    "candidate_legs": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/candidate_legs/sample_0001__candidate_legs.json",
+    "semantic_step_count": 3,
+    "candidate_leg_count": 3,
+    "visual_cell_count": 3
+  },
+  {
+    "sample_id": "sample_0002",
+    "prompt_input": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/prompt_inputs/sample_0002__prompt_input.json",
+    "semantic_steps": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/semantic_steps/sample_0002__semantic_steps.json",
+    "candidate_legs": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/candidate_legs/sample_0002__candidate_legs.json",
+    "semantic_step_count": 3,
+    "candidate_leg_count": 3,
+    "visual_cell_count": 3
+  },
+  {
+    "sample_id": "sample_0003",
+    "prompt_input": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/prompt_inputs/sample_0003__prompt_input.json",
+    "semantic_steps": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/semantic_steps/sample_0003__semantic_steps.json",
+    "candidate_legs": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/candidate_legs/sample_0003__candidate_legs.json",
+    "semantic_step_count": 5,
+    "candidate_leg_count": 4,
+    "visual_cell_count": 5
+  },
+  {
+    "sample_id": "sample_0004",
+    "prompt_input": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/prompt_inputs/sample_0004__prompt_input.json",
+    "semantic_steps": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/semantic_steps/sample_0004__semantic_steps.json",
+    "candidate_legs": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/candidate_legs/sample_0004__candidate_legs.json",
+    "semantic_step_count": 2,
+    "candidate_leg_count": 3,
+    "visual_cell_count": 3
+  },
+  {
+    "sample_id": "sample_0005",
+    "prompt_input": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/prompt_inputs/sample_0005__prompt_input.json",
+    "semantic_steps": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/semantic_steps/sample_0005__semantic_steps.json",
+    "candidate_legs": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/candidate_legs/sample_0005__candidate_legs.json",
+    "semantic_step_count": 3,
+    "candidate_leg_count": 3,
+    "visual_cell_count": 2
+  },
+  {
+    "sample_id": "sample_0006",
+    "prompt_input": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/prompt_inputs/sample_0006__prompt_input.json",
+    "semantic_steps": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/semantic_steps/sample_0006__semantic_steps.json",
+    "candidate_legs": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/candidate_legs/sample_0006__candidate_legs.json",
+    "semantic_step_count": 6,
+    "candidate_leg_count": 4,
+    "visual_cell_count": 6
+  },
+  {
+    "sample_id": "sample_0007",
+    "prompt_input": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/prompt_inputs/sample_0007__prompt_input.json",
+    "semantic_steps": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/semantic_steps/sample_0007__semantic_steps.json",
+    "candidate_legs": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/candidate_legs/sample_0007__candidate_legs.json",
+    "semantic_step_count": 2,
+    "candidate_leg_count": 3,
+    "visual_cell_count": 2
+  },
+  {
+    "sample_id": "sample_0008",
+    "prompt_input": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/prompt_inputs/sample_0008__prompt_input.json",
+    "semantic_steps": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/semantic_steps/sample_0008__semantic_steps.json",
+    "candidate_legs": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/candidate_legs/sample_0008__candidate_legs.json",
+    "semantic_step_count": 4,
+    "candidate_leg_count": 4,
+    "visual_cell_count": 4
+  },
+  {
+    "sample_id": "sample_0009",
+    "prompt_input": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/prompt_inputs/sample_0009__prompt_input.json",
+    "semantic_steps": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/semantic_steps/sample_0009__semantic_steps.json",
+    "candidate_legs": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/candidate_legs/sample_0009__candidate_legs.json",
+    "semantic_step_count": 3,
+    "candidate_leg_count": 3,
+    "visual_cell_count": 2
+  },
+  {
+    "sample_id": "sample_0010",
+    "prompt_input": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/prompt_inputs/sample_0010__prompt_input.json",
+    "semantic_steps": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/semantic_steps/sample_0010__semantic_steps.json",
+    "candidate_legs": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/candidate_legs/sample_0010__candidate_legs.json",
+    "semantic_step_count": 2,
+    "candidate_leg_count": 3,
+    "visual_cell_count": 2
+  }
+]

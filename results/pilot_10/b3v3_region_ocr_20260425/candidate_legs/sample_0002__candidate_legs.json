@@ -1,0 +1,221 @@
+[
+  {
+    "candidate_ref": "candidate_leg_01",
+    "visual_order": 1,
+    "action_type": "initial_climb_or_heading",
+    "source": "chart_ocr_and_visual_boxes",
+    "source_snippet": "Climb to 8700",
+    "evidence_refs": [
+      "cell_01"
+    ],
+    "q_hints": {
+      "Q_terminator": {
+        "observed_value": "CA",
+        "evidence_source": "initial climb phrase",
+        "source_snippet": "Climb to 8700",
+        "evidence_refs": [
+          "cell_01"
+        ],
+        "confidence": "medium",
+        "status_hint": "present",
+        "note": "path_terminator_preferred=CA; heading-present initial climb uses VI; altitude-only climb uses CA"
+      },
+      "Q1_fix_ident": {
+        "observed_value": null,
+        "evidence_source": "initial climb phrase",
+        "source_snippet": "Climb to 8700",
+        "evidence_refs": [
+          "cell_01"
+        ],
+        "confidence": "medium",
+        "status_hint": "not_applicable"
+      },
+      "Q3_turn": {
+        "observed_value": null,
+        "evidence_source": "initial climb phrase",
+        "source_snippet": "Climb to 8700",
+        "evidence_refs": [
+          "cell_01"
+        ],
+        "confidence": "medium",
+        "status_hint": "not_applicable"
+      },
+      "Q5_hold_params": {
+        "observed_value": null,
+        "evidence_source": "initial climb phrase",
+        "source_snippet": "Climb to 8700",
+        "evidence_refs": [
+          "cell_01"
+        ],
+        "confidence": "medium",
+        "status_hint": "not_applicable"
+      },
+      "Q2_altitude_constraint": {
+        "observed_value": {
+          "desc": "AT_OR_ABOVE",
+          "altitude_ft": 8700,
+          "altitude_2_ft": null
+        },
+        "evidence_source": "initial climb phrase",
+        "source_snippet": "Climb to 8700",
+        "evidence_refs": [
+          "cell_01"
+        ],
+        "confidence": "medium",
+        "status_hint": "present"
+      },
+      "Q4_course_or_radial": {
+        "observed_value": null,
+        "evidence_source": "initial climb phrase",
+        "source_snippet": "Climb to 8700",
+        "evidence_refs": [
+          "cell_01"
+        ],
+        "confidence": "low",
+        "status_hint": "unknown"
+      }
+    },
+    "notes": [],
+    "llm_decision_needed": true
+  },
+  {
+    "candidate_ref": "candidate_leg_02",
+    "visual_order": 2,
+    "action_type": "direct_to_fix",
+    "source": "chart_ocr_and_visual_boxes",
+    "source_snippet": "direct ALS",
+    "evidence_refs": [],
+    "q_hints": {
+      "Q_terminator": {
+        "observed_value": "DF",
+        "evidence_source": "direct-to-fix phrase",
+        "source_snippet": "direct ALS",
+        "evidence_refs": [],
+        "confidence": "high",
+        "status_hint": "present",
+        "note": "path_terminator_preferred=DF; direct fix phrase"
+      },
+      "Q1_fix_ident": {
+        "observed_value": "ALS",
+        "evidence_source": "direct-to-fix phrase",
+        "source_snippet": "direct ALS",
+        "evidence_refs": [],
+        "confidence": "high",
+        "status_hint": "present"
+      },
+      "Q2_altitude_constraint": {
+        "observed_value": {
+          "desc": "AT_OR_ABOVE",
+          "altitude_ft": 11000,
+          "altitude_2_ft": null
+        },
+        "evidence_source": "carried climb altitude for direct-to-fix leg",
+        "source_snippet": "climbing 1 1000",
+        "evidence_refs": [],
+        "confidence": "medium",
+        "status_hint": "present"
+      },
+      "Q3_turn": {
+        "observed_value": null,
+        "evidence_source": "nearby turn phrase",
+        "source_snippet": "direct ALS",
+        "evidence_refs": [],
+        "confidence": "low",
+        "status_hint": "unknown"
+      },
+      "Q4_course_or_radial": {
+        "observed_value": {
+          "type": "direct"
+        },
+        "evidence_source": "direct-to-fix phrase",
+        "source_snippet": "direct ALS",
+        "evidence_refs": [],
+        "confidence": "high",
+        "status_hint": "present"
+      },
+      "Q5_hold_params": {
+        "observed_value": null,
+        "evidence_source": "direct-to-fix phrase",
+        "source_snippet": "direct ALS",
+        "evidence_refs": [],
+        "confidence": "medium",
+        "status_hint": "not_applicable"
+      }
+    },
+    "notes": [],
+    "llm_decision_needed": true
+  },
+  {
+    "candidate_ref": "candidate_leg_03",
+    "visual_order": 3,
+    "action_type": "hold_at_fix",
+    "source": "chart_ocr_and_visual_boxes",
+    "source_snippet": "and hold",
+    "evidence_refs": [],
+    "q_hints": {
+      "Q_terminator": {
+        "observed_value": "HM",
+        "evidence_source": "hold phrase or terminal hold candidate",
+        "source_snippet": "PPROACH: Climb to 8700 then climbing 1 1000 direct ALS VORTAC and hold, limb in hold to 11000. UNICOM",
+        "evidence_refs": [],
+        "confidence": "medium",
+        "status_hint": "present",
+        "note": "path_terminator_preferred=HM; terminal hold at missed-approach fix"
+      },
+      "Q1_fix_ident": {
+        "observed_value": "ALS",
+        "evidence_source": "last visible fix before hold",
+        "source_snippet": "PPROACH: Climb to 8700 then climbing 1 1000 direct ALS VORTAC and hold, limb in hold to 11000. UNICOM",
+        "evidence_refs": [],
+        "confidence": "medium",
+        "status_hint": "present"
+      },
+      "Q3_turn": {
+        "observed_value": null,
+        "evidence_source": "hold leg turn belongs in Q5 when visible",
+        "source_snippet": "PPROACH: Climb to 8700 then climbing 1 1000 direct ALS VORTAC and hold, limb in hold to 11000. UNICOM",
+        "evidence_refs": [],
+        "confidence": "medium",
+        "status_hint": "not_applicable"
+      },
+      "Q4_course_or_radial": {
+        "observed_value": null,
+        "evidence_source": "hold leg",
+        "source_snippet": "PPROACH: Climb to 8700 then climbing 1 1000 direct ALS VORTAC and hold, limb in hold to 11000. UNICOM",
+        "evidence_refs": [],
+        "confidence": "medium",
+        "status_hint": "not_applicable"
+      },
+      "Q2_altitude_constraint": {
+        "observed_value": {
+          "desc": "AT_OR_ABOVE",
+          "altitude_ft": 11000,
+          "altitude_2_ft": null
+        },
+        "evidence_source": "hold/carry-forward altitude",
+        "source_snippet": "limb in hold to 11000",
+        "evidence_refs": [],
+        "confidence": "medium",
+        "status_hint": "present"
+      },
+      "Q5_hold_params": {
+        "observed_value": {
+          "inbound_course_deg": null,
+          "leg_time_min": 1.0,
+          "leg_distance_nm": null,
+          "turn": "RIGHT"
+        },
+        "evidence_source": "hold phrase plus OCR-only hold context inference",
+        "source_snippet": "PPROACH: Climb to 8700 then climbing 1 1000 direct ALS VORTAC and hold, limb in hold to 11000. UNICOM",
+        "evidence_refs": [],
+        "confidence": "medium",
+        "status_hint": "present",
+        "note": "hold_turn_defaulted=RIGHT; hold_leg_time_defaulted_1_min_when_distance_not_visible"
+      }
+    },
+    "notes": [
+      "hold_created_from_visible_hold_text"
+    ],
+    "llm_decision_needed": true
+  }
+]
