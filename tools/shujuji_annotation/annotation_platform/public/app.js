@@ -24,6 +24,23 @@ function detectDatasetKey() {
 
 const datasetKey = detectDatasetKey();
 const datasetConfig = DATASET_CONFIG[datasetKey] || DATASET_CONFIG.formal300;
+const ACCESS_TOKEN_STORAGE_KEY = "shujuji_access_token";
+
+function initializeAccessToken() {
+  const url = new URL(window.location.href);
+  const token = url.searchParams.get("token");
+  if (token) {
+    sessionStorage.setItem(ACCESS_TOKEN_STORAGE_KEY, token);
+    url.searchParams.delete("token");
+    window.history.replaceState({}, document.title, `${url.pathname}${url.search}${url.hash}`);
+  }
+}
+
+initializeAccessToken();
+
+function currentAccessToken() {
+  return sessionStorage.getItem(ACCESS_TOKEN_STORAGE_KEY) || "";
+}
 
 const state = {
   charts: [],
@@ -521,6 +538,8 @@ function currentAnnotator() {
 function apiUrl(path, params = {}) {
   const url = new URL(path, window.location.origin);
   url.searchParams.set("dataset", datasetKey);
+  const token = currentAccessToken();
+  if (token) url.searchParams.set("token", token);
   const annotator = params.annotator ?? currentAnnotator();
   if (annotator) url.searchParams.set("annotator", annotator);
   Object.entries(params).forEach(([key, value]) => {
@@ -528,6 +547,14 @@ function apiUrl(path, params = {}) {
       url.searchParams.set(key, value);
     }
   });
+  return `${url.pathname}${url.search}`;
+}
+
+function withAccessToken(urlValue) {
+  const token = currentAccessToken();
+  if (!token || !urlValue) return urlValue;
+  const url = new URL(urlValue, window.location.origin);
+  url.searchParams.set("token", token);
   return `${url.pathname}${url.search}`;
 }
 
@@ -547,15 +574,22 @@ async function parseResponseError(response) {
 }
 
 async function getJson(url) {
-  const response = await fetch(url);
+  const headers = {};
+  const token = currentAccessToken();
+  if (token) headers["x-shujuji-token"] = token;
+  const response = await fetch(url, { headers });
   if (!response.ok) throw await parseResponseError(response);
   return response.json();
 }
 
 async function postJson(url, payload) {
+  const token = currentAccessToken();
   const response = await fetch(url, {
     method: "POST",
-    headers: { "content-type": "application/json" },
+    headers: {
+      "content-type": "application/json",
+      ...(token ? { "x-shujuji-token": token } : {})
+    },
     body: JSON.stringify(payload)
   });
   if (!response.ok) throw await parseResponseError(response);
@@ -1060,7 +1094,7 @@ async function loadChart(chartId) {
     applyImageZoom({ render: false });
     renderOverlay();
   };
-  els.chartImage.src = state.current.image_url;
+  els.chartImage.src = withAccessToken(state.current.image_url);
 
   renderChartList();
   renderOverlay();

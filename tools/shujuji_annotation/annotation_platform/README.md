@@ -1,46 +1,34 @@
-# 标注平台说明
+# Shujuji Annotation Platform
 
-这是复飞航图人工校准用的本地 Web 平台。它用于查看自动预标注框、核对 PR #28 canonical 字段、补充或调整人工框，并把校准结果保存为可追溯的 annotation JSON。
+这是复飞航图标注平台的 Node.js 服务端和浏览器前端。它不依赖数据库，运行时通过 JSON 文件保存领取、暂存和正式提交结果。
 
 ## 启动
 
-从 `tools/shujuji_annotation` 目录运行：
-
 ```powershell
-cd annotation_platform
 node server.js
 ```
 
-默认端口为 `8787`。也可以通过环境变量覆盖：
+可选环境变量：
 
-```powershell
-$env:PORT=8788
-node server.js
-```
+- `PORT`：服务端口，默认 `8787`。
+- `PUBLIC_BASE_URL`：公网部署后的域名，仅用于日志提示。
+- `SHUJUJI_ACCESS_TOKEN`：公网访问口令。设置后所有 `/api/*` 和图片接口都需要 token。
+- `SHUJUJI_DATA_ROOT`：人工标注结果的持久化根目录。未设置时写回 `../datasets/*/annotations/`。
 
 ## 入口
 
-- `/practice/`：10 张练习航图。
-- `/formal/`：300 张正式航图。
-- `/`：入口页。
+- `/practice/`：10 张练习集。
+- `/formal/`：300 张正式集。
+- `/healthz`：健康检查，不返回服务器绝对路径。
 
-## 平台读取的数据
+公网正式入口示例：
 
-服务端以 `tools/shujuji_annotation` 为工作区根目录，读取以下相对路径：
+```text
+https://你的域名/formal/?token=你的口令
+```
 
-- `datasets/practice10/manifest.json`
-- `datasets/formal300/manifest.json`
-- `datasets/<dataset>/images/*.png`
-- `datasets/<dataset>/prelabels/*.json`
-- `datasets/<dataset>/targets/*.json`
+## 设计约束
 
-## 平台保存的数据
-
-保存路径同样位于 `datasets/<dataset>/annotations/` 下：
-
-- 草稿：`drafts/by_annotator/<annotator>/<chart_id>.json`
-- 草稿快照：`drafts/snapshots/<chart_id>/<timestamp>__<annotator>.json`
-- 正式提交：`by_annotator/<annotator>/<chart_id>.json`
-- 正式提交快照：`submissions/<chart_id>/<timestamp>__<annotator>.json`
-
-正式集会检查领取状态；只有领取该航图的标注人才能暂存或提交。
+- 航图、预标注和 canonical targets 是只读实验素材。
+- 人工领取、暂存、正式提交是运行时数据，公网部署时应写入持久化磁盘。
+- API 响应不得返回服务器本机路径、提交文件路径或快照文件路径。

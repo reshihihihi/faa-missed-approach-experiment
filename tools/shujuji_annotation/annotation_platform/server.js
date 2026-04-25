@@ -1,4 +1,5 @@
 const http = require("http");
+const crypto = require("crypto");
 const fs = require("fs/promises");
 const fss = require("fs");
 const os = require("os");
@@ -6,8 +7,13 @@ const path = require("path");
 const { URL } = require("url");
 
 const workspaceRoot = path.resolve(__dirname, "..");
+const runtimeRoot = process.env.SHUJUJI_DATA_ROOT
+  ? path.resolve(process.env.SHUJUJI_DATA_ROOT)
+  : workspaceRoot;
 const publicRoot = path.resolve(__dirname, "public");
 const port = Number(process.env.PORT || 8787);
+const publicBaseUrl = String(process.env.PUBLIC_BASE_URL || "").replace(/\/+$/, "");
+const accessToken = String(process.env.SHUJUJI_ACCESS_TOKEN || "").trim();
 
 const datasets = {
   practice10: {
@@ -15,6 +21,7 @@ const datasets = {
     label: "练习集 10 张",
     finalDataset: false,
     root: path.join(workspaceRoot, "datasets", "practice10"),
+    annotationRoot: path.join(runtimeRoot, "datasets", "practice10", "annotations"),
     urlPath: "/practice/"
   },
   formal300: {
@@ -22,6 +29,7 @@ const datasets = {
     label: "正式集 300 张",
     finalDataset: true,
     root: path.join(workspaceRoot, "datasets", "formal300"),
+    annotationRoot: path.join(runtimeRoot, "datasets", "formal300", "annotations"),
     urlPath: "/formal/"
   }
 };
@@ -73,6 +81,16 @@ function imageBasename(imagePath) {
   return String(imagePath || "").split(/[\\/]/).pop();
 }
 
+function scrubServerPaths(text) {
+  let value = String(text || "");
+  for (const root of [workspaceRoot, runtimeRoot, publicRoot]) {
+    if (root) value = value.split(root).join("[server-path]");
+  }
+  value = value.replace(/(?<![A-Za-z])[A-Za-z]:[\\/][^\s"'<>]+/g, "[server-path]");
+  value = value.replace(/\/(?:app|data|home|var|tmp)\/[^\s"'<>]+/g, "[server-path]");
+  return value;
+}
+
 function scrubClientValue(value) {
   if (Array.isArray(value)) return value.map(scrubClientValue);
   if (value && typeof value === "object") {
@@ -80,7 +98,7 @@ function scrubClientValue(value) {
   }
   if (typeof value !== "string") return value;
   if (/^[A-Za-z]:[\\/]/.test(value)) return imageBasename(value);
-  return value;
+  return scrubServerPaths(value);
 }
 
 function safeAnnotator(value) {
@@ -93,6 +111,28 @@ function safeAnnotator(value) {
 
 function getAnnotator(requestUrl) {
   return safeAnnotator(requestUrl.searchParams.get("annotator") || "");
+}
+
+function hashText(value) {
+  return crypto.createHash("sha256").update(String(value || "")).digest();
+}
+
+function hasValidAccess(req, requestUrl) {
+  if (!accessToken) return true;
+  const supplied = String(
+    req.headers["x-shujuji-token"]
+    || requestUrl.searchParams.get("token")
+    || ""
+  ).trim();
+  if (!supplied) return false;
+  return crypto.timingSafeEqual(hashText(supplied), hashText(accessToken));
+}
+
+function requireAccess(req, requestUrl) {
+  if (hasValidAccess(req, requestUrl)) return;
+  const error = new Error("Access token required");
+  error.statusCode = 401;
+  throw error;
 }
 
 function timestampForFile() {
@@ -127,9 +167,12 @@ async function readDatasetJson(dataset, relativePath, fallback = null) {
   return readJsonFile(safeJoin(dataset.root, relativePath), fallback);
 }
 
-async function readAnnotatorJson(dataset, annotator, relativePath, fallback = null) {
-  if (!annotator) return fallback;
-  return readDatasetJson(dataset, safeJoin("annotations", relativePath, annotator), fallback);
+async function readAnnotationJson(dataset, relativePath, fallback = null) {
+  return readJsonFile(safeJoin(dataset.annotationRoot, relativePath), fallback);
+}
+
+function annotationPath(dataset, ...parts) {
+  return safeJoin(dataset.annotationRoot, ...parts);
 }
 
 async function writeJsonFileAtomic(filePath, value) {
@@ -147,12 +190,12 @@ function withClaimLock(fn) {
 
 async function readClaims(dataset) {
   if (!dataset.finalDataset) return {};
-  return readDatasetJson(dataset, "annotations/claims.json", {});
+  return readAnnotationJson(dataset, "claims.json", {});
 }
 
 async function writeClaims(dataset, claims) {
   if (!dataset.finalDataset) return;
-  await writeJsonFileAtomic(safeJoin(dataset.root, "annotations", "claims.json"), claims);
+  await writeJsonFileAtomic(annotationPath(dataset, "claims.json"), claims);
 }
 
 async function claimChart(dataset, chartId, annotator) {
@@ -204,7 +247,7 @@ async function markSubmitted(dataset, chartId, annotator) {
 }
 
 async function submissionCount(dataset, chartId) {
-  const folder = safeJoin(dataset.root, "annotations", "submissions", chartId);
+  const folder = annotationPath(dataset, "submissions", chartId);
   try {
     const entries = await fs.readdir(folder);
     return entries.filter((name) => name.toLowerCase().endsWith(".json")).length;
@@ -234,10 +277,10 @@ async function loadCharts(dataset, annotator) {
           ? claim.status || "claimed_by_me"
           : "claimed_by_other";
     const myAnnotationPath = annotator
-      ? safeJoin(dataset.root, "annotations", "by_annotator", annotator, `${chartId}.json`)
+      ? annotationPath(dataset, "by_annotator", annotator, `${chartId}.json`)
       : "";
     const myDraftPath = annotator
-      ? safeJoin(dataset.root, "annotations", "drafts", "by_annotator", annotator, `${chartId}.json`)
+      ? annotationPath(dataset, "drafts", "by_annotator", annotator, `${chartId}.json`)
       : "";
     const draft = myDraftPath ? await readJsonFile(myDraftPath, null) : null;
     return scrubClientValue({
@@ -282,10 +325,10 @@ async function loadChartDetail(dataset, chartId, annotator) {
   const prelabel = await readDatasetJson(dataset, `prelabels/${chartId}.json`, null);
   const canonicalGt = await readDatasetJson(dataset, `targets/canonical_proxy_gt/${chartId}.json`, null);
   const annotation = annotator
-    ? await readDatasetJson(dataset, `annotations/by_annotator/${annotator}/${chartId}.json`, null)
+    ? await readAnnotationJson(dataset, `by_annotator/${annotator}/${chartId}.json`, null)
     : null;
   const draft = annotator
-    ? await readDatasetJson(dataset, `annotations/drafts/by_annotator/${annotator}/${chartId}.json`, null)
+    ? await readAnnotationJson(dataset, `drafts/by_annotator/${annotator}/${chartId}.json`, null)
     : null;
 
   return {
@@ -355,7 +398,7 @@ function sendRedirect(res, location) {
 function sendError(res, error) {
   const statusCode = error.statusCode || 500;
   sendJson(res, statusCode, {
-    error: error.message || "Internal server error",
+    error: statusCode >= 500 ? "Internal server error" : scrubServerPaths(error.message || "Request failed"),
     claim: error.claim || null
   });
 }
@@ -406,12 +449,13 @@ function landingHtml() {
     a{display:inline-block;margin:10px 10px 0 0;padding:14px 22px;border-radius:14px;background:#176f5b;color:white;text-decoration:none;font-weight:700}
     .secondary{background:#efe4cf;color:#10241f}
     code{background:#efe4cf;padding:2px 6px;border-radius:6px}
+    .muted{color:#48645d;line-height:1.7}
   </style>
 </head>
 <body>
   <main>
     <p>FAA MISSED APPROACH DATASET</p>
-    <h1>复飞航图多人协同标注入口</h1>
+    <h1>复飞航图多人协同标注平台</h1>
     <section class="card">
       <h2>练习网页：10 张</h2>
       <p>用于新手熟悉流程，保存结果不进入正式 300 张数据集。</p>
@@ -423,8 +467,9 @@ function landingHtml() {
       <a href="/formal/">进入正式标注</a>
     </section>
     <section class="card">
-      <h2>局域网使用</h2>
-      <p>在项目的 <code>tools/shujuji_annotation</code> 目录运行 <code>启动标注平台.bat</code>，其他同学访问 <code>http://主机IP:${port}/formal/</code>。</p>
+      <h2>公网网页 / 局域网都可用</h2>
+      <p class="muted">如果部署到云服务器或 Render/Railway/VPS，直接把公网域名发给标注人即可，例如 <code>https://你的域名/formal/</code>。如果在本机运行，也可以继续用局域网地址 <code>http://主机IP:${port}/formal/</code>。</p>
+      <p class="muted">公网部署时建议设置 <code>SHUJUJI_DATA_ROOT</code> 指向持久化磁盘，人工暂存和正式提交会写入该目录，航图和预标注仍从项目相对路径读取。</p>
       <a class="secondary" href="/README.md">查看说明</a>
     </section>
   </main>
@@ -514,8 +559,8 @@ async function saveAnnotation(req, requestUrl, dataset, chartId) {
     saved_from_ip: clientIp(req)
   };
 
-  const currentPath = safeJoin(dataset.root, "annotations", "by_annotator", annotator, `${chartId}.json`);
-  const submissionPath = safeJoin(dataset.root, "annotations", "submissions", chartId, submissionName);
+  const currentPath = annotationPath(dataset, "by_annotator", annotator, `${chartId}.json`);
+  const submissionPath = annotationPath(dataset, "submissions", chartId, submissionName);
   await writeJsonFileAtomic(currentPath, enrichedPayload);
   await writeJsonFileAtomic(submissionPath, enrichedPayload);
   await markSubmitted(dataset, chartId, annotator);
@@ -573,8 +618,8 @@ async function saveDraft(req, requestUrl, dataset, chartId) {
     saved_from_ip: clientIp(req)
   };
 
-  const currentPath = safeJoin(dataset.root, "annotations", "drafts", "by_annotator", annotator, `${chartId}.json`);
-  const snapshotPath = safeJoin(dataset.root, "annotations", "drafts", "snapshots", chartId, snapshotName);
+  const currentPath = annotationPath(dataset, "drafts", "by_annotator", annotator, `${chartId}.json`);
+  const snapshotPath = annotationPath(dataset, "drafts", "snapshots", chartId, snapshotName);
   await writeJsonFileAtomic(currentPath, enrichedPayload);
   await writeJsonFileAtomic(snapshotPath, enrichedPayload);
 
@@ -595,6 +640,22 @@ async function route(req, res) {
 
   if (req.method === "GET" && pathname === "/") {
     sendHtml(res, 200, landingHtml());
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/healthz") {
+    sendJson(res, 200, {
+      ok: true,
+      service: "shujuji_annotation_platform",
+      access_control_enabled: Boolean(accessToken),
+      datasets: Object.fromEntries(Object.entries(datasets).map(([key, dataset]) => [
+        key,
+        {
+          final_dataset: dataset.finalDataset,
+          url_path: dataset.urlPath
+        }
+      ]))
+    });
     return;
   }
 
@@ -642,6 +703,7 @@ async function route(req, res) {
   }
 
   if (req.method === "GET" && pathname === "/api/charts") {
+    requireAccess(req, requestUrl);
     sendJson(res, 200, {
       dataset: {
         key: dataset.key,
@@ -655,17 +717,20 @@ async function route(req, res) {
   }
 
   if (req.method === "GET" && pathname === "/api/chart") {
+    requireAccess(req, requestUrl);
     sendJson(res, 200, await loadChartDetail(dataset, requestUrl.searchParams.get("chart_id"), annotator));
     return;
   }
 
   if (req.method === "POST" && pathname.startsWith("/api/claims/")) {
+    requireAccess(req, requestUrl);
     const chartId = pathname.split("/").pop();
     sendJson(res, 200, await claimChartForRequest(requestUrl, dataset, chartId));
     return;
   }
 
   if (req.method === "GET" && pathname === "/api/image") {
+    requireAccess(req, requestUrl);
     const file = requestUrl.searchParams.get("file");
     if (!/^[A-Za-z0-9_. -]+\.(png|jpg|jpeg)$/i.test(file || "")) {
       const error = new Error("Invalid image file");
@@ -683,12 +748,14 @@ async function route(req, res) {
   }
 
   if (req.method === "POST" && pathname.startsWith("/api/annotations/")) {
+    requireAccess(req, requestUrl);
     const chartId = pathname.split("/").pop();
     sendJson(res, 200, await saveAnnotation(req, requestUrl, dataset, chartId));
     return;
   }
 
   if (req.method === "POST" && pathname.startsWith("/api/drafts/")) {
+    requireAccess(req, requestUrl);
     const chartId = pathname.split("/").pop();
     sendJson(res, 200, await saveDraft(req, requestUrl, dataset, chartId));
     return;
@@ -710,6 +777,10 @@ const server = http.createServer((req, res) => {
 
 server.listen(port, "0.0.0.0", () => {
   console.log(`Annotation platform running on 0.0.0.0:${port}`);
+  if (publicBaseUrl) {
+    console.log(`Public practice: ${publicBaseUrl}/practice/`);
+    console.log(`Public formal:   ${publicBaseUrl}/formal/`);
+  }
   console.log(`Local practice: http://127.0.0.1:${port}/practice/`);
   console.log(`Local formal:   http://127.0.0.1:${port}/formal/`);
   Object.values(os.networkInterfaces())
@@ -720,4 +791,5 @@ server.listen(port, "0.0.0.0", () => {
       console.log(`LAN formal:     http://${item.address}:${port}/formal/`);
     });
   console.log(`Workspace root: ${workspaceRoot}`);
+  console.log(`Runtime data root: ${runtimeRoot}`);
 });
