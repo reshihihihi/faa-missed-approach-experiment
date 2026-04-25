@@ -1,4 +1,7 @@
 anthropic
+jsonschema
+openai
 paddleocr
+pillow
 pymupdf
 requests

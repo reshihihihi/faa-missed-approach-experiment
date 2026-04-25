@@ -72,6 +72,8 @@ The final B3V3 run passed the current pilot gates:
 
 The detailed result package is under `results/pilot_10/b3v3_region_ocr_20260425/`.
 
+The pilot implementation scripts are under `scripts/b1_b3_pilot/`.
+
 | Path | Purpose |
 |---|---|
 | `evaluation/b1_b3_extended_evaluation.md` | Main B1/B3/B3V2/B3V3 comparison |
@@ -83,6 +85,19 @@ The detailed result package is under `results/pilot_10/b3v3_region_ocr_20260425/
 | `evidence_traces/*.json` | Field-level evidence trace files |
 | `reference_targets/*.json` | CIFP-derived proxy targets used only for scoring |
 | `schemas/missed_approach_leg.schema.json` | PR #28 schema snapshot used for validation |
+
+## Included Code
+
+| Path | Purpose |
+|---|---|
+| `scripts/b1_b3_pilot/run_paddleocr_previous.py` | Re-run the B1/B3 OCR preparation flow |
+| `scripts/b1_b3_pilot/build_b3_candidate_legs.py` | Build B3V2 candidate-leg prompt inputs |
+| `scripts/b1_b3_pilot/build_b3v3_semantic_candidates.py` | Build B3V3 OCR-only semantic candidates and prompt inputs |
+| `scripts/b1_b3_pilot/run_llm_extraction.py` | Run LLM extraction for B1/B3/B3V2/B3V3 |
+| `scripts/b1_b3_pilot/build_b3v3_evidence_trace.py` | Build field-level B3V3 evidence traces |
+| `scripts/b1_b3_pilot/score_b1_b3_outputs.py` | Run basic pilot scoring |
+| `scripts/b1_b3_pilot/score_b1_b3_extended.py` | Run extended scoring, error breakdown, and bootstrap CI |
+| `scripts/b1_b3_pilot/validate_*.py` | Validate no-leakage, bbox normalization, method outputs, and PR #28 schema |
 
 ## Important Boundaries
 
