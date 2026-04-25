@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Missed Approach 标注校准平台</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">FAA Missed Approach Pilot</p>
+        <h1>自动预标注校准平台</h1>
+      </div>
+      <div class="top-actions">
+        <button id="helpBtn" type="button">打开教程</button>
+        <input id="annotatorInput" placeholder="标注人" value="">
+        <button id="saveBtn" class="primary">保存人工校准</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside class="sidebar" data-zoom-area="left">
+        <div class="zoom-controls" aria-label="left panel zoom">
+          <span>左侧缩放</span>
+          <button id="leftZoomOut" type="button">-</button>
+          <strong id="leftZoomValue">100%</strong>
+          <button id="leftZoomIn" type="button">+</button>
+          <button id="leftZoomReset" type="button">重置</button>
+        </div>
+        <div class="side-title">10 张 Pilot 航图</div>
+        <input id="chartFilter" class="filter" placeholder="搜索 chart_id / 类型">
+        <div id="chartList" class="chart-list"></div>
+      </aside>
+
+      <div class="resize-handle" data-resize-handle="left-center" role="separator" aria-label="调节左侧样本列表和中间航图宽度" title="拖动调节左侧样本列表和中间航图宽度"></div>
+
+      <section class="workspace" data-zoom-area="center">
+        <div class="workspace-toolbar">
+          <div>
+            <strong id="currentTitle">请选择航图</strong>
+            <span id="currentMeta" class="muted"></span>
+          </div>
+          <div class="toolbar-actions">
+            <div class="zoom-controls zoom-controls-inline" aria-label="center image zoom">
+              <span>航图缩放</span>
+              <button id="centerZoomOut" type="button">-</button>
+              <strong id="centerZoomValue">72%</strong>
+              <button id="centerZoomIn" type="button">+</button>
+              <button id="centerZoomReset" type="button">重置</button>
+            </div>
+            <select id="newRegionType" title="新增框类型按最大 JSON 字段分组">
+              <optgroup label="区域框：定位复飞证据">
+                <option value="MISSED_APPROACH_TEXT" data-field="REGION_CONTEXT" data-role="upper_text">MISSED_APPROACH_TEXT - 上方复飞文字</option>
+                <option value="PLAN_VIEW" data-field="REGION_CONTEXT" data-role="plan_context">PLAN_VIEW - 平面图复飞上下文</option>
+                <option value="MISSED_APPROACH_DETAIL_AREA" data-field="REGION_CONTEXT" data-role="detail_area">MISSED_APPROACH_DETAIL_AREA - 下方复飞细节区</option>
+              </optgroup>
+              <optgroup label="Q1_fix_ident：fix / navaid">
+                <option value="FIX_TEXT" data-field="Q1_fix_ident" data-role="fix_name">FIX_TEXT - fix 名称</option>
+                <option value="FIX_SYMBOL" data-field="Q1_fix_ident" data-role="fix_symbol">FIX_SYMBOL - fix 图标</option>
+                <option value="NAVAID_TEXT" data-field="Q1_fix_ident" data-role="navaid_name">NAVAID_TEXT - navaid 名称</option>
+              </optgroup>
+              <optgroup label="Q2_altitude_constraint：高度限制">
+                <option value="ALTITUDE_TEXT" data-field="Q2_altitude_constraint" data-role="altitude">ALTITUDE_TEXT - 高度</option>
+              </optgroup>
+              <optgroup label="Q3_turn：转弯方向/转弯证据">
+                <option value="PATH_SEGMENT" data-field="Q3_turn" data-role="turn_or_path">PATH_SEGMENT - 转弯弧线/路径段</option>
+                <option value="TURN_PHRASE" data-field="Q3_turn" data-role="turn_text">TURN_PHRASE - left/right turn 文字</option>
+              </optgroup>
+              <optgroup label="Q4_course_or_radial：航向/径向/track">
+                <option value="HEADING_TEXT" data-field="Q4_course_or_radial" data-role="heading">HEADING_TEXT - hdg/heading</option>
+                <option value="RADIAL_TEXT" data-field="Q4_course_or_radial" data-role="radial">RADIAL_TEXT - R-xxx</option>
+                <option value="TRACK_OR_RADIAL_TEXT" data-field="Q4_course_or_radial" data-role="track_or_radial">TRACK_OR_RADIAL_TEXT - tr/track/radial</option>
+                <option value="OUTBOUND_INBOUND_MARK" data-field="Q4_course_or_radial" data-role="direction_mark">OUTBOUND_INBOUND_MARK - outbound/inbound</option>
+              </optgroup>
+              <optgroup label="Q5_hold_params：holding 参数">
+                <option value="HOLDING_ARC" data-field="Q5_hold_params" data-role="holding_arc">HOLDING_ARC - holding 弧线</option>
+                <option value="HOLDING_PATTERN" data-field="Q5_hold_params" data-role="holding_pattern">HOLDING_PATTERN - holding 图形</option>
+                <option value="HOLDING_TIME_TEXT" data-field="Q5_hold_params" data-role="holding_time">HOLDING_TIME_TEXT - holding 时间</option>
+                <option value="DME_DISTANCE_TEXT" data-field="Q5_hold_params" data-role="dme_distance">DME_DISTANCE_TEXT - DME/距离</option>
+              </optgroup>
+              <optgroup label="补充/特殊情况">
+                <option value="MISSED_APPROACH_ICON" data-field="REGION_CONTEXT" data-role="missed_approach_icon">MISSED_APPROACH_ICON - 复飞图标</option>
+                <option value="MISSED_APPROACH_STEP_BOX" data-field="REGION_CONTEXT" data-role="step_box">MISSED_APPROACH_STEP_BOX - 复飞步骤格</option>
+              </optgroup>
+            </select>
+            <div id="newRegionTypeHint" class="type-hint"></div>
+            <button id="drawBtn">框选新增</button>
+          </div>
+        </div>
+
+        <div id="stageWrap" class="stage-wrap">
+          <div id="imageStage" class="image-stage">
+            <img id="chartImage" alt="航图">
+            <svg id="overlay" aria-label="annotation overlay"></svg>
+          </div>
+        </div>
+      </section>
+
+      <div class="resize-handle" data-resize-handle="center-inspector" role="separator" aria-label="调节中间航图和右侧检查详情宽度" title="拖动调节中间航图和右侧检查详情宽度"></div>
+
+      <aside class="inspector" data-zoom-area="right">
+
+        <details class="panel guide-panel compact-details">
+          <summary>人工检查说明 / 判定标准</summary>
+          <div class="guide-header">
+            <div class="zoom-controls" aria-label="right panel zoom">
+              <span>右侧缩放</span>
+              <button id="rightZoomOut" type="button">-</button>
+              <strong id="rightZoomValue">100%</strong>
+              <button id="rightZoomIn" type="button">+</button>
+              <button id="rightZoomReset" type="button">重置</button>
+            </div>
+          </div>
+          <div class="quick-guide">
+            <strong>新手最简单做法：只按右侧从上到下检查</strong>
+            <p>目标不是重新理解整张航图，而是确认“图上的框”能不能支持 PR #28 最大 JSON 里的字段。</p>
+          </div>
+          <ol class="check-steps">
+            <li><b>最快路径。</b>如果只是想用最少操作完成初校，可以先点“快速确认本图已有候选”，再只处理简化操作区剩下的缺证字段。</li>
+            <li><b>先点一个框。</b>看“当前框”里的中文说明，确认这个框的边界是否合理。</li>
+            <li><b>看框的位置。</b>大框可以覆盖整块区域；红色小框必须贴紧单个高度、箭头、fix、radial、holding 或距离文字。</li>
+            <li><b>看“字段对应”。</b>如果这个框确实能证明该航段的该字段，点“确认对应”；想连续处理就点“确认本框并跳下一个”。</li>
+            <li><b>看“PR #28 JSON 对齐/证据覆盖”。</b>优先处理这里显示缺证的 present 字段；这些才是还缺人工证据的重点。</li>
+            <li><b>如果缺字段但图上已有框。</b>点那个正确的框，再到“候选目标字段”里找到相同航段/字段，点“挂到当前框”，再回到“字段对应”点“确认对应”。</li>
+            <li><b>如果缺字段且没有框。</b>在上方选择合适框类型，点“框选新增”，贴紧画框，然后在候选字段里点“挂并确认”。</li>
+            <li><b>不用管折叠的自动字段。</b>“无需画框字段 / 自动状态”表示该航图本来没有，或来自 424 编码状态，默认不用人工操作。</li>
+            <li><b>最后保存。</b>当 present 证据覆盖接近 100%，明显错误都处理完后，点页面右上角“保存人工校准”。</li>
+          </ol>
+          <div class="guide-do-dont">
+            <div><b>可以直接确认：</b>框内能清楚看到对应值，例如 MUDRE、3000、R-243、holding 图形。</div>
+            <div><b>不要确认：</b>框太大框到无关内容、值不在框内、航段或字段对不上。</div>
+            <div><b>不确定：</b>点“不确定”，备注写一句原因，不要随手删除可能有用的证据。</div>
+          </div>
+          <p class="hint">核心标准：一个 accepted 映射必须回答清楚三件事：第几个航段、什么航段类型、最大 JSON 的哪个字段。</p>
+        </details>
+        <section class="panel">
+          <h2>当前框</h2>
+          <div id="emptyRegion" class="empty">还没有选中框。</div>
+          <div id="regionForm" class="region-form hidden">
+            <div id="regionRoleHint" class="region-role-hint"></div>
+            <div class="quick-region-actions">
+              <button id="acceptFrameAndNextBtn" class="primary" type="button">确认本框并跳下一个</button>
+              <button id="markFrameUnsureBtn" type="button">标记不确定</button>
+            </div>
+            <details class="advanced-region">
+              <summary>高级：查看/修改框信息</summary>
+              <label>框编号<input id="regionIdInput"></label>
+              <label>框类型<input id="regionTypeInput"></label>
+              <label>框的中文含义<input id="labelInput"></label>
+              <label>OCR / 可见文字<textarea id="ocrInput"></textarea></label>
+              <div class="grid-4">
+                <label>x<input id="bboxX" type="number" step="0.001"></label>
+                <label>y<input id="bboxY" type="number" step="0.001"></label>
+                <label>w<input id="bboxW" type="number" step="0.001"></label>
+                <label>h<input id="bboxH" type="number" step="0.001"></label>
+              </div>
+              <label>人工校准动作
+                <select id="reviewActionInput">
+                  <option value="pending">待确认</option>
+                  <option value="accept">确认正确</option>
+                  <option value="adjust">已调整位置/大小</option>
+                  <option value="delete">建议删除</option>
+                  <option value="split">建议拆分</option>
+                  <option value="add_detail">已补充细节框</option>
+                  <option value="reject_mapping">拒绝字段对应</option>
+                </select>
+              </label>
+              <label>中文备注<textarea id="notesInput"></textarea></label>
+              <button id="deleteRegionBtn" class="danger">删除当前框</button>
+            </details>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2>字段对应</h2>
+          <div id="mappingList" class="mapping-list"></div>
+        </section>
+
+        <details class="panel canonical-panel compact-details">
+          <summary>PR #28 详细证据对齐 / JSON</summary>
+          <div id="canonicalSummary" class="score-summary"></div>
+          <div id="canonicalCompare" class="compare-list"></div>
+          <details>
+            <summary>查看人工框生成 JSON</summary>
+            <pre id="annotationJsonPreview" class="json-preview"></pre>
+          </details>
+          <details>
+            <summary>查看 CIFP 424 canonical JSON</summary>
+            <pre id="canonicalJsonPreview" class="json-preview"></pre>
+          </details>
+        </details>
+
+        <details id="targetPanel" class="panel target-panel compact-details">
+          <summary>候选目标字段（缺字段时展开）</summary>
+          <p class="hint">点击“挂到当前框”，把某个候选航段/字段加入当前框的映射候选。</p>
+          <div id="targetList"></div>
+        </details>
+      </aside>
+
+      <div class="resize-handle" data-resize-handle="inspector-workflow" role="separator" aria-label="调节右侧检查详情和简化操作区宽度" title="拖动调节右侧检查详情和简化操作区宽度"></div>
+
+      <aside class="workflow-rail" data-zoom-area="workflow">
+        <section class="panel workflow-panel">
+          <div class="zoom-controls" aria-label="workflow panel zoom">
+            <span>操作区缩放</span>
+            <button id="workflowZoomOut" type="button">-</button>
+            <strong id="workflowZoomValue">100%</strong>
+            <button id="workflowZoomIn" type="button">+</button>
+            <button id="workflowZoomReset" type="button">重置</button>
+          </div>
+          <h2>简化操作区</h2>
+          <div id="workflowSummary" class="workflow-summary"></div>
+          <div class="workflow-buttons">
+            <button id="quickAcceptBtn" class="primary" type="button">快速确认已有候选</button>
+            <button id="undoQuickAcceptBtn" type="button" disabled>撤销快速确认</button>
+            <button id="nextPendingBtn" type="button">跳到下一个待确认框</button>
+            <button id="openTargetsBtn" type="button">打开候选字段补 missing</button>
+            <button id="workflowSaveBtn" type="button">保存人工校准</button>
+          </div>
+          <div id="workflowNextList" class="workflow-next-list"></div>
+        </section>
+      </aside>
+    </main>
+
+    <div id="toast" class="toast hidden"></div>
+
+    <div id="helpOverlay" class="help-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="helpTitle">
+      <div class="help-modal">
+        <div class="help-modal-head">
+          <div>
+            <p class="eyebrow">Annotation Platform Guide</p>
+            <h2 id="helpTitle">人工校准平台超详细教程</h2>
+          </div>
+          <button id="helpCloseBtn" type="button">关闭</button>
+        </div>
+        <div class="help-content">
+          <section>
+            <h3>完整操作手册</h3>
+            <p>如果需要按步骤培训或统一多人标注口径，直接点击下面按钮打开完整教程。</p>
+            <div class="tutorial-actions">
+              <button id="fullTutorialBtn" class="primary tutorial-open-btn" type="button">打开完整操作手册</button>
+              <button id="detailBoxTutorialBtn" class="tutorial-open-btn" type="button">打开下方框读法教程</button>
+            </div>
+            <p>这份手册重点说明：领取航图、调整框、不同框类型怎么选、Q1-Q5 字段怎么对应、missing 怎么补、错挂和不确定怎么处理。</p>
+          </section>
+
+          <section>
+            <h3>一、这个页面分成哪四个区域</h3>
+            <p><b>左侧样本列表：</b>选择 10 张 Pilot 航图，查看样本标签，例如 simple、holding、multi_leg、ocr_hard、anomaly。</p>
+            <p><b>中间航图区域：</b>查看原始航图和自动预标注框。这里负责看框是否圈对、移动框、新增框、拖拽调整框位置。</p>
+            <p><b>右侧检查详情：</b>查看当前框、字段对应、PR #28 JSON 证据对齐、候选目标字段。这里负责判断“这个框能证明哪个航段的哪个字段”。</p>
+            <p><b>最右简化操作区：</b>只显示最少操作路径、待确认候选、缺证字段和保存入口。新手优先看这里。</p>
+          </section>
+
+          <section>
+            <h3>二、新手最少操作流程</h3>
+            <ol>
+              <li><b>选图。</b>先在左侧点一张航图。建议按列表顺序一张一张做，避免漏图。</li>
+              <li><b>先看最右侧“简化操作区”。</b>它会告诉你当前还有多少“待确认候选”和“缺证字段”。如果不知道下一步做什么，优先看这里，不要先钻进 JSON。</li>
+              <li><b>粗看三个关键区域。</b>在中间航图上先确认三类大框：上方复飞文字大框、平面图复飞相关大框、下方复飞细节总框。大框只要求覆盖完整相关区域，不要求拆成很多小框。</li>
+              <li><b>快速确认已有候选。</b>如果预标注框看起来基本合理，可以点“快速确认已有候选”。这一步会把已经自动挂好的候选字段批量设为 accepted，用来减少人工点击。</li>
+              <li><b>误点处理。</b>如果你点完快速确认后发现不对，立刻点“撤销快速确认”。撤销后再逐个框检查，不要直接保存。</li>
+              <li><b>处理待确认框。</b>点“跳到下一个待确认框”，页面会选中一个需要检查的框。看右侧“当前框”说明，确认框的位置和类型是否正确。</li>
+              <li><b>确认字段对应。</b>如果当前框确实能证明“字段对应”里列出的航段字段，就点“确认对应”或“确认本框并跳下一个”。一个正确对应必须说清：第几个航段、什么航段类型、最大 JSON 的哪个字段。</li>
+              <li><b>处理缺证字段。</b>如果最右侧还有“缺证字段”，点该字段旁边的“去候选字段处理”。然后在图上找能证明这个字段的框。</li>
+              <li><b>图上已有框时。</b>先点中那个正确框，再到“候选目标字段”里找到同一航段、同一字段，点“挂到当前框”或“挂并确认”。随后回到“字段对应”确认。</li>
+              <li><b>图上没有框时。</b>在航图上方下拉框选择合适类型，例如 ALTITUDE_TEXT、FIX_TEXT、RADIAL_TEXT、HOLDING_ARC 等；点“框选新增”，贴紧对应符号或文字画框；再把候选字段挂到这个新框并确认。</li>
+              <li><b>遇到不确定。</b>如果你不能判断框是否支持该字段，点“不确定”，备注一句原因，例如“疑似对应但文字不清”或“航段可能不对”。不要为了凑 100% 随便确认。</li>
+              <li><b>保存前检查。</b>当待确认候选为 0，缺证字段尽量处理完，且没有明显框错位/字段错挂后，点击右上角“保存人工校准”。保存的是人工证据覆盖和字段对齐，不是独立 OCR 或 LLM 抽取正确率。</li>
+            </ol>
+          </section>
+
+          <section>
+            <h3>三、框应该怎么判断</h3>
+            <p><b>总体原则：</b>框不是为了好看，而是为了给 PR #28 最大 JSON 中某个字段提供图上证据。能回答“它证明了哪个航段的哪个字段”才算有用。</p>
+            <p><b>上方复飞文字大框：</b>用于覆盖航图标题附近的 MISSED APPROACH 文字说明。只要完整覆盖复飞文字说明即可，不需要把 climb、heading、fix、hold 等词逐个拆小框。</p>
+            <p><b>平面图大框：</b>用于覆盖平面图中与复飞路径相关的整体上下文，例如复飞航迹、复飞 fix、等待图形、备用复飞 fix 小图等。它主要帮助理解路线，不直接替代下方细节小框。</p>
+            <p><b>下方复飞细节总框：</b>用于圈住剖面图/下方小表格里专门描述复飞步骤的区域。这个总框可以稍大，但应尽量只覆盖复飞步骤区域，不要大面积框到跑道图、最低标准表、无关说明。</p>
+            <p><b>下方细节小框：</b>高度、爬升箭头、转弯弧线、fix/navaid 名称、fix 符号、radial、track、heading、inbound/outbound、holding 时间、DME/距离等都应尽量单独小框。小框要贴紧单个符号或文字，能小不要大。</p>
+            <p><b>ALTITUDE_TEXT：</b>框住高度数字，例如 3000、8700、11000、6500。不要把相邻 fix 名称或箭头一起框进去，除非数字和符号严重连在一起无法拆开。</p>
+            <p><b>CLIMB_ARROW / PATH_SEGMENT：</b>框住代表爬升或转弯路径的箭头、弧线、折线。箭头和高度数字最好分开：箭头证明动作，高度数字证明 Q2 高度限制。</p>
+            <p><b>FIX_TEXT / NAVAID_TEXT：</b>框住 MUDRE、CELTS、ZEXEL、EVVIS、COE、SGD 等名称文字。若同一格里还有 INT、VOR/DME、R-xxx，可以按字段需要拆成不同小框。</p>
+            <p><b>FIX_SYMBOL：</b>框住菱形、三角形、navaid 符号等图形证据。文字和符号如果都清楚，最好文字一个框、符号一个框，方便后续判断。</p>
+            <p><b>RADIAL_TEXT / TRACK_OR_RADIAL_TEXT / HEADING_TEXT：</b>框住 R-243、R-350、tr 284°、hdg 063°、heading 100° 等。注意不要把相邻的 fix 名称误当成 radial，也不要把 424 精确值的小数强行在航图上找出来，航图通常显示整数角度。</p>
+            <p><b>HOLDING_ARC / HOLDING_PATTERN：</b>框住等待弧线或完整等待图形。若 holding 信息包括 inbound course、leg time、距离、turn direction，应尽量分别找到对应图形或文字证据。</p>
+            <p><b>DME_DISTANCE_TEXT：</b>框住 20.5 DME、30.2、11.3 DME、5 NM 等距离文字。不要把距离和 fix 名称混成一个无法解释的大框。</p>
+            <p><b>可以确认的情况：</b>框内能清楚看到目标值，且字段对应的航段、航段类型、字段名都正确。例如“航段 2 CF 的 Q1_fix_ident = MUDRE”，框里确实有 MUDRE。</p>
+            <p><b>不要确认的情况：</b>框选到明显无关内容、目标文字不在框内、同一个符号被重复挂到不相干字段、航段编号不对、字段值和图上内容明显不一致。</p>
+            <p><b>重复框处理：</b>如果同一个符号被多个框重复框到，保留最贴近、最清楚、字段对应最准确的那个；其他重复框可以不确认，必要时标记不确定或删除。</p>
+            <p><b>本图没有的字段：</b>如果 canonical JSON 中该字段是 not_applicable、not_observable 或 unknown，通常不需要人工画框；它不会作为缺证字段要求你补框。</p>
+            <p><b>不确定时：</b>不要硬凑。点“不确定”，备注原因，后续统一复核。宁可留下一个需要讨论的字段，也不要把错误证据保存成 accepted。</p>
+          </section>
+
+          <section>
+            <h3>四、JSON 和评分怎么理解</h3>
+            <p>页面里的 PR #28 对齐结果是“人工证据覆盖/证据对齐”，基准来自 CIFP/424 canonical JSON。</p>
+            <p>因为候选字段也来自 canonical target，所以这里不能当作独立模型正确率。真正实验正确率应使用独立 OCR/LLM 输出 JSON 去对比 canonical JSON。</p>
+            <p>not_applicable、not_observable、unknown、Q_terminator 等自动状态字段通常不需要画框；重点处理 present 且缺证的字段。</p>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="/app.js"></script>
+  </body>
+</html>
