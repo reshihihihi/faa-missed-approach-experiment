@@ -6,6 +6,8 @@ This document summarizes the current B-group pilot experiment for missed-approac
 
 For a fuller method walkthrough in Chinese, see `docs/b3v3_method_summary_pilot10.md`.
 
+For a presentation-style report summary, see `docs/b1_b3_b3v3_pilot10_report.md`.
+
 ## Scope
 
 The experiment compares chart-derived methods that output the PR #28 `missed_approach_leg_v1` JSON format.
