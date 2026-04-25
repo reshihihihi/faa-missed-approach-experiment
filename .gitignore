@@ -21,7 +21,9 @@ Thumbs.db
 .env
 .env.*
 tools/shujuji_annotation/runtime_data/
+tools/shujuji_annotation/runtime_data*/
 tools/shujuji_annotation/**/runtime_data/
+tools/shujuji_annotation/**/runtime_data*/
 tools/shujuji_annotation/**/server.log
 tools/shujuji_annotation/**/*.log
 
