@@ -1,0 +1,1529 @@
+{
+  "chart_id": "KBOS_L15R",
+  "sample_id": "sample_0005",
+  "method": "B3V3",
+  "trace_policy": "sidecar only; not inserted into PR #28 method_output schema",
+  "trace_summary": {
+    "present_field_count": 10,
+    "matched_field_count": 10,
+    "matched_field_rate": 1.0
+  },
+  "field_traces": [
+    {
+      "field_path": "legs[1].answers.Q_terminator",
+      "predicted_value": "CA",
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_01",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_01",
+          "action_type": "initial_climb_or_heading",
+          "source_snippet": "Climb to 3000",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.544,
+                "y_center": 0.7492,
+                "width": 0.0888,
+                "height": 0.0627
+              },
+              "ocr_texts": [
+                "3000",
+                "BOS R-154"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r004",
+                "sample_0005__r005",
+                "sample_0005__r006"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "CA"
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_01",
+          "semantic_step_id": "semantic_step_01",
+          "candidate_ref": null,
+          "action_type": "initial_climb_to_altitude",
+          "source_snippet": "Climb to 3000",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.544,
+                "y_center": 0.7492,
+                "width": 0.0888,
+                "height": 0.0627
+              },
+              "ocr_texts": [
+                "3000",
+                "BOS R-154"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r004",
+                "sample_0005__r005",
+                "sample_0005__r006"
+              ]
+            }
+          ],
+          "hint_confidence": "low",
+          "hint_status": null,
+          "hint_value": [
+            "CA",
+            "VA",
+            "VI"
+          ]
+        }
+      ]
+    },
+    {
+      "field_path": "legs[1].answers.Q2_altitude_constraint",
+      "predicted_value": {
+        "desc": "AT_OR_ABOVE",
+        "altitude_ft": 3000,
+        "altitude_2_ft": null
+      },
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_01",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_01",
+          "action_type": "initial_climb_or_heading",
+          "source_snippet": "Climb to 3000",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.544,
+                "y_center": 0.7492,
+                "width": 0.0888,
+                "height": 0.0627
+              },
+              "ocr_texts": [
+                "3000",
+                "BOS R-154"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r004",
+                "sample_0005__r005",
+                "sample_0005__r006"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3000,
+            "altitude_2_ft": null
+          }
+        },
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_02",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_02",
+          "action_type": "radial_to_fix",
+          "source_snippet": "BOS VOR/DME R-154 to CELTS",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.544,
+                "y_center": 0.7492,
+                "width": 0.0888,
+                "height": 0.0627
+              },
+              "ocr_texts": [
+                "3000",
+                "BOS R-154"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r004",
+                "sample_0005__r005",
+                "sample_0005__r006"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3000,
+            "altitude_2_ft": null
+          }
+        },
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_03",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_03",
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.544,
+                "y_center": 0.7492,
+                "width": 0.0888,
+                "height": 0.0627
+              },
+              "ocr_texts": [
+                "3000",
+                "BOS R-154"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r004",
+                "sample_0005__r005",
+                "sample_0005__r006"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3000,
+            "altitude_2_ft": null
+          }
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_01",
+          "semantic_step_id": "semantic_step_01",
+          "candidate_ref": null,
+          "action_type": "initial_climb_to_altitude",
+          "source_snippet": "Climb to 3000",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.544,
+                "y_center": 0.7492,
+                "width": 0.0888,
+                "height": 0.0627
+              },
+              "ocr_texts": [
+                "3000",
+                "BOS R-154"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r004",
+                "sample_0005__r005",
+                "sample_0005__r006"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": null,
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3000,
+            "altitude_2_ft": null
+          }
+        }
+      ]
+    },
+    {
+      "field_path": "legs[2].answers.Q_terminator",
+      "predicted_value": "CF",
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_02",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_02",
+          "action_type": "radial_to_fix",
+          "source_snippet": "BOS VOR/DME R-154 to CELTS",
+          "evidence_refs": [
+            "cell_01",
+            "cell_02"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.544,
+                "y_center": 0.7492,
+                "width": 0.0888,
+                "height": 0.0627
+              },
+              "ocr_texts": [
+                "3000",
+                "BOS R-154"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r004",
+                "sample_0005__r005",
+                "sample_0005__r006"
+              ]
+            },
+            {
+              "cell_id": "cell_02",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6245,
+                "y_center": 0.738975,
+                "width": 0.055,
+                "height": 0.04305
+              },
+              "ocr_texts": [
+                "CELTS"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r007",
+                "sample_0005__r008"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "CF"
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_02",
+          "semantic_step_id": "semantic_step_02",
+          "candidate_ref": null,
+          "action_type": "radial_or_course_to_fix",
+          "source_snippet": "on BOS VOR/DME R-154 to CELTS",
+          "evidence_refs": [
+            "cell_01",
+            "cell_02"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.544,
+                "y_center": 0.7492,
+                "width": 0.0888,
+                "height": 0.0627
+              },
+              "ocr_texts": [
+                "3000",
+                "BOS R-154"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r004",
+                "sample_0005__r005",
+                "sample_0005__r006"
+              ]
+            },
+            {
+              "cell_id": "cell_02",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6245,
+                "y_center": 0.738975,
+                "width": 0.055,
+                "height": 0.04305
+              },
+              "ocr_texts": [
+                "CELTS"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r007",
+                "sample_0005__r008"
+              ]
+            }
+          ],
+          "hint_confidence": "low",
+          "hint_status": null,
+          "hint_value": [
+            "CR",
+            "CF",
+            "FA",
+            "TF"
+          ]
+        }
+      ]
+    },
+    {
+      "field_path": "legs[2].answers.Q1_fix_ident",
+      "predicted_value": "CELTS",
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_02",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_02",
+          "action_type": "radial_to_fix",
+          "source_snippet": "BOS VOR/DME R-154 to CELTS",
+          "evidence_refs": [
+            "cell_01",
+            "cell_02"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.544,
+                "y_center": 0.7492,
+                "width": 0.0888,
+                "height": 0.0627
+              },
+              "ocr_texts": [
+                "3000",
+                "BOS R-154"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r004",
+                "sample_0005__r005",
+                "sample_0005__r006"
+              ]
+            },
+            {
+              "cell_id": "cell_02",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6245,
+                "y_center": 0.738975,
+                "width": 0.055,
+                "height": 0.04305
+              },
+              "ocr_texts": [
+                "CELTS"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r007",
+                "sample_0005__r008"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "CELTS"
+        },
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_03",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_03",
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [
+            "cell_01",
+            "cell_02"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.544,
+                "y_center": 0.7492,
+                "width": 0.0888,
+                "height": 0.0627
+              },
+              "ocr_texts": [
+                "3000",
+                "BOS R-154"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r004",
+                "sample_0005__r005",
+                "sample_0005__r006"
+              ]
+            },
+            {
+              "cell_id": "cell_02",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6245,
+                "y_center": 0.738975,
+                "width": 0.055,
+                "height": 0.04305
+              },
+              "ocr_texts": [
+                "CELTS"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r007",
+                "sample_0005__r008"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "CELTS"
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_02",
+          "semantic_step_id": "semantic_step_02",
+          "candidate_ref": null,
+          "action_type": "radial_or_course_to_fix",
+          "source_snippet": "on BOS VOR/DME R-154 to CELTS",
+          "evidence_refs": [
+            "cell_01",
+            "cell_02"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.544,
+                "y_center": 0.7492,
+                "width": 0.0888,
+                "height": 0.0627
+              },
+              "ocr_texts": [
+                "3000",
+                "BOS R-154"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r004",
+                "sample_0005__r005",
+                "sample_0005__r006"
+              ]
+            },
+            {
+              "cell_id": "cell_02",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6245,
+                "y_center": 0.738975,
+                "width": 0.055,
+                "height": 0.04305
+              },
+              "ocr_texts": [
+                "CELTS"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r007",
+                "sample_0005__r008"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": null,
+          "hint_value": "CELTS"
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_03",
+          "semantic_step_id": "semantic_step_03",
+          "candidate_ref": null,
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [
+            "cell_02"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_02",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6245,
+                "y_center": 0.738975,
+                "width": 0.055,
+                "height": 0.04305
+              },
+              "ocr_texts": [
+                "CELTS"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r007",
+                "sample_0005__r008"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": null,
+          "hint_value": "CELTS"
+        }
+      ]
+    },
+    {
+      "field_path": "legs[2].answers.Q2_altitude_constraint",
+      "predicted_value": {
+        "desc": "AT_OR_ABOVE",
+        "altitude_ft": 3000,
+        "altitude_2_ft": null
+      },
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_01",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_01",
+          "action_type": "initial_climb_or_heading",
+          "source_snippet": "Climb to 3000",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.544,
+                "y_center": 0.7492,
+                "width": 0.0888,
+                "height": 0.0627
+              },
+              "ocr_texts": [
+                "3000",
+                "BOS R-154"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r004",
+                "sample_0005__r005",
+                "sample_0005__r006"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3000,
+            "altitude_2_ft": null
+          }
+        },
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_02",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_02",
+          "action_type": "radial_to_fix",
+          "source_snippet": "BOS VOR/DME R-154 to CELTS",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.544,
+                "y_center": 0.7492,
+                "width": 0.0888,
+                "height": 0.0627
+              },
+              "ocr_texts": [
+                "3000",
+                "BOS R-154"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r004",
+                "sample_0005__r005",
+                "sample_0005__r006"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3000,
+            "altitude_2_ft": null
+          }
+        },
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_03",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_03",
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.544,
+                "y_center": 0.7492,
+                "width": 0.0888,
+                "height": 0.0627
+              },
+              "ocr_texts": [
+                "3000",
+                "BOS R-154"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r004",
+                "sample_0005__r005",
+                "sample_0005__r006"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3000,
+            "altitude_2_ft": null
+          }
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_01",
+          "semantic_step_id": "semantic_step_01",
+          "candidate_ref": null,
+          "action_type": "initial_climb_to_altitude",
+          "source_snippet": "Climb to 3000",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.544,
+                "y_center": 0.7492,
+                "width": 0.0888,
+                "height": 0.0627
+              },
+              "ocr_texts": [
+                "3000",
+                "BOS R-154"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r004",
+                "sample_0005__r005",
+                "sample_0005__r006"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": null,
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3000,
+            "altitude_2_ft": null
+          }
+        }
+      ]
+    },
+    {
+      "field_path": "legs[2].answers.Q4_course_or_radial",
+      "predicted_value": {
+        "type": "navaid_radial",
+        "navaid": "BOS",
+        "radial_deg": 154,
+        "direction": "inbound"
+      },
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_02",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_02",
+          "action_type": "radial_to_fix",
+          "source_snippet": "BOS VOR/DME R-154 to CELTS",
+          "evidence_refs": [
+            "cell_01",
+            "cell_02"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.544,
+                "y_center": 0.7492,
+                "width": 0.0888,
+                "height": 0.0627
+              },
+              "ocr_texts": [
+                "3000",
+                "BOS R-154"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r004",
+                "sample_0005__r005",
+                "sample_0005__r006"
+              ]
+            },
+            {
+              "cell_id": "cell_02",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6245,
+                "y_center": 0.738975,
+                "width": 0.055,
+                "height": 0.04305
+              },
+              "ocr_texts": [
+                "CELTS"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r007",
+                "sample_0005__r008"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "type": "navaid_radial",
+            "navaid": "BOS",
+            "radial_deg": 154,
+            "direction": "inbound"
+          }
+        }
+      ]
+    },
+    {
+      "field_path": "legs[3].answers.Q_terminator",
+      "predicted_value": "HM",
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_03",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_03",
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [
+            "cell_01",
+            "cell_02"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.544,
+                "y_center": 0.7492,
+                "width": 0.0888,
+                "height": 0.0627
+              },
+              "ocr_texts": [
+                "3000",
+                "BOS R-154"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r004",
+                "sample_0005__r005",
+                "sample_0005__r006"
+              ]
+            },
+            {
+              "cell_id": "cell_02",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6245,
+                "y_center": 0.738975,
+                "width": 0.055,
+                "height": 0.04305
+              },
+              "ocr_texts": [
+                "CELTS"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r007",
+                "sample_0005__r008"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "HM"
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_03",
+          "semantic_step_id": "semantic_step_03",
+          "candidate_ref": null,
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [
+            "cell_02"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_02",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6245,
+                "y_center": 0.738975,
+                "width": 0.055,
+                "height": 0.04305
+              },
+              "ocr_texts": [
+                "CELTS"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r007",
+                "sample_0005__r008"
+              ]
+            }
+          ],
+          "hint_confidence": "low",
+          "hint_status": null,
+          "hint_value": [
+            "HM",
+            "HF",
+            "HA"
+          ]
+        }
+      ]
+    },
+    {
+      "field_path": "legs[3].answers.Q1_fix_ident",
+      "predicted_value": "CELTS",
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_02",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_02",
+          "action_type": "radial_to_fix",
+          "source_snippet": "BOS VOR/DME R-154 to CELTS",
+          "evidence_refs": [
+            "cell_01",
+            "cell_02"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.544,
+                "y_center": 0.7492,
+                "width": 0.0888,
+                "height": 0.0627
+              },
+              "ocr_texts": [
+                "3000",
+                "BOS R-154"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r004",
+                "sample_0005__r005",
+                "sample_0005__r006"
+              ]
+            },
+            {
+              "cell_id": "cell_02",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6245,
+                "y_center": 0.738975,
+                "width": 0.055,
+                "height": 0.04305
+              },
+              "ocr_texts": [
+                "CELTS"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r007",
+                "sample_0005__r008"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "CELTS"
+        },
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_03",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_03",
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [
+            "cell_01",
+            "cell_02"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.544,
+                "y_center": 0.7492,
+                "width": 0.0888,
+                "height": 0.0627
+              },
+              "ocr_texts": [
+                "3000",
+                "BOS R-154"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r004",
+                "sample_0005__r005",
+                "sample_0005__r006"
+              ]
+            },
+            {
+              "cell_id": "cell_02",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6245,
+                "y_center": 0.738975,
+                "width": 0.055,
+                "height": 0.04305
+              },
+              "ocr_texts": [
+                "CELTS"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r007",
+                "sample_0005__r008"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "CELTS"
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_02",
+          "semantic_step_id": "semantic_step_02",
+          "candidate_ref": null,
+          "action_type": "radial_or_course_to_fix",
+          "source_snippet": "on BOS VOR/DME R-154 to CELTS",
+          "evidence_refs": [
+            "cell_01",
+            "cell_02"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.544,
+                "y_center": 0.7492,
+                "width": 0.0888,
+                "height": 0.0627
+              },
+              "ocr_texts": [
+                "3000",
+                "BOS R-154"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r004",
+                "sample_0005__r005",
+                "sample_0005__r006"
+              ]
+            },
+            {
+              "cell_id": "cell_02",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6245,
+                "y_center": 0.738975,
+                "width": 0.055,
+                "height": 0.04305
+              },
+              "ocr_texts": [
+                "CELTS"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r007",
+                "sample_0005__r008"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": null,
+          "hint_value": "CELTS"
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_03",
+          "semantic_step_id": "semantic_step_03",
+          "candidate_ref": null,
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [
+            "cell_02"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_02",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6245,
+                "y_center": 0.738975,
+                "width": 0.055,
+                "height": 0.04305
+              },
+              "ocr_texts": [
+                "CELTS"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r007",
+                "sample_0005__r008"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": null,
+          "hint_value": "CELTS"
+        }
+      ]
+    },
+    {
+      "field_path": "legs[3].answers.Q2_altitude_constraint",
+      "predicted_value": {
+        "desc": "AT_OR_ABOVE",
+        "altitude_ft": 3000,
+        "altitude_2_ft": null
+      },
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_01",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_01",
+          "action_type": "initial_climb_or_heading",
+          "source_snippet": "Climb to 3000",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.544,
+                "y_center": 0.7492,
+                "width": 0.0888,
+                "height": 0.0627
+              },
+              "ocr_texts": [
+                "3000",
+                "BOS R-154"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r004",
+                "sample_0005__r005",
+                "sample_0005__r006"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3000,
+            "altitude_2_ft": null
+          }
+        },
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_02",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_02",
+          "action_type": "radial_to_fix",
+          "source_snippet": "BOS VOR/DME R-154 to CELTS",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.544,
+                "y_center": 0.7492,
+                "width": 0.0888,
+                "height": 0.0627
+              },
+              "ocr_texts": [
+                "3000",
+                "BOS R-154"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r004",
+                "sample_0005__r005",
+                "sample_0005__r006"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3000,
+            "altitude_2_ft": null
+          }
+        },
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_03",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_03",
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.544,
+                "y_center": 0.7492,
+                "width": 0.0888,
+                "height": 0.0627
+              },
+              "ocr_texts": [
+                "3000",
+                "BOS R-154"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r004",
+                "sample_0005__r005",
+                "sample_0005__r006"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3000,
+            "altitude_2_ft": null
+          }
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_01",
+          "semantic_step_id": "semantic_step_01",
+          "candidate_ref": null,
+          "action_type": "initial_climb_to_altitude",
+          "source_snippet": "Climb to 3000",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.544,
+                "y_center": 0.7492,
+                "width": 0.0888,
+                "height": 0.0627
+              },
+              "ocr_texts": [
+                "3000",
+                "BOS R-154"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r004",
+                "sample_0005__r005",
+                "sample_0005__r006"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": null,
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3000,
+            "altitude_2_ft": null
+          }
+        }
+      ]
+    },
+    {
+      "field_path": "legs[3].answers.Q5_hold_params",
+      "predicted_value": {
+        "inbound_course_deg": 334.0,
+        "leg_time_min": 1.0,
+        "leg_distance_nm": null,
+        "turn": "RIGHT"
+      },
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_03",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_03",
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [
+            "cell_01",
+            "cell_02"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.544,
+                "y_center": 0.7492,
+                "width": 0.0888,
+                "height": 0.0627
+              },
+              "ocr_texts": [
+                "3000",
+                "BOS R-154"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r004",
+                "sample_0005__r005",
+                "sample_0005__r006"
+              ]
+            },
+            {
+              "cell_id": "cell_02",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6245,
+                "y_center": 0.738975,
+                "width": 0.055,
+                "height": 0.04305
+              },
+              "ocr_texts": [
+                "CELTS"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0005__r007",
+                "sample_0005__r008"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "inbound_course_deg": 334.0,
+            "leg_time_min": 1.0,
+            "leg_distance_nm": null,
+            "turn": "RIGHT"
+          }
+        }
+      ]
+    }
+  ]
+}

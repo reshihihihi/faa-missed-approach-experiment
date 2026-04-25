@@ -1,0 +1,82 @@
+[
+  {
+    "chart_id": "KABE_I06",
+    "sample_id": "sample_0001",
+    "trace": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/evidence_traces/KABE_I06__evidence_trace.json",
+    "present_field_count": 10,
+    "matched_field_count": 10,
+    "matched_field_rate": 1.0
+  },
+  {
+    "chart_id": "KACT_R32",
+    "sample_id": "sample_0010",
+    "trace": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/evidence_traces/KACT_R32__evidence_trace.json",
+    "present_field_count": 9,
+    "matched_field_count": 9,
+    "matched_field_rate": 1.0
+  },
+  {
+    "chart_id": "KALS_I02",
+    "sample_id": "sample_0002",
+    "trace": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/evidence_traces/KALS_I02__evidence_trace.json",
+    "present_field_count": 10,
+    "matched_field_count": 10,
+    "matched_field_rate": 1.0
+  },
+  {
+    "chart_id": "KAPC_I01L",
+    "sample_id": "sample_0003",
+    "trace": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/evidence_traces/KAPC_I01L__evidence_trace.json",
+    "present_field_count": 12,
+    "matched_field_count": 12,
+    "matched_field_rate": 1.0
+  },
+  {
+    "chart_id": "KAQW_RNV-B",
+    "sample_id": "sample_0007",
+    "trace": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/evidence_traces/KAQW_RNV-B__evidence_trace.json",
+    "present_field_count": 10,
+    "matched_field_count": 10,
+    "matched_field_rate": 1.0
+  },
+  {
+    "chart_id": "KATL_I09R",
+    "sample_id": "sample_0004",
+    "trace": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/evidence_traces/KATL_I09R__evidence_trace.json",
+    "present_field_count": 10,
+    "matched_field_count": 10,
+    "matched_field_rate": 1.0
+  },
+  {
+    "chart_id": "KBOS_L15R",
+    "sample_id": "sample_0005",
+    "trace": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/evidence_traces/KBOS_L15R__evidence_trace.json",
+    "present_field_count": 10,
+    "matched_field_count": 10,
+    "matched_field_rate": 1.0
+  },
+  {
+    "chart_id": "KBOS_R32",
+    "sample_id": "sample_0008",
+    "trace": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/evidence_traces/KBOS_R32__evidence_trace.json",
+    "present_field_count": 11,
+    "matched_field_count": 11,
+    "matched_field_rate": 1.0
+  },
+  {
+    "chart_id": "KCOE_L06",
+    "sample_id": "sample_0006",
+    "trace": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/evidence_traces/KCOE_L06__evidence_trace.json",
+    "present_field_count": 15,
+    "matched_field_count": 15,
+    "matched_field_rate": 1.0
+  },
+  {
+    "chart_id": "KCOE_R02",
+    "sample_id": "sample_0009",
+    "trace": "E:/experiment2/B1-B3/outputs/B3_region_ocr_llm_v3/evidence_traces/KCOE_R02__evidence_trace.json",
+    "present_field_count": 9,
+    "matched_field_count": 9,
+    "matched_field_rate": 1.0
+  }
+]

@@ -1,0 +1,7129 @@
+{
+  "B1": {
+    "method": "B1",
+    "counts": {
+      "charts": 10,
+      "outputs": 10,
+      "field_total": 186,
+      "exact_field_match": 92,
+      "exact_present_match": 51,
+      "true_negative": 41,
+      "false_positive": 10,
+      "false_negative": 32,
+      "wrong_value": 30,
+      "nonpresent_status_mismatch": 22,
+      "leg_count_exact": 5,
+      "chart_exact": 0,
+      "extra_pred_legs": 2,
+      "missing_pred_legs": 4
+    },
+    "relation_counts": {
+      "supported": 92,
+      "partial": 27,
+      "not_observable": 31,
+      "contradicted": 36
+    },
+    "per_q_counts": {
+      "Q_terminator": {
+        "total": 31,
+        "exact_match": 15,
+        "exact_present_match": 15,
+        "false_positive": 0,
+        "false_negative": 4,
+        "wrong_value": 12,
+        "nonpresent_status_mismatch": 0
+      },
+      "Q1_fix_ident": {
+        "total": 31,
+        "exact_match": 22,
+        "exact_present_match": 15,
+        "false_positive": 2,
+        "false_negative": 6,
+        "wrong_value": 1,
+        "nonpresent_status_mismatch": 0
+      },
+      "Q2_altitude_constraint": {
+        "total": 31,
+        "exact_match": 11,
+        "exact_present_match": 10,
+        "false_positive": 2,
+        "false_negative": 11,
+        "wrong_value": 6,
+        "nonpresent_status_mismatch": 1
+      },
+      "Q3_turn": {
+        "total": 31,
+        "exact_match": 16,
+        "exact_present_match": 2,
+        "false_positive": 1,
+        "false_negative": 1,
+        "wrong_value": 1,
+        "nonpresent_status_mismatch": 12
+      },
+      "Q4_course_or_radial": {
+        "total": 31,
+        "exact_match": 11,
+        "exact_present_match": 9,
+        "false_positive": 1,
+        "false_negative": 5,
+        "wrong_value": 5,
+        "nonpresent_status_mismatch": 9
+      },
+      "Q5_hold_params": {
+        "total": 31,
+        "exact_match": 17,
+        "exact_present_match": 0,
+        "false_positive": 4,
+        "false_negative": 5,
+        "wrong_value": 5,
+        "nonpresent_status_mismatch": 0
+      }
+    },
+    "summary": {
+      "output_coverage": 1.0,
+      "leg_count_accuracy": 0.5,
+      "q_field_accuracy": 0.4946236559139785,
+      "chart_exact_rate": 0.0,
+      "exact_precision": 0.5604395604395604,
+      "exact_recall": 0.45132743362831856,
+      "exact_f1": 0.5,
+      "false_positive_rate": 0.053763440860215055,
+      "false_negative_rate": 0.17204301075268819,
+      "wrong_value_rate": 0.16129032258064516,
+      "over_assertion_rate": 0.053763440860215055,
+      "under_assertion_rate": 0.17204301075268819,
+      "relation_rates": {
+        "supported": 0.4946236559139785,
+        "partial": 0.14516129032258066,
+        "not_observable": 0.16666666666666666,
+        "contradicted": 0.1935483870967742
+      },
+      "per_q": {
+        "Q_terminator": {
+          "exact_accuracy": 0.4838709677419355,
+          "exact_present_precision": 0.5555555555555556,
+          "exact_present_recall": 0.4838709677419355,
+          "false_positive_rate": 0.0,
+          "false_negative_rate": 0.12903225806451613,
+          "wrong_value_rate": 0.3870967741935484
+        },
+        "Q1_fix_ident": {
+          "exact_accuracy": 0.7096774193548387,
+          "exact_present_precision": 0.8333333333333334,
+          "exact_present_recall": 0.6818181818181818,
+          "false_positive_rate": 0.06451612903225806,
+          "false_negative_rate": 0.1935483870967742,
+          "wrong_value_rate": 0.03225806451612903
+        },
+        "Q2_altitude_constraint": {
+          "exact_accuracy": 0.3548387096774194,
+          "exact_present_precision": 0.5555555555555556,
+          "exact_present_recall": 0.37037037037037035,
+          "false_positive_rate": 0.06451612903225806,
+          "false_negative_rate": 0.3548387096774194,
+          "wrong_value_rate": 0.1935483870967742
+        },
+        "Q3_turn": {
+          "exact_accuracy": 0.5161290322580645,
+          "exact_present_precision": 0.5,
+          "exact_present_recall": 0.5,
+          "false_positive_rate": 0.03225806451612903,
+          "false_negative_rate": 0.03225806451612903,
+          "wrong_value_rate": 0.03225806451612903
+        },
+        "Q4_course_or_radial": {
+          "exact_accuracy": 0.3548387096774194,
+          "exact_present_precision": 0.6,
+          "exact_present_recall": 0.47368421052631576,
+          "false_positive_rate": 0.03225806451612903,
+          "false_negative_rate": 0.16129032258064516,
+          "wrong_value_rate": 0.16129032258064516
+        },
+        "Q5_hold_params": {
+          "exact_accuracy": 0.5483870967741935,
+          "exact_present_precision": 0.0,
+          "exact_present_recall": 0.0,
+          "false_positive_rate": 0.12903225806451613,
+          "false_negative_rate": 0.16129032258064516,
+          "wrong_value_rate": 0.16129032258064516
+        }
+      },
+      "bootstrap_ci": {
+        "q_field_accuracy": {
+          "mean": 0.4946236559139785,
+          "ci95_low": 0.3620689655172414,
+          "ci95_high": 0.6302083333333334
+        },
+        "leg_count_accuracy": {
+          "mean": 0.5,
+          "ci95_low": 0.2,
+          "ci95_high": 0.8
+        },
+        "chart_exact_rate": {
+          "mean": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0
+        }
+      }
+    },
+    "per_sample": {
+      "KABE_I06": {
+        "chart_id": "KABE_I06",
+        "has_output": true,
+        "q_total": 18,
+        "q_exact_match": 10,
+        "leg_count_total": 1,
+        "leg_count_match": 1,
+        "chart_exact_match": 0,
+        "false_positive": 1,
+        "false_negative": 2,
+        "wrong_value": 3,
+        "relation_counts": {
+          "supported": 10,
+          "partial": 4,
+          "not_observable": 0,
+          "contradicted": 4
+        }
+      },
+      "KACT_R32": {
+        "chart_id": "KACT_R32",
+        "has_output": true,
+        "q_total": 18,
+        "q_exact_match": 4,
+        "leg_count_total": 1,
+        "leg_count_match": 0,
+        "chart_exact_match": 0,
+        "false_positive": 2,
+        "false_negative": 5,
+        "wrong_value": 4,
+        "relation_counts": {
+          "supported": 4,
+          "partial": 2,
+          "not_observable": 6,
+          "contradicted": 6
+        }
+      },
+      "KALS_I02": {
+        "chart_id": "KALS_I02",
+        "has_output": true,
+        "q_total": 18,
+        "q_exact_match": 17,
+        "leg_count_total": 1,
+        "leg_count_match": 1,
+        "chart_exact_match": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "wrong_value": 1,
+        "relation_counts": {
+          "supported": 17,
+          "partial": 1,
+          "not_observable": 0,
+          "contradicted": 0
+        }
+      },
+      "KAPC_I01L": {
+        "chart_id": "KAPC_I01L",
+        "has_output": true,
+        "q_total": 24,
+        "q_exact_match": 8,
+        "leg_count_total": 1,
+        "leg_count_match": 0,
+        "chart_exact_match": 0,
+        "false_positive": 1,
+        "false_negative": 4,
+        "wrong_value": 6,
+        "relation_counts": {
+          "supported": 8,
+          "partial": 4,
+          "not_observable": 6,
+          "contradicted": 6
+        }
+      },
+      "KAQW_RNV-B": {
+        "chart_id": "KAQW_RNV-B",
+        "has_output": true,
+        "q_total": 18,
+        "q_exact_match": 9,
+        "leg_count_total": 1,
+        "leg_count_match": 1,
+        "chart_exact_match": 0,
+        "false_positive": 0,
+        "false_negative": 3,
+        "wrong_value": 4,
+        "relation_counts": {
+          "supported": 9,
+          "partial": 5,
+          "not_observable": 3,
+          "contradicted": 1
+        }
+      },
+      "KATL_I09R": {
+        "chart_id": "KATL_I09R",
+        "has_output": true,
+        "q_total": 18,
+        "q_exact_match": 12,
+        "leg_count_total": 1,
+        "leg_count_match": 1,
+        "chart_exact_match": 0,
+        "false_positive": 1,
+        "false_negative": 2,
+        "wrong_value": 2,
+        "relation_counts": {
+          "supported": 12,
+          "partial": 2,
+          "not_observable": 0,
+          "contradicted": 4
+        }
+      },
+      "KBOS_L15R": {
+        "chart_id": "KBOS_L15R",
+        "has_output": true,
+        "q_total": 6,
+        "q_exact_match": 1,
+        "leg_count_total": 1,
+        "leg_count_match": 0,
+        "chart_exact_match": 0,
+        "false_positive": 0,
+        "false_negative": 2,
+        "wrong_value": 2,
+        "relation_counts": {
+          "supported": 1,
+          "partial": 2,
+          "not_observable": 0,
+          "contradicted": 3
+        }
+      },
+      "KBOS_R32": {
+        "chart_id": "KBOS_R32",
+        "has_output": true,
+        "q_total": 24,
+        "q_exact_match": 11,
+        "leg_count_total": 1,
+        "leg_count_match": 0,
+        "chart_exact_match": 0,
+        "false_positive": 2,
+        "false_negative": 6,
+        "wrong_value": 2,
+        "relation_counts": {
+          "supported": 11,
+          "partial": 2,
+          "not_observable": 7,
+          "contradicted": 4
+        }
+      },
+      "KCOE_L06": {
+        "chart_id": "KCOE_L06",
+        "has_output": true,
+        "q_total": 24,
+        "q_exact_match": 16,
+        "leg_count_total": 1,
+        "leg_count_match": 1,
+        "chart_exact_match": 0,
+        "false_positive": 1,
+        "false_negative": 3,
+        "wrong_value": 2,
+        "relation_counts": {
+          "supported": 16,
+          "partial": 3,
+          "not_observable": 2,
+          "contradicted": 3
+        }
+      },
+      "KCOE_R02": {
+        "chart_id": "KCOE_R02",
+        "has_output": true,
+        "q_total": 18,
+        "q_exact_match": 4,
+        "leg_count_total": 1,
+        "leg_count_match": 0,
+        "chart_exact_match": 0,
+        "false_positive": 2,
+        "false_negative": 5,
+        "wrong_value": 4,
+        "relation_counts": {
+          "supported": 4,
+          "partial": 2,
+          "not_observable": 7,
+          "contradicted": 5
+        }
+      }
+    },
+    "detailed_errors": [
+      {
+        "chart_id": "KABE_I06",
+        "leg_index": 1,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "VA"
+        },
+        "gt": {
+          "status": "present",
+          "value": "VI"
+        }
+      },
+      {
+        "chart_id": "KABE_I06",
+        "leg_index": 1,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3000,
+            "altitude_2_ft": null
+          }
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KABE_I06",
+        "leg_index": 2,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "contradicted",
+        "pred": {
+          "status": "not_applicable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3000,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KABE_I06",
+        "leg_index": 2,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_applicable",
+          "value": null
+        },
+        "gt": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KABE_I06",
+        "leg_index": 2,
+        "field": "Q4_course_or_radial",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "type": "navaid_radial",
+            "navaid": "STW",
+            "radial_deg": 243,
+            "direction": "outbound"
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "navaid_radial",
+            "navaid": "STW",
+            "radial_deg": 243.1,
+            "direction": "inbound"
+          }
+        }
+      },
+      {
+        "chart_id": "KABE_I06",
+        "leg_index": 3,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "contradicted",
+        "pred": {
+          "status": "not_applicable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3000,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KABE_I06",
+        "leg_index": 3,
+        "field": "Q4_course_or_radial",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KABE_I06",
+        "leg_index": 3,
+        "field": "Q5_hold_params",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 63,
+            "leg_time_min": 1,
+            "leg_distance_nm": null,
+            "turn": "RIGHT"
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 243.1,
+            "leg_time_min": 1.0,
+            "leg_distance_nm": null,
+            "turn": "RIGHT"
+          }
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 1,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "DF"
+        },
+        "gt": {
+          "status": "present",
+          "value": "CA"
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 1,
+        "field": "Q1_fix_ident",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "EVVIS"
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 1,
+        "field": "Q2_altitude_constraint",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "desc": "AT",
+            "altitude_ft": 4000,
+            "altitude_2_ft": null
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 766,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 1,
+        "field": "Q4_course_or_radial",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": {
+            "type": "direct"
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "course_deg",
+            "course_deg": 322.3
+          }
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 2,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "HM"
+        },
+        "gt": {
+          "status": "present",
+          "value": "DF"
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 2,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 2,
+        "field": "Q4_course_or_radial",
+        "error_type": "false_negative",
+        "relation": "contradicted",
+        "pred": {
+          "status": "not_applicable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "direct"
+          }
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 2,
+        "field": "Q5_hold_params",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": null,
+            "leg_time_min": null,
+            "leg_distance_nm": null,
+            "turn": null
+          }
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 3,
+        "field": "Q_terminator",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": "HM"
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 3,
+        "field": "Q1_fix_ident",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": "EVVIS"
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 3,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4000,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 3,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 3,
+        "field": "Q4_course_or_radial",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 3,
+        "field": "Q5_hold_params",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 142.2,
+            "leg_time_min": null,
+            "leg_distance_nm": 4.0,
+            "turn": "RIGHT"
+          }
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "type": "missing_pred_legs",
+        "pred_leg_count": 2,
+        "gt_leg_count": 3
+      },
+      {
+        "chart_id": "KALS_I02",
+        "leg_index": 3,
+        "field": "Q5_hold_params",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": null,
+            "leg_time_min": 1,
+            "leg_distance_nm": null,
+            "turn": "RIGHT"
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 142.0,
+            "leg_time_min": 1.0,
+            "leg_distance_nm": null,
+            "turn": "RIGHT"
+          }
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 1,
+        "field": "Q2_altitude_constraint",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 2090,
+            "altitude_2_ft": null
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 500,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 2,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "CF"
+        },
+        "gt": {
+          "status": "present",
+          "value": "DF"
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 2,
+        "field": "Q1_fix_ident",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "BURDE"
+        },
+        "gt": {
+          "status": "present",
+          "value": "SGD"
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 2,
+        "field": "Q2_altitude_constraint",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 2,
+        "field": "Q3_turn",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "RIGHT"
+        },
+        "gt": {
+          "status": "present",
+          "value": "LEFT"
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 2,
+        "field": "Q4_course_or_radial",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": {
+            "type": "navaid_radial",
+            "navaid": "SGD",
+            "radial_deg": 230,
+            "direction": "inbound"
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "direct"
+          }
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 3,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "HM"
+        },
+        "gt": {
+          "status": "present",
+          "value": "TF"
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 3,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 3,
+        "field": "Q4_course_or_radial",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 3,
+        "field": "Q5_hold_params",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": null,
+            "leg_time_min": 1.0,
+            "leg_distance_nm": null,
+            "turn": null
+          }
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 4,
+        "field": "Q_terminator",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": "HM"
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 4,
+        "field": "Q1_fix_ident",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": "BURDE"
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 4,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3200,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 4,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 4,
+        "field": "Q4_course_or_radial",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 4,
+        "field": "Q5_hold_params",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 230.0,
+            "leg_time_min": 1.0,
+            "leg_distance_nm": null,
+            "turn": "RIGHT"
+          }
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "type": "missing_pred_legs",
+        "pred_leg_count": 3,
+        "gt_leg_count": 4
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 1,
+        "field": "Q2_altitude_constraint",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4800,
+            "altitude_2_ft": null
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 1054,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 1,
+        "field": "Q4_course_or_radial",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "type": "course_deg",
+            "course_deg": 119
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "course_deg",
+            "course_deg": 298.6
+          }
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 2,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "CF"
+        },
+        "gt": {
+          "status": "present",
+          "value": "DF"
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 2,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4800,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 2,
+        "field": "Q3_turn",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": "LEFT"
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 2,
+        "field": "Q4_course_or_radial",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "direct"
+          }
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 3,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 3,
+        "field": "Q4_course_or_radial",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 3,
+        "field": "Q5_hold_params",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": null,
+            "leg_time_min": null,
+            "leg_distance_nm": null,
+            "turn": null
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 65.6,
+            "leg_time_min": null,
+            "leg_distance_nm": 5.0,
+            "turn": "RIGHT"
+          }
+        }
+      },
+      {
+        "chart_id": "KATL_I09R",
+        "leg_index": 1,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "CA"
+        },
+        "gt": {
+          "status": "present",
+          "value": "VI"
+        }
+      },
+      {
+        "chart_id": "KATL_I09R",
+        "leg_index": 1,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": {
+            "desc": "AT",
+            "altitude_ft": 4000,
+            "altitude_2_ft": null
+          }
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KATL_I09R",
+        "leg_index": 2,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "contradicted",
+        "pred": {
+          "status": "not_applicable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4000,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KATL_I09R",
+        "leg_index": 2,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_applicable",
+          "value": null
+        },
+        "gt": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KATL_I09R",
+        "leg_index": 3,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "contradicted",
+        "pred": {
+          "status": "not_applicable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4000,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KATL_I09R",
+        "leg_index": 3,
+        "field": "Q5_hold_params",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": null,
+            "leg_time_min": null,
+            "leg_distance_nm": null,
+            "turn": null
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 54.6,
+            "leg_time_min": 1.0,
+            "leg_distance_nm": null,
+            "turn": "RIGHT"
+          }
+        }
+      },
+      {
+        "chart_id": "KBOS_L15R",
+        "leg_index": 1,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "CA"
+        },
+        "gt": {
+          "status": "present",
+          "value": "HM"
+        }
+      },
+      {
+        "chart_id": "KBOS_L15R",
+        "leg_index": 1,
+        "field": "Q1_fix_ident",
+        "error_type": "false_negative",
+        "relation": "contradicted",
+        "pred": {
+          "status": "not_applicable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": "CELTS"
+        }
+      },
+      {
+        "chart_id": "KBOS_L15R",
+        "leg_index": 1,
+        "field": "Q2_altitude_constraint",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "desc": "AT",
+            "altitude_ft": 3000,
+            "altitude_2_ft": null
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3000,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KBOS_L15R",
+        "leg_index": 1,
+        "field": "Q4_course_or_radial",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KBOS_L15R",
+        "leg_index": 1,
+        "field": "Q5_hold_params",
+        "error_type": "false_negative",
+        "relation": "contradicted",
+        "pred": {
+          "status": "not_applicable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 334.0,
+            "leg_time_min": 1.0,
+            "leg_distance_nm": null,
+            "turn": "RIGHT"
+          }
+        }
+      },
+      {
+        "chart_id": "KBOS_L15R",
+        "type": "extra_pred_legs",
+        "pred_leg_count": 3,
+        "gt_leg_count": 1
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 1,
+        "field": "Q2_altitude_constraint",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "desc": "AT",
+            "altitude_ft": 3000,
+            "altitude_2_ft": null
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 419,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 1,
+        "field": "Q4_course_or_radial",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "course_deg",
+            "course_deg": 330.7
+          }
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 2,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 3,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "CF"
+        },
+        "gt": {
+          "status": "present",
+          "value": "TF"
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 3,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "contradicted",
+        "pred": {
+          "status": "not_applicable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3000,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 3,
+        "field": "Q4_course_or_radial",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": {
+            "type": "course_deg",
+            "course_deg": 284
+          }
+        },
+        "gt": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 3,
+        "field": "Q5_hold_params",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": null,
+            "leg_time_min": null,
+            "leg_distance_nm": null,
+            "turn": null
+          }
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 4,
+        "field": "Q_terminator",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": "HM"
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 4,
+        "field": "Q1_fix_ident",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": "TELLE"
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 4,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3000,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 4,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 4,
+        "field": "Q4_course_or_radial",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 4,
+        "field": "Q5_hold_params",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 284.1,
+            "leg_time_min": null,
+            "leg_distance_nm": 5.0,
+            "turn": "RIGHT"
+          }
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "type": "missing_pred_legs",
+        "pred_leg_count": 3,
+        "gt_leg_count": 4
+      },
+      {
+        "chart_id": "KCOE_L06",
+        "leg_index": 1,
+        "field": "Q4_course_or_radial",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "course_deg",
+            "course_deg": 51.1
+          }
+        }
+      },
+      {
+        "chart_id": "KCOE_L06",
+        "leg_index": 2,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "CR"
+        },
+        "gt": {
+          "status": "present",
+          "value": "FA"
+        }
+      },
+      {
+        "chart_id": "KCOE_L06",
+        "leg_index": 2,
+        "field": "Q1_fix_ident",
+        "error_type": "false_negative",
+        "relation": "contradicted",
+        "pred": {
+          "status": "not_applicable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": "COE"
+        }
+      },
+      {
+        "chart_id": "KCOE_L06",
+        "leg_index": 2,
+        "field": "Q3_turn",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "LEFT"
+        },
+        "gt": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KCOE_L06",
+        "leg_index": 4,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 6500,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KCOE_L06",
+        "leg_index": 4,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KCOE_L06",
+        "leg_index": 4,
+        "field": "Q4_course_or_radial",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KCOE_L06",
+        "leg_index": 4,
+        "field": "Q5_hold_params",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": null,
+            "leg_time_min": 1,
+            "leg_distance_nm": null,
+            "turn": null
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 51.0,
+            "leg_time_min": 1.0,
+            "leg_distance_nm": null,
+            "turn": "LEFT"
+          }
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 1,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "DF"
+        },
+        "gt": {
+          "status": "present",
+          "value": "CA"
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 1,
+        "field": "Q1_fix_ident",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "ZEXEL"
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 1,
+        "field": "Q2_altitude_constraint",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 7000,
+            "altitude_2_ft": null
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 2700,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 1,
+        "field": "Q4_course_or_radial",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": {
+            "type": "direct"
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "course_deg",
+            "course_deg": 354.0
+          }
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 2,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "HM"
+        },
+        "gt": {
+          "status": "present",
+          "value": "DF"
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 2,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 2,
+        "field": "Q4_course_or_radial",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "direct"
+          }
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 2,
+        "field": "Q5_hold_params",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": null,
+            "leg_time_min": null,
+            "leg_distance_nm": null,
+            "turn": null
+          }
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 3,
+        "field": "Q_terminator",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": "HM"
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 3,
+        "field": "Q1_fix_ident",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": "ZEXEL"
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 3,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 7000,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 3,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 3,
+        "field": "Q4_course_or_radial",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 3,
+        "field": "Q5_hold_params",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 115.0,
+            "leg_time_min": null,
+            "leg_distance_nm": 7.0,
+            "turn": "RIGHT"
+          }
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "type": "missing_pred_legs",
+        "pred_leg_count": 2,
+        "gt_leg_count": 3
+      }
+    ]
+  },
+  "B3": {
+    "method": "B3",
+    "counts": {
+      "charts": 10,
+      "outputs": 10,
+      "field_total": 186,
+      "exact_field_match": 64,
+      "exact_present_match": 35,
+      "true_negative": 29,
+      "false_positive": 16,
+      "false_negative": 46,
+      "wrong_value": 32,
+      "nonpresent_status_mismatch": 28,
+      "leg_count_exact": 2,
+      "chart_exact": 0,
+      "extra_pred_legs": 1,
+      "missing_pred_legs": 7
+    },
+    "relation_counts": {
+      "supported": 64,
+      "partial": 24,
+      "not_observable": 56,
+      "contradicted": 42
+    },
+    "per_q_counts": {
+      "Q_terminator": {
+        "total": 31,
+        "exact_match": 8,
+        "exact_present_match": 8,
+        "false_positive": 0,
+        "false_negative": 7,
+        "wrong_value": 16,
+        "nonpresent_status_mismatch": 0
+      },
+      "Q1_fix_ident": {
+        "total": 31,
+        "exact_match": 17,
+        "exact_present_match": 12,
+        "false_positive": 4,
+        "false_negative": 8,
+        "wrong_value": 2,
+        "nonpresent_status_mismatch": 0
+      },
+      "Q2_altitude_constraint": {
+        "total": 31,
+        "exact_match": 9,
+        "exact_present_match": 9,
+        "false_positive": 3,
+        "false_negative": 12,
+        "wrong_value": 6,
+        "nonpresent_status_mismatch": 1
+      },
+      "Q3_turn": {
+        "total": 31,
+        "exact_match": 10,
+        "exact_present_match": 1,
+        "false_positive": 2,
+        "false_negative": 3,
+        "wrong_value": 0,
+        "nonpresent_status_mismatch": 16
+      },
+      "Q4_course_or_radial": {
+        "total": 31,
+        "exact_match": 5,
+        "exact_present_match": 5,
+        "false_positive": 1,
+        "false_negative": 8,
+        "wrong_value": 6,
+        "nonpresent_status_mismatch": 11
+      },
+      "Q5_hold_params": {
+        "total": 31,
+        "exact_match": 15,
+        "exact_present_match": 0,
+        "false_positive": 6,
+        "false_negative": 8,
+        "wrong_value": 2,
+        "nonpresent_status_mismatch": 0
+      }
+    },
+    "summary": {
+      "output_coverage": 1.0,
+      "leg_count_accuracy": 0.2,
+      "q_field_accuracy": 0.34408602150537637,
+      "chart_exact_rate": 0.0,
+      "exact_precision": 0.42168674698795183,
+      "exact_recall": 0.30973451327433627,
+      "exact_f1": 0.35714285714285715,
+      "false_positive_rate": 0.08602150537634409,
+      "false_negative_rate": 0.24731182795698925,
+      "wrong_value_rate": 0.17204301075268819,
+      "over_assertion_rate": 0.08602150537634409,
+      "under_assertion_rate": 0.24731182795698925,
+      "relation_rates": {
+        "supported": 0.34408602150537637,
+        "partial": 0.12903225806451613,
+        "not_observable": 0.3010752688172043,
+        "contradicted": 0.22580645161290322
+      },
+      "per_q": {
+        "Q_terminator": {
+          "exact_accuracy": 0.25806451612903225,
+          "exact_present_precision": 0.3333333333333333,
+          "exact_present_recall": 0.25806451612903225,
+          "false_positive_rate": 0.0,
+          "false_negative_rate": 0.22580645161290322,
+          "wrong_value_rate": 0.5161290322580645
+        },
+        "Q1_fix_ident": {
+          "exact_accuracy": 0.5483870967741935,
+          "exact_present_precision": 0.6666666666666666,
+          "exact_present_recall": 0.5454545454545454,
+          "false_positive_rate": 0.12903225806451613,
+          "false_negative_rate": 0.25806451612903225,
+          "wrong_value_rate": 0.06451612903225806
+        },
+        "Q2_altitude_constraint": {
+          "exact_accuracy": 0.2903225806451613,
+          "exact_present_precision": 0.5,
+          "exact_present_recall": 0.3333333333333333,
+          "false_positive_rate": 0.0967741935483871,
+          "false_negative_rate": 0.3870967741935484,
+          "wrong_value_rate": 0.1935483870967742
+        },
+        "Q3_turn": {
+          "exact_accuracy": 0.3225806451612903,
+          "exact_present_precision": 0.3333333333333333,
+          "exact_present_recall": 0.25,
+          "false_positive_rate": 0.06451612903225806,
+          "false_negative_rate": 0.0967741935483871,
+          "wrong_value_rate": 0.0
+        },
+        "Q4_course_or_radial": {
+          "exact_accuracy": 0.16129032258064516,
+          "exact_present_precision": 0.4166666666666667,
+          "exact_present_recall": 0.2631578947368421,
+          "false_positive_rate": 0.03225806451612903,
+          "false_negative_rate": 0.25806451612903225,
+          "wrong_value_rate": 0.1935483870967742
+        },
+        "Q5_hold_params": {
+          "exact_accuracy": 0.4838709677419355,
+          "exact_present_precision": 0.0,
+          "exact_present_recall": 0.0,
+          "false_positive_rate": 0.1935483870967742,
+          "false_negative_rate": 0.25806451612903225,
+          "wrong_value_rate": 0.06451612903225806
+        }
+      },
+      "bootstrap_ci": {
+        "q_field_accuracy": {
+          "mean": 0.34408602150537637,
+          "ci95_low": 0.21666666666666667,
+          "ci95_high": 0.48530462184873935
+        },
+        "leg_count_accuracy": {
+          "mean": 0.2,
+          "ci95_low": 0.0,
+          "ci95_high": 0.5
+        },
+        "chart_exact_rate": {
+          "mean": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0
+        }
+      }
+    },
+    "per_sample": {
+      "KABE_I06": {
+        "chart_id": "KABE_I06",
+        "has_output": true,
+        "q_total": 18,
+        "q_exact_match": 6,
+        "leg_count_total": 1,
+        "leg_count_match": 0,
+        "chart_exact_match": 0,
+        "false_positive": 2,
+        "false_negative": 5,
+        "wrong_value": 2,
+        "relation_counts": {
+          "supported": 6,
+          "partial": 2,
+          "not_observable": 6,
+          "contradicted": 4
+        }
+      },
+      "KACT_R32": {
+        "chart_id": "KACT_R32",
+        "has_output": true,
+        "q_total": 18,
+        "q_exact_match": 3,
+        "leg_count_total": 1,
+        "leg_count_match": 0,
+        "chart_exact_match": 0,
+        "false_positive": 2,
+        "false_negative": 5,
+        "wrong_value": 5,
+        "relation_counts": {
+          "supported": 3,
+          "partial": 3,
+          "not_observable": 7,
+          "contradicted": 5
+        }
+      },
+      "KALS_I02": {
+        "chart_id": "KALS_I02",
+        "has_output": true,
+        "q_total": 18,
+        "q_exact_match": 13,
+        "leg_count_total": 1,
+        "leg_count_match": 1,
+        "chart_exact_match": 0,
+        "false_positive": 0,
+        "false_negative": 2,
+        "wrong_value": 1,
+        "relation_counts": {
+          "supported": 13,
+          "partial": 3,
+          "not_observable": 2,
+          "contradicted": 0
+        }
+      },
+      "KAPC_I01L": {
+        "chart_id": "KAPC_I01L",
+        "has_output": true,
+        "q_total": 24,
+        "q_exact_match": 7,
+        "leg_count_total": 1,
+        "leg_count_match": 0,
+        "chart_exact_match": 0,
+        "false_positive": 2,
+        "false_negative": 6,
+        "wrong_value": 5,
+        "relation_counts": {
+          "supported": 7,
+          "partial": 2,
+          "not_observable": 8,
+          "contradicted": 7
+        }
+      },
+      "KAQW_RNV-B": {
+        "chart_id": "KAQW_RNV-B",
+        "has_output": true,
+        "q_total": 18,
+        "q_exact_match": 2,
+        "leg_count_total": 1,
+        "leg_count_match": 0,
+        "chart_exact_match": 0,
+        "false_positive": 3,
+        "false_negative": 8,
+        "wrong_value": 3,
+        "relation_counts": {
+          "supported": 2,
+          "partial": 1,
+          "not_observable": 10,
+          "contradicted": 5
+        }
+      },
+      "KATL_I09R": {
+        "chart_id": "KATL_I09R",
+        "has_output": true,
+        "q_total": 18,
+        "q_exact_match": 7,
+        "leg_count_total": 1,
+        "leg_count_match": 0,
+        "chart_exact_match": 0,
+        "false_positive": 1,
+        "false_negative": 5,
+        "wrong_value": 2,
+        "relation_counts": {
+          "supported": 7,
+          "partial": 2,
+          "not_observable": 7,
+          "contradicted": 2
+        }
+      },
+      "KBOS_L15R": {
+        "chart_id": "KBOS_L15R",
+        "has_output": true,
+        "q_total": 6,
+        "q_exact_match": 3,
+        "leg_count_total": 1,
+        "leg_count_match": 0,
+        "chart_exact_match": 0,
+        "false_positive": 1,
+        "false_negative": 1,
+        "wrong_value": 1,
+        "relation_counts": {
+          "supported": 3,
+          "partial": 0,
+          "not_observable": 0,
+          "contradicted": 3
+        }
+      },
+      "KBOS_R32": {
+        "chart_id": "KBOS_R32",
+        "has_output": true,
+        "q_total": 24,
+        "q_exact_match": 4,
+        "leg_count_total": 1,
+        "leg_count_match": 0,
+        "chart_exact_match": 0,
+        "false_positive": 2,
+        "false_negative": 6,
+        "wrong_value": 6,
+        "relation_counts": {
+          "supported": 4,
+          "partial": 5,
+          "not_observable": 7,
+          "contradicted": 8
+        }
+      },
+      "KCOE_L06": {
+        "chart_id": "KCOE_L06",
+        "has_output": true,
+        "q_total": 24,
+        "q_exact_match": 16,
+        "leg_count_total": 1,
+        "leg_count_match": 1,
+        "chart_exact_match": 0,
+        "false_positive": 1,
+        "false_negative": 3,
+        "wrong_value": 2,
+        "relation_counts": {
+          "supported": 16,
+          "partial": 3,
+          "not_observable": 2,
+          "contradicted": 3
+        }
+      },
+      "KCOE_R02": {
+        "chart_id": "KCOE_R02",
+        "has_output": true,
+        "q_total": 18,
+        "q_exact_match": 3,
+        "leg_count_total": 1,
+        "leg_count_match": 0,
+        "chart_exact_match": 0,
+        "false_positive": 2,
+        "false_negative": 5,
+        "wrong_value": 5,
+        "relation_counts": {
+          "supported": 3,
+          "partial": 3,
+          "not_observable": 7,
+          "contradicted": 5
+        }
+      }
+    },
+    "detailed_errors": [
+      {
+        "chart_id": "KABE_I06",
+        "leg_index": 1,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3000,
+            "altitude_2_ft": null
+          }
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KABE_I06",
+        "leg_index": 2,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "HM"
+        },
+        "gt": {
+          "status": "present",
+          "value": "CF"
+        }
+      },
+      {
+        "chart_id": "KABE_I06",
+        "leg_index": 2,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "contradicted",
+        "pred": {
+          "status": "not_applicable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3000,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KABE_I06",
+        "leg_index": 2,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_applicable",
+          "value": null
+        },
+        "gt": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KABE_I06",
+        "leg_index": 2,
+        "field": "Q4_course_or_radial",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "type": "navaid_radial",
+            "navaid": "STW",
+            "radial_deg": 243,
+            "direction": "outbound"
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "navaid_radial",
+            "navaid": "STW",
+            "radial_deg": 243.1,
+            "direction": "inbound"
+          }
+        }
+      },
+      {
+        "chart_id": "KABE_I06",
+        "leg_index": 2,
+        "field": "Q5_hold_params",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": null,
+            "leg_time_min": null,
+            "leg_distance_nm": null,
+            "turn": null
+          }
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KABE_I06",
+        "leg_index": 3,
+        "field": "Q_terminator",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": "HM"
+        }
+      },
+      {
+        "chart_id": "KABE_I06",
+        "leg_index": 3,
+        "field": "Q1_fix_ident",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": "MUDRE"
+        }
+      },
+      {
+        "chart_id": "KABE_I06",
+        "leg_index": 3,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3000,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KABE_I06",
+        "leg_index": 3,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KABE_I06",
+        "leg_index": 3,
+        "field": "Q4_course_or_radial",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KABE_I06",
+        "leg_index": 3,
+        "field": "Q5_hold_params",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 243.1,
+            "leg_time_min": 1.0,
+            "leg_distance_nm": null,
+            "turn": "RIGHT"
+          }
+        }
+      },
+      {
+        "chart_id": "KABE_I06",
+        "type": "missing_pred_legs",
+        "pred_leg_count": 2,
+        "gt_leg_count": 3
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 1,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "DF"
+        },
+        "gt": {
+          "status": "present",
+          "value": "CA"
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 1,
+        "field": "Q1_fix_ident",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "EVVIS"
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 1,
+        "field": "Q2_altitude_constraint",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "desc": "AT",
+            "altitude_ft": 4000,
+            "altitude_2_ft": null
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 766,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 1,
+        "field": "Q4_course_or_radial",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": {
+            "type": "direct"
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "course_deg",
+            "course_deg": 322.3
+          }
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 2,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "HM"
+        },
+        "gt": {
+          "status": "present",
+          "value": "DF"
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 2,
+        "field": "Q2_altitude_constraint",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "desc": "AT",
+            "altitude_ft": 4000,
+            "altitude_2_ft": null
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4000,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 2,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 2,
+        "field": "Q4_course_or_radial",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "direct"
+          }
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 2,
+        "field": "Q5_hold_params",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": null,
+            "leg_time_min": null,
+            "leg_distance_nm": null,
+            "turn": null
+          }
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 3,
+        "field": "Q_terminator",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": "HM"
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 3,
+        "field": "Q1_fix_ident",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": "EVVIS"
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 3,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4000,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 3,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 3,
+        "field": "Q4_course_or_radial",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 3,
+        "field": "Q5_hold_params",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 142.2,
+            "leg_time_min": null,
+            "leg_distance_nm": 4.0,
+            "turn": "RIGHT"
+          }
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "type": "missing_pred_legs",
+        "pred_leg_count": 2,
+        "gt_leg_count": 3
+      },
+      {
+        "chart_id": "KALS_I02",
+        "leg_index": 1,
+        "field": "Q4_course_or_radial",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "course_deg",
+            "course_deg": 22.8
+          }
+        }
+      },
+      {
+        "chart_id": "KALS_I02",
+        "leg_index": 2,
+        "field": "Q3_turn",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": "RIGHT"
+        }
+      },
+      {
+        "chart_id": "KALS_I02",
+        "leg_index": 3,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KALS_I02",
+        "leg_index": 3,
+        "field": "Q4_course_or_radial",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KALS_I02",
+        "leg_index": 3,
+        "field": "Q5_hold_params",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": null,
+            "leg_time_min": null,
+            "leg_distance_nm": null,
+            "turn": null
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 142.0,
+            "leg_time_min": 1.0,
+            "leg_distance_nm": null,
+            "turn": "RIGHT"
+          }
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 1,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "VA"
+        },
+        "gt": {
+          "status": "present",
+          "value": "CA"
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 1,
+        "field": "Q4_course_or_radial",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "course_deg",
+            "course_deg": 5.7
+          }
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 2,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "CF"
+        },
+        "gt": {
+          "status": "present",
+          "value": "DF"
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 2,
+        "field": "Q1_fix_ident",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "BURDE"
+        },
+        "gt": {
+          "status": "present",
+          "value": "SGD"
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 2,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3200,
+            "altitude_2_ft": null
+          }
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 2,
+        "field": "Q3_turn",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": "LEFT"
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 2,
+        "field": "Q4_course_or_radial",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": {
+            "type": "navaid_radial",
+            "navaid": "SGD",
+            "radial_deg": 230,
+            "direction": "outbound"
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "direct"
+          }
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 3,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "HM"
+        },
+        "gt": {
+          "status": "present",
+          "value": "TF"
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 3,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 3,
+        "field": "Q4_course_or_radial",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 3,
+        "field": "Q5_hold_params",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": null,
+            "leg_time_min": 1,
+            "leg_distance_nm": null,
+            "turn": null
+          }
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 4,
+        "field": "Q_terminator",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": "HM"
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 4,
+        "field": "Q1_fix_ident",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": "BURDE"
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 4,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3200,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 4,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 4,
+        "field": "Q4_course_or_radial",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 4,
+        "field": "Q5_hold_params",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 230.0,
+            "leg_time_min": 1.0,
+            "leg_distance_nm": null,
+            "turn": "RIGHT"
+          }
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "type": "missing_pred_legs",
+        "pred_leg_count": 3,
+        "gt_leg_count": 4
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 1,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "DF"
+        },
+        "gt": {
+          "status": "present",
+          "value": "CA"
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 1,
+        "field": "Q1_fix_ident",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "SWOBS"
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 1,
+        "field": "Q2_altitude_constraint",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4800,
+            "altitude_2_ft": null
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 1054,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 1,
+        "field": "Q3_turn",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "LEFT"
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 1,
+        "field": "Q4_course_or_radial",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "course_deg",
+            "course_deg": 298.6
+          }
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 2,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "HM"
+        },
+        "gt": {
+          "status": "present",
+          "value": "DF"
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 2,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4800,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 2,
+        "field": "Q3_turn",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": "LEFT"
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 2,
+        "field": "Q4_course_or_radial",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "direct"
+          }
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 2,
+        "field": "Q5_hold_params",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": null,
+            "leg_time_min": null,
+            "leg_distance_nm": null,
+            "turn": null
+          }
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 3,
+        "field": "Q_terminator",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": "HM"
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 3,
+        "field": "Q1_fix_ident",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": "SWOBS"
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 3,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4800,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 3,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 3,
+        "field": "Q4_course_or_radial",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 3,
+        "field": "Q5_hold_params",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 65.6,
+            "leg_time_min": null,
+            "leg_distance_nm": 5.0,
+            "turn": "RIGHT"
+          }
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "type": "missing_pred_legs",
+        "pred_leg_count": 2,
+        "gt_leg_count": 3
+      },
+      {
+        "chart_id": "KATL_I09R",
+        "leg_index": 1,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "VA"
+        },
+        "gt": {
+          "status": "present",
+          "value": "VI"
+        }
+      },
+      {
+        "chart_id": "KATL_I09R",
+        "leg_index": 1,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": {
+            "desc": "AT",
+            "altitude_ft": 4000,
+            "altitude_2_ft": null
+          }
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KATL_I09R",
+        "leg_index": 2,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4000,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KATL_I09R",
+        "leg_index": 2,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KATL_I09R",
+        "leg_index": 2,
+        "field": "Q4_course_or_radial",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "type": "navaid_radial",
+            "navaid": "AHN",
+            "radial_deg": 235,
+            "direction": "outbound"
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "navaid_radial",
+            "navaid": "AHN",
+            "radial_deg": 234.6,
+            "direction": "inbound"
+          }
+        }
+      },
+      {
+        "chart_id": "KATL_I09R",
+        "leg_index": 3,
+        "field": "Q_terminator",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": "HM"
+        }
+      },
+      {
+        "chart_id": "KATL_I09R",
+        "leg_index": 3,
+        "field": "Q1_fix_ident",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": "CONNI"
+        }
+      },
+      {
+        "chart_id": "KATL_I09R",
+        "leg_index": 3,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4000,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KATL_I09R",
+        "leg_index": 3,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KATL_I09R",
+        "leg_index": 3,
+        "field": "Q4_course_or_radial",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KATL_I09R",
+        "leg_index": 3,
+        "field": "Q5_hold_params",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 54.6,
+            "leg_time_min": 1.0,
+            "leg_distance_nm": null,
+            "turn": "RIGHT"
+          }
+        }
+      },
+      {
+        "chart_id": "KATL_I09R",
+        "type": "missing_pred_legs",
+        "pred_leg_count": 2,
+        "gt_leg_count": 3
+      },
+      {
+        "chart_id": "KBOS_L15R",
+        "leg_index": 1,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "CF"
+        },
+        "gt": {
+          "status": "present",
+          "value": "HM"
+        }
+      },
+      {
+        "chart_id": "KBOS_L15R",
+        "leg_index": 1,
+        "field": "Q4_course_or_radial",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": {
+            "type": "navaid_radial",
+            "navaid": "BOS",
+            "radial_deg": 154,
+            "direction": "outbound"
+          }
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KBOS_L15R",
+        "leg_index": 1,
+        "field": "Q5_hold_params",
+        "error_type": "false_negative",
+        "relation": "contradicted",
+        "pred": {
+          "status": "not_applicable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 334.0,
+            "leg_time_min": 1.0,
+            "leg_distance_nm": null,
+            "turn": "RIGHT"
+          }
+        }
+      },
+      {
+        "chart_id": "KBOS_L15R",
+        "type": "extra_pred_legs",
+        "pred_leg_count": 2,
+        "gt_leg_count": 1
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 1,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "DF"
+        },
+        "gt": {
+          "status": "present",
+          "value": "CA"
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 1,
+        "field": "Q1_fix_ident",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "WINDZ"
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 1,
+        "field": "Q2_altitude_constraint",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3000,
+            "altitude_2_ft": null
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 419,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 1,
+        "field": "Q4_course_or_radial",
+        "error_type": "false_negative",
+        "relation": "contradicted",
+        "pred": {
+          "status": "not_applicable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "course_deg",
+            "course_deg": 330.7
+          }
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 2,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "CF"
+        },
+        "gt": {
+          "status": "present",
+          "value": "DF"
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 2,
+        "field": "Q1_fix_ident",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "TELLE"
+        },
+        "gt": {
+          "status": "present",
+          "value": "WINDZ"
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 2,
+        "field": "Q2_altitude_constraint",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 2,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_applicable",
+          "value": null
+        },
+        "gt": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 2,
+        "field": "Q4_course_or_radial",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": {
+            "type": "course_deg",
+            "course_deg": 284
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "direct"
+          }
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 3,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "HM"
+        },
+        "gt": {
+          "status": "present",
+          "value": "TF"
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 3,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3000,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 3,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 3,
+        "field": "Q4_course_or_radial",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 3,
+        "field": "Q5_hold_params",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": null,
+            "leg_time_min": null,
+            "leg_distance_nm": null,
+            "turn": null
+          }
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 4,
+        "field": "Q_terminator",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": "HM"
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 4,
+        "field": "Q1_fix_ident",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": "TELLE"
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 4,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3000,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 4,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 4,
+        "field": "Q4_course_or_radial",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 4,
+        "field": "Q5_hold_params",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 284.1,
+            "leg_time_min": null,
+            "leg_distance_nm": 5.0,
+            "turn": "RIGHT"
+          }
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "type": "missing_pred_legs",
+        "pred_leg_count": 3,
+        "gt_leg_count": 4
+      },
+      {
+        "chart_id": "KCOE_L06",
+        "leg_index": 1,
+        "field": "Q4_course_or_radial",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "course_deg",
+            "course_deg": 51.1
+          }
+        }
+      },
+      {
+        "chart_id": "KCOE_L06",
+        "leg_index": 2,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "CR"
+        },
+        "gt": {
+          "status": "present",
+          "value": "FA"
+        }
+      },
+      {
+        "chart_id": "KCOE_L06",
+        "leg_index": 2,
+        "field": "Q1_fix_ident",
+        "error_type": "false_negative",
+        "relation": "contradicted",
+        "pred": {
+          "status": "not_applicable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": "COE"
+        }
+      },
+      {
+        "chart_id": "KCOE_L06",
+        "leg_index": 2,
+        "field": "Q3_turn",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "LEFT"
+        },
+        "gt": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KCOE_L06",
+        "leg_index": 4,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 6500,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KCOE_L06",
+        "leg_index": 4,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KCOE_L06",
+        "leg_index": 4,
+        "field": "Q4_course_or_radial",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KCOE_L06",
+        "leg_index": 4,
+        "field": "Q5_hold_params",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": null,
+            "leg_time_min": null,
+            "leg_distance_nm": null,
+            "turn": null
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 51.0,
+            "leg_time_min": 1.0,
+            "leg_distance_nm": null,
+            "turn": "LEFT"
+          }
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 1,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "DF"
+        },
+        "gt": {
+          "status": "present",
+          "value": "CA"
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 1,
+        "field": "Q1_fix_ident",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "ZEXEL"
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 1,
+        "field": "Q2_altitude_constraint",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "desc": "AT",
+            "altitude_ft": 7000,
+            "altitude_2_ft": null
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 2700,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 1,
+        "field": "Q4_course_or_radial",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": {
+            "type": "direct"
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "course_deg",
+            "course_deg": 354.0
+          }
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 2,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "HM"
+        },
+        "gt": {
+          "status": "present",
+          "value": "DF"
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 2,
+        "field": "Q2_altitude_constraint",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "desc": "AT",
+            "altitude_ft": 7000,
+            "altitude_2_ft": null
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 7000,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 2,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 2,
+        "field": "Q4_course_or_radial",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "direct"
+          }
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 2,
+        "field": "Q5_hold_params",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": null,
+            "leg_time_min": null,
+            "leg_distance_nm": null,
+            "turn": null
+          }
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 3,
+        "field": "Q_terminator",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": "HM"
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 3,
+        "field": "Q1_fix_ident",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": "ZEXEL"
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 3,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 7000,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 3,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 3,
+        "field": "Q4_course_or_radial",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 3,
+        "field": "Q5_hold_params",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 115.0,
+            "leg_time_min": null,
+            "leg_distance_nm": 7.0,
+            "turn": "RIGHT"
+          }
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "type": "missing_pred_legs",
+        "pred_leg_count": 2,
+        "gt_leg_count": 3
+      }
+    ]
+  },
+  "B3V2": {
+    "method": "B3V2",
+    "counts": {
+      "charts": 10,
+      "outputs": 10,
+      "field_total": 186,
+      "exact_field_match": 90,
+      "exact_present_match": 59,
+      "true_negative": 31,
+      "false_positive": 10,
+      "false_negative": 28,
+      "wrong_value": 26,
+      "nonpresent_status_mismatch": 32,
+      "leg_count_exact": 8,
+      "chart_exact": 0,
+      "extra_pred_legs": 1,
+      "missing_pred_legs": 1
+    },
+    "relation_counts": {
+      "supported": 90,
+      "partial": 45,
+      "not_observable": 28,
+      "contradicted": 23
+    },
+    "per_q_counts": {
+      "Q_terminator": {
+        "total": 31,
+        "exact_match": 18,
+        "exact_present_match": 18,
+        "false_positive": 0,
+        "false_negative": 3,
+        "wrong_value": 10,
+        "nonpresent_status_mismatch": 0
+      },
+      "Q1_fix_ident": {
+        "total": 31,
+        "exact_match": 28,
+        "exact_present_match": 20,
+        "false_positive": 1,
+        "false_negative": 2,
+        "wrong_value": 0,
+        "nonpresent_status_mismatch": 0
+      },
+      "Q2_altitude_constraint": {
+        "total": 31,
+        "exact_match": 10,
+        "exact_present_match": 10,
+        "false_positive": 3,
+        "false_negative": 12,
+        "wrong_value": 5,
+        "nonpresent_status_mismatch": 1
+      },
+      "Q3_turn": {
+        "total": 31,
+        "exact_match": 5,
+        "exact_present_match": 2,
+        "false_positive": 2,
+        "false_negative": 2,
+        "wrong_value": 0,
+        "nonpresent_status_mismatch": 22
+      },
+      "Q4_course_or_radial": {
+        "total": 31,
+        "exact_match": 9,
+        "exact_present_match": 9,
+        "false_positive": 3,
+        "false_negative": 7,
+        "wrong_value": 3,
+        "nonpresent_status_mismatch": 9
+      },
+      "Q5_hold_params": {
+        "total": 31,
+        "exact_match": 20,
+        "exact_present_match": 0,
+        "false_positive": 1,
+        "false_negative": 2,
+        "wrong_value": 8,
+        "nonpresent_status_mismatch": 0
+      }
+    },
+    "summary": {
+      "output_coverage": 1.0,
+      "leg_count_accuracy": 0.8,
+      "q_field_accuracy": 0.4838709677419355,
+      "chart_exact_rate": 0.0,
+      "exact_precision": 0.6210526315789474,
+      "exact_recall": 0.5221238938053098,
+      "exact_f1": 0.5673076923076923,
+      "false_positive_rate": 0.053763440860215055,
+      "false_negative_rate": 0.15053763440860216,
+      "wrong_value_rate": 0.13978494623655913,
+      "over_assertion_rate": 0.053763440860215055,
+      "under_assertion_rate": 0.15053763440860216,
+      "relation_rates": {
+        "supported": 0.4838709677419355,
+        "partial": 0.24193548387096775,
+        "not_observable": 0.15053763440860216,
+        "contradicted": 0.12365591397849462
+      },
+      "per_q": {
+        "Q_terminator": {
+          "exact_accuracy": 0.5806451612903226,
+          "exact_present_precision": 0.6428571428571429,
+          "exact_present_recall": 0.5806451612903226,
+          "false_positive_rate": 0.0,
+          "false_negative_rate": 0.0967741935483871,
+          "wrong_value_rate": 0.3225806451612903
+        },
+        "Q1_fix_ident": {
+          "exact_accuracy": 0.9032258064516129,
+          "exact_present_precision": 0.9523809523809523,
+          "exact_present_recall": 0.9090909090909091,
+          "false_positive_rate": 0.03225806451612903,
+          "false_negative_rate": 0.06451612903225806,
+          "wrong_value_rate": 0.0
+        },
+        "Q2_altitude_constraint": {
+          "exact_accuracy": 0.3225806451612903,
+          "exact_present_precision": 0.5555555555555556,
+          "exact_present_recall": 0.37037037037037035,
+          "false_positive_rate": 0.0967741935483871,
+          "false_negative_rate": 0.3870967741935484,
+          "wrong_value_rate": 0.16129032258064516
+        },
+        "Q3_turn": {
+          "exact_accuracy": 0.16129032258064516,
+          "exact_present_precision": 0.5,
+          "exact_present_recall": 0.5,
+          "false_positive_rate": 0.06451612903225806,
+          "false_negative_rate": 0.06451612903225806,
+          "wrong_value_rate": 0.0
+        },
+        "Q4_course_or_radial": {
+          "exact_accuracy": 0.2903225806451613,
+          "exact_present_precision": 0.6,
+          "exact_present_recall": 0.47368421052631576,
+          "false_positive_rate": 0.0967741935483871,
+          "false_negative_rate": 0.22580645161290322,
+          "wrong_value_rate": 0.0967741935483871
+        },
+        "Q5_hold_params": {
+          "exact_accuracy": 0.6451612903225806,
+          "exact_present_precision": 0.0,
+          "exact_present_recall": 0.0,
+          "false_positive_rate": 0.03225806451612903,
+          "false_negative_rate": 0.06451612903225806,
+          "wrong_value_rate": 0.25806451612903225
+        }
+      },
+      "bootstrap_ci": {
+        "q_field_accuracy": {
+          "mean": 0.4838709677419355,
+          "ci95_low": 0.3823427287581699,
+          "ci95_high": 0.5699128380579991
+        },
+        "leg_count_accuracy": {
+          "mean": 0.8,
+          "ci95_low": 0.5,
+          "ci95_high": 1.0
+        },
+        "chart_exact_rate": {
+          "mean": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0
+        }
+      }
+    },
+    "per_sample": {
+      "KABE_I06": {
+        "chart_id": "KABE_I06",
+        "has_output": true,
+        "q_total": 18,
+        "q_exact_match": 8,
+        "leg_count_total": 1,
+        "leg_count_match": 1,
+        "chart_exact_match": 0,
+        "false_positive": 1,
+        "false_negative": 2,
+        "wrong_value": 3,
+        "relation_counts": {
+          "supported": 8,
+          "partial": 6,
+          "not_observable": 2,
+          "contradicted": 2
+        }
+      },
+      "KACT_R32": {
+        "chart_id": "KACT_R32",
+        "has_output": true,
+        "q_total": 18,
+        "q_exact_match": 10,
+        "leg_count_total": 1,
+        "leg_count_match": 1,
+        "chart_exact_match": 0,
+        "false_positive": 0,
+        "false_negative": 2,
+        "wrong_value": 2,
+        "relation_counts": {
+          "supported": 10,
+          "partial": 6,
+          "not_observable": 2,
+          "contradicted": 0
+        }
+      },
+      "KALS_I02": {
+        "chart_id": "KALS_I02",
+        "has_output": true,
+        "q_total": 18,
+        "q_exact_match": 13,
+        "leg_count_total": 1,
+        "leg_count_match": 1,
+        "chart_exact_match": 0,
+        "false_positive": 0,
+        "false_negative": 1,
+        "wrong_value": 2,
+        "relation_counts": {
+          "supported": 13,
+          "partial": 4,
+          "not_observable": 1,
+          "contradicted": 0
+        }
+      },
+      "KAPC_I01L": {
+        "chart_id": "KAPC_I01L",
+        "has_output": true,
+        "q_total": 24,
+        "q_exact_match": 12,
+        "leg_count_total": 1,
+        "leg_count_match": 1,
+        "chart_exact_match": 0,
+        "false_positive": 2,
+        "false_negative": 3,
+        "wrong_value": 3,
+        "relation_counts": {
+          "supported": 12,
+          "partial": 5,
+          "not_observable": 3,
+          "contradicted": 4
+        }
+      },
+      "KAQW_RNV-B": {
+        "chart_id": "KAQW_RNV-B",
+        "has_output": true,
+        "q_total": 18,
+        "q_exact_match": 2,
+        "leg_count_total": 1,
+        "leg_count_match": 0,
+        "chart_exact_match": 0,
+        "false_positive": 3,
+        "false_negative": 7,
+        "wrong_value": 4,
+        "relation_counts": {
+          "supported": 2,
+          "partial": 1,
+          "not_observable": 9,
+          "contradicted": 6
+        }
+      },
+      "KATL_I09R": {
+        "chart_id": "KATL_I09R",
+        "has_output": true,
+        "q_total": 18,
+        "q_exact_match": 8,
+        "leg_count_total": 1,
+        "leg_count_match": 1,
+        "chart_exact_match": 0,
+        "false_positive": 1,
+        "false_negative": 2,
+        "wrong_value": 3,
+        "relation_counts": {
+          "supported": 8,
+          "partial": 6,
+          "not_observable": 2,
+          "contradicted": 2
+        }
+      },
+      "KBOS_L15R": {
+        "chart_id": "KBOS_L15R",
+        "has_output": true,
+        "q_total": 6,
+        "q_exact_match": 3,
+        "leg_count_total": 1,
+        "leg_count_match": 0,
+        "chart_exact_match": 0,
+        "false_positive": 1,
+        "false_negative": 1,
+        "wrong_value": 1,
+        "relation_counts": {
+          "supported": 3,
+          "partial": 0,
+          "not_observable": 0,
+          "contradicted": 3
+        }
+      },
+      "KBOS_R32": {
+        "chart_id": "KBOS_R32",
+        "has_output": true,
+        "q_total": 24,
+        "q_exact_match": 11,
+        "leg_count_total": 1,
+        "leg_count_match": 1,
+        "chart_exact_match": 0,
+        "false_positive": 1,
+        "false_negative": 3,
+        "wrong_value": 3,
+        "relation_counts": {
+          "supported": 11,
+          "partial": 8,
+          "not_observable": 3,
+          "contradicted": 2
+        }
+      },
+      "KCOE_L06": {
+        "chart_id": "KCOE_L06",
+        "has_output": true,
+        "q_total": 24,
+        "q_exact_match": 15,
+        "leg_count_total": 1,
+        "leg_count_match": 1,
+        "chart_exact_match": 0,
+        "false_positive": 1,
+        "false_negative": 3,
+        "wrong_value": 3,
+        "relation_counts": {
+          "supported": 15,
+          "partial": 3,
+          "not_observable": 2,
+          "contradicted": 4
+        }
+      },
+      "KCOE_R02": {
+        "chart_id": "KCOE_R02",
+        "has_output": true,
+        "q_total": 18,
+        "q_exact_match": 8,
+        "leg_count_total": 1,
+        "leg_count_match": 1,
+        "chart_exact_match": 0,
+        "false_positive": 0,
+        "false_negative": 4,
+        "wrong_value": 2,
+        "relation_counts": {
+          "supported": 8,
+          "partial": 6,
+          "not_observable": 4,
+          "contradicted": 0
+        }
+      }
+    },
+    "detailed_errors": [
+      {
+        "chart_id": "KABE_I06",
+        "leg_index": 1,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "VA"
+        },
+        "gt": {
+          "status": "present",
+          "value": "VI"
+        }
+      },
+      {
+        "chart_id": "KABE_I06",
+        "leg_index": 1,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3000,
+            "altitude_2_ft": null
+          }
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KABE_I06",
+        "leg_index": 1,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KABE_I06",
+        "leg_index": 2,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3000,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KABE_I06",
+        "leg_index": 2,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KABE_I06",
+        "leg_index": 2,
+        "field": "Q4_course_or_radial",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "type": "navaid_radial",
+            "navaid": "STW",
+            "radial_deg": 243,
+            "direction": "outbound"
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "navaid_radial",
+            "navaid": "STW",
+            "radial_deg": 243.1,
+            "direction": "inbound"
+          }
+        }
+      },
+      {
+        "chart_id": "KABE_I06",
+        "leg_index": 3,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3000,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KABE_I06",
+        "leg_index": 3,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KABE_I06",
+        "leg_index": 3,
+        "field": "Q4_course_or_radial",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KABE_I06",
+        "leg_index": 3,
+        "field": "Q5_hold_params",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": null,
+            "leg_time_min": null,
+            "leg_distance_nm": null,
+            "turn": null
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 243.1,
+            "leg_time_min": 1.0,
+            "leg_distance_nm": null,
+            "turn": "RIGHT"
+          }
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 1,
+        "field": "Q2_altitude_constraint",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4000,
+            "altitude_2_ft": null
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 766,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 1,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 1,
+        "field": "Q4_course_or_radial",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "course_deg",
+            "course_deg": 322.3
+          }
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 2,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4000,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 2,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 3,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 3,
+        "field": "Q4_course_or_radial",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 3,
+        "field": "Q5_hold_params",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": null,
+            "leg_time_min": null,
+            "leg_distance_nm": null,
+            "turn": null
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 142.2,
+            "leg_time_min": null,
+            "leg_distance_nm": 4.0,
+            "turn": "RIGHT"
+          }
+        }
+      },
+      {
+        "chart_id": "KALS_I02",
+        "leg_index": 1,
+        "field": "Q2_altitude_constraint",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "desc": "AT",
+            "altitude_ft": 8700,
+            "altitude_2_ft": null
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 8700,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KALS_I02",
+        "leg_index": 1,
+        "field": "Q4_course_or_radial",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "course_deg",
+            "course_deg": 22.8
+          }
+        }
+      },
+      {
+        "chart_id": "KALS_I02",
+        "leg_index": 3,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KALS_I02",
+        "leg_index": 3,
+        "field": "Q4_course_or_radial",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KALS_I02",
+        "leg_index": 3,
+        "field": "Q5_hold_params",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": null,
+            "leg_time_min": null,
+            "leg_distance_nm": null,
+            "turn": null
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 142.0,
+            "leg_time_min": 1.0,
+            "leg_distance_nm": null,
+            "turn": "RIGHT"
+          }
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 1,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "VA"
+        },
+        "gt": {
+          "status": "present",
+          "value": "CA"
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 1,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 1,
+        "field": "Q4_course_or_radial",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "course_deg",
+            "course_deg": 5.7
+          }
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 2,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3200,
+            "altitude_2_ft": null
+          }
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 2,
+        "field": "Q3_turn",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": "LEFT"
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 3,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "CF"
+        },
+        "gt": {
+          "status": "present",
+          "value": "TF"
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 3,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3200,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 3,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 3,
+        "field": "Q4_course_or_radial",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": {
+            "type": "navaid_radial",
+            "navaid": "SGD",
+            "radial_deg": 230,
+            "direction": "outbound"
+          }
+        },
+        "gt": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 4,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 4,
+        "field": "Q4_course_or_radial",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 4,
+        "field": "Q5_hold_params",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": null,
+            "leg_time_min": null,
+            "leg_distance_nm": null,
+            "turn": null
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 230.0,
+            "leg_time_min": 1.0,
+            "leg_distance_nm": null,
+            "turn": "RIGHT"
+          }
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 1,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "DF"
+        },
+        "gt": {
+          "status": "present",
+          "value": "CA"
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 1,
+        "field": "Q1_fix_ident",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "SWOBS"
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 1,
+        "field": "Q2_altitude_constraint",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4800,
+            "altitude_2_ft": null
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 1054,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 1,
+        "field": "Q3_turn",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "LEFT"
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 1,
+        "field": "Q4_course_or_radial",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": {
+            "type": "direct"
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "course_deg",
+            "course_deg": 298.6
+          }
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 2,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "HM"
+        },
+        "gt": {
+          "status": "present",
+          "value": "DF"
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 2,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4800,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 2,
+        "field": "Q3_turn",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": "LEFT"
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 2,
+        "field": "Q4_course_or_radial",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "direct"
+          }
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 2,
+        "field": "Q5_hold_params",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": null,
+            "leg_time_min": null,
+            "leg_distance_nm": null,
+            "turn": null
+          }
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 3,
+        "field": "Q_terminator",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": "HM"
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 3,
+        "field": "Q1_fix_ident",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": "SWOBS"
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 3,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4800,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 3,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 3,
+        "field": "Q4_course_or_radial",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 3,
+        "field": "Q5_hold_params",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": null,
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 65.6,
+            "leg_time_min": null,
+            "leg_distance_nm": 5.0,
+            "turn": "RIGHT"
+          }
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "type": "missing_pred_legs",
+        "pred_leg_count": 2,
+        "gt_leg_count": 3
+      },
+      {
+        "chart_id": "KATL_I09R",
+        "leg_index": 1,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "VA"
+        },
+        "gt": {
+          "status": "present",
+          "value": "VI"
+        }
+      },
+      {
+        "chart_id": "KATL_I09R",
+        "leg_index": 1,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4000,
+            "altitude_2_ft": null
+          }
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KATL_I09R",
+        "leg_index": 1,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KATL_I09R",
+        "leg_index": 2,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4000,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KATL_I09R",
+        "leg_index": 2,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KATL_I09R",
+        "leg_index": 2,
+        "field": "Q4_course_or_radial",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "type": "navaid_radial",
+            "navaid": "AHN",
+            "radial_deg": 235,
+            "direction": "outbound"
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "navaid_radial",
+            "navaid": "AHN",
+            "radial_deg": 234.6,
+            "direction": "inbound"
+          }
+        }
+      },
+      {
+        "chart_id": "KATL_I09R",
+        "leg_index": 3,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4000,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KATL_I09R",
+        "leg_index": 3,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KATL_I09R",
+        "leg_index": 3,
+        "field": "Q4_course_or_radial",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KATL_I09R",
+        "leg_index": 3,
+        "field": "Q5_hold_params",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": null,
+            "leg_time_min": null,
+            "leg_distance_nm": null,
+            "turn": null
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 54.6,
+            "leg_time_min": 1.0,
+            "leg_distance_nm": null,
+            "turn": "RIGHT"
+          }
+        }
+      },
+      {
+        "chart_id": "KBOS_L15R",
+        "leg_index": 1,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "CF"
+        },
+        "gt": {
+          "status": "present",
+          "value": "HM"
+        }
+      },
+      {
+        "chart_id": "KBOS_L15R",
+        "leg_index": 1,
+        "field": "Q4_course_or_radial",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": {
+            "type": "navaid_radial",
+            "navaid": "BOS",
+            "radial_deg": 154,
+            "direction": "outbound"
+          }
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KBOS_L15R",
+        "leg_index": 1,
+        "field": "Q5_hold_params",
+        "error_type": "false_negative",
+        "relation": "contradicted",
+        "pred": {
+          "status": "not_applicable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 334.0,
+            "leg_time_min": 1.0,
+            "leg_distance_nm": null,
+            "turn": "RIGHT"
+          }
+        }
+      },
+      {
+        "chart_id": "KBOS_L15R",
+        "type": "extra_pred_legs",
+        "pred_leg_count": 2,
+        "gt_leg_count": 1
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 1,
+        "field": "Q2_altitude_constraint",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3000,
+            "altitude_2_ft": null
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 419,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 1,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 1,
+        "field": "Q4_course_or_radial",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "course_deg",
+            "course_deg": 330.7
+          }
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 2,
+        "field": "Q2_altitude_constraint",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 2,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 3,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "CF"
+        },
+        "gt": {
+          "status": "present",
+          "value": "TF"
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 3,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3000,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 3,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 3,
+        "field": "Q4_course_or_radial",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": {
+            "type": "course_deg",
+            "course_deg": 284
+          }
+        },
+        "gt": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 4,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 3000,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 4,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 4,
+        "field": "Q4_course_or_radial",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 4,
+        "field": "Q5_hold_params",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": null,
+            "leg_time_min": null,
+            "leg_distance_nm": null,
+            "turn": null
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 284.1,
+            "leg_time_min": null,
+            "leg_distance_nm": 5.0,
+            "turn": "RIGHT"
+          }
+        }
+      },
+      {
+        "chart_id": "KCOE_L06",
+        "leg_index": 1,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "VA"
+        },
+        "gt": {
+          "status": "present",
+          "value": "CA"
+        }
+      },
+      {
+        "chart_id": "KCOE_L06",
+        "leg_index": 1,
+        "field": "Q4_course_or_radial",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "course_deg",
+            "course_deg": 51.1
+          }
+        }
+      },
+      {
+        "chart_id": "KCOE_L06",
+        "leg_index": 2,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "CR"
+        },
+        "gt": {
+          "status": "present",
+          "value": "FA"
+        }
+      },
+      {
+        "chart_id": "KCOE_L06",
+        "leg_index": 2,
+        "field": "Q1_fix_ident",
+        "error_type": "false_negative",
+        "relation": "contradicted",
+        "pred": {
+          "status": "not_applicable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": "COE"
+        }
+      },
+      {
+        "chart_id": "KCOE_L06",
+        "leg_index": 2,
+        "field": "Q3_turn",
+        "error_type": "false_positive",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "LEFT"
+        },
+        "gt": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KCOE_L06",
+        "leg_index": 4,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 6500,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KCOE_L06",
+        "leg_index": 4,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KCOE_L06",
+        "leg_index": 4,
+        "field": "Q4_course_or_radial",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KCOE_L06",
+        "leg_index": 4,
+        "field": "Q5_hold_params",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": null,
+            "leg_time_min": null,
+            "leg_distance_nm": null,
+            "turn": null
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 51.0,
+            "leg_time_min": 1.0,
+            "leg_distance_nm": null,
+            "turn": "LEFT"
+          }
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 1,
+        "field": "Q_terminator",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "unknown",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": "CA"
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 1,
+        "field": "Q2_altitude_constraint",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 7000,
+            "altitude_2_ft": null
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 2700,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 1,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 1,
+        "field": "Q4_course_or_radial",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "course_deg",
+            "course_deg": 354.0
+          }
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 2,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 7000,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 2,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "unknown",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 3,
+        "field": "Q_terminator",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "unknown",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": "HM"
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 3,
+        "field": "Q3_turn",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 3,
+        "field": "Q4_course_or_radial",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "not_observable",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 3,
+        "field": "Q5_hold_params",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": null,
+            "leg_time_min": null,
+            "leg_distance_nm": null,
+            "turn": null
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 115.0,
+            "leg_time_min": null,
+            "leg_distance_nm": 7.0,
+            "turn": "RIGHT"
+          }
+        }
+      }
+    ]
+  },
+  "B3V3": {
+    "method": "B3V3",
+    "counts": {
+      "charts": 10,
+      "outputs": 10,
+      "field_total": 186,
+      "exact_field_match": 165,
+      "exact_present_match": 93,
+      "true_negative": 72,
+      "false_positive": 0,
+      "false_negative": 15,
+      "wrong_value": 5,
+      "nonpresent_status_mismatch": 1,
+      "leg_count_exact": 9,
+      "chart_exact": 2,
+      "extra_pred_legs": 2,
+      "missing_pred_legs": 0
+    },
+    "relation_counts": {
+      "supported": 165,
+      "partial": 5,
+      "not_observable": 9,
+      "contradicted": 7
+    },
+    "per_q_counts": {
+      "Q_terminator": {
+        "total": 31,
+        "exact_match": 30,
+        "exact_present_match": 30,
+        "false_positive": 0,
+        "false_negative": 0,
+        "wrong_value": 1,
+        "nonpresent_status_mismatch": 0
+      },
+      "Q1_fix_ident": {
+        "total": 31,
+        "exact_match": 30,
+        "exact_present_match": 21,
+        "false_positive": 0,
+        "false_negative": 1,
+        "wrong_value": 0,
+        "nonpresent_status_mismatch": 0
+      },
+      "Q2_altitude_constraint": {
+        "total": 31,
+        "exact_match": 27,
+        "exact_present_match": 23,
+        "false_positive": 0,
+        "false_negative": 4,
+        "wrong_value": 0,
+        "nonpresent_status_mismatch": 0
+      },
+      "Q3_turn": {
+        "total": 31,
+        "exact_match": 29,
+        "exact_present_match": 2,
+        "false_positive": 0,
+        "false_negative": 2,
+        "wrong_value": 0,
+        "nonpresent_status_mismatch": 0
+      },
+      "Q4_course_or_radial": {
+        "total": 31,
+        "exact_match": 23,
+        "exact_present_match": 12,
+        "false_positive": 0,
+        "false_negative": 7,
+        "wrong_value": 0,
+        "nonpresent_status_mismatch": 1
+      },
+      "Q5_hold_params": {
+        "total": 31,
+        "exact_match": 26,
+        "exact_present_match": 5,
+        "false_positive": 0,
+        "false_negative": 1,
+        "wrong_value": 4,
+        "nonpresent_status_mismatch": 0
+      }
+    },
+    "summary": {
+      "output_coverage": 1.0,
+      "leg_count_accuracy": 0.9,
+      "q_field_accuracy": 0.8870967741935484,
+      "chart_exact_rate": 0.2,
+      "exact_precision": 0.9489795918367347,
+      "exact_recall": 0.8230088495575221,
+      "exact_f1": 0.8815165876777251,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.08064516129032258,
+      "wrong_value_rate": 0.026881720430107527,
+      "over_assertion_rate": 0.0,
+      "under_assertion_rate": 0.08064516129032258,
+      "relation_rates": {
+        "supported": 0.8870967741935484,
+        "partial": 0.026881720430107527,
+        "not_observable": 0.04838709677419355,
+        "contradicted": 0.03763440860215054
+      },
+      "per_q": {
+        "Q_terminator": {
+          "exact_accuracy": 0.967741935483871,
+          "exact_present_precision": 0.967741935483871,
+          "exact_present_recall": 0.967741935483871,
+          "false_positive_rate": 0.0,
+          "false_negative_rate": 0.0,
+          "wrong_value_rate": 0.03225806451612903
+        },
+        "Q1_fix_ident": {
+          "exact_accuracy": 0.967741935483871,
+          "exact_present_precision": 1.0,
+          "exact_present_recall": 0.9545454545454546,
+          "false_positive_rate": 0.0,
+          "false_negative_rate": 0.03225806451612903,
+          "wrong_value_rate": 0.0
+        },
+        "Q2_altitude_constraint": {
+          "exact_accuracy": 0.8709677419354839,
+          "exact_present_precision": 1.0,
+          "exact_present_recall": 0.8518518518518519,
+          "false_positive_rate": 0.0,
+          "false_negative_rate": 0.12903225806451613,
+          "wrong_value_rate": 0.0
+        },
+        "Q3_turn": {
+          "exact_accuracy": 0.9354838709677419,
+          "exact_present_precision": 1.0,
+          "exact_present_recall": 0.5,
+          "false_positive_rate": 0.0,
+          "false_negative_rate": 0.06451612903225806,
+          "wrong_value_rate": 0.0
+        },
+        "Q4_course_or_radial": {
+          "exact_accuracy": 0.7419354838709677,
+          "exact_present_precision": 1.0,
+          "exact_present_recall": 0.631578947368421,
+          "false_positive_rate": 0.0,
+          "false_negative_rate": 0.22580645161290322,
+          "wrong_value_rate": 0.0
+        },
+        "Q5_hold_params": {
+          "exact_accuracy": 0.8387096774193549,
+          "exact_present_precision": 0.5555555555555556,
+          "exact_present_recall": 0.5,
+          "false_positive_rate": 0.0,
+          "false_negative_rate": 0.03225806451612903,
+          "wrong_value_rate": 0.12903225806451613
+        }
+      },
+      "bootstrap_ci": {
+        "q_field_accuracy": {
+          "mean": 0.8870967741935484,
+          "ci95_low": 0.8266597222222222,
+          "ci95_high": 0.9354838709677419
+        },
+        "leg_count_accuracy": {
+          "mean": 0.9,
+          "ci95_low": 0.7,
+          "ci95_high": 1.0
+        },
+        "chart_exact_rate": {
+          "mean": 0.2,
+          "ci95_low": 0.0,
+          "ci95_high": 0.5
+        }
+      }
+    },
+    "per_sample": {
+      "KABE_I06": {
+        "chart_id": "KABE_I06",
+        "has_output": true,
+        "q_total": 18,
+        "q_exact_match": 18,
+        "leg_count_total": 1,
+        "leg_count_match": 1,
+        "chart_exact_match": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "wrong_value": 0,
+        "relation_counts": {
+          "supported": 18,
+          "partial": 0,
+          "not_observable": 0,
+          "contradicted": 0
+        }
+      },
+      "KACT_R32": {
+        "chart_id": "KACT_R32",
+        "has_output": true,
+        "q_total": 18,
+        "q_exact_match": 15,
+        "leg_count_total": 1,
+        "leg_count_match": 1,
+        "chart_exact_match": 0,
+        "false_positive": 0,
+        "false_negative": 2,
+        "wrong_value": 1,
+        "relation_counts": {
+          "supported": 15,
+          "partial": 1,
+          "not_observable": 1,
+          "contradicted": 1
+        }
+      },
+      "KALS_I02": {
+        "chart_id": "KALS_I02",
+        "has_output": true,
+        "q_total": 18,
+        "q_exact_match": 15,
+        "leg_count_total": 1,
+        "leg_count_match": 1,
+        "chart_exact_match": 0,
+        "false_positive": 0,
+        "false_negative": 2,
+        "wrong_value": 1,
+        "relation_counts": {
+          "supported": 15,
+          "partial": 1,
+          "not_observable": 2,
+          "contradicted": 0
+        }
+      },
+      "KAPC_I01L": {
+        "chart_id": "KAPC_I01L",
+        "has_output": true,
+        "q_total": 24,
+        "q_exact_match": 22,
+        "leg_count_total": 1,
+        "leg_count_match": 1,
+        "chart_exact_match": 0,
+        "false_positive": 0,
+        "false_negative": 2,
+        "wrong_value": 0,
+        "relation_counts": {
+          "supported": 22,
+          "partial": 0,
+          "not_observable": 2,
+          "contradicted": 0
+        }
+      },
+      "KAQW_RNV-B": {
+        "chart_id": "KAQW_RNV-B",
+        "has_output": true,
+        "q_total": 18,
+        "q_exact_match": 15,
+        "leg_count_total": 1,
+        "leg_count_match": 1,
+        "chart_exact_match": 0,
+        "false_positive": 0,
+        "false_negative": 2,
+        "wrong_value": 1,
+        "relation_counts": {
+          "supported": 15,
+          "partial": 1,
+          "not_observable": 1,
+          "contradicted": 1
+        }
+      },
+      "KATL_I09R": {
+        "chart_id": "KATL_I09R",
+        "has_output": true,
+        "q_total": 18,
+        "q_exact_match": 18,
+        "leg_count_total": 1,
+        "leg_count_match": 1,
+        "chart_exact_match": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "wrong_value": 0,
+        "relation_counts": {
+          "supported": 18,
+          "partial": 0,
+          "not_observable": 0,
+          "contradicted": 0
+        }
+      },
+      "KBOS_L15R": {
+        "chart_id": "KBOS_L15R",
+        "has_output": true,
+        "q_total": 6,
+        "q_exact_match": 2,
+        "leg_count_total": 1,
+        "leg_count_match": 0,
+        "chart_exact_match": 0,
+        "false_positive": 0,
+        "false_negative": 2,
+        "wrong_value": 1,
+        "relation_counts": {
+          "supported": 2,
+          "partial": 1,
+          "not_observable": 0,
+          "contradicted": 3
+        }
+      },
+      "KBOS_R32": {
+        "chart_id": "KBOS_R32",
+        "has_output": true,
+        "q_total": 24,
+        "q_exact_match": 22,
+        "leg_count_total": 1,
+        "leg_count_match": 1,
+        "chart_exact_match": 0,
+        "false_positive": 0,
+        "false_negative": 2,
+        "wrong_value": 0,
+        "relation_counts": {
+          "supported": 22,
+          "partial": 0,
+          "not_observable": 1,
+          "contradicted": 1
+        }
+      },
+      "KCOE_L06": {
+        "chart_id": "KCOE_L06",
+        "has_output": true,
+        "q_total": 24,
+        "q_exact_match": 23,
+        "leg_count_total": 1,
+        "leg_count_match": 1,
+        "chart_exact_match": 0,
+        "false_positive": 0,
+        "false_negative": 1,
+        "wrong_value": 0,
+        "relation_counts": {
+          "supported": 23,
+          "partial": 0,
+          "not_observable": 1,
+          "contradicted": 0
+        }
+      },
+      "KCOE_R02": {
+        "chart_id": "KCOE_R02",
+        "has_output": true,
+        "q_total": 18,
+        "q_exact_match": 15,
+        "leg_count_total": 1,
+        "leg_count_match": 1,
+        "chart_exact_match": 0,
+        "false_positive": 0,
+        "false_negative": 2,
+        "wrong_value": 1,
+        "relation_counts": {
+          "supported": 15,
+          "partial": 1,
+          "not_observable": 1,
+          "contradicted": 1
+        }
+      }
+    },
+    "detailed_errors": [
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 1,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "contradicted",
+        "pred": {
+          "status": "not_applicable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 766,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 1,
+        "field": "Q4_course_or_radial",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "unknown",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "course_deg",
+            "course_deg": 322.3
+          }
+        }
+      },
+      {
+        "chart_id": "KACT_R32",
+        "leg_index": 3,
+        "field": "Q5_hold_params",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": null,
+            "leg_time_min": null,
+            "leg_distance_nm": 4.0,
+            "turn": "RIGHT"
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 142.2,
+            "leg_time_min": null,
+            "leg_distance_nm": 4.0,
+            "turn": "RIGHT"
+          }
+        }
+      },
+      {
+        "chart_id": "KALS_I02",
+        "leg_index": 1,
+        "field": "Q4_course_or_radial",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "unknown",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "course_deg",
+            "course_deg": 22.8
+          }
+        }
+      },
+      {
+        "chart_id": "KALS_I02",
+        "leg_index": 2,
+        "field": "Q3_turn",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "unknown",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": "RIGHT"
+        }
+      },
+      {
+        "chart_id": "KALS_I02",
+        "leg_index": 3,
+        "field": "Q5_hold_params",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": null,
+            "leg_time_min": 1.0,
+            "leg_distance_nm": null,
+            "turn": "RIGHT"
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 142.0,
+            "leg_time_min": 1.0,
+            "leg_distance_nm": null,
+            "turn": "RIGHT"
+          }
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 1,
+        "field": "Q4_course_or_radial",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "unknown",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "course_deg",
+            "course_deg": 5.7
+          }
+        }
+      },
+      {
+        "chart_id": "KAPC_I01L",
+        "leg_index": 2,
+        "field": "Q3_turn",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "unknown",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": "LEFT"
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 1,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "contradicted",
+        "pred": {
+          "status": "not_applicable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 1054,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 1,
+        "field": "Q4_course_or_radial",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "unknown",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "course_deg",
+            "course_deg": 298.6
+          }
+        }
+      },
+      {
+        "chart_id": "KAQW_RNV-B",
+        "leg_index": 3,
+        "field": "Q5_hold_params",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": null,
+            "leg_time_min": 1.0,
+            "leg_distance_nm": null,
+            "turn": "RIGHT"
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 65.6,
+            "leg_time_min": null,
+            "leg_distance_nm": 5.0,
+            "turn": "RIGHT"
+          }
+        }
+      },
+      {
+        "chart_id": "KBOS_L15R",
+        "leg_index": 1,
+        "field": "Q_terminator",
+        "error_type": "wrong_value",
+        "relation": "contradicted",
+        "pred": {
+          "status": "present",
+          "value": "CA"
+        },
+        "gt": {
+          "status": "present",
+          "value": "HM"
+        }
+      },
+      {
+        "chart_id": "KBOS_L15R",
+        "leg_index": 1,
+        "field": "Q1_fix_ident",
+        "error_type": "false_negative",
+        "relation": "contradicted",
+        "pred": {
+          "status": "not_applicable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": "CELTS"
+        }
+      },
+      {
+        "chart_id": "KBOS_L15R",
+        "leg_index": 1,
+        "field": "Q4_course_or_radial",
+        "error_type": "nonpresent_status_mismatch",
+        "relation": "partial",
+        "pred": {
+          "status": "unknown",
+          "value": null
+        },
+        "gt": {
+          "status": "not_applicable",
+          "value": null
+        }
+      },
+      {
+        "chart_id": "KBOS_L15R",
+        "leg_index": 1,
+        "field": "Q5_hold_params",
+        "error_type": "false_negative",
+        "relation": "contradicted",
+        "pred": {
+          "status": "not_applicable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 334.0,
+            "leg_time_min": 1.0,
+            "leg_distance_nm": null,
+            "turn": "RIGHT"
+          }
+        }
+      },
+      {
+        "chart_id": "KBOS_L15R",
+        "type": "extra_pred_legs",
+        "pred_leg_count": 3,
+        "gt_leg_count": 1
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 1,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "contradicted",
+        "pred": {
+          "status": "not_applicable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 419,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KBOS_R32",
+        "leg_index": 1,
+        "field": "Q4_course_or_radial",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "unknown",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "course_deg",
+            "course_deg": 330.7
+          }
+        }
+      },
+      {
+        "chart_id": "KCOE_L06",
+        "leg_index": 1,
+        "field": "Q4_course_or_radial",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "unknown",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "course_deg",
+            "course_deg": 51.1
+          }
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 1,
+        "field": "Q2_altitude_constraint",
+        "error_type": "false_negative",
+        "relation": "contradicted",
+        "pred": {
+          "status": "not_applicable",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 2700,
+            "altitude_2_ft": null
+          }
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 1,
+        "field": "Q4_course_or_radial",
+        "error_type": "false_negative",
+        "relation": "not_observable",
+        "pred": {
+          "status": "unknown",
+          "value": null
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "type": "course_deg",
+            "course_deg": 354.0
+          }
+        }
+      },
+      {
+        "chart_id": "KCOE_R02",
+        "leg_index": 3,
+        "field": "Q5_hold_params",
+        "error_type": "wrong_value",
+        "relation": "partial",
+        "pred": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": null,
+            "leg_time_min": null,
+            "leg_distance_nm": 7.0,
+            "turn": "RIGHT"
+          }
+        },
+        "gt": {
+          "status": "present",
+          "value": {
+            "inbound_course_deg": 115.0,
+            "leg_time_min": null,
+            "leg_distance_nm": 7.0,
+            "turn": "RIGHT"
+          }
+        }
+      }
+    ]
+  }
+}

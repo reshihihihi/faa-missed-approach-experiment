@@ -1,0 +1,835 @@
+{
+  "chart_id": "KACT_R32",
+  "sample_id": "sample_0010",
+  "method": "B3V3",
+  "trace_policy": "sidecar only; not inserted into PR #28 method_output schema",
+  "trace_summary": {
+    "present_field_count": 9,
+    "matched_field_count": 9,
+    "matched_field_rate": 1.0
+  },
+  "field_traces": [
+    {
+      "field_path": "legs[1].answers.Q_terminator",
+      "predicted_value": "CA",
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_01",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_01",
+          "action_type": "initial_climb_or_heading",
+          "source_snippet": "Climb to 4000",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.3699,
+                "y_center": 0.68215,
+                "width": 0.0504,
+                "height": 0.053
+              },
+              "ocr_texts": [
+                "4000",
+                "4"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW"
+              ],
+              "source_element_ids": [
+                "sample_0010__r004",
+                "sample_0010__r005"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "CA"
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_01",
+          "semantic_step_id": "semantic_step_01",
+          "candidate_ref": null,
+          "action_type": "initial_climb_to_altitude",
+          "source_snippet": "Climb to 4000",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.3699,
+                "y_center": 0.68215,
+                "width": 0.0504,
+                "height": 0.053
+              },
+              "ocr_texts": [
+                "4000",
+                "4"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW"
+              ],
+              "source_element_ids": [
+                "sample_0010__r004",
+                "sample_0010__r005"
+              ]
+            }
+          ],
+          "hint_confidence": "low",
+          "hint_status": null,
+          "hint_value": [
+            "CA",
+            "VA",
+            "VI"
+          ]
+        }
+      ]
+    },
+    {
+      "field_path": "legs[2].answers.Q_terminator",
+      "predicted_value": "DF",
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_02",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_02",
+          "action_type": "direct_to_fix",
+          "source_snippet": "direct 3 EVVIS",
+          "evidence_refs": [
+            "cell_02"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_02",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.4393,
+                "y_center": 0.677725,
+                "width": 0.0504,
+                "height": 0.04415
+              },
+              "ocr_texts": [
+                "EVVIS"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0010__r006",
+                "sample_0010__r007"
+              ]
+            }
+          ],
+          "hint_confidence": "high",
+          "hint_status": "present",
+          "hint_value": "DF"
+        }
+      ]
+    },
+    {
+      "field_path": "legs[2].answers.Q1_fix_ident",
+      "predicted_value": "EVVIS",
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_02",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_02",
+          "action_type": "direct_to_fix",
+          "source_snippet": "direct 3 EVVIS",
+          "evidence_refs": [
+            "cell_02"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_02",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.4393,
+                "y_center": 0.677725,
+                "width": 0.0504,
+                "height": 0.04415
+              },
+              "ocr_texts": [
+                "EVVIS"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0010__r006",
+                "sample_0010__r007"
+              ]
+            }
+          ],
+          "hint_confidence": "high",
+          "hint_status": "present",
+          "hint_value": "EVVIS"
+        },
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_03",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_03",
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [
+            "cell_01",
+            "cell_02"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.3699,
+                "y_center": 0.68215,
+                "width": 0.0504,
+                "height": 0.053
+              },
+              "ocr_texts": [
+                "4000",
+                "4"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW"
+              ],
+              "source_element_ids": [
+                "sample_0010__r004",
+                "sample_0010__r005"
+              ]
+            },
+            {
+              "cell_id": "cell_02",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.4393,
+                "y_center": 0.677725,
+                "width": 0.0504,
+                "height": 0.04415
+              },
+              "ocr_texts": [
+                "EVVIS"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0010__r006",
+                "sample_0010__r007"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "EVVIS"
+        }
+      ]
+    },
+    {
+      "field_path": "legs[2].answers.Q2_altitude_constraint",
+      "predicted_value": {
+        "desc": "AT_OR_ABOVE",
+        "altitude_ft": 4000,
+        "altitude_2_ft": null
+      },
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_02",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_02",
+          "action_type": "direct_to_fix",
+          "source_snippet": "direct 3 EVVIS",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.3699,
+                "y_center": 0.68215,
+                "width": 0.0504,
+                "height": 0.053
+              },
+              "ocr_texts": [
+                "4000",
+                "4"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW"
+              ],
+              "source_element_ids": [
+                "sample_0010__r004",
+                "sample_0010__r005"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4000,
+            "altitude_2_ft": null
+          }
+        },
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_03",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_03",
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.3699,
+                "y_center": 0.68215,
+                "width": 0.0504,
+                "height": 0.053
+              },
+              "ocr_texts": [
+                "4000",
+                "4"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW"
+              ],
+              "source_element_ids": [
+                "sample_0010__r004",
+                "sample_0010__r005"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4000,
+            "altitude_2_ft": null
+          }
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_01",
+          "semantic_step_id": "semantic_step_01",
+          "candidate_ref": null,
+          "action_type": "initial_climb_to_altitude",
+          "source_snippet": "Climb to 4000",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.3699,
+                "y_center": 0.68215,
+                "width": 0.0504,
+                "height": 0.053
+              },
+              "ocr_texts": [
+                "4000",
+                "4"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW"
+              ],
+              "source_element_ids": [
+                "sample_0010__r004",
+                "sample_0010__r005"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": null,
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4000,
+            "altitude_2_ft": null
+          }
+        }
+      ]
+    },
+    {
+      "field_path": "legs[2].answers.Q4_course_or_radial",
+      "predicted_value": {
+        "type": "direct"
+      },
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_02",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_02",
+          "action_type": "direct_to_fix",
+          "source_snippet": "direct 3 EVVIS",
+          "evidence_refs": [
+            "cell_02"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_02",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.4393,
+                "y_center": 0.677725,
+                "width": 0.0504,
+                "height": 0.04415
+              },
+              "ocr_texts": [
+                "EVVIS"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0010__r006",
+                "sample_0010__r007"
+              ]
+            }
+          ],
+          "hint_confidence": "high",
+          "hint_status": "present",
+          "hint_value": {
+            "type": "direct"
+          }
+        }
+      ]
+    },
+    {
+      "field_path": "legs[3].answers.Q_terminator",
+      "predicted_value": "HM",
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_03",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_03",
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [
+            "cell_01",
+            "cell_02"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.3699,
+                "y_center": 0.68215,
+                "width": 0.0504,
+                "height": 0.053
+              },
+              "ocr_texts": [
+                "4000",
+                "4"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW"
+              ],
+              "source_element_ids": [
+                "sample_0010__r004",
+                "sample_0010__r005"
+              ]
+            },
+            {
+              "cell_id": "cell_02",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.4393,
+                "y_center": 0.677725,
+                "width": 0.0504,
+                "height": 0.04415
+              },
+              "ocr_texts": [
+                "EVVIS"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0010__r006",
+                "sample_0010__r007"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "HM"
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_02",
+          "semantic_step_id": "semantic_step_02",
+          "candidate_ref": null,
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [],
+          "resolved_evidence_cells": [],
+          "hint_confidence": "low",
+          "hint_status": null,
+          "hint_value": [
+            "HM",
+            "HF",
+            "HA"
+          ]
+        }
+      ]
+    },
+    {
+      "field_path": "legs[3].answers.Q1_fix_ident",
+      "predicted_value": "EVVIS",
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_02",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_02",
+          "action_type": "direct_to_fix",
+          "source_snippet": "direct 3 EVVIS",
+          "evidence_refs": [
+            "cell_02"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_02",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.4393,
+                "y_center": 0.677725,
+                "width": 0.0504,
+                "height": 0.04415
+              },
+              "ocr_texts": [
+                "EVVIS"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0010__r006",
+                "sample_0010__r007"
+              ]
+            }
+          ],
+          "hint_confidence": "high",
+          "hint_status": "present",
+          "hint_value": "EVVIS"
+        },
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_03",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_03",
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [
+            "cell_01",
+            "cell_02"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.3699,
+                "y_center": 0.68215,
+                "width": 0.0504,
+                "height": 0.053
+              },
+              "ocr_texts": [
+                "4000",
+                "4"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW"
+              ],
+              "source_element_ids": [
+                "sample_0010__r004",
+                "sample_0010__r005"
+              ]
+            },
+            {
+              "cell_id": "cell_02",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.4393,
+                "y_center": 0.677725,
+                "width": 0.0504,
+                "height": 0.04415
+              },
+              "ocr_texts": [
+                "EVVIS"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0010__r006",
+                "sample_0010__r007"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "EVVIS"
+        }
+      ]
+    },
+    {
+      "field_path": "legs[3].answers.Q2_altitude_constraint",
+      "predicted_value": {
+        "desc": "AT_OR_ABOVE",
+        "altitude_ft": 4000,
+        "altitude_2_ft": null
+      },
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_02",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_02",
+          "action_type": "direct_to_fix",
+          "source_snippet": "direct 3 EVVIS",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.3699,
+                "y_center": 0.68215,
+                "width": 0.0504,
+                "height": 0.053
+              },
+              "ocr_texts": [
+                "4000",
+                "4"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW"
+              ],
+              "source_element_ids": [
+                "sample_0010__r004",
+                "sample_0010__r005"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4000,
+            "altitude_2_ft": null
+          }
+        },
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_03",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_03",
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.3699,
+                "y_center": 0.68215,
+                "width": 0.0504,
+                "height": 0.053
+              },
+              "ocr_texts": [
+                "4000",
+                "4"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW"
+              ],
+              "source_element_ids": [
+                "sample_0010__r004",
+                "sample_0010__r005"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4000,
+            "altitude_2_ft": null
+          }
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_01",
+          "semantic_step_id": "semantic_step_01",
+          "candidate_ref": null,
+          "action_type": "initial_climb_to_altitude",
+          "source_snippet": "Climb to 4000",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.3699,
+                "y_center": 0.68215,
+                "width": 0.0504,
+                "height": 0.053
+              },
+              "ocr_texts": [
+                "4000",
+                "4"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW"
+              ],
+              "source_element_ids": [
+                "sample_0010__r004",
+                "sample_0010__r005"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": null,
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 4000,
+            "altitude_2_ft": null
+          }
+        }
+      ]
+    },
+    {
+      "field_path": "legs[3].answers.Q5_hold_params",
+      "predicted_value": {
+        "inbound_course_deg": null,
+        "leg_time_min": null,
+        "leg_distance_nm": 4.0,
+        "turn": "RIGHT"
+      },
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_03",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_03",
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [
+            "cell_01",
+            "cell_02"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.3699,
+                "y_center": 0.68215,
+                "width": 0.0504,
+                "height": 0.053
+              },
+              "ocr_texts": [
+                "4000",
+                "4"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW"
+              ],
+              "source_element_ids": [
+                "sample_0010__r004",
+                "sample_0010__r005"
+              ]
+            },
+            {
+              "cell_id": "cell_02",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.4393,
+                "y_center": 0.677725,
+                "width": 0.0504,
+                "height": 0.04415
+              },
+              "ocr_texts": [
+                "EVVIS"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0010__r006",
+                "sample_0010__r007"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "inbound_course_deg": null,
+            "leg_time_min": null,
+            "leg_distance_nm": 4.0,
+            "turn": "RIGHT"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3563 @@
+{
+  "chart_id": "KCOE_L06",
+  "sample_id": "sample_0006",
+  "method": "B3V3",
+  "trace_policy": "sidecar only; not inserted into PR #28 method_output schema",
+  "trace_summary": {
+    "present_field_count": 15,
+    "matched_field_count": 15,
+    "matched_field_rate": 1.0
+  },
+  "field_traces": [
+    {
+      "field_path": "legs[1].answers.Q_terminator",
+      "predicted_value": "CA",
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_01",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_01",
+          "action_type": "initial_climb_or_heading",
+          "source_snippet": "Climb to 2900",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.3154,
+                "y_center": 0.68455,
+                "width": 0.0504,
+                "height": 0.0546
+              },
+              "ocr_texts": [
+                "2900"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW"
+              ],
+              "source_element_ids": [
+                "sample_0006__r005",
+                "sample_0006__r004"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "CA"
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_01",
+          "semantic_step_id": "semantic_step_01",
+          "candidate_ref": null,
+          "action_type": "initial_climb_to_altitude",
+          "source_snippet": "Climb to 2900",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.3154,
+                "y_center": 0.68455,
+                "width": 0.0504,
+                "height": 0.0546
+              },
+              "ocr_texts": [
+                "2900"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW"
+              ],
+              "source_element_ids": [
+                "sample_0006__r005",
+                "sample_0006__r004"
+              ]
+            }
+          ],
+          "hint_confidence": "low",
+          "hint_status": null,
+          "hint_value": [
+            "CA",
+            "VA",
+            "VI"
+          ]
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_02",
+          "semantic_step_id": "semantic_step_02",
+          "candidate_ref": null,
+          "action_type": "climbing_turn_to_altitude",
+          "source_snippet": "climbing left turn to 6000",
+          "evidence_refs": [
+            "cell_02"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_02",
+              "cell_semantic_hint": "turn_or_arc_altitude_cell",
+              "bbox": {
+                "x_center": 0.3705,
+                "y_center": 0.683175,
+                "width": 0.0582,
+                "height": 0.05195
+              },
+              "ocr_texts": [
+                "6000"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "PATH_SEGMENT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r006",
+                "sample_0006__r007"
+              ]
+            }
+          ],
+          "hint_confidence": "low",
+          "hint_status": null,
+          "hint_value": [
+            "CA",
+            "VA",
+            "DF",
+            "CF"
+          ]
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_03",
+          "semantic_step_id": "semantic_step_03",
+          "candidate_ref": null,
+          "action_type": "climbing_turn_to_altitude",
+          "source_snippet": "climbing left turn to 6500",
+          "evidence_refs": [
+            "cell_04"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_04",
+              "cell_semantic_hint": "turn_or_arc_altitude_cell",
+              "bbox": {
+                "x_center": 0.5161,
+                "y_center": 0.683125,
+                "width": 0.0678,
+                "height": 0.05175
+              },
+              "ocr_texts": [
+                "6500"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "PATH_SEGMENT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r011",
+                "sample_0006__r012"
+              ]
+            }
+          ],
+          "hint_confidence": "low",
+          "hint_status": null,
+          "hint_value": [
+            "CA",
+            "VA",
+            "DF",
+            "CF"
+          ]
+        }
+      ]
+    },
+    {
+      "field_path": "legs[1].answers.Q2_altitude_constraint",
+      "predicted_value": {
+        "desc": "AT_OR_ABOVE",
+        "altitude_ft": 2900,
+        "altitude_2_ft": null
+      },
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_01",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_01",
+          "action_type": "initial_climb_or_heading",
+          "source_snippet": "Climb to 2900",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.3154,
+                "y_center": 0.68455,
+                "width": 0.0504,
+                "height": 0.0546
+              },
+              "ocr_texts": [
+                "2900"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW"
+              ],
+              "source_element_ids": [
+                "sample_0006__r005",
+                "sample_0006__r004"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 2900,
+            "altitude_2_ft": null
+          }
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_01",
+          "semantic_step_id": "semantic_step_01",
+          "candidate_ref": null,
+          "action_type": "initial_climb_to_altitude",
+          "source_snippet": "Climb to 2900",
+          "evidence_refs": [
+            "cell_01"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_01",
+              "cell_semantic_hint": "climb_altitude_cell",
+              "bbox": {
+                "x_center": 0.3154,
+                "y_center": 0.68455,
+                "width": 0.0504,
+                "height": 0.0546
+              },
+              "ocr_texts": [
+                "2900"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "CLIMB_ARROW"
+              ],
+              "source_element_ids": [
+                "sample_0006__r005",
+                "sample_0006__r004"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": null,
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 2900,
+            "altitude_2_ft": null
+          }
+        }
+      ]
+    },
+    {
+      "field_path": "legs[2].answers.Q_terminator",
+      "predicted_value": "FA",
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_02",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_02",
+          "action_type": "radial_outbound_or_course",
+          "source_snippet": "COE R-350 outbound",
+          "evidence_refs": [
+            "cell_03",
+            "cell_05",
+            "cell_06"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.4368,
+                "y_center": 0.68455,
+                "width": 0.0533,
+                "height": 0.0434
+              },
+              "ocr_texts": [
+                "COE",
+                "outbnd",
+                "R-350"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r008",
+                "sample_0006__r010",
+                "sample_0006__r009"
+              ]
+            },
+            {
+              "cell_id": "cell_05",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.57,
+                "y_center": 0.6879,
+                "width": 0.055,
+                "height": 0.0502
+              },
+              "ocr_texts": [
+                "30E",
+                "R-350",
+                "inbnd"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r013",
+                "sample_0006__r014",
+                "sample_0006__r015"
+              ]
+            },
+            {
+              "cell_id": "cell_06",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6357,
+                "y_center": 0.681725,
+                "width": 0.0454,
+                "height": 0.03935
+              },
+              "ocr_texts": [
+                "COE"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r016",
+                "sample_0006__r017"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "FA"
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_04",
+          "semantic_step_id": "semantic_step_04",
+          "candidate_ref": null,
+          "action_type": "radial_or_course_to_fix",
+          "source_snippet": "on COE R-350 outbound",
+          "evidence_refs": [
+            "cell_03",
+            "cell_05",
+            "cell_06"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.4368,
+                "y_center": 0.68455,
+                "width": 0.0533,
+                "height": 0.0434
+              },
+              "ocr_texts": [
+                "COE",
+                "outbnd",
+                "R-350"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r008",
+                "sample_0006__r010",
+                "sample_0006__r009"
+              ]
+            },
+            {
+              "cell_id": "cell_05",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.57,
+                "y_center": 0.6879,
+                "width": 0.055,
+                "height": 0.0502
+              },
+              "ocr_texts": [
+                "30E",
+                "R-350",
+                "inbnd"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r013",
+                "sample_0006__r014",
+                "sample_0006__r015"
+              ]
+            },
+            {
+              "cell_id": "cell_06",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6357,
+                "y_center": 0.681725,
+                "width": 0.0454,
+                "height": 0.03935
+              },
+              "ocr_texts": [
+                "COE"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r016",
+                "sample_0006__r017"
+              ]
+            }
+          ],
+          "hint_confidence": "low",
+          "hint_status": null,
+          "hint_value": [
+            "CR",
+            "CF",
+            "FA",
+            "TF"
+          ]
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_05",
+          "semantic_step_id": "semantic_step_05",
+          "candidate_ref": null,
+          "action_type": "radial_or_course_to_fix",
+          "source_snippet": "on COE R-350 inbound to COE",
+          "evidence_refs": [
+            "cell_03",
+            "cell_05",
+            "cell_06"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.4368,
+                "y_center": 0.68455,
+                "width": 0.0533,
+                "height": 0.0434
+              },
+              "ocr_texts": [
+                "COE",
+                "outbnd",
+                "R-350"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r008",
+                "sample_0006__r010",
+                "sample_0006__r009"
+              ]
+            },
+            {
+              "cell_id": "cell_05",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.57,
+                "y_center": 0.6879,
+                "width": 0.055,
+                "height": 0.0502
+              },
+              "ocr_texts": [
+                "30E",
+                "R-350",
+                "inbnd"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r013",
+                "sample_0006__r014",
+                "sample_0006__r015"
+              ]
+            },
+            {
+              "cell_id": "cell_06",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6357,
+                "y_center": 0.681725,
+                "width": 0.0454,
+                "height": 0.03935
+              },
+              "ocr_texts": [
+                "COE"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r016",
+                "sample_0006__r017"
+              ]
+            }
+          ],
+          "hint_confidence": "low",
+          "hint_status": null,
+          "hint_value": [
+            "CR",
+            "CF",
+            "FA",
+            "TF"
+          ]
+        }
+      ]
+    },
+    {
+      "field_path": "legs[2].answers.Q1_fix_ident",
+      "predicted_value": "COE",
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_02",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_02",
+          "action_type": "radial_outbound_or_course",
+          "source_snippet": "COE R-350 outbound",
+          "evidence_refs": [
+            "cell_03",
+            "cell_05",
+            "cell_06"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.4368,
+                "y_center": 0.68455,
+                "width": 0.0533,
+                "height": 0.0434
+              },
+              "ocr_texts": [
+                "COE",
+                "outbnd",
+                "R-350"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r008",
+                "sample_0006__r010",
+                "sample_0006__r009"
+              ]
+            },
+            {
+              "cell_id": "cell_05",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.57,
+                "y_center": 0.6879,
+                "width": 0.055,
+                "height": 0.0502
+              },
+              "ocr_texts": [
+                "30E",
+                "R-350",
+                "inbnd"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r013",
+                "sample_0006__r014",
+                "sample_0006__r015"
+              ]
+            },
+            {
+              "cell_id": "cell_06",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6357,
+                "y_center": 0.681725,
+                "width": 0.0454,
+                "height": 0.03935
+              },
+              "ocr_texts": [
+                "COE"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r016",
+                "sample_0006__r017"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "COE"
+        },
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_03",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_03",
+          "action_type": "radial_to_fix",
+          "source_snippet": "COE R-350 inbound to COE",
+          "evidence_refs": [
+            "cell_03",
+            "cell_05",
+            "cell_06"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.4368,
+                "y_center": 0.68455,
+                "width": 0.0533,
+                "height": 0.0434
+              },
+              "ocr_texts": [
+                "COE",
+                "outbnd",
+                "R-350"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r008",
+                "sample_0006__r010",
+                "sample_0006__r009"
+              ]
+            },
+            {
+              "cell_id": "cell_05",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.57,
+                "y_center": 0.6879,
+                "width": 0.055,
+                "height": 0.0502
+              },
+              "ocr_texts": [
+                "30E",
+                "R-350",
+                "inbnd"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r013",
+                "sample_0006__r014",
+                "sample_0006__r015"
+              ]
+            },
+            {
+              "cell_id": "cell_06",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6357,
+                "y_center": 0.681725,
+                "width": 0.0454,
+                "height": 0.03935
+              },
+              "ocr_texts": [
+                "COE"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r016",
+                "sample_0006__r017"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "COE"
+        },
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_04",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_04",
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [
+            "cell_03",
+            "cell_04",
+            "cell_06"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.4368,
+                "y_center": 0.68455,
+                "width": 0.0533,
+                "height": 0.0434
+              },
+              "ocr_texts": [
+                "COE",
+                "outbnd",
+                "R-350"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r008",
+                "sample_0006__r010",
+                "sample_0006__r009"
+              ]
+            },
+            {
+              "cell_id": "cell_04",
+              "cell_semantic_hint": "turn_or_arc_altitude_cell",
+              "bbox": {
+                "x_center": 0.5161,
+                "y_center": 0.683125,
+                "width": 0.0678,
+                "height": 0.05175
+              },
+              "ocr_texts": [
+                "6500"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "PATH_SEGMENT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r011",
+                "sample_0006__r012"
+              ]
+            },
+            {
+              "cell_id": "cell_06",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6357,
+                "y_center": 0.681725,
+                "width": 0.0454,
+                "height": 0.03935
+              },
+              "ocr_texts": [
+                "COE"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r016",
+                "sample_0006__r017"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "COE"
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_05",
+          "semantic_step_id": "semantic_step_05",
+          "candidate_ref": null,
+          "action_type": "radial_or_course_to_fix",
+          "source_snippet": "on COE R-350 inbound to COE",
+          "evidence_refs": [
+            "cell_03",
+            "cell_05",
+            "cell_06"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.4368,
+                "y_center": 0.68455,
+                "width": 0.0533,
+                "height": 0.0434
+              },
+              "ocr_texts": [
+                "COE",
+                "outbnd",
+                "R-350"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r008",
+                "sample_0006__r010",
+                "sample_0006__r009"
+              ]
+            },
+            {
+              "cell_id": "cell_05",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.57,
+                "y_center": 0.6879,
+                "width": 0.055,
+                "height": 0.0502
+              },
+              "ocr_texts": [
+                "30E",
+                "R-350",
+                "inbnd"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r013",
+                "sample_0006__r014",
+                "sample_0006__r015"
+              ]
+            },
+            {
+              "cell_id": "cell_06",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6357,
+                "y_center": 0.681725,
+                "width": 0.0454,
+                "height": 0.03935
+              },
+              "ocr_texts": [
+                "COE"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r016",
+                "sample_0006__r017"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": null,
+          "hint_value": "COE"
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_06",
+          "semantic_step_id": "semantic_step_06",
+          "candidate_ref": null,
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [
+            "cell_03",
+            "cell_06"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.4368,
+                "y_center": 0.68455,
+                "width": 0.0533,
+                "height": 0.0434
+              },
+              "ocr_texts": [
+                "COE",
+                "outbnd",
+                "R-350"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r008",
+                "sample_0006__r010",
+                "sample_0006__r009"
+              ]
+            },
+            {
+              "cell_id": "cell_06",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6357,
+                "y_center": 0.681725,
+                "width": 0.0454,
+                "height": 0.03935
+              },
+              "ocr_texts": [
+                "COE"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r016",
+                "sample_0006__r017"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": null,
+          "hint_value": "COE"
+        }
+      ]
+    },
+    {
+      "field_path": "legs[2].answers.Q2_altitude_constraint",
+      "predicted_value": {
+        "desc": "AT_OR_ABOVE",
+        "altitude_ft": 6000,
+        "altitude_2_ft": null
+      },
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_02",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_02",
+          "action_type": "radial_outbound_or_course",
+          "source_snippet": "COE R-350 outbound",
+          "evidence_refs": [
+            "cell_02"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_02",
+              "cell_semantic_hint": "turn_or_arc_altitude_cell",
+              "bbox": {
+                "x_center": 0.3705,
+                "y_center": 0.683175,
+                "width": 0.0582,
+                "height": 0.05195
+              },
+              "ocr_texts": [
+                "6000"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "PATH_SEGMENT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r006",
+                "sample_0006__r007"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 6000,
+            "altitude_2_ft": null
+          }
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_02",
+          "semantic_step_id": "semantic_step_02",
+          "candidate_ref": null,
+          "action_type": "climbing_turn_to_altitude",
+          "source_snippet": "climbing left turn to 6000",
+          "evidence_refs": [
+            "cell_02"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_02",
+              "cell_semantic_hint": "turn_or_arc_altitude_cell",
+              "bbox": {
+                "x_center": 0.3705,
+                "y_center": 0.683175,
+                "width": 0.0582,
+                "height": 0.05195
+              },
+              "ocr_texts": [
+                "6000"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "PATH_SEGMENT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r006",
+                "sample_0006__r007"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": null,
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 6000,
+            "altitude_2_ft": null
+          }
+        }
+      ]
+    },
+    {
+      "field_path": "legs[2].answers.Q4_course_or_radial",
+      "predicted_value": {
+        "type": "navaid_radial",
+        "navaid": "COE",
+        "radial_deg": 350,
+        "direction": "outbound"
+      },
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_02",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_02",
+          "action_type": "radial_outbound_or_course",
+          "source_snippet": "COE R-350 outbound",
+          "evidence_refs": [
+            "cell_03",
+            "cell_05",
+            "cell_06"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.4368,
+                "y_center": 0.68455,
+                "width": 0.0533,
+                "height": 0.0434
+              },
+              "ocr_texts": [
+                "COE",
+                "outbnd",
+                "R-350"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r008",
+                "sample_0006__r010",
+                "sample_0006__r009"
+              ]
+            },
+            {
+              "cell_id": "cell_05",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.57,
+                "y_center": 0.6879,
+                "width": 0.055,
+                "height": 0.0502
+              },
+              "ocr_texts": [
+                "30E",
+                "R-350",
+                "inbnd"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r013",
+                "sample_0006__r014",
+                "sample_0006__r015"
+              ]
+            },
+            {
+              "cell_id": "cell_06",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6357,
+                "y_center": 0.681725,
+                "width": 0.0454,
+                "height": 0.03935
+              },
+              "ocr_texts": [
+                "COE"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r016",
+                "sample_0006__r017"
+              ]
+            }
+          ],
+          "hint_confidence": "high",
+          "hint_status": "present",
+          "hint_value": {
+            "type": "navaid_radial",
+            "navaid": "COE",
+            "radial_deg": 350,
+            "direction": "outbound"
+          }
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_04",
+          "semantic_step_id": "semantic_step_04",
+          "candidate_ref": null,
+          "action_type": "radial_or_course_to_fix",
+          "source_snippet": "on COE R-350 outbound",
+          "evidence_refs": [
+            "cell_03",
+            "cell_05",
+            "cell_06"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.4368,
+                "y_center": 0.68455,
+                "width": 0.0533,
+                "height": 0.0434
+              },
+              "ocr_texts": [
+                "COE",
+                "outbnd",
+                "R-350"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r008",
+                "sample_0006__r010",
+                "sample_0006__r009"
+              ]
+            },
+            {
+              "cell_id": "cell_05",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.57,
+                "y_center": 0.6879,
+                "width": 0.055,
+                "height": 0.0502
+              },
+              "ocr_texts": [
+                "30E",
+                "R-350",
+                "inbnd"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r013",
+                "sample_0006__r014",
+                "sample_0006__r015"
+              ]
+            },
+            {
+              "cell_id": "cell_06",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6357,
+                "y_center": 0.681725,
+                "width": 0.0454,
+                "height": 0.03935
+              },
+              "ocr_texts": [
+                "COE"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r016",
+                "sample_0006__r017"
+              ]
+            }
+          ],
+          "hint_confidence": "high",
+          "hint_status": null,
+          "hint_value": {
+            "type": "navaid_radial",
+            "navaid": "COE",
+            "radial_deg": 350,
+            "direction": "outbound"
+          }
+        }
+      ]
+    },
+    {
+      "field_path": "legs[3].answers.Q_terminator",
+      "predicted_value": "CF",
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_03",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_03",
+          "action_type": "radial_to_fix",
+          "source_snippet": "COE R-350 inbound to COE",
+          "evidence_refs": [
+            "cell_03",
+            "cell_05",
+            "cell_06"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.4368,
+                "y_center": 0.68455,
+                "width": 0.0533,
+                "height": 0.0434
+              },
+              "ocr_texts": [
+                "COE",
+                "outbnd",
+                "R-350"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r008",
+                "sample_0006__r010",
+                "sample_0006__r009"
+              ]
+            },
+            {
+              "cell_id": "cell_05",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.57,
+                "y_center": 0.6879,
+                "width": 0.055,
+                "height": 0.0502
+              },
+              "ocr_texts": [
+                "30E",
+                "R-350",
+                "inbnd"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r013",
+                "sample_0006__r014",
+                "sample_0006__r015"
+              ]
+            },
+            {
+              "cell_id": "cell_06",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6357,
+                "y_center": 0.681725,
+                "width": 0.0454,
+                "height": 0.03935
+              },
+              "ocr_texts": [
+                "COE"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r016",
+                "sample_0006__r017"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "CF"
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_02",
+          "semantic_step_id": "semantic_step_02",
+          "candidate_ref": null,
+          "action_type": "climbing_turn_to_altitude",
+          "source_snippet": "climbing left turn to 6000",
+          "evidence_refs": [
+            "cell_02"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_02",
+              "cell_semantic_hint": "turn_or_arc_altitude_cell",
+              "bbox": {
+                "x_center": 0.3705,
+                "y_center": 0.683175,
+                "width": 0.0582,
+                "height": 0.05195
+              },
+              "ocr_texts": [
+                "6000"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "PATH_SEGMENT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r006",
+                "sample_0006__r007"
+              ]
+            }
+          ],
+          "hint_confidence": "low",
+          "hint_status": null,
+          "hint_value": [
+            "CA",
+            "VA",
+            "DF",
+            "CF"
+          ]
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_03",
+          "semantic_step_id": "semantic_step_03",
+          "candidate_ref": null,
+          "action_type": "climbing_turn_to_altitude",
+          "source_snippet": "climbing left turn to 6500",
+          "evidence_refs": [
+            "cell_04"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_04",
+              "cell_semantic_hint": "turn_or_arc_altitude_cell",
+              "bbox": {
+                "x_center": 0.5161,
+                "y_center": 0.683125,
+                "width": 0.0678,
+                "height": 0.05175
+              },
+              "ocr_texts": [
+                "6500"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "PATH_SEGMENT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r011",
+                "sample_0006__r012"
+              ]
+            }
+          ],
+          "hint_confidence": "low",
+          "hint_status": null,
+          "hint_value": [
+            "CA",
+            "VA",
+            "DF",
+            "CF"
+          ]
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_04",
+          "semantic_step_id": "semantic_step_04",
+          "candidate_ref": null,
+          "action_type": "radial_or_course_to_fix",
+          "source_snippet": "on COE R-350 outbound",
+          "evidence_refs": [
+            "cell_03",
+            "cell_05",
+            "cell_06"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.4368,
+                "y_center": 0.68455,
+                "width": 0.0533,
+                "height": 0.0434
+              },
+              "ocr_texts": [
+                "COE",
+                "outbnd",
+                "R-350"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r008",
+                "sample_0006__r010",
+                "sample_0006__r009"
+              ]
+            },
+            {
+              "cell_id": "cell_05",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.57,
+                "y_center": 0.6879,
+                "width": 0.055,
+                "height": 0.0502
+              },
+              "ocr_texts": [
+                "30E",
+                "R-350",
+                "inbnd"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r013",
+                "sample_0006__r014",
+                "sample_0006__r015"
+              ]
+            },
+            {
+              "cell_id": "cell_06",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6357,
+                "y_center": 0.681725,
+                "width": 0.0454,
+                "height": 0.03935
+              },
+              "ocr_texts": [
+                "COE"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r016",
+                "sample_0006__r017"
+              ]
+            }
+          ],
+          "hint_confidence": "low",
+          "hint_status": null,
+          "hint_value": [
+            "CR",
+            "CF",
+            "FA",
+            "TF"
+          ]
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_05",
+          "semantic_step_id": "semantic_step_05",
+          "candidate_ref": null,
+          "action_type": "radial_or_course_to_fix",
+          "source_snippet": "on COE R-350 inbound to COE",
+          "evidence_refs": [
+            "cell_03",
+            "cell_05",
+            "cell_06"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.4368,
+                "y_center": 0.68455,
+                "width": 0.0533,
+                "height": 0.0434
+              },
+              "ocr_texts": [
+                "COE",
+                "outbnd",
+                "R-350"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r008",
+                "sample_0006__r010",
+                "sample_0006__r009"
+              ]
+            },
+            {
+              "cell_id": "cell_05",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.57,
+                "y_center": 0.6879,
+                "width": 0.055,
+                "height": 0.0502
+              },
+              "ocr_texts": [
+                "30E",
+                "R-350",
+                "inbnd"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r013",
+                "sample_0006__r014",
+                "sample_0006__r015"
+              ]
+            },
+            {
+              "cell_id": "cell_06",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6357,
+                "y_center": 0.681725,
+                "width": 0.0454,
+                "height": 0.03935
+              },
+              "ocr_texts": [
+                "COE"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r016",
+                "sample_0006__r017"
+              ]
+            }
+          ],
+          "hint_confidence": "low",
+          "hint_status": null,
+          "hint_value": [
+            "CR",
+            "CF",
+            "FA",
+            "TF"
+          ]
+        }
+      ]
+    },
+    {
+      "field_path": "legs[3].answers.Q1_fix_ident",
+      "predicted_value": "COE",
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_02",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_02",
+          "action_type": "radial_outbound_or_course",
+          "source_snippet": "COE R-350 outbound",
+          "evidence_refs": [
+            "cell_03",
+            "cell_05",
+            "cell_06"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.4368,
+                "y_center": 0.68455,
+                "width": 0.0533,
+                "height": 0.0434
+              },
+              "ocr_texts": [
+                "COE",
+                "outbnd",
+                "R-350"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r008",
+                "sample_0006__r010",
+                "sample_0006__r009"
+              ]
+            },
+            {
+              "cell_id": "cell_05",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.57,
+                "y_center": 0.6879,
+                "width": 0.055,
+                "height": 0.0502
+              },
+              "ocr_texts": [
+                "30E",
+                "R-350",
+                "inbnd"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r013",
+                "sample_0006__r014",
+                "sample_0006__r015"
+              ]
+            },
+            {
+              "cell_id": "cell_06",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6357,
+                "y_center": 0.681725,
+                "width": 0.0454,
+                "height": 0.03935
+              },
+              "ocr_texts": [
+                "COE"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r016",
+                "sample_0006__r017"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "COE"
+        },
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_03",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_03",
+          "action_type": "radial_to_fix",
+          "source_snippet": "COE R-350 inbound to COE",
+          "evidence_refs": [
+            "cell_03",
+            "cell_05",
+            "cell_06"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.4368,
+                "y_center": 0.68455,
+                "width": 0.0533,
+                "height": 0.0434
+              },
+              "ocr_texts": [
+                "COE",
+                "outbnd",
+                "R-350"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r008",
+                "sample_0006__r010",
+                "sample_0006__r009"
+              ]
+            },
+            {
+              "cell_id": "cell_05",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.57,
+                "y_center": 0.6879,
+                "width": 0.055,
+                "height": 0.0502
+              },
+              "ocr_texts": [
+                "30E",
+                "R-350",
+                "inbnd"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r013",
+                "sample_0006__r014",
+                "sample_0006__r015"
+              ]
+            },
+            {
+              "cell_id": "cell_06",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6357,
+                "y_center": 0.681725,
+                "width": 0.0454,
+                "height": 0.03935
+              },
+              "ocr_texts": [
+                "COE"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r016",
+                "sample_0006__r017"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "COE"
+        },
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_04",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_04",
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [
+            "cell_03",
+            "cell_04",
+            "cell_06"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.4368,
+                "y_center": 0.68455,
+                "width": 0.0533,
+                "height": 0.0434
+              },
+              "ocr_texts": [
+                "COE",
+                "outbnd",
+                "R-350"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r008",
+                "sample_0006__r010",
+                "sample_0006__r009"
+              ]
+            },
+            {
+              "cell_id": "cell_04",
+              "cell_semantic_hint": "turn_or_arc_altitude_cell",
+              "bbox": {
+                "x_center": 0.5161,
+                "y_center": 0.683125,
+                "width": 0.0678,
+                "height": 0.05175
+              },
+              "ocr_texts": [
+                "6500"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "PATH_SEGMENT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r011",
+                "sample_0006__r012"
+              ]
+            },
+            {
+              "cell_id": "cell_06",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6357,
+                "y_center": 0.681725,
+                "width": 0.0454,
+                "height": 0.03935
+              },
+              "ocr_texts": [
+                "COE"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r016",
+                "sample_0006__r017"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "COE"
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_05",
+          "semantic_step_id": "semantic_step_05",
+          "candidate_ref": null,
+          "action_type": "radial_or_course_to_fix",
+          "source_snippet": "on COE R-350 inbound to COE",
+          "evidence_refs": [
+            "cell_03",
+            "cell_05",
+            "cell_06"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.4368,
+                "y_center": 0.68455,
+                "width": 0.0533,
+                "height": 0.0434
+              },
+              "ocr_texts": [
+                "COE",
+                "outbnd",
+                "R-350"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r008",
+                "sample_0006__r010",
+                "sample_0006__r009"
+              ]
+            },
+            {
+              "cell_id": "cell_05",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.57,
+                "y_center": 0.6879,
+                "width": 0.055,
+                "height": 0.0502
+              },
+              "ocr_texts": [
+                "30E",
+                "R-350",
+                "inbnd"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r013",
+                "sample_0006__r014",
+                "sample_0006__r015"
+              ]
+            },
+            {
+              "cell_id": "cell_06",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6357,
+                "y_center": 0.681725,
+                "width": 0.0454,
+                "height": 0.03935
+              },
+              "ocr_texts": [
+                "COE"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r016",
+                "sample_0006__r017"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": null,
+          "hint_value": "COE"
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_06",
+          "semantic_step_id": "semantic_step_06",
+          "candidate_ref": null,
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [
+            "cell_03",
+            "cell_06"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.4368,
+                "y_center": 0.68455,
+                "width": 0.0533,
+                "height": 0.0434
+              },
+              "ocr_texts": [
+                "COE",
+                "outbnd",
+                "R-350"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r008",
+                "sample_0006__r010",
+                "sample_0006__r009"
+              ]
+            },
+            {
+              "cell_id": "cell_06",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6357,
+                "y_center": 0.681725,
+                "width": 0.0454,
+                "height": 0.03935
+              },
+              "ocr_texts": [
+                "COE"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r016",
+                "sample_0006__r017"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": null,
+          "hint_value": "COE"
+        }
+      ]
+    },
+    {
+      "field_path": "legs[3].answers.Q2_altitude_constraint",
+      "predicted_value": {
+        "desc": "AT_OR_ABOVE",
+        "altitude_ft": 6500,
+        "altitude_2_ft": null
+      },
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_03",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_03",
+          "action_type": "radial_to_fix",
+          "source_snippet": "COE R-350 inbound to COE",
+          "evidence_refs": [
+            "cell_04"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_04",
+              "cell_semantic_hint": "turn_or_arc_altitude_cell",
+              "bbox": {
+                "x_center": 0.5161,
+                "y_center": 0.683125,
+                "width": 0.0678,
+                "height": 0.05175
+              },
+              "ocr_texts": [
+                "6500"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "PATH_SEGMENT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r011",
+                "sample_0006__r012"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 6500,
+            "altitude_2_ft": null
+          }
+        },
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_04",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_04",
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [
+            "cell_04"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_04",
+              "cell_semantic_hint": "turn_or_arc_altitude_cell",
+              "bbox": {
+                "x_center": 0.5161,
+                "y_center": 0.683125,
+                "width": 0.0678,
+                "height": 0.05175
+              },
+              "ocr_texts": [
+                "6500"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "PATH_SEGMENT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r011",
+                "sample_0006__r012"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 6500,
+            "altitude_2_ft": null
+          }
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_03",
+          "semantic_step_id": "semantic_step_03",
+          "candidate_ref": null,
+          "action_type": "climbing_turn_to_altitude",
+          "source_snippet": "climbing left turn to 6500",
+          "evidence_refs": [
+            "cell_04"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_04",
+              "cell_semantic_hint": "turn_or_arc_altitude_cell",
+              "bbox": {
+                "x_center": 0.5161,
+                "y_center": 0.683125,
+                "width": 0.0678,
+                "height": 0.05175
+              },
+              "ocr_texts": [
+                "6500"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "PATH_SEGMENT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r011",
+                "sample_0006__r012"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": null,
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 6500,
+            "altitude_2_ft": null
+          }
+        }
+      ]
+    },
+    {
+      "field_path": "legs[3].answers.Q3_turn",
+      "predicted_value": "LEFT",
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_03",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_03",
+          "action_type": "radial_to_fix",
+          "source_snippet": "COE R-350 inbound to COE",
+          "evidence_refs": [
+            "cell_03",
+            "cell_05",
+            "cell_06"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.4368,
+                "y_center": 0.68455,
+                "width": 0.0533,
+                "height": 0.0434
+              },
+              "ocr_texts": [
+                "COE",
+                "outbnd",
+                "R-350"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r008",
+                "sample_0006__r010",
+                "sample_0006__r009"
+              ]
+            },
+            {
+              "cell_id": "cell_05",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.57,
+                "y_center": 0.6879,
+                "width": 0.055,
+                "height": 0.0502
+              },
+              "ocr_texts": [
+                "30E",
+                "R-350",
+                "inbnd"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r013",
+                "sample_0006__r014",
+                "sample_0006__r015"
+              ]
+            },
+            {
+              "cell_id": "cell_06",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6357,
+                "y_center": 0.681725,
+                "width": 0.0454,
+                "height": 0.03935
+              },
+              "ocr_texts": [
+                "COE"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r016",
+                "sample_0006__r017"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "LEFT"
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_02",
+          "semantic_step_id": "semantic_step_02",
+          "candidate_ref": null,
+          "action_type": "climbing_turn_to_altitude",
+          "source_snippet": "climbing left turn to 6000",
+          "evidence_refs": [
+            "cell_02"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_02",
+              "cell_semantic_hint": "turn_or_arc_altitude_cell",
+              "bbox": {
+                "x_center": 0.3705,
+                "y_center": 0.683175,
+                "width": 0.0582,
+                "height": 0.05195
+              },
+              "ocr_texts": [
+                "6000"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "PATH_SEGMENT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r006",
+                "sample_0006__r007"
+              ]
+            }
+          ],
+          "hint_confidence": "high",
+          "hint_status": null,
+          "hint_value": "LEFT"
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_03",
+          "semantic_step_id": "semantic_step_03",
+          "candidate_ref": null,
+          "action_type": "climbing_turn_to_altitude",
+          "source_snippet": "climbing left turn to 6500",
+          "evidence_refs": [
+            "cell_04"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_04",
+              "cell_semantic_hint": "turn_or_arc_altitude_cell",
+              "bbox": {
+                "x_center": 0.5161,
+                "y_center": 0.683125,
+                "width": 0.0678,
+                "height": 0.05175
+              },
+              "ocr_texts": [
+                "6500"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "PATH_SEGMENT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r011",
+                "sample_0006__r012"
+              ]
+            }
+          ],
+          "hint_confidence": "high",
+          "hint_status": null,
+          "hint_value": "LEFT"
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_04",
+          "semantic_step_id": "semantic_step_04",
+          "candidate_ref": null,
+          "action_type": "radial_or_course_to_fix",
+          "source_snippet": "on COE R-350 outbound",
+          "evidence_refs": [
+            "cell_03",
+            "cell_05",
+            "cell_06"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.4368,
+                "y_center": 0.68455,
+                "width": 0.0533,
+                "height": 0.0434
+              },
+              "ocr_texts": [
+                "COE",
+                "outbnd",
+                "R-350"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r008",
+                "sample_0006__r010",
+                "sample_0006__r009"
+              ]
+            },
+            {
+              "cell_id": "cell_05",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.57,
+                "y_center": 0.6879,
+                "width": 0.055,
+                "height": 0.0502
+              },
+              "ocr_texts": [
+                "30E",
+                "R-350",
+                "inbnd"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r013",
+                "sample_0006__r014",
+                "sample_0006__r015"
+              ]
+            },
+            {
+              "cell_id": "cell_06",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6357,
+                "y_center": 0.681725,
+                "width": 0.0454,
+                "height": 0.03935
+              },
+              "ocr_texts": [
+                "COE"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r016",
+                "sample_0006__r017"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": null,
+          "hint_value": "LEFT"
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_05",
+          "semantic_step_id": "semantic_step_05",
+          "candidate_ref": null,
+          "action_type": "radial_or_course_to_fix",
+          "source_snippet": "on COE R-350 inbound to COE",
+          "evidence_refs": [
+            "cell_03",
+            "cell_05",
+            "cell_06"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.4368,
+                "y_center": 0.68455,
+                "width": 0.0533,
+                "height": 0.0434
+              },
+              "ocr_texts": [
+                "COE",
+                "outbnd",
+                "R-350"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r008",
+                "sample_0006__r010",
+                "sample_0006__r009"
+              ]
+            },
+            {
+              "cell_id": "cell_05",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.57,
+                "y_center": 0.6879,
+                "width": 0.055,
+                "height": 0.0502
+              },
+              "ocr_texts": [
+                "30E",
+                "R-350",
+                "inbnd"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r013",
+                "sample_0006__r014",
+                "sample_0006__r015"
+              ]
+            },
+            {
+              "cell_id": "cell_06",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6357,
+                "y_center": 0.681725,
+                "width": 0.0454,
+                "height": 0.03935
+              },
+              "ocr_texts": [
+                "COE"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r016",
+                "sample_0006__r017"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": null,
+          "hint_value": "LEFT"
+        }
+      ]
+    },
+    {
+      "field_path": "legs[3].answers.Q4_course_or_radial",
+      "predicted_value": {
+        "type": "navaid_radial",
+        "navaid": "COE",
+        "radial_deg": 350,
+        "direction": "inbound"
+      },
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_03",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_03",
+          "action_type": "radial_to_fix",
+          "source_snippet": "COE R-350 inbound to COE",
+          "evidence_refs": [
+            "cell_03",
+            "cell_05",
+            "cell_06"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.4368,
+                "y_center": 0.68455,
+                "width": 0.0533,
+                "height": 0.0434
+              },
+              "ocr_texts": [
+                "COE",
+                "outbnd",
+                "R-350"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r008",
+                "sample_0006__r010",
+                "sample_0006__r009"
+              ]
+            },
+            {
+              "cell_id": "cell_05",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.57,
+                "y_center": 0.6879,
+                "width": 0.055,
+                "height": 0.0502
+              },
+              "ocr_texts": [
+                "30E",
+                "R-350",
+                "inbnd"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r013",
+                "sample_0006__r014",
+                "sample_0006__r015"
+              ]
+            },
+            {
+              "cell_id": "cell_06",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6357,
+                "y_center": 0.681725,
+                "width": 0.0454,
+                "height": 0.03935
+              },
+              "ocr_texts": [
+                "COE"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r016",
+                "sample_0006__r017"
+              ]
+            }
+          ],
+          "hint_confidence": "high",
+          "hint_status": "present",
+          "hint_value": {
+            "type": "navaid_radial",
+            "navaid": "COE",
+            "radial_deg": 350,
+            "direction": "inbound"
+          }
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_05",
+          "semantic_step_id": "semantic_step_05",
+          "candidate_ref": null,
+          "action_type": "radial_or_course_to_fix",
+          "source_snippet": "on COE R-350 inbound to COE",
+          "evidence_refs": [
+            "cell_03",
+            "cell_05",
+            "cell_06"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.4368,
+                "y_center": 0.68455,
+                "width": 0.0533,
+                "height": 0.0434
+              },
+              "ocr_texts": [
+                "COE",
+                "outbnd",
+                "R-350"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r008",
+                "sample_0006__r010",
+                "sample_0006__r009"
+              ]
+            },
+            {
+              "cell_id": "cell_05",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.57,
+                "y_center": 0.6879,
+                "width": 0.055,
+                "height": 0.0502
+              },
+              "ocr_texts": [
+                "30E",
+                "R-350",
+                "inbnd"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r013",
+                "sample_0006__r014",
+                "sample_0006__r015"
+              ]
+            },
+            {
+              "cell_id": "cell_06",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6357,
+                "y_center": 0.681725,
+                "width": 0.0454,
+                "height": 0.03935
+              },
+              "ocr_texts": [
+                "COE"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r016",
+                "sample_0006__r017"
+              ]
+            }
+          ],
+          "hint_confidence": "high",
+          "hint_status": null,
+          "hint_value": {
+            "type": "navaid_radial",
+            "navaid": "COE",
+            "radial_deg": 350,
+            "direction": "inbound"
+          }
+        }
+      ]
+    },
+    {
+      "field_path": "legs[4].answers.Q_terminator",
+      "predicted_value": "HM",
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_04",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_04",
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [
+            "cell_03",
+            "cell_04",
+            "cell_06"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.4368,
+                "y_center": 0.68455,
+                "width": 0.0533,
+                "height": 0.0434
+              },
+              "ocr_texts": [
+                "COE",
+                "outbnd",
+                "R-350"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r008",
+                "sample_0006__r010",
+                "sample_0006__r009"
+              ]
+            },
+            {
+              "cell_id": "cell_04",
+              "cell_semantic_hint": "turn_or_arc_altitude_cell",
+              "bbox": {
+                "x_center": 0.5161,
+                "y_center": 0.683125,
+                "width": 0.0678,
+                "height": 0.05175
+              },
+              "ocr_texts": [
+                "6500"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "PATH_SEGMENT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r011",
+                "sample_0006__r012"
+              ]
+            },
+            {
+              "cell_id": "cell_06",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6357,
+                "y_center": 0.681725,
+                "width": 0.0454,
+                "height": 0.03935
+              },
+              "ocr_texts": [
+                "COE"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r016",
+                "sample_0006__r017"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "HM"
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_06",
+          "semantic_step_id": "semantic_step_06",
+          "candidate_ref": null,
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [
+            "cell_03",
+            "cell_06"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.4368,
+                "y_center": 0.68455,
+                "width": 0.0533,
+                "height": 0.0434
+              },
+              "ocr_texts": [
+                "COE",
+                "outbnd",
+                "R-350"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r008",
+                "sample_0006__r010",
+                "sample_0006__r009"
+              ]
+            },
+            {
+              "cell_id": "cell_06",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6357,
+                "y_center": 0.681725,
+                "width": 0.0454,
+                "height": 0.03935
+              },
+              "ocr_texts": [
+                "COE"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r016",
+                "sample_0006__r017"
+              ]
+            }
+          ],
+          "hint_confidence": "low",
+          "hint_status": null,
+          "hint_value": [
+            "HM",
+            "HF",
+            "HA"
+          ]
+        }
+      ]
+    },
+    {
+      "field_path": "legs[4].answers.Q1_fix_ident",
+      "predicted_value": "COE",
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_02",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_02",
+          "action_type": "radial_outbound_or_course",
+          "source_snippet": "COE R-350 outbound",
+          "evidence_refs": [
+            "cell_03",
+            "cell_05",
+            "cell_06"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.4368,
+                "y_center": 0.68455,
+                "width": 0.0533,
+                "height": 0.0434
+              },
+              "ocr_texts": [
+                "COE",
+                "outbnd",
+                "R-350"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r008",
+                "sample_0006__r010",
+                "sample_0006__r009"
+              ]
+            },
+            {
+              "cell_id": "cell_05",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.57,
+                "y_center": 0.6879,
+                "width": 0.055,
+                "height": 0.0502
+              },
+              "ocr_texts": [
+                "30E",
+                "R-350",
+                "inbnd"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r013",
+                "sample_0006__r014",
+                "sample_0006__r015"
+              ]
+            },
+            {
+              "cell_id": "cell_06",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6357,
+                "y_center": 0.681725,
+                "width": 0.0454,
+                "height": 0.03935
+              },
+              "ocr_texts": [
+                "COE"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r016",
+                "sample_0006__r017"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "COE"
+        },
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_03",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_03",
+          "action_type": "radial_to_fix",
+          "source_snippet": "COE R-350 inbound to COE",
+          "evidence_refs": [
+            "cell_03",
+            "cell_05",
+            "cell_06"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.4368,
+                "y_center": 0.68455,
+                "width": 0.0533,
+                "height": 0.0434
+              },
+              "ocr_texts": [
+                "COE",
+                "outbnd",
+                "R-350"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r008",
+                "sample_0006__r010",
+                "sample_0006__r009"
+              ]
+            },
+            {
+              "cell_id": "cell_05",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.57,
+                "y_center": 0.6879,
+                "width": 0.055,
+                "height": 0.0502
+              },
+              "ocr_texts": [
+                "30E",
+                "R-350",
+                "inbnd"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r013",
+                "sample_0006__r014",
+                "sample_0006__r015"
+              ]
+            },
+            {
+              "cell_id": "cell_06",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6357,
+                "y_center": 0.681725,
+                "width": 0.0454,
+                "height": 0.03935
+              },
+              "ocr_texts": [
+                "COE"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r016",
+                "sample_0006__r017"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "COE"
+        },
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_04",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_04",
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [
+            "cell_03",
+            "cell_04",
+            "cell_06"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.4368,
+                "y_center": 0.68455,
+                "width": 0.0533,
+                "height": 0.0434
+              },
+              "ocr_texts": [
+                "COE",
+                "outbnd",
+                "R-350"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r008",
+                "sample_0006__r010",
+                "sample_0006__r009"
+              ]
+            },
+            {
+              "cell_id": "cell_04",
+              "cell_semantic_hint": "turn_or_arc_altitude_cell",
+              "bbox": {
+                "x_center": 0.5161,
+                "y_center": 0.683125,
+                "width": 0.0678,
+                "height": 0.05175
+              },
+              "ocr_texts": [
+                "6500"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "PATH_SEGMENT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r011",
+                "sample_0006__r012"
+              ]
+            },
+            {
+              "cell_id": "cell_06",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6357,
+                "y_center": 0.681725,
+                "width": 0.0454,
+                "height": 0.03935
+              },
+              "ocr_texts": [
+                "COE"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r016",
+                "sample_0006__r017"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": "COE"
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_05",
+          "semantic_step_id": "semantic_step_05",
+          "candidate_ref": null,
+          "action_type": "radial_or_course_to_fix",
+          "source_snippet": "on COE R-350 inbound to COE",
+          "evidence_refs": [
+            "cell_03",
+            "cell_05",
+            "cell_06"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.4368,
+                "y_center": 0.68455,
+                "width": 0.0533,
+                "height": 0.0434
+              },
+              "ocr_texts": [
+                "COE",
+                "outbnd",
+                "R-350"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r008",
+                "sample_0006__r010",
+                "sample_0006__r009"
+              ]
+            },
+            {
+              "cell_id": "cell_05",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.57,
+                "y_center": 0.6879,
+                "width": 0.055,
+                "height": 0.0502
+              },
+              "ocr_texts": [
+                "30E",
+                "R-350",
+                "inbnd"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r013",
+                "sample_0006__r014",
+                "sample_0006__r015"
+              ]
+            },
+            {
+              "cell_id": "cell_06",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6357,
+                "y_center": 0.681725,
+                "width": 0.0454,
+                "height": 0.03935
+              },
+              "ocr_texts": [
+                "COE"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r016",
+                "sample_0006__r017"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": null,
+          "hint_value": "COE"
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_06",
+          "semantic_step_id": "semantic_step_06",
+          "candidate_ref": null,
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [
+            "cell_03",
+            "cell_06"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.4368,
+                "y_center": 0.68455,
+                "width": 0.0533,
+                "height": 0.0434
+              },
+              "ocr_texts": [
+                "COE",
+                "outbnd",
+                "R-350"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r008",
+                "sample_0006__r010",
+                "sample_0006__r009"
+              ]
+            },
+            {
+              "cell_id": "cell_06",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6357,
+                "y_center": 0.681725,
+                "width": 0.0454,
+                "height": 0.03935
+              },
+              "ocr_texts": [
+                "COE"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r016",
+                "sample_0006__r017"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": null,
+          "hint_value": "COE"
+        }
+      ]
+    },
+    {
+      "field_path": "legs[4].answers.Q2_altitude_constraint",
+      "predicted_value": {
+        "desc": "AT_OR_ABOVE",
+        "altitude_ft": 6500,
+        "altitude_2_ft": null
+      },
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_03",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_03",
+          "action_type": "radial_to_fix",
+          "source_snippet": "COE R-350 inbound to COE",
+          "evidence_refs": [
+            "cell_04"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_04",
+              "cell_semantic_hint": "turn_or_arc_altitude_cell",
+              "bbox": {
+                "x_center": 0.5161,
+                "y_center": 0.683125,
+                "width": 0.0678,
+                "height": 0.05175
+              },
+              "ocr_texts": [
+                "6500"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "PATH_SEGMENT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r011",
+                "sample_0006__r012"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 6500,
+            "altitude_2_ft": null
+          }
+        },
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_04",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_04",
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [
+            "cell_04"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_04",
+              "cell_semantic_hint": "turn_or_arc_altitude_cell",
+              "bbox": {
+                "x_center": 0.5161,
+                "y_center": 0.683125,
+                "width": 0.0678,
+                "height": 0.05175
+              },
+              "ocr_texts": [
+                "6500"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "PATH_SEGMENT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r011",
+                "sample_0006__r012"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 6500,
+            "altitude_2_ft": null
+          }
+        },
+        {
+          "source_type": "semantic_step",
+          "source_id": "semantic_step_03",
+          "semantic_step_id": "semantic_step_03",
+          "candidate_ref": null,
+          "action_type": "climbing_turn_to_altitude",
+          "source_snippet": "climbing left turn to 6500",
+          "evidence_refs": [
+            "cell_04"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_04",
+              "cell_semantic_hint": "turn_or_arc_altitude_cell",
+              "bbox": {
+                "x_center": 0.5161,
+                "y_center": 0.683125,
+                "width": 0.0678,
+                "height": 0.05175
+              },
+              "ocr_texts": [
+                "6500"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "PATH_SEGMENT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r011",
+                "sample_0006__r012"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": null,
+          "hint_value": {
+            "desc": "AT_OR_ABOVE",
+            "altitude_ft": 6500,
+            "altitude_2_ft": null
+          }
+        }
+      ]
+    },
+    {
+      "field_path": "legs[4].answers.Q5_hold_params",
+      "predicted_value": {
+        "inbound_course_deg": 51.0,
+        "leg_time_min": 1.0,
+        "leg_distance_nm": null,
+        "turn": "LEFT"
+      },
+      "trace_status": "matched",
+      "matching_semantic_hints": [
+        {
+          "source_type": "candidate_leg",
+          "source_id": "candidate_leg_04",
+          "semantic_step_id": null,
+          "candidate_ref": "candidate_leg_04",
+          "action_type": "hold_at_fix",
+          "source_snippet": "and hold",
+          "evidence_refs": [
+            "cell_03",
+            "cell_04",
+            "cell_06"
+          ],
+          "resolved_evidence_cells": [
+            {
+              "cell_id": "cell_03",
+              "cell_semantic_hint": "navaid_radial_cell",
+              "bbox": {
+                "x_center": 0.4368,
+                "y_center": 0.68455,
+                "width": 0.0533,
+                "height": 0.0434
+              },
+              "ocr_texts": [
+                "COE",
+                "outbnd",
+                "R-350"
+              ],
+              "observed_types": [
+                "NAVAID_TEXT",
+                "OUTBOUND_INBOUND_MARK",
+                "RADIAL_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r008",
+                "sample_0006__r010",
+                "sample_0006__r009"
+              ]
+            },
+            {
+              "cell_id": "cell_04",
+              "cell_semantic_hint": "turn_or_arc_altitude_cell",
+              "bbox": {
+                "x_center": 0.5161,
+                "y_center": 0.683125,
+                "width": 0.0678,
+                "height": 0.05175
+              },
+              "ocr_texts": [
+                "6500"
+              ],
+              "observed_types": [
+                "ALTITUDE_TEXT",
+                "PATH_SEGMENT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r011",
+                "sample_0006__r012"
+              ]
+            },
+            {
+              "cell_id": "cell_06",
+              "cell_semantic_hint": "fix_symbol_cell",
+              "bbox": {
+                "x_center": 0.6357,
+                "y_center": 0.681725,
+                "width": 0.0454,
+                "height": 0.03935
+              },
+              "ocr_texts": [
+                "COE"
+              ],
+              "observed_types": [
+                "FIX_SYMBOL",
+                "FIX_TEXT"
+              ],
+              "source_element_ids": [
+                "sample_0006__r016",
+                "sample_0006__r017"
+              ]
+            }
+          ],
+          "hint_confidence": "medium",
+          "hint_status": "present",
+          "hint_value": {
+            "inbound_course_deg": 51.0,
+            "leg_time_min": 1.0,
+            "leg_distance_nm": null,
+            "turn": "LEFT"
+          }
+        }
+      ]
+    }
+  ]
+}

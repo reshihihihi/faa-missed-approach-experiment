@@ -1,0 +1,268 @@
+[
+  {
+    "candidate_ref": "candidate_leg_01",
+    "visual_order": 1,
+    "action_type": "initial_climb_or_heading",
+    "source": "chart_ocr_and_visual_boxes",
+    "source_snippet": "Climb to 3000",
+    "evidence_refs": [
+      "cell_01"
+    ],
+    "q_hints": {
+      "Q_terminator": {
+        "observed_value": "VI",
+        "evidence_source": "initial climb phrase",
+        "source_snippet": "Climb to 3000",
+        "evidence_refs": [
+          "cell_01"
+        ],
+        "confidence": "medium",
+        "status_hint": "present",
+        "note": "path_terminator_preferred=VI; heading-present initial climb uses VI; altitude-only climb uses CA"
+      },
+      "Q1_fix_ident": {
+        "observed_value": null,
+        "evidence_source": "initial climb phrase",
+        "source_snippet": "Climb to 3000",
+        "evidence_refs": [
+          "cell_01"
+        ],
+        "confidence": "medium",
+        "status_hint": "not_applicable"
+      },
+      "Q3_turn": {
+        "observed_value": null,
+        "evidence_source": "initial climb phrase",
+        "source_snippet": "Climb to 3000",
+        "evidence_refs": [
+          "cell_01"
+        ],
+        "confidence": "medium",
+        "status_hint": "not_applicable"
+      },
+      "Q5_hold_params": {
+        "observed_value": null,
+        "evidence_source": "initial climb phrase",
+        "source_snippet": "Climb to 3000",
+        "evidence_refs": [
+          "cell_01"
+        ],
+        "confidence": "medium",
+        "status_hint": "not_applicable"
+      },
+      "Q2_altitude_constraint": {
+        "observed_value": null,
+        "evidence_source": "initial climb altitude carried to following fix/hold leg",
+        "source_snippet": "Climb to 3000",
+        "evidence_refs": [
+          "cell_01"
+        ],
+        "confidence": "low",
+        "status_hint": "not_applicable",
+        "note": "The visible altitude is preserved as carry_forward_altitude instead of forcing it onto this first leg."
+      },
+      "Q4_course_or_radial": {
+        "observed_value": {
+          "type": "course_deg",
+          "course_deg": 63
+        },
+        "evidence_source": "heading phrase",
+        "source_snippet": "MISSED APPROACH: Climb to 3000 on heading 063° and STW R-243 to MUDRE INT/STW 20.5 DME/RADAR and hold GND CON CLNC DEL",
+        "evidence_refs": [
+          "cell_01"
+        ],
+        "confidence": "medium",
+        "status_hint": "present"
+      }
+    },
+    "notes": [
+      "carry_forward_altitude_ft=3000"
+    ],
+    "llm_decision_needed": true
+  },
+  {
+    "candidate_ref": "candidate_leg_02",
+    "visual_order": 2,
+    "action_type": "radial_to_fix",
+    "source": "chart_ocr_and_visual_boxes",
+    "source_snippet": "STW R-243 to MUDRE",
+    "evidence_refs": [
+      "cell_02",
+      "cell_03"
+    ],
+    "q_hints": {
+      "Q_terminator": {
+        "observed_value": "CF",
+        "evidence_source": "navaid radial phrase",
+        "source_snippet": "STW R-243 to MUDRE",
+        "evidence_refs": [
+          "cell_02",
+          "cell_03"
+        ],
+        "confidence": "medium",
+        "status_hint": "present",
+        "note": "path_terminator_preferred=CF; radial to named fix uses CF; radial without named fix uses FA"
+      },
+      "Q1_fix_ident": {
+        "observed_value": "MUDRE",
+        "evidence_source": "radial phrase terminal/reference fix",
+        "source_snippet": "STW R-243 to MUDRE",
+        "evidence_refs": [
+          "cell_02",
+          "cell_03"
+        ],
+        "confidence": "medium",
+        "status_hint": "present"
+      },
+      "Q2_altitude_constraint": {
+        "observed_value": {
+          "desc": "AT_OR_ABOVE",
+          "altitude_ft": 3000,
+          "altitude_2_ft": null
+        },
+        "evidence_source": "carried climb altitude for radial leg",
+        "source_snippet": "Climb to 3000",
+        "evidence_refs": [
+          "cell_01"
+        ],
+        "confidence": "medium",
+        "status_hint": "present"
+      },
+      "Q3_turn": {
+        "observed_value": null,
+        "evidence_source": "nearby turn phrase",
+        "source_snippet": "STW R-243 to MUDRE",
+        "evidence_refs": [
+          "cell_02",
+          "cell_03"
+        ],
+        "confidence": "low",
+        "status_hint": "unknown"
+      },
+      "Q4_course_or_radial": {
+        "observed_value": {
+          "type": "navaid_radial",
+          "navaid": "STW",
+          "radial_deg": 243,
+          "direction": "inbound"
+        },
+        "evidence_source": "navaid radial phrase; direction_source=inferred_to_fix",
+        "source_snippet": "STW R-243 to MUDRE",
+        "evidence_refs": [
+          "cell_02",
+          "cell_03"
+        ],
+        "confidence": "medium",
+        "status_hint": "present"
+      },
+      "Q5_hold_params": {
+        "observed_value": null,
+        "evidence_source": "radial phrase",
+        "source_snippet": "STW R-243 to MUDRE",
+        "evidence_refs": [
+          "cell_02",
+          "cell_03"
+        ],
+        "confidence": "medium",
+        "status_hint": "not_applicable"
+      }
+    },
+    "notes": [
+      "radial_direction_source=inferred_to_fix"
+    ],
+    "llm_decision_needed": true
+  },
+  {
+    "candidate_ref": "candidate_leg_03",
+    "visual_order": 3,
+    "action_type": "hold_at_fix",
+    "source": "chart_ocr_and_visual_boxes",
+    "source_snippet": "and hold",
+    "evidence_refs": [
+      "cell_01",
+      "cell_03"
+    ],
+    "q_hints": {
+      "Q_terminator": {
+        "observed_value": "HM",
+        "evidence_source": "hold phrase or terminal hold candidate",
+        "source_snippet": "MISSED APPROACH: Climb to 3000 on heading 063° and STW R-243 to MUDRE INT/STW 20.5 DME/RADAR and hold GND CON CLNC DEL",
+        "evidence_refs": [
+          "cell_01",
+          "cell_03"
+        ],
+        "confidence": "medium",
+        "status_hint": "present",
+        "note": "path_terminator_preferred=HM; terminal hold at missed-approach fix"
+      },
+      "Q1_fix_ident": {
+        "observed_value": "MUDRE",
+        "evidence_source": "last visible fix before hold",
+        "source_snippet": "MISSED APPROACH: Climb to 3000 on heading 063° and STW R-243 to MUDRE INT/STW 20.5 DME/RADAR and hold GND CON CLNC DEL",
+        "evidence_refs": [
+          "cell_01",
+          "cell_03"
+        ],
+        "confidence": "medium",
+        "status_hint": "present"
+      },
+      "Q3_turn": {
+        "observed_value": null,
+        "evidence_source": "hold leg turn belongs in Q5 when visible",
+        "source_snippet": "MISSED APPROACH: Climb to 3000 on heading 063° and STW R-243 to MUDRE INT/STW 20.5 DME/RADAR and hold GND CON CLNC DEL",
+        "evidence_refs": [
+          "cell_01",
+          "cell_03"
+        ],
+        "confidence": "medium",
+        "status_hint": "not_applicable"
+      },
+      "Q4_course_or_radial": {
+        "observed_value": null,
+        "evidence_source": "hold leg",
+        "source_snippet": "MISSED APPROACH: Climb to 3000 on heading 063° and STW R-243 to MUDRE INT/STW 20.5 DME/RADAR and hold GND CON CLNC DEL",
+        "evidence_refs": [
+          "cell_01",
+          "cell_03"
+        ],
+        "confidence": "medium",
+        "status_hint": "not_applicable"
+      },
+      "Q2_altitude_constraint": {
+        "observed_value": {
+          "desc": "AT_OR_ABOVE",
+          "altitude_ft": 3000,
+          "altitude_2_ft": null
+        },
+        "evidence_source": "hold/carry-forward altitude",
+        "source_snippet": "MISSED APPROACH: Climb to 3000 on heading 063° and STW R-243 to MUDRE INT/STW 20.5 DME/RADAR and hold GND CON CLNC DEL",
+        "evidence_refs": [
+          "cell_01"
+        ],
+        "confidence": "medium",
+        "status_hint": "present"
+      },
+      "Q5_hold_params": {
+        "observed_value": {
+          "inbound_course_deg": 243.0,
+          "leg_time_min": 1.0,
+          "leg_distance_nm": null,
+          "turn": "RIGHT"
+        },
+        "evidence_source": "hold phrase plus OCR-only hold context inference",
+        "source_snippet": "MISSED APPROACH: Climb to 3000 on heading 063° and STW R-243 to MUDRE INT/STW 20.5 DME/RADAR and hold GND CON CLNC DEL",
+        "evidence_refs": [
+          "cell_01",
+          "cell_03"
+        ],
+        "confidence": "medium",
+        "status_hint": "present",
+        "note": "hold_inbound_course_from_radial_to_fix=243; hold_turn_defaulted=RIGHT; hold_leg_time_defaulted_1_min_when_distance_not_visible"
+      }
+    },
+    "notes": [
+      "hold_created_from_visible_hold_text"
+    ],
+    "llm_decision_needed": true
+  }
+]
