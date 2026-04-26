@@ -21,6 +21,11 @@ keeps ordinary annotators limited to annotation work while allowing the project
 owner to download all saved drafts, final annotations, submission snapshots, and
 claim state.
 
+For production servers, `scripts/server_export_web_results.sh` can be installed
+as a cron job to generate this same export automatically, for example once per
+hour. See `docs/服务器部署维护与导出说明.md` for the deployment and retention
+conventions.
+
 Export JSON schema:
 
 ```text
@@ -36,4 +41,3 @@ Included data:
 - `formal300.annotations.drafts`
 - `formal300.annotations.by_annotator`
 - `formal300.annotations.submissions`
-
