@@ -1,0 +1,26 @@
+{
+  "run_id": "pilot10_exp1_a1_b1_c3_v0",
+  "scope": "pilot-only",
+  "notes": "Fill all TBD values before running the pilot. Do not use this manifest for formal evaluation without re-freezing.",
+  "ocr": {
+    "applies_to": ["A1", "B1"],
+    "engine": "TBD",
+    "version": "TBD",
+    "settings": "TBD"
+  },
+  "llm": {
+    "applies_to": ["B1"],
+    "model": "TBD",
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": "TBD"
+  },
+  "vlm": {
+    "applies_to": ["C3"],
+    "model": "TBD",
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": "TBD",
+    "image_resolution_policy": "TBD"
+  }
+}
