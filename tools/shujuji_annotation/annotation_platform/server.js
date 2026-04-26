@@ -14,6 +14,7 @@ const publicRoot = path.resolve(__dirname, "public");
 const port = Number(process.env.PORT || 8787);
 const publicBaseUrl = String(process.env.PUBLIC_BASE_URL || "").replace(/\/+$/, "");
 const accessToken = String(process.env.SHUJUJI_ACCESS_TOKEN || "").trim();
+const adminToken = String(process.env.SHUJUJI_ADMIN_TOKEN || "").trim();
 
 const datasets = {
   practice10: {
@@ -43,6 +44,7 @@ const mimeTypes = {
   ".html": "text/html; charset=utf-8",
   ".css": "text/css; charset=utf-8",
   ".js": "text/javascript; charset=utf-8",
+  ".json": "application/json; charset=utf-8",
   ".png": "image/png",
   ".jpg": "image/jpeg",
   ".jpeg": "image/jpeg",
@@ -135,6 +137,24 @@ function requireAccess(req, requestUrl) {
   throw error;
 }
 
+function hasValidAdminAccess(req, requestUrl) {
+  if (!adminToken) return false;
+  const supplied = String(
+    req.headers["x-shujuji-admin-token"]
+    || requestUrl.searchParams.get("admin_token")
+    || ""
+  ).trim();
+  if (!supplied) return false;
+  return crypto.timingSafeEqual(hashText(supplied), hashText(adminToken));
+}
+
+function requireAdminAccess(req, requestUrl) {
+  if (hasValidAdminAccess(req, requestUrl)) return;
+  const error = new Error(adminToken ? "Admin token required" : "Admin export is not enabled");
+  error.statusCode = adminToken ? 401 : 503;
+  throw error;
+}
+
 function timestampForFile() {
   return new Date().toISOString().replace(/[:.]/g, "-");
 }
@@ -175,6 +195,10 @@ function annotationPath(dataset, ...parts) {
   return safeJoin(dataset.annotationRoot, ...parts);
 }
 
+function exportPath(...parts) {
+  return safeJoin(runtimeRoot, "exports", ...parts);
+}
+
 async function writeJsonFileAtomic(filePath, value) {
   await fs.mkdir(path.dirname(filePath), { recursive: true });
   const tmpPath = `${filePath}.${process.pid}.${Date.now()}.tmp`;
@@ -186,6 +210,135 @@ function withClaimLock(fn) {
   const run = claimQueue.then(fn, fn);
   claimQueue = run.catch(() => {});
   return run;
+}
+
+async function walkJsonFiles(root, relativeRoot = "") {
+  let entries;
+  try {
+    entries = await fs.readdir(root, { withFileTypes: true });
+  } catch (error) {
+    if (error.code === "ENOENT") return [];
+    throw error;
+  }
+
+  const results = [];
+  for (const entry of entries) {
+    const relativePath = relativeRoot ? `${relativeRoot}/${entry.name}` : entry.name;
+    const fullPath = safeJoin(root, entry.name);
+    if (entry.isDirectory()) {
+      results.push(...await walkJsonFiles(fullPath, relativePath));
+    } else if (entry.isFile() && entry.name.toLowerCase().endsWith(".json")) {
+      results.push(relativePath);
+    }
+  }
+  return results.sort((a, b) => a.localeCompare(b));
+}
+
+async function readAnnotationEntry(root, relativePath) {
+  const filePath = safeJoin(root, ...relativePath.split("/"));
+  try {
+    return {
+      relative_path: relativePath,
+      data: JSON.parse(stripBom(await fs.readFile(filePath, "utf8")))
+    };
+  } catch (error) {
+    return {
+      relative_path: relativePath,
+      error: scrubServerPaths(error.message || "Failed to read JSON")
+    };
+  }
+}
+
+async function readAnnotationEntries(root) {
+  const files = await walkJsonFiles(root);
+  return Promise.all(files.map((file) => readAnnotationEntry(root, file)));
+}
+
+async function buildDatasetExport(dataset) {
+  const claims = dataset.finalDataset ? await readClaims(dataset) : {};
+  const drafts = await readAnnotationEntries(annotationPath(dataset, "drafts"));
+  const byAnnotator = await readAnnotationEntries(annotationPath(dataset, "by_annotator"));
+  const submissions = await readAnnotationEntries(annotationPath(dataset, "submissions"));
+  return {
+    dataset_key: dataset.key,
+    final_dataset: dataset.finalDataset,
+    exported_at: new Date().toISOString(),
+    summary: {
+      claims_count: Object.keys(claims || {}).length,
+      draft_json_count: drafts.length,
+      final_json_count: byAnnotator.length,
+      submission_json_count: submissions.length
+    },
+    annotations: {
+      claims,
+      drafts,
+      by_annotator: byAnnotator,
+      submissions
+    }
+  };
+}
+
+async function createAnnotationExport() {
+  const exportedAt = new Date().toISOString();
+  const stamp = timestampForFile();
+  const payload = {
+    schema: "shujuji_annotation_export_v1",
+    exported_at: exportedAt,
+    source: {
+      service: "shujuji_annotation_platform",
+      runtime_storage: "server"
+    },
+    datasets: {
+      practice10: await buildDatasetExport(datasets.practice10),
+      formal300: await buildDatasetExport(datasets.formal300)
+    }
+  };
+
+  const exportDir = exportPath();
+  await fs.mkdir(exportDir, { recursive: true });
+  const fileName = `shujuji_annotation_export_${stamp}.json`;
+  const filePath = exportPath(fileName);
+  await writeJsonFileAtomic(filePath, payload);
+  const stat = await fs.stat(filePath);
+  const summary = {
+    practice10: payload.datasets.practice10.summary,
+    formal300: payload.datasets.formal300.summary
+  };
+  const manifest = {
+    ok: true,
+    file_name: fileName,
+    created_at: exportedAt,
+    size_bytes: stat.size,
+    summary
+  };
+  await writeJsonFileAtomic(exportPath(`shujuji_annotation_export_${stamp}.manifest.json`), manifest);
+  return manifest;
+}
+
+async function listAnnotationExports() {
+  let entries;
+  try {
+    entries = await fs.readdir(exportPath(), { withFileTypes: true });
+  } catch (error) {
+    if (error.code === "ENOENT") return [];
+    throw error;
+  }
+
+  const files = [];
+  for (const entry of entries) {
+    if (!entry.isFile() || !/^shujuji_annotation_export_.+\.json$/i.test(entry.name) || entry.name.endsWith(".manifest.json")) continue;
+    const filePath = exportPath(entry.name);
+    const stat = await fs.stat(filePath);
+    const manifestName = entry.name.replace(/\.json$/i, ".manifest.json");
+    const manifest = await readJsonFile(exportPath(manifestName), null);
+    files.push({
+      file_name: entry.name,
+      created_at: manifest?.created_at || stat.mtime.toISOString(),
+      size_bytes: stat.size,
+      summary: manifest?.summary || null
+    });
+  }
+  return files.sort((a, b) => b.created_at.localeCompare(a.created_at));
 }
 
 async function readClaims(dataset) {
@@ -390,6 +543,22 @@ async function sendTextFile(res, filePath, contentType = "text/plain; charset=ut
   res.end(text);
 }
 
+async function sendDownloadFile(res, filePath, downloadName, contentType = "application/json; charset=utf-8") {
+  const stat = await fs.stat(filePath);
+  if (!stat.isFile()) {
+    const error = new Error("Not found");
+    error.statusCode = 404;
+    throw error;
+  }
+  res.writeHead(200, {
+    "content-type": contentType,
+    "content-length": stat.size,
+    "content-disposition": `attachment; filename="${downloadName.replace(/"/g, "")}"`,
+    "cache-control": "no-store"
+  });
+  fss.createReadStream(filePath).pipe(res);
+}
+
 function sendRedirect(res, location) {
   res.writeHead(302, { location });
   res.end();
@@ -473,6 +642,115 @@ function landingHtml() {
       <a class="secondary" href="/README.md">查看说明</a>
     </section>
   </main>
+</body>
+</html>`;
+}
+
+function adminHtml() {
+  return `<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>标注结果管理员导出</title>
+  <style>
+    body{margin:0;background:#f6efe1;color:#10241f;font-family:"Microsoft YaHei","Noto Sans SC",sans-serif}
+    main{max-width:980px;margin:7vh auto;padding:0 24px 48px}
+    .card{background:#fffaf0;border:1px solid #dfceb0;border-radius:22px;padding:24px;margin:18px 0;box-shadow:0 18px 50px rgba(26,55,46,.12)}
+    h1{margin:0 0 10px;font-size:30px}
+    p{line-height:1.7;color:#405a54}
+    input{box-sizing:border-box;width:100%;padding:13px 14px;border:1px solid #cdbf9f;border-radius:12px;background:#fff;font-size:16px}
+    button,a.download{display:inline-block;margin:12px 10px 0 0;padding:12px 18px;border:0;border-radius:12px;background:#176f5b;color:white;text-decoration:none;font-size:15px;font-weight:700;cursor:pointer}
+    button.secondary{background:#efe4cf;color:#10241f;border:1px solid #d8ccb7}
+    table{width:100%;border-collapse:collapse;margin-top:16px;background:white;border-radius:14px;overflow:hidden}
+    th,td{padding:12px;border-bottom:1px solid #eadcc4;text-align:left;font-size:14px;vertical-align:top}
+    code{background:#efe4cf;padding:2px 6px;border-radius:6px}
+    .status{white-space:pre-wrap;background:#10241f;color:#e6fff8;border-radius:14px;padding:14px;min-height:44px}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>标注结果管理员导出</h1>
+    <p>这个页面只给管理员使用。普通标注人员继续使用正式标注链接，不需要进入这里。</p>
+    <section class="card">
+      <h2>管理员 token</h2>
+      <input id="token" type="password" placeholder="请输入管理员导出 token">
+      <button type="button" onclick="saveToken()">保存 token</button>
+      <button class="secondary" type="button" onclick="createExport()">生成并保存新导出</button>
+      <button class="secondary" type="button" onclick="loadExports()">刷新导出列表</button>
+      <p>导出文件会同时保存在服务器 <code>/data/shujuji_annotation/exports</code>，并可在本页下载。</p>
+      <div id="status" class="status">等待操作...</div>
+    </section>
+    <section class="card">
+      <h2>已有导出</h2>
+      <div id="exports"></div>
+    </section>
+  </main>
+  <script>
+    const tokenInput = document.getElementById("token");
+    const statusBox = document.getElementById("status");
+    const params = new URLSearchParams(location.search);
+    const tokenFromUrl = params.get("admin_token");
+    if (tokenFromUrl) {
+      sessionStorage.setItem("shujuji_admin_token", tokenFromUrl);
+      params.delete("admin_token");
+      history.replaceState(null, "", location.pathname + (params.toString() ? "?" + params.toString() : ""));
+    }
+    tokenInput.value = sessionStorage.getItem("shujuji_admin_token") || "";
+
+    function token() {
+      return tokenInput.value.trim();
+    }
+    function saveToken() {
+      sessionStorage.setItem("shujuji_admin_token", token());
+      statusBox.textContent = "管理员 token 已保存在当前浏览器会话。";
+    }
+    function show(value) {
+      statusBox.textContent = typeof value === "string" ? value : JSON.stringify(value, null, 2);
+    }
+    async function adminFetch(url, options = {}) {
+      if (!token()) throw new Error("请先填写管理员 token");
+      const headers = new Headers(options.headers || {});
+      headers.set("x-shujuji-admin-token", token());
+      const response = await fetch(url, { ...options, headers });
+      const text = await response.text();
+      let data;
+      try { data = text ? JSON.parse(text) : {}; } catch { data = { raw: text }; }
+      if (!response.ok) throw new Error(data.error || response.statusText);
+      return data;
+    }
+    async function createExport() {
+      try {
+        saveToken();
+        show("正在生成导出文件...");
+        const data = await adminFetch("/api/admin/export", { method: "POST" });
+        show(data);
+        await loadExports();
+      } catch (error) {
+        show("导出失败：" + error.message);
+      }
+    }
+    async function loadExports() {
+      try {
+        saveToken();
+        const data = await adminFetch("/api/admin/exports");
+        const rows = data.exports.map((item) => {
+          const summary = item.summary?.formal300 || {};
+          const href = "/api/admin/export/download?file=" + encodeURIComponent(item.file_name) + "&admin_token=" + encodeURIComponent(token());
+          return "<tr><td>" + item.created_at + "</td><td>" + item.file_name + "</td><td>" +
+            "暂存 " + (summary.draft_json_count || 0) + " / 正式 " + (summary.final_json_count || 0) + " / 提交快照 " + (summary.submission_json_count || 0) +
+            "</td><td><a class='download' href='" + href + "'>下载 JSON</a></td></tr>";
+        }).join("");
+        document.getElementById("exports").innerHTML = rows
+          ? "<table><thead><tr><th>时间</th><th>文件</th><th>正式集统计</th><th>操作</th></tr></thead><tbody>" + rows + "</tbody></table>"
+          : "<p>还没有导出文件，点击“生成并保存新导出”。</p>";
+        show("导出列表已刷新，共 " + data.exports.length + " 个文件。");
+      } catch (error) {
+        show("刷新失败：" + error.message);
+      }
+    }
+    if (token()) loadExports();
+  </script>
 </body>
 </html>`;
 }
@@ -648,6 +926,7 @@ async function route(req, res) {
       ok: true,
       service: "shujuji_annotation_platform",
       access_control_enabled: Boolean(accessToken),
+      admin_export_enabled: Boolean(adminToken),
       datasets: Object.fromEntries(Object.entries(datasets).map(([key, dataset]) => [
         key,
         {
@@ -661,6 +940,43 @@ async function route(req, res) {
 
   if (req.method === "GET" && pathname === "/README.md") {
     await sendTextFile(res, safeJoin(workspaceRoot, "README.md"), "text/markdown; charset=utf-8");
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/admin") {
+    sendRedirect(res, "/admin/");
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/admin/") {
+    sendHtml(res, 200, adminHtml());
+    return;
+  }
+
+  if (req.method === "POST" && pathname === "/api/admin/export") {
+    requireAdminAccess(req, requestUrl);
+    sendJson(res, 200, await createAnnotationExport());
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/admin/exports") {
+    requireAdminAccess(req, requestUrl);
+    sendJson(res, 200, {
+      ok: true,
+      exports: await listAnnotationExports()
+    });
+    return;
+  }
+
+  if (req.method === "GET" && pathname === "/api/admin/export/download") {
+    requireAdminAccess(req, requestUrl);
+    const fileName = requestUrl.searchParams.get("file") || "";
+    if (!/^shujuji_annotation_export_[A-Za-z0-9_.-]+\.json$/i.test(fileName) || fileName.endsWith(".manifest.json")) {
+      const error = new Error("Invalid export file");
+      error.statusCode = 400;
+      throw error;
+    }
+    await sendDownloadFile(res, exportPath(fileName), fileName, "application/json; charset=utf-8");
     return;
   }
 
