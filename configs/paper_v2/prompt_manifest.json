@@ -1,0 +1,22 @@
+{
+  "run_id": "pilot10_exp1_a1_b1_c3_v0",
+  "scope": "pilot-only",
+  "prompts": [
+    {
+      "method_id": "B1",
+      "prompt_path": "prompts/paper_v2/b1_ocr_to_canonical_pilot10.md",
+      "prompt_hash": "TBD",
+      "inherits": ["issue #20 unknown/not_observable instruction"],
+      "allowed_inputs": ["full-chart OCR text", "OCR bbox/confidence if explicitly included"],
+      "forbidden_inputs": ["chart image", "gold_ma_prose", "canonical target", "expected value", "evidence provenance", "challenge tags", "field-to-leg target mapping"]
+    },
+    {
+      "method_id": "C3",
+      "prompt_path": "prompts/paper_v2/c3_questionnaire_pilot10.md",
+      "prompt_hash": "TBD",
+      "inherits": ["PR #28 structured questionnaire", "issue #20 unknown/not_observable instruction"],
+      "allowed_inputs": ["full chart image", "frozen questionnaire prompt/template"],
+      "forbidden_inputs": ["OCR text", "gold_ma_prose", "canonical target", "expected value", "evidence provenance", "challenge tags", "field-to-leg target mapping"]
+    }
+  ]
+}
