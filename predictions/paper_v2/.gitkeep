@@ -1,0 +1,9 @@
+# Placeholder for paper-v2 predictions.
+
+Formal prediction outputs should be organized by experiment and method, for example:
+
+- `exp1/{method_id}/`
+- `exp4_source_ablation/{view_type}/{method_id}/`
+- `exp5_oracle/{method_id}/`
+- `exp6_verification/{method_id}/`
+- `exp7_domain_rule/{method_id}/`
