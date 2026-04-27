@@ -675,7 +675,21 @@ async function serveStatic(res, pathname) {
   fss.createReadStream(filePath).pipe(res);
 }
 
-function landingHtml() {
+function landingLink(pathname, requestUrl) {
+  const token = requestUrl.searchParams.get("token");
+  if (!token) return pathname;
+  const params = new URLSearchParams({ token });
+  return `${pathname}?${params.toString()}`;
+}
+
+function redirectWithQuery(pathname, requestUrl) {
+  const query = requestUrl.searchParams.toString();
+  return query ? `${pathname}?${query}` : pathname;
+}
+
+function landingHtml(requestUrl) {
+  const practiceHref = landingLink("/practice/", requestUrl);
+  const formalHref = landingLink("/formal/", requestUrl);
   return `<!doctype html>
 <html lang="zh-CN">
 <head>
@@ -699,12 +713,12 @@ function landingHtml() {
     <section class="card">
       <h2>练习网页：10 张</h2>
       <p>用于新手熟悉流程，保存结果不进入正式 300 张数据集。</p>
-      <a href="/practice/">进入练习标注</a>
+      <a href="${escapeHtml(practiceHref)}">进入练习标注</a>
     </section>
     <section class="card">
       <h2>正式网页：300 张</h2>
       <p>正式入口会按“标注人领取航图”防止重复。进入后请先填写右上角标注人，再领取未分配航图。</p>
-      <a href="/formal/">进入正式标注</a>
+      <a href="${escapeHtml(formalHref)}">进入正式标注</a>
     </section>
     <section class="card">
       <h2>公网网页 / 局域网都可用</h2>
@@ -998,7 +1012,7 @@ async function route(req, res) {
   const annotator = getAnnotator(requestUrl);
 
   if (req.method === "GET" && pathname === "/") {
-    sendHtml(res, 200, landingHtml());
+    sendHtml(res, 200, landingHtml(requestUrl));
     return;
   }
 
@@ -1085,12 +1099,12 @@ async function route(req, res) {
   }
 
   if (req.method === "GET" && pathname === "/practice") {
-    sendRedirect(res, "/practice/");
+    sendRedirect(res, redirectWithQuery("/practice/", requestUrl));
     return;
   }
 
   if (req.method === "GET" && pathname === "/formal") {
-    sendRedirect(res, "/formal/");
+    sendRedirect(res, redirectWithQuery("/formal/", requestUrl));
     return;
   }
 
