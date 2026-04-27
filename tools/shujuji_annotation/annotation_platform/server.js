@@ -361,6 +361,12 @@ async function claimChart(dataset, chartId, annotator) {
   return withClaimLock(async () => {
     const claims = await readClaims(dataset);
     const existing = claims[chartId];
+    if (existing?.status === "returned_for_expert_review") {
+      const error = new Error("这张图已被退回并标记为专家复审，不再分配给普通标注流程。");
+      error.statusCode = 409;
+      error.claim = existing;
+      throw error;
+    }
     if (existing?.annotator && existing.annotator !== annotator) {
       const error = new Error(`这张图已由 ${existing.annotator} 领取，请换一张未领取的图，避免重复标注。`);
       error.statusCode = 409;
@@ -375,6 +381,44 @@ async function claimChart(dataset, chartId, annotator) {
       claimed_at: existing?.claimed_at || now,
       last_opened_at: now,
       last_saved_at: existing?.last_saved_at || ""
+    };
+    await writeClaims(dataset, claims);
+    return claims[chartId];
+  });
+}
+
+async function returnClaim(dataset, chartId, annotator, reason) {
+  if (!dataset.finalDataset) return null;
+  if (!annotator) {
+    const error = new Error("正式标注请先填写标注人，再退回航图。");
+    error.statusCode = 400;
+    throw error;
+  }
+  return withClaimLock(async () => {
+    const claims = await readClaims(dataset);
+    const existing = claims[chartId];
+    if (!existing) {
+      const error = new Error("这张图尚未领取，不能退回。");
+      error.statusCode = 409;
+      throw error;
+    }
+    if (existing.annotator !== annotator) {
+      const error = new Error(`这张图由 ${existing.annotator} 领取，不能用 ${annotator} 退回。`);
+      error.statusCode = 409;
+      error.claim = existing;
+      throw error;
+    }
+    const now = new Date().toISOString();
+    claims[chartId] = {
+      ...existing,
+      chart_id: chartId,
+      annotator,
+      status: "returned_for_expert_review",
+      expert_review_required: true,
+      returned_by: annotator,
+      returned_at: now,
+      return_reason: String(reason || "").trim().slice(0, 1000),
+      previous_status: existing.status || "claimed"
     };
     await writeClaims(dataset, claims);
     return claims[chartId];
@@ -426,8 +470,10 @@ async function loadCharts(dataset, annotator) {
       ? "practice"
       : !claim
         ? "unassigned"
-        : mine
-          ? claim.status || "claimed_by_me"
+        : claim.status === "returned_for_expert_review"
+          ? "returned_for_expert_review"
+          : mine
+            ? claim.status || "claimed_by_me"
           : "claimed_by_other";
     const myAnnotationPath = annotator
       ? annotationPath(dataset, "by_annotator", annotator, `${chartId}.json`)
@@ -450,6 +496,10 @@ async function loadCharts(dataset, annotator) {
       claimed_by: claim?.annotator || "",
       claimed_at: claim?.claimed_at || "",
       last_saved_at: claim?.last_saved_at || "",
+      returned_at: claim?.returned_at || "",
+      returned_by: claim?.returned_by || "",
+      return_reason: claim?.return_reason || "",
+      expert_review_required: Boolean(claim?.expert_review_required),
       target_leg_count: target.candidate_missed_approach_leg_count || 0,
       review_priority: item.needs_priority_review || item.sample_type === "anomaly" ? "high" : "normal"
     });
@@ -494,7 +544,11 @@ async function loadChartDetail(dataset, chartId, annotator) {
     manifest: scrubClientValue({
       ...manifestItem,
       claim_status: claim?.status || manifestItem.claim_status,
-      claimed_by: claim?.annotator || manifestItem.claimed_by
+      claimed_by: claim?.annotator || manifestItem.claimed_by,
+      returned_at: claim?.returned_at || manifestItem.returned_at || "",
+      returned_by: claim?.returned_by || manifestItem.returned_by || "",
+      return_reason: claim?.return_reason || manifestItem.return_reason || "",
+      expert_review_required: Boolean(claim?.expert_review_required || manifestItem.expert_review_required)
     }),
     target: scrubClientValue(target),
     canonical_gt: scrubClientValue(canonicalGt),
@@ -513,6 +567,23 @@ async function claimChartForRequest(requestUrl, dataset, chartId) {
   }
   const annotator = getAnnotator(requestUrl);
   const claim = await claimChart(dataset, chartId, annotator || (dataset.finalDataset ? "" : "practice_user"));
+  return {
+    ok: true,
+    dataset: dataset.key,
+    chart_id: chartId,
+    claim
+  };
+}
+
+async function returnClaimForRequest(req, requestUrl, dataset, chartId) {
+  if (!isSafeChartId(chartId)) {
+    const error = new Error("Invalid chart_id");
+    error.statusCode = 400;
+    throw error;
+  }
+  const payload = JSON.parse(stripBom(await readRequestBody(req)) || "{}");
+  const annotator = getAnnotator(requestUrl) || safeAnnotator(payload.annotator || "");
+  const claim = await returnClaim(dataset, chartId, annotator, payload.reason || "");
   return {
     ok: true,
     dataset: dataset.key,
@@ -812,6 +883,11 @@ async function saveAnnotation(req, requestUrl, dataset, chartId) {
   if (dataset.finalDataset) {
     const claims = await readClaims(dataset);
     const claim = claims[chartId];
+    if (claim?.status === "returned_for_expert_review") {
+      const error = new Error("这张图已退回专家复审，不能继续保存普通人工标注。");
+      error.statusCode = 409;
+      throw error;
+    }
     if (claim?.annotator && claim.annotator !== annotator) {
       const error = new Error(`这张图已由 ${claim.annotator} 领取，不能用 ${annotator} 保存，避免重复覆盖。`);
       error.statusCode = 409;
@@ -870,6 +946,11 @@ async function saveDraft(req, requestUrl, dataset, chartId) {
   if (dataset.finalDataset) {
     const claims = await readClaims(dataset);
     const claim = claims[chartId];
+    if (claim?.status === "returned_for_expert_review") {
+      const error = new Error("这张图已退回专家复审，不能继续暂存普通人工标注。");
+      error.statusCode = 409;
+      throw error;
+    }
     if (claim?.annotator && claim.annotator !== annotator) {
       const error = new Error(`杩欏紶鍥惧凡鐢?${claim.annotator} 棰嗗彇锛屼笉鑳界敤 ${annotator} 鏆傚瓨銆?`);
       error.statusCode = 409;
@@ -1038,6 +1119,14 @@ async function route(req, res) {
     return;
   }
 
+  if (req.method === "POST" && pathname.startsWith("/api/claims/") && pathname.endsWith("/return")) {
+    requireAccess(req, requestUrl);
+    const parts = pathname.split("/");
+    const chartId = parts[3];
+    sendJson(res, 200, await returnClaimForRequest(req, requestUrl, dataset, chartId));
+    return;
+  }
+
   if (req.method === "POST" && pathname.startsWith("/api/claims/")) {
     requireAccess(req, requestUrl);
     const chartId = pathname.split("/").pop();
@@ -1054,12 +1143,22 @@ async function route(req, res) {
       throw error;
     }
     const filePath = safeJoin(dataset.root, "images", imageBasename(file));
+    if (!await fileExists(filePath)) {
+      const error = new Error("Image file not found");
+      error.statusCode = 404;
+      throw error;
+    }
     const ext = path.extname(filePath).toLowerCase();
     res.writeHead(200, {
       "content-type": mimeTypes[ext] || "application/octet-stream",
       "cache-control": "public, max-age=300"
     });
-    fss.createReadStream(filePath).pipe(res);
+    const stream = fss.createReadStream(filePath);
+    stream.on("error", (error) => {
+      if (!res.headersSent) sendError(res, error);
+      else res.destroy(error);
+    });
+    stream.pipe(res);
     return;
   }
 

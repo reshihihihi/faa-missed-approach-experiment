@@ -47,11 +47,17 @@ const state = {
   current: null,
   dataset: datasetConfig,
   regions: [],
+  fieldReviews: {},
+  selectedFieldKey: null,
+  pendingLinkFieldKey: null,
   selectedRegionId: null,
   activeSaveMode: "final",
   drawMode: false,
   draft: null,
   drag: null,
+  undoStack: [],
+  flashRegionId: null,
+  flashTimer: null,
   columnResize: null,
   layoutWidths: null,
   lastQuickAcceptSnapshot: null,
@@ -75,6 +81,11 @@ const els = {
   helpCloseBtn: document.querySelector("#helpCloseBtn"),
   fullTutorialBtn: document.querySelector("#fullTutorialBtn"),
   detailBoxTutorialBtn: document.querySelector("#detailBoxTutorialBtn"),
+  participantBadge: document.querySelector("#participantBadge"),
+  undoBtn: document.querySelector("#undoBtn"),
+  workflowUndoBtn: document.querySelector("#workflowUndoBtn"),
+  returnClaimBtn: document.querySelector("#returnClaimBtn"),
+  returnWorkflowBtn: document.querySelector("#returnWorkflowBtn"),
   saveDraftBtn: document.querySelector("#saveDraftBtn"),
   pageTitle: document.querySelector(".topbar h1"),
   datasetEyebrow: document.querySelector(".eyebrow"),
@@ -95,7 +106,13 @@ const els = {
   quickAcceptBtn: document.querySelector("#quickAcceptBtn"),
   undoQuickAcceptBtn: document.querySelector("#undoQuickAcceptBtn"),
   nextPendingBtn: document.querySelector("#nextPendingBtn"),
+  claimCurrentBtn: document.querySelector("#claimCurrentBtn"),
   openTargetsBtn: document.querySelector("#openTargetsBtn"),
+  linkSelectedFieldBtn: document.querySelector("#linkSelectedFieldBtn"),
+  addRegionForFieldBtn: document.querySelector("#addRegionForFieldBtn"),
+  markNoEvidenceBtn: document.querySelector("#markNoEvidenceBtn"),
+  markImplicitBtn: document.querySelector("#markImplicitBtn"),
+  markFieldUnsureBtn: document.querySelector("#markFieldUnsureBtn"),
   workflowDraftBtn: document.querySelector("#workflowDraftBtn"),
   workflowSaveBtn: document.querySelector("#workflowSaveBtn"),
   annotatorInput: document.querySelector("#annotatorInput"),
@@ -194,6 +211,37 @@ const FIELD_LABELS = {
   Q4_course_or_radial: "航向 / 径向 / 航迹",
   Q5_hold_params: "等待参数"
 };
+
+const FIELD_REVIEW_LABELS = {
+  pending: "待确认",
+  direct_visible: "直接图面证据",
+  visible_joint: "多证据综合",
+  rule_default_completion: "规则/默认补全",
+  insufficient_for_encoding: "缺少足够编码信息",
+  supported_by_chart: "直接图面证据",
+  no_direct_chart_evidence: "缺少足够编码信息",
+  implicit_or_derived: "规则/默认补全",
+  not_applicable: "不适用",
+  uncertain: "不确定"
+};
+
+const FIELD_REVIEW_DONE = new Set([
+  "direct_visible",
+  "visible_joint",
+  "rule_default_completion",
+  "insufficient_for_encoding",
+  "supported_by_chart",
+  "no_direct_chart_evidence",
+  "implicit_or_derived",
+  "not_applicable",
+  "uncertain"
+]);
+
+const FIELD_SUPPORT_REQUIRES_EVIDENCE = new Set([
+  "direct_visible",
+  "visible_joint",
+  "rule_default_completion"
+]);
 
 const LEG_TYPE_LABELS = {
   CA: "爬升到高度",
@@ -303,6 +351,7 @@ function friendlyStatus(status) {
     present: "需要图上证据",
     not_applicable: "本航图/本航段没有这个字段，无需画框",
     not_observable: "图上不可见，保留为空",
+    implicit_or_derived: "图上间接/程序关系可推导",
     unknown: "编码无法确定，先不要求人工框"
   };
   return labels[status] || status || "未知";
@@ -418,6 +467,422 @@ function canonicalLegIndexForMapping(mapping) {
   return match ? Number(match[1]) : null;
 }
 
+function fieldKey(legIndex, fieldName) {
+  return `leg${legIndex}.${fieldName}`;
+}
+
+function fieldKeyForMapping(mapping) {
+  const legIndex = canonicalLegIndexForMapping(mapping);
+  return legIndex && mapping.field_name ? fieldKey(legIndex, mapping.field_name) : "";
+}
+
+function normalizeFieldReviews(source) {
+  if (!source) return {};
+  if (Array.isArray(source)) {
+    return Object.fromEntries(source.map((item) => [item.field_key, item]).filter(([key]) => key));
+  }
+  if (typeof source === "object") return deepClone(source);
+  return {};
+}
+
+function buildFieldRows() {
+  const target = state.current?.target;
+  if (!target) return [];
+  return (target.candidate_legs || []).flatMap((leg) => {
+    return (leg.target_fields || []).map((field) => {
+      const fieldName = field.field_name || field.name || "";
+      const legIndex = leg.canonical_leg_index || canonicalLegIndexForMapping({ candidate_leg_id: leg.candidate_leg_id });
+      const answer = field.expected_answer || null;
+      return {
+        key: fieldKey(legIndex, fieldName),
+        candidate_leg_id: leg.candidate_leg_id || "",
+        canonical_leg_index: legIndex,
+        leg_type: leg.leg_type || "",
+        field_name: fieldName,
+        expected_value: field.expected_value ?? field.value ?? "",
+        expected_answer: answer,
+        requires_review: answer?.status === "present",
+        auto_status: answer?.status && answer.status !== "present"
+      };
+    });
+  });
+}
+
+function acceptedMappingsForField(row) {
+  return state.regions.flatMap((region) => {
+    return (region.candidate_mappings || [])
+      .filter((mapping) => mapping.human_decision === "accepted" && fieldKeyForMapping(mapping) === row.key)
+      .map((mapping) => ({ region, mapping }));
+  });
+}
+
+function candidateMappingsForField(row) {
+  return state.regions.flatMap((region) => {
+    return (region.candidate_mappings || [])
+      .filter((mapping) => fieldKeyForMapping(mapping) === row.key)
+      .map((mapping) => ({ region, mapping }));
+  });
+}
+
+function uniqueList(values) {
+  return Array.from(new Set((values || []).filter(Boolean).map(String)));
+}
+
+function regionById(regionId) {
+  return state.regions.find((region) => region.region_id === regionId) || null;
+}
+
+function evidenceSourceForRegion(region) {
+  const type = region?.region_type || "";
+  if (region?.evidence_source) return region.evidence_source;
+  if (type === "MISSED_APPROACH_TEXT") return "ma_text";
+  if (type === "PLAN_VIEW") return "plan_view";
+  if (["MISSED_APPROACH_DETAIL_AREA", "MISSED_APPROACH_ICON", "MISSED_APPROACH_STEP_BOX", "CLIMB_ARROW"].includes(type)) {
+    return "icon_detail";
+  }
+  if (["FIX_SYMBOL", "PATH_SEGMENT", "HOLDING_ARC", "HOLDING_PATTERN", "OUTBOUND_INBOUND_MARK"].includes(type)) {
+    return "chart_graphic";
+  }
+  if (type) return "chart_text";
+  return "other_chart_evidence";
+}
+
+function sourcesForRegionIds(regionIds) {
+  return uniqueList(regionIds.map((regionId) => evidenceSourceForRegion(regionById(regionId))));
+}
+
+function supportModeFromReview(raw, evidenceIds = []) {
+  const status = raw?.support_mode || raw?.review_status || "pending";
+  if (status === "supported_by_chart") return evidenceIds.length ? (evidenceIds.length > 1 ? "visible_joint" : "direct_visible") : "pending";
+  if (status === "no_direct_chart_evidence") return "insufficient_for_encoding";
+  if (status === "implicit_or_derived") return "rule_default_completion";
+  return status;
+}
+
+function suggestedEvidenceIdsForField(row) {
+  const candidates = candidateMappingsForField(row)
+    .filter(({ mapping }) => !["rejected", "needs_discussion"].includes(mapping.human_decision || "pending"))
+    .sort((left, right) => {
+      const rank = { accepted: 0, changed: 1, pending: 2 };
+      return (rank[left.mapping.human_decision || "pending"] ?? 3) - (rank[right.mapping.human_decision || "pending"] ?? 3);
+    })
+    .map(({ region }) => region.region_id);
+  if (candidates.length) return uniqueList(candidates);
+  return uniqueList(state.regions
+    .filter((region) => region.source_field_name && region.source_field_name === row.field_name)
+    .map((region) => region.region_id));
+}
+
+function reviewForField(row) {
+  const saved = state.fieldReviews[row.key] || {};
+  const savedRequired = uniqueList(saved.required_evidence_region_ids || saved.evidence_region_ids || []);
+  const savedSecondary = uniqueList(saved.secondary_evidence_region_ids || []);
+  const savedHasEvidenceList = Array.isArray(saved.required_evidence_region_ids) || Array.isArray(saved.evidence_region_ids);
+  const acceptedIds = uniqueList(acceptedMappingsForField(row).map(({ region }) => region.region_id));
+  const hasSavedReview = Boolean(
+    saved.review_status
+    || saved.support_mode
+    || savedRequired.length
+    || savedSecondary.length
+  );
+  const suggestedIds = suggestedEvidenceIdsForField(row);
+  let requiredIds = savedHasEvidenceList
+    ? savedRequired
+    : acceptedIds.length
+      ? acceptedIds
+      : suggestedIds;
+  let supportMode = supportModeFromReview(saved, requiredIds);
+  if (!hasSavedReview) supportMode = row.requires_review ? "pending" : "not_applicable";
+  if (supportMode === "direct_visible" && requiredIds.length > 1 && saved.review_status === "supported_by_chart") {
+    supportMode = "visible_joint";
+  }
+  if (supportMode === "not_applicable" || !row.requires_review) {
+    requiredIds = [];
+  }
+  const evidenceIds = uniqueList([...requiredIds, ...savedSecondary]);
+  const evidenceSource = saved.evidence_source?.length ? saved.evidence_source : sourcesForRegionIds(evidenceIds);
+  return {
+    ...saved,
+    field_key: row.key,
+    schema: saved.schema || "field_review_v2",
+    review_status: supportMode,
+    support_mode: supportMode,
+    required_evidence_region_ids: requiredIds,
+    secondary_evidence_region_ids: savedSecondary,
+    evidence_region_ids: evidenceIds,
+    evidence_source: evidenceSource,
+    checked_scopes: saved.checked_scopes || saved.checked_sources || sourcesForRegionIds(evidenceIds),
+    checked_sources: saved.checked_sources || saved.checked_scopes || sourcesForRegionIds(evidenceIds),
+    reviewed_answer: row.expected_answer || null,
+    notes: saved.notes || "",
+    autofilled_evidence: !hasSavedReview && suggestedIds.length > 0
+  };
+}
+
+function setFieldReview(row, reviewStatus, notes = "", options = {}) {
+  if (typeof notes === "object" && notes !== null) {
+    options = notes;
+    notes = options.notes || "";
+  }
+  const current = reviewForField(row);
+  const requiredIds = uniqueList(
+    options.requiredIds
+    || options.required_evidence_region_ids
+    || current.required_evidence_region_ids
+    || []
+  );
+  const secondaryIds = uniqueList(
+    options.secondaryIds
+    || options.secondary_evidence_region_ids
+    || current.secondary_evidence_region_ids
+    || []
+  );
+  const evidenceIds = uniqueList([...requiredIds, ...secondaryIds]);
+  const supportMode = supportModeFromReview({ review_status: reviewStatus }, evidenceIds);
+  const checkedScopes = uniqueList(options.checkedScopes || options.checked_scopes || sourcesForRegionIds(evidenceIds));
+  const existing = state.fieldReviews[row.key] || {};
+  state.fieldReviews[row.key] = {
+    ...existing,
+    schema: "field_review_v2",
+    field_key: row.key,
+    chart_id: state.current?.manifest?.chart_id || "",
+    candidate_leg_id: row.candidate_leg_id,
+    canonical_leg_index: row.canonical_leg_index,
+    leg_type: row.leg_type,
+    field_name: row.field_name,
+    canonical_answer: row.expected_answer || null,
+    review_status: supportMode,
+    support_mode: supportMode,
+    required_evidence_region_ids: supportMode === "insufficient_for_encoding" ? [] : requiredIds,
+    secondary_evidence_region_ids: supportMode === "insufficient_for_encoding" ? [] : secondaryIds,
+    evidence_region_ids: supportMode === "insufficient_for_encoding" ? [] : evidenceIds,
+    evidence_source: supportMode === "insufficient_for_encoding" ? [] : sourcesForRegionIds(evidenceIds),
+    checked_scopes: checkedScopes,
+    checked_sources: checkedScopes,
+    notes: notes || existing.notes || "",
+    reviewed_by: currentAnnotator() || "",
+    reviewed_at: supportMode === "pending" ? (existing.reviewed_at || "") : new Date().toISOString()
+  };
+}
+
+function selectedFieldRow() {
+  const rows = buildFieldRows();
+  return rows.find((row) => row.key === state.selectedFieldKey) || rows.find((row) => reviewForField(row).review_status === "pending") || null;
+}
+
+function selectField(rowOrKey) {
+  const row = typeof rowOrKey === "string"
+    ? buildFieldRows().find((item) => item.key === rowOrKey)
+    : rowOrKey;
+  if (!row) return;
+  state.selectedFieldKey = row.key;
+  const review = reviewForField(row);
+  const firstEvidenceRegionId = review.evidence_region_ids?.[0];
+  if (firstEvidenceRegionId) state.selectedRegionId = firstEvidenceRegionId;
+  renderOverlay();
+  renderRegionForm();
+  renderTargets();
+  renderCanonicalPanel();
+}
+
+function recommendedRegionTypeForField(fieldName) {
+  return {
+    Q_terminator: "MISSED_APPROACH_ICON",
+    Q1_fix_ident: "FIX_TEXT",
+    Q2_altitude_constraint: "ALTITUDE_TEXT",
+    Q3_turn: "PATH_SEGMENT",
+    Q4_course_or_radial: "TRACK_OR_RADIAL_TEXT",
+    Q5_hold_params: "HOLDING_PATTERN"
+  }[fieldName] || "MISSED_APPROACH_TEXT";
+}
+
+function mappingFromFieldRow(row, accepted = true) {
+  return {
+    candidate_leg_id: row.candidate_leg_id || "",
+    canonical_leg_index: row.canonical_leg_index || null,
+    leg_type: row.leg_type || "",
+    field_name: row.field_name,
+    expected_value: row.expected_value,
+    expected_answer: row.expected_answer || null,
+    match_basis: "human field-review queue",
+    confidence: null,
+    human_decision: accepted ? "accepted" : "pending",
+    human_notes: ""
+  };
+}
+
+function setFieldEvidenceDraft(row, requiredIds) {
+  setFieldReview(row, "pending", {
+    requiredIds,
+    checkedScopes: sourcesForRegionIds(requiredIds)
+  });
+}
+
+function ensureMappingForRegion(row, region, decision = "pending") {
+  const existing = (region.candidate_mappings || []).find((mapping) => fieldKeyForMapping(mapping) === row.key);
+  if (existing) {
+    existing.human_decision = decision || existing.human_decision || "pending";
+    return existing;
+  }
+  const mapping = mappingFromFieldRow(row, decision === "accepted");
+  mapping.human_decision = decision;
+  region.candidate_mappings.push(mapping);
+  return mapping;
+}
+
+function updateRegionMappingDecision(row, regionId, decision, note = "") {
+  const region = regionById(regionId);
+  if (!region) return;
+  (region.candidate_mappings || []).forEach((mapping) => {
+    if (fieldKeyForMapping(mapping) !== row.key) return;
+    mapping.human_decision = decision;
+    if (note) mapping.human_notes = note;
+  });
+}
+
+function applyEvidenceSelectionToMappings(row, requiredIds, supportMode) {
+  const requiredSet = new Set(requiredIds);
+  state.regions.forEach((region) => {
+    const mappings = region.candidate_mappings || [];
+    mappings.forEach((mapping) => {
+      if (fieldKeyForMapping(mapping) !== row.key) return;
+      if (requiredSet.has(region.region_id)) {
+        mapping.human_decision = "accepted";
+        mapping.human_notes = supportMode === "visible_joint"
+          ? "Selected as necessary evidence for multi-evidence support."
+          : supportMode === "rule_default_completion"
+            ? "Selected as premise evidence for rule/default completion."
+            : mapping.human_notes || "";
+      } else if (mapping.human_decision === "accepted") {
+        mapping.human_decision = "rejected";
+        mapping.human_notes = mapping.human_notes || "Removed from the field evidence basket.";
+      }
+    });
+    if (requiredSet.has(region.region_id)) {
+      ensureMappingForRegion(row, region, "accepted");
+      region.human_review.review_action = "accept";
+    }
+  });
+}
+
+function linkSelectedFieldToRegion({ accept = true } = {}) {
+  const row = selectedFieldRow();
+  const region = selectedRegion();
+  if (!canAnnotateCurrent()) {
+    showToast("当前是预览模式，请先领取这张图再标注。");
+    return false;
+  }
+  if (!row) {
+    showToast("当前没有选中的待审字段。");
+    return false;
+  }
+  if (!region) {
+    showToast("先在航图上选中一个证据框。");
+    return false;
+  }
+  pushUndo("调整字段证据篮子");
+  const review = reviewForField(row);
+  const evidenceIds = uniqueList(review.required_evidence_region_ids || []);
+  const alreadySelected = evidenceIds.includes(region.region_id);
+  const nextIds = alreadySelected
+    ? evidenceIds.filter((regionId) => regionId !== region.region_id)
+    : [...evidenceIds, region.region_id];
+  if (alreadySelected) {
+    updateRegionMappingDecision(row, region.region_id, "rejected", "Removed from the field evidence basket.");
+  } else {
+    ensureMappingForRegion(row, region, "pending");
+  }
+  setFieldEvidenceDraft(row, nextIds);
+  flashRegion(region.region_id);
+  renderOverlay();
+  renderRegionForm();
+  renderTargets();
+  renderCanonicalPanel();
+  showToast(alreadySelected
+    ? "已从当前字段证据篮子移除选中框。选择来源类型后再确认字段。"
+    : "已加入当前字段证据篮子。选择来源类型后再确认字段。");
+  return true;
+}
+
+function removeEvidenceFromSelectedField(regionId) {
+  const row = selectedFieldRow();
+  if (!row || !canAnnotateCurrent()) return;
+  const review = reviewForField(row);
+  const nextIds = uniqueList(review.required_evidence_region_ids || []).filter((item) => item !== regionId);
+  pushUndo("移除字段证据框");
+  updateRegionMappingDecision(row, regionId, "rejected", "Removed from the field evidence basket.");
+  setFieldEvidenceDraft(row, nextIds);
+  renderOverlay();
+  renderRegionForm();
+  renderTargets();
+  renderCanonicalPanel();
+  showToast("已从当前字段证据篮子移除该框。");
+}
+
+function confirmSelectedField(supportMode) {
+  const row = selectedFieldRow();
+  if (!canAnnotateCurrent()) {
+    showToast("当前是预览模式，请先领取这张图再标注。");
+    return;
+  }
+  if (!row) {
+    showToast("当前没有选中的待审字段。");
+    return;
+  }
+  const review = reviewForField(row);
+  const requiredIds = uniqueList(review.required_evidence_region_ids || []);
+  if (FIELD_SUPPORT_REQUIRES_EVIDENCE.has(supportMode) && !requiredIds.length) {
+    showToast("这个来源类型需要先选至少一个证据框。若航图不足以恢复字段，请选“缺少足够编码信息”。");
+    return;
+  }
+  const notes = supportMode === "insufficient_for_encoding" || supportMode === "uncertain"
+    ? (window.prompt("可选：写一句判断依据或复核备注。", review.notes || "") || "")
+    : review.notes || "";
+  pushUndo("确认字段来源");
+  const idsUsedAsSupport = FIELD_SUPPORT_REQUIRES_EVIDENCE.has(supportMode) ? requiredIds : [];
+  applyEvidenceSelectionToMappings(row, idsUsedAsSupport, supportMode);
+  setFieldReview(row, supportMode, {
+    requiredIds,
+    secondaryIds: review.secondary_evidence_region_ids || [],
+    checkedScopes: requiredIds.length ? sourcesForRegionIds(requiredIds) : ["ma_text", "plan_view", "icon_detail"],
+    notes
+  });
+  advanceAfterFieldCommit(row, `已记录：${FIELD_REVIEW_LABELS[supportMode] || supportMode}。`);
+}
+
+function markSelectedField(reviewStatus) {
+  confirmSelectedField(supportModeFromReview({ review_status: reviewStatus }));
+}
+
+function nextPendingField(afterKey = state.selectedFieldKey) {
+  const rows = buildFieldRows().filter((row) => row.requires_review);
+  if (!rows.length) return null;
+  const foundIndex = rows.findIndex((row) => row.key === afterKey);
+  const startIndex = foundIndex >= 0 ? foundIndex : -1;
+  for (let offset = 1; offset <= rows.length; offset += 1) {
+    const row = rows[(startIndex + offset) % rows.length];
+    if (reviewForField(row).review_status === "pending") return row;
+  }
+  return null;
+}
+
+function advanceAfterFieldCommit(row, message) {
+  const next = nextPendingField(row.key);
+  if (next && next.key !== row.key) {
+    state.selectedFieldKey = next.key;
+    const nextReview = reviewForField(next);
+    if (nextReview.evidence_region_ids?.[0]) state.selectedRegionId = nextReview.evidence_region_ids[0];
+    showToast(`${message} 已自动进入下一个待审字段。`);
+  } else {
+    state.selectedFieldKey = row.key;
+    showToast(`${message} 本图没有更多待审字段。`);
+  }
+  renderOverlay();
+  renderRegionForm();
+  renderTargets();
+  renderCanonicalPanel();
+}
+
 function buildAnnotationCanonicalJson() {
   const canonical = state.current?.canonical_gt;
   const target = state.current?.target;
@@ -434,9 +899,10 @@ function buildAnnotationCanonicalJson() {
     leg_index: index + 1,
     answers: Object.fromEntries(PR28_FIELDS.map((field) => {
       const canonicalAnswer = canonicalAnswerAt(canonicalLegs, index + 1, field);
-      // Non-present fields have no visual box to confirm. Keep their PR #28
-      // status in the generated JSON and require box mapping only for present values.
-      const initialAnswer = canonicalAnswer && (!isPresentAnswer(canonicalAnswer) || field === "Q_terminator")
+      // Non-present fields have no direct visual evidence task. Present fields,
+      // including Q_terminator, stay unknown until the field-review queue gives
+      // either a supporting box or an explicit no-direct-evidence conclusion.
+      const initialAnswer = canonicalAnswer && !isPresentAnswer(canonicalAnswer)
         ? deepClone(canonicalAnswer)
         : unknownAnswer();
       return [field, initialAnswer];
@@ -444,10 +910,26 @@ function buildAnnotationCanonicalJson() {
   }));
   const acceptedMappings = [];
 
+  buildFieldRows().forEach((row) => {
+    if (!row.requires_review || !legs[row.canonical_leg_index - 1]) return;
+    const review = reviewForField(row);
+    const supportMode = review.support_mode || review.review_status;
+    if (["direct_visible", "visible_joint", "rule_default_completion"].includes(supportMode)) {
+      legs[row.canonical_leg_index - 1].answers[row.field_name] = deepClone(row.expected_answer || unknownAnswer());
+    } else if (supportMode === "insufficient_for_encoding" || supportMode === "no_direct_chart_evidence") {
+      legs[row.canonical_leg_index - 1].answers[row.field_name] = { status: "not_observable", value: null };
+    } else if (supportMode === "not_applicable") {
+      legs[row.canonical_leg_index - 1].answers[row.field_name] = { status: "not_applicable", value: null };
+    }
+  });
+
   state.regions.forEach((region) => {
     (region.candidate_mappings || []).forEach((mapping) => {
       if (mapping.human_decision !== "accepted") return;
       if (!PR28_FIELDS.includes(mapping.field_name)) return;
+      const mappedFieldKey = fieldKeyForMapping(mapping);
+      const mappedRow = buildFieldRows().find((row) => row.key === mappedFieldKey);
+      if (mappedRow?.requires_review) return;
       const legIndex = canonicalLegIndexForMapping(mapping);
       const answer = mapping.human_answer || canonicalFieldForMapping(mapping);
       if (!legIndex || !answer || !legs[legIndex - 1]) return;
@@ -531,8 +1013,76 @@ function compareCanonicalJson(predicted, canonical) {
   };
 }
 
+function cleanParticipantId(value) {
+  return String(value || "")
+    .trim()
+    .replace(/[^\w.-]+/g, "_")
+    .slice(0, 64);
+}
+
+function generatedParticipantId() {
+  const randomPart = Math.random().toString(36).slice(2, 8).toUpperCase();
+  return `P${randomPart}`;
+}
+
+function participantIdFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  return cleanParticipantId(
+    params.get("participant")
+    || params.get("annotator")
+    || params.get("user")
+    || ""
+  );
+}
+
+function ensureParticipantId() {
+  const fromUrl = participantIdFromUrl();
+  const stored = cleanParticipantId(localStorage.getItem(datasetConfig.storageKey) || "");
+  const participantId = fromUrl || stored || generatedParticipantId();
+  localStorage.setItem(datasetConfig.storageKey, participantId);
+  if (els.annotatorInput) els.annotatorInput.value = participantId;
+  if (els.participantBadge) {
+    const source = fromUrl ? "链接身份" : "本机试用身份";
+    els.participantBadge.textContent = datasetConfig.finalDataset
+      ? `当前参与者：${participantId} · ${source}`
+      : `练习身份：${participantId}`;
+  }
+  return participantId;
+}
+
 function currentAnnotator() {
-  return (els.annotatorInput?.value || "").trim();
+  return cleanParticipantId(els.annotatorInput?.value || localStorage.getItem(datasetConfig.storageKey) || "");
+}
+
+function currentChartStatus() {
+  return state.current?.manifest?.claim_status || "";
+}
+
+function currentChartClaimedByMe() {
+  return Boolean(
+    state.current
+    && state.current.manifest?.claimed_by === currentAnnotator()
+    && ["claimed", "claimed_by_me", "submitted"].includes(currentChartStatus())
+  );
+}
+
+function canAnnotateCurrent() {
+  if (!state.current) return false;
+  if (!datasetConfig.finalDataset) return true;
+  return currentChartClaimedByMe();
+}
+
+function canClaimCurrent() {
+  return Boolean(
+    state.current
+    && datasetConfig.finalDataset
+    && currentChartStatus() === "unassigned"
+    && currentAnnotator()
+  );
+}
+
+function currentChartIsPreview() {
+  return Boolean(state.current && datasetConfig.finalDataset && currentChartStatus() === "unassigned");
 }
 
 function apiUrl(path, params = {}) {
@@ -601,6 +1151,56 @@ function showToast(message) {
   els.toast.classList.remove("hidden");
   window.clearTimeout(showToast.timer);
   showToast.timer = window.setTimeout(() => els.toast.classList.add("hidden"), 2800);
+}
+
+function flashRegion(regionId) {
+  state.flashRegionId = regionId || null;
+  window.clearTimeout(state.flashTimer);
+  renderOverlay();
+  state.flashTimer = window.setTimeout(() => {
+    state.flashRegionId = null;
+    renderOverlay();
+  }, 1400);
+}
+
+function syncUndoButtons() {
+  const enabled = state.undoStack.length > 0;
+  if (els.undoBtn) els.undoBtn.disabled = !enabled;
+  if (els.workflowUndoBtn) els.workflowUndoBtn.disabled = !enabled;
+}
+
+function pushUndo(label) {
+  if (!state.current) return;
+  state.undoStack.push({
+    label,
+    regions: deepClone(state.regions),
+    fieldReviews: deepClone(state.fieldReviews),
+    selectedRegionId: state.selectedRegionId,
+    selectedFieldKey: state.selectedFieldKey
+  });
+  if (state.undoStack.length > 40) state.undoStack.shift();
+  syncUndoButtons();
+}
+
+function undoLastAction() {
+  const snapshot = state.undoStack.pop();
+  if (!snapshot) return;
+  state.regions = deepClone(snapshot.regions || []);
+  state.fieldReviews = deepClone(snapshot.fieldReviews || {});
+  state.selectedRegionId = snapshot.selectedRegionId || state.regions[0]?.region_id || null;
+  state.selectedFieldKey = snapshot.selectedFieldKey || null;
+  state.pendingLinkFieldKey = null;
+  state.drawMode = false;
+  if (els.drawBtn) {
+    els.drawBtn.classList.remove("primary");
+    els.drawBtn.textContent = "为当前字段画证据框";
+  }
+  syncUndoButtons();
+  renderOverlay();
+  renderRegionForm();
+  renderTargets();
+  renderCanonicalPanel();
+  showToast(`已撤销：${snapshot.label || "上一步"}`);
 }
 
 function zoomText(value) {
@@ -759,6 +1359,12 @@ function makeRegionId(chartId, index) {
 
 function normalizeRegion(region, index) {
   const sourceId = region.region_id || region.final_region_id || region.source_region_id || makeRegionId(state.current.manifest.chart_id, index);
+  const reviewedMappings = region.candidate_mappings || region.candidate_mappings_reviewed;
+  const legacyAcceptedMappings = (region.accepted_mappings || []).map((mapping) => ({
+    ...mapping,
+    expected_answer: mapping.expected_answer || mapping.canonical_answer || null,
+    human_decision: "accepted"
+  }));
   return {
     region_id: sourceId,
     source_region_id: region.source_region_id || sourceId,
@@ -781,7 +1387,7 @@ function normalizeRegion(region, index) {
     source_leg_type: region.source_leg_type || "",
     source_field_name: region.source_field_name || "",
     is_formal_annotation_candidate: Boolean(region.is_formal_annotation_candidate),
-    candidate_mappings: region.candidate_mappings || region.candidate_mappings_reviewed || region.accepted_mappings || [],
+    candidate_mappings: reviewedMappings || legacyAcceptedMappings,
     needs_human_decision: region.needs_human_decision ?? true,
     human_review: {
       review_action: region.review_action || region.human_review?.review_action || "pending",
@@ -826,6 +1432,7 @@ function acceptPendingMappings(region) {
   let changed = 0;
   (region.candidate_mappings || []).forEach((mapping) => {
     if (mappingIsPending(mapping)) {
+      if (!changed) pushUndo("确认字段对应");
       mapping.human_decision = "accepted";
       changed += 1;
     }
@@ -835,17 +1442,21 @@ function acceptPendingMappings(region) {
 }
 
 function acceptCurrentAndAdvance() {
+  if (!canAnnotateCurrent()) {
+    showToast("当前是预览模式，请先领取这张图再标注。");
+    return;
+  }
   const region = selectedRegion();
   const changed = acceptPendingMappings(region);
   const nextRegionId = findNextPendingRegionId(region?.region_id);
   if (nextRegionId) {
     selectRegionById(nextRegionId);
-    showToast(`已确认当前框 ${changed} 条候选，并跳到下一个待确认框。`);
+    showToast(`已确认当前框 ${changed} 条候选，并切换到下一个待处理框。`);
   } else {
     renderRegionForm();
     renderTargets();
     renderCanonicalPanel();
-    showToast(`已确认当前框 ${changed} 条候选；本图暂无待确认框。`);
+    showToast(`已确认当前框 ${changed} 条候选。`);
   }
 }
 
@@ -856,6 +1467,11 @@ function setUndoQuickAcceptEnabled(enabled) {
 }
 
 function acceptAllChartPendingMappings() {
+  if (!canAnnotateCurrent()) {
+    showToast("当前是预览模式，请先领取这张图再标注。");
+    return;
+  }
+  pushUndo("采纳已有候选");
   const snapshot = [];
   const changedRegions = new Set();
   state.regions.forEach((region) => {
@@ -913,6 +1529,11 @@ function undoQuickAccept() {
 function markCurrentFrameUnsure() {
   const region = selectedRegion();
   if (!region) return;
+  if (!canAnnotateCurrent()) {
+    showToast("当前是预览模式，请先领取这张图再标注。");
+    return;
+  }
+  pushUndo("标记当前框不确定");
   (region.candidate_mappings || []).forEach((mapping) => {
     if (mappingIsPending(mapping)) mapping.human_decision = "needs_discussion";
   });
@@ -940,54 +1561,200 @@ function fieldAcceptedForLeg(leg, field) {
   }));
 }
 
-function renderWorkflowPanel(comparison, pendingCount, attentionRows) {
+function renderWorkflowPanel() {
   if (!els.workflowSummary || !els.workflowNextList) return;
-  const remaining = attentionRows.length;
-  const coverage = Math.round((comparison?.present_coverage || 0) * 100);
-  let nextText = "可以保存";
-  if (pendingCount > 0) {
-    nextText = "先快速确认已有候选";
-  } else if (remaining > 0) {
-    nextText = `补 ${remaining} 个缺证字段`;
-  }
+  const rows = buildFieldRows().filter((row) => row.requires_review);
+  const reviews = rows.map((row) => ({ row, review: reviewForField(row) }));
+  const pending = reviews.filter((item) => item.review.review_status === "pending");
+  if (!state.selectedFieldKey && pending[0]) state.selectedFieldKey = pending[0].row.key;
+  const uncertain = reviews.filter((item) => item.review.review_status === "uncertain");
+  const selected = selectedFieldRow();
+  const completion = rows.length ? Math.round(((rows.length - pending.length) / rows.length) * 100) : 100;
+  const selectedReview = selected ? reviewForField(selected) : null;
+  const canEdit = canAnnotateCurrent();
+  const canFinish = canEdit;
+  const preview = currentChartIsPreview();
+  const modeText = !state.current
+    ? "请先从左侧选择航图。"
+    : preview
+      ? "预览模式：可以查看航图和字段队列，领取后才能标注。"
+      : canEdit
+        ? "标注模式：按字段逐项给出结论。"
+        : "当前航图不能由该参与者编辑。";
+
+  const selectedEvidenceIds = selectedReview?.required_evidence_region_ids || [];
+  const selectedEvidenceSources = selectedReview?.evidence_source?.length
+    ? selectedReview.evidence_source
+    : sourcesForRegionIds(selectedEvidenceIds);
+  const selectedFieldTitle = selected
+    ? `${friendlyLegName(selected)} · ${friendlyFieldName(selected.field_name)}`
+    : "请选择航图";
+  const selectedFieldAnswer = selected
+    ? friendlyAnswerValue(selected.expected_answer, selected.expected_value)
+    : "左侧选择航图后，这里会显示要判断的字段。";
+  const selectedStatus = selectedReview
+    ? FIELD_REVIEW_LABELS[selectedReview.review_status] || selectedReview.review_status
+    : "未选择";
+  const selectedEvidenceText = selectedEvidenceIds.length
+    ? `证据框：${selectedEvidenceIds.join("、")}`
+    : "证据篮子为空";
+  const fieldActionDisabled = !selected || !state.current || !canEdit;
+  const confirmDisabled = fieldActionDisabled ? "disabled" : "";
+  const evidenceConfirmDisabled = fieldActionDisabled || !selectedEvidenceIds.length ? "disabled" : "";
+  const evidenceHint = selectedReview?.autofilled_evidence
+    ? "系统已自动填入候选框；请核对后选择来源类型。"
+    : selectedEvidenceIds.length
+      ? "这些框会作为本字段结论的证据来源保存。"
+      : "先选中图上的框加入证据篮子；如果图上确实缺少足够信息，再选缺少足够编码信息。";
+  const evidenceRows = selectedEvidenceIds.length
+    ? selectedEvidenceIds.map((regionId) => {
+        const region = regionById(regionId);
+        const active = regionId === state.selectedRegionId ? " active" : "";
+        const source = evidenceSourceForRegion(region);
+        return `
+          <div class="evidence-basket-row${active}">
+            <button type="button" data-select-evidence="${escapeText(regionId)}">
+              <strong>${escapeText(regionId)}</strong>
+              <span>${escapeText(region ? friendlyRegionType(region.region_type) : "已删除框")}</span>
+              <small>${escapeText(source)}</small>
+            </button>
+            <button type="button" class="evidence-remove" data-remove-evidence="${escapeText(regionId)}" ${confirmDisabled}>移除</button>
+          </div>
+        `;
+      }).join("")
+    : '<p class="empty compact-empty">当前字段还没有证据框。</p>';
+
   els.workflowSummary.innerHTML = `
-    <div class="workflow-metric">
-      <strong>${coverage}%</strong>
-      <span>证据覆盖</span>
+    <div class="current-task-card">
+      <div class="task-kicker">当前必须判断的字段</div>
+      <h2>${escapeText(selectedFieldTitle)}</h2>
+      <div class="task-answer">字段真值：<strong>${escapeText(selectedFieldAnswer)}</strong></div>
+      <p>先核对证据篮子，再选择这个字段的来源类型。加入或调整框不会完成字段；只有下面的确认按钮会记录并进入下一个字段。</p>
+      <div class="task-status-row">
+        <span class="field-status status-${escapeText(selectedReview?.review_status || "pending")}">${escapeText(selectedStatus)}</span>
+        <span>${escapeText(selectedEvidenceText)}</span>
+        ${selectedEvidenceSources.length ? `<span>来源：${escapeText(selectedEvidenceSources.join("、"))}</span>` : ""}
+      </div>
+      <div class="evidence-basket">
+        <div class="basket-head">
+          <strong>当前字段证据篮子</strong>
+          <span>${escapeText(evidenceHint)}</span>
+        </div>
+        ${evidenceRows}
+      </div>
+      <div class="field-confirm-grid">
+        <button type="button" class="primary" data-confirm-mode="direct_visible" ${evidenceConfirmDisabled}>确认：直接图面证据</button>
+        <button type="button" data-confirm-mode="visible_joint" ${evidenceConfirmDisabled}>改为多证据综合</button>
+        <button type="button" data-confirm-mode="rule_default_completion" ${evidenceConfirmDisabled}>改为规则/默认补全</button>
+        <button type="button" data-confirm-mode="insufficient_for_encoding" ${confirmDisabled}>缺少足够编码信息</button>
+        <button type="button" data-confirm-mode="uncertain" ${confirmDisabled}>不确定 / 交复核</button>
+      </div>
     </div>
     <div class="workflow-metric">
-      <strong>${pendingCount}</strong>
-      <span>待确认候选</span>
+      <strong>${pending.length}</strong>
+      <span>尚未确认</span>
     </div>
     <div class="workflow-metric">
-      <strong>${remaining}</strong>
-      <span>缺证字段</span>
+      <strong>${completion}%</strong>
+      <span>字段完成</span>
     </div>
-    <div class="workflow-next">
-      <b>下一步：</b>${escapeText(nextText)}
+    <div class="workflow-metric">
+      <strong>${reviews.filter((item) => ["visible_joint", "rule_default_completion"].includes(item.review.review_status)).length}</strong>
+      <span>综合/补全</span>
     </div>
-    <p class="metric-note">这里统计的是人工证据覆盖/对齐，不代表独立 OCR 或 LLM 抽取正确率。</p>
+    <p class="metric-note">${escapeText(modeText)}</p>
   `;
 
+  els.workflowSummary.querySelectorAll("[data-confirm-mode]").forEach((button) => {
+    button.addEventListener("click", () => confirmSelectedField(button.dataset.confirmMode));
+  });
+  els.workflowSummary.querySelectorAll("[data-select-evidence]").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.selectedRegionId = button.dataset.selectEvidence;
+      renderOverlay();
+      renderRegionForm();
+      renderTargets();
+      renderCanonicalPanel();
+    });
+  });
+  els.workflowSummary.querySelectorAll("[data-remove-evidence]").forEach((button) => {
+    button.addEventListener("click", () => removeEvidenceFromSelectedField(button.dataset.removeEvidence));
+  });
+
+  [els.linkSelectedFieldBtn, els.addRegionForFieldBtn, els.markNoEvidenceBtn, els.markImplicitBtn, els.markFieldUnsureBtn].forEach((button) => {
+    if (button) button.disabled = fieldActionDisabled;
+  });
+  if (els.nextPendingBtn) els.nextPendingBtn.disabled = !state.current;
+  if (els.workflowSaveBtn) els.workflowSaveBtn.disabled = !canFinish || pending.length > 0;
+  if (els.saveBtn) els.saveBtn.disabled = !canFinish || pending.length > 0;
+  if (els.saveDraftBtn) els.saveDraftBtn.disabled = !canEdit;
+  if (els.quickAcceptBtn) els.quickAcceptBtn.disabled = !canEdit;
+  if (els.openTargetsBtn) els.openTargetsBtn.disabled = !state.current;
+  if (els.drawBtn) els.drawBtn.disabled = !canEdit || !selected;
+  if (els.deleteRegionBtn) els.deleteRegionBtn.disabled = !canEdit || !selectedRegion();
+  const canReturn = canEdit && currentChartStatus() !== "submitted";
+  if (els.returnClaimBtn) els.returnClaimBtn.disabled = !canReturn;
+  if (els.returnWorkflowBtn) els.returnWorkflowBtn.disabled = !canReturn;
+  if (els.claimCurrentBtn) {
+    els.claimCurrentBtn.classList.toggle("hidden", !state.current || !datasetConfig.finalDataset || !["unassigned", "claimed_by_other", "returned_for_expert_review"].includes(currentChartStatus()));
+    els.claimCurrentBtn.disabled = !canClaimCurrent();
+    els.claimCurrentBtn.textContent = canClaimCurrent()
+      ? "领取并开始"
+      : currentChartStatus() === "returned_for_expert_review"
+        ? "已退回专家复审"
+        : currentChartStatus() === "claimed_by_other"
+          ? "他人处理中"
+          : "不可领取";
+  }
+
   els.workflowNextList.innerHTML = "";
-  if (!remaining) {
-    els.workflowNextList.innerHTML = '<p class="empty">当前没有缺证的 present 字段。确认图上没有明显错误后即可保存。</p>';
+  if (!rows.length) {
+    els.workflowNextList.innerHTML = '<p class="empty">当前航图没有需要人工判断的 present 字段。</p>';
     return;
   }
-  const title = document.createElement("strong");
-  title.textContent = "需要优先补证据的字段";
-  els.workflowNextList.appendChild(title);
-  attentionRows.slice(0, 5).forEach((row) => {
+
+  const appendFieldRow = (container, { row, review }) => {
     const item = document.createElement("div");
-    item.className = "workflow-missing-row";
+    item.className = `workflow-missing-row field-review-row status-${review.review_status} ${row.key === state.selectedFieldKey ? "active" : ""}`;
     item.innerHTML = `
-      <span>${escapeText(`航段 ${row.leg_index} · ${friendlyFieldName(row.field)}`)}</span>
-      <b>${escapeText(friendlyAnswerValue(row.answer))}</b>
-      <button type="button">去候选字段处理</button>
+      <span>${escapeText(`${friendlyLegName(row)} · ${friendlyFieldName(row.field_name)}`)}</span>
+      <b>${escapeText(friendlyAnswerValue(row.expected_answer, row.expected_value))}</b>
+      <small>${escapeText(FIELD_REVIEW_LABELS[review.review_status] || review.review_status)}</small>
     `;
-    item.querySelector("button").addEventListener("click", openTargetPanel);
-    els.workflowNextList.appendChild(item);
-  });
+    item.addEventListener("click", () => selectField(row));
+    container.appendChild(item);
+  };
+
+  const pendingPanel = document.createElement("details");
+  pendingPanel.className = "field-list-panel pending-fields";
+  pendingPanel.open = true;
+  pendingPanel.innerHTML = `<summary>尚未确认字段 ${pending.length} 项</summary>`;
+  const pendingBody = document.createElement("div");
+  pendingBody.className = "field-list-scroll";
+  if (!pending.length) {
+    pendingBody.innerHTML = '<p class="empty compact-empty">没有尚未确认字段，可以完成本图。</p>';
+  } else {
+    pending.forEach((item) => appendFieldRow(pendingBody, item));
+  }
+  pendingPanel.appendChild(pendingBody);
+  els.workflowNextList.appendChild(pendingPanel);
+
+  const completed = reviews.filter((item) => item.review.review_status !== "pending");
+  const completedPanel = document.createElement("details");
+  completedPanel.className = "field-list-panel completed-fields-panel";
+  completedPanel.innerHTML = `<summary>已处理字段 ${completed.length} 项</summary>`;
+  const completedBody = document.createElement("div");
+  completedBody.className = "field-list-scroll";
+  completed.forEach((item) => appendFieldRow(completedBody, item));
+  completedPanel.appendChild(completedBody);
+  els.workflowNextList.appendChild(completedPanel);
+
+  if (uncertain.length) {
+    const note = document.createElement("p");
+    note.className = "hint";
+    note.textContent = `还有 ${uncertain.length} 个字段被标为不确定，完成后应进入复核。`;
+    els.workflowNextList.appendChild(note);
+  }
 }
 
 function renderChartList() {
@@ -1001,41 +1768,56 @@ function renderChartList() {
     .forEach((chart) => {
       const card = document.createElement("div");
       const claimedByOther = datasetConfig.finalDataset && chart.claim_status === "claimed_by_other";
-      const canClaim = datasetConfig.finalDataset
-        && chart.claim_status === "unassigned"
-        && currentAnnotator();
+      const returnedForExpert = datasetConfig.finalDataset && chart.claim_status === "returned_for_expert_review";
+      const mine = !datasetConfig.finalDataset || ["claimed", "claimed_by_me", "submitted"].includes(chart.claim_status || "");
+      const unassigned = datasetConfig.finalDataset && chart.claim_status === "unassigned";
+      const canOpen = !datasetConfig.finalDataset || mine || unassigned;
       const claimLabel = !datasetConfig.finalDataset
-        ? "practice"
-        : chart.claim_status === "unassigned"
+        ? "练习"
+        : unassigned
           ? "未领取"
+          : returnedForExpert
+            ? "退回专家复审"
+            : chart.claim_status === "submitted"
+              ? "我已完成"
+              : chart.claim_status === "claimed" || chart.claim_status === "claimed_by_me"
+                ? "我已领取"
+                : `他人处理中`;
+      const openLabel = !datasetConfig.finalDataset
+        ? "打开"
+        : unassigned
+          ? "预览"
           : chart.claim_status === "submitted"
-            ? "我已提交"
-            : chart.claim_status === "claimed" || chart.claim_status === "claimed_by_me"
-              ? "我已领取"
-              : `已被 ${chart.claimed_by || "他人"} 领取`;
-      card.className = `chart-card ${state.current?.manifest?.chart_id === chart.chart_id ? "active" : ""} ${claimedByOther ? "disabled" : ""}`;
-      card.title = claimedByOther ? "这张图已被其他标注人领取，请选择未领取的图。" : "点击打开这张图；正式标注请在左栏点“领取”。";
+            ? "查看"
+            : mine
+              ? "继续"
+              : "不可打开";
+      const cardDisabled = claimedByOther || returnedForExpert;
+      card.className = `chart-card ${state.current?.manifest?.chart_id === chart.chart_id ? "active" : ""} ${cardDisabled ? "disabled" : ""} ${returnedForExpert ? "returned" : ""}`;
+      card.title = returnedForExpert
+        ? `这张图已退回专家复审。${chart.return_reason ? `原因：${chart.return_reason}` : ""}`
+        : claimedByOther
+          ? "这张图已被其他参与者领取，请选择未领取的图。"
+          : unassigned
+            ? "点击预览航图；确认可做后在左侧领取。"
+            : "点击打开这张图。";
       card.innerHTML = `
-        <button class="chart-open" type="button" ${claimedByOther ? "disabled" : ""}>
+        <button class="chart-open" type="button" ${canOpen && !returnedForExpert && !claimedByOther ? "" : "disabled"}>
           <strong>${escapeText(chart.chart_id)}</strong>
           <span class="muted">${escapeText(chart.procedure_key || "")}</span>
+          <span class="chart-open-label">${escapeText(openLabel)}</span>
         </button>
-        ${datasetConfig.finalDataset ? `<button class="claim-card-btn" type="button" ${canClaim ? "" : "disabled"}>${chart.claim_status === "unassigned" ? "领取" : claimLabel}</button>` : ""}
         <div class="badge-row">
           <span class="badge ${chart.sample_type === "anomaly" ? "hot" : ""}">${escapeText(chart.sample_type)}</span>
           <span class="badge">legs ${chart.target_leg_count}</span>
-          <span class="badge ${claimedByOther ? "hot" : ""}">${escapeText(claimLabel)}</span>
+          <span class="badge ${claimedByOther || returnedForExpert ? "hot" : ""}">${escapeText(claimLabel)}</span>
           ${chart.has_prelabel ? '<span class="badge">prelabel</span>' : ""}
-          ${chart.has_my_draft ? '<span class="badge">鏆傚瓨</span>' : ""}
-          ${chart.has_my_annotation ? '<span class="badge hot">我的保存</span>' : ""}
+          ${chart.has_my_draft ? '<span class="badge">暂存</span>' : ""}
+          ${chart.has_my_annotation ? '<span class="badge hot">已完成</span>' : ""}
           ${chart.submission_count ? `<span class="badge">提交 ${escapeText(chart.submission_count)}</span>` : ""}
         </div>
       `;
       card.querySelector(".chart-open")?.addEventListener("click", () => loadChart(chart.chart_id).catch((error) => showToast(error.message)));
-      card.querySelector(".claim-card-btn")?.addEventListener("click", (event) => {
-        event.stopPropagation();
-        claimChartFromList(chart.chart_id).catch((error) => showToast(error.message));
-      });
       els.chartList.appendChild(card);
     });
 }
@@ -1044,12 +1826,8 @@ function updateClaimButton() {
   renderChartList();
 }
 
-async function claimChartFromList(chartId) {
-  if (datasetConfig.finalDataset && !currentAnnotator()) {
-    showToast("请先填写标注人，再领取航图。");
-    els.annotatorInput?.focus();
-    return;
-  }
+async function claimChartFromList(chartId, { openAfter = false } = {}) {
+  ensureParticipantId();
   const result = await postJson(apiUrl(`/api/claims/${encodeURIComponent(chartId)}`), {});
   const claim = result.claim || {};
   const chart = state.charts.find((item) => item.chart_id === chartId);
@@ -1064,30 +1842,95 @@ async function claimChartFromList(chartId) {
     state.current.manifest.claimed_at = claim.claimed_at || "";
     const claimText = state.current.manifest.claimed_by ? ` · 领取人 ${state.current.manifest.claimed_by}` : "";
     if (els.currentMeta) {
-      els.currentMeta.textContent = ` ${state.current.manifest.sample_type || ""} · ${state.current.manifest.priority_reason || ""}${claimText}`;
+      els.currentMeta.textContent = ` ${state.current.manifest.sample_type || ""} · 标注模式${claimText}`;
     }
   }
   renderChartList();
   showToast(`已领取：${chartId}`);
+  if (openAfter) await loadChart(chartId);
+  renderCanonicalPanel();
+}
+
+async function claimCurrentChart() {
+  if (!state.current) {
+    showToast("请先从左侧预览一张航图。");
+    return;
+  }
+  if (!canClaimCurrent()) {
+    showToast("当前航图不可领取。");
+    return;
+  }
+  await claimChartFromList(state.current.manifest.chart_id, { openAfter: true });
+}
+
+async function returnCurrentClaim() {
+  if (!state.current) {
+    showToast("请先打开一张已领取航图。");
+    return;
+  }
+  if (!datasetConfig.finalDataset) {
+    showToast("练习集不需要退回。");
+    return;
+  }
+  const chartId = state.current.manifest.chart_id;
+  const claimedBy = state.current.manifest.claimed_by || "";
+  if (claimedBy !== currentAnnotator()) {
+    showToast("只能退回自己领取的航图。");
+    return;
+  }
+  const reason = window.prompt("请写明退回原因，例如“holding 结构复杂，需要专家复审”。", "");
+  if (reason === null) return;
+  const result = await postJson(apiUrl(`/api/claims/${encodeURIComponent(chartId)}/return`), {
+    annotator: currentAnnotator(),
+    reason
+  });
+  const claim = result.claim || {};
+  const chart = state.charts.find((item) => item.chart_id === chartId);
+  if (chart) {
+    chart.claim_status = "returned_for_expert_review";
+    chart.claimed_by = claim.annotator || currentAnnotator();
+    chart.returned_at = claim.returned_at || "";
+    chart.returned_by = claim.returned_by || currentAnnotator();
+    chart.return_reason = claim.return_reason || reason || "";
+    chart.expert_review_required = true;
+  }
+  state.current.manifest.claim_status = "returned_for_expert_review";
+  state.current.manifest.returned_at = claim.returned_at || "";
+  state.current.manifest.returned_by = claim.returned_by || currentAnnotator();
+  state.current.manifest.return_reason = claim.return_reason || reason || "";
+  renderChartList();
+  renderCanonicalPanel();
+  showToast("已退回并标记为专家复审。");
 }
 
 async function loadChart(chartId) {
-  if (datasetConfig.finalDataset && !currentAnnotator()) {
-    showToast("正式标注请先填写右上角“标注人”，再在左栏点击航图的“领取”。");
-    els.annotatorInput?.focus();
+  ensureParticipantId();
+  const listItem = state.charts.find((item) => item.chart_id === chartId);
+  if (datasetConfig.finalDataset && listItem && ["claimed_by_other", "returned_for_expert_review"].includes(listItem.claim_status || "")) {
+    showToast(listItem.claim_status === "returned_for_expert_review" ? "这张图已退回专家复审。" : "这张图已被其他参与者领取。");
     return;
   }
   state.current = await getJson(apiUrl("/api/chart", { chart_id: chartId }));
   state.dataset = state.current.dataset || datasetConfig;
   const sourceRegions = state.current.draft?.regions || state.current.annotation?.regions || state.current.prelabel?.regions || [];
   state.regions = sourceRegions.map(normalizeRegion);
+  state.fieldReviews = normalizeFieldReviews(state.current.draft?.field_reviews || state.current.annotation?.field_reviews || {});
+  state.selectedFieldKey = null;
+  state.pendingLinkFieldKey = null;
+  state.undoStack = [];
+  syncUndoButtons();
   state.selectedRegionId = state.regions[0]?.region_id || null;
   state.lastQuickAcceptSnapshot = null;
   setUndoQuickAcceptEnabled(false);
 
   els.currentTitle.textContent = chartId;
+  const statusText = currentChartIsPreview()
+    ? "预览模式"
+    : canAnnotateCurrent()
+      ? "标注模式"
+      : (state.current.manifest.claim_status || "");
   const claimText = state.current.manifest.claimed_by ? ` · 领取人 ${state.current.manifest.claimed_by}` : "";
-  els.currentMeta.textContent = ` ${state.current.manifest.sample_type || ""} · ${state.current.manifest.priority_reason || ""}${claimText}`;
+  els.currentMeta.textContent = ` ${state.current.manifest.sample_type || ""} · ${statusText}${claimText}`;
   els.overlay.style.width = "1px";
   els.overlay.style.height = "1px";
   els.chartImage.onload = () => {
@@ -1269,6 +2112,10 @@ function updateDraggedRegionBox(point) {
   if (!state.drag || state.drag.type !== "region-box") return false;
   const region = state.regions.find((item) => item.region_id === state.drag.regionId);
   if (!region) return false;
+  if (!state.drag.undoSaved) {
+    pushUndo("调整证据框");
+    state.drag.undoSaved = true;
+  }
   const dx = point.x - state.drag.startPoint.x;
   const dy = point.y - state.drag.startPoint.y;
   region.bbox = state.drag.mode === "move"
@@ -1282,11 +2129,53 @@ function regionClassName(regionType) {
   return `region-${String(regionType || "").toLowerCase().replace(/_/g, "-")}`;
 }
 
+function svgEl(name) {
+  return document.createElementNS("http://www.w3.org/2000/svg", name);
+}
+
+function labelWidthEstimate(text) {
+  const width = Array.from(String(text || "")).reduce((sum, char) => {
+    return sum + (/[\u4e00-\u9fff]/.test(char) ? 13 : 7);
+  }, 18);
+  return Math.min(260, Math.max(72, width));
+}
+
+function appendSelectedRegionLabel(box, region, size) {
+  const label = friendlyRegionType(region.region_type);
+  const labelWidth = labelWidthEstimate(label);
+  const labelHeight = 24;
+  const x = Math.min(Math.max(box.x, 3), Math.max(3, size.width - labelWidth - 3));
+  const y = box.y > labelHeight + 6
+    ? box.y - labelHeight - 4
+    : Math.min(size.height - labelHeight - 3, box.y + box.height + 6);
+  const group = svgEl("g");
+  group.classList.add("box-tag");
+  const bg = svgEl("rect");
+  bg.setAttribute("x", x);
+  bg.setAttribute("y", y);
+  bg.setAttribute("width", labelWidth);
+  bg.setAttribute("height", labelHeight);
+  bg.setAttribute("rx", 5);
+  bg.classList.add("box-tag-bg");
+  const text = svgEl("text");
+  text.setAttribute("x", x + 8);
+  text.setAttribute("y", y + 16);
+  text.classList.add("box-tag-text");
+  text.textContent = label;
+  group.appendChild(bg);
+  group.appendChild(text);
+  els.overlay.appendChild(group);
+}
+
 function renderOverlay() {
   const size = getStageSize();
   syncOverlayToImage(size);
   els.overlay.setAttribute("viewBox", `0 0 ${size.width} ${size.height}`);
   els.overlay.innerHTML = "";
+  const selectedRow = selectedFieldRow();
+  const evidenceRegionIds = new Set(
+    selectedRow ? (reviewForField(selectedRow).evidence_region_ids || []) : []
+  );
 
   state.regions.forEach((region) => {
     const box = bboxToPixels(region.bbox);
@@ -1298,6 +2187,8 @@ function renderOverlay() {
     rect.classList.add("box");
     rect.classList.add(regionClassName(region.region_type));
     if (region.region_id === state.selectedRegionId) rect.classList.add("selected");
+    if (evidenceRegionIds.has(region.region_id)) rect.classList.add("field-evidence");
+    if (state.flashRegionId === region.region_id) rect.classList.add("just-linked");
     if (state.drag?.type === "region-box" && state.drag.regionId === region.region_id) {
       rect.style.cursor = cursorForBoxHandle(state.drag.mode);
     }
@@ -1306,6 +2197,12 @@ function renderOverlay() {
       event.stopPropagation();
       event.preventDefault();
       state.selectedRegionId = region.region_id;
+      if (!canAnnotateCurrent()) {
+        renderOverlay();
+        renderRegionForm();
+        renderTargets();
+        return;
+      }
       const point = normalizedPoint(event);
       const mode = boxHandleForPoint(point, region.bbox);
       state.drag = {
@@ -1322,7 +2219,7 @@ function renderOverlay() {
       renderTargets();
     });
     rect.addEventListener("pointermove", (event) => {
-      if (state.drawMode || state.drag) return;
+      if (state.drawMode || state.drag || !canAnnotateCurrent()) return;
       const cursor = cursorForBoxHandle(boxHandleForPoint(normalizedPoint(event), region.bbox));
       els.overlay.style.cursor = cursor;
       rect.style.cursor = cursor;
@@ -1333,12 +2230,16 @@ function renderOverlay() {
     els.overlay.appendChild(rect);
 
     if (region.region_id === state.selectedRegionId) {
-      const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
-      label.setAttribute("x", Math.max(4, box.x + 4));
-      label.setAttribute("y", Math.max(14, box.y + 14));
-      label.classList.add("box-label");
-      label.textContent = region.region_type;
-      els.overlay.appendChild(label);
+      const ring = svgEl("rect");
+      const ringX = Math.max(0, box.x - 4);
+      const ringY = Math.max(0, box.y - 4);
+      ring.setAttribute("x", ringX);
+      ring.setAttribute("y", ringY);
+      ring.setAttribute("width", Math.min(size.width - ringX, box.width + 8));
+      ring.setAttribute("height", Math.min(size.height - ringY, box.height + 8));
+      ring.classList.add("selection-ring");
+      els.overlay.appendChild(ring);
+      appendSelectedRegionLabel(box, region, size);
     }
   });
 
@@ -1383,6 +2284,19 @@ function renderRegionForm() {
   els.reviewActionInput.value = region.human_review.review_action || "pending";
   const note = region.human_review.notes || "";
   els.notesInput.value = /[\u4e00-\u9fff]/.test(note) ? note : friendlyRegionNote(region);
+  [
+    els.regionTypeInput,
+    els.labelInput,
+    els.ocrInput,
+    els.bboxX,
+    els.bboxY,
+    els.bboxW,
+    els.bboxH,
+    els.reviewActionInput,
+    els.notesInput
+  ].forEach((input) => {
+    if (input) input.disabled = !canAnnotateCurrent();
+  });
   renderMappingsV2(region);
 }
 
@@ -1437,7 +2351,11 @@ function renderMappingsV2(region) {
     <button data-action="pending-all">全部暂不确认</button>
     <p class="hint">如果这个框确实包含下面列出的所有信息，可以一次确认；不确定时逐条确认更稳。</p>
   `;
+  actions.querySelectorAll("button").forEach((button) => {
+    button.disabled = !canAnnotateCurrent();
+  });
   actions.querySelector('[data-action="accept-all"]').addEventListener("click", () => {
+    if (!canAnnotateCurrent()) return;
     acceptPendingMappings(region);
     renderRegionForm();
     renderTargets();
@@ -1445,6 +2363,7 @@ function renderMappingsV2(region) {
   });
   actions.querySelector('[data-action="accept-next"]').addEventListener("click", acceptCurrentAndAdvance);
   actions.querySelector('[data-action="pending-all"]').addEventListener("click", () => {
+    if (!canAnnotateCurrent()) return;
     region.candidate_mappings.forEach((mapping) => {
       mapping.human_decision = "pending";
     });
@@ -1482,6 +2401,8 @@ function renderMappingsV2(region) {
     `;
     item.querySelectorAll("[data-decision]").forEach((button) => {
       button.addEventListener("click", () => {
+        if (!canAnnotateCurrent()) return;
+        pushUndo("修改字段对应");
         mapping.human_decision = button.dataset.decision;
         renderMappingsV2(region);
         renderTargets();
@@ -1489,10 +2410,15 @@ function renderMappingsV2(region) {
       });
     });
     item.querySelector("[data-remove]").addEventListener("click", () => {
+      if (!canAnnotateCurrent()) return;
+      pushUndo("移除字段对应");
       region.candidate_mappings.splice(index, 1);
       renderMappingsV2(region);
       renderTargets();
       renderCanonicalPanel();
+    });
+    item.querySelectorAll("button").forEach((button) => {
+      button.disabled = !canAnnotateCurrent();
     });
     els.mappingList.appendChild(item);
   });
@@ -1505,8 +2431,7 @@ function renderCanonicalPanel() {
   if (!canonical) {
     els.canonicalSummary.innerHTML = '<p class="empty">当前航图没有 CIFP canonical JSON，无法做 PR #28 对比。</p>';
     els.canonicalCompare.innerHTML = "";
-    if (els.workflowSummary) els.workflowSummary.innerHTML = '<p class="empty">当前航图没有可对齐的 canonical JSON。</p>';
-    if (els.workflowNextList) els.workflowNextList.innerHTML = "";
+    renderWorkflowPanel();
     if (els.annotationJsonPreview) els.annotationJsonPreview.textContent = "";
     if (els.canonicalJsonPreview) els.canonicalJsonPreview.textContent = "";
     return;
@@ -1525,7 +2450,7 @@ function renderCanonicalPanel() {
   const allAttentionRows = comparison.rows
     .filter((row) => row.requiresBoxEvidence && !row.match)
     .sort((left, right) => Number(left.covered) - Number(right.covered));
-  renderWorkflowPanel(comparison, pendingCount, allAttentionRows);
+  renderWorkflowPanel();
   const attentionRows = allAttentionRows.slice(0, 12);
 
   els.canonicalSummary.innerHTML = `
@@ -1537,7 +2462,7 @@ function renderCanonicalPanel() {
       <div><strong>${acceptedCount}</strong><span>accepted 映射</span></div>
       <div><strong>${pendingCount}</strong><span>pending 映射</span></div>
     </div>
-    <p class="hint">这里是与 424 canonical 目标的证据对齐视图，不是独立模型抽取正确率；日常操作优先看“简化操作区”。</p>
+    <p class="hint">这里是与 424 canonical 目标的证据对齐视图，不是独立模型抽取正确率；日常操作优先看“当前字段任务”。</p>
   `;
 
   els.canonicalCompare.innerHTML = "";
@@ -1608,31 +2533,39 @@ function targetFieldButton(target, leg, field) {
     <div><b>应在图上找到：</b>${escapeText(friendlyAnswerValue(answer, expectedValue))}</div>
     <div class="target-actions">
       ${alreadyLinked
-        ? '<button data-action="accept-existing">已挂，直接确认</button><button data-action="unlink-existing">取消挂接</button>'
-        : '<button data-action="link">挂到当前框</button><button data-action="link-accept">挂并确认</button>'
+        ? '<button data-action="accept-existing">加入证据篮子</button><button data-action="unlink-existing">取消挂接</button>'
+        : '<button data-action="link">挂到当前框</button><button data-action="link-accept">挂到证据篮子</button>'
       }
     </div>
   `;
   item.querySelectorAll("button").forEach((button) => button.addEventListener("click", () => {
+    if (!canAnnotateCurrent()) {
+      showToast("当前是预览模式，请先领取这张图再标注。");
+      return;
+    }
     const activeRegion = selectedRegion();
     if (!activeRegion) {
       showToast("先选中或新增一个框，再挂字段。");
       return;
     }
     if (button.dataset.action === "accept-existing") {
-      (activeRegion.candidate_mappings || []).forEach((mapping) => {
-        if (mapping.candidate_leg_id === legId && mapping.field_name === fieldName) {
-          mapping.human_decision = "accepted";
-        }
-      });
-      activeRegion.human_review.review_action = "accept";
+      const rowKey = fieldKey(leg?.canonical_leg_index || canonicalLegIndexForMapping({ candidate_leg_id: legId }), fieldName);
+      const row = buildFieldRows().find((item) => item.key === rowKey);
+      if (!row) return;
+      pushUndo("加入字段证据篮子");
+      ensureMappingForRegion(row, activeRegion, "pending");
+      const review = reviewForField(row);
+      setFieldEvidenceDraft(row, uniqueList([...(review.required_evidence_region_ids || []), activeRegion.region_id]));
+      state.selectedFieldKey = row.key;
+      flashRegion(activeRegion.region_id);
       renderMappingsV2(activeRegion);
       renderTargets();
       renderCanonicalPanel();
-      showToast("已确认当前框里的这个字段。");
+      showToast("已把当前框加入该字段证据篮子；还需要在当前字段卡片选择来源类型。");
       return;
     }
     if (button.dataset.action === "unlink-existing") {
+      pushUndo("取消字段挂接");
       activeRegion.candidate_mappings = (activeRegion.candidate_mappings || []).filter((mapping) => {
         return !(mapping.candidate_leg_id === legId && mapping.field_name === fieldName);
       });
@@ -1642,7 +2575,8 @@ function targetFieldButton(target, leg, field) {
       showToast("已取消当前框和这个字段的挂接。");
       return;
     }
-    const shouldAccept = button.dataset.action === "link-accept";
+    const shouldAddToBasket = button.dataset.action === "link-accept";
+    pushUndo(shouldAddToBasket ? "挂到字段证据篮子" : "挂接字段");
     activeRegion.candidate_mappings.push({
       candidate_leg_id: leg?.candidate_leg_id || "",
       canonical_leg_index: leg?.canonical_leg_index || null,
@@ -1652,15 +2586,27 @@ function targetFieldButton(target, leg, field) {
       expected_answer: field.expected_answer || null,
       match_basis: "human-added from target panel",
       confidence: null,
-      human_decision: shouldAccept ? "accepted" : "pending",
+      human_decision: "pending",
       human_notes: ""
     });
-    if (shouldAccept) activeRegion.human_review.review_action = "accept";
+    if (shouldAddToBasket) {
+      const rowKey = fieldKey(leg?.canonical_leg_index || canonicalLegIndexForMapping({ candidate_leg_id: legId }), fieldName);
+      const row = buildFieldRows().find((item) => item.key === rowKey);
+      if (row) {
+        const review = reviewForField(row);
+        setFieldEvidenceDraft(row, uniqueList([...(review.required_evidence_region_ids || []), activeRegion.region_id]));
+        state.selectedFieldKey = row.key;
+      }
+      flashRegion(activeRegion.region_id);
+    }
     renderMappingsV2(activeRegion);
     renderTargets();
     renderCanonicalPanel();
-    showToast(shouldAccept ? "已挂到当前框并确认。" : "已加入当前框的候选映射。");
+    showToast(shouldAddToBasket ? "已挂到当前字段证据篮子；还需要选择来源类型。" : "已加入当前框的候选映射。");
   }));
+  item.querySelectorAll("button").forEach((button) => {
+    button.disabled = !canAnnotateCurrent();
+  });
   return item;
 }
 
@@ -1685,10 +2631,18 @@ function renderTargets() {
   (target.candidate_legs || []).forEach((leg) => {
     const fields = leg.target_fields || [];
     const visualFields = fields.filter((field) => {
-      return field.field_name !== "Q_terminator" && field.expected_answer?.status === "present";
+      return field.expected_answer?.status === "present";
     });
-    const openVisualFields = visualFields.filter((field) => !fieldAcceptedForLeg(leg, field));
-    const completedVisualFields = visualFields.filter((field) => fieldAcceptedForLeg(leg, field));
+    const openVisualFields = visualFields.filter((field) => {
+      const key = fieldKey(leg.canonical_leg_index, field.field_name || field.name);
+      const row = buildFieldRows().find((item) => item.key === key);
+      return row ? reviewForField(row).review_status === "pending" : !fieldAcceptedForLeg(leg, field);
+    });
+    const completedVisualFields = visualFields.filter((field) => {
+      const key = fieldKey(leg.canonical_leg_index, field.field_name || field.name);
+      const row = buildFieldRows().find((item) => item.key === key);
+      return row ? FIELD_REVIEW_DONE.has(reviewForField(row).review_status) : fieldAcceptedForLeg(leg, field);
+    });
     const autoFields = fields.filter((field) => !visualFields.includes(field));
     const title = document.createElement("div");
     title.className = "target-leg";
@@ -1742,6 +2696,7 @@ function renderTargets() {
 function updateSelectedFromForm() {
   const region = selectedRegion();
   if (!region) return;
+  if (!canAnnotateCurrent()) return;
   region.region_id = els.regionIdInput.value.trim() || region.region_id;
   state.selectedRegionId = region.region_id;
   region.region_type = els.regionTypeInput.value.trim() || "MISSED_APPROACH_TEXT";
@@ -1765,6 +2720,11 @@ function addRegion(type, bbox) {
     showToast("请先选择一张航图。");
     return;
   }
+  if (!canAnnotateCurrent()) {
+    showToast("当前是预览模式，请先领取这张图再画框。");
+    return;
+  }
+  pushUndo("新增证据框");
   const meta = metaForRegionType(type);
   const region = normalizeRegion({
     region_id: makeRegionId(state.current.manifest.chart_id, state.regions.length),
@@ -1779,9 +2739,27 @@ function addRegion(type, bbox) {
   }, state.regions.length);
   state.regions.push(region);
   state.selectedRegionId = region.region_id;
+  const pendingRow = state.pendingLinkFieldKey
+    ? buildFieldRows().find((row) => row.key === state.pendingLinkFieldKey)
+    : null;
+  if (pendingRow) {
+    region.candidate_mappings.push(mappingFromFieldRow(pendingRow, false));
+    const review = reviewForField(pendingRow);
+    setFieldEvidenceDraft(pendingRow, uniqueList([...(review.required_evidence_region_ids || []), region.region_id]));
+    state.selectedFieldKey = pendingRow.key;
+    state.pendingLinkFieldKey = null;
+    state.drawMode = false;
+    if (els.drawBtn) {
+      els.drawBtn.classList.remove("primary");
+      els.drawBtn.textContent = "为当前字段画证据框";
+    }
+    flashRegion(region.region_id);
+    showToast("新框已加入当前字段证据篮子。选择来源类型后再确认字段。");
+  }
   renderOverlay();
   renderRegionForm();
   renderTargets();
+  renderCanonicalPanel();
 }
 
 function buildAnnotationPayload(mode = "final") {
@@ -1790,6 +2768,34 @@ function buildAnnotationPayload(mode = "final") {
   const comparison = state.current.canonical_gt
     ? compareCanonicalJson(annotationPr28, state.current.canonical_gt)
     : null;
+  const fieldReviews = buildFieldRows()
+    .filter((row) => row.requires_review)
+    .map((row) => {
+      const review = reviewForField(row);
+      return {
+        field_key: row.key,
+        chart_id: chartId,
+        candidate_leg_id: row.candidate_leg_id,
+        canonical_leg_index: row.canonical_leg_index,
+        leg_type: row.leg_type,
+        field_name: row.field_name,
+        canonical_answer: row.expected_answer || null,
+        review_status: review.review_status,
+        support_mode: review.support_mode || review.review_status,
+        required_evidence_region_ids: review.required_evidence_region_ids || [],
+        secondary_evidence_region_ids: review.secondary_evidence_region_ids || [],
+        evidence_region_ids: review.evidence_region_ids || [],
+        evidence_source: review.evidence_source || [],
+        checked_scopes: review.checked_scopes || [],
+        checked_sources: review.checked_sources || review.checked_scopes || [],
+        notes: review.notes || "",
+        reviewed_by: review.reviewed_by || currentAnnotator() || "",
+        reviewed_at: review.reviewed_at || "",
+        schema: "field_review_v2"
+      };
+    });
+  const pendingFieldCount = fieldReviews.filter((item) => item.review_status === "pending").length;
+  const supportCount = (status) => fieldReviews.filter((item) => item.support_mode === status || item.review_status === status).length;
   const reviewStatus = mode === "draft" ? "draft_saved" : "pilot_reviewed";
   return {
     chart_id: chartId,
@@ -1846,6 +2852,18 @@ function buildAnnotationPayload(mode = "final") {
       };
     }),
     unresolved_targets: [],
+    field_reviews: fieldReviews,
+    evidence_provenance: fieldReviews,
+    field_review_summary: {
+      schema: "field_review_v2",
+      total_present_fields: fieldReviews.length,
+      pending_fields: pendingFieldCount,
+      direct_visible: supportCount("direct_visible"),
+      visible_joint: supportCount("visible_joint"),
+      rule_default_completion: supportCount("rule_default_completion"),
+      insufficient_for_encoding: supportCount("insufficient_for_encoding"),
+      uncertain_fields: supportCount("uncertain")
+    },
     annotation_pr28_json: annotationPr28,
     canonical_gt_file: state.current.target?.canonical_proxy_gt_file || `targets/canonical_proxy_gt/${chartId}.json`,
     pr28_comparison_summary: comparison
@@ -1879,16 +2897,29 @@ async function saveCurrentWork(mode = "final") {
   updateSelectedFromForm();
   const chartId = state.current.manifest.chart_id;
   if (datasetConfig.finalDataset && !currentAnnotator()) {
-    showToast("正式标注必须先填写标注人，否则保存会和别人混在一起。");
-    els.annotatorInput?.focus();
+    showToast("当前参与者身份缺失，请刷新页面。");
     return;
   }
   if (datasetConfig.finalDataset) {
     const claimedBy = state.current.manifest.claimed_by || "";
     const claimStatus = state.current.manifest.claim_status || "unassigned";
+    if (claimStatus === "returned_for_expert_review") {
+      showToast("这张图已退回专家复审，不能继续保存。");
+      return;
+    }
     if (claimedBy !== currentAnnotator() || !["claimed", "claimed_by_me", "submitted"].includes(claimStatus)) {
-      showToast("请先在左栏点击这张图的“领取”，领取成功后再保存。");
+      showToast("请先在左侧点击“领取并开始”，领取成功后再保存。");
       updateClaimButton();
+      return;
+    }
+  }
+  if (mode !== "draft") {
+    const pendingFields = buildFieldRows()
+      .filter((row) => row.requires_review)
+      .filter((row) => reviewForField(row).review_status === "pending");
+    if (pendingFields.length) {
+      showToast(`还有 ${pendingFields.length} 个待审字段。请逐项给出结论后再完成本图。`);
+      selectField(pendingFields[0]);
       return;
     }
   }
@@ -1908,7 +2939,7 @@ async function saveCurrentWork(mode = "final") {
       chart.draft_saved_at = payload.saved_at || new Date().toISOString();
     }
   } else {
-    showToast("\u5df2\u4fdd\u5b58\u3002");
+    showToast("已完成本图。");
     if (datasetConfig.finalDataset) {
       state.current.manifest.claim_status = "submitted";
       state.current.manifest.claimed_by = currentAnnotator();
@@ -2015,31 +3046,101 @@ function bindEvents() {
     }
   });
   els.drawBtn.addEventListener("click", () => {
-    state.drawMode = !state.drawMode;
+    if (!canAnnotateCurrent()) {
+      showToast("当前是预览模式，请先领取这张图再画框。");
+      return;
+    }
+    if (state.drawMode) {
+      state.drawMode = false;
+      state.pendingLinkFieldKey = null;
+      els.drawBtn.classList.remove("primary");
+      resetOverlayCursor();
+      els.drawBtn.textContent = "为当前字段画证据框";
+      return;
+    }
+    const row = selectedFieldRow();
+    if (!row) {
+      showToast("请先选择一个待审字段。");
+      return;
+    }
+    const type = recommendedRegionTypeForField(row.field_name);
+    if (els.newRegionType) {
+      els.newRegionType.value = type;
+      updateNewRegionTypeHint();
+    }
+    state.pendingLinkFieldKey = row.key;
+    state.drawMode = true;
     els.drawBtn.classList.toggle("primary", state.drawMode);
     resetOverlayCursor();
-    els.drawBtn.textContent = state.drawMode ? "正在框选" : "框选新增";
+    els.drawBtn.textContent = "正在画证据框";
+    showToast("请在航图上拖出证据框；新框会加入当前字段证据篮子。");
   });
   els.saveDraftBtn?.addEventListener("click", () => saveDraft().catch((error) => showToast(error.message)));
   els.saveBtn.addEventListener("click", () => saveAnnotation().catch((error) => showToast(error.message)));
   els.workflowDraftBtn?.addEventListener("click", () => saveDraft().catch((error) => showToast(error.message)));
   els.workflowSaveBtn?.addEventListener("click", () => saveAnnotation().catch((error) => showToast(error.message)));
+  els.undoBtn?.addEventListener("click", undoLastAction);
+  els.workflowUndoBtn?.addEventListener("click", undoLastAction);
+  els.returnClaimBtn?.addEventListener("click", () => returnCurrentClaim().catch((error) => showToast(error.message)));
+  els.returnWorkflowBtn?.addEventListener("click", () => returnCurrentClaim().catch((error) => showToast(error.message)));
+  els.claimCurrentBtn?.addEventListener("click", () => claimCurrentChart().catch((error) => showToast(error.message)));
   els.quickAcceptBtn?.addEventListener("click", acceptAllChartPendingMappings);
   els.undoQuickAcceptBtn?.addEventListener("click", undoQuickAccept);
   els.nextPendingBtn?.addEventListener("click", () => {
-    const nextRegionId = findNextPendingRegionId();
-    if (nextRegionId) {
-      selectRegionById(nextRegionId);
-      showToast("已跳到下一个待确认框。");
+    const next = nextPendingField();
+    if (next) {
+      selectField(next);
+      showToast("仅切换查看：当前字段没有被记录。");
     } else {
-      showToast("没有待确认框了，可以检查缺证字段或保存。");
+      showToast("没有 pending 字段了，可以完成本图。");
     }
   });
+  els.linkSelectedFieldBtn?.addEventListener("click", () => linkSelectedFieldToRegion({ accept: true }));
+  els.addRegionForFieldBtn?.addEventListener("click", () => {
+    const row = selectedFieldRow();
+    if (!row) {
+      showToast("请先选择一个待审字段。");
+      return;
+    }
+    const type = recommendedRegionTypeForField(row.field_name);
+    if (els.newRegionType) {
+      els.newRegionType.value = type;
+      updateNewRegionTypeHint();
+    }
+    state.pendingLinkFieldKey = row.key;
+    state.drawMode = true;
+    els.drawBtn.classList.add("primary");
+    els.drawBtn.textContent = "正在画证据框";
+    showToast("请在航图上拖出证据框；新框会加入当前字段证据篮子。");
+  });
+  els.markNoEvidenceBtn?.addEventListener("click", () => markSelectedField("insufficient_for_encoding"));
+  els.markImplicitBtn?.addEventListener("click", () => markSelectedField("rule_default_completion"));
+  els.markFieldUnsureBtn?.addEventListener("click", () => markSelectedField("uncertain"));
   els.openTargetsBtn?.addEventListener("click", openTargetPanel);
   els.acceptFrameAndNextBtn?.addEventListener("click", acceptCurrentAndAdvance);
   els.markFrameUnsureBtn?.addEventListener("click", markCurrentFrameUnsure);
   els.deleteRegionBtn.addEventListener("click", () => {
-    state.regions = state.regions.filter((region) => region.region_id !== state.selectedRegionId);
+    if (!canAnnotateCurrent()) {
+      showToast("当前是预览模式，请先领取这张图再删除框。");
+      return;
+    }
+    if (!selectedRegion()) {
+      showToast("请先选中一个证据框。");
+      return;
+    }
+    if (!window.confirm("确认删除选中的证据框？")) return;
+    pushUndo("删除证据框");
+    const deletedRegionId = state.selectedRegionId;
+    state.regions = state.regions.filter((region) => region.region_id !== deletedRegionId);
+    Object.values(state.fieldReviews || {}).forEach((review) => {
+      review.required_evidence_region_ids = (review.required_evidence_region_ids || []).filter((regionId) => regionId !== deletedRegionId);
+      review.secondary_evidence_region_ids = (review.secondary_evidence_region_ids || []).filter((regionId) => regionId !== deletedRegionId);
+      review.evidence_region_ids = uniqueList([
+        ...(review.required_evidence_region_ids || []),
+        ...(review.secondary_evidence_region_ids || [])
+      ]);
+      review.evidence_source = sourcesForRegionIds(review.evidence_region_ids || []);
+    });
     state.selectedRegionId = state.regions[0]?.region_id || null;
     renderOverlay();
     renderRegionForm();
@@ -2061,7 +3162,7 @@ function bindEvents() {
   ].forEach((input) => input.addEventListener("input", updateSelectedFromForm));
 
   els.overlay.addEventListener("pointerdown", (event) => {
-    if (!state.drawMode || !state.current) return;
+    if (!state.drawMode || !state.current || !canAnnotateCurrent()) return;
     const point = normalizedPoint(event);
     state.draft = {
       x_center: point.x,
@@ -2131,22 +3232,24 @@ function bindEvents() {
 
 function setupDatasetUi() {
   ensureSaveButtons();
-  document.title = `${datasetConfig.label} - Missed Approach 标注校准平台`;
+  const participantId = ensureParticipantId();
+  document.title = `${datasetConfig.label} - 复飞航图字段证据标注`;
   if (els.pageTitle) {
-    els.pageTitle.textContent = `${datasetConfig.label} · 自动预标注校准平台`;
+    els.pageTitle.textContent = "复飞航图字段证据标注";
   }
   if (els.datasetEyebrow) {
     els.datasetEyebrow.textContent = datasetConfig.finalDataset
-      ? "FAA Missed Approach Formal 300"
-      : "FAA Missed Approach Practice 10";
+      ? "正式集 300 张"
+      : "练习集 10 张";
   }
   if (els.sideTitle) {
-    els.sideTitle.textContent = datasetConfig.finalDataset ? "300 张正式航图" : "10 张练习航图";
+    els.sideTitle.textContent = datasetConfig.finalDataset ? "正式航图任务" : "练习航图任务";
   }
-  const storedAnnotator = localStorage.getItem(datasetConfig.storageKey) || "";
-  if (els.annotatorInput && !els.annotatorInput.value) {
-    els.annotatorInput.value = storedAnnotator;
-    els.annotatorInput.placeholder = datasetConfig.finalDataset ? "标注人（正式必填）" : "标注人（练习可选）";
+  if (els.participantBadge) {
+    const source = participantIdFromUrl() ? "链接身份" : "本机试用身份";
+    els.participantBadge.textContent = datasetConfig.finalDataset
+      ? `当前参与者：${participantId} · ${source}`
+      : `练习身份：${participantId}`;
   }
 }
 
@@ -2170,13 +3273,14 @@ async function init() {
   bindEvents();
   updateNewRegionTypeHint();
   updateClaimButton();
+  renderWorkflowPanel();
   applyZooms({ render: false });
   await refreshCharts();
   const first = firstOpenableChart();
-  if (first && (!datasetConfig.finalDataset || currentAnnotator())) {
+  if (first) {
     await loadChart(first.chart_id);
   } else if (datasetConfig.finalDataset) {
-    showToast("正式标注请先填写标注人，然后从左侧选择未领取航图。");
+    showToast("已自动分配参与者身份。左侧可先预览未领取航图。");
   }
 }
 
