@@ -1693,12 +1693,13 @@ function acceptAllChartPendingMappings() {
       key: row.key,
       previousReview: state.fieldReviews[row.key] ? deepClone(state.fieldReviews[row.key]) : undefined
     });
-    setFieldReview(row, evidenceIds.length > 1 ? "visible_joint" : "direct_visible", {
+    const supportMode = recommendedSupportModeForField(row, evidenceIds) || (evidenceIds.length > 1 ? "visible_joint" : "direct_visible");
+    setFieldReview(row, supportMode, {
       requiredIds: evidenceIds,
       checkedScopes: sourcesForRegionIds(evidenceIds),
       notes: row.field_name === "Q_terminator" ? "快速采纳：同一航段的图面证据共同支持航段类型。" : review.notes || ""
     });
-    const createdMappings = applyEvidenceSelectionToMappings(row, evidenceIds, evidenceIds.length > 1 ? "visible_joint" : "direct_visible");
+    const createdMappings = applyEvidenceSelectionToMappings(row, evidenceIds, supportMode);
     createdMappings.forEach((created) => {
       mappingSnapshot.push({
         ...created,
