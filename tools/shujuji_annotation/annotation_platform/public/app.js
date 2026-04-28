@@ -931,6 +931,35 @@ function removeEvidenceFromSelectedField(regionId) {
   showToast("已从当前字段证据篮子移除该框。");
 }
 
+function recommendedSupportModeForField(row, evidenceIds, reviewStatus = "pending") {
+  if (["direct_visible", "visible_joint", "rule_default_completion"].includes(reviewStatus)) return reviewStatus;
+  if (!row) return "";
+  if (row.field_name === "Q_terminator") return "visible_joint";
+  if (!evidenceIds.length) return "";
+  return evidenceIds.length > 1 ? "visible_joint" : "direct_visible";
+}
+
+function renderConfirmButtons(row, evidenceIds, reviewStatus, confirmDisabled, evidenceConfirmDisabled) {
+  const recommendedMode = recommendedSupportModeForField(row, evidenceIds, reviewStatus);
+  const buttons = [
+    { mode: "direct_visible", label: "确认：直接图面证据", disabled: evidenceConfirmDisabled },
+    { mode: "visible_joint", label: "确认：图面综合支持", disabled: evidenceConfirmDisabled },
+    { mode: "rule_default_completion", label: "改为规则/默认补全", disabled: evidenceConfirmDisabled },
+    { mode: "insufficient_for_encoding", label: "缺少足够编码信息", disabled: confirmDisabled },
+    { mode: "uncertain", label: "不确定 / 交复核", disabled: confirmDisabled }
+  ];
+  const ordered = recommendedMode
+    ? [
+        ...buttons.filter((button) => button.mode === recommendedMode),
+        ...buttons.filter((button) => button.mode !== recommendedMode)
+      ]
+    : buttons;
+  return ordered.map((button) => {
+    const className = button.mode === recommendedMode ? ' class="primary"' : "";
+    return `<button type="button"${className} data-confirm-mode="${button.mode}" ${button.disabled}>${escapeText(button.label)}</button>`;
+  }).join("");
+}
+
 function confirmSelectedField(supportMode) {
   const row = selectedFieldRow();
   if (!canAnnotateCurrent()) {
@@ -1793,11 +1822,7 @@ function renderWorkflowPanel() {
         ${evidenceRows}
       </div>
       <div class="field-confirm-grid">
-        <button type="button" class="primary" data-confirm-mode="direct_visible" ${evidenceConfirmDisabled}>确认：直接图面证据</button>
-        <button type="button" data-confirm-mode="visible_joint" ${evidenceConfirmDisabled}>确认：图面综合支持</button>
-        <button type="button" data-confirm-mode="rule_default_completion" ${evidenceConfirmDisabled}>改为规则/默认补全</button>
-        <button type="button" data-confirm-mode="insufficient_for_encoding" ${confirmDisabled}>缺少足够编码信息</button>
-        <button type="button" data-confirm-mode="uncertain" ${confirmDisabled}>不确定 / 交复核</button>
+        ${renderConfirmButtons(selected, selectedEvidenceIds, selectedReview?.review_status || "pending", confirmDisabled, evidenceConfirmDisabled)}
       </div>
     </div>
     <div class="workflow-metric">
