@@ -49,6 +49,7 @@ const state = {
   regions: [],
   fieldReviews: {},
   confirmModeDrafts: {},
+  participantSource: "",
   selectedFieldKey: null,
   pendingLinkFieldKey: null,
   selectedRegionId: null,
@@ -88,6 +89,7 @@ const els = {
   returnClaimBtn: document.querySelector("#returnClaimBtn"),
   returnWorkflowBtn: document.querySelector("#returnWorkflowBtn"),
   saveDraftBtn: document.querySelector("#saveDraftBtn"),
+  applyAnnotatorBtn: document.querySelector("#applyAnnotatorBtn"),
   pageTitle: document.querySelector(".topbar h1"),
   datasetEyebrow: document.querySelector(".eyebrow"),
   sideTitle: document.querySelector(".side-title"),
@@ -1229,19 +1231,31 @@ function ensureParticipantId() {
   const fromUrl = participantIdFromUrl();
   const stored = cleanParticipantId(localStorage.getItem(datasetConfig.storageKey) || "");
   const participantId = fromUrl || stored || generatedParticipantId();
+  state.participantSource = fromUrl ? "链接身份" : stored ? "本机保存身份" : "临时本机身份";
   localStorage.setItem(datasetConfig.storageKey, participantId);
   if (els.annotatorInput) els.annotatorInput.value = participantId;
-  if (els.participantBadge) {
-    const source = fromUrl ? "链接身份" : "本机试用身份";
-    els.participantBadge.textContent = datasetConfig.finalDataset
-      ? `当前参与者：${participantId} · ${source}`
-      : `练习身份：${participantId}`;
-  }
+  updateParticipantBadge(participantId);
   return participantId;
 }
 
 function currentAnnotator() {
   return cleanParticipantId(els.annotatorInput?.value || localStorage.getItem(datasetConfig.storageKey) || "");
+}
+
+function updateParticipantBadge(participantId = currentAnnotator()) {
+  if (!els.participantBadge) return;
+  const source = state.participantSource || (participantIdFromUrl() ? "链接身份" : "本机保存身份");
+  els.participantBadge.textContent = datasetConfig.finalDataset
+    ? `当前参与者：${participantId || "未填写"} · ${source}`
+    : `练习身份：${participantId || "未填写"}`;
+}
+
+function replaceUrlAnnotator(participantId) {
+  const url = new URL(window.location.href);
+  url.searchParams.set("annotator", participantId);
+  url.searchParams.delete("participant");
+  url.searchParams.delete("user");
+  window.history.replaceState({}, document.title, `${url.pathname}${url.search}${url.hash}`);
 }
 
 function currentChartStatus() {
@@ -1543,6 +1557,44 @@ function openHelp() {
 function closeHelp() {
   els.helpOverlay?.classList.add("hidden");
   document.body.classList.remove("help-open");
+}
+
+function resetCurrentChartView() {
+  state.current = null;
+  state.regions = [];
+  state.fieldReviews = {};
+  state.confirmModeDrafts = {};
+  state.selectedRegionId = null;
+  state.selectedFieldKey = null;
+  state.pendingLinkFieldKey = null;
+  state.lastQuickAcceptSnapshot = null;
+  setUndoQuickAcceptEnabled(false);
+  if (els.currentTitle) els.currentTitle.textContent = "请选择航图";
+  if (els.currentMeta) els.currentMeta.textContent = "";
+  renderOverlay();
+  renderRegionForm();
+  renderTargets();
+  renderCanonicalPanel();
+  updateClaimButton();
+}
+
+async function applyAnnotatorIdentity() {
+  const participantId = cleanParticipantId(els.annotatorInput?.value || "");
+  if (!participantId) {
+    showToast("请填写标注人身份，例如 A06。");
+    if (els.annotatorInput) els.annotatorInput.value = currentAnnotator();
+    return;
+  }
+  if (els.annotatorInput) els.annotatorInput.value = participantId;
+  localStorage.setItem(datasetConfig.storageKey, participantId);
+  state.participantSource = "手动输入身份";
+  replaceUrlAnnotator(participantId);
+  updateParticipantBadge(participantId);
+  resetCurrentChartView();
+  await refreshCharts();
+  const first = firstOpenableChart();
+  if (first) await loadChart(first.chart_id);
+  showToast(`已切换到标注人：${participantId}`);
 }
 
 function makeRegionId(chartId, index) {
@@ -3271,20 +3323,18 @@ function ensureSaveButtons() {
 function bindEvents() {
   els.chartFilter.addEventListener("input", renderChartList);
   els.annotatorInput?.addEventListener("input", () => {
-    localStorage.setItem(datasetConfig.storageKey, currentAnnotator());
+    if (els.applyAnnotatorBtn) els.applyAnnotatorBtn.disabled = !cleanParticipantId(els.annotatorInput.value);
   });
   els.annotatorInput?.addEventListener("change", () => {
-    state.current = null;
-    state.regions = [];
-    state.selectedRegionId = null;
-    if (els.currentTitle) els.currentTitle.textContent = "请选择航图";
-    if (els.currentMeta) els.currentMeta.textContent = "";
-    renderOverlay();
-    renderRegionForm();
-    renderTargets();
-    renderCanonicalPanel();
-    updateClaimButton();
-    refreshCharts().catch((error) => showToast(error.message));
+    if (els.annotatorInput) els.annotatorInput.value = cleanParticipantId(els.annotatorInput.value);
+  });
+  els.annotatorInput?.addEventListener("keydown", (event) => {
+    if (event.key !== "Enter") return;
+    event.preventDefault();
+    applyAnnotatorIdentity().catch((error) => showToast(error.message));
+  });
+  els.applyAnnotatorBtn?.addEventListener("click", () => {
+    applyAnnotatorIdentity().catch((error) => showToast(error.message));
   });
   if (els.newRegionType) {
     els.newRegionType.addEventListener("change", updateNewRegionTypeHint);
@@ -3512,12 +3562,7 @@ function setupDatasetUi() {
   if (els.sideTitle) {
     els.sideTitle.textContent = datasetConfig.finalDataset ? "正式航图任务" : "练习航图任务";
   }
-  if (els.participantBadge) {
-    const source = participantIdFromUrl() ? "链接身份" : "本机试用身份";
-    els.participantBadge.textContent = datasetConfig.finalDataset
-      ? `当前参与者：${participantId} · ${source}`
-      : `练习身份：${participantId}`;
-  }
+  updateParticipantBadge(participantId);
 }
 
 async function refreshCharts() {

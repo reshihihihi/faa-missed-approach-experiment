@@ -717,7 +717,7 @@ function landingHtml(requestUrl) {
     </section>
     <section class="card">
       <h2>正式网页：300 张</h2>
-      <p>正式入口会按“标注人领取航图”防止重复。进入后请先填写右上角标注人，再领取未分配航图。</p>
+      <p>正式入口会按“标注人领取航图”防止重复。可以在链接中预置 <code>annotator=A06</code>，也可以进入后在右上角填写标注人再领取未分配航图。</p>
       <a href="${escapeHtml(formalHref)}">进入正式标注</a>
     </section>
     <section class="card">
