@@ -48,6 +48,7 @@ const state = {
   dataset: datasetConfig,
   regions: [],
   fieldReviews: {},
+  confirmModeDrafts: {},
   selectedFieldKey: null,
   pendingLinkFieldKey: null,
   selectedRegionId: null,
@@ -242,6 +243,14 @@ const FIELD_SUPPORT_REQUIRES_EVIDENCE = new Set([
   "visible_joint",
   "rule_default_completion"
 ]);
+
+const FIELD_CONFIRM_MODES = [
+  { mode: "direct_visible", label: "直接图面证据" },
+  { mode: "visible_joint", label: "图面综合支持" },
+  { mode: "rule_default_completion", label: "规则/默认补全" },
+  { mode: "insufficient_for_encoding", label: "缺少足够编码信息" },
+  { mode: "uncertain", label: "不确定 / 交复核" }
+];
 
 const LEG_TYPE_LABELS = {
   CA: "爬升到高度",
@@ -771,6 +780,7 @@ function setFieldReview(row, reviewStatus, notes = "", options = {}) {
     reviewed_by: currentAnnotator() || "",
     reviewed_at: supportMode === "pending" ? (existing.reviewed_at || "") : new Date().toISOString()
   };
+  if (supportMode !== "pending") delete state.confirmModeDrafts[row.key];
 }
 
 function selectedFieldRow() {
@@ -916,6 +926,28 @@ function linkSelectedFieldToRegion({ accept = true } = {}) {
   return true;
 }
 
+function startDrawRegionForSelectedField() {
+  const row = selectedFieldRow();
+  if (!canAnnotateCurrent()) {
+    showToast("当前是预览模式，请先领取这张图再标注。");
+    return;
+  }
+  if (!row) {
+    showToast("请先选择一个待审字段。");
+    return;
+  }
+  const type = recommendedRegionTypeForField(row.field_name);
+  if (els.newRegionType) {
+    els.newRegionType.value = type;
+    updateNewRegionTypeHint();
+  }
+  state.pendingLinkFieldKey = row.key;
+  state.drawMode = true;
+  els.drawBtn.classList.add("primary");
+  els.drawBtn.textContent = "正在画证据框";
+  showToast("请在航图上拖出证据框；新框会加入当前字段证据篮子。");
+}
+
 function removeEvidenceFromSelectedField(regionId) {
   const row = selectedFieldRow();
   if (!row || !canAnnotateCurrent()) return;
@@ -931,32 +963,45 @@ function removeEvidenceFromSelectedField(regionId) {
   showToast("已从当前字段证据篮子移除该框。");
 }
 
-function recommendedSupportModeForField(row, evidenceIds, reviewStatus = "pending") {
-  if (["direct_visible", "visible_joint", "rule_default_completion"].includes(reviewStatus)) return reviewStatus;
+function recommendedSupportModeForField(row, evidenceIds) {
   if (!row) return "";
   if (row.field_name === "Q_terminator") return "visible_joint";
   if (!evidenceIds.length) return "";
   return evidenceIds.length > 1 ? "visible_joint" : "direct_visible";
 }
 
-function renderConfirmButtons(row, evidenceIds, reviewStatus, confirmDisabled, evidenceConfirmDisabled) {
-  const recommendedMode = recommendedSupportModeForField(row, evidenceIds, reviewStatus);
-  const buttons = [
-    { mode: "direct_visible", label: "确认：直接图面证据", disabled: evidenceConfirmDisabled },
-    { mode: "visible_joint", label: "确认：图面综合支持", disabled: evidenceConfirmDisabled },
-    { mode: "rule_default_completion", label: "改为规则/默认补全", disabled: evidenceConfirmDisabled },
-    { mode: "insufficient_for_encoding", label: "缺少足够编码信息", disabled: confirmDisabled },
-    { mode: "uncertain", label: "不确定 / 交复核", disabled: confirmDisabled }
-  ];
-  const ordered = recommendedMode
-    ? [
-        ...buttons.filter((button) => button.mode === recommendedMode),
-        ...buttons.filter((button) => button.mode !== recommendedMode)
-      ]
-    : buttons;
-  return ordered.map((button) => {
-    const className = button.mode === recommendedMode ? ' class="primary"' : "";
-    return `<button type="button"${className} data-confirm-mode="${button.mode}" ${button.disabled}>${escapeText(button.label)}</button>`;
+function selectedSupportModeForField(row, evidenceIds, reviewStatus = "pending") {
+  if (!row) return "";
+  const drafted = state.confirmModeDrafts[row.key];
+  if (drafted) return drafted;
+  const saved = supportModeFromReview({ review_status: reviewStatus }, evidenceIds);
+  if (reviewStatus !== "pending" && FIELD_REVIEW_DONE.has(saved)) return saved;
+  return recommendedSupportModeForField(row, evidenceIds);
+}
+
+function setSupportModeDraft(row, supportMode) {
+  if (!row || !supportMode) return;
+  state.confirmModeDrafts[row.key] = supportMode;
+  renderWorkflowPanel();
+}
+
+function renderSupportModeChoices(row, evidenceIds, reviewStatus, disabled) {
+  const selectedMode = selectedSupportModeForField(row, evidenceIds, reviewStatus);
+  const recommendedMode = recommendedSupportModeForField(row, evidenceIds);
+  return FIELD_CONFIRM_MODES.map(({ mode, label }) => {
+    const selected = mode === selectedMode;
+    const recommended = mode === recommendedMode;
+    const classes = [
+      "support-mode-option",
+      selected ? "selected" : "",
+      recommended ? "recommended" : ""
+    ].filter(Boolean).join(" ");
+    return `
+      <button type="button" class="${classes}" data-support-mode="${mode}" aria-pressed="${selected ? "true" : "false"}" ${disabled}>
+        <span>${escapeText(label)}</span>
+        ${recommended ? '<small>推荐</small>' : ""}
+      </button>
+    `;
   }).join("");
 }
 
@@ -968,6 +1013,10 @@ function confirmSelectedField(supportMode) {
   }
   if (!row) {
     showToast("当前没有选中的待审字段。");
+    return;
+  }
+  if (!supportMode) {
+    showToast("请先选择这个字段的来源类型。");
     return;
   }
   const review = reviewForField(row);
@@ -1316,6 +1365,7 @@ function pushUndo(label) {
     label,
     regions: deepClone(state.regions),
     fieldReviews: deepClone(state.fieldReviews),
+    confirmModeDrafts: deepClone(state.confirmModeDrafts),
     selectedRegionId: state.selectedRegionId,
     selectedFieldKey: state.selectedFieldKey
   });
@@ -1328,6 +1378,7 @@ function undoLastAction() {
   if (!snapshot) return;
   state.regions = deepClone(snapshot.regions || []);
   state.fieldReviews = deepClone(snapshot.fieldReviews || {});
+  state.confirmModeDrafts = deepClone(snapshot.confirmModeDrafts || {});
   state.selectedRegionId = snapshot.selectedRegionId || state.regions[0]?.region_id || null;
   state.selectedFieldKey = snapshot.selectedFieldKey || null;
   state.pendingLinkFieldKey = null;
@@ -1779,7 +1830,32 @@ function renderWorkflowPanel() {
     : "证据篮子为空";
   const fieldActionDisabled = !selected || !state.current || !canEdit;
   const confirmDisabled = fieldActionDisabled ? "disabled" : "";
-  const evidenceConfirmDisabled = fieldActionDisabled || !selectedEvidenceIds.length ? "disabled" : "";
+  const selectedSupportMode = selected
+    ? selectedSupportModeForField(selected, selectedEvidenceIds, selectedReview?.review_status || "pending")
+    : "";
+  const selectedSupportNeedsEvidence = FIELD_SUPPORT_REQUIRES_EVIDENCE.has(selectedSupportMode);
+  const confirmSelectionDisabled = fieldActionDisabled
+    || !selectedSupportMode
+    || (selectedSupportNeedsEvidence && !selectedEvidenceIds.length)
+    ? "disabled"
+    : "";
+  const selectedRegionForBasket = selectedRegion();
+  const selectedRegionInBasket = Boolean(
+    selectedRegionForBasket && selectedEvidenceIds.includes(selectedRegionForBasket.region_id)
+  );
+  const basketToggleDisabled = fieldActionDisabled || !selectedRegionForBasket ? "disabled" : "";
+  const basketToggleLabel = selectedRegionInBasket ? "移出证据篮" : "加入证据篮";
+  const basketToggleTitle = selectedRegionForBasket
+    ? `${basketToggleLabel}：${selectedRegionForBasket.region_id}`
+    : "先在航图上选中一个证据框";
+  const selectedSupportText = selectedSupportMode
+    ? FIELD_REVIEW_LABELS[selectedSupportMode] || selectedSupportMode
+    : "未选择";
+  const confirmHint = !selectedSupportMode
+    ? "请选择来源类型。"
+    : selectedSupportNeedsEvidence && !selectedEvidenceIds.length
+      ? "当前选择需要至少一个证据框。"
+      : "";
   const evidenceHint = selectedReview?.autofilled_evidence
     ? "系统已自动填入候选框；请核对后选择来源类型。"
     : selectedEvidenceIds.length
@@ -1819,10 +1895,24 @@ function renderWorkflowPanel() {
           <strong>当前字段证据篮子</strong>
           <span>${escapeText(evidenceHint)}</span>
         </div>
+        <div class="basket-actions">
+          <button type="button" data-link-selected-evidence title="${escapeText(basketToggleTitle)}" ${basketToggleDisabled}>${escapeText(basketToggleLabel)}</button>
+          <button type="button" data-draw-support-evidence ${confirmDisabled}>画新支持框</button>
+        </div>
         ${evidenceRows}
       </div>
-      <div class="field-confirm-grid">
-        ${renderConfirmButtons(selected, selectedEvidenceIds, selectedReview?.review_status || "pending", confirmDisabled, evidenceConfirmDisabled)}
+      <div class="source-choice-block">
+        <div class="source-choice-head">
+          <strong>来源类型</strong>
+          <span>当前选择：${escapeText(selectedSupportText)}</span>
+        </div>
+        <div class="field-confirm-grid">
+          ${renderSupportModeChoices(selected, selectedEvidenceIds, selectedReview?.review_status || "pending", confirmDisabled)}
+        </div>
+        <div class="confirm-selection-row">
+          ${confirmHint ? `<span>${escapeText(confirmHint)}</span>` : "<span></span>"}
+          <button type="button" class="primary" data-confirm-selected-field ${confirmSelectionDisabled}>确认当前选择</button>
+        </div>
       </div>
     </div>
     <div class="workflow-metric">
@@ -1840,8 +1930,24 @@ function renderWorkflowPanel() {
     <p class="metric-note">${escapeText(modeText)}</p>
   `;
 
-  els.workflowSummary.querySelectorAll("[data-confirm-mode]").forEach((button) => {
-    button.addEventListener("click", () => confirmSelectedField(button.dataset.confirmMode));
+  els.workflowSummary.querySelectorAll("[data-support-mode]").forEach((button) => {
+    button.addEventListener("click", () => {
+      if (!selected) return;
+      setSupportModeDraft(selected, button.dataset.supportMode);
+    });
+  });
+  els.workflowSummary.querySelector("[data-confirm-selected-field]")?.addEventListener("click", () => {
+    const row = selectedFieldRow();
+    if (!row) return;
+    const review = reviewForField(row);
+    const evidenceIds = review.required_evidence_region_ids || [];
+    confirmSelectedField(selectedSupportModeForField(row, evidenceIds, review.review_status));
+  });
+  els.workflowSummary.querySelector("[data-link-selected-evidence]")?.addEventListener("click", () => {
+    linkSelectedFieldToRegion({ accept: true });
+  });
+  els.workflowSummary.querySelector("[data-draw-support-evidence]")?.addEventListener("click", () => {
+    startDrawRegionForSelectedField();
   });
   els.workflowSummary.querySelectorAll("[data-select-evidence]").forEach((button) => {
     button.addEventListener("click", () => {
@@ -2090,6 +2196,7 @@ async function loadChart(chartId) {
   const sourceRegions = state.current.draft?.regions || state.current.annotation?.regions || state.current.prelabel?.regions || [];
   state.regions = sourceRegions.map(normalizeRegion);
   state.fieldReviews = normalizeFieldReviews(state.current.draft?.field_reviews || state.current.annotation?.field_reviews || {});
+  state.confirmModeDrafts = {};
   state.selectedFieldKey = null;
   state.pendingLinkFieldKey = null;
   state.undoStack = [];
@@ -3271,23 +3378,7 @@ function bindEvents() {
     }
   });
   els.linkSelectedFieldBtn?.addEventListener("click", () => linkSelectedFieldToRegion({ accept: true }));
-  els.addRegionForFieldBtn?.addEventListener("click", () => {
-    const row = selectedFieldRow();
-    if (!row) {
-      showToast("请先选择一个待审字段。");
-      return;
-    }
-    const type = recommendedRegionTypeForField(row.field_name);
-    if (els.newRegionType) {
-      els.newRegionType.value = type;
-      updateNewRegionTypeHint();
-    }
-    state.pendingLinkFieldKey = row.key;
-    state.drawMode = true;
-    els.drawBtn.classList.add("primary");
-    els.drawBtn.textContent = "正在画证据框";
-    showToast("请在航图上拖出证据框；新框会加入当前字段证据篮子。");
-  });
+  els.addRegionForFieldBtn?.addEventListener("click", startDrawRegionForSelectedField);
   els.markNoEvidenceBtn?.addEventListener("click", () => markSelectedField("insufficient_for_encoding"));
   els.markImplicitBtn?.addEventListener("click", () => markSelectedField("rule_default_completion"));
   els.markFieldUnsureBtn?.addEventListener("click", () => markSelectedField("uncertain"));
