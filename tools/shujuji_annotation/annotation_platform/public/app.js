@@ -539,6 +539,98 @@ function candidateMappingsForLeg(row) {
   });
 }
 
+function expectedAnswerValue(row) {
+  return row?.expected_answer?.value ?? null;
+}
+
+function sameSourceLeg(row, region) {
+  if (!row || !region) return false;
+  if (region.source_candidate_leg_id && row.candidate_leg_id) {
+    return region.source_candidate_leg_id === row.candidate_leg_id;
+  }
+  return (region.candidate_mappings || []).some((mapping) => canonicalLegIndexForMapping(mapping) === row.canonical_leg_index);
+}
+
+function fieldEvidenceRank(row, region) {
+  const regionType = region?.region_type || "";
+  const value = expectedAnswerValue(row);
+  if (!row || !region) return 99;
+  if (regionType === "MISSED_APPROACH_TEXT") return 60;
+  if (row.field_name === "Q1_fix_ident") {
+    if (["FIX_TEXT", "NAVAID_TEXT"].includes(regionType)) return 0;
+    if (regionType === "FIX_SYMBOL") return 8;
+    return 99;
+  }
+  if (row.field_name === "Q2_altitude_constraint") {
+    if (regionType === "ALTITUDE_TEXT") return 0;
+    if (regionType === "CLIMB_ARROW") return 8;
+    return 99;
+  }
+  if (row.field_name === "Q3_turn") {
+    if (["PATH_SEGMENT", "TURN_PHRASE"].includes(regionType)) return 0;
+    if (["HOLDING_PATTERN", "HOLDING_ARC"].includes(regionType)) return 20;
+    return 99;
+  }
+  if (row.field_name === "Q4_course_or_radial") {
+    if (value?.type === "navaid_radial") {
+      if (["NAVAID_TEXT", "RADIAL_TEXT", "OUTBOUND_INBOUND_MARK"].includes(regionType)) return 0;
+      if (["PATH_SEGMENT", "FIX_SYMBOL"].includes(regionType)) return 12;
+      return 99;
+    }
+    if (["HEADING_TEXT", "TRACK_OR_RADIAL_TEXT"].includes(regionType)) return 0;
+    if (regionType === "PATH_SEGMENT") return 12;
+    return 99;
+  }
+  if (row.field_name === "Q5_hold_params") {
+    if (["HOLDING_PATTERN", "HOLDING_ARC"].includes(regionType)) return 0;
+    if (["HOLDING_TIME_TEXT", "DME_DISTANCE_TEXT", "TRACK_OR_RADIAL_TEXT", "RADIAL_TEXT", "OUTBOUND_INBOUND_MARK"].includes(regionType)) return 4;
+    if (["FIX_TEXT", "NAVAID_TEXT", "FIX_SYMBOL"].includes(regionType)) return 12;
+    return 99;
+  }
+  return 50;
+}
+
+function compatibleEvidenceRegionsForField(row) {
+  if (!row) return [];
+  return state.regions
+    .filter((region) => sameSourceLeg(row, region))
+    .filter((region) => {
+      const rank = fieldEvidenceRank(row, region);
+      if (rank >= 50) return false;
+      if (row.field_name === "Q4_course_or_radial" && expectedAnswerValue(row)?.type !== "navaid_radial") {
+        return ["HEADING_TEXT", "TRACK_OR_RADIAL_TEXT"].includes(region.region_type);
+      }
+      return true;
+    })
+    .map((region) => ({ region, rank: fieldEvidenceRank(row, region), source: "compatible-region" }));
+}
+
+function suggestedEvidenceEntriesForField(row) {
+  const direct = candidateMappingsForField(row)
+    .filter(({ mapping }) => !["rejected", "needs_discussion"].includes(mapping.human_decision || "pending"))
+    .map(({ region, mapping }) => ({
+      region,
+      mapping,
+      rank: fieldEvidenceRank(row, region),
+      source: "candidate-mapping"
+    }))
+    .filter((item) => item.rank < 90);
+  const compatible = compatibleEvidenceRegionsForField(row);
+  const byRegion = new Map();
+  [...direct, ...compatible].forEach((item) => {
+    const existing = byRegion.get(item.region.region_id);
+    if (!existing || item.rank < existing.rank) byRegion.set(item.region.region_id, item);
+  });
+  const ranked = Array.from(byRegion.values()).sort((left, right) => {
+    const decisionRank = { accepted: 0, changed: 1, pending: 2 };
+    const leftDecision = decisionRank[left.mapping?.human_decision || "pending"] ?? 3;
+    const rightDecision = decisionRank[right.mapping?.human_decision || "pending"] ?? 3;
+    return left.rank - right.rank || leftDecision - rightDecision;
+  });
+  const fine = ranked.filter((item) => item.rank < 50);
+  return fine.length ? fine : ranked;
+}
+
 function uniqueList(values) {
   return Array.from(new Set((values || []).filter(Boolean).map(String)));
 }
@@ -575,17 +667,14 @@ function supportModeFromReview(raw, evidenceIds = []) {
 }
 
 function suggestedEvidenceIdsForField(row) {
-  const candidates = candidateMappingsForField(row)
-    .filter(({ mapping }) => !["rejected", "needs_discussion"].includes(mapping.human_decision || "pending"))
-    .sort((left, right) => {
-      const rank = { accepted: 0, changed: 1, pending: 2 };
-      return (rank[left.mapping.human_decision || "pending"] ?? 3) - (rank[right.mapping.human_decision || "pending"] ?? 3);
-    })
-    .map(({ region }) => region.region_id);
   if (row.field_name === "Q_terminator") {
-    const legEvidence = candidateMappingsForLeg(row).map(({ region }) => region.region_id);
-    return uniqueList([...candidates, ...legEvidence]);
+    const legFieldIds = buildFieldRows()
+      .filter((item) => item.requires_review && item.canonical_leg_index === row.canonical_leg_index && item.field_name !== "Q_terminator")
+      .flatMap((item) => suggestedEvidenceIdsForField(item));
+    if (legFieldIds.length) return uniqueList(legFieldIds);
+    return uniqueList(candidateMappingsForLeg(row).map(({ region }) => region.region_id));
   }
+  const candidates = suggestedEvidenceEntriesForField(row).map(({ region }) => region.region_id);
   if (candidates.length) return uniqueList(candidates);
   return uniqueList(state.regions
     .filter((region) => region.source_field_name && region.source_field_name === row.field_name)

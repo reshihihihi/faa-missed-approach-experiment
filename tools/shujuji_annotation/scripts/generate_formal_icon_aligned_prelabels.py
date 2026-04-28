@@ -378,8 +378,15 @@ def adapt_pilot_regions(chart_id, lookup):
         mappings = []
         for old_mapping in source_region.get("candidate_mappings", []):
             meta = lookup.get((parse_leg_index(old_mapping), old_mapping.get("field_name")))
+            if not meta and copied.get("region_type") == "HEADING_TEXT":
+                q4_meta = lookup.get((parse_leg_index(old_mapping), "Q4_course_or_radial"))
+                q4_value = (q4_meta or {}).get("expected_answer", {}).get("value")
+                if isinstance(q4_value, dict) and q4_value.get("type") == "course_deg":
+                    meta = q4_meta
             if meta:
                 mappings.append(mapping(meta, "copied reviewed pilot10 small box mapped to formal300 PR28 target", 0.55))
+                if copied.get("region_type") == "HEADING_TEXT" and meta["field_name"] == "Q4_course_or_radial":
+                    copied["source_field_name"] = "Q4_course_or_radial"
         copied["candidate_mappings"] = mappings
         output.append(copied)
         serial += 1
@@ -517,7 +524,7 @@ def add_symbol_boxes(chart_id, serial, image_path, detail_roi, lookup, text_regi
         field = meta["field_name"]
         anchors = text_by_key.get(key, [])
         anchor = anchors[0]["bbox"] if anchors else detail_roi
-        if field == "Q2_altitude_constraint" or leg_type in CLIMB_TYPES:
+        if field == "Q2_altitude_constraint":
             comp = nearest_component(
                 components,
                 anchor,
