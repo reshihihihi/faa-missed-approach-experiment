@@ -134,6 +134,13 @@ def target_lookup(target):
     return lookup
 
 
+def is_navaid_radial_meta(meta):
+    if not meta:
+        return False
+    value = (meta.get("expected_answer") or {}).get("value")
+    return meta.get("field_name") == "Q4_course_or_radial" and isinstance(value, dict) and value.get("type") == "navaid_radial"
+
+
 def pdf_words(pdf_path):
     doc = fitz.open(pdf_path)
     page = doc[0]
@@ -331,6 +338,15 @@ def covered_keys(regions):
     return keys
 
 
+def covered_region_type_keys(regions):
+    keys = set()
+    for item in regions:
+        region_type = item.get("region_type", "")
+        for item_mapping in item.get("candidate_mappings", []):
+            keys.add((int(item_mapping.get("canonical_leg_index") or 0), item_mapping.get("field_name"), region_type))
+    return keys
+
+
 def parse_leg_index(item_mapping):
     if item_mapping.get("canonical_leg_index"):
         return int(item_mapping["canonical_leg_index"])
@@ -447,12 +463,15 @@ def choose_best_word(meta, rtype, candidates, cluster_center):
 
 def add_text_boxes(chart_id, serial, selected_matches, lookup, detail_roi, existing_regions):
     output = []
-    already_covered = covered_keys(existing_regions)
-    eligible = [
-        item for item in selected_matches
-        if item["key"] not in already_covered
-        and in_roi(item["word"], detail_roi, pad=0.02)
-    ]
+    already_covered = covered_region_type_keys(existing_regions)
+    eligible = []
+    for item in selected_matches:
+        rtype = text_region_type(item["meta"], item["word"]["norm"])
+        if (item["key"][0], item["key"][1], rtype) in already_covered:
+            continue
+        if not in_roi(item["word"], detail_roi, pad=0.02):
+            continue
+        eligible.append(item)
     if not eligible:
         return output, serial
     cluster_center = (
@@ -523,6 +542,15 @@ def add_symbol_boxes(chart_id, serial, image_path, detail_roi, lookup, text_regi
             )
             if comp:
                 output.append(region(chart_id, serial, "FIX_SYMBOL", comp["bbox"], f"fix symbol for {meta['expected_value']}", [mapping(meta, "detected fix/navaid symbol near fix text", 0.48)], 0.48, "cv_icon_component"))
+                serial += 1
+        if is_navaid_radial_meta(meta):
+            comp = nearest_component(
+                components,
+                anchor,
+                lambda item: item["bbox"]["width"] > 0.022 and item["bbox"]["height"] > 0.006 and item["area"] >= 26,
+            )
+            if comp:
+                output.append(region(chart_id, serial, "PATH_SEGMENT", comp["bbox"], f"radial/path graphic for {meta['expected_value']}", [mapping(meta, "detected radial/path graphic near navaid-radial text", 0.44)], 0.44, "cv_icon_component"))
                 serial += 1
         if field in {"Q3_turn", "Q5_hold_params"}:
             comp = nearest_component(
@@ -609,6 +637,55 @@ def dedupe_mappings(mappings):
         seen.add(key)
         output.append(item_mapping)
     return output
+
+
+def leg_indices_for_region(item):
+    indices = []
+    for item_mapping in item.get("candidate_mappings", []):
+        field_name = item_mapping.get("field_name")
+        if field_name == "Q_terminator":
+            continue
+        leg_index = int(item_mapping.get("canonical_leg_index") or 0)
+        if leg_index:
+            indices.append(leg_index)
+    return sorted(set(indices))
+
+
+def add_mapping_if_missing(item, meta, basis, confidence):
+    if not meta:
+        return False
+    existing = {
+        (int(item_mapping.get("canonical_leg_index") or 0), item_mapping.get("field_name"))
+        for item_mapping in item.get("candidate_mappings", [])
+    }
+    key = (int(meta.get("canonical_leg_index") or 0), meta.get("field_name"))
+    if key in existing:
+        return False
+    item.setdefault("candidate_mappings", []).append(mapping(meta, basis, confidence))
+    item["candidate_mappings"] = dedupe_mappings(item.get("candidate_mappings", []))
+    return True
+
+
+def add_compound_support_mappings(regions, lookup):
+    for item in regions:
+        region_type = item.get("region_type")
+        for leg_index in leg_indices_for_region(item):
+            q4 = lookup.get((leg_index, "Q4_course_or_radial"))
+            if region_type in {"FIX_SYMBOL", "PATH_SEGMENT"} and is_navaid_radial_meta(q4):
+                add_mapping_if_missing(
+                    item,
+                    q4,
+                    "same-leg graphical navaid/radial evidence; include with text boxes for joint Q4 support",
+                    min(0.5, max(float(item.get("confidence") or 0.4), 0.42)),
+                )
+            qterm = lookup.get((leg_index, "Q_terminator"))
+            add_mapping_if_missing(
+                item,
+                qterm,
+                "same-leg chart evidence preselected for joint Q_terminator support",
+                min(0.55, max(float(item.get("confidence") or 0.4), 0.4)),
+            )
+    return regions
 
 
 def merge_region_pair(base, extra):
@@ -757,18 +834,20 @@ def generate_chart(manifest_item, target):
     if ENABLE_LOW_CONFIDENCE_FALLBACK_BOXES:
         fallback_regions, serial = add_fallback_for_uncovered(chart_id, serial, target, lookup, detail_roi, all_fine)
     all_fine = merge_overlapping_regions(all_fine + fallback_regions)
+    add_compound_support_mappings(coarse + all_fine, lookup)
     prelabel["regions"] = coarse + all_fine
-    prelabel["prelabel_version"] = "v0.26-formal300-structure-aware-prelabels"
+    prelabel["prelabel_version"] = "v0.27-formal300-structure-aware-compound-evidence"
     prelabel["generated_at"] = datetime.now(timezone.utc).isoformat()
     prelabel.setdefault("generation_policy", {})
     prelabel["generation_policy"].update({
         "formal300_small_box_prelabels_added": True,
-        "small_box_source": "score lower missed-approach detail candidates with PR28 text anchors, boxed-cell structure, and CV icon components; only detected evidence is drawn",
+        "small_box_source": "score lower missed-approach detail candidates with PR28 text anchors, boxed-cell structure, CV icon components, and compound leg evidence; only detected evidence is drawn",
         "small_box_final_ground_truth": False,
         "small_box_human_calibration_required": True,
         "missed_approach_icon_or_detail_area_first": True,
         "boxed_cell_structure_weighted": True,
         "candidate_mappings_are_cifp424_targets_not_independent_predictions": True,
+        "compound_q4_and_q_terminator_candidate_mappings": True,
         "low_confidence_blank_fallback_boxes_enabled": ENABLE_LOW_CONFIDENCE_FALLBACK_BOXES,
     })
     write_json(prelabel_path, prelabel)

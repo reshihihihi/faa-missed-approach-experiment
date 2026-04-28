@@ -952,7 +952,7 @@ async function saveDraft(req, requestUrl, dataset, chartId) {
   const payload = JSON.parse(stripBom(await readRequestBody(req)));
   const annotator = safeAnnotator(payload.annotator || getAnnotator(requestUrl) || (dataset.finalDataset ? "" : "practice_user"));
   if (dataset.finalDataset && !annotator) {
-    const error = new Error("姝ｅ紡鏍囨敞蹇呴』鍏堝～鍐欐爣娉ㄤ汉銆?");
+    const error = new Error("正式标注必须先填写标注人。");
     error.statusCode = 400;
     throw error;
   }
@@ -966,12 +966,12 @@ async function saveDraft(req, requestUrl, dataset, chartId) {
       throw error;
     }
     if (claim?.annotator && claim.annotator !== annotator) {
-      const error = new Error(`杩欏紶鍥惧凡鐢?${claim.annotator} 棰嗗彇锛屼笉鑳界敤 ${annotator} 鏆傚瓨銆?`);
+      const error = new Error(`这张图已由 ${claim.annotator} 领取，不能用 ${annotator} 暂存。`);
       error.statusCode = 409;
       throw error;
     }
     if (!claim) {
-      const error = new Error("璇峰厛棰嗗彇褰撳墠鑸浘锛屽啀杩涜鏆傚瓨銆?");
+      const error = new Error("请先领取当前航图，再进行暂存。");
       error.statusCode = 409;
       throw error;
     }

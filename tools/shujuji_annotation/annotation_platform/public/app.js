@@ -215,7 +215,7 @@ const FIELD_LABELS = {
 const FIELD_REVIEW_LABELS = {
   pending: "待确认",
   direct_visible: "直接图面证据",
-  visible_joint: "多证据综合",
+  visible_joint: "图面综合支持",
   rule_default_completion: "规则/默认补全",
   insufficient_for_encoding: "缺少足够编码信息",
   supported_by_chart: "直接图面证据",
@@ -524,6 +524,21 @@ function candidateMappingsForField(row) {
   });
 }
 
+function candidateMappingsForLeg(row) {
+  const legIndex = Number(row?.canonical_leg_index || 0);
+  if (!legIndex) return [];
+  return state.regions.flatMap((region) => {
+    return (region.candidate_mappings || [])
+      .filter((mapping) => {
+        return canonicalLegIndexForMapping(mapping) === legIndex
+          && mapping.field_name
+          && mapping.field_name !== "Q_terminator"
+          && !["rejected", "needs_discussion"].includes(mapping.human_decision || "pending");
+      })
+      .map((mapping) => ({ region, mapping }));
+  });
+}
+
 function uniqueList(values) {
   return Array.from(new Set((values || []).filter(Boolean).map(String)));
 }
@@ -567,6 +582,10 @@ function suggestedEvidenceIdsForField(row) {
       return (rank[left.mapping.human_decision || "pending"] ?? 3) - (rank[right.mapping.human_decision || "pending"] ?? 3);
     })
     .map(({ region }) => region.region_id);
+  if (row.field_name === "Q_terminator") {
+    const legEvidence = candidateMappingsForLeg(row).map(({ region }) => region.region_id);
+    return uniqueList([...candidates, ...legEvidence]);
+  }
   if (candidates.length) return uniqueList(candidates);
   return uniqueList(state.regions
     .filter((region) => region.source_field_name && region.source_field_name === row.field_name)
@@ -742,6 +761,7 @@ function updateRegionMappingDecision(row, regionId, decision, note = "") {
 
 function applyEvidenceSelectionToMappings(row, requiredIds, supportMode) {
   const requiredSet = new Set(requiredIds);
+  const createdMappings = [];
   state.regions.forEach((region) => {
     const mappings = region.candidate_mappings || [];
     mappings.forEach((mapping) => {
@@ -759,10 +779,13 @@ function applyEvidenceSelectionToMappings(row, requiredIds, supportMode) {
       }
     });
     if (requiredSet.has(region.region_id)) {
-      ensureMappingForRegion(row, region, "accepted");
+      const existed = (region.candidate_mappings || []).some((mapping) => fieldKeyForMapping(mapping) === row.key);
+      const created = ensureMappingForRegion(row, region, "accepted");
+      if (!existed) createdMappings.push({ region, mapping: created });
       region.human_review.review_action = "accept";
     }
   });
+  return createdMappings;
 }
 
 function linkSelectedFieldToRegion({ accept = true } = {}) {
@@ -1472,13 +1495,14 @@ function acceptAllChartPendingMappings() {
     return;
   }
   pushUndo("采纳已有候选");
-  const snapshot = [];
+  const mappingSnapshot = [];
+  const fieldReviewSnapshot = [];
   const changedRegions = new Set();
   state.regions.forEach((region) => {
     const previousReviewAction = region.human_review?.review_action;
     (region.candidate_mappings || []).forEach((mapping) => {
       if (!mappingIsPending(mapping)) return;
-      snapshot.push({
+      mappingSnapshot.push({
         region,
         mapping,
         previousDecision: mapping.human_decision,
@@ -1491,31 +1515,68 @@ function acceptAllChartPendingMappings() {
   changedRegions.forEach((region) => {
     region.human_review.review_action = "accept";
   });
-  state.lastQuickAcceptSnapshot = snapshot.length ? snapshot : null;
+  buildFieldRows().filter((row) => row.requires_review).forEach((row) => {
+    const review = reviewForField(row);
+    if (review.review_status !== "pending") return;
+    const evidenceIds = uniqueList(review.required_evidence_region_ids || []);
+    if (!evidenceIds.length) return;
+    fieldReviewSnapshot.push({
+      key: row.key,
+      previousReview: state.fieldReviews[row.key] ? deepClone(state.fieldReviews[row.key]) : undefined
+    });
+    setFieldReview(row, evidenceIds.length > 1 ? "visible_joint" : "direct_visible", {
+      requiredIds: evidenceIds,
+      checkedScopes: sourcesForRegionIds(evidenceIds),
+      notes: row.field_name === "Q_terminator" ? "快速采纳：同一航段的图面证据共同支持航段类型。" : review.notes || ""
+    });
+    const createdMappings = applyEvidenceSelectionToMappings(row, evidenceIds, evidenceIds.length > 1 ? "visible_joint" : "direct_visible");
+    createdMappings.forEach((created) => {
+      mappingSnapshot.push({
+        ...created,
+        previousDecision: undefined,
+        previousReviewAction: created.region.human_review?.review_action,
+        createdByQuickAccept: true
+      });
+    });
+  });
+  const snapshot = { mappings: mappingSnapshot, fieldReviews: fieldReviewSnapshot };
+  state.lastQuickAcceptSnapshot = (mappingSnapshot.length || fieldReviewSnapshot.length) ? snapshot : null;
   setUndoQuickAcceptEnabled(Boolean(state.lastQuickAcceptSnapshot));
   renderOverlay();
   renderRegionForm();
   renderTargets();
   renderCanonicalPanel();
-  const message = snapshot.length
-    ? `已快速确认本图已有候选 ${snapshot.length} 条；误点可先点“撤销快速确认”。`
+  const completedFields = fieldReviewSnapshot.length;
+  const message = mappingSnapshot.length || completedFields
+    ? `已快速确认本图已有候选 ${mappingSnapshot.length} 条，并完成 ${completedFields} 个字段；误点可先点“撤销快速确认”。`
     : "当前没有待快速确认的候选。";
   showToast(message);
 }
 
 function undoQuickAccept() {
   const snapshot = state.lastQuickAcceptSnapshot;
-  if (!snapshot?.length) {
+  const mappingSnapshot = Array.isArray(snapshot) ? snapshot : snapshot?.mappings;
+  const fieldReviewSnapshot = Array.isArray(snapshot) ? [] : snapshot?.fieldReviews;
+  if (!mappingSnapshot?.length && !fieldReviewSnapshot?.length) {
     showToast("没有可撤销的快速确认。");
     return;
   }
-  snapshot.forEach(({ region, mapping, previousDecision, previousReviewAction }) => {
-    if (previousDecision === undefined) {
+  mappingSnapshot.forEach(({ region, mapping, previousDecision, previousReviewAction, createdByQuickAccept }) => {
+    if (createdByQuickAccept && region?.candidate_mappings) {
+      region.candidate_mappings = region.candidate_mappings.filter((item) => item !== mapping);
+    } else if (previousDecision === undefined) {
       delete mapping.human_decision;
     } else {
       mapping.human_decision = previousDecision;
     }
     if (region?.human_review) region.human_review.review_action = previousReviewAction || "pending";
+  });
+  fieldReviewSnapshot.forEach(({ key, previousReview }) => {
+    if (previousReview === undefined) {
+      delete state.fieldReviews[key];
+    } else {
+      state.fieldReviews[key] = previousReview;
+    }
   });
   state.lastQuickAcceptSnapshot = null;
   setUndoQuickAcceptEnabled(false);
@@ -1644,7 +1705,7 @@ function renderWorkflowPanel() {
       </div>
       <div class="field-confirm-grid">
         <button type="button" class="primary" data-confirm-mode="direct_visible" ${evidenceConfirmDisabled}>确认：直接图面证据</button>
-        <button type="button" data-confirm-mode="visible_joint" ${evidenceConfirmDisabled}>改为多证据综合</button>
+        <button type="button" data-confirm-mode="visible_joint" ${evidenceConfirmDisabled}>确认：图面综合支持</button>
         <button type="button" data-confirm-mode="rule_default_completion" ${evidenceConfirmDisabled}>改为规则/默认补全</button>
         <button type="button" data-confirm-mode="insufficient_for_encoding" ${confirmDisabled}>缺少足够编码信息</button>
         <button type="button" data-confirm-mode="uncertain" ${confirmDisabled}>不确定 / 交复核</button>
