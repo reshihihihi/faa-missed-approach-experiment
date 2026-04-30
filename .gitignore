@@ -20,6 +20,12 @@ Thumbs.db
 # Local secrets
 .env
 .env.*
+tools/shujuji_annotation/runtime_data/
+tools/shujuji_annotation/runtime_data*/
+tools/shujuji_annotation/**/runtime_data/
+tools/shujuji_annotation/**/runtime_data*/
+tools/shujuji_annotation/**/server.log
+tools/shujuji_annotation/**/*.log
 
 # Large raw datasets and source artifacts
 data/pilot_10/charts/
